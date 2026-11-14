@@ -1,0 +1,159 @@
+[
+  {
+    "pair": "id-en",
+    "source": "Saya sedang membaca buku.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      7,
+      5,
+      48,
+      3114,
+      15,
+      1264,
+      2,
+      0
+    ],
+    "output": "I'm reading a book.",
+    "fp32_equal": true,
+    "seconds": 0.040387500997894676
+  },
+  {
+    "pair": "id-en",
+    "source": "Tentukan semua bilangan bulat yang memenuhi syarat tersebut.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      41823,
+      87,
+      6,
+      14645,
+      27,
+      1214,
+      2771,
+      9,
+      2,
+      0
+    ],
+    "output": "Define all the qualified integers.",
+    "fp32_equal": true,
+    "seconds": 0.05424714199762093
+  },
+  {
+    "pair": "id-en",
+    "source": "Tidak semua siswa membawa dua buku.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      449,
+      87,
+      4279,
+      768,
+      338,
+      3558,
+      2,
+      0
+    ],
+    "output": "Not all students bring two books.",
+    "fp32_equal": true,
+    "seconds": 0.030646260998764774
+  },
+  {
+    "pair": "id-en",
+    "source": "Jika hujan turun, pertandingan akan ditunda.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      247,
+      24,
+      21420,
+      3,
+      6,
+      3977,
+      83,
+      46,
+      25013,
+      2,
+      0
+    ],
+    "output": "If it rains, the match will be delayed.",
+    "fp32_equal": true,
+    "seconds": 0.047869835998426424
+  },
+  {
+    "pair": "en-id",
+    "source": "I am reading a book.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      22,
+      314,
+      1393,
+      1017,
+      2,
+      0
+    ],
+    "output": "Aku sedang membaca buku.",
+    "fp32_equal": true,
+    "seconds": 0.04983014800018282
+  },
+  {
+    "pair": "en-id",
+    "source": "Find all integers that satisfy the condition.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      3760,
+      146,
+      326,
+      127,
+      12162,
+      11,
+      2749,
+      3198,
+      2,
+      0
+    ],
+    "output": "Cari semua bilangan bulat yang memenuhi kondisi.",
+    "fp32_equal": true,
+    "seconds": 0.06333488000018406
+  },
+  {
+    "pair": "en-id",
+    "source": "Not every student brought two books.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      94,
+      146,
+      5569,
+      553,
+      403,
+      1017,
+      2,
+      0
+    ],
+    "output": "Tidak semua siswa membawa dua buku.",
+    "fp32_equal": true,
+    "seconds": 0.05847667200214346
+  },
+  {
+    "pair": "en-id",
+    "source": "If it rains, the match will be postponed.",
+    "candidate": "qint8_per_channel_gather_matmul",
+    "ids": [
+      54795,
+      267,
+      2050,
+      3,
+      4309,
+      31,
+      20703,
+      2,
+      0
+    ],
+    "output": "Jika hujan, pertandingan akan ditunda.",
+    "fp32_equal": true,
+    "seconds": 0.04852387900245958
+  }
+]

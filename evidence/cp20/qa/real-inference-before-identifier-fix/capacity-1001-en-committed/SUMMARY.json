@@ -1,0 +1,93 @@
+{
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "identity": {
+    "main.js": "6f82fb3b82969d53d9c65a1b12a197f901f5f381150ef28d50c2d7c4ffae8cd2",
+    "storage.js": "f841c7c7cc7e31bf405b69a04838628fbd52b2ab7922ce4b17ae10038ac1a7d6",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+    "translation.js": "3000cb184e3dac553ac6a66f3de4caec94dcc0641327d1c6b678d3ef7c72bc08",
+    "claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "semantic-spans.js": "df80b52dbf9fd7fe4e899fecedf709fad6600f4146e4859c60f6f59789910db3",
+    "export.js": "a9cd0b1401d4b401490e17cc781b799c1d3e292ab1dd47595d7cce6b8383e7a1"
+  },
+  "summary": {
+    "schemaVersion": 2,
+    "streaming": true,
+    "fileName": "capacity-1001-en.pdf",
+    "fileSize": 731923,
+    "numPages": 1001,
+    "metadata": {
+      "title": "CP20 synthetic capacity 1001 pages en",
+      "author": "Semantik Setara AI-authored CC0 test material",
+      "subject": "unspecified",
+      "producer": "ReportLab PDF Library - (opensource)",
+      "creationDate": "D:20000101000000+00'00'",
+      "language": ""
+    },
+    "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+    "createdAt": "2026-11-13T07:00:27.750Z",
+    "committedPageCount": 116,
+    "counts": {
+      "total": 348,
+      "translated": 116,
+      "preserved": 0,
+      "rejected": 230,
+      "failed": 0,
+      "pending": 2,
+      "review": 232,
+      "done": 116,
+      "attempted": 346
+    },
+    "sourceItemCount": 580,
+    "coveredItemCount": 580,
+    "sourceTextCharacters": 26652,
+    "assetsBytes": 0,
+    "warnings": [],
+    "metrics": {
+      "inferenceCalls": 231,
+      "cacheHits": 0,
+      "uniqueInputs": 231,
+      "inputTokens": 2770,
+      "outputTokens": 2308,
+      "extractionMs": 9595.787257000018,
+      "inferenceMs": 63234.65351299988,
+      "commitMs": 1123.835090999928
+    },
+    "streamProvenance": {
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "configSignature": "{\"source\":\"en\",\"target\":\"id\",\"layout\":\"auto\",\"glossary\":[]}",
+      "ruleset": "cp20-context-terminology-meaning-guards-v2",
+      "release": "cp20-4130d88aca38edb8"
+    },
+    "coverageIncompletePages": 0,
+    "mathUncertainPages": 0,
+    "blocks": [],
+    "pages": [],
+    "assets": [],
+    "savedPageCount": 116,
+    "sourceLanguage": "en",
+    "targetLanguage": "id"
+  },
+  "measurements": {
+    "modelPrepareMs": 4316.901809,
+    "engineRequests": 231,
+    "engineSucceeded": 231,
+    "engineFailed": 0,
+    "engineMs": 62447.80533,
+    "rawBlockCalls": 346,
+    "maskedRepeatedRequests": 229,
+    "uniqueRawBlockInputs": 346,
+    "uniqueMaskedModelInputs": 2
+  },
+  "elapsedMs": 78646.69272199999
+}

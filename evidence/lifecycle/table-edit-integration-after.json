@@ -1,0 +1,48 @@
+{
+  "method": "Actual main.js in VM, actual storage.js with fake-indexeddb, actual export.js+JSZip; controlled translation transport proves routing and correction integrity. Not real model or browser test.",
+  "sourceHashes": {
+    "main.js": "369db8e7cdd39c327f64b76a8e263eaa2e3a06c8b5474f72b40202b091033a12",
+    "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+  },
+  "environment": {
+    "node": "v24.22.1",
+    "fakeIndexedDB": "6.2.5"
+  },
+  "results": [
+    {
+      "name": "Target table edit invalidates machine rows; exact text survives save, reload and ZIP export",
+      "result": "PASS"
+    },
+    {
+      "name": "Source table correction preserves original rows; uses corrected whole text through translation/reload/export",
+      "result": "PASS"
+    },
+    {
+      "name": "Corrected table stays text-based after layout remapping; original geometry remains provenance",
+      "result": "PASS"
+    },
+    {
+      "name": "Old checkpoint with stale translatedRows + manual edited status exports manual text safely",
+      "result": "PASS"
+    },
+    {
+      "name": "Machine table target without validated translatedRows exports text instead of stale source cells",
+      "result": "PASS"
+    },
+    {
+      "name": "Legacy corrected table checkpoint repairs stale rows, retains old machine evidence and retries corrected text",
+      "result": "PASS"
+    }
+  ],
+  "outputs": [
+    {
+      "case": "target-edit",
+      "markdown": "# table-edit-fixture — Terjemahan\n\n**Berkas sumber:** table-edit-fixture.pdf\n**Halaman:** 1\n**Bahasa:** belum ditetapkan → belum ditetapkan\n**Status:** Pemrosesan selesai; perlu peninjauan ilmiah \n**Bagian:** 1 diterjemahkan; 0 dipertahankan sengaja; 0 ditolak; 0 gagal; 0 belum diproses. Total 1.\n**Rilis eksportir:** cp20-development · 0.20.0.\n**Metode:** ekstraksi PDF/OCR dan terjemahan mesin lokal. Tidak ada klaim verifikasi semantik menyeluruh.\n\nEkspor teks internal; gunakan unduhan Markdown utama untuk menyertakan gambar sumber dalam satu berkas.\n\n<!-- halaman: 1 -->\n\n<!-- bagian: p1-table | halaman: 1 -->\n\n> Hasil ini dipulihkan dari rilis cp18-test; bukan inferensi baru pada rilis eksportir.\n> Hasil diedit pengguna.\n> Tabel hasil diedit sebagai teks; susunan sel perlu dicocokkan dengan tabel sumber.\n\n```text\nGroup | Dose\nA | 20 mg\nFormula | |𝑥| < 1\n```\n\n\n---\n\nDibuat dengan Semantik Setara — Academic PDF Translator. Teks sumber, hasil mesin, dan koreksi pengguna dipisahkan secara eksplisit.\n"
+    },
+    {
+      "case": "source-edit",
+      "markdown": "# table-edit-fixture — Sumber & Terjemahan\n\n**Berkas sumber:** table-edit-fixture.pdf\n**Halaman:** 1\n**Bahasa:** id → en\n**Status:** Pemrosesan selesai; perlu peninjauan ilmiah \n**Bagian:** 1 diterjemahkan; 0 dipertahankan sengaja; 0 ditolak; 0 gagal; 0 belum diproses. Total 1.\n**Rilis eksportir:** cp20-development · 0.20.0.\n**Metode:** ekstraksi PDF/OCR dan terjemahan mesin lokal. Tidak ada klaim verifikasi semantik menyeluruh.\n\nEkspor teks internal; gunakan unduhan Markdown utama untuk menyertakan gambar sumber dalam satu berkas.\n\n<!-- halaman: 1 -->\n\n<!-- bagian: p1-table | halaman: 1 -->\n\n**Ekstraksi asli sebelum koreksi**\n\n```text\nKelompok | Dosis\nA | 10 mg\nRumus | |𝑥| < 1\n```\n\n**Sumber setelah koreksi pengguna**\n\n> Teks sumber dikoreksi pengguna; citra tetap berasal dari PDF asli.\n\n```text\nKelompok | Dosis\nA | 20 mg\nRumus | |𝑥| < 1\n```\n\n**Terjemahan / hasil**\n\n> Hasil ini dipulihkan dari rilis cp18-test; bukan inferensi baru pada rilis eksportir.\n> Terjemahan menggunakan sumber yang dikoreksi pengguna pada 2026-11-13T07:43:38.541Z.\n> Teks sumber dikoreksi oleh pengguna; cocokkan dengan halaman PDF asli.\n> Koreksi tabel digunakan sebagai teks utuh; susunan sel asli tetap pada provenance dan citra PDF, bukan hasil koreksi.\n\n```text\nGroup | Dose\nA | 20 mg\nFormula | |𝑥| < 1\n```\n\n\n---\n\nDibuat dengan Semantik Setara — Academic PDF Translator. Teks sumber, hasil mesin, dan koreksi pengguna dipisahkan secara eksplisit.\n"
+    }
+  ]
+}

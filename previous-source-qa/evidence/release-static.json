@@ -1,0 +1,129 @@
+{
+  "scope": "Static deployability and explicit input surface only; runtime tests required separately",
+  "pass": true,
+  "checks": 21,
+  "failed": [],
+  "deployableFiles": 295,
+  "deployableBytes": 263176161,
+  "details": [
+    {
+      "check": "All deployable files at most 25 MiB",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "check": "Deployable files at most 20000",
+      "pass": true,
+      "detail": 295
+    },
+    {
+      "check": "Required file index.html",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Required file sw.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Required file _headers",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "At least one explicit PDF file input",
+      "pass": true,
+      "detail": [
+        {
+          "type": "file",
+          "id": "pdf-input",
+          "accept": ".pdf,application/pdf",
+          "aria-describedby": "file-help"
+        }
+      ]
+    },
+    {
+      "check": "Every file input accepts only PDF",
+      "pass": true,
+      "detail": [
+        {
+          "type": "file",
+          "id": "pdf-input",
+          "accept": ".pdf,application/pdf",
+          "aria-describedby": "file-help"
+        }
+      ]
+    },
+    {
+      "check": "No inline script requiring unsafe-inline",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "check": "HTML local dependency /icon.svg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "HTML local dependency /manifest.webmanifest",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "HTML local dependency /app/styles.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "HTML local dependency /app/main.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "CSP restricts network connections to self",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "CSP blocks active embedded objects",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "No CSP unsafe-eval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Content sniffing disabled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Service worker source does not contain old JSON upload bundle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Old non-PDF application bundle removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Old archive upload worker removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Both local language model manifests retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Model attribution retained",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

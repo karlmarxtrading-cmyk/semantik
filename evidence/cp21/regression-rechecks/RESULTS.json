@@ -1,0 +1,34 @@
+[
+  {
+    "test": "cp19-guards.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "translation-regression.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp19-markdown.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp20-structure.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp20-math-real-pdf.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp21-offline-release.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp21-document-warning.mjs",
+    "exitCode": 0
+  },
+  {
+    "test": "cp21-semantic-controls.mjs",
+    "exitCode": 0
+  }
+]

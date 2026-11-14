@@ -1,0 +1,67 @@
+{
+ "createdUTC": "2026-11-14T00:10:09.686960+00:00",
+ "freezeSourceHash": "f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+ "method": "REGRESSION ONLY: corpus already seen (not an acceptance holdout).",
+ "cases": [
+  {
+   "id": "CP21-F01",
+   "direction": "en-id",
+   "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence. The order of the implication matters."
+  },
+  {
+   "id": "CP21-F02",
+   "direction": "en-id",
+   "source": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture."
+  },
+  {
+   "id": "CP21-F03",
+   "direction": "en-id",
+   "source": "The odds ratio is not the same as the risk ratio. They can differ substantially when the event is common."
+  },
+  {
+   "id": "CP21-F04",
+   "direction": "en-id",
+   "source": "A fall in marginal cost does not necessarily lower average cost immediately. The current production level matters for that comparison."
+  },
+  {
+   "id": "CP21-F05",
+   "direction": "en-id",
+   "source": "The instrument could distinguish the two signals only after averaging repeated measurements. This does not mean that either signal became stronger."
+  },
+  {
+   "id": "CP21-F06",
+   "direction": "en-id",
+   "source": "The committee postponed its decision because the evidence was incomplete. Postponement should not be interpreted as rejection of the hypothesis."
+  },
+  {
+   "id": "CP21-F07",
+   "direction": "id-en",
+   "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02. Pernyataan ini tidak menentukan perkiraan mana yang lebih besar."
+  },
+  {
+   "id": "CP21-F08",
+   "direction": "id-en",
+   "source": "Zat padat itu larut tanpa bereaksi dengan pelarut. Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia."
+  },
+  {
+   "id": "CP21-F09",
+   "direction": "id-en",
+   "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi. Kedua sumber kesalahan perlu dibedakan."
+  },
+  {
+   "id": "CP21-F10",
+   "direction": "id-en",
+   "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli. Harga barang yang dibeli rumah tangga juga perlu diperhitungkan."
+  },
+  {
+   "id": "CP21-F11",
+   "direction": "id-en",
+   "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil. Penyembunyian informasi itu bertujuan mengurangi bias penilaian."
+  },
+  {
+   "id": "CP21-F12",
+   "direction": "id-en",
+   "source": "Asumsi independensi digunakan dalam penurunan rumus. Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan."
+  }
+ ]
+}

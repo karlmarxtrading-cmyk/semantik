@@ -1,0 +1,19 @@
+{
+  "status": "IN_PROGRESS_NOT_PRODUCTION_READY",
+  "safetyCheckpoint": {
+    "filename": "SEMANTIK_SETARA_CP19_EMERGENCY_RECOVERY_CHECKPOINT.zip",
+    "bytes": 266254525,
+    "sha256": "5b6fd62092f614db550e493984db37a186b824b9c279962b67586ff117de1e98",
+    "library_file_id": "libfile_fde3_f-0549619cfea081919b0fc2cfc3eb710e_6a790e7c218c81918b962131f5a46ccd",
+    "verifiedSourceFiles": 14598,
+    "verifiedImportantArtifacts": 20
+  },
+  "immutableRecoveredBuild": "cp20-8c643bea6962471f",
+  "activeRules": "cp20-recovery-context-and-metadata-v5",
+  "no1500InferenceRerun": true,
+  "tasks": {
+    "metadata": "generic short target metadata classification and saved1500footer regression",
+    "semantics": "generic contextual terminology and scientific proposition guards",
+    "root": "integration, fresh acceptance after freeze, targeted browser, final packaging"
+  }
+}

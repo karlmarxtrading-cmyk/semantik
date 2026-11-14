@@ -1,0 +1,64 @@
+{
+  "upstream_sources": [
+    {
+      "path": "upstream/convert_marian_to_pytorch.py",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.44.2/src/transformers/models/marian/convert_marian_to_pytorch.py",
+      "sha256": "7f0472b3c90ab90e0d8c61d1cd6bddc6914fee44587bf5850062517fe3981f72",
+      "size_bytes": 26984
+    },
+    {
+      "path": "upstream/modeling_marian.py",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.44.2/src/transformers/models/marian/modeling_marian.py",
+      "sha256": "ff2732f53b9d472e2db2b977d9bb38190d663aafef94ff24176bf385ce428870",
+      "size_bytes": 82079
+    },
+    {
+      "path": "upstream/configuration_marian.py",
+      "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.44.2/src/transformers/models/marian/configuration_marian.py",
+      "sha256": "ba0a2ff8e074a12007085826ac9145f1ea8a124a0ff23e8b1c6f8c4779daa49b",
+      "size_bytes": 18328
+    },
+    {
+      "path": "upstream/marian_transformer.h",
+      "url": "https://raw.githubusercontent.com/marian-nmt/marian/2111c28/src/models/transformer.h",
+      "sha256": "fd530bc9dbee6a974ade6e6c5da131fc072745d7743e8b8a9ae734ef52a07ddb",
+      "size_bytes": 34341
+    },
+    {
+      "path": "upstream/src_graph_node_initializers.cpp",
+      "url": "https://raw.githubusercontent.com/marian-nmt/marian/2111c28/src/graph/node_initializers.cpp",
+      "sha256": "a251129c16cef3f06578da761d6570e2c1ffc7ca4a34e59b0a402486e46a6493",
+      "size_bytes": 6534
+    },
+    {
+      "path": "upstream/src_graph_node_initializers.h",
+      "url": "https://raw.githubusercontent.com/marian-nmt/marian/2111c28/src/graph/node_initializers.h",
+      "sha256": "8458867dfdf2b3d72f9c81c7c9ae91a8ae8e3a0239b027bd7a14973a28d5b576",
+      "size_bytes": 1876
+    }
+  ],
+  "source_models": [
+    {
+      "direction": "id-en",
+      "origin": "user supplied SEMANTIK YANG SETARA.zip / opus-2019-12-18.zip",
+      "source_archive_sha256": "2a07159e9999c2ab6fd98819bb6d0e0a93c9106a77d06e4ab6843f6e041c6766",
+      "source_archive_bytes": 268798439
+    },
+    {
+      "direction": "en-id",
+      "origin": "official complementary model downloaded during implementation; not present in user supplied archive",
+      "url": "https://object.pouta.csc.fi/OPUS-MT-models/en-id/opus-2019-12-18.zip",
+      "source_archive_sha256": "0ec904c9c504ee24cb03c1059194b069e7e39fc5089a008dd2a34ec9056f0b4d",
+      "source_archive_bytes": 269057694
+    }
+  ],
+  "patches_to_hf_graph": [
+    "Set every LayerNorm eps=1e-6 to match Marian v1.8.2 source",
+    "Replace HF sinusoidal position constants with original Marian float32 log-timescale formula using dim/2-1 denominator",
+    "Keep float32 for baseline instead of upstream converter .half()",
+    "Initialize wrappers and reference model in eval mode",
+    "Append one zero PAD embedding row and logit bias, disallow PAD output, preserving official converter convention"
+  ],
+  "conversion_script_sha256": "0cf857559af0c0625cbfb048a89f50da50c0777c02036f01292b53f1cb738958",
+  "quantization": "ORT1.20.1 quantize_dynamic MatMul/Gather per_channel=True weight_type=QInt8; explicit derivative, not bitwise weights"
+}

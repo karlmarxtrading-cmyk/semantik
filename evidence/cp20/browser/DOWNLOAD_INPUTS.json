@@ -1,0 +1,64 @@
+{
+  "outputs": [
+    {
+      "path": "evidence/cp20/browser/final-1668/PAUSE_RELOAD_124_PAGES_PARTIAL.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 124,
+      "expectedBlocks": 372,
+      "expectedTraceIDs": 124,
+      "scope": "Actual consumer browser partial download after deliberate pause; not long completion."
+    },
+    {
+      "path": "evidence/cp20/browser/final-1668/BROWSER_1001_EN_TO_ID.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 1001,
+      "expectedBlocks": 3003,
+      "expectedTraceIDs": 1001,
+      "scope": "Actual consumer browser PDF to full Markdown; build1668, final8c differs only in ETA/history with explicit component and output-parity binding. Scientific semantic acceptance remainsFAIL.",
+      "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 1304106,
+      "completedAt": "2026-11-13T07:51:34.220Z",
+      "metricsWarning": "Browser uniqueInputs is summed per block, not globally deduplicated model inputs; 5005 actual inferenceCalls and zero cacheHits recorded."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1001_EN_TO_ID.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 1001,
+      "expectedBlocks": 3003,
+      "expectedTraceIDs": 1001,
+      "scope": "Actual final8c consumer restore and export of completed1668 inference checkpoint. No final8c re-inference claimed; models/semantic/parser/storage/export components bind exactly; ETA-only output parity tested."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/PAUSE_BFCACHE_195_PAGES_PARTIAL.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+      "expectedPages": 195,
+      "expectedBlocks": 585,
+      "expectedTraceIDs": 195,
+      "scope": "Actual final8c consumer partial export after deliberate pause; before real BFCache navigation/back."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+      "expectedPages": 1500,
+      "expectedBlocks": 4500,
+      "expectedTraceIDs": 1500,
+      "scope": "Actual final8c consumer inference and downloaded partial translation. All pages/blocks included,3000translated1500rejected. Semantic acceptanceFAIL; not complete translated coverage.",
+      "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 2685742,
+      "completedAt": "2026-11-13T08:38:35.562Z",
+      "metricsWarning": "Inference calls are completed engine requests, not ONNX forward passes; uniqueInputs sums perblock, not globalunique."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_MATHEMATICS_EN_TO_ID.md",
+      "source": "tests/fixtures/mathematics.pdf",
+      "expectedPages": 1,
+      "expectedBlocks": 8,
+      "scope": "Actual final8c PDF\u2192local translation\u2192download:1translated7preserved,0rejected; math formula syntax/render only, not independent math approval."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_VECTOR_FIGURES_EN_TO_ID.md",
+      "source": "evidence/cp20/math/CP20_VECTOR_ONLY_FIGURES.pdf",
+      "expectedPages": 3,
+      "expectedBlocks": 9,
+      "scope": "Actual final8c vectorfigures PDF\u2192local translation\u2192download,9translated. Figure preservation/dedup/render tested; not human semantic approval."
+    }
+  ]
+}

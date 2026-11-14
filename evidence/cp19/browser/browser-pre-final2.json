@@ -1,0 +1,1000 @@
+{
+  "build": {
+    "base": "/r/b97ea4b61fa05096/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp19-b97ea4b61fa05096",
+    "sourceHash": "b97ea4b61fa0509640b973b912b1b6020ddc8505a75a21e8b8e462b75d914a70",
+    "version": "0.19.0"
+  },
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "platform": "Linux x86_64",
+  "hardwareConcurrency": 9,
+  "deviceMemory": 8,
+  "started": "2026-11-12T13:37:16.484Z",
+  "method": "actual Chrome browser; module harness with explicitly labelled fixture PDFs; mobile iframe is viewport only",
+  "results": [
+    {
+      "name": "Cold consumer frame lazy loading",
+      "pass": true,
+      "ms": 1,
+      "heapBefore": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "detail": {
+        "resources": [
+          {
+            "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/styles.css",
+            "bytes": 17406,
+            "ms": 51
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/main.js",
+            "bytes": 56318,
+            "ms": 51
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/storage.js",
+            "bytes": 7254,
+            "ms": 8
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/build-info.js",
+            "bytes": 300,
+            "ms": 8
+          }
+        ],
+        "viewport": {
+          "width": 390,
+          "scrollWidth": 375
+        },
+        "overflow": false
+      }
+    },
+    {
+      "name": "Local hosting headers",
+      "pass": true,
+      "ms": 7,
+      "heapBefore": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "detail": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "connection": "keep-alive",
+        "content-length": "13529",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:37:16 GMT",
+        "etag": "W/\"301d-1a1cff8e148\"",
+        "keep-alive": "timeout=5",
+        "last-modified": "Thu, 12 Nov 2026 13:35:56 GMT"
+      }
+    },
+    {
+      "name": "Worker/cache state",
+      "pass": true,
+      "ms": 13,
+      "heapBefore": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 13481654,
+        "totalJSHeapSize": 15312066
+      },
+      "detail": {
+        "storage": {
+          "quota": 10840572249,
+          "usage": 103154009,
+          "usageDetails": {
+            "caches": 102830592,
+            "indexedDB": 323417
+          }
+        },
+        "memory": {
+          "usedJSHeapSize": 13481654,
+          "totalJSHeapSize": 15312066
+        }
+      }
+    },
+    {
+      "name": "Service worker install diagnostic",
+      "pass": true,
+      "ms": 20,
+      "heapBefore": {
+        "usedJSHeapSize": 5149295,
+        "totalJSHeapSize": 12095455
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 5149295,
+        "totalJSHeapSize": 12095455
+      },
+      "detail": {
+        "installing": "installing"
+      }
+    },
+    {
+      "name": "Manifest bytes vs local preview responses",
+      "pass": true,
+      "ms": 22,
+      "heapBefore": {
+        "usedJSHeapSize": 5149295,
+        "totalJSHeapSize": 12095455
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 5149295,
+        "totalJSHeapSize": 12095455
+      },
+      "detail": [
+        {
+          "path": "/index.html",
+          "expectedBytes": 12317,
+          "actualBytes": 13529,
+          "expectedHash": "5fcbebd986985f7b4ad110cc2cf7dc4027cb3366a311954ff0b040145c0eceac",
+          "actualHash": "c41215ffacc675f95a769e2e1aee1c59a4caa8f410be02118a393b09e7a03d7b",
+          "pass": false
+        },
+        {
+          "path": "/r/b97ea4b61fa05096/app/main.js",
+          "expectedBytes": 56018,
+          "actualBytes": 56018,
+          "expectedHash": "4d5cdad5e2db41297d6464ef2977754ad715f24944a1ecd7535ca86306fd0dfb",
+          "actualHash": "4d5cdad5e2db41297d6464ef2977754ad715f24944a1ecd7535ca86306fd0dfb",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Read digital-en.pdf",
+      "pass": true,
+      "ms": 362,
+      "heapBefore": {
+        "usedJSHeapSize": 5865412,
+        "totalJSHeapSize": 12535696
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 5398879,
+        "totalJSHeapSize": 10239279
+      },
+      "detail": {
+        "pages": 1,
+        "text": "Scientific results\nThe intervention did not improve survival.\nThe hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.\nThe concentration was 10 μM and the Ca2+ concentration increased.\nThe evidence remains uncertain.\nThe solution set is ∅.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Scientific results",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0005",
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0006",
+            "type": "paragraph",
+            "text": "The solution set is ∅.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 46715
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read digital-id.pdf",
+      "pass": true,
+      "ms": 1066,
+      "heapBefore": {
+        "usedJSHeapSize": 5398879,
+        "totalJSHeapSize": 10239279
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 5587092,
+        "totalJSHeapSize": 10171752
+      },
+      "detail": {
+        "pages": 1,
+        "text": "Hasil ilmiah\nIntervensi tidak meningkatkan kelangsungan hidup.\nRegresi linear mengestimasi ukuran efek.\nKonsentrasi sampel adalah 10 μM.\nBukti masih belum pasti.\nHimpunan penyelesaian adalah ∅.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Hasil ilmiah",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "Intervensi tidak meningkatkan kelangsungan hidup.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "Regresi linear mengestimasi ukuran efek.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "Konsentrasi sampel adalah 10 μM.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0005",
+            "type": "paragraph",
+            "text": "Bukti masih belum pasti.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0006",
+            "type": "paragraph",
+            "text": "Himpunan penyelesaian adalah ∅.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 39784
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read mathematics.pdf",
+      "pass": true,
+      "ms": 1026,
+      "heapBefore": {
+        "usedJSHeapSize": 5587092,
+        "totalJSHeapSize": 10171752
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6287604,
+        "totalJSHeapSize": 10364348
+      },
+      "detail": {
+        "pages": 1,
+        "text": "||𝑥 − 4| − 4| < 1\n||x − 4| − 4| > 1\n|𝑥 + 4| + |𝑥 + 3| ≤ 0\nx ≥ 2\n∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩\n(−∞, −3) ∪ (2, ∞)\nSolve the inequality. Express the solution set in interval notation.\nID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+        "blocks": [
+          {
+            "id": "p1-math-1",
+            "type": "formula",
+            "text": "||𝑥 − 4| − 4| < 1",
+            "translatable": false
+          },
+          {
+            "id": "p1-math-2",
+            "type": "formula",
+            "text": "||x − 4| − 4| > 1",
+            "translatable": false
+          },
+          {
+            "id": "p1-math-3",
+            "type": "formula",
+            "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+            "translatable": false
+          },
+          {
+            "id": "p1-math-4",
+            "type": "formula",
+            "text": "x ≥ 2",
+            "translatable": false
+          },
+          {
+            "id": "p1-math-5",
+            "type": "formula",
+            "text": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+            "translatable": false
+          },
+          {
+            "id": "p1-math-6",
+            "type": "formula",
+            "text": "(−∞, −3) ∪ (2, ∞)",
+            "translatable": false
+          },
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Solve the inequality. Express the solution set in interval notation.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 39313
+          },
+          {
+            "path": "assets/p1-math-1.png",
+            "size": 3147
+          },
+          {
+            "path": "assets/p1-math-2.png",
+            "size": 3204
+          },
+          {
+            "path": "assets/p1-math-3.png",
+            "size": 4560
+          },
+          {
+            "path": "assets/p1-math-4.png",
+            "size": 2097
+          },
+          {
+            "path": "assets/p1-math-5.png",
+            "size": 5383
+          },
+          {
+            "path": "assets/p1-math-6.png",
+            "size": 4997
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read table-two-column.pdf",
+      "pass": true,
+      "ms": 1015,
+      "heapBefore": {
+        "usedJSHeapSize": 6287604,
+        "totalJSHeapSize": 10364348
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6757026,
+        "totalJSHeapSize": 10533794
+      },
+      "detail": {
+        "pages": 1,
+        "text": "Left column scientific prose line 1.\nLeft column scientific prose line 2.\nLeft column scientific prose line 3.\nLeft column scientific prose line 4.\nRight column results and discussion 1.\nRight column results and discussion 2.\nRight column results and discussion 3.\nRight column results and discussion 4.\nTreatment Outcome\nControl group 10 mg\nIntervention group 20 mg",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Left column scientific prose line 1.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "Left column scientific prose line 2.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "Left column scientific prose line 3.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "Left column scientific prose line 4.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0005",
+            "type": "paragraph",
+            "text": "Right column results and discussion 1.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0006",
+            "type": "paragraph",
+            "text": "Right column results and discussion 2.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0007",
+            "type": "paragraph",
+            "text": "Right column results and discussion 3.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0008",
+            "type": "paragraph",
+            "text": "Right column results and discussion 4.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0009",
+            "type": "table",
+            "text": "Treatment Outcome\nControl group 10 mg\nIntervention group 20 mg",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": [
+              "Layout dua kolom terdeteksi. Periksa urutan baca di pratinjau."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 58916
+          },
+          {
+            "path": "assets/p0001-b0009.png",
+            "size": 15467
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read rotated.pdf",
+      "pass": true,
+      "ms": 1014,
+      "heapBefore": {
+        "usedJSHeapSize": 6757026,
+        "totalJSHeapSize": 10533794
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6106854,
+        "totalJSHeapSize": 8862126
+      },
+      "detail": {
+        "pages": 1,
+        "text": "Digital upright heading\nRotated scientific label: concentration 10 mg.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Digital upright heading",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "Rotated scientific label: concentration 10 mg.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 19594
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read password.pdf",
+      "pass": true,
+      "ms": 1014,
+      "heapBefore": {
+        "usedJSHeapSize": 6106854,
+        "totalJSHeapSize": 8862126
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6243225,
+        "totalJSHeapSize": 8336585
+      },
+      "detail": {
+        "pages": 1,
+        "text": "Scientific results\nThe intervention did not improve survival.\nThe hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.\nThe concentration was 10 μM and the Ca2+ concentration increased.\nThe evidence remains uncertain.\nThe solution set is ∅.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "Scientific results",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0005",
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0006",
+            "type": "paragraph",
+            "text": "The solution set is ∅.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "pdf-text",
+            "warnings": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 46715
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read scan.pdf",
+      "pass": true,
+      "ms": 3028,
+      "heapBefore": {
+        "usedJSHeapSize": 6243225,
+        "totalJSHeapSize": 8336585
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 5872448,
+        "totalJSHeapSize": 8898692
+      },
+      "detail": {
+        "pages": 1,
+        "text": "SYNTHETIC SCAN FIXTURE\nThe intervention did not improve survival.\nThe hazard ratio was 1.42.\nThe evidence remains uncertain.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "paragraph",
+            "text": "SYNTHETIC SCAN FIXTURE",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "ocr",
+            "warnings": [
+              "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 62576
+          }
+        ]
+      }
+    },
+    {
+      "name": "Read mixed-digital-500-scan.pdf",
+      "pass": true,
+      "ms": 3062,
+      "heapBefore": {
+        "usedJSHeapSize": 5872448,
+        "totalJSHeapSize": 8898692
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6790202,
+        "totalJSHeapSize": 9569818
+      },
+      "detail": {
+        "pages": 1,
+        "text": "MIXED PDF COVERAGE AUDIT\nThis digital introduction describes the research design and the interpretation of the findings. The main results are printed in the scanned portion below. The document deliberately contains both machine-readable prose and an image containing essential scientific results. All text belongs to one article and the reader should process the two regions in reading order. This paragraph is intentionally long enough to exceed the current automatic OCR threshold. The image must remain readable and the result statement must be included in the translation.\nRESULTS (IMAGE REGION)\nThe intervention did not improve survival. The hazard ratio was 1.42, with a 95% confidence interval of 1.11 to 1.82. This crucial finding appears only in\nthe image region.",
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "type": "heading",
+            "text": "MIXED PDF COVERAGE AUDIT",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0002",
+            "type": "paragraph",
+            "text": "This digital introduction describes the research design and the interpretation of the findings. The main results are printed in the scanned portion below. The document deliberately contains both machine-readable prose and an image containing essential scientific results. All text belongs to one article and the reader should process the two regions in reading order. This paragraph is intentionally long enough to exceed the current automatic OCR threshold. The image must remain readable and the result statement must be included in the translation.",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0003",
+            "type": "paragraph",
+            "text": "RESULTS (IMAGE REGION)",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0004",
+            "type": "paragraph",
+            "text": "The intervention did not improve survival. The hazard ratio was 1.42, with a 95% confidence interval of 1.11 to 1.82. This crucial finding appears only in",
+            "translatable": true
+          },
+          {
+            "id": "p0001-b0005",
+            "type": "heading",
+            "text": "the image region.",
+            "translatable": true
+          }
+        ],
+        "coverage": [
+          {
+            "source": "mixed",
+            "warnings": [
+              "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "size": 169103
+          }
+        ]
+      }
+    },
+    {
+      "name": "Corrupt PDF rejected",
+      "pass": true,
+      "ms": 79,
+      "heapBefore": {
+        "usedJSHeapSize": 6790202,
+        "totalJSHeapSize": 9569818
+      },
+      "heapAfter": {
+        "usedJSHeapSize": 6932726,
+        "totalJSHeapSize": 9832178
+      },
+      "detail": {
+        "rejected": true
+      }
+    }
+  ],
+  "hosting": {
+    "scope": "managed local preview; not Cloudflare deployment",
+    "headers": {
+      "accept-ranges": "bytes",
+      "cache-control": "public, max-age=0",
+      "connection": "keep-alive",
+      "content-length": "13529",
+      "content-type": "text/html; charset=utf-8",
+      "date": "Thu, 12 Nov 2026 13:37:16 GMT",
+      "etag": "W/\"301d-1a1cff8e148\"",
+      "keep-alive": "timeout=5",
+      "last-modified": "Thu, 12 Nov 2026 13:35:56 GMT"
+    }
+  },
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4173/qa/browser.css",
+      "bytes": 641,
+      "ms": 30
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/browser.js",
+      "bytes": 9511,
+      "ms": 31
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "bytes": 13829,
+      "ms": 15
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/translation-table-contract.js",
+      "bytes": 2001,
+      "ms": 7
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/build-info.js",
+      "bytes": 685,
+      "ms": 7
+    },
+    {
+      "url": "http://127.0.0.1:4173/",
+      "bytes": 13829,
+      "ms": 45
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/offline-assets.json",
+      "bytes": 45020,
+      "ms": 6
+    },
+    {
+      "url": "http://127.0.0.1:4173/index.html",
+      "bytes": 300,
+      "ms": 4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/main.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/pdf-reader.js",
+      "bytes": 32030,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 21095,
+      "ms": 54
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/math-geometry.js",
+      "bytes": 19818,
+      "ms": 14
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/digital-en.pdf",
+      "bytes": 300,
+      "ms": 4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.min.mjs",
+      "bytes": 454969,
+      "ms": 47
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 1262698,
+      "ms": -1
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 535,
+      "ms": -5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 4
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/digital-id.pdf",
+      "bytes": 300,
+      "ms": 7
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -13
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/mathematics.pdf",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -1
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/table-two-column.pdf",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -1
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/rotated.pdf",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -1
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -6
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/password.pdf",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -2
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/scan.pdf",
+      "bytes": 300,
+      "ms": 6
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -1
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/ocr/tesseract.esm.min.js",
+      "bytes": 63520,
+      "ms": 6
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/ocr/worker.min.js",
+      "bytes": 111607,
+      "ms": -3
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 4
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/mixed-digital-500-scan.pdf",
+      "bytes": 300,
+      "ms": 6
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -2
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/ocr/worker.min.js",
+      "bytes": 300,
+      "ms": -4
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.worker.js",
+      "bytes": 300,
+      "ms": -5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/app/layout.js",
+      "bytes": 300,
+      "ms": 3
+    },
+    {
+      "url": "http://127.0.0.1:4173/qa/fixtures/corrupt.pdf",
+      "bytes": 300,
+      "ms": 5
+    },
+    {
+      "url": "http://127.0.0.1:4173/r/b97ea4b61fa05096/vendor/pdfjs/pdf.worker.min.mjs",
+      "bytes": 300,
+      "ms": -2
+    }
+  ]
+}

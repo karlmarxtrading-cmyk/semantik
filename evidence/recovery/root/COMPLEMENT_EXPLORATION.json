@@ -1,0 +1,258 @@
+{
+  "method": "Actual local model fragment exploration; no whole-document or human-quality claim",
+  "build": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/recovery/work/app",
+    "adapterSHA256": "c8b0e501231befb3d07b1ae8b38c8c7a6f044a431910a86a44b14e71cee32fde",
+    "rulesSHA256": "b4e43dcd263e60bfa9127eac1862786e453c455bb4ff48458ff9fe8b40c0af9c",
+    "spansSHA256": "2536409df0a5d80efc5c86ef5621281e6eb5ddb22404eb04aa4d99ecb236be01",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "rows": [
+    {
+      "source": "Perbedaan tersebut bukan bukti",
+      "text": "The difference is not evidence",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 5,
+      "outputTokens": 5,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 5,
+        "outputTokens": 5,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Perbedaan tersebut bukan bukti"
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Suatu pengamatan dicatat secara keliru.",
+      "text": "Suatu pengamatan dicatat secara keliru.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 0,
+        "cacheHits": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "uniqueInputs": 0
+      },
+      "attempts": [],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Peran pasif pencatatan pengamatan belum dipertahankan secara jelas.",
+          "segmentSource": null,
+          "candidateText": null,
+          "rawCandidate": null
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false
+    },
+    {
+      "source": "Bukti ini tidak menunjukkan",
+      "text": "The evidence doesn't show",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 5,
+      "outputTokens": 6,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 5,
+        "outputTokens": 6,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Bukti ini tidak menunjukkan"
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Semua sampel telah terkontaminasi.",
+      "text": "All sample are contaminated.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 10,
+      "outputTokens": 10,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 10,
+        "outputTokens": 10,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Semua sampel telah terkontaminasi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Pengamatan tersebut tidak membuktikan",
+      "text": "Such observation does not prove",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 5,
+      "outputTokens": 5,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 5,
+        "outputTokens": 5,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Pengamatan tersebut tidak membuktikan"
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Tidak ada perubahan pada suhu.",
+      "text": "There's no change in temperature.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 7,
+      "outputTokens": 8,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 7,
+        "outputTokens": 8,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Tidak ada perubahan pada suhu."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    }
+  ]
+}

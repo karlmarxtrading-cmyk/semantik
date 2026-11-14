@@ -1,0 +1,223 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "method": "Actual Chrome downloads; four separate PDF-read/inference/ZIP outputs. Optional ZIP exports, not the primary standalone Markdown flow.",
+  "rows": [
+    {
+      "name": "mathematics-en-id.zip",
+      "sha256": "fd71b8efc881a3db16a6485d4f86057d98600285bdd1697f7fc04ec4b0eaa0e1",
+      "crcPass": true,
+      "files": 17,
+      "hashes": [
+        {
+          "path": "JURNAL_ASLI.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_TERJEMAHAN.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_BILINGUAL.md",
+          "pass": true
+        },
+        {
+          "path": "LAPORAN_QA.md",
+          "pass": true
+        },
+        {
+          "path": "LEDGER_BAGIAN.csv",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_SUMBER.pdf",
+          "pass": true
+        },
+        {
+          "path": "EXPORT_METADATA.json",
+          "pass": true
+        },
+        {
+          "path": "PROVENANCE.json",
+          "pass": true
+        },
+        {
+          "path": "assets/halaman-0001.jpg",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-1.png",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-2.png",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-3.png",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-4.png",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-5.png",
+          "pass": true
+        },
+        {
+          "path": "assets/p1-math-6.png",
+          "pass": true
+        }
+      ],
+      "allPass": true
+    },
+    {
+      "name": "digital-en-en-id.zip",
+      "sha256": "878c062499e50378ffedd9a765323e209e751d2dd8ecd6c232d4cd22dc4fa6c7",
+      "crcPass": true,
+      "files": 11,
+      "hashes": [
+        {
+          "path": "JURNAL_ASLI.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_TERJEMAHAN.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_BILINGUAL.md",
+          "pass": true
+        },
+        {
+          "path": "LAPORAN_QA.md",
+          "pass": true
+        },
+        {
+          "path": "LEDGER_BAGIAN.csv",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_SUMBER.pdf",
+          "pass": true
+        },
+        {
+          "path": "EXPORT_METADATA.json",
+          "pass": true
+        },
+        {
+          "path": "PROVENANCE.json",
+          "pass": true
+        },
+        {
+          "path": "assets/halaman-0001.jpg",
+          "pass": true
+        }
+      ],
+      "allPass": true
+    },
+    {
+      "name": "table-two-column-en-id.zip",
+      "sha256": "dfe158bd54875a44fe3fde8c9746f19d33a1ab77a1b8c3355a8049c40bd065a1",
+      "crcPass": true,
+      "files": 12,
+      "hashes": [
+        {
+          "path": "JURNAL_ASLI.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_TERJEMAHAN.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_BILINGUAL.md",
+          "pass": true
+        },
+        {
+          "path": "LAPORAN_QA.md",
+          "pass": true
+        },
+        {
+          "path": "LEDGER_BAGIAN.csv",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_SUMBER.pdf",
+          "pass": true
+        },
+        {
+          "path": "EXPORT_METADATA.json",
+          "pass": true
+        },
+        {
+          "path": "PROVENANCE.json",
+          "pass": true
+        },
+        {
+          "path": "assets/halaman-0001.jpg",
+          "pass": true
+        },
+        {
+          "path": "assets/p0001-b0009.png",
+          "pass": true
+        }
+      ],
+      "allPass": true
+    },
+    {
+      "name": "digital-id-id-en.zip",
+      "sha256": "ef488f401c4fc3eb75f9534910c9dcbc8d93052506639ae0faf66d74129c38d9",
+      "crcPass": true,
+      "files": 11,
+      "hashes": [
+        {
+          "path": "JURNAL_ASLI.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_TERJEMAHAN.md",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_BILINGUAL.md",
+          "pass": true
+        },
+        {
+          "path": "LAPORAN_QA.md",
+          "pass": true
+        },
+        {
+          "path": "LEDGER_BAGIAN.csv",
+          "pass": true
+        },
+        {
+          "path": "JURNAL_SUMBER.pdf",
+          "pass": true
+        },
+        {
+          "path": "EXPORT_METADATA.json",
+          "pass": true
+        },
+        {
+          "path": "PROVENANCE.json",
+          "pass": true
+        },
+        {
+          "path": "assets/halaman-0001.jpg",
+          "pass": true
+        }
+      ],
+      "allPass": true
+    }
+  ]
+}

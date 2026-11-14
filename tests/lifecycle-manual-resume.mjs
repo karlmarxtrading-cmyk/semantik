@@ -1,0 +1,23 @@
+import {indexedDB} from '../tools/node_modules/fake-indexeddb/build/esm/index.js';
+import {loadMain} from './lifecycle-harness.mjs';
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+globalThis.indexedDB=indexedDB;const cp=await import('../app/app/storage.js');
+let engineCalls=0;
+const translation={detectLanguage:()=> 'en',auditTranslation:()=>[],Translator:class{async prepare(){}async translate(text){engineCalls++;return{text:'Model '+text,status:'translated',outcome:'translated',issues:[]};}cancel(){}}};
+const file=new Blob(['%PDF-1.7\n% labelled manual-resume fixture\n']);file.name='manual-resume-fixture.pdf';
+const source10='The sample concentration was 10 μM and the Ca2+ concentration increased.';
+const source20=source10.replace('10 μM','20 μM');
+const manual='Konsentrasi sampel adalah 20 μM dan konsentrasi Ca2+ meningkat.';
+const block={id:'p1b1',page:1,type:'paragraph',text:source10,originalText:source10,target:'Original machine 10 μM.',status:'translated',sourceIssues:[],issues:[]};
+const doc={numPages:1,pages:[{number:1,blocks:[block]}],blocks:[block],assets:[],warnings:[]};
+let h=await loadMain({checkpoint:cp,translation});h.element('target-language').value='id';h.element('source-language').value='en';
+const config=h.api.readConfig();Object.assign(h.api.state,{file,pdf:{numPages:1,destroy:async()=>{}},document:doc,config,signature:JSON.stringify(config),status:'complete'});h.api.state.token=await cp.createCheckpoint(file,h.api.meta());await cp.saveExtraction(doc,h.api.state.token);
+await h.api.correctSource(block,source20,doc);await h.api.runNow(true);h.api.editBlock(block,manual,doc);await h.api.flushEdits();assert.equal(block.status,'edited');const editTime=block.editedAt;
+async function reload(){h.api.releaseDocumentLock();h=await loadMain({checkpoint:cp,translation});await h.api.resumeNow();}
+await reload();let saved=h.api.state.document.blocks[0];assert.equal(saved.status,'edited');assert.equal(saved.editedAt,editTime);assert.equal(saved.target,manual);assert.equal(saved.text,source20);assert.equal(saved.originalText,source10);
+const label=h.element('block-list').children[0].children[0].children[1].textContent;assert.equal(label,'Perlu ditinjau');assert.equal(h.api.completed(saved),true);
+const beforeCalls=engineCalls;await h.api.runNow(true);assert.equal(engineCalls,beforeCalls);assert.equal(saved.target,manual);assert.equal(saved.status,'edited');await reload();saved=h.api.state.document.blocks[0];assert.equal(saved.target,manual);assert.equal(saved.status,'edited');assert.equal(saved.editedAt,editTime);
+const pending={id:'p1b2',page:1,type:'paragraph',text:'A second observation requires translation.',sourceIssues:[],issues:[]};h.api.state.document.blocks.push(pending);h.api.state.document.pages[0].blocks.push(pending);await h.api.runNow(true);assert.equal(engineCalls,beforeCalls+1);assert.equal(saved.target,manual);assert.equal(saved.status,'edited');assert.equal(saved.text,source20);assert.equal(saved.originalText,source10);
+const report={method:'Actual main/storage modules; fake-indexeddb and VM DOM boundaries; controlled translation transport. No new browser/model claim. App source unchanged.',sourceSha256:createHash('sha256').update(await readFile(new URL('../app/app/main.js',import.meta.url))).digest('hex'),observedLabel:label,persistedStatus:saved.status,manualTarget:saved.target,source:saved.text,originalText:saved.originalText,results:[{name:'corrected source -> translated -> manual target edit -> reload -> unchanged-config rerun -> reload',result:'PASS',manualBlockAdditionalEngineCalls:0},{name:'pending different block translated on rerun without changing manual target or correction',result:'PASS',otherBlockEngineCalls:1}]};h.api.releaseDocumentLock();await writeFile(new URL('../evidence/lifecycle/manual-target-resume-rerun.json',import.meta.url),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

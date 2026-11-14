@@ -1,0 +1,16 @@
+{
+  "freezeSourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+  "method": "Affected-only post-freeze correction; full 70-row v1 regression retained separately.",
+  "cases": [
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator."
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang."
+    }
+  ]
+}

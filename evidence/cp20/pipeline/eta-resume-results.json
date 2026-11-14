@@ -1,0 +1,29 @@
+{
+  "method": "Actual ETA helper, actual pipeline with controlled PDF/model/page-store boundaries, and actual main resume with controlled DOM/storage. Deterministic timing inputs isolate the estimator; no browser performance claim.",
+  "sourceHashes": {
+    "main.js": "369db8e7cdd39c327f64b76a8e263eaa2e3a06c8b5474f72b40202b091033a12",
+    "long-document.js": "34d9cdfde96073a6970f9b661f3c4f1b2ddbd4fec04385889e5ad3281496e17b"
+  },
+  "checks": [
+    {
+      "name": "123 fast cached pages and a partial resumed page cannot inflate throughput",
+      "status": "PASS"
+    },
+    {
+      "name": "ETA requires three new full-page measurements and retains only recent samples",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual pipeline excludes cached replay and partial resumed page from ETA samples",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual resume restores bounded quota recovery/failure history and preserves it in subsequent metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "ETA-only patch preserves exact document records, atomic writes, inference requests and non-ETA progress",
+      "status": "PASS"
+    }
+  ]
+}

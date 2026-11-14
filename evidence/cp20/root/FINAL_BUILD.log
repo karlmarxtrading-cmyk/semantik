@@ -1,0 +1,38 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "files": 300,
+  "bytes": 252056025,
+  "maxAssetBytes": 15344608
+}
+{
+  "build": {
+    "release": "cp20-4694bad623ed9b19",
+    "version": "0.20.0",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4694bad623ed9b19/"
+  },
+  "files": 598,
+  "bytes": 504134570,
+  "maxAssetBytes": 15344608,
+  "retainedReleases": [
+    {
+      "base": "/r/6ed0d134e1770b27/",
+      "files": 297,
+      "bytes": 252003471,
+      "inventorySha256": "5c936a25f699af490a900905bc68bcbd6e24d6f2f47a99b332d802df52e250f5"
+    }
+  ]
+}

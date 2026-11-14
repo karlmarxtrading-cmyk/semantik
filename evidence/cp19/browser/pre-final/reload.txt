@@ -1,0 +1,10 @@
+- textbox "Search"
+- heading "~ /" [level=1]:
+  - link "~":
+    - /url: /
+  - text: /
+- list:
+  - link "r 11/12/2026 8:35:56 PM":
+    - /url: /r
+    - generic: r
+    - generic: 11/12/2026 8:35:56 PM

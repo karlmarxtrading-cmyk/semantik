@@ -1,0 +1,563 @@
+EXACT SOURCE EXCERPTS FROM UPLOADED CP18; NO MODIFICATIONS
+Manifest hash and original full archive identity are in file_inventory.json.
+
+
+FILE: index.html
+28:       <div class="workspace-top"><h2 id="workspace-title">Mulai dengan jurnal Anda</h2><span class="label-tag">PDF SAJA</span></div>
+29:       <div class="setup-grid">
+30:         <div class="upload-column">
+31:           <label id="drop-zone" class="drop-zone" for="pdf-input">
+32:             <input type="file" id="pdf-input" accept=".pdf,application/pdf" aria-describedby="file-help">
+33:             <span class="file-symbol" aria-hidden="true"><svg viewBox="0 0 48 56"><path d="M10 2h20l12 12v40H10Z"/><path d="M30 2v14h12M18 27h16M18 34h16M18 41h10"/></svg><span>PDF</span></span>
+34:             <strong>Pilih jurnal PDF</strong><span>atau letakkan berkas di sini</span><small id="file-help">PDF digital atau hasil scan · hingga 100 MiB / 300 halaman</small>
+35:           </label>
+36:           <div id="file-card" class="file-card" hidden><span class="file-badge">PDF</span><div class="file-details"><strong id="file-name"></strong><span id="file-meta"></span></div><button id="remove-file" class="icon-button" aria-label="Hapus PDF yang dipilih">×</button></div>
+37:           <p class="privacy-line"><span aria-hidden="true">◉</span> Berkas dibaca di browser, bukan diunggah ke server.</p>
+38:         </div>
+39:         <div class="settings-column">
+40:           <label class="field-label" for="target-language">Terjemahkan ke</label>
+41:           <select id="target-language"><option value="id">Bahasa Indonesia</option><option value="en">English</option></select>
+42:           <p class="field-hint">Bahasa sumber dikenali otomatis. Bisa Anda sesuaikan.</p>
+43:           <details id="advanced"><summary>Sesuaikan pembacaan <span>Opsional</span></summary><div class="advanced-body">
+44:             <label class="field-label" for="source-language">Bahasa sumber</label><select id="source-language"><option value="auto">Deteksi otomatis</option><option value="en">English</option><option value="id">Bahasa Indonesia</option></select>
+45:             <label class="field-label" for="layout-mode">Susunan halaman</label><select id="layout-mode"><option value="auto">Deteksi otomatis</option><option value="single">Satu kolom</option><option value="two">Dua kolom</option></select>
+46:             <label class="field-label" for="glossary">Istilah yang ingin dikunci</label><textarea id="glossary" rows="3" maxlength="12000" placeholder="machine learning = pembelajaran mesin" aria-describedby="glossary-help"></textarea><p id="glossary-help" class="field-hint">Satu pasangan istilah per baris: sumber = terjemahan. Maksimal 100 pasangan, mengikuti arah bahasa yang dipilih.</p>
+47:             <button id="extract-button" class="text-button" disabled>Ekstrak PDF tanpa menerjemahkan</button>
+48:           </div></details>
+49:           <button id="translate-button" class="button primary-action" disabled><span>Terjemahkan jurnal</span><svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button>
+50:           <p class="download-note" id="model-note">Pada penggunaan pertama, model bahasa diunduh sekali (sekitar 105 MB per arah). Proses berikutnya menggunakan salinan lokal.</p>
+51:         </div>
+52:       </div>
+53:       <div class="workflow-strip" aria-label="Tahapan penggunaan"><span><b>01</b> Pilih PDF</span><span><b>02</b> Terjemahkan lokal</span><span><b>03</b> Tinjau & unduh</span></div>
+54:     </section>
+55:     <section id="progress-panel" class="progress-panel" hidden aria-labelledby="progress-title"><div class="progress-heading"><div><p class="eyebrow" id="progress-stage">MEMBACA DOKUMEN</p><h2 id="progress-title">Menyiapkan jurnal Anda…</h2></div><button id="cancel-button" class="button secondary small">Hentikan</button></div><progress id="job-progress" max="100" value="0" aria-label="Progres pekerjaan"></progress><p id="progress-detail" role="status" aria-live="polite"></p><p class="field-hint">Biarkan tab ini terbuka. Hasil yang selesai disimpan di perangkat agar dapat dilanjutkan.</p></section>
+56:     <details id="source-preview" class="source-preview" hidden><summary><span>Lihat PDF sumber</span><span id="preview-label">Halaman 1</span></summary><div class="preview-body"><div class="preview-controls"><button id="preview-prev" class="button secondary small" aria-label="Halaman PDF sebelumnya">←</button><label for="preview-page">Halaman</label><input id="preview-page" type="number" min="1" value="1"><span id="preview-total"></span><button id="preview-next" class="button secondary small" aria-label="Halaman PDF berikutnya">→</button></div><p id="preview-status" role="status"></p><div class="canvas-wrap"><canvas id="pdf-canvas" aria-label="Pratinjau halaman PDF sumber"></canvas></div></div></details>
+57:     <section id="results" class="results" hidden aria-labelledby="results-title">
+58:       <div class="results-heading"><div><p class="eyebrow">RUANG TINJAU</p><h2 id="results-title">Bacaan Anda, berdampingan.</h2><p id="result-summary"></p></div><span id="result-status" class="status-tag">Hasil sementara</span></div>
+59:       <div id="qa-summary" class="qa-summary"></div>
+60:       <div class="result-toolbar"><div class="page-controls"><button id="result-prev" class="button secondary small" aria-label="Halaman hasil sebelumnya">←</button><label for="result-page">Halaman</label><select id="result-page"></select><button id="result-next" class="button secondary small" aria-label="Halaman hasil berikutnya">→</button></div><label class="checkbox-label"><input id="review-only" type="checkbox"> Hanya yang perlu ditinjau</label><button id="view-source" class="text-button">Lihat halaman asli</button></div>
+61:       <div class="column-labels"><span>TEKS SUMBER</span><span>HASIL · DAPAT ANDA EDIT</span></div><div id="block-list"></div>
+62:       <div id="empty-results" class="empty-results" hidden>Tidak ada bagian yang perlu ditinjau pada halaman ini.</div>
+63:       <div class="result-bottom"><span id="page-info"></span><div class="button-row"><button id="result-prev-bottom" class="text-button">← Sebelumnya</button><button id="result-next-bottom" class="text-button">Berikutnya →</button></div></div>
+64:       <div class="export-panel"><div><h3>Simpan bacaan Anda</h3><p>Markdown dapat diedit. Paket lengkap menyertakan gambar halaman, dokumen bilingual, dan catatan pemeriksaan.</p></div><div class="export-actions"><button id="download-translation" class="button" disabled>Unduh terjemahan .md</button><button id="download-zip" class="button secondary">Paket lengkap .zip</button><div class="export-links"><button id="download-source" class="text-button">Teks sumber .md</button><button id="download-bilingual" class="text-button" disabled>Bilingual .md</button></div></div></div>
+65:       <p class="review-note">Pemeriksaan otomatis membantu menemukan perubahan angka dan bagian yang bermasalah. Tinjau istilah, tabel, rumus, dan makna ilmiah sebelum memakai hasil untuk penelitian.</p>
+
+FILE: _headers
+1: /*
+2:   Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; connect-src 'self'; img-src 'self' data: blob:; font-src 'self' data: blob:; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+3:   X-Content-Type-Options: nosniff
+4:   Referrer-Policy: no-referrer
+5:   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+6:   Cross-Origin-Opener-Policy: same-origin
+7:   Cache-Control: public, max-age=0, must-revalidate
+8: 
+9: /sw.js
+10:   Content-Type: application/javascript; charset=utf-8
+11:   Cache-Control: no-cache
+12: /r/*
+13:   Cache-Control: public, max-age=31536000, immutable
+14: /r/*.mjs
+15:   Content-Type: application/javascript; charset=utf-8
+16: /r/*.js
+17:   Content-Type: application/javascript; charset=utf-8
+18: /r/*.wasm
+19:   Content-Type: application/wasm
+20: /r/*.webmanifest
+21:   Content-Type: application/manifest+json
+22: /r/7a8e787a497535f5/models/*
+23:   Content-Type: application/octet-stream
+24:   Content-Encoding: identity
+
+FILE: sw.js
+3: const RECORDS=new Map(CONFIG.files.map(x=>[x.path,x]));
+4: const hex=bytes=>[...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('');
+5: async function verified(response,record){
+6:   if(!response?.ok)return false;
+7:   const bytes=await response.clone().arrayBuffer();
+8:   return bytes.byteLength===record.size&&hex(await crypto.subtle.digest('SHA-256',bytes))===record.sha256;
+9: }
+10: const unavailable=()=>new Response('Komponen rilis ini belum tersedia atau berubah. Simpan pekerjaan; hubungkan jaringan atau muat ulang untuk memakai rilis baru.',{status:503,headers:{'Content-Type':'text/plain; charset=utf-8','X-Semantik-Integrity':'rejected'}});
+11: async function pinned(path,request){
+12:   const record=RECORDS.get(path);
+13:   if(!record)return unavailable();
+14:   let cache;
+15:   try{cache=await caches.open(CONFIG.cache);}catch{}
+16:   if(cache){
+17:     const cached=await cache.match(path);
+18:     if(cached&&await verified(cached,record))return cached;
+19:     if(cached)await cache.delete(path).catch(()=>{});
+20:   }
+21:   let response;
+22:   try{response=await fetch(request||path,{cache:'no-cache'});}catch{return unavailable();}
+23:   if(!await verified(response,record))return unavailable();
+24:   if(cache)try{await cache.put(path,response.clone());}catch{}
+25:   return response;
+26: }
+27: self.addEventListener('install',event=>{
+28:   // Existing work retains its release. Only the light shell is precached.
+29:   event.waitUntil((async()=>{
+30:     const cache=await caches.open(CONFIG.cache);
+31:     for(const path of CONFIG.shell){const r=await pinned(path);if(!r.ok)throw Error('Release shell integrity failed');await cache.put(path,r);}
+32:   })());
+33: });
+34: self.addEventListener('activate',event=>{
+35:   // Retain verified old releases for rollback; never erase an offline workspace.
+36:   event.waitUntil(self.clients.claim());
+37: });
+38: self.addEventListener('fetch',event=>{
+39:   const req=event.request,url=new URL(req.url);
+40:   if(req.method!=='GET'||url.origin!==self.location.origin)return;
+41:   // Model shards have independent transport/decoded hashes in the worker.
+42:   if(url.pathname.startsWith(CONFIG.base+'models/'))return;
+43:   const navigation=req.mode==='navigate'&&(url.pathname==='/'||url.pathname==='/index.html');
+44:   const path=navigation?'/index.html':url.pathname;
+45:   if(RECORDS.has(path)&&(!url.search||navigation))event.respondWith(pinned(path,navigation?'/index.html':req));
+46:   else if(url.pathname.startsWith(CONFIG.base))event.respondWith(Promise.resolve(unavailable()));
+47: });
+
+FILE: r/7a8e787a497535f5/app/main.js
+16: const isReviewed = block => Boolean(block.userReviewed);
+17: const needsReview = block => !isReviewed(block) && (block.status === 'review' || (block.issues?.length || 0) > 0 || !Object.hasOwn(block, 'target'));
+18: const hasTarget = block => Object.hasOwn(block, 'target') && typeof block.target === 'string' && (!block.text?.trim() || Boolean(block.target.trim()));
+19: function notice(text, kind = '') { if(state.dirty && kind !== 'error'){text='Perubahan belum tersimpan di browser. Unduh hasil sebelum menutup tab, atau coba simpan kembali. '+text;kind='';} $('notice').textContent = text; $('notice').className = `notice ${kind}`; $('notice').hidden = !text; }
+20: function bytes(value) { return value >= 1024*1024 ? `${(value / 1024 / 1024).toFixed(1)} MiB` : `${Math.ceil(value / 1024)} KiB`; }
+21: const retryable = block => !block.userReviewed && block.status!=='edited' && (block.retryable || block.sourcePreserved || ['failed','rejected'].includes(block.outcome));
+22: const completed = block => hasTarget(block) && !retryable(block);
+23: function stats() {
+24:   const blocks=(state.document||state.prior?.document)?.blocks||[], counts={total:blocks.length,translated:0,preserved:0,rejected:0,failed:0,pending:0,review:0};
+25:   for(const b of blocks){
+26:     if(!hasTarget(b))counts.pending++;
+27:     else if(b.outcome==='failed')counts.failed++;
+28:     else if(b.outcome==='rejected'||b.sourcePreserved)counts.rejected++;
+29:     else if(b.status==='preserved')counts.preserved++;
+30:     else counts.translated++;
+31:     if(needsReview(b))counts.review++;
+32:   }
+33:   counts.done=counts.translated+counts.preserved;counts.attempted=counts.total-counts.pending;return counts;
+202:   refreshSaveStatus();
+203:   updateExportButtons();
+204: }
+205: function updateExportButtons() {
+206:   const available = Boolean((state.document||state.prior?.document)?.blocks?.length);
+207:   for (const id of ['download-source','download-zip']) $(id).disabled = state.busy || !available;
+365:     const language = config.source === 'auto' ? module.detectLanguage(sample) : config.source;
+366:     if (language === 'unknown' && sample.trim()) {
+367:       $('advanced').open = true; $('source-language').focus();
+368:       throw new Error('Bahasa sumber belum dapat dikenali dengan cukup jelas. Pilih English atau Bahasa Indonesia pada “Sesuaikan pembacaan”, lalu lanjutkan.');
+369:     }
+370:     state.document.sourceLanguage = language; state.document.targetLanguage = config.target;
+371:     state.status = 'translating'; await save(()=>checkpoint.saveCheckpointMeta(meta(),state.token));
+372:     const opposite = config.target === 'id' ? 'en' : 'id';
+373:     const direction = `${opposite}-${config.target}`;
+374:     const blockLanguage = block => {
+375:       const detected = module.detectLanguage(block.text || '');
+376:       const words = (block.text || '').split(/\s+/).length;
+377:       if (block.type === 'heading' && detected !== 'unknown') return detected;
+378:       if (detected === config.target && words >= 12) return config.target;
+379:       if (config.source === 'auto' && detected !== 'unknown' && words >= 6) return detected;
+380:       return language;
+381:     };
+382:     const detectedLanguages = new Set(state.document.blocks.filter(b=>b.translatable!==false).map(blockLanguage).filter(x=>x!=='unknown'));
+383:     if (detectedLanguages.size > 1) state.document.warnings = unique([...issuesOf(state.document.warnings), 'Dokumen memuat bahasa Indonesia dan Inggris. Bagian yang sudah sesuai bahasa tujuan dipertahankan; periksa judul atau frasa pendek yang belum dapat dikenali.']);
+384:     const needsEngine = state.document.blocks.some(b=>!completed(b)&&b.translatable!==false&&!readonlyTypes.has(b.type)&&b.text?.trim()&&blockLanguage(b)!==config.target);
+385:     if (needsEngine) {
+386:       state.translator ||= new module.Translator();
+387:       progress('MENYIAPKAN BAHASA', 'Menyiapkan mesin di perangkat…', undefined, 'Model diunduh hanya bila salinannya belum tersedia. Isi PDF tetap di perangkat.');
+388:       const prepared=await state.translator.prepare(direction, {signal,onProgress:p=> {
+389:         const loaded = p.done || p.loaded || 0, total = p.total || 0;
+390:         progress('MENYIAPKAN BAHASA','Menyiapkan mesin di perangkat…', total ? loaded/total*100 : undefined, total ? `${bytes(loaded)} / ${bytes(total)} · ${p.label || 'Model bahasa'}` : p.label || 'Menyiapkan runtime lokal…');
+391:       }});
+392:       if(prepared?.offlineReady===false){$('offline-status').textContent=prepared.storageWarning||'Model hanya tersedia selama sesi ini; offline belum siap. Hapus model arah lain atau kosongkan penyimpanan lalu siapkan offline kembali.';notice($('offline-status').textContent);}
+393:     }
+394:     const blocks = state.document.blocks;
+395:     for (let i=0;i<blocks.length;i++) {
+396:       if (signal.aborted || state.runId !== runId) throw new DOMException('Dibatalkan','AbortError');
+397:       const block = blocks[i]; if (completed(block)) continue;
+398:       progress('MENERJEMAHKAN JURNAL', `Bagian ${i+1} dari ${blocks.length}`, i/Math.max(1,blocks.length)*100, `Halaman ${block.page} · ${TYPES[block.type] || 'Teks'}. Selesai ${stats().done} bagian.`);
+399:       let result;
+400:       if (block.translatable === false || readonlyTypes.has(block.type) || !block.text?.trim()) result = {text:block.text || '',status:'preserved',issues:[]};
+401:       else if (blockLanguage(block) === config.target) result = {text:block.text,status:'preserved',issues:[]};
+402:       else result = await (block.type==='table'&&Array.isArray(block.rows)?state.translator.translateTable.bind(state.translator,block):state.translator.translate.bind(state.translator,block.text))({signal,glossary:config.glossary,onProgress:p=>{
+403:         if (signal.aborted) return;
+404:         const detail = p.label || (p.tokens ? `${p.tokens} token` : 'Memproses kalimat…');
+405:         $('progress-detail').textContent = `Halaman ${block.page} · Bagian ${i+1}/${blocks.length} · ${detail}`;
+406:       }});
+407:       if (signal.aborted) throw new DOMException('Dibatalkan','AbortError');
+408:       delete block.editedAt; delete block.userReviewed; delete block.reviewedAt;
+409:       block.target = result.text; block.status = result.status; block.issues = unique([...issuesOf(block.sourceIssues),...issuesOf(result.issues)]);
+410:       block.outcome=result.outcome||(result.status==='preserved'?'preserved':result.sourcePreserved?'rejected':'translated');block.retryable=Boolean(result.retryable);block.diagnostics=result.diagnostics||[];
+411:       if(result.translatedRows)block.translatedRows=result.translatedRows;else delete block.translatedRows;
+412:       block.engine = result.engine || null; block.sourcePreserved = Boolean(result.sourcePreserved); block.semanticVerified = false;
+413:       if (block.issues.length && block.status === 'translated') block.status = 'review';
+414:       await save(()=>checkpoint.saveBlock(block,state.token)); await save(()=>checkpoint.saveCheckpointMeta(meta(),state.token));
+524: async function download(kind){
+525:   if(state.busy||state.transitioning||!(state.document||state.prior?.document))return;
+526:   setBusy(true);notice('');state.controller=new AbortController();const signal=state.controller.signal,operationId=++state.runId;
+527:   try{
+528:     await flushEdits();
+529:     const {exportDocument}=await import('./export.js');
+530:     const exported=await exportDocument({document:state.document||state.prior?.document,file:state.file,status:state.status,config:state.document?state.config:state.prior.config,build:BUILD_INFO},kind,p=>{if(operationId===state.runId&&!signal.aborted)progress('MENYIMPAN HASIL','Menyusun berkas unduhan…',p);},{signal});if(operationId!==state.runId||signal.aborted)return;if(exported.url)state.exportUrls.add(exported.url);
+531:     notice(kind==='zip'?'Paket lengkap dibuat. Simpan unduhan untuk menyimpan dokumen, aset halaman, dan catatan pemeriksaan.':'Dokumen Markdown dibuat. Untuk menyertakan gambar halaman dan aset visual, unduh paket lengkap ZIP.','success');
+532:   }catch(error){if(operationId!==state.runId)return;notice(signal.aborted?'Ekspor dihentikan; tidak ada unduhan yang diluncurkan.':`Unduhan gagal: ${escapedError(error)}`,signal.aborted?'':'error');}
+533:   finally{if(operationId===state.runId){state.controller=null;setBusy(false);$('progress-panel').hidden=true;renderResults();}}
+610: window.addEventListener('pagehide',()=>{state.recovering=true;state.runId++;if(state.busy)state.status='paused';state.controller?.abort();state.previewController?.abort();state.translator?.cancel();releaseDocumentLock();});
+611: window.addEventListener('pageshow',async event=>{
+612:   if(!event.persisted)return;
+613:   state.recovering=true;state.controller=null;setBusy(false);
+614:   try{
+615:     if(!state.file){state.recovering=false;return;}
+616:     await flushEdits();
+617:     if(!navigator.locks)throw new Error('Penyimpanan aman memerlukan penguncian tab. Unduh hasil dan gunakan browser yang mendukung Web Locks.');
+618:     if(!await acquireDocumentLock())throw new Error('Pekerjaan sedang digunakan di tab lain. Salinan ini hanya dapat ditinjau atau diunduh.');
+619:     if(!state.token)throw new Error('Identitas penyimpanan sesi ini belum tersedia. Unduh hasil layar, lalu muat ulang untuk melanjutkan pekerjaan yang tersimpan.');
+620:     state.token=await checkpoint.claimCheckpoint(state.token);
+621:     state.recovering=false;state.readOnly=false;
+622:     notice('Kepemilikan pekerjaan diperiksa kembali. Hasil yang belum tersimpan tetap perlu disimpan atau diunduh.');
+623:   }catch(error){state.readOnly=true;state.saveEnabled=false;state.dirty=true;releaseDocumentLock();notice(escapedError(error),'error');}
+624:   finally{state.recovering=false;setBusy(false);renderResults();}
+625: });
+626: const retrySaveButton=node('button','button secondary small','Coba simpan progres kembali');retrySaveButton.id='retry-save';retrySaveButton.hidden=true;retrySaveButton.onclick=retrySave;$('file-card').append(retrySaveButton);
+627: if('serviceWorker'in navigator&&location.protocol!=='file:')navigator.serviceWorker.register('/sw.js',{type:'classic'}).catch(()=>{$('offline-status').textContent='Pemasangan offline belum berhasil. Gunakan HTTPS atau localhost, lalu muat ulang.';});
+628: checkpoint.getCheckpointInfo().then(info=>{if(state.file||state.busy||state.transitioning)return;state.savedInfo=info;if(info){$('resume-banner').hidden=false;$('resume-description').textContent=`${info.filename} · ${info.progress?.done||0} bagian diproses · ${new Date(info.updatedAt).toLocaleString('id-ID')}`;}}).catch(()=>{state.saveEnabled=false;});
+629: if(!window.isSecureContext||typeof Worker==='undefined'||typeof WebAssembly==='undefined'||typeof DecompressionStream==='undefined')notice('Gunakan browser modern melalui HTTPS atau localhost agar pembaca PDF, model lokal, dan penyimpanan offline dapat berjalan.','error');
+
+FILE: r/7a8e787a497535f5/app/export.js
+20:     .replace(/^([ ]{0,3})([-+])/gm,'$1\\$2')
+21:     .replace(/^([ ]{0,3})(\d{1,9})\.(?=[ \t]|$)/gm,'$1$2\\.')
+22:     .replace(/^([ ]{0,3})=(?=[= \t]*$)/gm,'$1\\=')
+23:     // Entity-encode indentation so Markdown cannot reinterpret literal prose
+24:     // as code and expose the protective backslashes as visible characters.
+25:     .replace(/^[ \t]+/gm,prefix=>prefix.replace(/ /g,'&#32;').replace(/\t/g,'&#9;'));
+26: }
+27: function inlineLiteral(text) {
+28:   let fence='`';while(text.includes(fence))fence+='`';
+29:   return fence+' '+text+' '+fence;
+30: }
+31: export function markdownText(value) {
+32:   const text=String(value ?? '');let output='',offset=0;
+33:   // Preserve recognized inline notation as literal code, without claiming LaTeX reconstruction.
+34:   const formula=/\$\$[\s\S]*?\$\$|\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)|(?<!\\)\$(?!\$)[^$\r\n]+?\$(?!\$)/gu;
+35:   for(const match of text.matchAll(formula)){
+36:     output+=escapeMarkdownText(text.slice(offset,match.index))+(match[0].includes('\n')?'\n\n'+verbatim(match[0])+'\n\n':inlineLiteral(match[0]));offset=match.index+match[0].length;
+37:   }
+38:   return output+escapeMarkdownText(text.slice(offset));
+39: }
+40: const oneLine = text => escapeMarkdownText(String(text ?? '').replace(/[\r\n]+/g,' '));
+41: const safePath = path => typeof path==='string' && path.length<=180 && /^assets\/[A-Za-z0-9][A-Za-z0-9_.-]*\.(?:png|jpe?g|webp)$/i.test(path);
+42: function validatedDocument(job) {
+43:   const doc=job?.document;
+44:   if(!Array.isArray(doc?.blocks)||!Array.isArray(doc?.pages)||!doc.pages.length)throw new Error('Dokumen belum diekstraksi.');
+45:   if(!Number.isInteger(doc.numPages)||doc.numPages<1)throw new Error('Jumlah halaman dokumen tidak valid.');
+46:   const pages=new Set();
+47:   for(const page of doc.pages){if(!Number.isInteger(page.number)||page.number<1||page.number>doc.numPages||pages.has(page.number))throw new Error('Identitas halaman dokumen tidak valid.');pages.add(page.number);}
+48:   for(const block of doc.blocks)if(!pages.has(block.page))throw new Error('Bagian dokumen tidak memiliki halaman sumber yang valid.');
+49:   return doc;
+50: }
+51: function verbatim(text) {
+52:   let fence='```';while(String(text).includes(fence))fence+='`';
+53:   return `${fence}text\n${text || ''}\n${fence}`;
+54: }
+55: function blockText(block,text,withAssets) {
+56:   if(block.type==='table' && Array.isArray(block.rows) && !hasSourceCorrection(block) && !block.tableTextEdited && !(text===block.target&&(block.status==='edited'||block.editedAt)) && (text===block.text||text===originalText(block)||text===block.target&&Array.isArray(block.translatedRows))){
+57:     const rows=text===block.target&&Array.isArray(block.translatedRows)?block.translatedRows:block.rows;
+58:     const width=Math.max(1,...rows.map(row=>row.length));
+59:     const rowText=row=>'| '+Array.from({length:width},(_,i)=>oneLine(row[i]??'')).join(' | ')+' |';
+60:     return [rowText(rows[0]||[]),'| '+Array(width).fill('---').join(' | ')+' |',...rows.slice(1).map(rowText)].join('\n')+(withAssets&&safePath(block.assetPath)?`\n\n![Tabel sumber, halaman ${block.page}](${block.assetPath})`:'');
+61:   }
+62:   if(block.type==='formula'||block.type==='table') {
+63:     let value=(hasSourceCorrection(block)&&text===block.text?'> Teks sumber dikoreksi pengguna; citra tetap berasal dari PDF asli.\n\n':'')+verbatim(text);
+64:     if(withAssets&&safePath(block.assetPath))value+=`\n\n![${block.type==='formula'?'Rumus':'Tabel'} pada PDF asli, halaman ${block.page}](${block.assetPath})`;
+65:     
+66:     return value;
+67:   }
+68:   if(block.type==='image')return withAssets&&safePath(block.assetPath || block.pageImagePath)
+69:     ?`![Elemen visual sumber, halaman ${block.page}](${block.assetPath || block.pageImagePath})`
+70:     :`> Elemen visual sumber pada halaman ${block.page}. Gunakan PDF asli atau paket ZIP lengkap untuk melihatnya.`;
+71:   if(block.type==='heading')return `### ${oneLine(text)}`;
+72:   return markdownText(text);
+73: }
+74: function sectionStatus(block,kind) {
+75:   if(kind==='source')return hasSourceCorrection(block)?'> Bagian ini memiliki koreksi sumber oleh pengguna'+(block.sourceEditedAt?' pada '+oneLine(block.sourceEditedAt):'')+'. Dokumen ini mempertahankan ekstraksi asli; sumber terkoreksi ditampilkan dalam dokumen bilingual.\n\n':'';
+76:   const lines=[];
+77:   if(hasSourceCorrection(block))lines.push('Terjemahan menggunakan sumber yang dikoreksi pengguna'+(block.sourceEditedAt?' pada '+block.sourceEditedAt:'')+'.');
+78:   if(!hasTarget(block))lines.push('BELUM DITERJEMAHKAN: teks sumber dipertahankan.');
+79:   else if(block.outcome==='failed')lines.push('PEMROSESAN GAGAL: teks sumber dipertahankan. Gunakan Lanjutkan untuk mencoba ulang.');
+80:   else if(block.sourcePreserved)lines.push('KANDIDAT DITOLAK: teks sumber dipertahankan. Coba ulang atau koreksi bagian ini.');
+81:   
+82:   if(block.userReviewed)lines.push('Ditandai telah ditinjau oleh pengguna; tanda ini bukan verifikasi otomatis.');
+83:   if(block.editedAt)lines.push('Hasil diedit pengguna.');
+84:   if(issues(block).length)lines.push(...[...new Set(issues(block).map(friendlyIssue))]);
+85:   return lines.length?lines.map(line=>`> ${markdownText(line)}`).join('\n')+'\n\n':'';
+86: }
+87: export function createMarkdown(job,kind,{withAssets=false}={}) {
+88:   if(!Object.hasOwn(FILES,kind))throw new Error('Format dokumen tidak dikenal.');
+89:   const doc=markRepeatedMetadata(validatedDocument(job));
+90:   const counts=summarizeBlocks(doc.blocks), done=counts.translated+counts.preserved;
+91:   const documentTitle=doc.metadata?.title?.trim()||String(job.file?.name||doc.fileName||'Jurnal').replace(/\.pdf$/i,'');
+92:   const title=oneLine(documentTitle)+' — '+(kind==='source'?'Ekstraksi Sumber':kind==='translation'?'Terjemahan':'Sumber & Terjemahan');
+93:   const out=[`# ${title}`,'',`**Berkas sumber:** ${oneLine(job.file?.name || doc.fileName)}`,`**Halaman:** ${doc.numPages}`,`**Bahasa:** ${oneLine(doc.sourceLanguage || job.config?.source || 'belum ditetapkan')} → ${oneLine(doc.targetLanguage || job.config?.target || 'belum ditetapkan')}`,
+94:     `**Status:** ${job.status==='complete'&&done===doc.blocks.length&&doc.pages.length===doc.numPages?'Pemrosesan selesai; perlu peninjauan ilmiah':'HASIL SEMENTARA — pemrosesan belum selesai'} `,
+95:     `**Bagian:** ${counts.translated} diterjemahkan; ${counts.preserved} dipertahankan sengaja; ${counts.rejected} ditolak; ${counts.failed} gagal; ${counts.pending} belum diproses. Total ${counts.total}.`,
+96:     `**Rilis:** ${oneLine((job.build||BUILD_INFO).release)} · ${oneLine((job.build||BUILD_INFO).version)}.`,
+97:     '**Metode:** ekstraksi PDF/OCR dan terjemahan mesin lokal. Tidak ada klaim verifikasi semantik menyeluruh.',''];
+98:   if(job.sourceSha256)out.push(`**SHA-256 PDF sumber:** ${oneLine(job.sourceSha256)}`,'');
+99:   if(doc.metadata?.title)out.push(`**Judul metadata PDF:** ${oneLine(doc.metadata.title)}`,'');
+100:   if(doc.metadata?.author)out.push(`**Penulis metadata PDF:** ${oneLine(doc.metadata.author)}`,'');
+101:   out.push(withAssets?(job.file instanceof Blob?'PDF asli dan aset visual yang tersedia disertakan dalam paket ini.':'Aset visual yang tersedia disertakan; PDF asli tidak tersedia dalam pekerjaan ini.'):'Dokumen Markdown ini memuat teks. Unduh paket ZIP lengkap untuk menyertakan citra halaman dan aset visual.','');
+102:   for(const page of doc.pages) {
+103:     out.push(`## Halaman ${page.number}`,'');
+104:     if(page.source==='ocr'||page.source==='mixed')out.push('> Teks halaman ini melibatkan OCR. Periksa ejaan, simbol, dan angka terhadap sumber.','');
+105:     for(const block of doc.blocks.filter(b=>b.page===page.number)){
+106:       if(kind!=='source'&&block.runningMetadata&&!block.runningMetadata.firstOccurrence)continue;
+107:       if(kind!=='source'&&block.runningMetadata)out.push(`> Metadata tepi halaman berulang pada halaman ${block.runningMetadata.pages.join(', ')}; ditampilkan sekali. Semua kemunculan tetap ada pada sumber dan provenance.`,'');
+108:       out.push(`<!-- bagian: ${String(block.id).replace(/[^A-Za-z0-9_-]/g,'')} | halaman: ${block.page} -->`,'');
+109:       if(kind==='bilingual') {
+110:         if(hasSourceCorrection(block))out.push('**Ekstraksi asli sebelum koreksi**','',blockText(block,originalText(block),withAssets),'','**Sumber setelah koreksi pengguna**','',blockText(block,block.text,withAssets),'');
+111:         else out.push('**Sumber**','',blockText(block,block.text,withAssets),'');
+112:         out.push('**Terjemahan / hasil**','',sectionStatus(block,kind)+blockText(block,hasTarget(block)?block.target:block.text,withAssets),'');
+113:       } else out.push(sectionStatus(block,kind)+blockText(block,kind==='source'?originalText(block):hasTarget(block)?block.target:block.text,withAssets),'');
+114:     }
+115:     if(withAssets&&safePath(page.imagePath))out.push(`#### Citra sumber — halaman ${page.number}`,'',`![Halaman sumber ${page.number}](${page.imagePath})`,'');
+
+FILE: r/7a8e787a497535f5/app/semantic-spans.js
+1: /** CP18 conservative identity protection. Original glyphs are never normalized. */
+2: const UNIT = '(?:μM|µM|nM|mM|pM|M|μg|µg|mg|kg|g|μm|µm|mm|cm|km|m|mL|ml|L|l|nm|min|h|d|mol|mmol|μmol|µmol|s|ms|Hz|kHz|MHz|GHz|Pa|kPa|MPa|J|kJ|W|kW|V|mV|°C|°F|K)';
+3: const QUANTITY = new RegExp('(?<![\\p{L}\\p{N}])[-−+]?\\d+(?:[.,]\\d+)*(?:\\s*±\\s*\\d+(?:[.,]\\d+)*)?(?:\\s*[×x]\\s*10\\s*\\^?[-−+]?\\d+)?\\s*'+UNIT+'(?:[²³]|\\^[-−]?\\d+)?(?:\\/(?:mL|ml|L|l|kg|g|m|s|mol)(?:[²³]|\\^[-−]?\\d+)?)?(?!\\p{L})','gu');
+4: const ELEMENTS = new Set('H He Li Be B C N O F Ne Na Mg Al Si P S Cl Ar K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe Cs Ba La Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn Fr Ra Ac Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og'.split(' '));
+5: const ACRONYMS = new Set('ID DNA RNA mRNA PCR RT-PCR ANOVA ANCOVA MRI CT PET EEG ECG ATP ADP NADH UV IR WHO UNICEF UNESCO COVID SARS DOI ISBN ISSN ORCID SD SE CI CrI IQR BMI GDP HIV AIDS COPD RCT ITT PP OLS GLS ODE PDE NMR HPLC GC MS SEM TEM ELISA CRISPR'.split(' '));
+6: const ORDINARY_CAPS = new Set('A AN THE OF IN ON TO FOR AND OR BUT NOT NO WITH FROM AS BY IS ARE WAS WERE BE BEEN THIS THAT THESE THOSE ALL ANY EACH EVERY SOME NONE TRUE FALSE ABSTRACT INTRODUCTION BACKGROUND METHODS METHODOLOGY RESULTS DISCUSSION CONCLUSION CONCLUSIONS REFERENCES CLIMATE CHANGE LITERATURE REVIEW EFFECT EFFECTS STUDY RESEARCH SAMPLE POPULATION DATA ANALYSIS TABLE FIGURE SOLVE INEQUALITY INEQUALITIES SOLUTION SOLUTIONS SET REAL NUMBER NUMBERS INTERVAL ABSOLUTE VALUE VALUES PRACTICE WORKSHEET NAME DATE HYPOTHESIS TESTED DAN ATAU TIDAK BUKAN YANG DARI DALAM PADA UNTUK ADALAH KAJIAN PUSTAKA PENELITIAN PENDIDIKAN PERUBAHAN IKLIM HASIL PEMBAHASAN METODE PENDAHULUAN KESIMPULAN TINJAUAN LATAR BELAKANG PENGARUH TERHADAP DENGAN'.split(' '));
+7: const SYMBOLS = /[∅ℝℕℤℚℂ∈∉∪∩⊂⊃⊆⊇⊄⊅∀∃∄∞≤≥≠≈≡±×÷∑∏∫∂∇√⇒⇔→↔<>|=^+−⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉]/gu;
+8: export function isFormulaText(text) {
+9:   const s=String(text).trim();
+10:   if(!s || !/[∅ℝℕℤℚℂ∈∉∪∩∞≤≥≠±×÷∑∏∫√<>|=^+−]/u.test(s))return false;
+11:   const residue=s.replace(/[\p{N}\s\p{P}\p{S}\u{1D400}-\u{1D7FF}]/gu,'').replace(/\b[A-Za-z]\b/gu,'').replace(/[α-ωΑ-Ω]/gu,'');
+12:   return !residue;
+13: }
+14: export function scientificSpans(text, {taxa=[]}={}) {
+58: }
+59: export function isLiteralOnly(text){
+60:   let rest=text;for(const s of scientificSpans(text).sort((a,b)=>b.start-a.start))rest=rest.slice(0,s.start)+' '.repeat(s.end-s.start)+rest.slice(s.end);
+61:   return !/[\p{L}\p{N}]/u.test(rest);
+62: }
+63: export function claimAssociationIssues(source,target){
+64:   const map=text=>{
+65:     const kindWords='treatment group arm cohort grup perlakuan kelompok kohort lengan'.split(' ');
+66:     const kinds=kindWords.map(k=>[...k].map(c=>'['+c+c.toUpperCase()+']').join('')).join('|');
+67:     const ids='[A-Z]{1,4}(?:[0-9]{1,4})?|[0-9]+';
+68:     const matches=[...text.matchAll(new RegExp('\\b(?:'+kinds+')\\s+('+ids+')\\b|\\b('+ids+')\\s+(?:'+kinds+')\\b','gu'))].map(m=>({index:m.index,end:m.index+m[0].length,id:'opaque:'+(m[1]||m[2]).toLowerCase()}));
+69:     // Named experimental arms have translatable labels; match documented bilingual equivalents.
+70:     const named='control|kontrol|kendali|intervention|intervensi|placebo|plasebo|treatment|perlakuan|terapi';
+71:     const canonical={control:'control',kontrol:'control',kendali:'control',intervention:'intervention',intervensi:'intervention',placebo:'placebo',plasebo:'placebo',treatment:'treatment',perlakuan:'treatment',terapi:'treatment'};
+72:     for(const m of text.matchAll(new RegExp('\\b(?:'+kindWords.join('|')+')\\s+('+named+')\\b|\\b('+named+')\\s+(?:'+kindWords.join('|')+')\\b','giu'))){
+73:       const item={index:m.index,end:m.index+m[0].length,id:'named:'+canonical[(m[1]||m[2]).toLowerCase()]};
+74:       if(!matches.some(s=>item.index<s.end&&item.end>s.index))matches.push(item);
+75:     }
+76:     matches.sort((a,b)=>a.index-b.index);
+77:     return new Map(matches.map((m,i)=>{const slice=text.slice(m.end,matches[i+1]?.index??text.length).split(/[;.!?](?=\s|$)/u)[0];return[m.id,slice.match(/[-−+]?\d+(?:[.,]\d+)*(?:%|[²³])?/gu)||[]];}));
+78:   };
+79:   const a=map(source),b=map(target);if(a.size<2)return [];
+80:   for(const [id,values] of a){if(!b.has(id)||JSON.stringify(values)!==JSON.stringify(b.get(id)))return ['Angka yang terkait kelompok/perlakuan berubah; periksa hubungan angka dengan klaim.'];}
+105:   if(/\b(?:regressions?|effects?|parameters?|statistic(?:s|al)?|estimat\w*|regresi|efek|parameter|statistik|rata-rata|model|data|estimasi|diestimasi|mengestimasi)\b/iu.test(context)&&direction==='id-en')result.push(['diestimasi','estimated'],['mengestimasi','estimates'],['pengestimasi','estimator'],['estimasi','estimate']);
+106:   return result;
+107: }
+108: 
+109: /** Bounded function notation; words in parentheses are not automatically mathematics. */
+110: export function functionNotationSpans(text){
+111:   const spans=[];
+112:   const head=/(?<![\p{L}\p{N}_])(?:[A-Za-zα-ωΑ-Ω\u{1D400}-\u{1D7FF}]|sin|cos|tan|log|ln|exp|det|rank|Var|Cov|Pr)(?:[_₀-₉⁰-⁹][A-Za-z0-9₀-₉⁰-⁹]*)?\s*\(/gu;
+113:   for(const m of text.matchAll(head)){
+114:     const open=m.index+m[0].length-1;let depth=1,end=open+1;
+115:     for(;end<Math.min(text.length,open+240)&&depth;end++){if(text[end]==='(')depth++;if(text[end]===')')depth--;if(depth>8)break;}
+116:     if(depth||text[end-1]!==')')continue;
+117:     const body=text.slice(open+1,end-1);
+118:     if(!body.trim()||!/^[\p{L}\p{N}\s_.,;:+\-−*/^=<>≤≥≠∅ℝℕℤℚℂ∈∉∪∩±×÷∞()[\]{}|⁰-⁹₀-₉]+$/u.test(body))continue;
+119:     const words=body.match(/[A-Za-z]{2,}/g)||[];
+120:     if(words.some(w=>!['sin','cos','tan','log','ln','exp','det','rank','Var','Cov','Pr'].includes(w)))continue;
+121:     if(spans.some(s=>m.index<s.end&&end>s.start))continue;
+122:     spans.push({start:m.index,end,value:text.slice(m.index,end),kind:'function'});
+123:   }
+124:   return spans;
+125: }
+
+FILE: r/7a8e787a497535f5/app/translation.js
+42: export function detectLanguage(text) {
+43:   const heading = String(text).trim().replace(/^\d+(?:\.\d+)*\.?\s+/, '').toLowerCase();
+44:   if (Object.hasOwn(HEADINGS['en-id'], heading)) return 'en';
+45:   if (Object.hasOwn(HEADINGS['id-en'], heading)) return 'id';
+46:   const words = String(text).toLowerCase().match(/\p{L}+/gu) || [];
+47:   const id = new Set('yang dan dengan dalam pada adalah untuk dari ini itu bahwa terhadap penelitian hasil metode antara oleh sebagai tidak suatu dapat kami juga telah tersebut berdasarkan menggunakan menunjukkan'.split(' '));
+48:   const en = new Set('the and with in on is for from this that of to a an are was were by as not study results methods between we using showed shows have has our these their'.split(' '));
+49:   let i=0,e=0; for(const w of words.slice(0,1800)){ if(id.has(w))i++; if(en.has(w))e++; }
+50:   if(Math.max(i,e)<2 || Math.abs(i-e)<2) return 'unknown';
+51:   return i>e ? 'id' : 'en';
+52: }
+53: 
+54: /** Structural invariants only. Returns human-readable problems; never claims semantic equivalence. */
+55: export function auditTranslation(source, target) {
+56:   const issues=[];
+57:   if(typeof source!=='string'||typeof target!=='string')return ['Teks sumber atau hasil tidak valid.'];
+58:   if(source.trim()&&!target.trim())issues.push('Hasil terjemahan kosong.');
+59:   const sn=count(tokens(withoutDOI(source),NUMBERS)),tn=count(tokens(withoutDOI(target),NUMBERS));
+60:   if(!equalCounts(sn,tn))issues.push('Angka atau nilai statistik berubah, hilang, atau bertambah.');
+61:   if(!equalCounts(count(tokens(source,DOI)),count(tokens(target,DOI))))issues.push('DOI berubah, hilang, atau bertambah.');
+62:   for(const re of [/https?:\/\/[^\s<>]+/giu, /\$\$[\s\S]*?\$\$|\\\([\s\S]*?\\\)|\\\[[\s\S]*?\\\]|(?<!\\)\$[^$\r\n]+\$/gu, /\[(?:\d+[a-z]?(?:\s*[,;–−-]\s*\d+[a-z]?)*)\]/giu]){
+63:     if(!equalCounts(count(tokens(source,re)),count(tokens(target,re))))issues.push('Rumus, tautan, atau sitasi terlindungi berubah.');
+64:   }
+65:   const sourceSpans=academicSpans(source);
+66:   const sourceScientific=count(sourceSpans.map(s=>s.value)),targetScientific=count(academicSpans(target,{taxa:sourceSpans.filter(s=>s.kind==='taxon').map(s=>s.value)}).map(s=>s.value));
+67:   if(!equalCounts(sourceScientific,targetScientific))issues.push('Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah.');
+68:   if(/<ss(?:lit|term)\d+\/>/.test(target)||/<unk>/.test(target))issues.push('Terdapat penanda model yang belum terpulihkan.');
+69:   issues.push(...claimAssociationIssues(source,target));
+70:   return [...new Set(issues)];
+71: }
+72: 
+73: const academicSpans = scientificSpans;
+156: export function semanticWarnings(source,target,direction){
+157:   const issues=[];
+158:   // Uncertainty phrases are semantic units, not independent negation tokens.
+159:   const uncertainty=/\b(?:uncertain|uncertainty|ketidakpastian|unclear|inconclusive|not\s+(?:yet\s+)?(?:certain|clear)|belum\s+pasti|tidak\s+pasti|tidak\s+jelas|belum\s+jelas)\b/giu;
+160:   const normalizePolarity=t=>t.replace(/\b(\p{L}+)n['’]t\b/giu,'$1 not').replace(uncertainty,'UNCERTAINTY').replace(/\b(?:asymmetric|asymmetrical|asimetris|tidak simetris)\b/giu,'ASYMMETRY').replace(/\b(?:unchanged|not changed|tidak berubah|tak berubah)\b/giu,'UNCHANGED');
+161:   const sc=normalizePolarity(source),tc=normalizePolarity(target);
+162:   const srcNeg=direction==='en-id'?/\b(?:not|never|without|neither|cannot|no)\b/gi:/\b(?:tidak|bukan|tanpa|belum|jangan|tak)\b/gi;
+163:   const trgNeg=direction==='en-id'?/\b(?:tidak|bukan|tanpa|belum|jangan|tak)\b/gi:/\b(?:not|never|without|neither|cannot|no)\b/gi;
+164:   if((sc.match(srcNeg)||[]).length!==(tc.match(trgNeg)||[]).length)issues.push('Periksa negasi: bentuk negatif mungkin berubah.');
+165:   for(const marker of ['ASYMMETRY','UNCHANGED'])if((sc.match(new RegExp(marker,'g'))||[]).length!==(tc.match(new RegExp(marker,'g'))||[]).length)issues.push('Periksa negasi leksikal: makna sifat atau perubahan mungkin berbalik.');
+166:   if((sc.match(/UNCERTAINTY/g)||[]).length!==(tc.match(/UNCERTAINTY/g)||[]).length)issues.push('Periksa ketidakpastian: tingkat kepastian klaim mungkin berubah.');
+167:   const possibility=direction==='en-id'?/\b(?:may|might|could|possibly|potentially)\b/i:/\b(?:mungkin|berpotensi|kemungkinan)\b/i;
+168:   const targetPossibility=direction==='en-id'?/\b(?:mungkin|berpotensi|kemungkinan|dapat)\b/i:/\b(?:may|might|could|possible|possibly|potential|potentially|can)\b/i;
+169:   if(possibility.test(source)&&!targetPossibility.test(target))issues.push('Periksa modalitas: kemungkinan tidak boleh berubah menjadi kepastian.');
+170:   const quantifiers=direction==='en-id'?[[/\b(?:all|every|each)\b/i,/\b(?:semua|seluruh|setiap|masing-masing)\b/i],[/\b(?:some|several)\b/i,/\b(?:beberapa|sebagian)\b/i]]:[[/\b(?:semua|seluruh|setiap)\b/i,/\b(?:all|every|each)\b/i],[/\b(?:beberapa|sebagian)\b/i,/\b(?:some|several)\b/i]];
+171:   for(const [a,b] of quantifiers)if(a.test(source)&&!b.test(target))issues.push('Periksa kuantor: cakupan pernyataan mungkin berubah.');
+172:   if(direction==='en-id'&&/\b(?:reported|found|observed|showed|demonstrated)\s+no\b/i.test(source)&&/\btidak\s+(?:melaporkan|menemukan|mengamati|menunjukkan|mendemonstrasikan)\b/i.test(target))issues.push('Periksa lingkup negasi: tidak ada hasil berbeda makna dengan tidak melaporkan hasil.');
+173:   if(direction==='id-en'&&/\bmengestimasi\b/i.test(source)&&/\bcustomiz(?:e|es|ed|ing)\b/i.test(target))issues.push('Periksa verba estimasi: mengestimasi tidak setara dengan customize; koreksi hasil terhadap sumber.');
+174:   if(ambiguousCapitalSpans(source).some(s=>target.includes(s.value)))issues.push('Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium.');
+175:   const a=textWords(source).length,b=textWords(target).length;
+176:   if(a>12&&(b<a*0.35||b>a*3))issues.push('Panjang hasil tidak sebanding dengan sumber; periksa kelengkapan makna.');
+177:   if(a>=2&&source.trim().toLowerCase()===target.trim().toLowerCase()&&!isLiteralOnly(source))issues.push('Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.');
+178:   const detected=detectLanguage(target),expected=direction==='en-id'?'id':'en';
+179:   if(b>12&&detected!=='unknown'&&detected!==expected)issues.push('Bahasa hasil mungkin belum sesuai tujuan.');
+180:   return [...new Set(issues)];
+249:           const restored=restoreScientific(result.targetText,protection);restoredCandidate=restored;
+250:           const structural=auditTranslation(body,restored);
+251:           if(structural.length)throw Error(structural.join(' '));
+252:           tokensIn+=result.inputTokens||0;tokensOut+=result.outputTokens||0;
+253:           issues.push(...semanticWarnings(body,restored,direction));
+254:           return pre+restored+post;
+255:         }catch(error){
+256:           if(error.name==='AbortError')throw error;
+257:           if(/kapasitas model|token melebihi batas|SOURCE_COMPLEXITY|batas keluaran/u.test(error.message)&&depth<3){
+258:             const split=splitRetry(segment,direction,glossaryEntries);
+259:             if(split){issues.push('Satu kalimat panjang dibagi menjadi beberapa klausa; periksa hubungan antarklausa.');let output='';for(const part of split)output+=await run(part,depth+1);return output;}
+260:           }
+261:           error.segmentSource=body;error.candidateText=restoredCandidate;error.rawCandidate=rawCandidate;throw error;
+262:         }
+263:       };
+264:       for(let i=0;i<segments.length;i++){results.push(await run(segments[i]));onProgress?.({phase:'segments',done:i+1,total:segments.length});}
+265:       const target=results.join(''),structural=auditTranslation(text,target);
+266:       if(structural.length)throw Error(structural.join(' '));
+267:       return {text:target,status:issues.length?'review':'translated',outcome:'translated',retryable:false,issues:[...new Set(issues)],engine,inputTokens:tokensIn,outputTokens:tokensOut,method:tokensIn?'local-model-with-protected-spans':'controlled-terminology',semanticVerified:false};
+268:     }catch(error){
+269:       if(error.name==='AbortError')throw error;
+270:       const rejected=/PROTECTED|penanda|Penanda|berubah|hilang|bertambah|urutan|kosong|klaim|batas keluaran|SOURCE_COMPLEXITY|kapasitas|token melebihi/i.test(error.message);
+271:       return {text,status:'review',outcome:rejected?'rejected':'failed',retryable:true,issues:[rejected?'Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini.':'Penerjemahan bagian ini gagal. Sumber dipertahankan; coba ulang setelah mesin siap.'],diagnostics:[{stage:'translation',name:error.name,message:error.message,segmentSource:error.segmentSource??null,candidateText:error.candidateText??null,rawCandidate:error.rawCandidate??null}],engine,sourcePreserved:true,semanticVerified:false};
+272:     }finally{if(this.epoch===epoch)this.busy=false;}
+273:   }
+274:   async translateTable(block, options={}){
+275:     if(!Array.isArray(block.rows)||block.rows.some(row=>!Array.isArray(row)))throw Error('Struktur tabel tidak valid.');
+276:     const translatedRows=[],issues=[],diagnostics=[];let inputTokens=0,outputTokens=0,failed=false,hasTranslated=false;
+277:     for(let r=0;r<block.rows.length;r++){
+278:       const row=[];
+279:       for(let c=0;c<block.rows[r].length;c++){
+280:         throwIfAborted(options.signal);
+281:         const source=String(block.rows[r][c]);
+282:         const result=isFormulaText(source)||/^[-−+\d\s.,:%()[\]\/]+$/u.test(source)?{text:source,outcome:'preserved',issues:[]}:await this.translate(source,{...options,context:block.text||block.rows.flat().join(' ')});
+283:         row.push(result.text);failed ||= !!result.sourcePreserved;hasTranslated ||= result.outcome==='translated';
+
+FILE: r/7a8e787a497535f5/app/layout.js
+18: function joinItems(items) {
+19:   let text = '';
+20:   let previous;
+21:   for (const item of items) {
+22:     const value = String(item.text).replace(/[\r\n]+/g, ' ');
+23:     const gap = previous ? item.x - (previous.x + previous.width) : 0;
+24:     const space = previous && !/\s$/.test(text) && !/^\s|^[,.;:!?)}\]]/.test(value)
+25:       && gap > Math.max(0.5, Math.min(previous.height, item.height) * 0.12);
+26:     text += (space ? ' ' : '') + value;
+27:     previous = item;
+28:   }
+29:   return text.trim();
+91: function baselineLines(items) {
+92:   const sorted = [...items].sort((a, b) => (a.baseline ?? a.y + a.height) - (b.baseline ?? b.y + b.height) || a.x - b.x);
+93:   const groups = [];
+94:   for (const item of sorted) {
+95:     const baseline = item.baseline ?? item.y + item.height;
+96:     let best;
+97:     let distance = Infinity;
+98:     for (let j = groups.length - 1; j >= Math.max(0, groups.length - 4); j--) {
+99:       const group = groups[j];
+100:       const delta = Math.abs(group.baseline - baseline);
+101:       const aligned = delta <= Math.max(1.5, Math.min(item.height, group.height) * 0.4);
+102:       const smallScript = Math.min(item.height, group.height) < Math.max(item.height, group.height) * 0.8;
+103:       const scriptAligned = !aligned && smallScript && delta <= Math.max(item.height, group.height) * 0.8 && hasNearby(group, item);
+104:       if ((aligned || scriptAligned) && delta < distance) { best = group; distance = delta; }
+105:     }
+106:     if (best) {
+107:       best.items.push(item); best.height = Math.max(best.height, item.height);
+108:       best.index = insertRange(best.index, item);
+109:     } else groups.push({baseline, height: item.height, items: [item], index: insertRange(null, item)});
+110:   }
+111:   return groups.map(g => ({...makeLine(g.items), ambiguous: Boolean(g.ambiguous)}));
+247:   function addBlock(group, type, extra = {}) {
+248:     const all = group.flatMap(l => l.items);
+249:     const bbox = union(all);
+250:     const issues = [];
+251:     if (source === 'ocr' || all.some(i => i.source === 'ocr')) issues.push('Teks hasil OCR perlu dibandingkan dengan halaman asli.');
+252:     if (group.some(l => l.ambiguous)) issues.push('Tata letak sangat padat; penggabungan superskrip dibatasi. Periksa citra sumber.');
+253:     if (all.some(i => i.rotated)) issues.push('Teks berotasi: periksa urutan baca.');
+254:     if (group.some(l => /[a-z]-$/i.test(l.text))) issues.push('Pemenggalan kata pada akhir baris dipertahankan; periksa ejaan.');
+255:     if (group.some(line => line.items.some(item => item.height < line.fontSize * 0.8
+256:       && Math.abs((item.baseline ?? item.y + item.height) - line.baselineMedian) > 1.5))) {
+257:       issues.push('Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar.');
+258:     }
+259:     if (type === 'formula') issues.push('Persamaan dipertahankan dari sumber; konversi LaTeX tidak ditebak.');
+260:     const text = group.map(l => l.text).join(type === 'table' ? '\n' : ' ');
+261:     blocks.push({id: `p${String(pageNumber).padStart(4, '0')}-b${String(blocks.length + 1).padStart(4, '0')}`,
+262:       page: pageNumber, type, text, bbox, source, column: group[0].column,
+263:       rotated: all.some(i => i.rotated),
+264:       confidence: source === 'ocr' ? Math.min(...all.map(i => i.confidence ?? 50)) / 100 : (cut === null ? 0.96 : 0.84),
+265:       issues, sourceItemIds: all.map(i => i.sourceIndex), sourceItems: all.map(i => ({id: i.sourceIndex, source: i.source || source, bbox: [i.x, i.y, i.width, i.height]})), translatable: !['formula', 'reference'].includes(type),
+266:       sourceLines: group.map(l => l.text), ...extra});
+
+FILE: r/7a8e787a497535f5/app/pdf-reader.js
+27: export function validateAssetBudget(assets = []) {
+28:   if (!Array.isArray(assets)) throw new Error('Aset checkpoint tidak valid.');
+29:   const sizes = new Map();
+30:   let total = 0;
+31:   for (const asset of assets) {
+32:     if (!asset || typeof asset.path !== 'string' || !/^assets\/[A-Za-z0-9._-]+\.(?:jpg|png)$/i.test(asset.path)
+33:       || !Number.isSafeInteger(asset.blob?.size) || asset.blob.size < 0) throw new Error('Aset checkpoint tidak valid.');
+34:     if (sizes.has(asset.path)) {
+35:       if (sizes.get(asset.path) !== asset.blob.size) throw new Error('Aset checkpoint memiliki path ganda dengan ukuran berbeda.');
+36:       continue;
+37:     }
+38:     sizes.set(asset.path, asset.blob.size); total += asset.blob.size;
+39:     if (total > PDF_LIMITS.maxAssetsBytes) { const error = new Error('Total aset sumber melebihi 128 MiB, termasuk halaman sebelum pemulihan. Proses rentang halaman yang lebih pendek.'); error.code = 'PDF_ASSET_LIMIT'; throw error; }
+40:   }
+77: export function normalizeItems(content, viewport, pdfjs) {
+78:   const items = [];
+79:   for (let index = 0; index < content.items.length; index++) {
+80:     const item = content.items[index];
+81:     if (typeof item.str !== 'string' || !item.str.trim()) continue;
+82:     const tx = pdfjs.Util.transform(viewport.transform, item.transform);
+83:     const angle = Math.atan2(tx[1], tx[0]);
+84:     const fontSize = Math.max(1, Math.hypot(tx[2], tx[3]));
+85:     const style = content.styles[item.fontName] || {};
+86:     const ascent = Number.isFinite(style.ascent) ? style.ascent : 0.8;
+87:     const baseline = tx[5];
+88:     items.push({text: item.str, source: 'pdf-text', x: tx[4], y: baseline - fontSize * ascent,
+89:       baseline, width: Math.max(0, item.width * viewport.scale), height: fontSize,
+90:       fontSize, bold: /bold|black|demi|heavy/i.test(style.fontFamily || item.fontName),
+91:       fontName: item.fontName, direction: item.dir, sourceIndex: index,
+92:       rotated: Math.abs(angle) > 0.04, endOfLine: item.hasEOL});
+93:   }
+94:   return items;

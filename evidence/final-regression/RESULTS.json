@@ -1,0 +1,312 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "tests": [
+    {
+      "test": "cp19-guards.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-guards.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.226,
+      "log": "evidence/final-regression/cp19-guards.mjs.log"
+    },
+    {
+      "test": "cp19-model-cache.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-model-cache.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.074,
+      "log": "evidence/final-regression/cp19-model-cache.mjs.log"
+    },
+    {
+      "test": "cp19-markdown.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-markdown.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.192,
+      "log": "evidence/final-regression/cp19-markdown.mjs.log"
+    },
+    {
+      "test": "cache.test.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/cache.test.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.311,
+      "log": "evidence/final-regression/cache.test.mjs.log"
+    },
+    {
+      "test": "lifecycle-regression.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-regression.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.148,
+      "log": "evidence/final-regression/lifecycle-regression.mjs.log"
+    },
+    {
+      "test": "lifecycle-storage.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-storage.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.114,
+      "log": "evidence/final-regression/lifecycle-storage.mjs.log"
+    },
+    {
+      "test": "lifecycle-export.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-export.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.359,
+      "log": "evidence/final-regression/lifecycle-export.mjs.log"
+    },
+    {
+      "test": "lifecycle-table-integration.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-table-integration.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.21,
+      "log": "evidence/final-regression/lifecycle-table-integration.mjs.log"
+    },
+    {
+      "test": "lifecycle-manual-resume.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-manual-resume.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.123,
+      "log": "evidence/final-regression/lifecycle-manual-resume.mjs.log"
+    },
+    {
+      "test": "lifecycle-markdown-visible.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-markdown-visible.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.113,
+      "log": "evidence/final-regression/lifecycle-markdown-visible.mjs.log"
+    },
+    {
+      "test": "lifecycle-markdown-visible.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/lifecycle-markdown-visible.py"
+      ],
+      "exitCode": 0,
+      "seconds": 0.026,
+      "log": "evidence/final-regression/lifecycle-markdown-visible.py.log"
+    },
+    {
+      "test": "translation-regression.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/translation-regression.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.17,
+      "log": "evidence/final-regression/translation-regression.mjs.log"
+    },
+    {
+      "test": "translation-scientific-identities.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/translation-scientific-identities.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.105,
+      "log": "evidence/final-regression/translation-scientific-identities.mjs.log"
+    },
+    {
+      "test": "translation-engine-literals.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/translation-engine-literals.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.072,
+      "log": "evidence/final-regression/translation-engine-literals.mjs.log"
+    },
+    {
+      "test": "translation-before-after.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/translation-before-after.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.168,
+      "log": "evidence/final-regression/translation-before-after.mjs.log"
+    },
+    {
+      "test": "pdf-layout.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-layout.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.31,
+      "log": "evidence/final-regression/pdf-layout.mjs.log"
+    },
+    {
+      "test": "pdf-layout-inherited.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-layout-inherited.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.209,
+      "log": "evidence/final-regression/pdf-layout-inherited.mjs.log"
+    },
+    {
+      "test": "pdf-real-parser.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-real-parser.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 1.705,
+      "log": "evidence/final-regression/pdf-real-parser.mjs.log"
+    },
+    {
+      "test": "pdf-inherited-reader.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-inherited-reader.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 1.204,
+      "log": "evidence/final-regression/pdf-inherited-reader.mjs.log"
+    },
+    {
+      "test": "pdf-extract-boundaries.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-extract-boundaries.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.077,
+      "log": "evidence/final-regression/pdf-extract-boundaries.mjs.log"
+    },
+    {
+      "test": "pdf-budget-after.mjs",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "/workspace/scratch/9892cee08ee5/cp19/work/tests/pdf-budget-after.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 0.087,
+      "log": "evidence/final-regression/pdf-budget-after.mjs.log"
+    }
+  ],
+  "syntax": [
+    {
+      "file": "app/app/build-info.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/claim-guards.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/export.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/layout.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/layout.worker.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/main.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/markdown-math.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/math-geometry.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/offline.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/pdf-reader.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/semantic-spans.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/storage.js",
+      "pass": true,
+      "error": null
+    },
+    {
+      "file": "app/app/translation.js",
+      "pass": true,
+      "error": null
+    }
+  ],
+  "method": "Actual Node execution; individual evidence distinguishes deterministic mutations, controlled faults, actual PDF parsing and exports. No browser, model inference or human judgement inferred."
+}

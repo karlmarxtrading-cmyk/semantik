@@ -1,0 +1,152 @@
+[
+  {
+    "path": "cp19/geometry/audit-result.json",
+    "bytes": 27917,
+    "sha256": "71343700a423cec069c7aa792c37b896ef52b293d553fee59994cd188a3fc825"
+  },
+  {
+    "path": "cp19/geometry/control-result.json",
+    "bytes": 21019,
+    "sha256": "c5da62825f658edbf3cf93eae28ca2a7a2d0098be2eb689529c047867531da52"
+  },
+  {
+    "path": "cp19/geometry/regression-results.json",
+    "bytes": 3197,
+    "sha256": "57cbe2425bba226a8eff4ef6c1348f067e47732be6109fe6db7ae2883879e359"
+  },
+  {
+    "path": "cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+    "bytes": 1334,
+    "sha256": "34136b7a8b092ea5273a324608534784419ca297ffced85c0a3df0e7e09a1245"
+  },
+  {
+    "path": "cp20/math/QUALIFICATION.json",
+    "bytes": 3527,
+    "sha256": "2d72696565a0d3a969ce74386075f54f104267b53a5742712a815e7c3902a22a"
+  },
+  {
+    "path": "cp20/pipeline/controlled-results.json",
+    "bytes": 2179,
+    "sha256": "5741c8349f5531c16ab6842d419c8fbf3aa2a308708f6e84ed7614d284714813"
+  },
+  {
+    "path": "cp20/pipeline/eta-resume-results.json",
+    "bytes": 1156,
+    "sha256": "fce30b3a25cf6ecff8bf5b59c6a872fbf064b96582dbea03b83d9dd4e85ca06c"
+  },
+  {
+    "path": "cp20/pipeline/quota-recovery-results.json",
+    "bytes": 1372,
+    "sha256": "da2c279e3ffe675d01998631443c8c66adf1245bb754ab314420b65c78dd0b0d"
+  },
+  {
+    "path": "cp20/release/OFFLINE_RELEASE_REGRESSION.json",
+    "bytes": 3241,
+    "sha256": "e45a76e48d872a3d8c898a2ac2e942f2cc121c7a0068710714e3d8011b692c81"
+  },
+  {
+    "path": "cp20/semantics/guards.json",
+    "bytes": 5109,
+    "sha256": "02f4b7089b3d6478f7d2e06a48466f3acb2a5a796bd83d34ba400b554be9af18"
+  },
+  {
+    "path": "cp20/structure/RESULTS.json",
+    "bytes": 3119,
+    "sha256": "3e9ec624c5fb984874b488be6a19c41c17b8826caa1f07eef72d3f8f51d01377"
+  },
+  {
+    "path": "cp20/structure/stream-1500-export.json",
+    "bytes": 659,
+    "sha256": "4edd271fb724484401d4d4bf82509ecd661c18615e5f5271b764b042d3353b00"
+  },
+  {
+    "path": "lifecycle/fresh-fixture-export.zip",
+    "bytes": 12467,
+    "sha256": "7597272163fca23d2c151decc336ad042140f98b1aa7313f911f1d0b207167da"
+  },
+  {
+    "path": "lifecycle/main-regression.json",
+    "bytes": 3994,
+    "sha256": "0d54544c7e99a4308fb859958cfc1840218f4ade27e549e60666c0eb736e2c21"
+  },
+  {
+    "path": "lifecycle/manual-target-resume-rerun.json",
+    "bytes": 985,
+    "sha256": "06de79e6ae653719dde3fa47f14fa3cae97e1ab7b0b655b5f58b8617eee6aab6"
+  },
+  {
+    "path": "lifecycle/table-edit-integration-after.json",
+    "bytes": 4197,
+    "sha256": "913bbd6ec79682e7ce68b751a97f2063b9a5da6b078bb2e68b920068363d7def"
+  },
+  {
+    "path": "lifecycle/table-source-edit-fresh.zip",
+    "bytes": 11714,
+    "sha256": "787a1fd44f1ae46b375abd9c7cf3750dd2aa21b61de8551f08760ac517dcd9b5"
+  },
+  {
+    "path": "lifecycle/table-target-edit-fresh.zip",
+    "bytes": 10151,
+    "sha256": "2adaefba1d455eda612d1ee7966d503fe9164e2878ac89e02a7a355c54adc704"
+  },
+  {
+    "path": "pdf/extracted/dense/document.json",
+    "bytes": 3089270,
+    "sha256": "dbd444664b87181f46df0a584debfd718d3a00cb45162ed3fc74f42d982a0a1d"
+  },
+  {
+    "path": "pdf/extracted/digital-en/document.json",
+    "bytes": 11879,
+    "sha256": "cf64dc3e6459618a8e74b4f00f7324d07f68863529d90e895f32dad4b5bde7d6"
+  },
+  {
+    "path": "pdf/extracted/digital-id/document.json",
+    "bytes": 11640,
+    "sha256": "a236f3425803d406648bc03943be6ffc1d6a1c829879eaec279358bdafb81649"
+  },
+  {
+    "path": "pdf/extracted/mathematics/document.json",
+    "bytes": 27656,
+    "sha256": "7d183506a02d156213a92fda360535abd8eccce50286d34e6a67f0189475a5b6"
+  },
+  {
+    "path": "pdf/extracted/password/document.json",
+    "bytes": 11765,
+    "sha256": "802ad194271e42442b0a627d388655f7811c3542f54df27a178e71f456b7fe29"
+  },
+  {
+    "path": "pdf/extracted/rotated/document.json",
+    "bytes": 5030,
+    "sha256": "34276b692d0f574b461478bf1481de781d3b73647d45666e72925195ad21b5dd"
+  },
+  {
+    "path": "pdf/extracted/table-two-column/document.json",
+    "bytes": 22403,
+    "sha256": "539632e96a0d3c4b6224ce65739b648a1f65f64f0f311a31c35d85ee3b214107"
+  },
+  {
+    "path": "pdf/layout-after.json",
+    "bytes": 2416,
+    "sha256": "4af2f18ddfea64ca8baa701250531ffd37ab52c61720a7885dba15d695fd55dc"
+  },
+  {
+    "path": "pdf/real-parser.json",
+    "bytes": 5121,
+    "sha256": "24d53b8b73aebd4b27b93c14017eb714223d811c215f0e9c8b312e4d84f68abe"
+  },
+  {
+    "path": "translation/engine-literals.json",
+    "bytes": 1610,
+    "sha256": "9c7fb5cfbe5ead09a7802e28ed040ddade0d5cb1420205a42291f885ee6c0f5c"
+  },
+  {
+    "path": "translation/scientific-identities-regression.json",
+    "bytes": 4807,
+    "sha256": "aad659a722e9fa1591cb25c5bbe4b5979ae9af2baeead55b7f2a64c77e5938c1"
+  },
+  {
+    "path": "translation/validator-before-after.json",
+    "bytes": 3873,
+    "sha256": "8e517a76e06702d55c5d9c51e68ec406635d61f5de675050c27ea73f92116db7"
+  }
+]

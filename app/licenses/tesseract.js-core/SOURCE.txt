@@ -1,0 +1,4 @@
+Tesseract.js-core 7.0.0
+https://github.com/naptha/tesseract.js-core
+LSTM-only baseline/SIMD/relaxed-SIMD distributions copied from the installed package.
+OCR is explicitly initialized with OEM 1 (LSTM only).

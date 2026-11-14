@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "Real exact-100MiB PDF open and one digital-page extract; maxBytes+1 rejected before decode. Unreferenced inert stream isolates input file bytes; not scan/image capacity.",
+  "inputBytes": 104857600,
+  "sourceSha256": "f172433a36b6cf34cd5018bf486d78f048979166670f25c523e51d4f7468d41d",
+  "pages": 1,
+  "sourceItems": 1,
+  "coveredItems": 1,
+  "elapsedMs": 1326.157134,
+  "sourceHashes": {
+    "pdf-reader.js": "41f7ee1906e030d99bfb7c1b3be9001514f369c3eeceb87cc7e74600cb1bd7d8",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553"
+  }
+}

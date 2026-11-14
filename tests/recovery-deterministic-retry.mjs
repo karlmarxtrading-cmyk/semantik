@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {Translator,RULESET} from '../app/app/translation.js';
+const tr=new Translator();tr.engine={fixture:true};tr.direction='id-en';let calls=0;
+tr._request=async()=>{calls++;return {targetText:'invalid candidate',finishReason:'complete',inputTokens:8,outputTokens:2};};
+const source='Pengamatan tersebut tidak berubah.';
+const result=await tr.translate(source,{glossary:[['pengamatan','observation']]});
+assert.equal(calls,1);assert.equal(result.metrics.inferenceCalls,1);assert.equal(result.outcome,'rejected');assert.equal(result.retryable,false);assert.equal(result.text,source);assert.equal(result.recovery,'change-source-or-glossary');assert(result.diagnostics.some(x=>x.message.includes('Kandidat deterministik identik')));
+await fs.writeFile(new URL('../evidence/recovery/root/DETERMINISTIC_RETRY.json',import.meta.url),JSON.stringify({method:'Production adapter with deliberately invalid controlled engine response. Same masked candidate is attempted onlyonce; deterministic failure is not transient. No model/browser claim.',ruleset:RULESET,adapterSHA256:createHash('sha256').update(await fs.readFile(new URL('../app/app/translation.js',import.meta.url))).digest('hex'),status:'PASS',calls,source,result},null,2)+'\n');console.log('Deterministic duplicate retry classification PASS');

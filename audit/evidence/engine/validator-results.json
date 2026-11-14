@@ -1,0 +1,217 @@
+{
+  "type": "Synthetic validator mutation tests, except two actual-model replays; these are NOT claims the model produced every mutation.",
+  "cases": [
+    {
+      "id": "old-unit-prefix-control",
+      "source": "The concentration was 10 μM.",
+      "target": "Konsentrasinya 10 mM.",
+      "issues": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "semanticWarnings": [],
+      "sourceSpans": [
+        {
+          "start": 22,
+          "end": 27,
+          "value": "10 μM"
+        }
+      ],
+      "targetSpans": [
+        {
+          "start": 15,
+          "end": 20,
+          "value": "10 mM"
+        }
+      ]
+    },
+    {
+      "id": "old-ion-charge-control",
+      "source": "Ca2+ was detected.",
+      "target": "Ca3+ terdeteksi.",
+      "issues": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "semanticWarnings": [],
+      "sourceSpans": [
+        {
+          "start": 0,
+          "end": 4,
+          "value": "Ca2+"
+        }
+      ],
+      "targetSpans": [
+        {
+          "start": 0,
+          "end": 4,
+          "value": "Ca3+"
+        }
+      ]
+    },
+    {
+      "id": "old-empty-set-control",
+      "source": "The solution set is ∅.",
+      "target": "Himpunan penyelesaian adalah å.",
+      "issues": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "semanticWarnings": [],
+      "sourceSpans": [
+        {
+          "start": 20,
+          "end": 21,
+          "value": "∅"
+        }
+      ],
+      "targetSpans": []
+    },
+    {
+      "id": "old-group-values-control",
+      "source": "Group A received 10 mg and group B received 20 mg.",
+      "target": "Kelompok A menerima 20 mg dan kelompok B menerima 10 mg.",
+      "issues": [
+        "Angka yang terkait kelompok/perlakuan berubah; periksa hubungan angka dengan klaim."
+      ],
+      "semanticWarnings": [],
+      "sourceSpans": [
+        {
+          "start": 17,
+          "end": 22,
+          "value": "10 mg"
+        },
+        {
+          "start": 44,
+          "end": 49,
+          "value": "20 mg"
+        }
+      ],
+      "targetSpans": [
+        {
+          "start": 20,
+          "end": 25,
+          "value": "20 mg"
+        },
+        {
+          "start": 50,
+          "end": 55,
+          "value": "10 mg"
+        }
+      ]
+    },
+    {
+      "id": "prime-corruption-actual-replay",
+      "source": "Given f(x)=x², the derivative is f′(x)=2x.",
+      "target": "Mengingat f(x)=x², turunan adalah fåx)=2x.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [
+        {
+          "start": 6,
+          "end": 10,
+          "value": "f(x)",
+          "kind": "function"
+        },
+        {
+          "start": 10,
+          "end": 11,
+          "value": "="
+        },
+        {
+          "start": 12,
+          "end": 13,
+          "value": "²"
+        },
+        {
+          "start": 38,
+          "end": 39,
+          "value": "="
+        }
+      ],
+      "targetSpans": [
+        {
+          "start": 10,
+          "end": 14,
+          "value": "f(x)",
+          "kind": "function"
+        },
+        {
+          "start": 14,
+          "end": 15,
+          "value": "="
+        },
+        {
+          "start": 16,
+          "end": 17,
+          "value": "²"
+        },
+        {
+          "start": 38,
+          "end": 39,
+          "value": "="
+        }
+      ]
+    },
+    {
+      "id": "microliter-nanoliter",
+      "source": "The sample volume was 10 μL.",
+      "target": "Volume sampel adalah 10 nL.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "electron-volts",
+      "source": "The energy was 10 eV.",
+      "target": "Energinya adalah 10 keV.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "dose-units",
+      "source": "The absorbed dose was 10 Gy.",
+      "target": "Dosis serapannya adalah 10 Sv.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "combining-math-accent",
+      "source": "The sample mean is z̄.",
+      "target": "Rata-rata sampel adalah z.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "non-group-value-association",
+      "source": "The systolic and diastolic pressures were 120 and 80 mmHg, respectively.",
+      "target": "Tekanan sistolik dan diastolik masing-masing adalah 80 dan 120 mmHg.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "one-group-claim-reversal",
+      "source": "Treatment A reduced mortality by 10%.",
+      "target": "Perlakuan A meningkatkan mortalitas sebesar 10%.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    },
+    {
+      "id": "both-second-actual-replay",
+      "source": "Tidak ada bilangan riil yang memenuhi kedua syarat.",
+      "target": "No real number satisfies second condition.",
+      "issues": [],
+      "semanticWarnings": [],
+      "sourceSpans": [],
+      "targetSpans": []
+    }
+  ]
+}

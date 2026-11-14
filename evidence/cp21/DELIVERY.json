@@ -1,0 +1,89 @@
+{
+  "status": "DELIVERED_NOT_PRODUCTION_READY",
+  "artifacts": [
+    {
+      "file": "BROWSER_RESULT_CP21.jpg",
+      "bytes": 74954,
+      "sha256": "c985c95a6c703c6bffcd7aa8a79cb57c68d1a78e3f70532b03d6a39df0d8bdf5",
+      "library_file_id": "libfile_fde3_f-2472ca3abcd08191bbf15831b88f3e89_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-2472ca3abcd08191bbf15831b88f3e89_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "CHECKSUMS_CP21.json",
+      "bytes": 1994,
+      "sha256": "a11e4516187c454afa8bfc47aa71c6d223d72f60352ec682d33d9d89e525a527",
+      "library_file_id": "libfile_fde3_f-cd34fbc5947c8191a95a308c1347c29c_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-cd34fbc5947c8191a95a308c1347c29c_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_CHECKPOINT_CONTINUE_CP21.md",
+      "bytes": 6080,
+      "sha256": "b9e48560e065d249253c05d63b8e81645ee436a3ab53a46b45401b6613abb960",
+      "library_file_id": "libfile_fde3_f-39324ce742f081918b11a5074b086cb8_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-39324ce742f081918b11a5074b086cb8_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_FINAL_CLOUDFLARE_DEPLOY_CP21.zip.part01",
+      "bytes": 419430400,
+      "sha256": "81bddf16995126787fc26b4e340e68f78fb85406cf62edf94b873f71e830dc62",
+      "library_file_id": "libfile_fde3_f-5dbab97f61a881919d5728f5679292a6_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-5dbab97f61a881919d5728f5679292a6_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_FINAL_CLOUDFLARE_DEPLOY_CP21.zip.part02",
+      "bytes": 250510037,
+      "sha256": "2e2c10ca384ec92538ed4c992135f5c65df9c6d86edd6e4886e490e6f8c5ff16",
+      "library_file_id": "libfile_fde3_f-0555b68f360c81918b53803bcd069796_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-0555b68f360c81918b53803bcd069796_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_FINAL_QA_EVIDENCE_CP21.zip",
+      "bytes": 749192,
+      "sha256": "2f3cd95d92da69bba30f037102d416bd83869f73fee1f66c292ed61dc61b3bc1",
+      "importantFiles": 124,
+      "zipEntries": 125,
+      "zipIntegrity": "PASS_CRC_AND_ALL_FILE_SHA256",
+      "library_file_id": "libfile_fde3_f-c578bbb7b3c08191b799d899ae9d252e_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-c578bbb7b3c08191b799d899ae9d252e_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_FINAL_SOURCE_CP21.zip",
+      "bytes": 266735703,
+      "sha256": "1bbb27b70aa09bab1dd64fc20a2d33a75caa20fe501ee5aff64dc15a27b4ab59",
+      "importantFiles": 14877,
+      "zipEntries": 14878,
+      "zipIntegrity": "PASS_CRC_AND_ALL_FILE_SHA256",
+      "library_file_id": "libfile_fde3_f-63bb2bab5d148191be2d9868dc474080_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-63bb2bab5d148191be2d9868dc474080_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    },
+    {
+      "file": "SEMANTIK_SETARA_RELEASE_ACCEPTANCE_CP21.md",
+      "bytes": 6202,
+      "sha256": "1ae51438f6a39abbae7d687f70be1b38db1e713e995eb3f5b7e0d4b80b19ae49",
+      "library_file_id": "libfile_fde3_f-ff516b9cd3c0819184cf24948967d93b_6a790e7c218c81918b962131f5a46ccd",
+      "url": "https://chatgpt.com/library?file_id=libfile_fde3_f-ff516b9cd3c0819184cf24948967d93b_6a790e7c218c81918b962131f5a46ccd&account_id=personal"
+    }
+  ],
+  "deployDelivery": {
+    "status": "PARTS_VERIFIED_EXACT_ORIGINAL_ZIP",
+    "reason": "Single-file upload limit observed: 536870912 bytes. Candidate is 669940437 bytes. No deploy assets removed to fit.",
+    "originalFile": "SEMANTIK_SETARA_FINAL_CLOUDFLARE_DEPLOY_CP21.zip",
+    "originalBytes": 669940437,
+    "originalSHA256": "3055e4c8198d172d6b6a801474183a23a343763e2f01fe42ab786c1e0f88755c",
+    "parts": [
+      {
+        "file": "SEMANTIK_SETARA_FINAL_CLOUDFLARE_DEPLOY_CP21.zip.part01",
+        "bytes": 419430400,
+        "sha256": "81bddf16995126787fc26b4e340e68f78fb85406cf62edf94b873f71e830dc62"
+      },
+      {
+        "file": "SEMANTIK_SETARA_FINAL_CLOUDFLARE_DEPLOY_CP21.zip.part02",
+        "bytes": 250510037,
+        "sha256": "2e2c10ca384ec92538ed4c992135f5c65df9c6d86edd6e4886e490e6f8c5ff16"
+      }
+    ],
+    "zipIntegrityBeforeSplit": "PASS_CRC_AND_ALL_FILE_SHA256",
+    "join": "Use JOIN_DEPLOY_CP21.py in a directory containing both parts. Individual parts cannot be extracted."
+  },
+  "sourceAndQAChecksumsVerified": true
+}

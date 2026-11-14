@@ -1,0 +1,108 @@
+{
+  "build": {
+    "base": "/r/293d71e3e56f1283/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp19-293d71e3e56f1283",
+    "sourceHash": "293d71e3e56f1283c748ad0db7969904c3c6cc0757b7298d2c77b2403e3b097a",
+    "version": "0.19.0"
+  },
+  "scope": "Actual managed preview HTTP and browser APIs; not Cloudflare deployment",
+  "results": [
+    {
+      "path": "/index.html",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "13529",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:44:12 GMT",
+        "etag": "W/\"301d-1a1cffd1969\"",
+        "last-modified": "Thu, 12 Nov 2026 13:40:33 GMT"
+      }
+    },
+    {
+      "path": "/sw.js",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "39222",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:44:12 GMT",
+        "etag": "W/\"9936-1a1cffd1998\"",
+        "last-modified": "Thu, 12 Nov 2026 13:40:33 GMT"
+      }
+    },
+    {
+      "path": "/r/293d71e3e56f1283/app/main.js",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "56018",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:44:12 GMT",
+        "etag": "W/\"dad2-1a1cffd17e9\"",
+        "last-modified": "Thu, 12 Nov 2026 13:40:32 GMT"
+      }
+    },
+    {
+      "path": "/r/293d71e3e56f1283/runtime/ort-wasm-simd-threaded.wasm",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "11905541",
+        "content-type": "application/wasm",
+        "date": "Thu, 12 Nov 2026 13:44:12 GMT",
+        "etag": "W/\"b5aa05-1a1cffd18a9\"",
+        "last-modified": "Thu, 12 Nov 2026 13:40:33 GMT"
+      }
+    },
+    {
+      "path": "/r/293d71e3e56f1283/models/en-id/encoder_q8.onnx.part000.gz",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "connection": "keep-alive",
+        "content-length": "11378532",
+        "content-type": "application/gzip",
+        "date": "Thu, 12 Nov 2026 13:44:12 GMT",
+        "etag": "W/\"ad9f64-1a1cffd1852\"",
+        "keep-alive": "timeout=5",
+        "last-modified": "Thu, 12 Nov 2026 13:40:32 GMT"
+      }
+    }
+  ],
+  "range": {
+    "status": 206,
+    "contentRange": "bytes 0-31/56018",
+    "firstChunk": 32,
+    "pass": true
+  },
+  "shellIntegrity": {
+    "expected": {
+      "path": "/index.html",
+      "sha256": "8ad7b79920656137703fa67c5aaf9207391a2b7e59d9d4118146972079532a6e",
+      "size": 12317
+    },
+    "actualBytes": 13529,
+    "actualSha256": "befe5d79352774f3238719450b6154923fcdb47b060e1691de3ec13ef1995b2e",
+    "pass": false
+  },
+  "offlineWorker": {
+    "pass": false,
+    "error": "Error: Aplikasi offline belum aktif. Muat ulang melalui HTTPS, lalu coba lagi."
+  },
+  "completed": "2026-11-12T13:44:32.608Z"
+}

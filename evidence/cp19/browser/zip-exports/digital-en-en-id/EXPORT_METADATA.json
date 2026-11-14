@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "build": {
+    "base": "/r/6ed0d134e1770b27/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp19-6ed0d134e1770b27",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "version": "0.19.0"
+  },
+  "sourceSha256": "e977d38d7b4416bb80be9d04cdd32439ec1beffdf13daaa654c4055ac1ac6355",
+  "configuration": {
+    "source": "en",
+    "target": "id"
+  },
+  "counts": {
+    "total": 6,
+    "translated": 6,
+    "preserved": 0,
+    "rejected": 0,
+    "failed": 0,
+    "pending": 0
+  },
+  "semanticVerified": false,
+  "humanApproval": false,
+  "generatedAt": "2026-11-12T13:55:53.345Z"
+}

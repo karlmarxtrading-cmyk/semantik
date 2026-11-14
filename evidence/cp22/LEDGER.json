@@ -1,0 +1,197 @@
+{
+ "checkpoint": "CP22-claude-continuation",
+ "status": "NOT_PRODUCTION_READY",
+ "startedUTC": "2026-11-13T23:00:46.334102Z",
+ "baseline": {
+  "release": "cp21-ba83aed6acb74963",
+  "version": "0.21.0",
+  "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25"
+ },
+ "restoration": {
+  "method": "Manual equivalent of RESTORE_CP21_HANDOFF.py: SUPPORT.zip and HANDOFF_MANIFEST.json were not uploaded; overlay (LEDGER.json final P3 + DELIVERY.json) taken from PAKET_RINGKAS (sha 4a268a56\u2026, matches INTEGRITY.md).",
+  "checks": {
+   "FULL_SOURCE_sha256": "PASS 1bbb27b7\u2026",
+   "DEPLOY_part01_sha256": "PASS 81bddf16\u2026",
+   "DEPLOY_part02_sha256": "PASS 2e2c10ca\u2026",
+   "QA_EVIDENCE_sha256": "PASS 2f3cd95d\u2026",
+   "RINGKAS_sha256": "PASS 4a268a56\u2026",
+   "source_manifest_members": "PASS 14877/14877 sha256",
+   "overlay_delta_vs_source": "only LEDGER.json differs and DELIVERY.json new; all code identical",
+   "sourceHash_recomputed": "PASS ba83aed6\u2026"
+  },
+  "notUploaded": [
+   "SEMANTIK_SETARA_CP21_CLAUDE_HANDOFF_SUPPORT.zip",
+   "SEMANTIK_SETARA_CP21_HANDOFF_MANIFEST.json",
+   "SEMANTIK_SETARA_CP21_MASTER_PROMPT_CLAUDE.md"
+  ],
+  "officialScript": {
+   "support_zip_sha256": "225ab575bc10e6575b9fedbf470ceea9d73bf99bbf0a40ec13e55f07d4eda4df (matches SHA256SUMS)",
+   "localAliases": "hardlinks (byte-identical) from uploaded original names to handoff names; symlinks rejected by script as nonregular",
+   "result": "RESTORE_CP21_HANDOFF.py --restore-source --assemble-deploy: all PASS; 14878 source entries CRC/SHA; deploy 899 entries; combined sha256 3055e4c8198d172d6b6a801474183a23a343763e2f01fe42ab786c1e0f88755c",
+   "diffVsManualWorkingCopy": "identical except new app/app/coverage.js and evidence/cp22 (Claude work)",
+   "operatorNote": "A broad glob briefly deleted the extracted copy of SEMANTIK_SETARA_CP21_CLAUDE_HANDOFF.md; re-extracted from SUPPORT, sha256 501971d3\u2026 verified before the restore run."
+  }
+ },
+ "phases": [
+  {
+   "id": "C0",
+   "status": "PASS",
+   "what": "Restore + deterministic reproduction of final 12 cases on unchanged code (identical targets to NEW_INFERENCE.json)",
+   "evidence": [
+    "BASELINE_REPRO_FINAL12.json"
+   ]
+  },
+  {
+   "id": "C0b",
+   "status": "PASS",
+   "what": "Official SUPPORT reconciliation"
+  },
+  {
+   "id": "C1",
+   "status": "IMPLEMENTED_DEV_REGRESSION_PASS_ACCEPTANCE_PENDING",
+   "what": "Round-trip concept coverage (coverage.js), bounded 2-round repair, closed-class sense rules, derived nominal terms, analytic lexical negation, p-value term, -nya uncertainty morphology",
+   "evidence": [
+    "DEV1..DEV9 json (dev only; seen data)",
+    "regressions/DIFFERENTIAL_SUMMARY.json",
+    "checkpoints/C1*.tgz",
+    "checkpoints/C2_code_dev9.tgz"
+   ],
+   "devResultFinal12": "F01,F04,F05,F06,F07,F11,F12 meaning preserved in internal AI reading (dev, not acceptance); F02 still safe rejection (model has no verifiable rendering of \"excludes\"); F03,F08,F09,F10 unchanged",
+   "rejectedApproaches": [
+    "Reject-on-unverifiable-gap (DEV6): 17 new rejections incl. correct F06 -> reverted",
+    "Blind isolated-term forcing: homograph damage (rose->mawar, pengambilan->fetch) -> morphology eligibility + back-verification + no-new-gap acceptance"
+   ],
+   "bugsFoundAndFixed": [
+    "stemmer y->i silently disabled synonym \"delay\" (F06 regressed DEV3-DEV7) -> synonym normalisation + unit test",
+    "ID synonym normalisation over-merged persamaan->sama (F12 regressed DEV8) -> EN-only normalisation + control test"
+   ],
+   "cost": "Dev 102-case real inference: ~305 s vs 136 s baseline (~2.2x) due to back-translation and isolated-term lookups; reverse model also loaded (2nd worker)."
+  },
+  {
+   "id": "C2",
+   "status": "FROZEN_ACCEPTANCE_FAIL",
+   "what": "Freeze-1 (cp22-12d9d6b9f49020d9), post-freeze corpus of 16, inference on deploy bytes, internal AI review",
+   "evidence": [
+    "acceptance/FREEZE.json",
+    "acceptance/NEW_CORPUS.json",
+    "acceptance/NEW_INFERENCE.json",
+    "acceptance/AI_REVIEW.json",
+    "acceptance/CP21_BASELINE_SAME_CORPUS.json"
+   ],
+   "result": "6 critical, 3 major, 3 minor, 3 adequate, 1 incomplete; identical targets to pristine CP21 on 16/16; detection notes on 2/6 criticals"
+  },
+  {
+   "id": "C3",
+   "status": "PASS",
+   "what": "Robustness after acceptance: verifier failure degrades visibly; combined offline readiness. Freeze-2 cp22-f995042b7da24e42; outputs on final deploy bytes identical to freeze-1 (16) and dev (12); 35/35 suites on Node 24; deterministic rebuild 1200/1200",
+   "evidence": [
+    "acceptance-freeze2/",
+    "regressions/cp22-final-node24/",
+    "build-final/",
+    "release-final/"
+   ]
+  },
+  {
+   "id": "C4",
+   "status": "DELIVERED_NOT_PRODUCTION_READY",
+   "what": "Delta package, deploy candidate, acceptance, continuation",
+   "evidence": [
+    "../../SEMANTIK_SETARA_RELEASE_ACCEPTANCE_CP22.md",
+    "../../SEMANTIK_SETARA_CHECKPOINT_CONTINUE_CP22.md"
+   ]
+  },
+  {
+   "id": "C5",
+   "status": "GITHUB_READY_REPOSITORY_PACKAGED_NOT_PRODUCTION_READY",
+   "what": "Single GitHub-ready repository ZIP from the verified CP22 working copy (no delta re-application). dist/ and node_modules excluded; models included as plain Git files (largest 15,344,608 bytes; no LFS).",
+   "verificationOnCleanExtraction": {
+    "zipSafety": "PASS 15064 entries, no absolute/.. paths, no symlinks",
+    "verifyRepository": "PASS 15063 files exact size+SHA-256, sourceHash f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+    "npmCiFromLockfile": "PASS 11 packages, Node 24.22.1",
+    "buildWithHistory": "PASS 11 s; 1200 files byte-identical to evidence/cp22/build-final/BUILD_MANIFEST.json",
+    "regressions": "PASS 35/35 run-regressions.py --include-cp22, Node 24.22.1",
+    "coverageUnit": "PASS",
+    "staticVerify": "7/8; FAIL unchanged: 1200 files > 1000 dashboard drag-and-drop limit",
+    "realInferenceFinal12OnCleanBuild": "PASS outputs identical to acceptance-freeze2/FINAL12_INFERENCE.json",
+    "finding": "Legacy regression suites overwrite tracked files under evidence/ (cp19/geometry, cp20/*, lifecycle, pdf). Detected by verify-repository.py; docs now require a separate QA worktree or git restore."
+   },
+   "gatesUnchanged": "All CP22 gate statuses unchanged (semantic FAIL, static-deploy FAIL, browser NOT_RUN, external BLOCKED)."
+  }
+ ],
+ "rootCauseHypothesis": "Greedy OPUS-MT output passes structural guards while dropping or substituting content concepts; no content-coverage verification exists. Round-trip probe flags all 7 criticals.",
+ "gates": [
+  {
+   "id": "baseline-recovery",
+   "status": "PASS"
+  },
+  {
+   "id": "regressions",
+   "status": "PASS",
+   "reason": "35/35 Node 24.22.1; Node 22 Promise.try env failures identical CP21/CP22"
+  },
+  {
+   "id": "deterministic-build-namespace-retention",
+   "status": "PASS",
+   "reason": "CP19, CP20, CP21 retained; rebuild identical"
+  },
+  {
+   "id": "static-deploy",
+   "status": "FAIL",
+   "reason": "1200 files > 1000 dashboard drag-and-drop limit; Wrangler limit 20000 OK; owner decision"
+  },
+  {
+   "id": "offline-vm-controls",
+   "status": "PASS"
+  },
+  {
+   "id": "consumer-online-browser-cp22",
+   "status": "NOT_RUN",
+   "reason": "translation.js changed (second worker); CP21 browser evidence does not cover it"
+  },
+  {
+   "id": "restore-warning",
+   "status": "PASS_INHERITED",
+   "reason": "main.js/storage.js/export.js unchanged"
+  },
+  {
+   "id": "semantic-acceptance",
+   "status": "FAIL",
+   "reason": "Fresh post-freeze 16: 6 critical; human approvals 0"
+  },
+  {
+   "id": "large-pdf-full-translation",
+   "status": "NOT_RUN"
+  },
+  {
+   "id": "advanced-math-table-ocr",
+   "status": "NOT_RUN"
+  },
+  {
+   "id": "cloudflare-staging",
+   "status": "BLOCKED"
+  },
+  {
+   "id": "browser-offline-update-rollback",
+   "status": "BLOCKED"
+  },
+  {
+   "id": "physical-device",
+   "status": "BLOCKED"
+  },
+  {
+   "id": "independent-review",
+   "status": "BLOCKED"
+  }
+ ],
+ "build": {
+  "release": "cp22-f995042b7da24e42",
+  "version": "0.22.0",
+  "sourceHash": "f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+  "modelHashes": {
+   "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+   "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+  },
+  "base": "/r/f995042b7da24e42/"
+ },
+ "updatedUTC": "2026-11-14T01:32:57.835697+00:00"
+}

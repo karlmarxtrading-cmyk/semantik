@@ -1,0 +1,100 @@
+{
+  "method": "Actual CP20 layout/export source with Node Blob and real Marked/KaTeX; synthetic fixtures, not browser or model inference",
+  "results": [
+    {
+      "name": "References ends at an unfamiliar chapter title and repeated chapter bibliography",
+      "status": "PASS",
+      "ms": 4.048934000000003
+    },
+    {
+      "name": "Sparse page unfamiliar heading works without a bold font-name signal",
+      "status": "PASS",
+      "ms": 0.2309709999999967
+    },
+    {
+      "name": "Bibliography continuation and prominent citation entry stay references",
+      "status": "PASS",
+      "ms": 0.13894500000000676
+    },
+    {
+      "name": "Small running title above continuing citation does not end References",
+      "status": "PASS",
+      "ms": 0.110383000000013
+    },
+    {
+      "name": "Ordinary prose beginning Part of does not become a chapter",
+      "status": "PASS",
+      "ms": 0.07404999999999973
+    },
+    {
+      "name": "Lists have explicit markers and continuation source item coverage",
+      "status": "PASS",
+      "ms": 0.177732000000006
+    },
+    {
+      "name": "Hierarchy preserved and page numbers do not replace chapters",
+      "status": "PASS",
+      "ms": 1.7453349999999972
+    },
+    {
+      "name": "Identical image bytes with different paths embedded once and still render",
+      "status": "PASS",
+      "ms": 19.120553
+    },
+    {
+      "name": "Digital page source raster optional while required fallback always available",
+      "status": "PASS",
+      "ms": 13.193936000000008
+    },
+    {
+      "name": "Successful figure OCR preserves essential visual in legacy and streaming exports",
+      "status": "PASS",
+      "ms": 12.093264000000005
+    },
+    {
+      "name": "Unresolved per-page coverage and math warnings are exported and cannot claim complete",
+      "status": "PASS",
+      "ms": 3.653361000000018
+    },
+    {
+      "name": "Ordered and unordered lists render as lists while hostile source HTML stays escaped",
+      "status": "PASS",
+      "ms": 3.3805679999999825
+    },
+    {
+      "name": "1500 unique pages beyond two million characters export with reconciled IDs",
+      "status": "PASS",
+      "ms": 2648.457123
+    },
+    {
+      "name": "Partial extraction can export committed prefix with pending blocks clearly marked",
+      "status": "PASS",
+      "ms": 1.855417000000216
+    },
+    {
+      "name": "Quota-rescue output distinguishes available pages from unsaved changes",
+      "status": "PASS",
+      "ms": 3.4069070000000465
+    },
+    {
+      "name": "Missing pages, aggregate mismatch and duplicate IDs fail closed",
+      "status": "PASS",
+      "ms": 4.016747000000123
+    },
+    {
+      "name": "Fallback has a measured byte cap and cancellation prevents usable output",
+      "status": "PASS",
+      "ms": 1.184537999999975
+    },
+    {
+      "name": "OPFS boundary commits a file, exposes cleanup and aborts failed writes",
+      "status": "PASS",
+      "ms": 3.1690159999998286
+    },
+    {
+      "name": "Denied OPFS allows bounded small rescue export",
+      "status": "PASS",
+      "ms": 1.3596259999999347
+    }
+  ]
+}

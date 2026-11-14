@@ -1,0 +1,2184 @@
+{
+  "identity": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp20/app",
+    "adapterSHA256": "18ef6e360994e1ad8dd84d3962f75ef69ca1c93a81dcafa9eec3fc091b56a177",
+    "rulesSHA256": "80d2e053ba8be6631c70c5141f7e862f9db84e82db55f713cf09efcb29882b09",
+    "spansSHA256": "7a34ee062b98c5bdfb29cde488d842dab9ebd59bdf6e872f356d7758f869782b",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "freeze": {
+    "frozenAt": "2026-11-13T06:44:42.435140+00:00",
+    "ruleset": "cp20-context-terminology-meaning-guards-v1",
+    "files": {
+      "app/app/translation.js": "18ef6e360994e1ad8dd84d3962f75ef69ca1c93a81dcafa9eec3fc091b56a177",
+      "app/app/claim-guards.js": "80d2e053ba8be6631c70c5141f7e862f9db84e82db55f713cf09efcb29882b09",
+      "app/app/semantic-spans.js": "7a34ee062b98c5bdfb29cde488d842dab9ebd59bdf6e872f356d7758f869782b",
+      "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+    },
+    "rubric": {
+      "meaning": "2=equivalent relations; 1=minor ambiguity; 0=wrong relation/critical concept",
+      "completeness": "2=all content; 1=minor omission; 0=missing clause/qualifier/negation",
+      "terminology": "2=domain-correct; 1=awkward but understandable; 0=wrong scientific sense",
+      "fluency": "2=natural; 1=understandable grammatical defects; 0=unintelligible",
+      "numbersNotation": "2=all preserved; 1=format only; 0=changed/dropped",
+      "consistency": "2=consistent; 1=minor variation; 0=contradiction"
+    },
+    "criticalDefinition": "Changed scientific assertion, causal or logical relation, qualifier, polarity, numeric identity, or unprocessed/rejected prose in final required corpus. Guard pass is not an accuracy score.",
+    "acceptance": "Zero critical errors on this fixed corpus, all six dimensions evaluated; human bilingual review remains separately PENDING.",
+    "provenance": "AI-authored corpus and AI assessments only. No independent human approvals; this is not population accuracy."
+  },
+  "method": "New AI-authored 40-case acceptance corpus created after adapter/rules freeze. Real local ONNX/WASM through Node Worker transport. This is not browser/device evidence; no human review claimed.",
+  "rows": [
+    {
+      "id": "CP20-H-001",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "The intersection of two finite sets can be empty even when both sets contain elements. This observation does not imply that their union is empty.",
+      "reference": "Irisan dua himpunan hingga dapat kosong meskipun kedua himpunan mengandung elemen. Pengamatan ini tidak menyiratkan bahwa gabungannya kosong.",
+      "text": "Irisan dari dua himpunan hingga dapat kosong bahkan ketika kedua set berisi elemen. Pengamatan ini tidak menyiratkan bahwa gabungan mereka kosong.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 43,
+      "outputTokens": 34,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 43,
+        "outputTokens": 34,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The intersection of two finite sets can be empty even when both sets contain elements."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "This observation does not imply that their union is empty."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1231,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-002",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A bounded sequence need not converge. Monotonicity is an additional condition, and the converse claim requires a separate proof.",
+      "reference": "Barisan terbatas tidak harus konvergen. Monotonisitas merupakan syarat tambahan, dan klaim kebalikannya memerlukan bukti tersendiri.",
+      "text": "Barisan terbatas tidak harus konvergen. Monotonikitas adalah kondisi tambahan, dan pernyataan yang saling berhubungan membutuhkan bukti yang berbeda.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 28,
+      "outputTokens": 24,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 28,
+        "outputTokens": 24,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A bounded sequence need not converge."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Monotonicity is an additional condition, and the converse claim requires a separate proof."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 565,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-003",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "If the function is differentiable at a point, it is continuous there; continuity alone is not sufficient for differentiability. The hypothesis concerns that point rather than every point in the domain.",
+      "reference": "Jika fungsi dapat diturunkan pada suatu titik, fungsi itu kontinu di sana; kekontinuan saja tidak cukup untuk keterdiferensialan. Hipotesis tersebut menyangkut titik itu, bukan setiap titik dalam domain.",
+      "text": "Jika fungsi dapat dibedakan pada suatu titik, itu terus ada; keberlanjutan saja tidak cukup untuk diferensialkan. Hipotesisnya menyangkut titik itu daripada setiap titik di domain.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 42,
+      "outputTokens": 41,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 42,
+        "outputTokens": 41,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "If the function is differentiable at a point, it is continuous there; continuity alone is not sufficient for differentiability."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The hypothesis concerns that point rather than every point in the domain."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1043,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-004",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "No finite subgroup contains infinitely many distinct elements. The identity element belongs to every subgroup, regardless of its size.",
+      "reference": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda. Elemen identitas merupakan anggota setiap subgrup, terlepas dari ukurannya.",
+      "text": "No finite subgroup contains infinitely many distinct elements. The identity element belongs to every subgroup, regardless of its size.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 27,
+        "outputTokens": 28,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "No finite subgroup contains infinitely many distinct elements."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "No finite subgroup contains infinitely many distinct elements."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Pembatas hingga/tak hingga pada konsep matematika hilang atau berubah.",
+          "segmentSource": "No finite subgroup contains infinitely many distinct elements.",
+          "candidateText": "Tidak ada subgrup hingga yang berisi elemen yang berbeda tak terhingga.",
+          "rawCandidate": "Tidak ada <ssterm0/> yang berisi elemen yang berbeda tak terhingga."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 597,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-005",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "After the solvent evaporated, the dissolved salt remained in the container. The initial solution was homogeneous, but the remaining solid was not a solution.",
+      "reference": "Setelah pelarut menguap, garam terlarut tertinggal di wadah. Larutan awal bersifat homogen, tetapi padatan yang tersisa bukan larutan.",
+      "text": "Setelah pelarut menguap, garam yang larut tetap ada di dalam wadah itu. Inisial larutan adalah homogen, tetapi yang tersisa padat bukanlah larutan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 45,
+      "outputTokens": 37,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 45,
+        "outputTokens": 37,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "After the solvent evaporated, the dissolved salt remained in the container."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The initial solution was homogeneous, but the remaining solid was not a solution."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 975,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-006",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "A catalyst can participate in intermediate reactions without being consumed overall. Its presence changes the reaction rate but does not change the equilibrium constant at a fixed temperature.",
+      "reference": "Katalis dapat berpartisipasi dalam reaksi antara tanpa habis bereaksi secara keseluruhan. Kehadirannya mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu tetap.",
+      "text": "Katalis dapat berpartisipasi dalam reaksi menengah tanpa dikonsumsi secara keseluruhan. Kehadirannya mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu yang tetap.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 43,
+      "outputTokens": 33,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 43,
+        "outputTokens": 33,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A catalyst can participate in intermediate reactions without being consumed overall."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Its presence changes the reaction rate but does not change the equilibrium constant at a fixed temperature."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 788,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-007",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "The concentration decreased from 4 mM to 2 mM after dilution. This change does not imply that the amount of dissolved substance decreased.",
+      "reference": "Konsentrasi menurun dari 4 mM menjadi 2 mM setelah pengenceran. Perubahan ini tidak menyiratkan bahwa jumlah zat terlarut berkurang.",
+      "text": "Konsentrasi menurun dari 4 mM ke 2 mM setelah dilution. Perubahan ini tidak menyiratkan bahwa jumlah zat yang terlarut menurun.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 39,
+      "outputTokens": 31,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 39,
+        "outputTokens": 31,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The concentration decreased from 4 mM to 2 mM after dilution."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "This change does not imply that the amount of dissolved substance decreased."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 716,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-008",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "Heating accelerated the reaction, whereas cooling slowed it. The investigators measured the reaction rate twice and reported both measurements rather than their sum.",
+      "reference": "Pemanasan mempercepat reaksi, sedangkan pendinginan memperlambatnya. Peneliti mengukur laju reaksi dua kali dan melaporkan kedua pengukuran, bukan jumlahnya.",
+      "text": "Pemanas mempercepat reaksi, sedangkan pendinginan memperlambatnya. Para peneliti mengukur laju reaksi dua kali dan melaporkan kedua pengukuran itu daripada jumlah mereka.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 34,
+      "outputTokens": 31,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 34,
+        "outputTokens": 31,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Heating accelerated the reaction, whereas cooling slowed it."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The investigators measured the reaction rate twice and reported both measurements rather than their sum."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 737,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-009",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "Failure to reject the null hypothesis is not proof that the two treatments are equivalent. The confidence interval must also be interpreted in relation to the effect size and the study design.",
+      "reference": "Kegagalan menolak hipotesis nol bukan bukti bahwa kedua perlakuan setara. Interval kepercayaan juga harus ditafsirkan dalam hubungannya dengan ukuran efek dan rancangan penelitian.",
+      "text": "Gagal menolak hipotesis nol bukanlah bukti bahwa kedua perawatan tersebut setara. Interval kepercayaan juga harus ditafsirkan dalam kaitannya dengan ukuran efek dan desain studi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 48,
+      "outputTokens": 35,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 48,
+        "outputTokens": 35,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Failure to reject the null hypothesis is not proof that the two treatments are equivalent."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The confidence interval must also be interpreted in relation to the effect size and the study design."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 849,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-010",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "When observations are dependent, increasing the sample size may not reduce the standard error as much as expected. The calculation must account for the dependence rather than treating all observations as independent.",
+      "reference": "Ketika pengamatan saling bergantung, peningkatan ukuran sampel mungkin tidak mengurangi galat baku sebesar yang diharapkan. Perhitungan harus memperhitungkan ketergantungan itu, bukan memperlakukan semua pengamatan sebagai independen.",
+      "text": "Ketika pengamatan tergantung, meningkatkan ukuran sampel tidak dapat mengurangi galat baku sebanyak yang diharapkan. Perhitungannya harus memperhitungkan ketergantungannya ketimbang menganggap semua pengamatan sebagai independen.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 45,
+      "outputTokens": 35,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 45,
+        "outputTokens": 35,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "When observations are dependent, increasing the sample size may not reduce the standard error as much as expected."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The calculation must account for the dependence rather than treating all observations as independent."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 894,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-011",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "The sample mean was 12 and the standard deviation was 3. These statistics describe the sample; they do not establish the corresponding values for the entire population.",
+      "reference": "Rata-rata sampel adalah 12 dan simpangan baku adalah 3. Statistik ini menggambarkan sampel; statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi.",
+      "text": "Rata-rata sampel adalah 12 dan simpangan baku adalah 3. Statistik ini menjelaskan contoh - contoh itu; tidak menetapkan nilai - nilai yang sesuai bagi seluruh penduduk.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 50,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 50,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The sample mean was 12 and the standard deviation was 3."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "These statistics describe the sample; they do not establish the corresponding values for the entire population."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1175,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-012",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "An unbiased estimator need not have the smallest variance. Conversely, an estimator with lower variance may still have substantial bias.",
+      "reference": "Penduga tidak bias tidak harus memiliki varians terkecil. Sebaliknya, penduga dengan varians lebih rendah mungkin masih memiliki bias yang besar.",
+      "text": "Tidak bias penduga tidak harus memiliki terkecil varians. Sebaliknya, penduga dengan lebih rendah varians mungkin masih memiliki bias yang substansial.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 44,
+      "outputTokens": 36,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 44,
+        "outputTokens": 36,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "An unbiased estimator need not have the smallest variance."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Conversely, an estimator with lower variance may still have substantial bias."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 876,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-013",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "An increase in price can reduce the quantity demanded without shifting the demand curve. A change in consumer income may shift the curve even when the price remains fixed.",
+      "reference": "Kenaikan harga dapat mengurangi jumlah yang diminta tanpa menggeser kurva permintaan. Perubahan pendapatan konsumen mungkin menggeser kurva tersebut meskipun harga tetap.",
+      "text": "An increase in price can reduce the quantity demanded without shifting the demand curve. A change in consumer income may shift the curve even when the price remains fixed.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 28,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "An increase in price can reduce the quantity demanded without shifting the demand curve."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "A change in consumer income may shift the curve even when the price remains fixed."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa modalitas: kemungkinan tidak boleh berubah menjadi kepastian.",
+          "segmentSource": "A change in consumer income may shift the curve even when the price remains fixed.",
+          "candidateText": "Perubahan pendapatan konsumen bisa mengubah kurva meskipun harganya tetap tetap sama.",
+          "rawCandidate": "Perubahan pendapatan konsumen bisa mengubah kurva meskipun harganya tetap tetap sama."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 621,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-014",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "If nominal wages rise more slowly than prices, purchasing power falls. A higher nominal income therefore does not necessarily imply an improvement in the standard of living.",
+      "reference": "Jika upah nominal naik lebih lambat daripada harga, daya beli turun. Karena itu, pendapatan nominal yang lebih tinggi tidak selalu menyiratkan peningkatan taraf hidup.",
+      "text": "Jika upah nominal naik lebih lambat dari harga, daya beli jatuh. Oleh karena itu, pendapatan nominal yang lebih tinggi tidak selalu menyiratkan peningkatan standar kehidupan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 40,
+      "outputTokens": 37,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 40,
+        "outputTokens": 37,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "If nominal wages rise more slowly than prices, purchasing power falls."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "A higher nominal income therefore does not necessarily imply an improvement in the standard of living."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 858,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-015",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "Demand was inelastic over the observed price range. The authors did not conclude that every consumer ignored changes in price, nor did they assume that demand would remain inelastic outside that range.",
+      "reference": "Permintaan bersifat inelastis pada rentang harga yang diamati. Penulis tidak menyimpulkan bahwa setiap konsumen mengabaikan perubahan harga, dan mereka juga tidak menganggap bahwa permintaan akan tetap inelastis di luar rentang itu.",
+      "text": "Demand was inelastic over the observed price range. The authors did not conclude that every consumer ignored changes in price, nor did they assume that demand would remain inelastic outside that range.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 5,
+        "cacheHits": 0,
+        "inputTokens": 118,
+        "outputTokens": 99,
+        "uniqueInputs": 5
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Demand was inelastic over the observed price range."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The authors did not conclude that every consumer ignored changes in price, nor did they assume that demand would remain inelastic outside that range."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "The authors did not conclude that every consumer ignored changes in price, nor did they assume that demand would remain inelastic outside that range."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "The authors did not conclude that every consumer ignored changes in price,"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "nor did they assume that demand would remain inelastic outside that range."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "nor did they assume that demand would remain inelastic outside that range.",
+          "candidateText": "juga tidak mereka berasumsi bahwa permintaan akan tetap tidaklastik di luar jangkauan itu.",
+          "rawCandidate": "juga tidak mereka berasumsi bahwa <ssterm0/> akan tetap tidaklastik di luar jangkauan itu."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 2548,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-016",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "The survey recorded requests for financial advice as well as market demand for loans. These two measures should not be treated as interchangeable.",
+      "reference": "Survei mencatat permintaan saran keuangan serta permintaan pasar untuk pinjaman. Kedua ukuran ini tidak boleh dianggap saling dapat dipertukarkan.",
+      "text": "Survei yang dicatat meminta saran keuangan serta pasar permintaan untuk pinjaman. Kedua langkah ini tidak boleh diperlakukan sebagai pertukaran.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 33,
+      "outputTokens": 25,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 33,
+        "outputTokens": 25,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The survey recorded requests for financial advice as well as market demand for loans."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "These two measures should not be treated as interchangeable."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 553,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-017",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The archive contains letters written before the policy was introduced. Although the letters describe expectations, they cannot by themselves establish what happened after implementation. Later records must be examined separately.",
+      "reference": "Arsip tersebut berisi surat yang ditulis sebelum kebijakan diperkenalkan. Meskipun surat-surat itu menggambarkan harapan, surat-surat itu sendiri tidak dapat membuktikan apa yang terjadi setelah penerapan. Catatan yang lebih baru harus diperiksa secara terpisah.",
+      "text": "Arsip berisi surat yang ditulis sebelum kebijakan diperkenalkan. Meskipun kata - kata itu menggambarkan harapan, mereka sendiri tidak dapat menetapkan apa yang terjadi setelah penerapan. Catatan selanjutnya harus diperiksa secara terpisah.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 38,
+      "outputTokens": 35,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 35,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The archive contains letters written before the policy was introduced."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Although the letters describe expectations, they cannot by themselves establish what happened after implementation."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Later records must be examined separately."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 783,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-018",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The authors distinguished the participants’ statements from the researchers’ interpretations. They retained contradictory accounts in the appendix instead of deleting them, because agreement among respondents was not assumed in advance.",
+      "reference": "Penulis membedakan pernyataan peserta dari penafsiran peneliti. Mereka mempertahankan keterangan yang bertentangan di lampiran alih-alih menghapusnya, karena kesepakatan di antara responden tidak diasumsikan sejak awal.",
+      "text": "Para penulis membedakan pernyataan peserta dari penafsiran para peneliti. Mereka mempertahankan catatan yang saling bertentangan di usus buntu bukannya menghapus mereka, karena kesepakatan di antara responden tidak diasumsikan sebelumnya.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 42,
+      "outputTokens": 33,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 42,
+        "outputTokens": 33,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The authors distinguished the participants’ statements from the researchers’ interpretations."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "They retained contradictory accounts in the appendix instead of deleting them, because agreement among respondents was not assumed in advance."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 830,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-019",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "This chapter reports the limitations of the earlier experiment. It does not withdraw the numerical results, but it explains why those results cannot be generalized to a population that was not represented in the sample. The distinction is essential for interpretation.",
+      "reference": "Bab ini melaporkan keterbatasan eksperimen sebelumnya. Bab ini tidak menarik kembali hasil numerik, tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel. Pembedaan ini penting untuk penafsiran.",
+      "text": "Bab ini melaporkan keterbatasan percobaan sebelumnya. Hal ini tidak menarik hasil numerik, tetapi menjelaskan mengapa hasil tersebut tidak dapat dirumuskan kepada populasi yang tidak diwakili dalam sampel. Perbedaan ini penting untuk interpretasi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 49,
+      "outputTokens": 41,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 49,
+        "outputTokens": 41,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "This chapter reports the limitations of the earlier experiment."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "It does not withdraw the numerical results, but it explains why those results cannot be generalized to a population that was not represented in the sample."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The distinction is essential for interpretation."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1058,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-020",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "Several passages were illegible in the original manuscript. The editors marked those gaps explicitly and did not invent missing words. A readable transcription is useful only when uncertainty remains visible to subsequent readers.",
+      "reference": "Beberapa bagian tidak terbaca pada naskah asli. Penyunting menandai kekosongan itu secara eksplisit dan tidak mengarang kata yang hilang. Transkripsi yang terbaca hanya berguna ketika ketidakpastian tetap terlihat oleh pembaca berikutnya.",
+      "text": "Several passages were illegible in the original manuscript. The editors marked those gaps explicitly and did not invent missing words. A readable transcription is useful only when uncertainty remains visible to subsequent readers.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 12,
+        "outputTokens": 9,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Several passages were illegible in the original manuscript."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "Several passages were illegible in the original manuscript.",
+          "candidateText": "Beberapa bagian tidak bisa dibaca dalam naskah asli.",
+          "rawCandidate": "Beberapa bagian tidak bisa dibaca dalam naskah asli."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 179,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-021",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Irisan dua himpunan hingga dapat kosong meskipun kedua himpunan mengandung elemen. Pengamatan ini tidak menyiratkan bahwa gabungannya kosong.",
+      "reference": "The intersection of two finite sets can be empty even when both sets contain elements. This observation does not imply that their union is empty.",
+      "text": "Intersection two finite set can be empty even though both set contain elements. This observation does not imply that the combination is empty.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 34,
+      "outputTokens": 39,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 34,
+        "outputTokens": 39,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Irisan dua himpunan hingga dapat kosong meskipun kedua himpunan mengandung elemen."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Pengamatan ini tidak menyiratkan bahwa gabungannya kosong."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1084,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-022",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Barisan terbatas tidak harus konvergen. Monotonisitas merupakan syarat tambahan, dan klaim kebalikannya memerlukan bukti tersendiri.",
+      "reference": "A bounded sequence need not converge. Monotonicity is an additional condition, and the converse claim requires a separate proof.",
+      "text": "Bounded sequence need not converges. Monotonicity is an additional requirement, and the opposite claim requires its own proof.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 23,
+      "outputTokens": 26,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 23,
+        "outputTokens": 26,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Barisan terbatas tidak harus konvergen."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Monotonisitas merupakan syarat tambahan, dan klaim kebalikannya memerlukan bukti tersendiri."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 593,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-023",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Jika fungsi dapat diturunkan pada suatu titik, fungsi itu kontinu di sana; kekontinuan saja tidak cukup untuk keterdiferensialan. Hipotesis tersebut menyangkut titik itu, bukan setiap titik dalam domain.",
+      "reference": "If the function is differentiable at a point, it is continuous there; continuity alone is not sufficient for differentiability. The hypothesis concerns that point rather than every point in the domain.",
+      "text": "If function can be passed down at a point, it's continuous there; it's not enough continuation to be different. The hypothesis concerns that point, Not every point in the domain.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 48,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 64,
+        "outputTokens": 56,
+        "uniqueInputs": 4
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Jika fungsi dapat diturunkan pada suatu titik, fungsi itu kontinu di sana; kekontinuan saja tidak cukup untuk keterdiferensialan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Hipotesis tersebut menyangkut titik itu, bukan setiap titik dalam domain."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "Hipotesis tersebut menyangkut titik itu,"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "bukan setiap titik dalam domain."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1409,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-024",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda. Elemen identitas merupakan anggota setiap subgrup, terlepas dari ukurannya.",
+      "reference": "No finite subgroup contains infinitely many distinct elements. The identity element belongs to every subgroup, regardless of its size.",
+      "text": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda. Elemen identitas merupakan anggota setiap subgrup, terlepas dari ukurannya.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 29,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Pembatas hingga/tak hingga pada konsep matematika hilang atau berubah.",
+          "segmentSource": "Tidak ada subgrup hingga yang mengandung tak hingga banyak elemen berbeda.",
+          "candidateText": "No finite subgroup contains beyond the number of different elements.",
+          "rawCandidate": "No <ssterm0/> contains beyond the number of different elements."
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 615,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-025",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Setelah pelarut menguap, garam terlarut tertinggal di wadah. Larutan awal bersifat homogen, tetapi padatan yang tersisa bukan larutan.",
+      "reference": "After the solvent evaporated, the dissolved salt remained in the container. The initial solution was homogeneous, but the remaining solid was not a solution.",
+      "text": "Once the solvent evaporates, the soluted salt is left in the container. Solution starts as homogeneous, but the remaining solids are not solution.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 37,
+      "outputTokens": 45,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 37,
+        "outputTokens": 45,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Setelah pelarut menguap, garam terlarut tertinggal di wadah."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Larutan awal bersifat homogen, tetapi padatan yang tersisa bukan larutan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1135,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-026",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Katalis dapat berpartisipasi dalam reaksi antara tanpa habis bereaksi secara keseluruhan. Kehadirannya mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu tetap.",
+      "reference": "A catalyst can participate in intermediate reactions without being consumed overall. Its presence changes the reaction rate but does not change the equilibrium constant at a fixed temperature.",
+      "text": "Catalysts can participate in reactions between without having exhausted their overall reaction. His presence changes reaction rate but does not change equilibrium constant at fixed temperature.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 35,
+      "outputTokens": 41,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 35,
+        "outputTokens": 41,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Katalis dapat berpartisipasi dalam reaksi antara tanpa habis bereaksi secara keseluruhan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kehadirannya mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu tetap."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 968,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-027",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Konsentrasi menurun dari 4 mM menjadi 2 mM setelah pengenceran. Perubahan ini tidak menyiratkan bahwa jumlah zat terlarut berkurang.",
+      "reference": "The concentration decreased from 4 mM to 2 mM after dilution. This change does not imply that the amount of dissolved substance decreased.",
+      "text": "Concentration is decreasing from 4 mM to 2 mM after rincerning. This change does not imply that the number of solutes is reduced.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 32,
+      "outputTokens": 42,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 32,
+        "outputTokens": 42,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Konsentrasi menurun dari 4 mM menjadi 2 mM setelah pengenceran."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Perubahan ini tidak menyiratkan bahwa jumlah zat terlarut berkurang."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1027,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-028",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Pemanasan mempercepat reaksi, sedangkan pendinginan memperlambatnya. Peneliti mengukur laju reaksi dua kali dan melaporkan kedua pengukuran, bukan jumlahnya.",
+      "reference": "Heating accelerated the reaction, whereas cooling slowed it. The investigators measured the reaction rate twice and reported both measurements rather than their sum.",
+      "text": "Warming speeds up reactions, while cooling slows them down. Researchers measure reaction rate twice and report both measurements, not numbers.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 31,
+      "outputTokens": 32,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 32,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Pemanasan mempercepat reaksi, sedangkan pendinginan memperlambatnya."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Peneliti mengukur laju reaksi dua kali dan melaporkan kedua pengukuran, bukan jumlahnya."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 691,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-029",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Kegagalan menolak hipotesis nol bukan bukti bahwa kedua perlakuan setara. Interval kepercayaan juga harus ditafsirkan dalam hubungannya dengan ukuran efek dan rancangan penelitian.",
+      "reference": "Failure to reject the null hypothesis is not proof that the two treatments are equivalent. The confidence interval must also be interpreted in relation to the effect size and the study design.",
+      "text": "Failure to reject null hypothesis is not evidence that both treatment is equal. Confidence interval must also be interpreted in relation to effect size and research design.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 36,
+      "outputTokens": 41,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 36,
+        "outputTokens": 41,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Kegagalan menolak hipotesis nol bukan bukti bahwa kedua perlakuan setara."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Interval kepercayaan juga harus ditafsirkan dalam hubungannya dengan ukuran efek dan rancangan penelitian."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 959,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-030",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Ketika pengamatan saling bergantung, peningkatan ukuran sampel mungkin tidak mengurangi galat baku sebesar yang diharapkan. Perhitungan harus memperhitungkan ketergantungan itu, bukan memperlakukan semua pengamatan sebagai independen.",
+      "reference": "When observations are dependent, increasing the sample size may not reduce the standard error as much as expected. The calculation must account for the dependence rather than treating all observations as independent.",
+      "text": "When observations depend, an increase of sample size may not reduce standard error as much as expected. Calculations should account for that dependency, not treat all observations as independent.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 38,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Ketika pengamatan saling bergantung, peningkatan ukuran sampel mungkin tidak mengurangi galat baku sebesar yang diharapkan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Perhitungan harus memperhitungkan ketergantungan itu, bukan memperlakukan semua pengamatan sebagai independen."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1070,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-031",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Rata-rata sampel adalah 12 dan simpangan baku adalah 3. Statistik ini menggambarkan sampel; statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi.",
+      "reference": "The sample mean was 12 and the standard deviation was 3. These statistics describe the sample; they do not establish the corresponding values for the entire population.",
+      "text": "Rata-rata sampel adalah 12 dan simpangan baku adalah 3. Statistik ini menggambarkan sampel; statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 64,
+        "outputTokens": 65,
+        "uniqueInputs": 4
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Rata-rata sampel adalah 12 dan simpangan baku adalah 3."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Statistik ini menggambarkan sampel; statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "Statistik ini menggambarkan sampel;"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa kuantor: cakupan pernyataan mungkin berubah.",
+          "segmentSource": "statistik ini tidak menetapkan nilai yang bersesuaian untuk seluruh populasi.",
+          "candidateText": "These statistics don't set any corresponding value for the entire population.",
+          "rawCandidate": "These statistics don't set any corresponding value for the entire population."
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1570,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-032",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Penduga tidak bias tidak harus memiliki varians terkecil. Sebaliknya, penduga dengan varians lebih rendah mungkin masih memiliki bias yang besar.",
+      "reference": "An unbiased estimator need not have the smallest variance. Conversely, an estimator with lower variance may still have substantial bias.",
+      "text": "Estimator unbiased need not has the smallest variance. Instead, estimator with lower variance may still have large biases.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 37,
+      "outputTokens": 39,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 37,
+        "outputTokens": 39,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penduga tidak bias tidak harus memiliki varians terkecil."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Sebaliknya, penduga dengan varians lebih rendah mungkin masih memiliki bias yang besar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 957,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-033",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Kenaikan harga dapat mengurangi jumlah yang diminta tanpa menggeser kurva permintaan. Perubahan pendapatan konsumen mungkin menggeser kurva tersebut meskipun harga tetap.",
+      "reference": "An increase in price can reduce the quantity demanded without shifting the demand curve. A change in consumer income may shift the curve even when the price remains fixed.",
+      "text": "Price increase can reduce the quantity requested without shifting the curve demand. The consumer's change in income may shift that curve even though the price is fixed.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 30,
+      "outputTokens": 36,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 30,
+        "outputTokens": 36,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Kenaikan harga dapat mengurangi jumlah yang diminta tanpa menggeser kurva permintaan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Perubahan pendapatan konsumen mungkin menggeser kurva tersebut meskipun harga tetap."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 822,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-034",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Jika upah nominal naik lebih lambat daripada harga, daya beli turun. Karena itu, pendapatan nominal yang lebih tinggi tidak selalu menyiratkan peningkatan taraf hidup.",
+      "reference": "If nominal wages rise more slowly than prices, purchasing power falls. A higher nominal income therefore does not necessarily imply an improvement in the standard of living.",
+      "text": "Jika upah nominal naik lebih lambat daripada harga, daya beli turun. Karena itu, pendapatan nominal yang lebih tinggi tidak selalu menyiratkan peningkatan taraf hidup.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 36,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Jika upah nominal naik lebih lambat daripada harga, daya beli turun."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Karena itu, pendapatan nominal yang lebih tinggi tidak selalu menyiratkan peningkatan taraf hidup."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Arah perubahan pada klaim ilmiah berubah.",
+          "segmentSource": null,
+          "candidateText": null,
+          "rawCandidate": null
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 849,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-035",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Permintaan bersifat inelastis pada rentang harga yang diamati. Penulis tidak menyimpulkan bahwa setiap konsumen mengabaikan perubahan harga, dan mereka juga tidak menganggap bahwa permintaan akan tetap inelastis di luar rentang itu.",
+      "reference": "Demand was inelastic over the observed price range. The authors did not conclude that every consumer ignored changes in price, nor did they assume that demand would remain inelastic outside that range.",
+      "text": "Demand is inelastic at the observed price range. The author does not conclude that each consumer ignores the change in price, and they also do not assume that demand will remain inelestist beyond that range.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 52,
+      "outputTokens": 55,
+      "metrics": {
+        "inferenceCalls": 5,
+        "cacheHits": 0,
+        "inputTokens": 114,
+        "outputTokens": 122,
+        "uniqueInputs": 5
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Permintaan bersifat inelastis pada rentang harga yang diamati."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penulis tidak menyimpulkan bahwa setiap konsumen mengabaikan perubahan harga, dan mereka juga tidak menganggap bahwa permintaan akan tetap inelastis di luar rentang itu."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "Penulis tidak menyimpulkan bahwa setiap konsumen mengabaikan perubahan harga, dan mereka juga tidak menganggap bahwa permintaan akan tetap inelastis di luar rentang itu."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "Penulis tidak menyimpulkan bahwa setiap konsumen mengabaikan perubahan harga,"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "dan mereka juga tidak menganggap bahwa permintaan akan tetap inelastis di luar rentang itu."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 3311,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-036",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Survei mencatat permintaan saran keuangan serta permintaan pasar untuk pinjaman. Kedua ukuran ini tidak boleh dianggap saling dapat dipertukarkan.",
+      "reference": "The survey recorded requests for financial advice as well as market demand for loans. These two measures should not be treated as interchangeable.",
+      "text": "Surveys recorded demand financial suggestions as well as demand market for loans. These measures should not be considered exchangeable.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 33,
+      "outputTokens": 33,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 33,
+        "outputTokens": 33,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Survei mencatat permintaan saran keuangan serta permintaan pasar untuk pinjaman."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kedua ukuran ini tidak boleh dianggap saling dapat dipertukarkan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 799,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-037",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Arsip tersebut berisi surat yang ditulis sebelum kebijakan diperkenalkan. Meskipun surat-surat itu menggambarkan harapan, surat-surat itu sendiri tidak dapat membuktikan apa yang terjadi setelah penerapan. Catatan yang lebih baru harus diperiksa secara terpisah.",
+      "reference": "The archive contains letters written before the policy was introduced. Although the letters describe expectations, they cannot by themselves establish what happened after implementation. Later records must be examined separately.",
+      "text": "The archive contained letters written before policy was introduced. Although the letters describe hope, the letters themselves cannot prove what happens after application. Newer records should be checked separately.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 44,
+      "outputTokens": 34,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 44,
+        "outputTokens": 34,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Arsip tersebut berisi surat yang ditulis sebelum kebijakan diperkenalkan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Meskipun surat-surat itu menggambarkan harapan, surat-surat itu sendiri tidak dapat membuktikan apa yang terjadi setelah penerapan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Catatan yang lebih baru harus diperiksa secara terpisah."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 928,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-038",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Penulis membedakan pernyataan peserta dari penafsiran peneliti. Mereka mempertahankan keterangan yang bertentangan di lampiran alih-alih menghapusnya, karena kesepakatan di antara responden tidak diasumsikan sejak awal.",
+      "reference": "The authors distinguished the participants’ statements from the researchers’ interpretations. They retained contradictory accounts in the appendix instead of deleting them, because agreement among respondents was not assumed in advance.",
+      "text": "The authors distinguish participant statements from the interpretation of researchers. They maintain conflicting information in attachments instead of deleting them, because the agreement between responders was not assumed in the first place.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 35,
+      "outputTokens": 40,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 35,
+        "outputTokens": 40,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penulis membedakan pernyataan peserta dari penafsiran peneliti."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Mereka mempertahankan keterangan yang bertentangan di lampiran alih-alih menghapusnya, karena kesepakatan di antara responden tidak diasumsikan sejak awal."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1345,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-039",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Bab ini melaporkan keterbatasan eksperimen sebelumnya. Bab ini tidak menarik kembali hasil numerik, tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel. Pembedaan ini penting untuk penafsiran.",
+      "reference": "This chapter reports the limitations of the earlier experiment. It does not withdraw the numerical results, but it explains why those results cannot be generalized to a population that was not represented in the sample. The distinction is essential for interpretation.",
+      "text": "Bab ini melaporkan keterbatasan eksperimen sebelumnya. Bab ini tidak menarik kembali hasil numerik, tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel. Pembedaan ini penting untuk penafsiran.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 75,
+        "outputTokens": 72,
+        "uniqueInputs": 4
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Bab ini melaporkan keterbatasan eksperimen sebelumnya."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Bab ini tidak menarik kembali hasil numerik, tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "Bab ini tidak menarik kembali hasil numerik,"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "tetapi menjelaskan mengapa hasil itu tidak dapat digeneralisasi ke populasi yang tidak terwakili dalam sampel.",
+          "candidateText": "But it explains why that result can't be generalized into an unrepresented population in the sample.",
+          "rawCandidate": "But it explains why that result can't be generalized into an unrepresented population in the sample."
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1907,
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-040",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Beberapa bagian tidak terbaca pada naskah asli. Penyunting menandai kekosongan itu secara eksplisit dan tidak mengarang kata yang hilang. Transkripsi yang terbaca hanya berguna ketika ketidakpastian tetap terlihat oleh pembaca berikutnya.",
+      "reference": "Several passages were illegible in the original manuscript. The editors marked those gaps explicitly and did not invent missing words. A readable transcription is useful only when uncertainty remains visible to subsequent readers.",
+      "text": "Some parts are not read in the original script. The editor marked the void explicitly and did not make up a missing word. The transcripts that are read only work when uncertainty remains visible to the next reader.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v1"
+      },
+      "inputTokens": 41,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 41,
+        "outputTokens": 43,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Beberapa bagian tidak terbaca pada naskah asli."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penyunting menandai kekosongan itu secara eksplisit dan tidak mengarang kata yang hilang."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Transkripsi yang terbaca hanya berguna ketika ketidakpastian tetap terlihat oleh pembaca berikutnya."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 983,
+      "humanReview": "PENDING"
+    }
+  ],
+  "humanApproval": 0,
+  "en-idColdModelMs": 3246,
+  "id-enColdModelMs": 2868
+}

@@ -1,0 +1,1 @@
+for(const [id,width,height] of [['mobile',390,844],['desktop',1280,940]])document.getElementById(id).onclick=()=>{const win=window.open('/',`semantik-visual-${id}`,`popup,width=${width},height=${height}`);document.getElementById('status').textContent=win?'Preview window opened.':'Allow the preview window.';};

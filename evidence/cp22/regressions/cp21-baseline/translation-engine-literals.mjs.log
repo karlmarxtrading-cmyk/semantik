@@ -1,0 +1,77 @@
+{
+  "testedAt": "2026-11-14T00:02:19.838Z",
+  "method": "Exact extracted worker functions; synthetic validator mutations, not model inference",
+  "engineSha256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda",
+  "beforeArtificialVariables": [
+    {
+      "start": 0,
+      "end": 1,
+      "value": "A",
+      "kind": "variable"
+    }
+  ],
+  "afterArtificialVariables": [],
+  "checks": [
+    {
+      "name": "marker is not comparison: A <ssterm0/> was prepared.",
+      "pass": true
+    },
+    {
+      "name": "marker is not comparison: a <sslit0/> was prepared.",
+      "pass": true
+    },
+    {
+      "name": "marker is not comparison: <sslit0/> a result",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: x<y",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: x < y",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: A < B",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: x = 1",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: x > 1",
+      "pass": true
+    },
+    {
+      "name": "real mutation retained: |x|",
+      "pass": true
+    },
+    {
+      "name": "unchanged math x<y",
+      "pass": true
+    },
+    {
+      "name": "unchanged math x < y",
+      "pass": true
+    },
+    {
+      "name": "unchanged math A < B",
+      "pass": true
+    },
+    {
+      "name": "unchanged math x = 1",
+      "pass": true
+    },
+    {
+      "name": "unchanged math x > 1",
+      "pass": true
+    },
+    {
+      "name": "unchanged math |x|",
+      "pass": true
+    }
+  ],
+  "pass": true
+}

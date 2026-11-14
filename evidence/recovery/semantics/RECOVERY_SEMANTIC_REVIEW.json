@@ -1,0 +1,154 @@
+{
+  "createdUTC": "2026-11-13T10:06:37.187176+00:00",
+  "status": "NOT PRODUCTION READY",
+  "reviewer": "AI assistant, not a human reviewer",
+  "humanApprovals": 0,
+  "scope": "Known development regression only; not independent acceptance and not a 1500-page rerun",
+  "sourceBinding": {
+    "translation.js": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "claim-guards.js": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+    "semantic-spans.js": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e"
+  },
+  "counts": {
+    "translated": 48,
+    "rejected": 2,
+    "failed": 0,
+    "preserved": 0
+  },
+  "countsMeaning": "Runtime outcomes, not semantically correct/incorrect labels",
+  "executionMethod": "50-case actual ONNX/WASM run on recorded pre-final bytes; three affected cases rerun on final bytes; 47 earlier outputs retain their execution hashes and are rechecked by current guards.",
+  "controls": {
+    "focusedFinalSource": 35,
+    "scientificIdentitiesPreFinal": 51,
+    "fullFinalSourceSuite": "Owned and reported separately by root"
+  },
+  "findings": [
+    {
+      "id": "CP20-H-008",
+      "classification": "INCOMPLETE_SAFE_REJECTION",
+      "reason": "Model output lost the relation between fair comparison, participants and each treatment, with repeated words and changed negative/quantifier structure. The complete source is preserved; this is not a successful translation.",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "actualOutput": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "runtimeOutcome": "rejected",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-015",
+      "classification": "INCOMPLETE_SAFE_REJECTION",
+      "reason": "The reviewer role is now protected, but the model still loses the event in the evidence proposition. The complete source is preserved; this is not a successful translation.",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "actualOutput": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "runtimeOutcome": "rejected",
+      "evidenceRun": "AFFECTED_ONLY_INFERENCE.json"
+    },
+    {
+      "id": "CP20-H-026",
+      "classification": "UNRESOLVED_CRITICAL_ATTACHMENT",
+      "reason": "Unchanging modifies quantity demanded in the output instead of modifying the demand curve. Retained terms and a negative-polarity marker are insufficient to prove correct attachment.",
+      "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "actualOutput": "The demand upgrade differs from the unchanging quantity demanded upgrade along the demand curve. Mixing this statement can reverse explanations of price changes.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-023",
+      "classification": "UNRESOLVED_LABEL_IDENTITY",
+      "reason": "Treatment A becomes A treatment, where A is read as an English article, while treatment B remains explicit. Numbers and denominator/numerator survive, but treatment identity is not reliably preserved.",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "actualOutput": "A treatment generates 7 response and treatment B produces 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. Denominator is as important as numerator.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-007",
+      "classification": "UNRESOLVED_QUALIFIER_OMISSION",
+      "reason": "The assumed sampling procedure loses assumed; a condition on the statistical interpretation is omitted.",
+      "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities.",
+      "actualOutput": "Interval kepercayaan menggambarkan ketidakpastian di bawah prosedur pengambilan sampel. Hal ini tidak boleh ditafsirkan sebagai jangkauan berisi semua pengamatan individu. Ini adalah jumlah statistik yang berbeda.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "classification": "UNRESOLVED_QUALIFIER_OMISSION",
+      "reason": "Calibration identity and measurement error are repaired, but penjelasan yang diajukan becomes explanations without proposed.",
+      "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+      "actualOutput": "The lab instrument was calibrated before data collection. Calibration reduce measurement error; calibration does not prove that the explanations are true.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-011",
+      "classification": "UNRESOLVED_RELATION_WORDING",
+      "reason": "Quantity demanded is present, but the output wording makes it appear to modify a curve, and the unchanged demand-curve relation is unclear.",
+      "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change.",
+      "actualOutput": "Peningkatan dalam permintaan berbeda dengan peningkatan pada kurva jumlah yang diminta sepanjang permintaan tidak berubah. Membingungkan pernyataan ini dapat membalikkan penjelasan dari perubahan harga.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-013",
+      "classification": "UNRESOLVED_PROCEDURAL_CLAUSE",
+      "reason": "Interview schedule and certification disclaimer are repaired, but The lampiran dokumen prosedur does not form a reliable translation of the appendix documents the procedure.",
+      "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way.",
+      "actualOutput": "Laporan tersebut menempatkan pedoman wawancara dalam lampiran sehingga peneliti lain dapat memeriksa pertanyaan-pertanyaan. The lampiran dokumen prosedur; itu tidak menjamin bahwa setiap responden mengerti setiap pertanyaan dengan cara yang sama.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "classification": "REVIEW_REQUIRED_PROCESS_BOUNDARY",
+      "reason": "The solvent boiled becomes pelarut direbus, shifting spontaneous boiling to being boiled. Timing and energy-transfer clauses survive, but this scientific process wording needs correction or acceptance review.",
+      "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "actualOutput": "Pemanasan dihentikan sebelum pelarut direbus. Peningkatan tercatat pada suhu tidak dapat dikaitkan dengan katalis saja, karena pemanas juga mentransfer energi ke larutan.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-005",
+      "classification": "REVIEW_REQUIRED_RECOVERY_MEANING",
+      "reason": "Catalyst was recovered becomes katalis itu ditemukan (found). The recovery/reuse claim requires domain review.",
+      "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared.",
+      "actualOutput": "Katalis itu ditemukan setelah percobaan dan digunakan kembali. Pemulihan saja tidak menunjukkan bahwa tidak ada materi yang hilang; massa awal dan akhir harus dibandingkan.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-020",
+      "classification": "REVIEW_REQUIRED_RECOVERY_MEANING",
+      "reason": "Perolehan kembali saja becomes Returning alone, leaving the chemical recovery concept unclear.",
+      "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan.",
+      "actualOutput": "The catalyst was recovered after the experiment and reused. Returning alone does not indicate that no material is missing; initial and final mass must be compared.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "LONG-PROSE-10",
+      "classification": "REVIEW_REQUIRED_ASSUMPTION_SCOPE",
+      "reason": "Dengan asumsi yang dinyatakan becomes Assuming that; the reference to explicitly stated assumptions is weakened.",
+      "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda.",
+      "actualOutput": "CP20B0010_00. Sequence in calculation 81 is monotone and bounded. Assuming that, sequence is converges. Removing assumptions requires a different kind of proof.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-029",
+      "classification": "REVIEW_REQUIRED_SCOPE_AND_FLUENCY",
+      "reason": "Generalization to orang tanpa akses becomes a person without access. Indonesian number is not explicit here, so this is a scope/fluency review item, not an asserted definite plural-loss error.",
+      "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka.",
+      "actualOutput": "The results came from volunteers who had access to the necessary equipment. Generalization to a person without access requires additional evidence. The author discussed these limitations before delivering their recommendations.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "DEVELOPMENT_ITERATION_3.json"
+    },
+    {
+      "id": "CP20-H-030",
+      "classification": "REVIEW_REQUIRED_ABSENCE_SCOPE",
+      "reason": "Reviewer and event concepts survive; a recorded event absence remains awkward and needs review for modifier scope.",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "actualOutput": "Reviewer asks the author to distinguish missing information from the evidence that a event did not occur. The blank note may reflect incomplete documentation. The record cannot be automatically considered as a recorded event absence.",
+      "runtimeOutcome": "translated",
+      "evidenceRun": "AFFECTED_ONLY_INFERENCE.json"
+    }
+  ],
+  "conclusion": "Specific earlier defects were corrected and additional dangerous candidates are rejected, but accepted output still contains omissions and relation errors. No claim that all critical issues are closed or that translation is complete."
+}

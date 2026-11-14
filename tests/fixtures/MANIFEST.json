@@ -1,0 +1,83 @@
+{
+  "license": "CC0 text and test design; embedded DejaVu fonts retain font license",
+  "password": "cp18-test-password (public test fixture only)",
+  "files": [
+    {
+      "file": "corrupt.pdf",
+      "bytes": 58,
+      "sha256": "8c8cb6c675e0a40f7ecee945c7fe4d1bc8987cac70357958c5f9826d7e0c9d8e",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "dense.pdf",
+      "bytes": 36865,
+      "sha256": "2c73c77512a946175eb6283c152be6187d4d54af3eec63ec165089ae418f350d",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "digital-en.pdf",
+      "bytes": 23136,
+      "sha256": "e977d38d7b4416bb80be9d04cdd32439ec1beffdf13daaa654c4055ac1ac6355",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "digital-id.pdf",
+      "bytes": 23118,
+      "sha256": "a7c157ec36f43aa7afbb4859c538dfe0e2517796172964866d55696ae13853b0",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "mathematics.pdf",
+      "bytes": 33000,
+      "sha256": "2a899abe5d8ff992f432ff04df1b7095b2300c253bddd94b32c900ed06a21575",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "mixed-digital-500-scan.pdf",
+      "bytes": 47056,
+      "sha256": "92a0f4e14f63bde047ddf06a7c0b974e91a755e6c90c9182f7b1c62ff974de51",
+      "origin": "provided synthetic audit fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "password.pdf",
+      "bytes": 23089,
+      "sha256": "afd3330a72b03eff0a18bff47ef6c5fca6698acca2b753fa06916c3caa396034",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "rotated.pdf",
+      "bytes": 22638,
+      "sha256": "57c445b581a122a089558db65f39466284429242fa0e061c1b7bbf5c7370f01d",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "scan.pdf",
+      "bytes": 32032,
+      "sha256": "906cf4476c0e297a5666c4e7b05631c105fec99aca6b3dd3b64812adfd3a5a19",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "table-two-column.pdf",
+      "bytes": 22764,
+      "sha256": "29b42ba9519f75a28cf86e4e80cb1a3fbc539f31d441b03a1af2b66e06ad322b",
+      "origin": "CP18 synthetic regression fixture",
+      "historical_user_pdf": false
+    },
+    {
+      "file": "oversized-image.pdf",
+      "bytes": 73727,
+      "sha256": "6436fbc1e7696ad66e9df2ee8ea66763268ee8f02148cdd98a8f774bdb1762f0",
+      "origin": "CP18 synthetic oversized-image regression fixture",
+      "historical_user_pdf": false
+    }
+  ]
+}

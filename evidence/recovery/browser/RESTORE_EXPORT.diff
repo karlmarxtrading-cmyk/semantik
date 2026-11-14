@@ -1,0 +1,10 @@
+--- before-reload
++++ restored-export
+@@ -72,3 +72,7 @@
+ - Halaman dengan cakupan belum lengkap: 0; matematika belum terverifikasi: 0.
+ - Setiap bagian memiliki ID sumber dan nomor halaman. Verifikasi ini menilai cakupan, bukan kesetaraan makna.
+ - Tinjauan manusia: tidak dilakukan oleh aplikasi.
++
++## Catatan pembacaan
++
++- Ruang browser diprioritaskan untuk dokumen dan hasil Anda. Salinan model unduhan telah dihapus; mesin yang sudah dimuat tetap berjalan pada sesi ini. Offline belum siap. Setelah menutup tab, hubungkan jaringan untuk memuat model kembali.

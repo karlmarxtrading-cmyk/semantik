@@ -1,0 +1,27 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs/promises';import vm from 'node:vm';import {webcrypto,createHash} from 'node:crypto';
+const root=new URL('../',import.meta.url),digest=b=>createHash('sha256').update(b).digest('hex');
+const sw=await fs.readFile(new URL('dist/sw.js',root),'utf8');const config=JSON.parse(sw.match(/const CONFIG=(.*);/)[1]);
+function boundary({deny=false,putFail=false,network={}}={}){
+ const records=new Map(),events={},fetches=[];
+ const cache={match:async k=>records.get(typeof k==='string'?k:new URL(k.url).pathname)?.clone(),put:async(k,r)=>{if(putFail)throw new DOMException('full','QuotaExceededError');records.set(typeof k==='string'?k:new URL(k.url).pathname,r.clone());},delete:async k=>records.delete(k)};
+ const context=vm.createContext({Response,Request,URL,crypto:webcrypto,console,Map,Uint8Array,Promise,Error,DOMException,self:{location:{origin:'https://test.invalid'},clients:{claim:async()=>{}},addEventListener:(n,fn)=>events[n]=fn},caches:{open:async()=>{if(deny)throw new DOMException('denied','SecurityError');return cache;}},fetch:async req=>{const p=typeof req==='string'?req:new URL(req.url).pathname;fetches.push(p);if(!(p in network))throw Error('offline');return new Response(network[p]);}});
+ vm.runInContext(sw,context);return {context,records,events,fetches,cache,run:p=>vm.runInContext(`pinned(${JSON.stringify(p)})`,context)};
+}
+const lazy=config.files.find(x=>x.path.endsWith('/app/translation.js')),body=await fs.readFile(new URL('dist'+lazy.path,root));
+test('V1 refuses V2 bytes for uncached lazy module; no mixed execution',async()=>{const b=boundary({network:{[lazy.path]:'V2 incompatible module'}});assert.equal((await b.run(lazy.path)).status,503);assert.equal(b.records.size,0);});
+test('verified V1 cache remains V1 while V2 origin exists, then offline',async()=>{const b=boundary({network:{[lazy.path]:'V2'}});await b.cache.put(lazy.path,new Response(body));assert.deepEqual(Buffer.from(await(await b.run(lazy.path)).arrayBuffer()),body);assert.equal(b.fetches.length,0);assert.equal((await b.run(lazy.path)).status,200);});
+test('corrupt cache evicted; valid network verified and reused offline',async()=>{const net={[lazy.path]:body},b=boundary({network:net});await b.cache.put(lazy.path,new Response('corrupt'));assert.equal((await b.run(lazy.path)).status,200);delete net[lazy.path];assert.equal((await b.run(lazy.path)).status,200);});
+test('cache denial and quota failure preserve verified online reading',async()=>{for(const flag of ['deny','putFail']){const b=boundary({[flag]:true,network:{[lazy.path]:body}});assert.equal((await b.run(lazy.path)).status,200);}});
+test('initial shell contains no heavy parser OCR engine or model',()=>{assert.ok(config.shell.every(x=>!/(?:vendor|models|runtime|engine|translation|layout)/.test(x)));});
+test('all manifest assets match actual final dist bytes',async()=>{for(const f of config.files){const b=await fs.readFile(new URL('dist'+f.path,root));assert.equal(b.length,f.size,f.path);assert.equal(digest(b),f.sha256,f.path);}});
+test('rollback activation retains prior release caches',async()=>{const b=boundary();let waiting;b.events.activate({waitUntil:p=>waiting=p});await waiting;assert.ok(!sw.includes('caches.delete('));});
+const fragment=await fs.readFile(new URL('scripts/engine-cache-fragment.js',root),'utf8');
+function modelBoundary(failure){let fetched=0;const data=new Uint8Array([1,2,3]),hash=digest(data),part={path:'/models/test',size:3,sha256:hash};const file={name:'test',size:3,sha256:hash,parts:[part]};
+ const cache={match:async()=>undefined,delete:async()=>{},put:async(k)=>{if(failure==='quota'&&typeof k==='string')throw new DOMException('full','QuotaExceededError');}};
+ const c=vm.createContext({Uint8Array,Error,Request,Response,URL,DOMException,self:{location:{href:'https://local.invalid/'},postMessage:()=>{}},navigator:{storage:{estimate:async()=>({usage:90,quota:100})}},caches:{open:async()=>{if(failure==='denied')throw new DOMException('denied','SecurityError');return cache;}},fetch:async()=>{fetched++;return new Response(data);},u:async b=>digest(b),Rn:async b=>b});vm.runInContext(fragment,c);return {c,file,get fetched(){return fetched;}};
+}
+for(const mode of ['denied','quota',null])test(`model ${mode||'persistent'} cache preserves bytes with honest status`,async()=>{const b=modelBoundary(mode);await vm.runInContext('cp18StoragePreflight(20)',b.c);b.c.file=b.file;assert.deepEqual(Array.from(await vm.runInContext('ir(file,1,0,3)',b.c)),[1,2,3]);assert.equal(vm.runInContext('cp18OfflineReady',b.c),!mode);assert.equal(b.fetched,1);});
+test('session fallback still rejects bad model hash',async()=>{const b=modelBoundary('denied');b.file.parts[0].sha256='0'.repeat(64);b.c.file=b.file;await vm.runInContext('cp18StoragePreflight(20)',b.c);await assert.rejects(vm.runInContext('ir(file,1,0,3)',b.c),/Hash model/);});
+
+test('model shards bypass static SW and keep engine-owned verification',()=>{const b=boundary();let intercepted=false;b.events.fetch({request:new Request('https://test.invalid'+config.base+'models/id-en/shard.gz'),respondWith:()=>intercepted=true});assert.equal(intercepted,false);});
+test('unknown release-scoped asset fails closed instead of mixing versions',async()=>{const b=boundary();let response;b.events.fetch({request:new Request('https://test.invalid'+config.base+'app/missing.js'),respondWith:r=>response=r});assert.equal((await response).status,503);});

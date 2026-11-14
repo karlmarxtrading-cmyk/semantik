@@ -1,0 +1,230 @@
+{
+  "status": "FAIL_NOT_PRODUCTION_READY",
+  "createdUTC": "2026-11-13T19:03:07.037209+00:00",
+  "build": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  },
+  "method": "Internal AI bilingual reading of every final fresh target across six explicit dimensions. Structural/inference success is not semantic approval. No human or independent reviewer approval. No product changes after this review.",
+  "inferenceSHA256": "82da319a80aab7ca5e50adbc11dc495633b9d8913d900c3aada75a56bc8a6716",
+  "counts": {
+    "critical": 7,
+    "major": 1,
+    "minor": 2,
+    "adequate": 1,
+    "incomplete": 1
+  },
+  "humanApprovals": 0,
+  "rows": [
+    {
+      "id": "CP21-F01",
+      "direction": "en-id",
+      "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence. The order of the implication matters.",
+      "actualTarget": "Setiap konvergen barisan adalah terbatas, tetapi terikat saja tidak menjamin kekonvergenan. Urutan masalah implikasi.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "FAIL"
+      },
+      "reason": "Boundedness becomes terikat and the assertion that implication order matters becomes Urutan masalah implikasi; the logical explanation is not preserved."
+    },
+    {
+      "id": "CP21-F02",
+      "direction": "en-id",
+      "source": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+      "actualTarget": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+      "runtimeOutcome": "rejected",
+      "severity": "incomplete",
+      "dimensions": {
+        "scientificMeaning": "NOT_ASSESSED",
+        "numbersUnitsFormula": "NOT_ASSESSED",
+        "negationQuantifiers": "NOT_ASSESSED",
+        "causalModalScope": "NOT_ASSESSED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "NOT_ASSESSED"
+      },
+      "reason": "Safe rejection preserves the source, but no accepted translation exists. It is not a semantic pass."
+    },
+    {
+      "id": "CP21-F03",
+      "direction": "en-id",
+      "source": "The odds ratio is not the same as the risk ratio. They can differ substantially when the event is common.",
+      "actualTarget": "Rasio peluang tidak sama dengan rasio risiko. Mereka bisa sangat berbeda jika peristiwa itu umum.",
+      "runtimeOutcome": "translated",
+      "severity": "minor",
+      "dimensions": {
+        "scientificMeaning": "PASS_OBSERVED",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "PASS_OBSERVED",
+        "terminologyFluency": "REVIEW"
+      },
+      "reason": "Odds/risk distinction and common-event qualification survive; Mereka is awkward for ratios."
+    },
+    {
+      "id": "CP21-F04",
+      "direction": "en-id",
+      "source": "A fall in marginal cost does not necessarily lower average cost immediately. The current production level matters for that comparison.",
+      "actualTarget": "Jatuhnya biaya marjinal tidak selalu dengan biaya rata-rata lebih rendah. Tingkat produksi saat ini penting untuk perbandingan itu.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "FAIL",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "PASS_OBSERVED"
+      },
+      "reason": "The cost-lowering predicate is malformed and immediately is omitted, losing a time qualification essential to the economic claim."
+    },
+    {
+      "id": "CP21-F05",
+      "direction": "en-id",
+      "source": "The instrument could distinguish the two signals only after averaging repeated measurements. This does not mean that either signal became stronger.",
+      "actualTarget": "Alat ini dapat membedakan kedua sinyal itu hanya setelah berulang kali pengukuran. Ini tidak berarti bahwa baik sinyal menjadi lebih kuat.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "PASS_OBSERVED"
+      },
+      "reason": "Averaging repeated measurements becomes only repeated measurements. The enabling operation is omitted."
+    },
+    {
+      "id": "CP21-F06",
+      "direction": "en-id",
+      "source": "The committee postponed its decision because the evidence was incomplete. Postponement should not be interpreted as rejection of the hypothesis.",
+      "actualTarget": "Komite menunda keputusannya karena bukti tidak lengkap. Penonton hendaknya tidak ditafsirkan sebagai penolakan hipotesis.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "FAIL"
+      },
+      "reason": "Postponement becomes Penonton (audience), changing the subject of the second proposition."
+    },
+    {
+      "id": "CP21-F07",
+      "direction": "id-en",
+      "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02. Pernyataan ini tidak menentukan perkiraan mana yang lebih besar.",
+      "actualTarget": "Absolute value second difference is less than 0.02. This statement does not determine which estimates are greater.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "PASS_OBSERVED"
+      },
+      "reason": "Difference of the two estimates becomes second difference with no estimate referent in the first sentence. The quantity bounded by 0.02 changes."
+    },
+    {
+      "id": "CP21-F08",
+      "direction": "id-en",
+      "source": "Zat padat itu larut tanpa bereaksi dengan pelarut. Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia.",
+      "actualTarget": "The solid matter dissolves without reacting with the solvent. Loss of solid form does not prove chemical reaction.",
+      "runtimeOutcome": "translated",
+      "severity": "adequate",
+      "dimensions": {
+        "scientificMeaning": "PASS_OBSERVED",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "PASS_OBSERVED",
+        "terminologyFluency": "PASS_OBSERVED"
+      },
+      "reason": "Dissolution without reaction and the limit on inference from loss of solid form remain. No critical change identified in this internal review."
+    },
+    {
+      "id": "CP21-F09",
+      "direction": "id-en",
+      "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi. Kedua sumber kesalahan perlu dibedakan.",
+      "actualTarget": "Larger Sample shrinks random errors but does not automatically remove bias selection. Both sources of error need to be distinguished.",
+      "runtimeOutcome": "translated",
+      "severity": "minor",
+      "dimensions": {
+        "scientificMeaning": "PASS_OBSERVED",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "PASS_OBSERVED",
+        "terminologyFluency": "REVIEW"
+      },
+      "reason": "Random error and selection-bias distinction remain, with awkward word order and capitalization."
+    },
+    {
+      "id": "CP21-F10",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli. Harga barang yang dibeli rumah tangga juga perlu diperhitungkan.",
+      "actualTarget": "The nominal income increase is not necessarily increasing purchasing power. Price goods purchased households also need to be calculated.",
+      "runtimeOutcome": "translated",
+      "severity": "major",
+      "dimensions": {
+        "scientificMeaning": "PASS_OBSERVED",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "PASS_OBSERVED",
+        "terminologyFluency": "REVIEW"
+      },
+      "reason": "Main nominal-income/purchasing-power relationship survives; the household-price clause is grammatically poor and calculated is weaker than taken into account."
+    },
+    {
+      "id": "CP21-F11",
+      "direction": "id-en",
+      "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil. Penyembunyian informasi itu bertujuan mengurangi bias penilaian.",
+      "actualTarget": "The observers don't know the group of participants when assessing results. The cover - up of information is intended to reduce bias.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "FAIL"
+      },
+      "reason": "Treatment assignment disappears from group of participants; assessment bias becomes generic bias and concealment is rendered as cover-up."
+    },
+    {
+      "id": "CP21-F12",
+      "direction": "id-en",
+      "source": "Asumsi independensi digunakan dalam penurunan rumus. Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+      "actualTarget": "Assumed independence used in derivation formula. If observations depend on one another, they require additional justification.",
+      "runtimeOutcome": "translated",
+      "severity": "critical",
+      "dimensions": {
+        "scientificMeaning": "FAIL",
+        "numbersUnitsFormula": "PASS_OBSERVED",
+        "negationQuantifiers": "PASS_OBSERVED",
+        "causalModalScope": "PASS_OBSERVED",
+        "completenessRelations": "FAIL",
+        "terminologyFluency": "PASS_OBSERVED"
+      },
+      "reason": "The final they refers to observations instead of the formula, moving the requirement for additional justification."
+    }
+  ]
+}

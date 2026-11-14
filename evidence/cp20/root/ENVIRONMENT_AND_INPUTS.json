@@ -1,0 +1,27 @@
+{
+  "python": "3.12.14",
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "node": "v24.22.1",
+  "cpuCount": 9,
+  "browser": "actual cloud Chrome 156; reports 9 cores and deviceMemory 8 GiB bucket, not verified physical RAM",
+  "baselineZIPs": [
+    {
+      "name": "SEMANTIK_SETARA_CP19_PDF_TRANSLATOR_DEPLOY(1).zip",
+      "bytes": 223305089,
+      "sha256": "1a30aeb4bc481a216ed5d6383d3ab622955b4e766d44a5dc7500e8ce111ce5e3",
+      "crc": "PASS"
+    },
+    {
+      "name": "SEMANTIK_SETARA_CP19_SOURCE_AND_QA(1).zip",
+      "bytes": 239120305,
+      "sha256": "3dde79754bed538e0992f0aac854845266159fa6794a3a55a0a2d79a358ece42",
+      "crc": "PASS"
+    },
+    {
+      "name": "PAKET_BUKTI_AUDIT_CP19_20261113(1).zip",
+      "bytes": 241332,
+      "sha256": "9d62f2e0a1f4bb1544f09c30a3d8739621902485b57171c0804b1b40ba19527f",
+      "crc": "PASS"
+    }
+  ]
+}

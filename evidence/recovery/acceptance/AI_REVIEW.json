@@ -1,0 +1,401 @@
+{
+  "status": "FAIL_NOT_PRODUCTION_READY",
+  "build": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/recovery/work/dist/r/2e4d8ef18eb32385",
+    "adapterSHA256": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "rulesSHA256": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+    "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "workerSHA256": "c5d39a33ff5d7545e3f7e2afc3bb197ca27b9ecaab76418aa5cf837bae1f4ec2"
+  },
+  "inferenceFileSha256": "bea42dc94ecb43a360be4a1e23da9c2b4d088faa3b8ac029d4f398bda25b3e60",
+  "method": "AI reading of every actual target after freeze. No human review. 10 paired concepts =20 directional cases. No product retuning after acceptance run.",
+  "counts": {
+    "critical": 12,
+    "major": 4,
+    "minor": 3,
+    "adequate": 1
+  },
+  "humanApprovals": 0,
+  "rows": [
+    {
+      "id": "F01-en-id",
+      "direction": "en-id",
+      "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval.",
+      "target": "Sebuah fungsi kontinu pada interval tertutup dan terikat mencapai maksimum. Kesimpulan yang sama tidak harus pegang pada interval terbuka.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "bounded becomes terikat; need not hold becomes tidak harus pegang. Mathematical predicate corrupted.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F02-en-id",
+      "direction": "en-id",
+      "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+      "target": "Dua matriks dapat memiliki determinant yang sama tanpa menjadi sama. Sebuah determinant nonnol cukup untuk matriks persegi untuk memiliki terbalik.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Matrix inverse becomes memiliki terbalik, failing to preserve the inverse-matrix concept.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F03-en-id",
+      "direction": "en-id",
+      "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute.",
+      "target": "Membagikan larutan dengan air murni mengurangi konsentrasi ketika jumlah dari terlarut tetap konstan. Pengenceran saja tidak menghapus zat terlarut.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Diluting becomes Membagikan (distributing). Operation on solution changes.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F04-en-id",
+      "direction": "en-id",
+      "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield.",
+      "target": "Katalis mengubah tingkat reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu yang tetap. Mencapai keseimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil keseimbangan yang lebih besar.",
+      "severity": "major",
+      "critical": false,
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Reaction rate becomes tingkat reaksi and equilibrium yield hasil keseimbangan. Terminology needs correction.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F05-en-id",
+      "direction": "en-id",
+      "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it.",
+      "target": "Sebuah 95% interval kepercayaan menggambarkan sebuah prosedur dengan jangkauan pengambilan sampel yang diulang. Setelah interval tertentu telah dihitung, interpretasi requentist tidak menetapkan sebuah probabilitas 95% untuk parameter tetap terletak di dalamnya.",
+      "severity": "major",
+      "critical": false,
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Frequentist becomes requentist; repeated-sampling coverage awkward. Numbers/negation preserved, terminology not ready.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F06-en-id",
+      "direction": "en-id",
+      "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population.",
+      "target": "Tugas acak dan acak pengambilan sampel melayani tujuan yang berbeda. Tugas acak dapat mengurangi konfounding dalam percobaan; ini tidak secara otomatis membuat perwakilan sampel dari populasi.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Random assignment becomes Tugas acak. Technical assignment concept lost; confounding remains konfounding.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F07-en-id",
+      "direction": "en-id",
+      "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences.",
+      "target": "Sebuah langit-langit harga mengikat dapat membuat kelebihan permintaan. Pernyataan ini menyangkut pembeli kuantitas yang ingin membeli relatif terhadap penjual kuantitas, bukan perubahan selera orang.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Price ceiling becomes literal langit-langit; quantities of goods become pembeli kuantitas and penjual kuantitas; seller offer relation omitted.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F08-en-id",
+      "direction": "en-id",
+      "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged.",
+      "target": "Peningkatan pendapatan tidak harus meningkatkan permintaan untuk setiap baik. Untuk kebaikan yang lebih rendah, permintaan dapat jatuh bahkan jika harga tetap tidak berubah.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Economic goods becomes baik / kebaikan yang lebih rendah. Inferior-good concept lost.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F09-en-id",
+      "direction": "en-id",
+      "source": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased.",
+      "target": "Rencana analisisnya terdaftar sebelum hasil pemeriksaannya diperiksa. Waktu ini mengurangi satu kesempatan untuk melaporkan secara selektif; tidak menetapkan bahwa setiap keputusan dalam penelitian adalah tidak bias.",
+      "severity": "major",
+      "critical": false,
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Outcomes narrowed to hasil pemeriksaannya and doubled as pemeriksaannya diperiksa. Timing survives; wording requires correction.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F10-en-id",
+      "direction": "en-id",
+      "source": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate.",
+      "target": "Penelaah meminta pengukuran mentah karena tabel ringkasan tidak lengkap. Menyertakan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran akurat.",
+      "severity": "adequate",
+      "critical": false,
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 2,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 2
+      },
+      "reviewAI": "Causality, incomplete table, raw measurements, further checks and non-guarantee preserved in this sample.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F01-id-en",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+      "target": "Function continuous at closed intervals and limited to maximum value. The same conclusion need not applies at open intervals.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Attains maximum disappears into limited to maximum value. Boundedness and maximum attainment merged.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F02-id-en",
+      "direction": "id-en",
+      "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers.",
+      "target": "Two matrixes can have the same determinant without becoming the same matrix. Determinan is not zero sufficient condition so that the square matrix has inverses.",
+      "severity": "major",
+      "critical": false,
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Determinant sufficiency recoverable, but Determinan is not zero sufficient condition is malformed and scope ambiguous.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F03-id-en",
+      "direction": "id-en",
+      "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut.",
+      "target": "Expand solution with pure water lowers concentration when the number of substances dissolved remains. Dilution alone does not eliminate the dissolved substance.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Mengencerkan becomes Expand; amount of solute becomes number of substances. Operation and quantity meaning changed.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F04-id-en",
+      "direction": "id-en",
+      "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+      "target": "The catalyst changes reaction rate, but does not change the balance of the balance at fixed temperature. Accomplishing the balance faster does not in itself imply greater balance.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Equilibrium constant becomes balance of the balance; equilibrium yield becomes greater balance. Essential concepts omitted.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F05-id-en",
+      "direction": "id-en",
+      "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya.",
+      "target": "Confidence interval 95% explains procedures with coverage in sampling recurrence. After this particular interval is calculated, the frequency interpretation does not give the probability 95% that the parameters remain within it.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Frequentist becomes frequency; fixed parameter lying inside becomes parameters remain within it. Scientific interpretation changed.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F06-id-en",
+      "direction": "id-en",
+      "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi.",
+      "target": "Random assignment and sampling randomly have different goals. Random assignment can reduce the role in experiments; it does not automatically create sample representing population.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Perancu (confounding) becomes role. Causal-design proposition changed.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F07-id-en",
+      "direction": "id-en",
+      "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat.",
+      "target": "Maximum binding price limit can cause excess demand. This statement discusses the amount of buyers to buy rather than the number of sellers offered, not the change in the preference of the public.",
+      "severity": "critical",
+      "critical": true,
+      "scores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 0,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 1
+      },
+      "reviewAI": "Quantity purchased versus supplied becomes amount of buyers and number of sellers offered. Compared with becomes rather than.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F08-id-en",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah.",
+      "target": "A rise in income need not increases the demand for each item. For inferior goods, The demand can go down even though the price has not changed.",
+      "severity": "minor",
+      "critical": false,
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 2
+      },
+      "reviewAI": "Inferior-good concept and negation preserved; need not increases is grammar error.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F09-id-en",
+      "direction": "id-en",
+      "source": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias.",
+      "target": "The analysis plan was registered before the results were checked. This time sequence reduces one opportunity to report selectively; it does not prove that each decision in research unbiased.",
+      "severity": "minor",
+      "critical": false,
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 2
+      },
+      "reviewAI": "Timing, reduced opportunity and non-proof preserved. Final clause lacks is.",
+      "humanReviewer": null,
+      "humanApproval": null
+    },
+    {
+      "id": "F10-id-en",
+      "direction": "id-en",
+      "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat.",
+      "target": "Reviewer requests raw measurement results because the summary table is incomplete. Raw data distribution allows further checks, but it does not guarantee accurate measurements.",
+      "severity": "minor",
+      "critical": false,
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbers_notation": 2,
+        "cross_sentence_consistency": 2
+      },
+      "reviewAI": "Core causal/non-guarantee propositions preserved. Distribution less precise than provision; tense shifts.",
+      "humanReviewer": null,
+      "humanApproval": null
+    }
+  ]
+}

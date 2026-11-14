@@ -1,0 +1,74 @@
+{
+  "fixture": {
+    "file": "capacity-300-en.pdf",
+    "pages": 300,
+    "language": "en",
+    "rich": false,
+    "bytes": 248206,
+    "sha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+    "sourceCharacters": 70347,
+    "uniqueProseParagraphs": 300,
+    "traceManifest": "capacity-300-en.json"
+  },
+  "status": "PASS",
+  "method": "Actual production openPdf and bounded per-page extract / PDF.js 6.2.108; native Canvas and disk QA sink. No translation or browser download.",
+  "summary": {
+    "pages": 300,
+    "blocks": 900,
+    "characters": 69147,
+    "sourceItems": 1500,
+    "coveredItems": 1500,
+    "assets": 0,
+    "assetBytes": 0,
+    "traceIds": 300,
+    "maxActivePageRecords": 1
+  },
+  "sourceSha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+  "orderedPageRecordsSha256": "426a15c3236e76c737169327aecb25c398c9431c39909c654c7bc5ff5ebe651b",
+  "elapsedMs": 3380.474616,
+  "sampledPeakNodeMemoryBytes": {
+    "rss": 189816832,
+    "heapUsed": 29037448,
+    "external": 14859628,
+    "arrayBuffers": 8633596
+  },
+  "memoryLimit": "Node process only; 100ms sampled. Not total browser/worker/WASM/Canvas RAM and not a physical-device qualification.",
+  "samples": [
+    {
+      "page": 1,
+      "elapsedMs": 347.1836870000001,
+      "rss": 113139712,
+      "heapTotal": 25284608,
+      "heapUsed": 18512936,
+      "external": 7821692,
+      "arrayBuffers": 1595660
+    },
+    {
+      "page": 100,
+      "elapsedMs": 1509.46427,
+      "rss": 162160640,
+      "heapTotal": 39440384,
+      "heapUsed": 22443096,
+      "external": 14126754,
+      "arrayBuffers": 7900722
+    },
+    {
+      "page": 200,
+      "elapsedMs": 2563.908572,
+      "rss": 188112896,
+      "heapTotal": 55169024,
+      "heapUsed": 18769904,
+      "external": 7586861,
+      "arrayBuffers": 1365054
+    },
+    {
+      "page": 300,
+      "elapsedMs": 3378.032807,
+      "rss": 189816832,
+      "heapTotal": 54906880,
+      "heapUsed": 24057216,
+      "external": 8010833,
+      "arrayBuffers": 1789026
+    }
+  ]
+}

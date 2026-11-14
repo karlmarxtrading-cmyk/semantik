@@ -1,0 +1,1645 @@
+{
+  "status": "PASS",
+  "started": "2026-11-11T19:29:23.388Z",
+  "completed": "2026-11-11T19:29:50.098Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "passed": 28,
+  "total": 28,
+  "results": [
+    {
+      "name": "Reject input.json",
+      "pass": true,
+      "detail": {
+        "error": "Error: Hanya dokumen PDF (.pdf) yang dapat dibuka."
+      },
+      "ms": 10
+    },
+    {
+      "name": "Reject input.txt",
+      "pass": true,
+      "detail": {
+        "error": "Error: Hanya dokumen PDF (.pdf) yang dapat dibuka."
+      },
+      "ms": 6
+    },
+    {
+      "name": "Reject json-masquerading.pdf",
+      "pass": true,
+      "detail": {
+        "error": "Error: Isi berkas bukan PDF yang valid; mengganti ekstensi berkas tidak cukup."
+      },
+      "ms": 8
+    },
+    {
+      "name": "Reject corrupt.pdf",
+      "pass": true,
+      "detail": {
+        "error": "Error: PDF tidak dapat dibuka: Invalid PDF structure."
+      },
+      "ms": 170
+    },
+    {
+      "name": "Reject empty PDF file",
+      "pass": true,
+      "detail": {
+        "error": "Error: Berkas PDF kosong."
+      },
+      "ms": 0
+    },
+    {
+      "name": "Reject PDF larger than 100 MiB",
+      "pass": true,
+      "detail": {
+        "error": "Error: PDF melebihi batas 100 MiB. Pisahkan dokumen menjadi beberapa PDF yang lebih kecil."
+      },
+      "ms": 337
+    },
+    {
+      "name": "Pre-aborted input stops immediately",
+      "pass": true,
+      "detail": {
+        "name": "AbortError"
+      },
+      "ms": 1
+    },
+    {
+      "name": "Cancel extraction after a completed page preserves callback and stops",
+      "pass": true,
+      "detail": {
+        "error": "AbortError",
+        "completedPages": [
+          1
+        ]
+      },
+      "ms": 1029
+    },
+    {
+      "name": "Oversized page text stops before layout and keeps completed page callbacks",
+      "pass": true,
+      "detail": {
+        "error": "Error: Halaman 2 melebihi batas 250.000 karakter teks. Halaman yang sudah selesai tetap tersedia. Pisahkan PDF atau proses rentang halaman yang lebih pendek.",
+        "code": "PDF_TEXT_LIMIT",
+        "completedPages": [
+          1
+        ]
+      },
+      "ms": 1059
+    },
+    {
+      "name": "Resumed total text budget is enforced before layout",
+      "pass": true,
+      "detail": {
+        "error": "Error: Dokumen melebihi batas 2.000.000 karakter teks. Halaman yang sudah selesai tetap tersedia. Pisahkan PDF atau proses rentang halaman yang lebih pendek.",
+        "code": "PDF_TEXT_LIMIT"
+      },
+      "ms": 121
+    },
+    {
+      "name": "Reference-section state survives a page checkpoint and running header",
+      "pass": true,
+      "detail": {
+        "checkpoint": true,
+        "referenceText": "Jones, B. (2026). Follow-up research. doi:10.1234/second",
+        "sourceTextCharacters": 149
+      },
+      "ms": 2860
+    },
+    {
+      "name": "Extract digital-en.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Synthetic English journal",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "Education and Economic Growth\nAbstract\nThis study examines education and economic growth. We studied 120 participants in 2024. The sample mean was 12.5. The confidence interval was 10.2 to 14.8 and p = 0.031.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with economic growth.\nReferences\nSmith, A. (2024). Education research. doi:10.1234/example.2024.001",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 11,
+            "coveredItemCount": 11,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "Education and Economic Growth",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "heading",
+                "text": "Abstract",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "This study examines education and economic growth. We studied 120 participants in 2024. The sample mean was 12.5. The confidence interval was 10.2 to 14.8 and p = 0.031.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "heading",
+                "text": "Methods",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "The participants completed a survey.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "heading",
+                "text": "Results",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "Education was associated with economic growth.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "heading",
+                "text": "References",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "reference",
+                "text": "Smith, A. (2024). Education research. doi:10.1234/example.2024.001",
+                "issues": [],
+                "translatable": false
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 67438,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 1003
+    },
+    {
+      "name": "Extract digital-id.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Jurnal sintetis Indonesia",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "Pendidikan dan Pertumbuhan Ekonomi\nAbstrak\nPenelitian ini mengkaji pendidikan dan pertumbuhan ekonomi. Kami meneliti 120 peserta pada tahun 2024. Rata-rata sampel adalah 12.5.\nMetode\nPara peserta mengisi kuesioner.\nHasil\nPendidikan berhubungan dengan pertumbuhan ekonomi.\nDaftar Pustaka\nSari, A. (2024). Kajian pendidikan. doi:10.1234/contoh.2024.001",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 10,
+            "coveredItemCount": 10,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "Pendidikan dan Pertumbuhan Ekonomi",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "heading",
+                "text": "Abstrak",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "Penelitian ini mengkaji pendidikan dan pertumbuhan ekonomi. Kami meneliti 120 peserta pada tahun 2024. Rata-rata sampel adalah 12.5.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "heading",
+                "text": "Metode",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "Para peserta mengisi kuesioner.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "heading",
+                "text": "Hasil",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "Pendidikan berhubungan dengan pertumbuhan ekonomi.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "heading",
+                "text": "Daftar Pustaka",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "reference",
+                "text": "Sari, A. (2024). Kajian pendidikan. doi:10.1234/contoh.2024.001",
+                "issues": [],
+                "translatable": false
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 62802,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 2022
+    },
+    {
+      "name": "Extract two-column.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Two column ordering fixture",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "A Two Column Scientific Article\nThis introduction spans the width of the page and precedes both columns.\nLEFT-ONE: Education improves access.\nThis is the second line of the first paragraph.\nLEFT-TWO: We collected survey data.\nThe sample includes 200 households.\nLEFT-THREE: The treatment group improved.\nThe study used a controlled design.\nRIGHT-ONE: The results show an association.\nThe first right paragraph follows the left column.\nRIGHT-TWO: The estimates were stable.\nThe average score was 25.0 points.\nRIGHT-THREE: Replication is necessary.\nFurther studies should include more regions.\nConclusion\nThis full-width conclusion follows both columns.",
+        "warnings": [
+          "Halaman 1: Layout dua kolom terdeteksi. Periksa urutan baca di pratinjau."
+        ],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 2,
+            "sourceItemCount": 16,
+            "coveredItemCount": 16,
+            "warnings": [
+              "Layout dua kolom terdeteksi. Periksa urutan baca di pratinjau."
+            ],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "A Two Column Scientific Article",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "paragraph",
+                "text": "This introduction spans the width of the page and precedes both columns.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "LEFT-ONE: Education improves access.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "paragraph",
+                "text": "This is the second line of the first paragraph.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "LEFT-TWO: We collected survey data.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "paragraph",
+                "text": "The sample includes 200 households.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "LEFT-THREE: The treatment group improved.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "paragraph",
+                "text": "The study used a controlled design.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "paragraph",
+                "text": "RIGHT-ONE: The results show an association.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0010",
+                "type": "paragraph",
+                "text": "The first right paragraph follows the left column.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0011",
+                "type": "paragraph",
+                "text": "RIGHT-TWO: The estimates were stable.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0012",
+                "type": "paragraph",
+                "text": "The average score was 25.0 points.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0013",
+                "type": "paragraph",
+                "text": "RIGHT-THREE: Replication is necessary.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0014",
+                "type": "paragraph",
+                "text": "Further studies should include more regions.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0015",
+                "type": "heading",
+                "text": "Conclusion",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0016",
+                "type": "paragraph",
+                "text": "This full-width conclusion follows both columns.",
+                "issues": [],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 85984,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 2027
+    },
+    {
+      "name": "Extract academic-structures.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Statistics, formula, table and figure",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "Statistical Measurements\nThe trial enrolled 125 participants (95% CI: 1.20-2.50). The treatment effect was -0.35 kg; p < 0.05; n = 125. The equation below is preserved from the source:\nE = mc\u00b2 y = 2x + 5 \u03b1 = 0.05\nTable 1. Measured results\nGroup n Mean (kg) p-value\nControl 60 12.50 0.031\nTreatment 65 14.25 0.004\nFigure 1. Outcome by group.\nReferences\nLi, B. (2025). Measurement theory. https://doi.org/10.5678/test.12",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 23,
+            "coveredItemCount": 23,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "Statistical Measurements",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "paragraph",
+                "text": "The trial enrolled 125 participants (95% CI: 1.20-2.50). The treatment effect was -0.35 kg; p < 0.05; n = 125. The equation below is preserved from the source:",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "formula",
+                "text": "E = mc\u00b2 y = 2x + 5 \u03b1 = 0.05",
+                "issues": [
+                  "Persamaan dipertahankan dari sumber; konversi LaTeX tidak ditebak."
+                ],
+                "translatable": false,
+                "assetPath": "assets/p0001-b0003.png"
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "caption",
+                "text": "Table 1. Measured results",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "table",
+                "text": "Group n Mean (kg) p-value\nControl 60 12.50 0.031\nTreatment 65 14.25 0.004",
+                "issues": [
+                  "Tabel dipertahankan sebagai baris sumber dan gambar. Periksa batas sel serta label kolom."
+                ],
+                "translatable": false,
+                "assetPath": "assets/p0001-b0005.png"
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "caption",
+                "text": "Figure 1. Outcome by group.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "heading",
+                "text": "References",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "reference",
+                "text": "Li, B. (2025). Measurement theory. https://doi.org/10.5678/test.12",
+                "issues": [],
+                "translatable": false
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 80308,
+            "type": "image/jpeg"
+          },
+          {
+            "path": "assets/p0001-b0003.png",
+            "bytes": 6912,
+            "type": "image/png"
+          },
+          {
+            "path": "assets/p0001-b0005.png",
+            "bytes": 18697,
+            "type": "image/png"
+          }
+        ]
+      },
+      "ms": 1023
+    },
+    {
+      "name": "Extract rotated.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Rotated article",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "Rotated Article\nThis rotated page contains 27 observations.",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 2,
+            "coveredItemCount": 2,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "paragraph",
+                "text": "Rotated Article",
+                "issues": [
+                  "Teks berotasi: periksa urutan baca."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "paragraph",
+                "text": "This rotated page contains 27 observations.",
+                "issues": [
+                  "Teks berotasi: periksa urutan baca."
+                ],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 18721,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 999
+    },
+    {
+      "name": "Extract unsafe-strings.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Escaping fixture",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "Untrusted Text in a PDF\n<script>window.__PDF_XSS = true</script> <img src=x onerror=alert(1)> [click](javascript:alert(1)) `code` | <b>bold</b> & text ../../outside.txt This content is text, never HTML or executable code.",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 7,
+            "coveredItemCount": 7,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "Untrusted Text in a PDF",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "paragraph",
+                "text": "<script>window.__PDF_XSS = true</script> <img src=x onerror=alert(1)> [click](javascript:alert(1)) `code` | <b>bold</b> & text ../../outside.txt This content is text, never HTML or executable code.",
+                "issues": [],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 40525,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 2019
+    },
+    {
+      "name": "No OCR requests for digital-only fixtures",
+      "pass": true,
+      "detail": {
+        "ocrRequests": []
+      },
+      "ms": 0
+    },
+    {
+      "name": "Reject page count above 300",
+      "pass": true,
+      "detail": {
+        "error": "Error: PDF melebihi 300 halaman. Pisahkan dokumen menjadi beberapa PDF untuk menjaga memori perangkat."
+      },
+      "ms": 109
+    },
+    {
+      "name": "Password-protected PDF opens with correct password",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "",
+          "author": "",
+          "subject": "",
+          "producer": "pypdf",
+          "creationDate": "",
+          "language": ""
+        },
+        "text": "Education and Economic Growth\nAbstract\nThis study examines education and economic growth. We studied 120 participants in 2024. The sample mean was 12.5. The confidence interval was 10.2 to 14.8 and p = 0.031.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with economic growth.\nReferences\nSmith, A. (2024). Education research. doi:10.1234/example.2024.001",
+        "warnings": [],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 11,
+            "coveredItemCount": 11,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "Education and Economic Growth",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "heading",
+                "text": "Abstract",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "This study examines education and economic growth. We studied 120 participants in 2024. The sample mean was 12.5. The confidence interval was 10.2 to 14.8 and p = 0.031.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "heading",
+                "text": "Methods",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "The participants completed a survey.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "heading",
+                "text": "Results",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "Education was associated with economic growth.",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "heading",
+                "text": "References",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "reference",
+                "text": "Smith, A. (2024). Education research. doi:10.1234/example.2024.001",
+                "issues": [],
+                "translatable": false
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 67438,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 1906
+    },
+    {
+      "name": "Incorrect password can be retried",
+      "pass": true,
+      "detail": {
+        "prompts": [
+          "required",
+          "incorrect"
+        ]
+      },
+      "ms": 90
+    },
+    {
+      "name": "Password cancellation rejects promptly",
+      "pass": true,
+      "detail": {
+        "error": "Error: PDF tidak dapat dibuka: Pembukaan PDF yang dilindungi kata sandi dibatalkan."
+      },
+      "ms": 91
+    },
+    {
+      "name": "OCR scan-en.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Scanned en journal",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "SCANNED JOURNAL\nAbstract\nThis study examines education and health.\nWe examined 120 participants in 2024.\nThe average score was 12.5 points.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with better health.",
+        "warnings": [
+          "Halaman 1: Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+        ],
+        "pages": [
+          {
+            "number": 1,
+            "source": "ocr",
+            "columnCount": 1,
+            "sourceItemCount": 34,
+            "coveredItemCount": 34,
+            "warnings": [
+              "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+            ],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "SCANNED JOURNAL",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+                  "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "heading",
+                "text": "Abstract",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "This study examines education and health.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "paragraph",
+                "text": "We examined 120 participants in 2024.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "The average score was 12.5 points.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "heading",
+                "text": "Methods",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "The participants completed a survey.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+                  "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "heading",
+                "text": "Results",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "paragraph",
+                "text": "Education was associated with better health.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 86429,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 2545
+    },
+    {
+      "name": "OCR scan-id.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Scanned id journal",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "JURNAL PINDAI\nAbstrak\nPenelitian ini mengkaji pendidikan dan kesehatan.\nKami meneliti 120 peserta pada tahun 2024.\nNilai rata-rata adalah 12.5 poin.\nMetode\nPara peserta mengisi kuesioner.\nHasil\nPendidikan berkaitan dengan kesehatan.",
+        "warnings": [
+          "Halaman 1: Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+        ],
+        "pages": [
+          {
+            "number": 1,
+            "source": "ocr",
+            "columnCount": 1,
+            "sourceItemCount": 31,
+            "coveredItemCount": 31,
+            "warnings": [
+              "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+            ],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "heading",
+                "text": "JURNAL PINDAI",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+                  "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "heading",
+                "text": "Abstrak",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0003",
+                "type": "paragraph",
+                "text": "Penelitian ini mengkaji pendidikan dan kesehatan.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0004",
+                "type": "paragraph",
+                "text": "Kami meneliti 120 peserta pada tahun 2024.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0005",
+                "type": "paragraph",
+                "text": "Nilai rata-rata adalah 12.5 poin.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0006",
+                "type": "heading",
+                "text": "Metode",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0007",
+                "type": "paragraph",
+                "text": "Para peserta mengisi kuesioner.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0008",
+                "type": "heading",
+                "text": "Hasil",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0009",
+                "type": "paragraph",
+                "text": "Pendidikan berkaitan dengan kesehatan.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 83727,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 1288
+    },
+    {
+      "name": "OCR mixed.pdf",
+      "pass": true,
+      "detail": {
+        "numPages": 2,
+        "metadata": {
+          "title": "Mixed digital and scanned journal",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "DIGITAL PAGE ONE\nThis page is digital text. The sample size was 45.\nSCANNED JOURNAL\nAbstract\nThis study examines education and health.\nWe examined 120 participants in 2024.\nThe average score was 12.5 points.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with better health.",
+        "warnings": [
+          "Halaman 2: Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+        ],
+        "pages": [
+          {
+            "number": 1,
+            "source": "pdf-text",
+            "columnCount": 1,
+            "sourceItemCount": 2,
+            "coveredItemCount": 2,
+            "warnings": [],
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "type": "paragraph",
+                "text": "DIGITAL PAGE ONE",
+                "issues": [],
+                "translatable": true
+              },
+              {
+                "id": "p0001-b0002",
+                "type": "paragraph",
+                "text": "This page is digital text. The sample size was 45.",
+                "issues": [],
+                "translatable": true
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "source": "ocr",
+            "columnCount": 1,
+            "sourceItemCount": 34,
+            "coveredItemCount": 34,
+            "warnings": [
+              "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+            ],
+            "blocks": [
+              {
+                "id": "p0002-b0001",
+                "type": "heading",
+                "text": "SCANNED JOURNAL",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+                  "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0002",
+                "type": "heading",
+                "text": "Abstract",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0003",
+                "type": "paragraph",
+                "text": "This study examines education and health.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0004",
+                "type": "paragraph",
+                "text": "We examined 120 participants in 2024.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0005",
+                "type": "paragraph",
+                "text": "The average score was 12.5 points.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0006",
+                "type": "heading",
+                "text": "Methods",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0007",
+                "type": "paragraph",
+                "text": "The participants completed a survey.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+                  "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0008",
+                "type": "heading",
+                "text": "Results",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              },
+              {
+                "id": "p0002-b0009",
+                "type": "paragraph",
+                "text": "Education was associated with better health.",
+                "issues": [
+                  "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+                ],
+                "translatable": true
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 22513,
+            "type": "image/jpeg"
+          },
+          {
+            "path": "assets/halaman-0002.jpg",
+            "bytes": 86429,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 4018
+    },
+    {
+      "name": "Blank page has image fallback and explicit issue",
+      "pass": true,
+      "detail": {
+        "numPages": 1,
+        "metadata": {
+          "title": "Empty page fixture",
+          "author": "SEMANTIK SETARA synthetic QA",
+          "subject": "unspecified",
+          "producer": "ReportLab PDF Library - (opensource)",
+          "creationDate": "D:20000101000000+00'00'",
+          "language": ""
+        },
+        "text": "",
+        "warnings": [
+          "Halaman 1: OCR tidak menemukan teks yang dapat dibaca. Gambar halaman tetap disertakan.",
+          "Halaman 1: Kepercayaan OCR 0%; periksa isi terhadap gambar halaman."
+        ],
+        "pages": [
+          {
+            "number": 1,
+            "source": "ocr",
+            "columnCount": 1,
+            "sourceItemCount": 0,
+            "coveredItemCount": 0,
+            "warnings": [
+              "OCR tidak menemukan teks yang dapat dibaca. Gambar halaman tetap disertakan.",
+              "Kepercayaan OCR 0%; periksa isi terhadap gambar halaman."
+            ],
+            "blocks": [
+              {
+                "id": "p0001-image",
+                "type": "image",
+                "text": "",
+                "issues": [
+                  "Halaman disimpan sebagai gambar. Tidak ada teks yang dapat diterjemahkan dengan andal."
+                ],
+                "translatable": false,
+                "assetPath": "assets/halaman-0001.jpg"
+              }
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 20691,
+            "type": "image/jpeg"
+          }
+        ]
+      },
+      "ms": 1608
+    },
+    {
+      "name": "No third-party runtime requests",
+      "pass": true,
+      "detail": {
+        "resourceCount": 73
+      },
+      "ms": 0
+    },
+    {
+      "name": "PDF input payload did not execute",
+      "pass": true,
+      "ms": 0
+    }
+  ],
+  "errors": [],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/manifest.json",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/input.json",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/input.txt",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/json-masquerading.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/corrupt.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.min.mjs",
+      "initiatorType": "script",
+      "transferSize": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/mixed.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/text-limit.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/digital-en.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/references-continuation.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/digital-en.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/digital-id.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/two-column.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/academic-structures.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/rotated.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/unsafe-strings.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/page-limit-301.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/password-protected.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/password-protected.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/password-protected.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/scan-en.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/ocr/tesseract.esm.min.js",
+      "initiatorType": "script",
+      "transferSize": 0
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/ocr/worker.min.js",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/scan-id.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/ocr/worker.min.js",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/mixed.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/ocr/worker.min.js",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/__test-report/pdf-reader",
+      "initiatorType": "fetch",
+      "transferSize": 338
+    },
+    {
+      "url": "http://127.0.0.1:8765/tests/fixtures/empty.pdf",
+      "initiatorType": "fetch",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/pdfjs/pdf.worker.min.mjs",
+      "initiatorType": "other",
+      "transferSize": 300
+    },
+    {
+      "url": "http://127.0.0.1:8765/vendor/ocr/worker.min.js",
+      "initiatorType": "other",
+      "transferSize": 300
+    }
+  ]
+}

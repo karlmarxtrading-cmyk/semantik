@@ -1,0 +1,16 @@
+Warning: Please use the `legacy` build in Node.js environments.
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Missing expected rejection.
+    at async file:///workspace/scratch/17677088ccfd/cp20/tests/pdf-inherited-reader.mjs:31:120 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: undefined,
+  expected: /300/,
+  operator: 'rejects',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

@@ -1,0 +1,99 @@
+- link "Langsung ke penerjemah":
+  - /url: "#workspace"
+- banner:
+  - link "Semantik Setara, beranda":
+    - /url: /
+    - text: s
+    - generic: ≋
+    - generic: semantiksetara
+  - navigation "Navigasi utama":
+    - generic: PENERJEMAH JURNAL
+    - link "Cara kerja":
+      - /url: "#guide"
+      - text: Cara kerja
+- main:
+  - region "Jurnal lintas bahasa. Lebih dekat dengan maknanya.":
+    - paragraph: RUANG BACA ILMIAH · INDONESIA ↔ INGGRIS
+    - heading "Jurnal lintas bahasa. Lebih dekat dengan maknanya." [level=1]:
+      - text: Jurnal lintas bahasa.
+      - emphasis: Lebih dekat dengan maknanya.
+    - paragraph: Pilih PDF, terjemahkan, lalu unduh satu Markdown dengan rumus dan gambar. Semua pemrosesan berlangsung di perangkat Anda.
+    - strong: Dokumen tetap milik Anda.
+    - paragraph:
+      - text: Isi PDF tidak dikirim ke server.
+      - text: Mesin penerjemah berjalan lokal.
+    - text: Tanpa akun · Tanpa API berbayar
+  - status: Markdown mandiri dibuat; gambar sumber tertanam di dalam berkas. Rumus yang belum pasti tetap berlabel.
+  - region "Mulai dengan jurnal Anda":
+    - heading "Mulai dengan jurnal Anda" [level=2]
+    - generic: PDF SAJA
+    - button "Pilih jurnal PDF atau letakkan berkas di sini PDF digital atau hasil scan · hingga 100 MiB / 300 halaman"
+    - generic: PDF
+    - strong: Pilih jurnal PDF
+    - generic: atau letakkan berkas di sini
+    - generic: PDF digital atau hasil scan · hingga 100 MiB / 300 halaman
+    - generic: PDF
+    - strong: academic_prose_id.pdf
+    - text: 44 KiB · 1 halaman · Progres disimpan lokal
+    - button "Hapus PDF yang dipilih": ×
+    - paragraph: ◉ Berkas dibaca di browser, bukan diunggah ke server.
+    - generic: Terjemahkan ke
+    - combobox "Terjemahkan ke":
+      - option "Otomatis · bahasa lawan" [selected]
+      - option "Bahasa Indonesia"
+      - option "English"
+    - paragraph: Bahasa sumber dikenali otomatis. Bisa Anda sesuaikan.
+    - generic "Sesuaikan pembacaan Opsional":
+      - text: Sesuaikan pembacaan
+      - generic: Opsional
+    - option "Deteksi otomatis" [selected]
+    - option "English"
+    - option "Bahasa Indonesia"
+    - option "Deteksi otomatis" [selected]
+    - option "Satu kolom"
+    - option "Dua kolom"
+    - button "Lanjutkan / terjemahkan ulang":
+      - generic: Lanjutkan / terjemahkan ulang
+    - paragraph: Pada penggunaan pertama, model bahasa diunduh sekali (sekitar 105 MB per arah). Proses berikutnya menggunakan salinan lokal.
+    - generic "Tahapan penggunaan":
+      - generic: "01"
+      - text: Pilih PDF
+      - generic: "02"
+      - text: Terjemahkan lokal
+      - generic: "03"
+      - text: Unduh hasil .md
+  - generic "Lihat PDF sumber Halaman 1":
+    - text: Lihat PDF sumber
+    - generic: Halaman 1
+  - region "Bacaan Anda siap disimpan.":
+    - paragraph: HASIL DOKUMEN
+    - heading "Bacaan Anda siap disimpan." [level=2]
+    - paragraph: 1 halaman · 13 bagian · 11 diterjemahkan · 2 dipertahankan · 0 ditolak · 0 gagal · 0 belum diproses · 0 perlu ditinjau
+    - generic: Pemrosesan selesai
+    - generic: 0 bagian bertanda; 1 catatan pembacaan halaman. Rumus dan referensi tertentu dipertahankan dari sumber; prosa tabel diterjemahkan per sel. Dokumen memuat bahasa Indonesia dan Inggris. Bagian yang sudah sesuai bahasa tujuan dipertahankan; periksa judul atau frasa pendek yang belum dapat dikenali.
+    - heading "Satu file, siap dibaca" [level=3]
+    - paragraph: Rumus terverifikasi memakai LaTeX. Gambar sumber tertanam dalam Markdown; bagian yang belum pasti diberi label.
+    - button "Unduh hasil .md"
+    - generic "Unduhan tambahan · opsional"
+    - generic "Bandingkan sumber dan hasil · opsional"
+    - option "1" [selected]
+    - paragraph: Pemeriksaan otomatis membantu menemukan perubahan angka dan bagian yang bermasalah. Tinjau istilah, tabel, rumus, dan makna ilmiah sebelum memakai hasil untuk penelitian.
+  - paragraph: SEDERHANA DI DEPAN. TELITI DI DALAM.
+  - heading "Dari halaman ke pemahaman." [level=2]
+  - article:
+    - text: 01 / SUMBER
+    - heading "Buka jurnalnya." [level=3]
+    - paragraph: PDF teks maupun scan dibaca lokal. Susunan halaman dan teks sumber tersedia untuk dibandingkan.
+  - article:
+    - text: 02 / MAKNA
+    - heading "Terjemahkan bertahap." [level=3]
+    - paragraph: Mesin Indonesia–Inggris bekerja per bagian. Angka dan rujukan diperiksa; bagian yang meragukan diberi tanda.
+  - article:
+    - text: 03 / KENDALI
+    - heading "Unduh hasil .md." [level=3]
+    - paragraph: Unduh Markdown dalam satu berkas. Perbandingan sumber dan koreksi tetap tersedia bila diperlukan; progres tersimpan di browser ini.
+  - generic "Data di perangkat & penggunaan offline"
+- contentinfo:
+  - generic: Semantik Setara / Academic PDF Translator
+  - text: CP19 · Pemrosesan lokal
+  - generic: Online

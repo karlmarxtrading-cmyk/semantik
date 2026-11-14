@@ -1,0 +1,74 @@
+[
+  {
+    "name": "mixed.pdf",
+    "pages": 2,
+    "extractedChars": 69,
+    "text": "DIGITAL PAGE ONE\nThis page is digital text. The sample size was 45.\n\n"
+  },
+  {
+    "name": "digital-id.pdf",
+    "pages": 1,
+    "extractedChars": 351,
+    "text": "Pendidikan dan Pertumbuhan Ekonomi\nAbstrak\nPenelitian ini mengkaji pendidikan dan pertumbuhan ekonomi.\nKami meneliti 120 peserta pada tahun 2024. Rata-rata sampel adalah 12.5.\nMetode\nPara peserta mengisi kuesioner.\nHasil\nPendidikan berhubungan dengan pertumbuhan ekonomi.\nDaftar Pustaka\nSari, A. (2024). Kajian pendidikan. doi:10.1234/contoh.2024.001\n"
+  },
+  {
+    "name": "password-protected.pdf",
+    "pages": 1,
+    "extractedChars": 387,
+    "text": "Education and Economic Growth\nAbstract\nThis study examines education and economic growth.\nWe studied 120 participants in 2024. The sample mean was 12.5.\nThe confidence interval was 10.2 to 14.8 and p = 0.031.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with economic growth.\nReferences\nSmith, A. (2024). Education research. doi:10.1234/example.2024.001\n"
+  },
+  {
+    "name": "digital-en.pdf",
+    "pages": 1,
+    "extractedChars": 387,
+    "text": "Education and Economic Growth\nAbstract\nThis study examines education and economic growth.\nWe studied 120 participants in 2024. The sample mean was 12.5.\nThe confidence interval was 10.2 to 14.8 and p = 0.031.\nMethods\nThe participants completed a survey.\nResults\nEducation was associated with economic growth.\nReferences\nSmith, A. (2024). Education research. doi:10.1234/example.2024.001\n"
+  },
+  {
+    "name": "empty.pdf",
+    "pages": 1,
+    "extractedChars": 0,
+    "text": ""
+  },
+  {
+    "name": "unsafe-strings.pdf",
+    "pages": 1,
+    "extractedChars": 222,
+    "text": "Untrusted Text in a PDF\n<script>window.__PDF_XSS = true</script>\n<img src=x onerror=alert(1)>\n[click](javascript:alert(1))\n`code` | <b>bold</b> & text\n../../outside.txt\nThis content is text, never HTML or executable code.\n"
+  },
+  {
+    "name": "page-limit-301.pdf",
+    "pages": 301,
+    "extractedChars": 19456,
+    "text": "Page 1\nThis fixture verifies the configured page count limit.\n\nPage 2\nThis fixture verifies the configured page count limit.\n\nPage 3\nThis fixture verifies the configured page count limit.\n\nPage 4\nThis fixture verifies the configured page count limit.\n\nPage 5\nThis fixture verifies the configured page count limit.\n\nPage 6\nThis fixture verifies the configured page count limit.\n\nPage 7\nThis fixture verifies the configured page count limit.\n\nPage 8\nThis fixture verifies the configured page count limit.\n\nPage 9\nThis fixture verifies the configured page count limit.\n\nPage 10\nThis fixture verifies the configured page count limit.\n\nPage 11\nThis fixture verifies the configured page count limit.\n\nPage 12\nThis fixture verifies the configured page count limit.\n\nPage 13\nThis fixture verifies the configured page count limit.\n\nPage 14\nThis fixture verifies the configured page count limit.\n\nPage 15\nThis fixture verifies the configured page count limit.\n\nPage 16\nThis fixture verifies the configured page count limit.\n\nPage 17\nThis fixture verifies the configured page count limit.\n\nPage 18\nThis fixture verifies the configured page count limit.\n\nPage 19\nThis fixture verifies the configured page count limit.\n\nPage 20\nThis fixture verifies the configured page count limit.\n\nPage 21\nThis fixture verifies the configured page count limit.\n\nPage 22\nThis fixture verifies the configured page count limit.\n\nPage 23\nThis fixture verifies the configured page count limit.\n\nPage 24\nThis fixture verifies the configured page count limit.\n\nPage 25\nThis fixture verifies the configured page count limit.\n\nPage 26\nThis fixture verifies the configured page count limit.\n\nPage 27\nThis fixture verifies the configured page count limit.\n\nPage 28\nThis fixture verifies the configured page count limit.\n\nPage 29\nThis fixture verifies the configured page count limit.\n\nPage 30\nThis fixture verifies the configured page count limit.\n\nPage 31\nThis fixture verifies the configured page count limit.\n\nPage 32\nThis fixture verifies the configured page count limit.\n\nPage 33\nThis fixture verifies the configured page count limit.\n\nPage 34\nThis fixture verifies the configured page count limit.\n\nPage 35\nThis fixture verifies the configured page count limit.\n\nPage 36\nThis fixture verifies the configured page count limit.\n\nPage 37\nThis fixture verifies the configured page count limit.\n\nPage 38\nThis fixture verifies the configured page count limit.\n\nPage 39\nThis fixture verifies the configured page count limit.\n\nPage 40\nThis "
+  },
+  {
+    "name": "two-column.pdf",
+    "pages": 1,
+    "extractedChars": 652,
+    "text": "A Two Column Scientific Article\nThis introduction spans the width of the page and precedes both columns.\nLEFT-ONE: Education improves access.\nThis is the second line of the first paragraph.\nLEFT-TWO: We collected survey data.\nThe sample includes 200 households.\nLEFT-THREE: The treatment group improved.\nThe study used a controlled design.\nRIGHT-ONE: The results show an association.\nThe first right paragraph follows the left column.\nRIGHT-TWO: The estimates were stable.\nThe average score was 25.0 points.\nRIGHT-THREE: Replication is necessary.\nFurther studies should include more regions.\nConclusion\nThis full-width conclusion follows both columns.\n"
+  },
+  {
+    "name": "rotated.pdf",
+    "pages": 1,
+    "extractedChars": 60,
+    "text": "Rotated Article\nThis rotated page contains 27 observations.\n"
+  },
+  {
+    "name": "academic-structures.pdf",
+    "pages": 1,
+    "extractedChars": 427,
+    "text": "Statistical Measurements\nThe trial enrolled 125 participants (95% CI: 1.20-2.50).\nThe treatment effect was -0.35 kg; p < 0.05; n = 125.\nThe equation below is preserved from the source:\nE = mc\u00b2     y = 2x + 5     \u03b1 = 0.05\nTable 1. Measured results\nGroup\nn\nMean (kg)\np-value\nControl\n60\n12.50\n0.031\nTreatment\n65\n14.25\n0.004\nFigure 1. Outcome by group.\nReferences\nLi, B. (2025). Measurement theory. https://doi.org/10.5678/test.12\n"
+  },
+  {
+    "name": "scan-id.pdf",
+    "pages": 1,
+    "extractedChars": 0,
+    "text": ""
+  },
+  {
+    "name": "scan-en.pdf",
+    "pages": 1,
+    "extractedChars": 0,
+    "text": ""
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "status": "COMPLETED_EXECUTION_NOT_SEMANTIC_APPROVAL",
+  "method": "Actual local ONNX/WASM via Node Worker bridge; development only; no semantic approval implied",
+  "build": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp21/work/app",
+    "adapterSHA256": "ce90ea16f6ea37fe523388d3852421489a66ff189f1c51993f738c88eca47a46",
+    "rulesSHA256": "6b8a91033f5824f25ac51de12d8b2c0bbc068ecdb6dff72fe69449fda5e1dc21",
+    "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda",
+    "phrasesSHA256": "5bb6d6681f558481a5cbdaec2c1f07bae7e3412f0caa7ebddba0dfbdcccd6a94"
+  },
+  "rows": [
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "text": "Perlakuan A menghasilkan respon 7 dan perlakuan B menghasilkan respon 11. Jumlah ini tidak dapat dibandingkan dengan rata tanpa mengetahui berapa banyak peserta yang menerima setiap perawatan. Penyebut penting serta pembilang.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 71,
+      "outputTokens": 56,
+      "metrics": {
+        "inferenceCalls": 5,
+        "cacheHits": 0,
+        "inputTokens": 88,
+        "outputTokens": 73,
+        "uniqueInputs": 5
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Treatment A produced 7 responses and treatment B produced 11 responses."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "These counts cannot be compared fairly without knowing how many participants received each treatment."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "These counts cannot be compared fairly"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "without knowing how many participants received each treatment."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The denominator matters as well as the numerator."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2149.514976,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "text": "Penelaah meminta penulis untuk membedakan informasi yang hilang dari bukti bahwa peristiwa tidak terjadi. Catatan kosong dapat mencerminkan dokumentasi yang tidak lengkap. Ini tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang direkam dari peristiwa.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 63,
+      "outputTokens": 51,
+      "metrics": {
+        "inferenceCalls": 6,
+        "cacheHits": 0,
+        "inputTokens": 84,
+        "outputTokens": 70,
+        "uniqueInputs": 6
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "The reviewer asked the authors to distinguish missing information"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "from evidence that an event did not occur."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "A blank record may reflect incomplete documentation."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "It cannot automatically be treated as a recorded absence of the event."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2252.1474049999997,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    }
+  ],
+  "counts": {
+    "cases": 2,
+    "translated": 2,
+    "rejected": 0,
+    "failed": 0
+  }
+}

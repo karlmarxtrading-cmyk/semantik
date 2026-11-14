@@ -1,0 +1,34 @@
+{
+  "scope": "Manual CUA observation with local origin server stopped; not a device-wide network disconnect",
+  "observedDateUTC": "2026-11-11",
+  "recordedAtUTC": "2026-11-12T00:52:31.573328+00:00",
+  "browser": "Chrome 156 on Linux x86_64",
+  "origin": "http://127.0.0.1:8765",
+  "offlineManifestCache": "semantik-pdf-cp17-605158f333e9",
+  "precondition": "Public offline preparation button completed; UI confirmed PDF reader, OCR and English-to-Indonesian model cached. All old origin clients closed before opening this app instance.",
+  "serverStop": "Native terminal Ctrl+C returned KeyboardInterrupt and shell prompt, observed in terminal screenshot.",
+  "results": [
+    {
+      "name": "Application reload with origin server stopped",
+      "pass": true,
+      "observation": "Full application shell, PDF-only input and saved document banner rendered after reload."
+    },
+    {
+      "name": "Resume checkpoint with origin server stopped",
+      "pass": true,
+      "observation": "Progres dipulihkan. bilingual-text.pdf; 1 halaman; 7 bagian; 7 diproses; English Abstract heading restored as Abstrak."
+    },
+    {
+      "name": "Fresh scan OCR, new inference and export with origin server stopped",
+      "pass": null,
+      "status": "NOT_COMPLETED",
+      "observation": "File chooser operation timed out in CUA environment; subsequent browser inventory had no tabs. No pass claimed."
+    }
+  ],
+  "limitations": [
+    "navigator.onLine remained true; only the local origin server was stopped.",
+    "Cached-model inference with model fetch blocked passed in separate browser-engine.json for both directions.",
+    "Real OCR and exports passed separate online-origin suites; not counted as a combined server-off pass.",
+    "The browser session ended after the file chooser timeout; mobile visual review was not completed."
+  ]
+}

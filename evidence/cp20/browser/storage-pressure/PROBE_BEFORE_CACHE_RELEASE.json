@@ -1,0 +1,85 @@
+{
+  "build": {
+    "base": "/r/4694bad623ed9b19/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-4694bad623ed9b19",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "version": "0.20.0"
+  },
+  "started": "2026-11-13T07:14:35.422Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "cores": 9,
+    "deviceMemoryGB": 8,
+    "platform": "Linux x86_64"
+  },
+  "method": "Actual cloud Chrome via visible QA controls; viewport is not a physical mobile device. No human semantic approval.",
+  "results": [
+    {
+      "name": "Isolated temporary storage capacity probe",
+      "status": "PASS",
+      "milliseconds": 31,
+      "detail": {
+        "before": {
+          "quota": 10801862798,
+          "usage": 64444558,
+          "usageDetails": {
+            "caches": 58351104,
+            "indexedDB": 6093454
+          }
+        },
+        "idb": [
+          {
+            "bytes": 262144,
+            "status": "FAIL",
+            "error": "QuotaExceededError: "
+          }
+        ],
+        "opfs": {
+          "status": "FAIL",
+          "error": "QuotaExceededError: The operation failed because it would cause the application to exceed its storage quota."
+        },
+        "after": {
+          "quota": 10802857532,
+          "usage": 65439292,
+          "usageDetails": {
+            "caches": 58351104,
+            "indexedDB": 7088188
+          }
+        }
+      }
+    }
+  ],
+  "storageProbe": {
+    "before": {
+      "quota": 10801862798,
+      "usage": 64444558,
+      "usageDetails": {
+        "caches": 58351104,
+        "indexedDB": 6093454
+      }
+    },
+    "idb": [
+      {
+        "bytes": 262144,
+        "status": "FAIL",
+        "error": "QuotaExceededError: "
+      }
+    ],
+    "opfs": {
+      "status": "FAIL",
+      "error": "QuotaExceededError: The operation failed because it would cause the application to exceed its storage quota."
+    },
+    "after": {
+      "quota": 10802857532,
+      "usage": 65439292,
+      "usageDetails": {
+        "caches": 58351104,
+        "indexedDB": 7088188
+      }
+    }
+  }
+}

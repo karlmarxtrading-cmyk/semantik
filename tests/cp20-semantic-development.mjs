@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';import path from 'node:path';
+import {repo,build,Translator,cleanupBridge} from './cp20-semantic-runtime.mjs';
+const audit=JSON.parse(await fs.readFile(path.join(repo,'../baseline/audit/semantics_agent/independent-inference-results.json')));
+const prior=JSON.parse(await fs.readFile(path.join(repo,'../baseline/audit/provided_release/INDEPENDENT_ACCEPTANCE.json')));
+const unique=new Map([...audit.rows,...prior.rows].map(r=>[r.direction+'|'+r.source,r]));
+const report={identity:build,method:'Actual ONNX/WASM inference through Node worker; source app adapter. Known CP19 diagnostic and acceptance cases are development regressions, not holdout. AI review only.',humanApproval:false,rows:[]};
+const tr=new Translator();try{for(const direction of ['en-id','id-en']){const p=performance.now();await tr.prepare(direction);report[direction+'ColdModelMs']=Math.round(performance.now()-p);for(const r of unique.values()){if(r.direction!==direction)continue;const t=performance.now(),result=await tr.translate(r.source);report.rows.push({id:r.id||'DEV-'+report.rows.length,direction,source:r.source,priorTarget:r.text,...result,ms:Math.round(performance.now()-t)});console.log(direction,result.outcome,r.source,'=>',result.text);await fs.writeFile(path.join(repo,'evidence/cp20/semantics/development-inference.json'),JSON.stringify(report,null,2));}}}finally{await tr.dispose();await cleanupBridge();}

@@ -1,0 +1,3 @@
+import {VERSION,type Job} from './types';
+import {coverage,CHECKER} from './quality';
+export function diagnosticSummary(job:Job|null){return {artifactKind:'content-free-diagnostics',appVersion:VERSION,checker:CHECKER,direction:job?.direction??null,state:job?.state??'NO_PROJECT',fileCount:job?.documents.filter(d=>!d.directory).length??0,coverage:job?coverage(job.documents):null,capabilities:{worker:typeof Worker!=='undefined',wasm:typeof WebAssembly!=='undefined',opfs:typeof navigator!=='undefined'&&typeof navigator.storage?.getDirectory==='function'},excluded:['source and target text','filenames and paths','project and segment IDs','glossary','reviewer names and decisions','logs','credentials'],humanReviewEvidence:'This diagnostic is not a human review certificate'};}

@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-12T03:39:06.620425+00:00",
+  "purpose": "EXPOSED_DEVELOPMENT_CONFIRMATION_NOT_HOLDOUT",
+  "originCorpusSha256": "71d938dd4d587a87b7a9ae2e6a9fd8b3b3442a3419d3bd5203b25edd843e7fe9",
+  "selection": "All first160 AI-critical IDs except five concurrently tested by translation agent; no failed rows discarded from original evaluation.",
+  "excludedAlreadyTested": [
+    "JOURNAL-03-S12",
+    "JOURNAL-04-S16",
+    "JOURNAL-05-S14",
+    "JOURNAL-06-S12",
+    "JOURNAL-06-S13"
+  ],
+  "documents": [
+    {
+      "documentId": "JOURNAL-01",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "title": "Relationship between students’ attitude towards, and performance in mathematics word problems",
+      "authors": [
+        "Robert Wakhata",
+        "Sudi Balimuttajjo",
+        "Védaste Mutarutinya"
+      ],
+      "journal": "PLOS ONE",
+      "publicationDate": "Feb 6, 2024",
+      "doi": "10.1371/journal.pone.0278593",
+      "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278593",
+      "pdfUrl": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0278593&type=printable",
+      "pdfPath": "journals/JOURNAL-01.pdf",
+      "pdfSha256": "4271e1c34f791cf666c0b0276b3326875423b07bc7585d8db2905e47dd119866",
+      "pdfBytes": 830693,
+      "pages": 26,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "digital journal with text, tables/figures or mathematical notation",
+      "candidateCount": 359,
+      "segments": [
+        {
+          "id": "JOURNAL-01-S12",
+          "source": "In addition to demographic questions, the Attitude Towards Mathematics Inventory-Short Form (ATMI-SF) [3], a 14-item instrument questionnaire consisting of four subscales (enjoyment, motivation, value/usefulness and self-confidence) was adapted (Appendix 2 in S1 File) to measure the relationship between students’ performance and their attitude towards learning LP word tasks.",
+          "page": 11,
+          "paragraphIndex": 4,
+          "sentenceIndex": 0,
+          "bbox": [
+            200.01199340820312,
+            571.0050048828125,
+            575.9830322265625,
+            711.0009765625
+          ],
+          "rawParagraph": "In addition to demographic questions, the Attitude Towards Mathematics Inventory-Short\nForm (ATMI-SF) [3], a 14-item instrument questionnaire consisting of four subscales (enjoy-\nment, motivation, value/usefulness and self-confidence) was adapted (Appendix 2 in S1 File)\nto measure the relationship between students’ performance and their attitude towards learning\nLP word tasks. The ATMI-SF, a 5-point likert-type scale with response options ranging from\n“Strongly Disagree (1)” to “Strongly Agree (5)” was used. The ATMI-SF items were developed\nfrom [89], which were also developed and validated from several mathematics attitudinal ques-\ntionnaire items [2,31,34,62,110]. The ATMI-SF was adapted (Appendix 2 in S1 File) because it\ndirectly correlates with the learning of LP, “the cousin of mathematics word problems.”\nEnglish being the language of instruction in Ugandan secondary schools’ curricula, translation\nof questionnaire items was not required.\n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 207,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    },
+    {
+      "documentId": "JOURNAL-03",
+      "direction": "en-id",
+      "domain": "biomedical",
+      "title": "Mathematical modelling to estimate the impact of maternal and perinatal healthcare services and interventions on health in sub-Saharan Africa: A scoping review",
+      "authors": [
+        "Joseph H. Collins",
+        "Valentina Cambiano",
+        "Andrew N. Phillips",
+        "Tim Colbourn"
+      ],
+      "journal": "PLOS ONE",
+      "publicationDate": "Dec 2, 2024",
+      "doi": "10.1371/journal.pone.0296540",
+      "sourceUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0296540",
+      "pdfUrl": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0296540&type=printable",
+      "pdfPath": "journals/JOURNAL-03.pdf",
+      "pdfSha256": "d4c89ae0af3091413dac98dfa5ffa42b5e870d6ab6f0df86d6ac58ae50e72044",
+      "pdfBytes": 1261231,
+      "pages": 23,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "digital journal with text, tables/figures or mathematical notation",
+      "candidateCount": 185,
+      "segments": [
+        {
+          "id": "JOURNAL-03-S11",
+          "source": "If a study modelled any interventions delivered to mothers, they were delivered: Antenatally During labour/birth Postnatally",
+          "page": 9,
+          "paragraphIndex": 6,
+          "sentenceIndex": 0,
+          "bbox": [
+            36.002410888671875,
+            198.71376037597656,
+            291.22479248046875,
+            235.81410217285156
+          ],
+          "rawParagraph": "If a study modelled any interventions delivered to mothers, they were delivered:\nAntenatally\nDuring labour/birth\nPostnatally\n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 97,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-03-S17",
+          "source": "Next, considering the commonly reported outcomes of modelling analyses, this review found that studies were considerably more likely to report outcomes relating to either maternal and neonatal mortality and much less likely to predict intervention effects on morbidity or stillbirths.",
+          "page": 13,
+          "paragraphIndex": 0,
+          "sentenceIndex": 7,
+          "bbox": [
+            200.01156616210938,
+            76.58599853515625,
+            575.9638671875,
+            710.6002197265625
+          ],
+          "rawParagraph": "treatment can be influenced by outcomes of other individuals in the model [106]. Interference\ncannot be represented in population-level models where the assumption of non-independence\nis not met which means such models are less suitable to explore the complexities of healthcare\ndelivery. This is demonstrated in the study by Nadkarni et al. [35], who explicitly represent the\nrelationship between the acuity of a group of patients in a maternity ward, the associated\ndemand on consumables and, in-turn, the effect on outcomes.\nOur review found that only 27% of research teams developed novel mathematical models to\nanswer the research question of interest. Whilst the appeal of using a previously developed\nmodel is clear, the importance of considering country-context within the evaluation of health\npolicy has long been identified within the literature, as national and regional context likely has\nsignificant impact on how interventions are implemented and accessed by populations [109].\nMany modellers have embraced methods to embed contextual structures into model design\nthrough participatory approaches to model development [110], stakeholder workshops devel-\noping causal loop diagrams [111], or simply through explicitly representing the system of\ninterest within a given context by supported model validation with key stakeholders [112].\nWhilst such approaches were underutilised in the reviewed studies, context-informed model-\nling was well demonstrated by Semwanga et al. [32] who developed a novel systems-dynamics\nmodel to explore neonatal health interventions in Uganda through a process of stakeholder\nengagement and causal mapping with service users and policy makers.\nNext, considering the commonly reported outcomes of modelling analyses, this review\nfound that studies were considerably more likely to report outcomes relating to either maternal\nand neonatal mortality and much less likely to predict intervention effects on morbidity or\nstillbirths. Limited reporting on morbidity outcomes is not surprising due to the widespread\nuse of LiST which does not calculate the effect of interventions on most morbidity outcomes.\nThe absence of morbidity from the outcomes of modelling studies evaluating health interven-\ntion delivery is concerning considering that many of the routine interventions delivered to\nmothers and newborns are intended not only to prevent mortality but to reduce the incidence\nof common morbidity associated with pregnancy and the newborn period to improve overall\nquality of life [113–115]. The absence of such outcomes may mean that the true health impact\nof improving intervention coverage is significantly underestimated at the population level.\nFinally, we found that very few of the included studies evaluated the potential impact of\ninterventions on stillbirths. There are similarities between stillbirth research and morbidity\nresearch, with many arguing that stillbirth has historically been absent from the global mater-\nnal and perinatal health agenda for some time [116–118]. Qureshi et al. [118] suggest that still-\nbirths should be attributed the same ‘value’ as neonatal deaths in economic evaluation of\nmaternal health interventions as they are commonly excluded in measurements such as life\nyears gained or DALYs averted. This is problematic when considering very early preterm neo-\nnatal deaths are included in neonatal death statistics whilst a stillbirth at 41 weeks gestational\nage would not be, despite being more developmentally ‘mature’ [118]. Whilst recently a\nrenewed focus on stillbirth prevention has led to considerable progress [119] a large number\nof stillbirths occur per year within SSA [8] and are associated with considerable morbidity in\nmothers [120]. Importantly several interventions to prevent stillbirth are well described in the\nliterature through a Cochrane review of relevant trials [121] and through observational studies\n[122]. As such mathematical modelling approaches are well positioned to evaluate the context-\nspecific effects of these interventions in high burden populations.\nThere are several important strengths and limitations of this review to acknowledge. The\nprimary strength of this review is the use of a systematic search strategy to identify relevant\nstudies and due to the nature and broad scope of the research question and associated objec-\ntives, the scoping review methodology was the most appropriate choice to map the relevant\n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 155,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    },
+    {
+      "documentId": "JOURNAL-04",
+      "direction": "en-id",
+      "domain": "environment",
+      "title": "Trends and cycles in rainfall, temperature, NDVI, IOD and SOI in the Mara-Serengeti: Insights for biodiversity conservation",
+      "authors": [
+        "Joseph O. Ogutu",
+        "Gundula S. Bartzke",
+        "Sabyasachi Mukhopadhyay",
+        "Holly T. Dublin",
+        "Jully S. Senteu",
+        "David Gikungu",
+        "Isaiah Obara",
+        "Hans-Peter Piepho"
+      ],
+      "journal": "PLOS Climate",
+      "publicationDate": "Oct 2, 2024",
+      "doi": "10.1371/journal.pclm.0000388",
+      "sourceUrl": "https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000388",
+      "pdfUrl": "https://journals.plos.org/climate/article/file?id=10.1371/journal.pclm.0000388&type=printable",
+      "pdfPath": "journals/JOURNAL-04.pdf",
+      "pdfSha256": "3c22266fa645364491447b363dde51e1f8e13c43cdd434cb4996185b342ad0ad",
+      "pdfBytes": 7836442,
+      "pages": 49,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "digital journal with text, tables/figures or mathematical notation",
+      "candidateCount": 533,
+      "segments": [
+        {
+          "id": "JOURNAL-04-S13",
+          "source": "The seasonality of minimum and maximum temperatures and rainfall in Narok was strongly persistent and deterministic.",
+          "page": 33,
+          "paragraphIndex": 0,
+          "sentenceIndex": 14,
+          "bbox": [
+            200.01187133789062,
+            76.58599853515625,
+            575.9598999023438,
+            710.6002197265625
+          ],
+          "rawParagraph": "despite a positive correlation between the wet and dry season rainfall cycles, a negative correla-\ntion between their levels led to a similar compensatory pattern as for the other regions. Nota-\nbly, only in Seronera, Serengeti, did the bivariate rainfall components display a shorter cycle\nperiod of about 10.4 years. The 34-year time series from Seronera may not have been long\nenough to detect the longer-term oscillations observed in the other GMSE rainfall data. This\npattern of compensatory bivariate oscillations in the wet and dry season rainfall components is\nlikely crucial for the ecosystem’s stability.\nThe bivariate cycle periods, ranging between about 10 and 20 years, are considerably longer\nthan the dominant cycle periods of 2.3 and 10.1 years identified in univariate analyses of wet\nand dry season rainfall components [59]. These bivariate cycle periods also exceed those of the\nIOD (4.1 to 5.6 years) and the SOI (1.6 to 4.0 years), both of which are well known to signifi-\ncantly influence East African rainfall, especially during the wet season [50, 60–66]. Despite the\nvariable amplitudes and phases of the SOI and the IOD oscillations, the consistent, determin-\nistic and persistent pattern of bivariate rainfall oscillations suggests that factors other than\nthese known climate phenomena may be driving the observed long-term bivariate oscillations.\nThe long cycle periods of the bivariate rainfall cycle may reflect the influence of the Atlantic\nMultidecadal Oscillation (AMO). Oscillations in Atlantic ocean temperatures can significantly\ninfluence East African rainfall [60, 63, 67, 68] through their teleconnections with the West\nAfrican monsoon and the El Niño Southern Oscillation (ENSO) [69–72]. Additionally, the\nlocation and intensity of the Mascarene High [73], low-level jet streams, pressure cells over the\nSahara and Saudi Arabia, and local topography, also contribute to rainfall variation in East\nAfrica [60, 74] and hence to the rainfall oscillations in the GMSE.\nThe amplitudes of the rainfall oscillations in Narok was rather stable despite rising tempera-\ntures. This is inconsistent with global observations of more extreme weather events, such as\ndroughts and floods, associated with rising temperatures [22]. Furthermore, in the Serengeti\nand Narok regions, the amplitude of the dry season rainfall oscillations exceeded that of the\nwet season. This heightened variability in the dry season rainfall, crucial for the survival of\nplants and animals during resource-scarce periods [36, 39, 75], may have significant implica-\ntions for biodiversity and animal population dynamics.\nThe seasonality of minimum and maximum temperatures and rainfall in Narok was\nstrongly persistent and deterministic. This was indicated by the extremely low stochastic dis-\nturbance variances within the seasonal components in the trivariate state space models. Addi-\ntionally, there was also weak positive correlation between the seasonal cycles of temperature\nand rainfall. This pattern is consistent with the deterministic movements of the ITCZ. This\nbelt of rising and convecting air masses around the equator is the major driver of seasonality\nin temperature and rainfall in East Africa, including in the GMSE [12, 27, 28, 76]. The move-\nment of the ITCZ is therefore likely an extremely stable factor generating alternating wet and\ndry seasons each climatic year.\nIn contrast to the deterministic (predictable) intra-annual seasonal cycles we found highly\ntransient (unpredictable) trivariate multiannual cycles in monthly minimum and maximum\ntemperatures and rainfall. The multiannual cycles were highly transient, primarily due to sig-\nnificant variability in temperature cycles. This variability was evident from the much higher\nstochastic disturbance variances in the temperature cycles, compared to those in the multiann-\nual rainfall cycle.\nInterestingly, the cycles of minimum and maximum temperatures were positively corre-\nlated with each other but both were negatively correlated with the rainfall cycle. This pattern\nwas particularly noticeable in 1972 when the rainfall was at its lowest and the maximum tem-\nperature peaked. Similarly, during 1974–1985, periods of above-average minimum tempera-\ntures coincided with below-average rainfall. For Narok Town, the persistent decline in rainfall\n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 336,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-04-S18",
+          "source": "Drought can reduce calving in ungulates by reducing milk availability for the young and green grass for weaning, increasing mortality of the young.",
+          "page": 39,
+          "paragraphIndex": 6,
+          "sentenceIndex": 2,
+          "bbox": [
+            200.0119171142578,
+            583.988037109375,
+            574.1889038085938,
+            711.0010375976562
+          ],
+          "rawParagraph": "Climate variability significantly affects wildlife breeding patterns in savannas, including the\ntiming, synchronization and prolificacy of calving [30, 31, 42]. Extended droughts suppress\nreproduction, leading to reduced birth rates and weakened populations. Drought can reduce\ncalving in ungulates by reducing milk availability for the young and green grass for weaning,\nincreasing mortality of the young. Droughts can also debilitate adults rendering them unable\nto mate or fertilize successfully and leading to no calf or only few calves being born at the nor-\nmal calving times [120]. Conversely, periods of abundant rainfall can boost breeding but may\nalso increase mortality due to diseases and predation in lush conditions. Such fluctuations cre-\nate unpredictable population dynamics, complicating conservation efforts [98, 99, 104, 124,\n129, 131].\n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 476,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    },
+    {
+      "documentId": "JOURNAL-05",
+      "direction": "id-en",
+      "domain": "statistics",
+      "title": "Aplikasi Statistika untuk Evaluasi Performans Produksi dan Reproduksi Ternak Pada Perusahaan Ternak Babi",
+      "authors": [
+        "S. Prawirodigdo"
+      ],
+      "journal": "Buletin Peternakan",
+      "publicationDate": "2013/04/18",
+      "doi": "10.21059/buletinpeternak.v15i1.1757",
+      "sourceUrl": "https://journal.ugm.ac.id/buletinpeternakan/article/view/1757",
+      "pdfUrl": "https://journal.ugm.ac.id/buletinpeternakan/article/download/1757/1571",
+      "pdfPath": "journals/JOURNAL-05-replacement.pdf",
+      "pdfSha256": "f1ba5d010a5b20ca63eb1be945d2dc2f29ca0085db60fb4b65db69363f85a239",
+      "pdfBytes": 2548996,
+      "pages": 5,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "scanned two-column body",
+      "candidateCount": 43,
+      "segments": [
+        {
+          "id": "JOURNAL-05-S12",
+          "source": "Perusahaan ternak babi yang berskala usaha besar seharusnya melakukan evaluasi kemampuan ternak yang dibudidayakan dengan menggunakan analisis statistika, sehingga validitas dari keputusan yang diambil tidak meragukan.",
+          "page": 3,
+          "paragraphIndex": 1,
+          "sentenceIndex": 0,
+          "bbox": null,
+          "rawParagraph": "Perusahaan ternak babi yang berskala usaha besar\nseharusnya melakukan evaluasi kemampuan ternak\nyang dibudidayakan dengan menggunakan analisis\nstatistika, sehingga validitas dari keputusan yang\ndiambil tidak meragukan. Disamping itu, dengan\nmelakukan evaluasi terhadap perusahaannya walaupun\nsecara sederhana, akan dapat membimbing pengusaha\nkonvensional menjadi pengusaha yang lebih dinamis\nlan rasional.",
+          "extractionMethod": "native Tesseract5 OCR with pinned CP17 tessdata_fast",
+          "candidateIndex": 24,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    },
+    {
+      "documentId": "JOURNAL-07",
+      "direction": "id-en",
+      "domain": "environment",
+      "title": "Evaluasi Polusi Udara PM2.5 dan PM10 di Kota Bandung serta Kaitannya dengan Infeksi Saluran Pernafasan Akut",
+      "authors": [
+        "Ismail Wellid",
+        "Luga Martin Simbolon",
+        "Muhamad Anda Falahuddin",
+        "Nita Nurfitriani",
+        "Kasni Sumeru",
+        "Mohamad Firdaus bin Sukri",
+        "Nani Yuningsih"
+      ],
+      "journal": "Jurnal Kesehatan Lingkungan Indonesia",
+      "publicationDate": "2024/06/01",
+      "doi": "10.14710/jkli.23.2.128-136",
+      "sourceUrl": "https://ejournal.undip.ac.id/index.php/jkli/article/view/57595",
+      "pdfUrl": "https://ejournal.undip.ac.id/index.php/jkli/article/download/57595/25426",
+      "pdfPath": "journals/JOURNAL-07.pdf",
+      "pdfSha256": "2fed89c18c7ce2d75924036daf7ba0d4af61e27588b6cbd337c5cc29524234e6",
+      "pdfBytes": 499755,
+      "pages": 9,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "digital journal with text, tables/figures or mathematical notation",
+      "candidateCount": 161,
+      "segments": [
+        {
+          "id": "JOURNAL-07-S02",
+          "source": "Namun bila dibandingkan dengan baku mutu udara ambien harian yang baru, yaitu PPRI No. 22 Tahun 2021 (PPRI No. 22, 2021) (8), sebesar 75 µg/m3, maka pada bulan kering, terdapat dua kecamatan yang melebihi baku mutu, yaitu Kecamatan Rancabolang, Mekarjaya dan Cibaduyut (6).",
+          "page": 2,
+          "paragraphIndex": 4,
+          "sentenceIndex": 8,
+          "bbox": [
+            72.02400207519531,
+            315.5356140136719,
+            293.1999816894531,
+            763.52734375
+          ],
+          "rawParagraph": "Menurut data Badan Pusat Statistik (BPS), \njumlah penduduk Kota Bandung pada tahun 2022 \nsebanyak 2.527.584 jiwa. Dari sisi kepadatan \npenduduk, Kota Bandung menempati kedua setelah \nJakarta, yaitu sebesar 15.190 jiwa/km2 (1). Oleh \nkarena itu Kota Bandung sangat berpotensi akan \nmemiliki kualitas udara dengan status “Tidak Sehat” \nseperti yang sedang terjadi di Jakarta saat ini. Polusi \nudara dari PM2.5 dan PM10 adalah polutan yang \numum terdapat di kota-kota yang padat penduduknya \n(2–5). Sumber utama polutan PM2.5 dan PM10 di \nkota-kota besar berasal emisi kendaraan bermotor, \ngesekan kanvas rem dan geseskan ban dengan jalan \n(2).  Konsentrasi PM10 udara ambien harian di \nberbagai kecamatan di Kota Bandung telah dilakukan \nperhitungan \ndengan \npemodelan \nmenggunakan \nWeather Research and Forecasting with Chemical \n(WRF-CHEM) oleh Pratama & Sofyan (6). Hasil \npemodelannya melaporkan bahwa untuk bulan kering, \nyaitu bulan Juli, seluruh kecamatan di Kota Bandung \ntidak ada yang melebihi baku mutu PP No. 21 Tahun \n1999, yaitu 150 µg/m3 (PPRI No. 21, 1999) (7). \nSedangkan pada bulan basah, yaitu bulan Maret, \njustru terdapat tiga kecamatan yang konsentrasinya di \natas 150 µg/m3, yaitu Kecamatan Rancabolang, \nMekarjaya dan Pasirluyu. Namun bila dibandingkan \ndengan baku mutu udara ambien harian yang baru, \nyaitu PPRI No. 22 Tahun 2021 (PPRI No. 22, 2021) \n(8), sebesar 75 µg/m3, maka pada bulan kering, \nterdapat dua kecamatan yang melebihi baku mutu, \nyaitu Kecamatan Rancabolang, Mekarjaya dan \nCibaduyut (6). Sedangkan pada bulan basah, justru \nmakin banyak kecamatan (lebih dari 10 kecamatan) \nyang kualitas udara ambiennya di atas baku mutu (6). \nDengan kata lain, konsentrasi PM10 di Kota Bandung \njustru tinggi saat bulan basah. Hal ini disebabkan \nkarena pada kondisi banyak hujan, kecepatan angin \nrelatif kecil, sehingga konsentrasi PM10 lebih \nterakumulasi cekungan Bandung. Sedangkan pada \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 8,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-07-S05",
+          "source": "Titik 1 berada di wilayah Kecamatan Lengkong, sedangkan titik 2 dan titik 3 berada di Kecamatan Regol dan Coblong.",
+          "page": 3,
+          "paragraphIndex": 6,
+          "sentenceIndex": 5,
+          "bbox": [
+            72.02400207519531,
+            406.015625,
+            293.1999816894531,
+            762.0873413085938
+          ],
+          "rawParagraph": "Data yang diambil selama pengukuran pada \npenelitian ini adalah temperatur Tdb (dry bulb) dan \nTwb (wet bulb), konsentrasi PM2.5, PM10 dan \nvolume kendaraan yang melintas. Pengambilan data \ndilakukan beberapa hari pada bulan-bulan basah, yaitu \npada Januari hingga Mei 2023. Waktu pengukuran \ndilaksanakan mulai pukul 08.00 hingga pukul 16.00. \nData yang ditampilkan adalah data rata-rata setiap \nharinya, dari hari senin hingga hari ahad. Lokasi \npengambilan data di tiga tempat, dua lokasi di pusat \nkota, yaitu di Monumen 0 km (Lokasi 1) dan Alun-\nalun (Lokasi 2), serta satu di Bandung utara, yaitu di \ndepan Terminal Dago (Lokasi 3). Titik 1 berada di \nwilayah Kecamatan Lengkong, sedangkan titik 2 dan \ntitik 3 berada di Kecamatan Regol dan Coblong. \nKetiga lokasi pengambilan data digambarkan pada \nGambar 1. Pada gambar terlihat bahwa jarak titik \npengukuran 1 dan 2 relatif dekat, yaitu sekitar 400 m, \nsedangkan jarak titik 2 dengan 3 sekitar 5 km. \nPemilihan titik 1 dan titik 2 dikarenakan kedua lokasi \ntersebut diasumsikan dapat mewakili konsentrasi \nPM2.5 dan PM10 di pusat Kota Bandung, karena \nselain lokasinya berada di pusat kota, volume \nkendaraan yang melintasi di kedua lokasi tersebut \njuga cukup padat, dan merupakan representatif \nkepadatan kendaraan bermotor di hampir seluruh Kota \nBandung. \nSedangkan \npemilihan \ndaerah \nDago \nbertujuan melihat konsentrasi PM2.5 dan PM10 di \nwilayah yang dianggap memiliki konsentrasi PM2.5 \ndan PM10 yang lebih rendah di Kota Bandung, selain \nkarena volume kendaraan yang relatif tidak sepadat di \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 34,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-07-S15",
+          "source": "Pada Gambar 8 terlihat konsentrasi PM2.5 tertinggi di lokasi 1, yaitu Alun-alun dan terendah di lokasi 2, yaitu di Terminal Dago.",
+          "page": 7,
+          "paragraphIndex": 3,
+          "sentenceIndex": 1,
+          "bbox": [
+            72.02400207519531,
+            95.42562866210938,
+            293.1957092285156,
+            313.4813232421875
+          ],
+          "rawParagraph": "Untuk \nmempermudah \ngambaran \ntentang \nperbedaan tingkat konsentrasi PM2.5 dan PM10 di \ntiga lokasi pengukuran, maka ditampilkan Gambar 8 \ndan Gambar 9. Pada Gambar 8 terlihat konsentrasi \nPM2.5 tertinggi di lokasi 1, yaitu Alun-alun dan \nterendah di lokasi 2, yaitu di Terminal Dago.  Baku \nmutu yang terlihat pada Gambar 8 tersebut mengacu \npada PPRI Nomor 22 Tahun 2021 dan WHO tahun \n2021, yaitu sebesar 55 µg/m3 dan 15 µg/m3. Dari \ngambar \ndapat \ndilihat \nbahwa \nselama \n7 \nhari \npengambilan data, hampir semuanya masih di bawah \nbaku mutu dari PPRI No. 22, kecuali pada Lokasi 2 \npada hari Jumat dan Sabtu. Penyebab tingginya \nkonsentrasi PM2.5 pada hari Jumat dan Sabtu di \nLokasi 2 (Alun-alun) telah dijelaskan pada bagian \nsebelumnya. \nBerdasarkan \nevaluasi \nyang \ntelah \ndijelaskan tersebut, tidak disarankan bagi ibu yang \nsedang mengandung maupun balita untuk berada di \nsekitar Alun-alun pada hari Jumat dan Sabtu.  \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 118,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    },
+    {
+      "documentId": "JOURNAL-08",
+      "direction": "id-en",
+      "domain": "biomedical",
+      "title": "Analisis Most Probable Number (MPN) Coliform dan Escherichia coli Pada Air Sumur Bor di Pemukiman Warga Kelurahan Pucangsawit Surakarta",
+      "authors": [
+        "Aulia Nur Rahmawati",
+        "Dian Wahyu Utami",
+        "Dwi Saryanti",
+        "Bayu Kurniaaji"
+      ],
+      "journal": "Jurnal Kesehatan Lingkungan Indonesia",
+      "publicationDate": "2024/06/01",
+      "doi": "10.14710/jkli.23.2.146-152",
+      "sourceUrl": "https://ejournal.undip.ac.id/index.php/jkli/article/view/54619",
+      "pdfUrl": "https://ejournal.undip.ac.id/index.php/jkli/article/download/54619/25485",
+      "pdfPath": "journals/JOURNAL-08.pdf",
+      "pdfSha256": "1feee8a3b7ebc176defa0d2972ddd47b657269f1c60905320e5400cd04d2668d",
+      "pdfBytes": 309451,
+      "pages": 7,
+      "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "licenseEvidence": "Current primary journal page metadata; CC-BY PLOS or CC-BY-SA university journal. Attribution retained.",
+      "sourceKind": "REAL_PUBLISHED_JOURNAL",
+      "structure": "digital journal with text, tables/figures or mathematical notation",
+      "candidateCount": 69,
+      "segments": [
+        {
+          "id": "JOURNAL-08-S02",
+          "source": "Pucangsawit sebagai salah satu kelurahan di Kecamatan Jebres Surakarta memiliki kepadatan penduduk yang tergolong tinggi.",
+          "page": 2,
+          "paragraphIndex": 4,
+          "sentenceIndex": 0,
+          "bbox": [
+            71.90399932861328,
+            548.235595703125,
+            293.1999816894531,
+            767.4873657226562
+          ],
+          "rawParagraph": "Pucangsawit sebagai salah satu kelurahan di \nKecamatan Jebres Surakarta memiliki kepadatan \npenduduk \nyang \ntergolong \ntinggi. \nPucangsawit \nmemiliki luas wilayah  46,01 km2 dengan jumlah \npenduduk 562.269 jiwa3, sehingga memiliki kepadatan \npenduduk \nsebesar \n12.221 \njiwa/km2. \nTingginya \nkepadatan penduduk di Pucangsawit  menyebabkan \nusaha dalam mencari sumber air layak pakai senantiasa \ndilakukan. Berdasarkan data yang diperoleh dari \nPuskesmas \nPucangsawit, \nmayoritas \nmasyarakat \nmenggunakan sumur bor sebagai sumber air untuk \nkebutuhan \nsehari-hari. \nPenggunaan \nsumur \nbor \nmenunjukkan bahwa mayoritas sumber air yang \ndikonsumsi oleh masyarakat Pucangsawit berasal dari \nair tanah. Kualitas air tanah sangat dipengaruhi dengan \nkualitas lingkungan, terlebih Pucangsawit terletak \nberbatasan langsung dengan sungai Bengawan Solo \ndan Kampus Universitas Sebelas Maret Surakarta3. \nPinggiran Kelurahan Pucangsawit pun digunakan \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 4,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S03",
+          "source": "Berdasarkan data yang diperoleh dari Puskesmas Pucangsawit, mayoritas masyarakat menggunakan sumur bor sebagai sumber air untuk kebutuhan sehari-hari.",
+          "page": 2,
+          "paragraphIndex": 4,
+          "sentenceIndex": 3,
+          "bbox": [
+            71.90399932861328,
+            548.235595703125,
+            293.1999816894531,
+            767.4873657226562
+          ],
+          "rawParagraph": "Pucangsawit sebagai salah satu kelurahan di \nKecamatan Jebres Surakarta memiliki kepadatan \npenduduk \nyang \ntergolong \ntinggi. \nPucangsawit \nmemiliki luas wilayah  46,01 km2 dengan jumlah \npenduduk 562.269 jiwa3, sehingga memiliki kepadatan \npenduduk \nsebesar \n12.221 \njiwa/km2. \nTingginya \nkepadatan penduduk di Pucangsawit  menyebabkan \nusaha dalam mencari sumber air layak pakai senantiasa \ndilakukan. Berdasarkan data yang diperoleh dari \nPuskesmas \nPucangsawit, \nmayoritas \nmasyarakat \nmenggunakan sumur bor sebagai sumber air untuk \nkebutuhan \nsehari-hari. \nPenggunaan \nsumur \nbor \nmenunjukkan bahwa mayoritas sumber air yang \ndikonsumsi oleh masyarakat Pucangsawit berasal dari \nair tanah. Kualitas air tanah sangat dipengaruhi dengan \nkualitas lingkungan, terlebih Pucangsawit terletak \nberbatasan langsung dengan sungai Bengawan Solo \ndan Kampus Universitas Sebelas Maret Surakarta3. \nPinggiran Kelurahan Pucangsawit pun digunakan \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 7,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S06",
+          "source": "Pucangsawit sebagai wilayah padat penduduk yang berdekatan dengan banyak sumber pencemar perlu dilaksanakan pemeriksaan cemaran mikroba pada sumber air yang digunakan.",
+          "page": 2,
+          "paragraphIndex": 6,
+          "sentenceIndex": 6,
+          "bbox": [
+            304.6300048828125,
+            420.8956298828125,
+            525.9299926757812,
+            755.9673461914062
+          ],
+          "rawParagraph": "Kepadatan penduduk Pucangsawit dan letaknya \nyang berdekatan dengan pusat aktivitas manusia, \nmenyebabkan terjadinya penurunan potensi kualitas air \ntanah. \nTerlebih \nkeberadaan \npemakaman \nyang \nberdekatan dengan pemukiman warga berpotensi untuk \nmenimbulkan kontaminasi air tanah oleh bakteri \npatogen salah satunya yaitu Escherichia coli5. \nKeberadaan air yang terkontaminasi bakteri dan tidak \nmemenuhi persyaratan dapat menimbulkan gangguan \nkesehatan. Oleh karena itu, air harus bebas dari \npencemaran dan memenuhi persyaratan sesuai dengan \nkebutuhan \ndidalam \ntubuh \nmakhluk \nhidup6. \nBerdasarkan \nPeraturan \nMenteri \nKesehatan \n(PERMENKES)  No. 2 tahun 2023 tentang tentang \nPeraturan Pelaksanaan Peraturan Pemerintah Nomor \n66 Tahun 2014 Tentang Kesehatan Lingkungan, nilai \ntotal coliform dan Escherichia coli yang dipersyaratkan \nmasing-masing adalah 0 CFU/100 mL7. Air yang \nmemiliki nilai coliform dan Escherichia coli diatas \nbatas yang telah ditetapkan, memiliki potensi \nmenimbulkan penyakit. Pucangsawit sebagai wilayah \npadat penduduk yang berdekatan dengan banyak \nsumber pencemar perlu dilaksanakan pemeriksaan \ncemaran mikroba pada sumber air yang digunakan. \nBerdasarkan latar belakang di atas, maka pengujian \nnilai coliform dan Escherichia coli sebagai salah satu \nparameter mutu air dapat dilaksanakan pada air sumur \nbor yang digunakan oleh masyarakat di wilayah \nPucangsawit Surakarta. \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 18,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S09",
+          "source": "Pengujian MPN coliform dilaksanakan dengan dua tahap yaitu tahap uji pendahuluan dan uji penegasan.",
+          "page": 3,
+          "paragraphIndex": 5,
+          "sentenceIndex": 4,
+          "bbox": [
+            71.90399932861328,
+            419.45562744140625,
+            293.0989074707031,
+            592.5013427734375
+          ],
+          "rawParagraph": "Langkah \n– \nlangkah \npenelitian \ndengan \npengambilan air sampel yaitu sampel diambil dengan \nmenggunakan botol sampler coklat 100 mL yang telah \ndisterilkan terlebih dahulu. Pengisian dilaksanakan \ndengan langsung mengalirkan air dari kran. Kran \ndisterilkan dengan cara membakar mulut kran sampai \nuap air, kran dibuka dan dibiarkan mengalir selama 3-\n4 menit, tutup botol steril dibuka dan diisi air kurang \nlebih ¾ volume botol, kemudian botol sampel diberi \nlabel. \nLangkah \nberikutnya \ndengan \nMetode \npemeriksaan nilai coliform dilaksanakan dengan \nmetode MPN seri 555, sementara keberadaan \nEscherichia coli diperiksa dengan metode petrifilm. \nPengujian MPN coliform dilaksanakan dengan dua \ntahap yaitu tahap uji pendahuluan dan uji penegasan.  \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 29,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S11",
+          "source": "Hasil penelitian yang telah dilaksanakan pada 10 sampel air sumur bor di Pucangsawit, diketahui bahwa seluruh sampel menunjukkan terjadinya kontaminasi bakteri coliform.",
+          "page": 3,
+          "paragraphIndex": 10,
+          "sentenceIndex": 0,
+          "bbox": [
+            304.6300048828125,
+            350.0956115722656,
+            525.9320678710938,
+            604.141357421875
+          ],
+          "rawParagraph": "Hasil penelitian yang telah dilaksanakan pada \n10 sampel air sumur bor di Pucangsawit, diketahui \nbahwa seluruh sampel menunjukkan terjadinya \nkontaminasi bakteri coliform. Pengujian nilai total \ncoliform pada air sumur bor di Kelurahan Pucangsawit \ndilaksanakan dengan menggunakan metode MPN seri \n555 karena sampel memiliki perkiraan total coliform \nyang tinggi dan belum mengalami proses pengolahan5. \nKeberadaan bakteri coliform pada air sumur bor \nPucangsawit \nmenunjukkan \nkerentanan \nterhadap \nkontaminasi mikroorganisme yang berbahaya bagi \nkesehatan8,9. Berdasarkan Tabel 1 diketahui bahwa \nkontaminasi coliform pada sampel tidak disertai \ndengan kontaminasi Escherichia coli. Seluruh sampel \ntidak menunjukkan keberadaan bakteri Escherichia \ncoli. Escherichia coli yang ditemukan pada usus \nmanusia dan hewan10 dapat digunakan sebagai \nindikator \ntelah \nterjadinya \nkontaminasi \nbakteri \nfecal11,12.Tidak \nadanya \nEscherichia \ncoli \nmengindikasikan bahwa tidak terdapat kontaminasi \nbakteri fecal pada seluruh sampel air sumur bor yang \ndiperiksa.  \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 36,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S14",
+          "source": "Secara deskriptif, Tabel 1 menunjukkan bahwa semakin dalam sumur bor dibuat menunjukkan nilai MPN coliform yang semakin rendah.",
+          "page": 4,
+          "paragraphIndex": 5,
+          "sentenceIndex": 2,
+          "bbox": [
+            72.02400207519531,
+            106.5662841796875,
+            525.9299926757812,
+            372.641357421875
+          ],
+          "rawParagraph": "Nilai R2 untuk hubungan dengan kedalaman \nsumur adalah sebesar 4% menunjukkan bahwa \nhubungan antara kedua variabel sangat lemah, namun \nnilai tersebut lebih tinggi daripada nilai R2 antara nilai \nMPN coliform dan Escherichia coli dengan jarak \npencemar yang hanya sebesar 2%. Nilai R2  sebesar 2% \nmenunjukkan hubungan yang sangat lemah, bahkan \nmendekati tidak ada. Secara deskriptif, Tabel 1 \nmenunjukkan bahwa semakin dalam sumur bor dibuat \nmenunjukkan nilai MPN coliform yang semakin \nrendah. Hal tersebut tampak pada Sampel Nomor 4 \ndengan kedalaman sumur mencapai 33 meter memiliki \nnilai MPN coliform yang paling rendah (4 MPN/100 \nmL) sesuai dengan hasil penelitian Maran et al. (2016) \nyang menunjukkan bahwa semakin dangkal sumur, \nsemakin besar pula cemaran mikroorganismenya13. \nHubungan antara jarak pencemar dengan nilai MPN \ncoliform secara deskriptif hanya ditemui pada sampel \nyang diambil dari sumur bor di sekitar sungai, \nsementara nilai MPN pada air sumur di sekitar \npemakaman relatif lebih tinggi (18-494 MPN/100 mL). \n \n \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 47,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S15",
+          "source": "Hasil Pengujian Regresi antara Jarak Sumber Pencemar dan Kedalaman Sumur dengan Nilai MPN Coliform dan Escherichia coli di Pucangsawit Tahun 2023",
+          "page": 4,
+          "paragraphIndex": 6,
+          "sentenceIndex": 1,
+          "bbox": [
+            100.22000122070312,
+            373.255615234375,
+            508.94403076171875,
+            395.8013610839844
+          ],
+          "rawParagraph": "Tabel 2. Hasil Pengujian Regresi antara Jarak Sumber Pencemar dan Kedalaman Sumur dengan Nilai \nMPN Coliform dan Escherichia coli di Pucangsawit Tahun 2023 \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 50,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        },
+        {
+          "id": "JOURNAL-08-S17",
+          "source": "Faktor lain yang dapat mempengaruhi nilai coliform dan Escherichia coli adalah kondisi lingkungan berupa jenis tanah dan pemeabilitas tanah yang secara langsung mempengaruhi laju infiltrasi bakteri14,15.",
+          "page": 5,
+          "paragraphIndex": 6,
+          "sentenceIndex": 1,
+          "bbox": [
+            304.6300048828125,
+            276.6556091308594,
+            525.9381713867188,
+            461.2213439941406
+          ],
+          "rawParagraph": "merupakan sumber utama terjadinya kontaminasi \nbakteri. Faktor lain yang dapat mempengaruhi nilai \ncoliform dan \nEscherichia coli adalah kondisi \nlingkungan berupa jenis tanah dan pemeabilitas tanah \nyang secara langsung mempengaruhi laju infiltrasi \nbakteri14,15. Jenis tanah di sekitar sungai merupakan \njenis tanah alluvial yang memiliki permeabilitas lambat \nkarena memiliki tekstur tanah yang liat dan sulit \nmeloloskan air16. Kedalaman dan konstruksi sumur bor \njuga berpengaruh terhadap rendahnya nilai coliform \nyang \ndiperoleh. \nBerdasarkan \nhasil \nwawancara, \nkedalaman sumur bor di sekitar sungai di Pucangsawit \nberkisar diantara 12-33 meter dan lapisan dinding \nsumur bor dibuat dengan baik. Konstruksi sumur yang \ndibuat dengan baik dapat meminimalkan pencemaran \ncoliform dan Escherichia coli pada air sumur14.  \n",
+          "extractionMethod": "PyMuPDF independent reference extraction",
+          "candidateIndex": 57,
+          "humanReference": null,
+          "humanReview": "UNREVIEWED"
+        }
+      ]
+    }
+  ]
+}

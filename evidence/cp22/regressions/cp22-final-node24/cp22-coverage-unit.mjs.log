@@ -1,0 +1,4 @@
+{"suite":"cp22-coverage-unit","pass":13,"checks":["stemmer EN derivation","stemmer ID morphology","synonym entries survive stemming (delay)","substituted concept is detected","function words are not concepts","two-evidence rule: isolated term in aligned target rescues paraphrase","sentence alignment keeps referents per sentence","Indonesian voice inversion detected","degree adverb covered by intensifier","repair eligibility excludes homographs","analytic negation only with positive base","grammatical sense rules","derived nominal terms"]}
+over-merging control PASS
+verifier degradation control PASS
+combined offline readiness control PASS

@@ -1,0 +1,75 @@
+{
+  "status": "FAIL",
+  "stoppedByQA": true,
+  "reason": "Identifiers ending underscore-number formed a standalone unchanged-language sentence and aborted translation of following scientific prose. Known reproducible defect; run interrupted to repair instead of spending 1001 pages translating headings only.",
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "committedPages": 116,
+  "counts": {
+    "total": 348,
+    "translated": 116,
+    "preserved": 0,
+    "rejected": 230,
+    "failed": 0,
+    "pending": 2,
+    "review": 232,
+    "done": 116,
+    "attempted": 346
+  },
+  "pipelineMetrics": {
+    "inferenceCalls": 231,
+    "cacheHits": 0,
+    "uniqueInputs": 231,
+    "inputTokens": 2770,
+    "outputTokens": 2308,
+    "extractionMs": 9595.787257000018,
+    "inferenceMs": 63234.65351299988,
+    "commitMs": 1123.835090999928
+  },
+  "measurements": {
+    "modelPrepareMs": 4316.901809,
+    "engineRequests": 231,
+    "engineSucceeded": 231,
+    "engineFailed": 0,
+    "engineMs": 62447.80533,
+    "rawBlockCalls": 346,
+    "maskedRepeatedRequests": 229,
+    "uniqueRawBlockInputs": 346,
+    "uniqueMaskedModelInputs": 2
+  },
+  "elapsedMs": 78646.69272199999,
+  "output": {
+    "file": "INTERRUPTED_PRE_FIX_ACTUAL_PARTIAL.md",
+    "bytes": 114256,
+    "sha256": "74be1bbc620d84bb2eb80ecea9edba48e22f1c6a1e4dfb9df115ad22e7c35148",
+    "stats": {
+      "pages": 116,
+      "blocks": 348,
+      "counts": {
+        "total": 348,
+        "translated": 116,
+        "preserved": 0,
+        "rejected": 230,
+        "failed": 0,
+        "pending": 2
+      },
+      "uniqueAssets": 0,
+      "assetReferences": 0,
+      "bytes": 114256,
+      "sink": "bounded-blob",
+      "maxActivePages": 1,
+      "coverageIncompletePages": 0,
+      "mathUncertainPages": 0,
+      "partial": true
+    }
+  },
+  "scope": "Actual final-candidate model/reader/pipeline through Node boundaries. The partial MD is a QA mirror salvage, not browser download or accepted long-document completion."
+}

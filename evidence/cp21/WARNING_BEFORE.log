@@ -1,0 +1,22 @@
+(node:5) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: new document must not inherit old cache warning
++ actual - expected
+
++ 'Old job cache removal: offline needs preparation'
+- null
+
+    at file:///workspace/scratch/17677088ccfd/cp21/work/tests/cp21-document-warning.mjs:14:8 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'Old job cache removal: offline needs preparation',
+  expected: null,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

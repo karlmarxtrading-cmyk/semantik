@@ -1,0 +1,14 @@
+PASS Reclamation removes only recognized public-model entries, retains loaded engine/unknown/user caches
+(node:305) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS Actual main retries identical atomic mutation once after quota reclamation and marks offline unavailable
+Local checkpoint unavailable: {"name":"QuotaExceededError","message":"still full","page":1,"stage":"empty","at":"2026-11-13T07:43:52.378Z"}
+PASS Second quota failure stops after one retry and retains dirty state
+Local checkpoint unavailable: {"name":"SecurityError","message":"blocked","page":1,"stage":"empty","at":"2026-11-13T07:43:52.383Z"}
+PASS SecurityError never deletes caches and is never automatically retried
+Local checkpoint unavailable: {"name":"InvalidStateError","message":"blocked","page":1,"stage":"empty","at":"2026-11-13T07:43:52.388Z"}
+PASS InvalidStateError never deletes caches and is never automatically retried
+Local checkpoint unavailable: {"name":"DataCloneError","message":"blocked","page":1,"stage":"empty","at":"2026-11-13T07:43:52.393Z"}
+PASS DataCloneError never deletes caches and is never automatically retried
+Local checkpoint unavailable: {"name":"QuotaExceededError","message":"quota","page":1,"stage":"empty","at":"2026-11-13T07:43:52.398Z"}
+PASS Absent model cache cannot turn quota failure into a false success

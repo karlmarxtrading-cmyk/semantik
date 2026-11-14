@@ -1,0 +1,906 @@
+{
+  "path": "/workspace/scratch/17677088ccfd/recovery/qa-run/research-math/independent-controls.pdf",
+  "sha256": "92c02fa4cd8c8c0e6a3b4609d2eddf35e532aafda7e8ea3f67745af0cee47417",
+  "items": [
+    {
+      "text": "Synthetic independent geometry controls",
+      "source": "pdf-text",
+      "x": 50.5,
+      "y": 49.53212890625,
+      "baseline": 59,
+      "width": 212.6859375,
+      "height": 10.2,
+      "fontSize": 10.2,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 0,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "q = b",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 94.22021484375,
+      "baseline": 110,
+      "width": 46.633787999999996,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 2,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "3",
+      "source": "pdf-text",
+      "x": 104.89999999999999,
+      "y": 92.03212890625,
+      "baseline": 101.5,
+      "width": 6.4895511,
+      "height": 10.2,
+      "fontSize": 10.2,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 3,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "j",
+      "source": "pdf-text",
+      "x": 105.75,
+      "y": 106.48212890625004,
+      "baseline": 115.95000000000005,
+      "width": 2.8338864,
+      "height": 10.2,
+      "fontSize": 10.2,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 4,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "r =",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 185.048193359375,
+      "baseline": 199.25,
+      "width": 23.973485850000007,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 6,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "1",
+      "source": "pdf-text",
+      "x": 130.39999999999998,
+      "y": 156.69313964843755,
+      "baseline": 166.95000000000005,
+      "width": 7.030347025,
+      "height": 11.049999999999999,
+      "fontSize": 11.049999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 8,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "u + 2",
+      "source": "pdf-text",
+      "x": 121.89999999999999,
+      "y": 177.09313964843753,
+      "baseline": 187.35000000000002,
+      "width": 30.31735901999998,
+      "height": 11.049999999999999,
+      "fontSize": 11.049999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 9,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "v − 3",
+      "source": "pdf-text",
+      "x": 120.2,
+      "y": 201.86516113281255,
+      "baseline": 213.70000000000005,
+      "width": 34.44616755000002,
+      "height": 12.75,
+      "fontSize": 12.75,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 11,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "∫",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 275.518408203125,
+      "baseline": 305.5,
+      "width": 16.828174029999996,
+      "height": 32.3,
+      "fontSize": 32.3,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 13,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "4",
+      "source": "pdf-text",
+      "x": 73.44999999999999,
+      "y": 267.860107421875,
+      "baseline": 275.75,
+      "width": 5.40795925,
+      "height": 8.5,
+      "fontSize": 8.5,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 14,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "2",
+      "source": "pdf-text",
+      "x": 69.19999999999999,
+      "y": 304.41010742187495,
+      "baseline": 312.29999999999995,
+      "width": 5.40795925,
+      "height": 8.5,
+      "fontSize": 8.5,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 15,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "t",
+      "source": "pdf-text",
+      "x": 87.05,
+      "y": 284.498193359375,
+      "baseline": 298.70000000000005,
+      "width": 5.998973940000001,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 17,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "3",
+      "source": "pdf-text",
+      "x": 97.25,
+      "y": 283.2211181640626,
+      "baseline": 291.9000000000001,
+      "width": 5.948755175,
+      "height": 9.35,
+      "fontSize": 9.35,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 19,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "dt",
+      "source": "pdf-text",
+      "x": 110,
+      "y": 284.498193359375,
+      "baseline": 298.70000000000005,
+      "width": 15.710887620000001,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 21,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "B =",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 384.798193359375,
+      "baseline": 399,
+      "width": 28.179492570000008,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 22,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "a",
+      "source": "pdf-text",
+      "x": 114.25,
+      "y": 375.38718261718753,
+      "baseline": 388.8,
+      "width": 8.85485885,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 24,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "b",
+      "source": "pdf-text",
+      "x": 139.75,
+      "y": 375.38718261718753,
+      "baseline": 388.8,
+      "width": 9.17236292,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 26,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "c",
+      "source": "pdf-text",
+      "x": 165.25,
+      "y": 375.38718261718753,
+      "baseline": 388.8,
+      "width": 7.9446779150000015,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 28,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "d",
+      "source": "pdf-text",
+      "x": 114.25,
+      "y": 396.63718261718753,
+      "baseline": 410.05,
+      "width": 9.17236292,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 29,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "e",
+      "source": "pdf-text",
+      "x": 139.75,
+      "y": 396.63718261718753,
+      "baseline": 410.05,
+      "width": 8.89013708,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 31,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "f",
+      "source": "pdf-text",
+      "x": 165.25,
+      "y": 396.63718261718753,
+      "baseline": 410.05,
+      "width": 5.0871340599999995,
+      "height": 14.45,
+      "fontSize": 14.45,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 33,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "g′(x) = 2x",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 461.298193359375,
+      "baseline": 475.5,
+      "width": 75.51386757,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 35,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "S = {x ∈ ℝ : x ≥ 0}",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 503.798193359375,
+      "baseline": 518,
+      "width": 152.17075530000002,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 36,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "h = √x",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 546.298193359375,
+      "baseline": 560.5,
+      "width": 51.04731474000001,
+      "height": 15.299999999999999,
+      "fontSize": 15.299999999999999,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 37,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "This result is reported with p = 0.05 for the control group.",
+      "source": "pdf-text",
+      "x": 59,
+      "y": 602.03212890625,
+      "baseline": 611.5,
+      "width": 296.67158082,
+      "height": 10.2,
+      "fontSize": 10.2,
+      "bold": false,
+      "fontName": "g_d1_f2",
+      "direction": "ltr",
+      "sourceIndex": 39,
+      "rotated": false,
+      "endOfLine": false
+    }
+  ],
+  "vectors": {
+    "segments": [
+      {
+        "id": "op53:seg0",
+        "operatorIndex": 53,
+        "x1": 120.2,
+        "y1": 172.05000000000007,
+        "x2": 156.75,
+        "y2": 172.05000000000007,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op63:seg0",
+        "operatorIndex": 63,
+        "x1": 114.25,
+        "y1": 195.85000000000002,
+        "x2": 163.54999999999998,
+        "y2": 195.85000000000002,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op122:seg0",
+        "operatorIndex": 122,
+        "x1": 110.85,
+        "y1": 373.5,
+        "x2": 105.75,
+        "y2": 373.5,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op125:seg0",
+        "operatorIndex": 125,
+        "x1": 105.75,
+        "y1": 373.5,
+        "x2": 105.75,
+        "y2": 418.55,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op128:seg0",
+        "operatorIndex": 128,
+        "x1": 105.75,
+        "y1": 418.55,
+        "x2": 110.85,
+        "y2": 418.55,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op131:seg0",
+        "operatorIndex": 131,
+        "x1": 183.1,
+        "y1": 373.5,
+        "x2": 188.2,
+        "y2": 373.5,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op134:seg0",
+        "operatorIndex": 134,
+        "x1": 188.2,
+        "y1": 373.5,
+        "x2": 188.2,
+        "y2": 418.55,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      },
+      {
+        "id": "op137:seg0",
+        "operatorIndex": 137,
+        "x1": 188.2,
+        "y1": 418.55,
+        "x2": 183.1,
+        "y2": 418.55,
+        "lineWidth": 0.6375,
+        "paintOperator": 20
+      }
+    ],
+    "unsupported": []
+  },
+  "result": {
+    "regions": [
+      {
+        "id": "p1-math-1",
+        "bbox": [
+          59,
+          92.03212890625,
+          52.38955109999999,
+          24.65000000000005
+        ],
+        "latex": "q = b_{j}^{3}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "q = "
+                },
+                {
+                  "type": "scripts",
+                  "base": {
+                    "type": "text",
+                    "text": "b"
+                  },
+                  "sup": {
+                    "type": "text",
+                    "text": "3"
+                  },
+                  "sub": {
+                    "type": "text",
+                    "text": "j"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          2,
+          3,
+          4
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "q = b 3 j"
+      },
+      {
+        "id": "p1-math-2",
+        "bbox": [
+          59,
+          156.69313964843755,
+          95.64616755000003,
+          57.922021484374994
+        ],
+        "latex": "r = \\frac{\\frac{1}{u + 2}}{v - 3}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "r ="
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "fraction",
+                    "numerator": {
+                      "type": "sequence",
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "1"
+                        }
+                      ]
+                    },
+                    "denominator": {
+                      "type": "sequence",
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "u + 2"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "denominator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "v − 3"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          6,
+          8,
+          9,
+          11
+        ],
+        "vectorIds": [
+          "op53:seg0",
+          "op63:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "r = 1 u + 2 v − 3"
+      },
+      {
+        "id": "p1-math-3",
+        "bbox": [
+          59,
+          267.860107421875,
+          66.71088762,
+          45.049999999999955
+        ],
+        "latex": "\\int_{2}^{4} t^{3} dt",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "operator",
+              "symbol": "∫",
+              "sup": {
+                "type": "text",
+                "text": "4"
+              },
+              "sub": {
+                "type": "text",
+                "text": "2"
+              }
+            },
+            {
+              "type": "scripts",
+              "base": {
+                "type": "text",
+                "text": "t"
+              },
+              "sup": {
+                "type": "text",
+                "text": "3"
+              }
+            },
+            {
+              "type": "text",
+              "text": "dt"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          13,
+          14,
+          15,
+          17,
+          19,
+          21
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "∫ 4 2 t 3 dt"
+      },
+      {
+        "id": "p1-math-4",
+        "bbox": [
+          59,
+          373.5,
+          129.2,
+          45.05000000000001
+        ],
+        "latex": "B = \\begin{bmatrix}a & b & c \\\\ d & e & f\\end{bmatrix}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "B ="
+            },
+            {
+              "type": "matrix",
+              "rows": [
+                [
+                  {
+                    "type": "text",
+                    "text": "a"
+                  },
+                  {
+                    "type": "text",
+                    "text": "b"
+                  },
+                  {
+                    "type": "text",
+                    "text": "c"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": "d"
+                  },
+                  {
+                    "type": "text",
+                    "text": "e"
+                  },
+                  {
+                    "type": "text",
+                    "text": "f"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          22,
+          24,
+          26,
+          28,
+          29,
+          31,
+          33
+        ],
+        "vectorIds": [
+          "op125:seg0",
+          "op134:seg0",
+          "op122:seg0",
+          "op128:seg0",
+          "op131:seg0",
+          "op137:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "B = a b c d e f"
+      },
+      {
+        "id": "p1-math-5",
+        "bbox": [
+          59,
+          461.298193359375,
+          75.51386757,
+          15.300000000000011
+        ],
+        "latex": "g'(x) = 2x",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "g′(x) = 2x"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          35
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "g′(x) = 2x"
+      },
+      {
+        "id": "p1-math-6",
+        "bbox": [
+          59,
+          503.798193359375,
+          152.17075530000002,
+          15.299999999999955
+        ],
+        "latex": "S = \\{x \\in \\mathbb{R} : x \\ge 0\\}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "S = {x ∈ ℝ : x ≥ 0}"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          36
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "S = {x ∈ ℝ : x ≥ 0}"
+      },
+      {
+        "id": "p1-math-7",
+        "bbox": [
+          59,
+          546.298193359375,
+          51.04731474000002,
+          15.299999999999955
+        ],
+        "latex": null,
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "h = √x"
+            }
+          ]
+        },
+        "verified": false,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          37
+        ],
+        "vectorIds": [],
+        "warnings": [
+          "radical-scope-needs-geometry"
+        ],
+        "sourceText": "h = √x"
+      }
+    ],
+    "consumedItemIds": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      11,
+      13,
+      14,
+      15,
+      17,
+      19,
+      21,
+      22,
+      24,
+      26,
+      28,
+      29,
+      31,
+      33,
+      35,
+      36,
+      37
+    ],
+    "remainingItems": [
+      {
+        "text": "Synthetic independent geometry controls",
+        "source": "pdf-text",
+        "x": 50.5,
+        "y": 49.53212890625,
+        "baseline": 59,
+        "width": 212.6859375,
+        "height": 10.2,
+        "fontSize": 10.2,
+        "bold": false,
+        "fontName": "g_d1_f2",
+        "direction": "ltr",
+        "sourceIndex": 0,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "This result is reported with p = 0.05 for the control group.",
+        "source": "pdf-text",
+        "x": 59,
+        "y": 602.03212890625,
+        "baseline": 611.5,
+        "width": 296.67158082,
+        "height": 10.2,
+        "fontSize": 10.2,
+        "bold": false,
+        "fontName": "g_d1_f2",
+        "direction": "ltr",
+        "sourceIndex": 39,
+        "rotated": false,
+        "endOfLine": false
+      }
+    ],
+    "warnings": [
+      {
+        "regionId": "p1-math-7",
+        "warnings": [
+          "radical-scope-needs-geometry"
+        ]
+      }
+    ],
+    "vectorEvidence": {
+      "usedVectorIds": [
+        "op125:seg0",
+        "op134:seg0",
+        "op122:seg0",
+        "op128:seg0",
+        "op131:seg0",
+        "op137:seg0",
+        "op53:seg0",
+        "op63:seg0"
+      ],
+      "unsupported": []
+    }
+  }
+}

@@ -1,0 +1,370 @@
+{
+  "scope": "Actual PDF.js parser on independent synthetic PDF generated from literal text/path operators; source preservation and geometry only. No browser/OCR/semantic quality claim.",
+  "sourceSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+  "fixtureSha256": "3896f09bee9da5079c894a7c6715fedd74b52c49b5d40a1d4f08069b37cb37fc",
+  "pdfjsVersion": "6.2.108",
+  "renderer": {
+    "name": "KaTeX",
+    "version": "0.19.1",
+    "renderedRootHtmlBytes": 2277
+  },
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "real-PDF-square-root",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-curved-brace-retained-as-uncertain",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-separate-equation-label-not-flattened",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-source-caption-remains-unconsumed",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-root-LaTeX-accepted-by-target-KaTeX",
+      "status": "PASS"
+    }
+  ],
+  "items": [
+    {
+      "text": "y =",
+      "source": "pdf-text",
+      "x": 50,
+      "y": 59.2,
+      "baseline": 72,
+      "width": 21.024,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 0,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "√",
+      "source": "pdf-text",
+      "x": 100,
+      "y": 56,
+      "baseline": 72,
+      "width": 10.98,
+      "height": 20,
+      "fontSize": 20,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 2,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "x + 1",
+      "source": "pdf-text",
+      "x": 114,
+      "y": 59.2,
+      "baseline": 72,
+      "width": 33.024,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 4,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "y = x",
+      "source": "pdf-text",
+      "x": 160,
+      "y": 159.2,
+      "baseline": 172,
+      "width": 33.024,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 5,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "z = t",
+      "source": "pdf-text",
+      "x": 50,
+      "y": 259.2,
+      "baseline": 272,
+      "width": 28.576,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 6,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "(2)",
+      "source": "pdf-text",
+      "x": 99,
+      "y": 259.2,
+      "baseline": 272,
+      "width": 18.656,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 8,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "This PDF tests geometric reconstruction, not translation quality.",
+      "source": "pdf-text",
+      "x": 50,
+      "y": 362.4,
+      "baseline": 372,
+      "width": 307.6560000000002,
+      "height": 12,
+      "fontSize": 12,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 10,
+      "rotated": false,
+      "endOfLine": false
+    }
+  ],
+  "vectors": {
+    "segments": [
+      {
+        "id": "op18:seg0",
+        "operatorIndex": 18,
+        "x1": 111,
+        "y1": 54,
+        "x2": 151,
+        "y2": 54,
+        "lineWidth": 0.8,
+        "paintOperator": 20
+      }
+    ],
+    "unsupported": [
+      {
+        "id": "op25:curve0",
+        "operatorIndex": 25,
+        "kind": "curve",
+        "points": [
+          [
+            153,
+            155
+          ],
+          [
+            143,
+            159
+          ],
+          [
+            143,
+            167
+          ],
+          [
+            153,
+            171
+          ]
+        ]
+      }
+    ]
+  },
+  "result": {
+    "regions": [
+      {
+        "id": "p1-math-1",
+        "bbox": [
+          50,
+          53.6,
+          101,
+          22.4
+        ],
+        "latex": "y = \\sqrt{x + 1}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "y ="
+            },
+            {
+              "type": "sqrt",
+              "radicand": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "x + 1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          0,
+          2,
+          4
+        ],
+        "vectorIds": [
+          "op18:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "y = √ x + 1"
+      },
+      {
+        "id": "p1-math-2",
+        "bbox": [
+          143,
+          155,
+          50.024,
+          20.19999999999999
+        ],
+        "latex": null,
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "y = x"
+            }
+          ]
+        },
+        "verified": false,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          5
+        ],
+        "vectorIds": [
+          "op25:curve0"
+        ],
+        "warnings": [
+          "unresolved-nearby-vector-curve"
+        ],
+        "sourceText": "y = x"
+      },
+      {
+        "id": "p1-math-3",
+        "bbox": [
+          50,
+          259.2,
+          67.656,
+          16
+        ],
+        "latex": null,
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "z = t"
+            },
+            {
+              "type": "text",
+              "text": "(2)"
+            }
+          ]
+        },
+        "verified": false,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          6,
+          8
+        ],
+        "vectorIds": [],
+        "warnings": [
+          "equation-label-needs-layout-context"
+        ],
+        "sourceText": "z = t (2)"
+      }
+    ],
+    "consumedItemIds": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      8
+    ],
+    "remainingItems": [
+      {
+        "text": "This PDF tests geometric reconstruction, not translation quality.",
+        "source": "pdf-text",
+        "x": 50,
+        "y": 362.4,
+        "baseline": 372,
+        "width": 307.6560000000002,
+        "height": 12,
+        "fontSize": 12,
+        "bold": false,
+        "fontName": "g_d0_f1",
+        "direction": "ltr",
+        "sourceIndex": 10,
+        "rotated": false,
+        "endOfLine": false
+      }
+    ],
+    "warnings": [
+      {
+        "regionId": "p1-math-2",
+        "warnings": [
+          "unresolved-nearby-vector-curve"
+        ]
+      },
+      {
+        "regionId": "p1-math-3",
+        "warnings": [
+          "equation-label-needs-layout-context"
+        ]
+      }
+    ],
+    "vectorEvidence": {
+      "usedVectorIds": [
+        "op18:seg0"
+      ],
+      "unsupported": [
+        {
+          "id": "op25:curve0",
+          "operatorIndex": 25,
+          "kind": "curve",
+          "points": [
+            [
+              153,
+              155
+            ],
+            [
+              143,
+              159
+            ],
+            [
+              143,
+              167
+            ],
+            [
+              153,
+              171
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

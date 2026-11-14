@@ -1,0 +1,43 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "fakeIndexedDB": "6.2.5"
+  },
+  "method": "actual storage.js transactions using fake-indexeddb boundary; not browser storage",
+  "sourceSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+  "results": [
+    {
+      "name": "Atomic corrected source persists when translations invalidated",
+      "result": "PASS"
+    },
+    {
+      "name": "Claim generation invalidates every stale writer transaction",
+      "result": "PASS"
+    },
+    {
+      "name": "Replaced job rejects old block IDs and stale delete",
+      "result": "PASS"
+    },
+    {
+      "name": "Snapshot write failure rolls back document, block and meta atomically",
+      "result": "PASS"
+    },
+    {
+      "name": "Full retry snapshot persists all corrections and outputs after failure",
+      "result": "PASS"
+    },
+    {
+      "name": "Legacy CP17 claim preserves file and content; rejects changed timestamp",
+      "result": "PASS"
+    },
+    {
+      "name": "Extraction checkpoint keeps corrected prior revision across cancellation and reload",
+      "result": "PASS"
+    },
+    {
+      "name": "Delete clears all stores under current ownership only",
+      "result": "PASS"
+    }
+  ]
+}

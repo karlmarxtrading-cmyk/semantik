@@ -1,0 +1,5 @@
+Warning: Please use the `legacy` build in Node.js environments.
+{"id":"mathematics","counts":{"total":18,"translated":7,"preserved":8,"rejected":3,"failed":0,"pending":0},"math":8,"formulas":10,"ms":78012}
+{"id":"en-to-id","counts":{"total":13,"translated":12,"preserved":0,"rejected":1,"failed":0,"pending":0},"math":0,"formulas":3,"ms":4614}
+{"id":"id-to-en","counts":{"total":13,"translated":10,"preserved":0,"rejected":3,"failed":0,"pending":0},"math":0,"formulas":3,"ms":6477}
+{"id":"independent-math","counts":{"total":9,"translated":2,"preserved":7,"rejected":0,"failed":0,"pending":0},"math":7,"formulas":7,"ms":2387}

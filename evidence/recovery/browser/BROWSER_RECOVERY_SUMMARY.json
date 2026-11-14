@@ -1,0 +1,132 @@
+{
+  "status": "PASS_TARGETED_BROWSER_FLOW_NOT_PRODUCTION_ACCEPTANCE",
+  "rows": [
+    {
+      "direction": "ID_TO_EN",
+      "filename": "BROWSER_3_ID_TO_EN.md",
+      "bytes": 2269,
+      "sha256": "0147ab470b8b270927e3caefaacd68d371cdf2852570f5445d140c15d1d26a73",
+      "pageIDs": [
+        1,
+        2,
+        3
+      ],
+      "blockIDs": [
+        "p0001-b0001",
+        "p0001-b0002",
+        "p0001-b0003",
+        "p0002-b0001",
+        "p0002-b0002",
+        "p0002-b0003",
+        "p0003-b0001",
+        "p0003-b0002",
+        "p0003-b0003"
+      ],
+      "statusCounts": {
+        "translated": 6,
+        "preserved": 3
+      },
+      "metrics": {
+        "inferenceCalls": 12,
+        "cacheHits": 0
+      },
+      "processingBuild": {
+        "base": "/r/2e4d8ef18eb32385/",
+        "modelHashes": {
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+        },
+        "release": "cp20-2e4d8ef18eb32385",
+        "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+        "version": "0.20.0"
+      },
+      "sourceSha256": "212e3477eb08d6333d5dde60113513fd76dac3081218a7326ffc0d1706a70ffc",
+      "completeCoverage": true
+    },
+    {
+      "direction": "EN_TO_ID",
+      "filename": "BROWSER_3_EN_TO_ID.md",
+      "bytes": 2309,
+      "sha256": "434a2838adf934b13ff5b5794954f825561572d8609c72342ec3477bb3b5bfdf",
+      "pageIDs": [
+        1,
+        2,
+        3
+      ],
+      "blockIDs": [
+        "p0001-b0001",
+        "p0001-b0002",
+        "p0001-b0003",
+        "p0002-b0001",
+        "p0002-b0002",
+        "p0002-b0003",
+        "p0003-b0001",
+        "p0003-b0002",
+        "p0003-b0003"
+      ],
+      "statusCounts": {
+        "translated": 9
+      },
+      "metrics": {
+        "inferenceCalls": 15,
+        "cacheHits": 0
+      },
+      "processingBuild": {
+        "base": "/r/2e4d8ef18eb32385/",
+        "modelHashes": {
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+        },
+        "release": "cp20-2e4d8ef18eb32385",
+        "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+        "version": "0.20.0"
+      },
+      "sourceSha256": "b26b6f085edaf4b7f64a2914020d01a86ab163f245d72ab8bebbe21e71f23986",
+      "completeCoverage": true
+    }
+  ],
+  "restoredExportByteIdentical": false,
+  "oldBrowserCheckpointRescuedBeforeReplacement": true,
+  "full1500InferenceRerun": false,
+  "limitations": [
+    "Only three pages per direction on final build. Historical 1500 proof retains its old build identity.",
+    "Managed preview modifies HTML bytes; packaged byte/header/offline production qualification remains blocked.",
+    "Old quota/cache warning carried into new-job metadata and reappeared only after restore; no new quota failure asserted. Needs UI/metadata scoping fix.",
+    "Cloud Chrome deviceMemory=8 is not qualification on a physical 8GB laptop.",
+    "Coverage and successful download do not establish semantic correctness."
+  ],
+  "diagnostics": [
+    {
+      "name": "Stored source/output page and block reconciliation",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "Stored source/output page and block reconciliation",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "Stored source/output page and block reconciliation",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "Cold frame: lazy resources and 390px viewport",
+      "status": "PASS",
+      "error": null
+    },
+    {
+      "name": "Actual preview bytes and headers (not Cloudflare)",
+      "status": "FAIL",
+      "error": "Error: Preview response bytes differ from packaged build"
+    },
+    {
+      "name": "Runtime and service worker diagnostic",
+      "status": "PASS",
+      "error": null
+    }
+  ],
+  "restoredBodyAndIDsIdentical": true,
+  "restoreDiff": "RESTORE_EXPORT.diff"
+}

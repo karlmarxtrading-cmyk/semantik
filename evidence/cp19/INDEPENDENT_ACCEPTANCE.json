@@ -1,0 +1,710 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "method": "Actual final-dist local WASM/ONNX; Actual final-dist inference on eighteen new AI-authored acceptance sentences, separated from development/first holdout. No code changes based on these outputs; no independent human approval.",
+  "humanApproval": false,
+  "rows": [
+    {
+      "id": "CP19-A-001",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "Every finite subgroup has an identity element.",
+      "reference": "Setiap subgrup hingga mempunyai elemen identitas.",
+      "text": "Setiap sub kelompok yang terbatas memiliki elemen identitas.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 10,
+      "outputTokens": 9,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Every finite subgroup has an identity element."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 372,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-002",
+      "domain": "physics",
+      "direction": "en-id",
+      "source": "The net force is zero although the object is moving.",
+      "reference": "Gaya total bernilai nol meskipun benda sedang bergerak.",
+      "text": "Gaya bersih adalah nol meskipun objek bergerak.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 8,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The net force is zero although the object is moving."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 234,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-003",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "The catalyst changes the reaction rate but is not consumed.",
+      "reference": "Katalis mengubah laju reaksi tetapi tidak habis bereaksi.",
+      "text": "Katalis mengubah tingkat reaksi tetapi tidak dikonsumsi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 9,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The catalyst changes the reaction rate but is not consumed."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 269,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-004",
+      "domain": "biology",
+      "direction": "en-id",
+      "source": "These cells divide without producing identical daughter cells.",
+      "reference": "Sel-sel ini membelah tanpa menghasilkan sel anak yang identik.",
+      "text": "Sel-sel ini membelah tanpa memproduksi sel putri identik.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 10,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "These cells divide without producing identical daughter cells."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 278,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-005",
+      "domain": "medicine",
+      "direction": "en-id",
+      "source": "The symptoms improved, but the risk of relapse remained.",
+      "reference": "Gejala membaik, tetapi risiko kekambuhan tetap ada.",
+      "text": "Gejalanya membaik, tetapi risiko kambuh tetap ada.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 10,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The symptoms improved, but the risk of relapse remained."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 425,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-006",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "A smaller sample does not guarantee a larger standard error.",
+      "reference": "Sampel yang lebih kecil tidak menjamin galat baku yang lebih besar.",
+      "text": "Contoh yang lebih kecil tidak menjamin galat baku yang lebih besar.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 16,
+      "outputTokens": 15,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A smaller sample does not guarantee a larger standard error."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 450,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-007",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "Demand fell after the price increased.",
+      "reference": "Permintaan turun setelah harga meningkat.",
+      "text": "Permintaan jatuh setelah harga meningkat.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 8,
+      "outputTokens": 6,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Demand fell after the price increased."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 163,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-008",
+      "domain": "social-science",
+      "direction": "en-id",
+      "source": "The interview records describe perceptions rather than observed actions.",
+      "reference": "Catatan wawancara menggambarkan persepsi alih-alih tindakan yang diamati.",
+      "text": "Catatan wawancara menjelaskan persepsi daripada mengamati tindakan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 8,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The interview records describe perceptions rather than observed actions."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 211,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-009",
+      "domain": "research-methods",
+      "direction": "en-id",
+      "source": "The analysis excluded participants who withdrew before follow-up.",
+      "reference": "Analisis tidak menyertakan peserta yang mengundurkan diri sebelum tindak lanjut.",
+      "text": "The analysis excluded participants who withdrew before follow-up.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The analysis excluded participants who withdrew before follow-up."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The analysis excluded participants who withdrew before follow-up.",
+          "candidateText": "Analisa peserta yang tidak ikut berpartisipasi yang mengundurkan diri sebelum tindak lanjut.",
+          "rawCandidate": "Analisa peserta yang tidak ikut berpartisipasi yang mengundurkan diri sebelum tindak lanjut."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 446,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-010",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Setiap subgrup hingga mempunyai elemen identitas.",
+      "reference": "Every finite subgroup has an identity element.",
+      "text": "Every subgroup has an identity element.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 10,
+      "outputTokens": 8,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Setiap subgrup hingga mempunyai elemen identitas."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 288,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-011",
+      "domain": "physics",
+      "direction": "id-en",
+      "source": "Gaya total bernilai nol meskipun benda sedang bergerak.",
+      "reference": "The net force is zero although the object is moving.",
+      "text": "Total force is worth zero even though things are moving.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 10,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Gaya total bernilai nol meskipun benda sedang bergerak."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 283,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-012",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Katalis mengubah laju reaksi tetapi tidak habis bereaksi.",
+      "reference": "The catalyst changes the reaction rate but is not consumed.",
+      "text": "The catalyst changes the rate of the reaction but does not react exhausted.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 14,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Katalis mengubah laju reaksi tetapi tidak habis bereaksi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 366,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-013",
+      "domain": "biology",
+      "direction": "id-en",
+      "source": "Sel-sel ini membelah tanpa menghasilkan sel anak yang identik.",
+      "reference": "These cells divide without producing identical daughter cells.",
+      "text": "These cells divide without producing identical child cells.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 9,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Sel-sel ini membelah tanpa menghasilkan sel anak yang identik."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 253,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-014",
+      "domain": "medicine",
+      "direction": "id-en",
+      "source": "Gejala membaik, tetapi risiko kekambuhan tetap ada.",
+      "reference": "The symptoms improved, but the risk of relapse remained.",
+      "text": "Symptoms improved, but the risk of relapses persisted.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 16,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Gejala membaik, tetapi risiko kekambuhan tetap ada."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 455,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-015",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Sampel yang lebih kecil tidak menjamin galat baku yang lebih besar.",
+      "reference": "A smaller sample does not guarantee a larger standard error.",
+      "text": "Smaller samples do not guarantee greater standard error.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 16,
+      "outputTokens": 14,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Sampel yang lebih kecil tidak menjamin galat baku yang lebih besar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 392,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-016",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Permintaan turun setelah harga meningkat.",
+      "reference": "Demand fell after the price increased.",
+      "text": "Requests dropped after prices rose.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 7,
+      "outputTokens": 7,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Permintaan turun setelah harga meningkat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 220,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-017",
+      "domain": "social-science",
+      "direction": "id-en",
+      "source": "Catatan wawancara menggambarkan persepsi alih-alih tindakan yang diamati.",
+      "reference": "The interview records describe perceptions rather than observed actions.",
+      "text": "The interview records describe perception rather than observed action.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 10,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Catatan wawancara menggambarkan persepsi alih-alih tindakan yang diamati."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 298,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-A-018",
+      "domain": "research-methods",
+      "direction": "id-en",
+      "source": "Analisis tidak menyertakan peserta yang mengundurkan diri sebelum tindak lanjut.",
+      "reference": "The analysis excluded participants who withdrew before follow-up.",
+      "text": "Analysis does not include the participants who resign before follow-up.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 14,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Analisis tidak menyertakan peserta yang mengundurkan diri sebelum tindak lanjut."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 394,
+      "humanVerdict": "PENDING"
+    }
+  ]
+}

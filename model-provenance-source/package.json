@@ -1,0 +1,24 @@
+{
+  "name": "semantik-setara",
+  "version": "0.10.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/prepare_model_delivery.mjs && tsc --noEmit && vite build && node scripts/finalize_model_delivery.mjs && node scripts/build_offline.mjs",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "audit:source": "python3 scripts/audit_source.py",
+    "dev:vite": "vite --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@sctg/sentencepiece-js": "1.3.3",
+    "@zip.js/zip.js": "2.24.0",
+    "onnxruntime-web": "1.23.2"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.0",
+    "fake-indexeddb": "6.2.8",
+    "tsx": "4.23.15",
+    "typescript": "5.7.3",
+    "vite": "8.3.6"
+  }
+}

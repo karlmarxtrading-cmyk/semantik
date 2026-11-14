@@ -1,0 +1,28 @@
+{
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "copiedFiles": 301,
+  "unchangedFiles": 297,
+  "oldActiveNamespacesPreserved": [
+    {
+      "base": "/r/4694bad623ed9b19/",
+      "files": 298,
+      "inventorySha256": "e894a9330aa3fc56b592e77328c886665cc56f767f81af91da8ad2f8060b511a"
+    },
+    {
+      "base": "/r/1668833ad37c9dd8/",
+      "files": 298,
+      "inventorySha256": "d945ab27fb1093cf1a1fdf7dc7c193ed5e9f2e7428ae5367ac3578e82a33d165"
+    }
+  ],
+  "allPass": true,
+  "packaging": "Use canonical BUILD_MANIFEST entries or isolated cp20-final-dist; old4694/1668 and qa are active test-only extras."
+}

@@ -1,0 +1,37 @@
+{
+  "method": "Actual main and recovery helper with explicit DOM/cache/storage fault boundaries. No actual browser quota or actual loaded-model inference assertion is inferred from these tests; root browser evidence is separate.",
+  "sourceHashes": {
+    "main.js": "5dcae2db55c147135a91bac48b58407ea5525e6a4a6af6141424563930083b30",
+    "long-document.js": "c398d5f5eb5190114af81219a85792e5d9fc4c5d0f5fd499dd323233486c0203"
+  },
+  "checks": [
+    {
+      "name": "Reclamation removes only recognized public-model entries, retains loaded engine/unknown/user caches",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual main retries identical atomic mutation once after quota reclamation and marks offline unavailable",
+      "status": "PASS"
+    },
+    {
+      "name": "Second quota failure stops after one retry and retains dirty state",
+      "status": "PASS"
+    },
+    {
+      "name": "SecurityError never deletes caches and is never automatically retried",
+      "status": "PASS"
+    },
+    {
+      "name": "InvalidStateError never deletes caches and is never automatically retried",
+      "status": "PASS"
+    },
+    {
+      "name": "DataCloneError never deletes caches and is never automatically retried",
+      "status": "PASS"
+    },
+    {
+      "name": "Absent model cache cannot turn quota failure into a false success",
+      "status": "PASS"
+    }
+  ]
+}

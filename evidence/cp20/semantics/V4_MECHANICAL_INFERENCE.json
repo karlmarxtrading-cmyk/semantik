@@ -1,0 +1,176 @@
+{
+  "identity": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp20/app",
+    "adapterSHA256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+    "rulesSHA256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "spansSHA256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "method": "Actual model mechanical regressions from long-run findings; NOT fresh semantic acceptance.",
+  "rows": [
+    {
+      "source": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+      "direction": "en-id",
+      "text": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 17,
+      "outputTokens": 15,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 17,
+        "outputTokens": 15,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The rubric distinguished an unsupported answer from an explanation supported by evidence."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "The sequence in calculation 81 is bounded and monotone.",
+      "direction": "en-id",
+      "text": "Barisan dalam perhitungan 81 adalah terbatas dan monoton.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 31,
+      "outputTokens": 25,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 25,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The sequence in calculation 81 is bounded and monotone."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+      "direction": "id-en",
+      "text": "The feature distinguishes unsupported answers from explanations supported by evidence.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 16,
+      "outputTokens": 15,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 16,
+        "outputTokens": 15,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "source": "Barisan dalam perhitungan 81 terbatas dan monoton.",
+      "direction": "id-en",
+      "text": "Sequence in calculations 81 bounded and monotone.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 20,
+      "outputTokens": 22,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 20,
+        "outputTokens": 22,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Barisan dalam perhitungan 81 terbatas dan monoton."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    }
+  ]
+}

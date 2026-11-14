@@ -1,0 +1,18 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "status": "NOT_PRODUCTION_READY",
+  "filename": "SEMANTIK_SETARA_CP19_PDF_TRANSLATOR_DEPLOY.zip",
+  "bytes": 223305089,
+  "sha256": "1a30aeb4bc481a216ed5d6383d3ab622955b4e766d44a5dc7500e8ce111ce5e3",
+  "files": 300,
+  "crc": "PASS"
+}

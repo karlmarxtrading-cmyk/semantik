@@ -1,0 +1,50 @@
+[
+  {
+    "file": "HOLDOUT-BIO-EN.pdf",
+    "pages": 1,
+    "textCharacters": 282,
+    "images": 1
+  },
+  {
+    "file": "HOLDOUT-BIO-ID.pdf",
+    "pages": 1,
+    "textCharacters": 161,
+    "images": 1
+  },
+  {
+    "file": "HOLDOUT-ENV-EN.pdf",
+    "pages": 1,
+    "textCharacters": 418,
+    "images": 0
+  },
+  {
+    "file": "HOLDOUT-ENV-ID.pdf",
+    "pages": 1,
+    "textCharacters": 406,
+    "images": 0
+  },
+  {
+    "file": "HOLDOUT-MATH-EN.pdf",
+    "pages": 1,
+    "textCharacters": 367,
+    "images": 0
+  },
+  {
+    "file": "HOLDOUT-MATH-ID.pdf",
+    "pages": 1,
+    "textCharacters": 413,
+    "images": 0
+  },
+  {
+    "file": "HOLDOUT-STAT-EN.pdf",
+    "pages": 1,
+    "textCharacters": 452,
+    "images": 0
+  },
+  {
+    "file": "HOLDOUT-STAT-ID.pdf",
+    "pages": 1,
+    "textCharacters": 489,
+    "images": 0
+  }
+]

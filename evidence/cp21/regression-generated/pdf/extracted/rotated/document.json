@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "fileName": "rotated.pdf",
+  "fileSize": 22638,
+  "numPages": 1,
+  "processedRange": [
+    1,
+    1
+  ],
+  "metadata": {
+    "title": "CP18 SYNTHETIC FIXTURE: Rotated text",
+    "author": "Semantik Setara regression fixtures (CC0)",
+    "subject": "unspecified",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20000101000000+00'00'",
+    "language": ""
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 1,
+      "blocks": [
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Digital upright heading",
+          "bbox": [
+            40,
+            51.78955078125,
+            126.94042789999997,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            1
+          ],
+          "sourceItems": [
+            {
+              "id": 1,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                51.78955078125,
+                126.94042789999999,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Digital upright heading"
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Rotated scientific label: concentration 10 mg.",
+          "bbox": [
+            100,
+            651.78955078125,
+            251.5766605,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": true,
+          "confidence": 0.96,
+          "issues": [
+            "Teks berotasi: periksa urutan baca."
+          ],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                100,
+                651.78955078125,
+                251.57666050000003,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Rotated scientific label: concentration 10 mg."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        }
+      ],
+      "imagePath": "assets/halaman-0001.jpg",
+      "preserveVisualSource": false,
+      "imageBlob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "warnings": [],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 2,
+      "coveredItemCount": 2,
+      "referenceSection": false,
+      "sourceTextCharacters": 69
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Digital upright heading",
+      "bbox": [
+        40,
+        51.78955078125,
+        126.94042789999997,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        1
+      ],
+      "sourceItems": [
+        {
+          "id": 1,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            51.78955078125,
+            126.94042789999999,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Digital upright heading"
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Rotated scientific label: concentration 10 mg.",
+      "bbox": [
+        100,
+        651.78955078125,
+        251.5766605,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": true,
+      "confidence": 0.96,
+      "issues": [
+        "Teks berotasi: periksa urutan baca."
+      ],
+      "sourceItemIds": [
+        0
+      ],
+      "sourceItems": [
+        {
+          "id": 0,
+          "source": "pdf-text",
+          "bbox": [
+            100,
+            651.78955078125,
+            251.57666050000003,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Rotated scientific label: concentration 10 mg."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/halaman-0001.jpg",
+      "blob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "page": 1,
+      "kind": "page"
+    }
+  ],
+  "warnings": [],
+  "sourceItemCount": 2,
+  "coveredItemCount": 2,
+  "sourceTextCharacters": 69,
+  "assetsBytes": 10305,
+  "createdAt": "2026-11-13T18:55:06.674Z"
+}

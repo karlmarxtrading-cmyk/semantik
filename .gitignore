@@ -1,0 +1,22 @@
+# Build output: regenerate with `python3 scripts/build-with-history.py`.
+/dist/
+# QA dependencies: restore with `npm --prefix tools ci --ignore-scripts`.
+/tools/node_modules/
+node_modules/
+# Local verification outputs (keep reproduced evidence out of commits unless deliberately promoted).
+/evidence/reproduced/
+# Temporary worker bridge written by semantic inference harnesses.
+/tests/cp20-semantic-temporary-worker-*.mjs
+# Python / OS / editor noise.
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Never commit credentials.
+.env
+.env.*
+*.pem
+.dev.vars
+.wrangler/

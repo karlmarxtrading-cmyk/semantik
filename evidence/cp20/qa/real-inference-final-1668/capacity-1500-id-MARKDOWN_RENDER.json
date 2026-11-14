@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "build": {
+    "release": "cp20-1668833ad37c9dd8",
+    "version": "0.20.0",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/1668833ad37c9dd8/"
+  },
+  "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+  "bytes": 1008350,
+  "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+  "renderer": "Marked17.0.1; fixture has no formula or raster content, so no KaTeX/raster qualification inferred",
+  "renderMs": 68.66912699999999,
+  "pages": 1500,
+  "blockIds": 4500,
+  "uniqueTraceIds": 1500,
+  "renderedH3": 1500,
+  "partialLabelVerified": true,
+  "method": "Full actual long Markdown parsed with exact page/block/trace reconciliation. This is not a browser download or human semantic review."
+}

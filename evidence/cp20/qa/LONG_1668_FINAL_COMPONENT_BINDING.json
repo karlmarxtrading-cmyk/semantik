@@ -1,0 +1,89 @@
+{
+  "originalRelease": "cp20-1668833ad37c9dd8",
+  "packagedBuild": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "scope": "Actual original-build Node long inference remains labeled with its original release. Unchanged parser/storage/model-adapter/export components plus controlled ETA-only output parity support reuse of narrow capacity/engine evidence. This is NOT execution of the current consumer main or browser quota recovery.",
+  "unchangedModules": [
+    {
+      "file": "storage.js",
+      "status": "PASS",
+      "testedSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+      "packagedSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3"
+    },
+    {
+      "file": "pdf-reader.js",
+      "status": "PASS",
+      "testedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+      "packagedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd"
+    },
+    {
+      "file": "layout.js",
+      "status": "PASS",
+      "testedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+      "packagedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553"
+    },
+    {
+      "file": "math-geometry.js",
+      "status": "PASS",
+      "testedSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+      "packagedSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098"
+    },
+    {
+      "file": "translation.js",
+      "status": "PASS",
+      "testedSha256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+      "packagedSha256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544"
+    },
+    {
+      "file": "claim-guards.js",
+      "status": "PASS",
+      "testedSha256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+      "packagedSha256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35"
+    },
+    {
+      "file": "semantic-spans.js",
+      "status": "PASS",
+      "testedSha256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+      "packagedSha256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24"
+    },
+    {
+      "file": "export.js",
+      "status": "PASS",
+      "testedSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+      "packagedSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+    }
+  ],
+  "pipeline": {
+    "status": "PASS",
+    "testedSha256": "5be8cde00ac7baec00039479919bf31c76654ea27d615dd55f9de42ae0649ea3",
+    "packagedSha256": "34d9cdfde96073a6970f9b661f3c4f1b2ddbd4fec04385889e5ad3281496e17b",
+    "identical": false,
+    "parityEvidence": "evidence/cp20/pipeline/eta-resume-results.json",
+    "method": "Actual ETA helper, actual pipeline with controlled PDF/model/page-store boundaries, and actual main resume with controlled DOM/storage. Deterministic timing inputs isolate the estimator; no browser performance claim.",
+    "check": {
+      "name": "ETA-only patch preserves exact document records, atomic writes, inference requests and non-ETA progress",
+      "status": "PASS"
+    }
+  },
+  "worker": {
+    "status": "PASS",
+    "testedRawSha256": "105791345da41a9f84d6492d976ca581eb4a7733cd144791240db3f99b2d2a40",
+    "packagedRawSha256": "74eb1e84ffc166e999f906e887bea500a247e8d4ab6dd2095bfc162a63316574",
+    "normalizedTestedSha256": "5b5a875c1d5caef735bc69b8cd68e05fdd5a585080d2ae72668543ab0aaf6699",
+    "normalizedPackagedSha256": "5b5a875c1d5caef735bc69b8cd68e05fdd5a585080d2ae72668543ab0aaf6699",
+    "normalization": "Only replace the known release base URL string with a fixed placeholder; model bytes remain independently hash-verified by release evidence."
+  },
+  "consumerMain": {
+    "status": "NOT_RUN",
+    "reason": "Node harness does not execute main.js. Root browser evidence must qualify the final consumer build, cache-pressure recovery and UI progress."
+  },
+  "componentBindingStatus": "PASS"
+}

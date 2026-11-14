@@ -1,0 +1,57 @@
+(node:2898) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "build": {
+    "base": "/r/ba83aed6acb74963/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp21-ba83aed6acb74963",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "version": "0.21.0"
+  },
+  "tests": [
+    {
+      "name": "Actual generated manifest matches CP21 exact build identity",
+      "status": "PASS"
+    },
+    {
+      "name": "Manifest defects rejected before any cache mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "Install caches only light shell and never skips active-client wait",
+      "status": "PASS"
+    },
+    {
+      "name": "Prepare all actual build assets with size and SHA256 verification",
+      "status": "PASS"
+    },
+    {
+      "name": "Notices and all licenses served by generated worker after network removal",
+      "status": "PASS"
+    },
+    {
+      "name": "Navigation and repeated offline preparation use verified cache",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupted cache and changed server bytes fail closed",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown release paths denied; model shards remain engine-verified",
+      "status": "PASS"
+    },
+    {
+      "name": "Abort and denied cache report failure without false offline success",
+      "status": "PASS"
+    },
+    {
+      "name": "Activation retains previous release cache for rollback",
+      "status": "PASS"
+    }
+  ],
+  "allPass": true
+}

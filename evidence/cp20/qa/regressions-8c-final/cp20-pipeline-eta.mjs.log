@@ -1,0 +1,7 @@
+PASS 123 fast cached pages and a partial resumed page cannot inflate throughput
+PASS ETA requires three new full-page measurements and retains only recent samples
+PASS Actual pipeline excludes cached replay and partial resumed page from ETA samples
+(node:317) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS Actual resume restores bounded quota recovery/failure history and preserves it in subsequent metadata
+PASS ETA-only patch preserves exact document records, atomic writes, inference requests and non-ETA progress

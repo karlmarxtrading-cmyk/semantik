@@ -1,0 +1,104 @@
+{
+  "exportSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+  "cases": 16,
+  "method": "Python stdlib HTMLParser text extraction; only whitespace normalization, no punctuation removal or expected-text changes",
+  "results": [
+    {
+      "id": "unordered-hyphen",
+      "expected": "- Local estimates remain uncertain. - Regulatory agencies review evidence.",
+      "actual": "- Local estimates remain uncertain. - Regulatory agencies review evidence.",
+      "result": "PASS"
+    },
+    {
+      "id": "unordered-plus",
+      "expected": "+ Positive effect + Negative control",
+      "actual": "+ Positive effect + Negative control",
+      "result": "PASS"
+    },
+    {
+      "id": "ordered-label",
+      "expected": "1. First scientific claim. 2. Second scientific claim.",
+      "actual": "1. First scientific claim. 2. Second scientific claim.",
+      "result": "PASS"
+    },
+    {
+      "id": "internal-line-list",
+      "expected": "Paragraph introduction. 1. Literal label. - Literal dash.",
+      "actual": "Paragraph introduction. 1. Literal label. - Literal dash.",
+      "result": "PASS"
+    },
+    {
+      "id": "parenthesis-label",
+      "expected": "1) Literal identifier 2) Another identifier",
+      "actual": "1) Literal identifier 2) Another identifier",
+      "result": "PASS"
+    },
+    {
+      "id": "three-space-indent",
+      "expected": "- Literal source bullet 3. Literal label",
+      "actual": "- Literal source bullet 3. Literal label",
+      "result": "PASS"
+    },
+    {
+      "id": "four-space-indent",
+      "expected": "- Literal *words* and |x| 1. source label (A)",
+      "actual": "- Literal *words* and |x| 1. source label (A)",
+      "result": "PASS"
+    },
+    {
+      "id": "tab-indent",
+      "expected": "- Literal *words* and |x| 1. source label (A)",
+      "actual": "- Literal *words* and |x| 1. source label (A)",
+      "result": "PASS"
+    },
+    {
+      "id": "horizontal-rule",
+      "expected": "Before --- After",
+      "actual": "Before --- After",
+      "result": "PASS"
+    },
+    {
+      "id": "spaced-horizontal-rule",
+      "expected": "Before - - - After",
+      "actual": "Before - - - After",
+      "result": "PASS"
+    },
+    {
+      "id": "setext-heading",
+      "expected": "A literal line === Continuation",
+      "actual": "A literal line === Continuation",
+      "result": "PASS"
+    },
+    {
+      "id": "decimal-control",
+      "expected": "1.5 \u03bcM was measured. -5.2 mg is a signed value. +3.0 \u00b0C is positive.",
+      "actual": "1.5 \u03bcM was measured. -5.2 mg is a signed value. +3.0 \u00b0C is positive.",
+      "result": "PASS"
+    },
+    {
+      "id": "ordered-boundaries",
+      "expected": "0. Zero label 999999999. Nine digit label 1000000000. Ten digit value",
+      "actual": "0. Zero label 999999999. Nine digit label 1000000000. Ten digit value",
+      "result": "PASS"
+    },
+    {
+      "id": "other-markup",
+      "expected": "# Literal heading * Literal star [Reference]: text > literal quote ~~~",
+      "actual": "# Literal heading * Literal star [Reference]: text > literal quote ~~~",
+      "result": "PASS"
+    },
+    {
+      "id": "safe-html",
+      "expected": "<script>unsafe()</script> & literal &amp;",
+      "actual": "<script>unsafe()</script> & literal &amp;",
+      "result": "PASS"
+    },
+    {
+      "id": "bare-markers",
+      "expected": "- + 1. === ---",
+      "actual": "- + 1. === ---",
+      "result": "PASS"
+    }
+  ],
+  "generatedTableStillStructured": true
+}

@@ -1,0 +1,13 @@
+{
+  "purpose": "CSP compatibility for bundled SentencePiece embind",
+  "original_sha256": "722c5113a11f53c9ce147dacdf153b97706b57fc44c28222f562bf8c022024d3",
+  "revised_sha256": "4c3dcfeecefe83ef97cca3a56d228e8f15680c50beeafbd4240a2945dfd8c118",
+  "replacements": [
+    "fn: invoker wrapper generated with Function -> static closure",
+    "er: method caller generated with Function -> static closure"
+  ],
+  "models_changed": false,
+  "unsafe_eval_required": false,
+  "original_fn": "function fn(e,t,n,r,i,a){var o=t.length;o<2&&Y(`argTypes array size mismatch! Must at least get return value and 'this' types!`);for(var s=t[1]!==null&&n!==null,c=ln(t),l=t[0].name!==`void`,u=[e,Y,r,i,cn,t[0],t[1]],d=0;d<o-2;++d)u.push(t[d+2]);if(!c)for(var d=s?1:2;d<t.length;++d)t[d].destructorFunction!==null&&u.push(t[d].destructorFunction);let[f,p]=dn(t,s,l,a);return f.push(p),Ft(e,un(Function,f)(...u))}",
+  "original_er": "er=(e,t,n)=>{var r=$n(e,t),i=r.shift();e--;var a=`return function (obj, func, destructorsRef, args) {\n`,o=0,s=[];n===0&&s.push(`obj`);for(var c=[`retType`],l=[i],u=0;u<e;++u)s.push(`arg`+u),c.push(`argType`+u),l.push(r[u]),a+=`  var arg${u} = argType${u}.readValueFromPointer(args${o?`+`+o:``});\\n`,o+=r[u].argPackAdvance;a+=`  var rv = ${n===1?`new func`:`func.call`}(${s.join(`, `)});\\n`,i.isVoid||(c.push(`emval_returnValue`),l.push(Jn),a+=`  return emval_returnValue(retType, destructorsRef, rv);\n`),a+=`};\n`,c.push(a);var d=un(Function,c)(...l);return Qn(Ft(`methodCaller<(${r.map(e=>e.name).join(`, `)}) => ${i.name}>`,d))}"
+}

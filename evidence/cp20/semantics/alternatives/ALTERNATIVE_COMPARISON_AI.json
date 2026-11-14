@@ -1,0 +1,717 @@
+{
+  "decision": "DO_NOT_REPLACE_ACTIVE_PRODUCT",
+  "reason": "Tested candidate configuration shows no demonstrated quality advantage; systematic scientific sense and claim errors remain after equal sentence segmentation. This does not establish that every possible decoding/fine-tuning of the model is inferior.",
+  "reviewType": "AI-only, author-reviewed development comparison. Not blind; not human adjudication; not a population accuracy score.",
+  "humanApprovals": 0,
+  "candidate": {
+    "model": "Xenova/m2m100_418M",
+    "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+    "runtime": "@huggingface/transformers 3.8.1 / onnxruntime-node 1.21.0 CPU",
+    "dtype": "q8",
+    "generation": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 256
+    },
+    "coldPreparationMs": 6391,
+    "processMaxRSSBytes": 2268745728
+  },
+  "downloadBytes": 639977588,
+  "onnxWeightBytes": 631984548,
+  "baselineBuild": {
+    "base": "/r/1668833ad37c9dd8/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-1668833ad37c9dd8",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "version": "0.20.0"
+  },
+  "comparisonBoundary": "Isolated real CPU inference, sentence/clause segmentation using frozen production splitForTranslation; raw segment text without term masking. Fourteen selected existing cases are comparative development, not newly blind acceptance. Same source corpus, language directions and per-sentence processing as production; no candidate glossary/claim guard means not a full adapter equivalence test. Node CPU only, no browser/WASM performance claim. Baseline v2 targets exactly equal frozen v4 final-dist outputs as demonstrated by FINAL_DIST_SEMANTIC_BINDING.json. Candidate does not use production protected terminology or rejection guards; candidate returned text must not be counted as accepted translation. Runtime timing is observational in a shared environment, not a controlled hardware speed comparison.",
+  "observedCases": 14,
+  "candidateReturnedTargets": 14,
+  "candidateCriticalOutputsAI": 11,
+  "baselineTranslated": 9,
+  "baselineIncomplete": 5,
+  "baselineCriticalTranslatedErrorsAI": 5,
+  "timing": {
+    "totalTranslationMs": 95859,
+    "medianParagraphMs": 6747.5,
+    "weightedMsPer200Characters": 6308.6
+  },
+  "rows": [
+    {
+      "id": "CP20-H-001",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint.",
+      "baselineTarget": "Sebuah fungsi kontinu pada interval tertutup mencapai maksimum. Teorema ini tidak memerlukan fungsi menjadi dapat diturunkan sepanjang interval. Maksimum tidak harus terjadi di sebuah titik akhir.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Fungsi berterusan pada interval tertutup mencapai maksimum. Teori ini tidak memerlukan fungsi untuk dapat dibedakan sepanjang interval. Maksimum kebutuhan tidak terjadi pada titik akhir.",
+      "parts": [
+        {
+          "source": "A continuous function on a closed interval attains a maximum. ",
+          "target": "Fungsi berterusan pada interval tertutup mencapai maksimum.",
+          "ms": 2367
+        },
+        {
+          "source": "This theorem does not require the function to be differentiable throughout the interval. ",
+          "target": "Teori ini tidak memerlukan fungsi untuk dapat dibedakan sepanjang interval.",
+          "ms": 2204
+        },
+        {
+          "source": "The maximum need not occur at an endpoint.",
+          "target": "Maksimum kebutuhan tidak terjadi pada titik akhir.",
+          "ms": 1675
+        }
+      ],
+      "ms": 6274,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Differentiable menjadi dapat dibedakan dan need not menjadi kebutuhan tidak. Kalimat terakhir tidak lagi hilang setelah segmentasi, tetapi modalitasnya tetap salah.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "baselineReviewNote": "Isi matematika terjaga; sintaks \"fungsi menjadi dapat diturunkan\" dan \"titik akhir\" kurang alami.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-003",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size.",
+      "baselineTarget": "Sebuah elemen tunggal himpunan hingga memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi terbatas mengubah masalah. Klaim ini tentang pemesanan elemen dan bukan tentang ukuran fisik mereka.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Set nonempty finite memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi finiteness mengubah masalah. Keterangan ini adalah tentang perintah unsur-unsur dan bukan tentang ukuran fisik mereka.",
+      "parts": [
+        {
+          "source": "A nonempty finite set has a greatest element under a suitable ordering. ",
+          "target": "Set nonempty finite memiliki elemen terbesar di bawah pesanan yang sesuai.",
+          "ms": 2618
+        },
+        {
+          "source": "Removing the finiteness assumption changes the problem. ",
+          "target": "Menghapus asumsi finiteness mengubah masalah.",
+          "ms": 1782
+        },
+        {
+          "source": "The claim is about the ordering of elements and not about their physical size.",
+          "target": "Keterangan ini adalah tentang perintah unsur-unsur dan bukan tentang ukuran fisik mereka.",
+          "ms": 2890
+        }
+      ],
+      "ms": 7301,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Nonempty finite tidak diterjemahkan; ordering menjadi pesanan/perintah. Konsep himpunan dan urutan belum terjaga.",
+      "baselineCriticalTranslatedErrorAI": true,
+      "baselineScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "baselineReviewNote": "Nonempty finite set berubah menjadi elemen tunggal; ordering menjadi pesanan/pemesanan. Klaim matematika berubah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-004",
+      "direction": "en-id",
+      "domain": "chemistry",
+      "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "baselineTarget": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Penyelesaian gula dalam air meningkatkan massa penyelesaian. Evaporasi menghapus sebagian air tetapi tidak menghapus gula yang larut. Oleh karena itu, cairan yang tersisa memiliki konsentrasi yang lebih tinggi.",
+      "parts": [
+        {
+          "source": "Dissolving sugar in water increases the mass of the solution. ",
+          "target": "Penyelesaian gula dalam air meningkatkan massa penyelesaian.",
+          "ms": 1957
+        },
+        {
+          "source": "Evaporation removes some of the water but does not remove the dissolved sugar. ",
+          "target": "Evaporasi menghapus sebagian air tetapi tidak menghapus gula yang larut.",
+          "ms": 2653
+        },
+        {
+          "source": "The remaining liquid therefore has a higher concentration.",
+          "target": "Oleh karena itu, cairan yang tersisa memiliki konsentrasi yang lebih tinggi.",
+          "ms": 2557
+        }
+      ],
+      "ms": 7182,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Dissolving dan solution menjadi penyelesaian, bukan pelarutan/larutan. Kenaikan massa larutan kehilangan istilah kimia yang benar.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "baselineReviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Arah perubahan pada klaim ilmiah berubah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "domain": "statistics",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "baselineTarget": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Terapi A menghasilkan 7 respons dan Terapi B menghasilkan 11 respons. Angka ini tidak dapat dibandingkan dengan benar tanpa mengetahui berapa banyak peserta yang menerima setiap perawatan. Dan penting juga dengan nomer.",
+      "parts": [
+        {
+          "source": "Treatment A produced 7 responses and treatment B produced 11 responses. ",
+          "target": "Terapi A menghasilkan 7 respons dan Terapi B menghasilkan 11 respons.",
+          "ms": 2163
+        },
+        {
+          "source": "These counts cannot be compared fairly without knowing how many participants received each treatment. ",
+          "target": "Angka ini tidak dapat dibandingkan dengan benar tanpa mengetahui berapa banyak peserta yang menerima setiap perawatan.",
+          "ms": 2866
+        },
+        {
+          "source": "The denominator matters as well as the numerator.",
+          "target": "Dan penting juga dengan nomer.",
+          "ms": 1235
+        }
+      ],
+      "ms": 6277,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 1,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Klaim denominator/numerator menjadi Dan penting juga dengan nomer, sehingga kedua besaran dan hubungannya hilang walau 7/11 terjaga.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "baselineReviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah. Periksa kuantor: cakupan pernyataan mungkin berubah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-009",
+      "direction": "en-id",
+      "domain": "statistics",
+      "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article.",
+      "baselineTarget": "Analisis yang digunakan Median karena beberapa nilai ekstrim sangat mempengaruhi rata-rata sampel. Memilih Median tidak menghapus pengamatan tersebut dari dataset. Kedua statistik dilaporkan dalam lampiran dari artikel tersebut.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Analisis menggunakan median karena beberapa nilai ekstrim sangat mempengaruhi sampel medium. Memilih media tidak menghapus perhatikan tersebut dari database. Kedua statistik tersebut dilaporkan dalam lampiran artikel.",
+      "parts": [
+        {
+          "source": "The analysis used the median because a few extreme values strongly affected the sample mean. ",
+          "target": "Analisis menggunakan median karena beberapa nilai ekstrim sangat mempengaruhi sampel medium.",
+          "ms": 2504
+        },
+        {
+          "source": "Choosing the median did not remove those observations from the dataset. ",
+          "target": "Memilih media tidak menghapus perhatikan tersebut dari database.",
+          "ms": 1872
+        },
+        {
+          "source": "Both statistics were reported in the appendix of the article.",
+          "target": "Kedua statistik tersebut dilaporkan dalam lampiran artikel.",
+          "ms": 1534
+        }
+      ],
+      "ms": 5919,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 0
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Sample mean menjadi sampel medium; median menjadi media; observations/data set berubah menjadi perhatikan/database. Pembedaan dua statistik rusak.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "baselineReviewNote": "Rata-rata, median, data tetap disertakan, dan lampiran terjaga. Tata bahasa \"Analisis yang digunakan\" kurang lancar.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-010",
+      "direction": "en-id",
+      "domain": "economics",
+      "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered.",
+      "baselineTarget": "Pajak pada penjual dapat mempengaruhi harga yang dibayarkan oleh pembeli. Kewajiban hukum untuk membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Responsi relatif dari pasokan dan permintaan juga harus dipertimbangkan.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Anggaran penjual dapat mempengaruhi harga yang dibayar oleh pembeli. Kewajiban hukum untuk membayar pajak tidak menentukan siapa yang menanggung beban ekonomi. Jawaban relatif dari penawaran dan permintaan juga harus dipertimbangkan.",
+      "parts": [
+        {
+          "source": "A tax on sellers can affect the price paid by buyers. ",
+          "target": "Anggaran penjual dapat mempengaruhi harga yang dibayar oleh pembeli.",
+          "ms": 2087
+        },
+        {
+          "source": "The legal obligation to pay the tax does not by itself determine who bears its economic burden. ",
+          "target": "Kewajiban hukum untuk membayar pajak tidak menentukan siapa yang menanggung beban ekonomi.",
+          "ms": 2538
+        },
+        {
+          "source": "The relative responsiveness of supply and demand must also be considered.",
+          "target": "Jawaban relatif dari penawaran dan permintaan juga harus dipertimbangkan.",
+          "ms": 2350
+        }
+      ],
+      "ms": 6986,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Tax on sellers menjadi Anggaran penjual dan responsiveness menjadi Jawaban. Sebab perubahan harga dan elastisitas/kepekaan relatif tidak setara.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "baselineReviewNote": "Beban pajak dan respons relatif penawaran-permintaan terjaga; responsi/pasokan kurang baku secara ekonomi.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "domain": "academic-prose",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baselineTarget": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Peneliti meminta para penulis untuk membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Rekaman putih dapat mencerminkan dokumentasi yang tidak lengkap. Tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang tercatat dari acara.",
+      "parts": [
+        {
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. ",
+          "target": "Peneliti meminta para penulis untuk membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi.",
+          "ms": 3235
+        },
+        {
+          "source": "A blank record may reflect incomplete documentation. ",
+          "target": "Rekaman putih dapat mencerminkan dokumentasi yang tidak lengkap.",
+          "ms": 1902
+        },
+        {
+          "source": "It cannot automatically be treated as a recorded absence of the event.",
+          "target": "Tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang tercatat dari acara.",
+          "ms": 2561
+        }
+      ],
+      "ms": 7710,
+      "candidateScores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": false,
+      "candidateReviewNote": "Blank record menjadi rekaman putih, event menjadi acara, namun pembedaan informasi hilang, dokumentasi tidak lengkap dan larangan menyimpulkan absensi masih dapat dipahami. Tidak dinilai lulus mutlak.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "baselineReviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-016",
+      "direction": "id-en",
+      "domain": "mathematics",
+      "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung.",
+      "baselineTarget": "Function continuous at closed intervals reaches maximum value. This theorem does not require function differentiable at all intervals. Maximum value need not occurs at edge.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Continuous function at the closed interval reaches the maximum value. This theorem does not require that the function can be lowered throughout the interval. The maximum value should not occur at the end point.",
+      "parts": [
+        {
+          "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. ",
+          "target": "Continuous function at the closed interval reaches the maximum value.",
+          "ms": 2051
+        },
+        {
+          "source": "Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. ",
+          "target": "This theorem does not require that the function can be lowered throughout the interval.",
+          "ms": 2520
+        },
+        {
+          "source": "Nilai maksimum tidak harus terjadi di titik ujung.",
+          "target": "The maximum value should not occur at the end point.",
+          "ms": 1651
+        }
+      ],
+      "ms": 6238,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Dapat diturunkan menjadi can be lowered. Tidak harus di endpoint menjadi should not, mengubah tidak wajib menjadi larangan.",
+      "baselineCriticalTranslatedErrorAI": true,
+      "baselineScores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "baselineReviewNote": "Di seluruh interval menjadi at all intervals, mengubah cakupan pada satu interval menjadi semua interval.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-018",
+      "direction": "id-en",
+      "domain": "mathematics",
+      "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "baselineTarget": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "The set up to the unpull has the greatest element in the appropriate sequence. Removing the supposition of end changes the problem. The claim is about the sequence of the element, not its physical size.",
+      "parts": [
+        {
+          "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. ",
+          "target": "The set up to the unpull has the greatest element in the appropriate sequence.",
+          "ms": 2637
+        },
+        {
+          "source": "Menghapus asumsi kehinggaan mengubah masalah. ",
+          "target": "Removing the supposition of end changes the problem.",
+          "ms": 1806
+        },
+        {
+          "source": "Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+          "target": "The claim is about the sequence of the element, not its physical size.",
+          "ms": 2330
+        }
+      ],
+      "ms": 6785,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 0,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Himpunan hingga tak kosong menjadi set up to the unpull; finiteness menjadi end. Pernyataan matematika tidak dapat dipertahankan.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "baselineReviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Pembatas hingga/tak hingga pada konsep matematika hilang atau berubah. Periksa negasi: bentuk negatif mungkin berubah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-019",
+      "direction": "id-en",
+      "domain": "chemistry",
+      "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+      "baselineTarget": "Solving sugar in water increases the mass of solution. The evaporation removes some of the water but does not eliminate the soluted sugar. Therefore, the remaining liquids have higher concentration.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Sugar in water increases the mass of the solution. The sweetening removes some of the water but does not remove the soluble sugar. The remaining fluid has a higher concentration.",
+      "parts": [
+        {
+          "source": "Melarutkan gula dalam air meningkatkan massa larutan. ",
+          "target": "Sugar in water increases the mass of the solution.",
+          "ms": 1771
+        },
+        {
+          "source": "Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. ",
+          "target": "The sweetening removes some of the water but does not remove the soluble sugar.",
+          "ms": 2781
+        },
+        {
+          "source": "Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+          "target": "The remaining fluid has a higher concentration.",
+          "ms": 1631
+        }
+      ],
+      "ms": 6197,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Melarutkan hilang dari klaim awal (Sugar in water); penguapan menjadi sweetening. Dua proses kimia salah.",
+      "baselineCriticalTranslatedErrorAI": true,
+      "baselineScores": {
+        "meaning": 0,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "baselineReviewNote": "Melarutkan gula menjadi Solving sugar, istilah proses kimia salah.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "domain": "statistics",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "baselineTarget": "A treatment generates 7 response and treatment B produces 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. The mention is as important as the numerator.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Treatment A generates 7 responses and treatment B generates 11 responses. This number cannot be compared fairly without knowing how many participants receive each treatment. The name is as important as the manufacturer.",
+      "parts": [
+        {
+          "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. ",
+          "target": "Treatment A generates 7 responses and treatment B generates 11 responses.",
+          "ms": 2560
+        },
+        {
+          "source": "Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. ",
+          "target": "This number cannot be compared fairly without knowing how many participants receive each treatment.",
+          "ms": 2502
+        },
+        {
+          "source": "Penyebut sama pentingnya dengan pembilang.",
+          "target": "The name is as important as the manufacturer.",
+          "ms": 1490
+        }
+      ],
+      "ms": 6566,
+      "candidateScores": {
+        "meaning": 0,
+        "completeness": 0,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 1,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Penyebut/pembilang menjadi name/manufacturer. Segmentasi mengembalikan kalimat terakhir yang hilang pada raw paragraph, tetapi isi statistik salah.",
+      "baselineCriticalTranslatedErrorAI": true,
+      "baselineScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 1,
+        "consistency": 1
+      },
+      "baselineReviewNote": "Penyebut menjadi mention. A treatment juga ambigu antara label kelompok A dan artikel bahasa Inggris; angka 7/11 tetap ada.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-024",
+      "direction": "id-en",
+      "domain": "statistics",
+      "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel.",
+      "baselineTarget": "Analyze using median because some extreme values have a profound effect on sample mean. Median selection does not remove the observations from the data set. Both statistics reported in appendix articles.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Analysis uses median because some extreme values greatly affect the sample average. Media selection does not remove such observations from the data group. Both statistics are in the attachment to the article.",
+      "parts": [
+        {
+          "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. ",
+          "target": "Analysis uses median because some extreme values greatly affect the sample average.",
+          "ms": 2632
+        },
+        {
+          "source": "Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. ",
+          "target": "Media selection does not remove such observations from the data group.",
+          "ms": 2058
+        },
+        {
+          "source": "Kedua statistik dilaporkan di lampiran artikel.",
+          "target": "Both statistics are in the attachment to the article.",
+          "ms": 2008
+        }
+      ],
+      "ms": 6710,
+      "candidateScores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 0
+      },
+      "candidateCriticalErrorAI": true,
+      "candidateReviewNote": "Median mula-mula benar, lalu pemilihan median menjadi Media selection. Identitas statistik yang dipilih berubah; other clauses lebih baik.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "baselineReviewNote": "Hubungan ekstrem-rata-rata, alasan median, data tidak dihapus, serta lampiran terjaga; bentuk Analyze dan frasa appendix articles kurang lancar.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-025",
+      "direction": "id-en",
+      "domain": "economics",
+      "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+      "baselineTarget": "Taxes against sellers can affect the price paid by buyers. The legal obligation to pay taxes does not necessarily determine who carries the cost of the economy. The relativeity of the offer and demand should also be considered.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Tax on the seller can affect the price paid by the buyer. The legal obligation to pay taxes does not determine by itself who is responsible for the burden of its economy. The relative sensitivity of supply and demand should also be considered.",
+      "parts": [
+        {
+          "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. ",
+          "target": "Tax on the seller can affect the price paid by the buyer.",
+          "ms": 2181
+        },
+        {
+          "source": "Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. ",
+          "target": "The legal obligation to pay taxes does not determine by itself who is responsible for the burden of its economy.",
+          "ms": 3352
+        },
+        {
+          "source": "Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+          "target": "The relative sensitivity of supply and demand should also be considered.",
+          "ms": 2027
+        }
+      ],
+      "ms": 7569,
+      "candidateScores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": false,
+      "candidateReviewNote": "Relative sensitivity of supply and demand lebih tepat daripada baseline. Burden of its economy masih tidak alami/ambigu untuk economic burden; ini perbaikan lokal, bukan kelulusan keseluruhan.",
+      "baselineCriticalTranslatedErrorAI": true,
+      "baselineScores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "baselineReviewNote": "Beban ekonomi menjadi cost of the economy; kepekaan relatif menjadi relativeity, penawaran menjadi offer. Penjelasan insidensi pajak rusak.",
+      "humanReview": "PENDING"
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "domain": "academic-prose",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baselineTarget": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "The investigator asked the author to distinguish the lost information from the evidence that an event did not occur. Empty notes may reflect incomplete documentation. The recording cannot automatically be considered as the absence of recorded events.",
+      "parts": [
+        {
+          "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. ",
+          "target": "The investigator asked the author to distinguish the lost information from the evidence that an event did not occur.",
+          "ms": 3410
+        },
+        {
+          "source": "Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. ",
+          "target": "Empty notes may reflect incomplete documentation.",
+          "ms": 1895
+        },
+        {
+          "source": "Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+          "target": "The recording cannot automatically be considered as the absence of recorded events.",
+          "ms": 2828
+        }
+      ],
+      "ms": 8145,
+      "candidateScores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "candidateCriticalErrorAI": false,
+      "candidateReviewNote": "Lost information lebih sempit daripada missing information, tetapi negasi, dokumentasi tidak lengkap, dan larangan menyimpulkan absensi dipertahankan. Baseline menolak kasus ini.",
+      "baselineCriticalTranslatedErrorAI": false,
+      "baselineScores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "baselineReviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah.",
+      "humanReview": "PENDING"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+SEMANTIK SETARA — HASIL JURNAL PDF
+
+Buka JURNAL_TERJEMAHAN.md atau JURNAL_BILINGUAL.md dengan editor Markdown.
+Pertahankan folder assets di sebelah dokumen agar gambar terbaca.
+JURNAL_SUMBER.pdf adalah PDF asli; kata sandi PDF tidak disimpan.
+Rumus dengan struktur yang didukung memakai LaTeX. Rumus lain diberi label belum terverifikasi dan citra sumber.
+LAPORAN_QA.md dan LEDGER_BAGIAN.csv menjelaskan bagian gagal, ditolak, atau perlu diperiksa.
+EXPORT_METADATA.json memuat identitas build/model/sumber dan konfigurasi. PROVENANCE.json mempertahankan sumber, koreksi, hasil, identitas, dan diagnosis.
+SHA256SUMS.txt memuat hash dokumen/aset utama.
+Paket tidak dapat diimpor kembali sebagai dokumen; aplikasi hanya menerima PDF. Progres dilanjutkan dari penyimpanan browser yang sama.
+Terjemahan mesin memerlukan tinjauan ilmiah.

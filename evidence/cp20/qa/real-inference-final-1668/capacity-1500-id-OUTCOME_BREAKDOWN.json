@@ -1,0 +1,247 @@
+{
+  "build": {
+    "release": "cp20-1668833ad37c9dd8",
+    "version": "0.20.0",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/1668833ad37c9dd8/"
+  },
+  "fixture": "capacity-1500-id",
+  "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+  "committedPages": 1500,
+  "applicationCounts": {
+    "total": 4500,
+    "translated": 3000,
+    "preserved": 0,
+    "rejected": 1500,
+    "failed": 0,
+    "pending": 0,
+    "review": 1500,
+    "done": 3000,
+    "attempted": 4500
+  },
+  "groups": {
+    "prose": {
+      "total": 1500,
+      "translated": 1500,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "pageHeading": {
+      "total": 1500,
+      "translated": 1500,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "traceFooter": {
+      "total": 1500,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 1500,
+      "failed": 0,
+      "pending": 0
+    },
+    "other": {
+      "total": 0,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    }
+  },
+  "reasons": {
+    "traceFooter | Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.": 1500
+  },
+  "samples": [
+    {
+      "page": 1,
+      "blockId": "p0001-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0001 END",
+      "target": "CP20P0001 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0001 END",
+          "candidateText": "CP20P0001 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "blockId": "p0002-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0002 END",
+      "target": "CP20P0002 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0002 END",
+          "candidateText": "CP20P0002 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "blockId": "p0003-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0003 END",
+      "target": "CP20P0003 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0003 END",
+          "candidateText": "CP20P0003 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "blockId": "p0004-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0004 END",
+      "target": "CP20P0004 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0004 END",
+          "candidateText": "CP20P0004 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "blockId": "p0005-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0005 END",
+      "target": "CP20P0005 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0005 END",
+          "candidateText": "CP20P0005 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "blockId": "p0006-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0006 END",
+      "target": "CP20P0006 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0006 END",
+          "candidateText": "CP20P0006 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "blockId": "p0007-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0007 END",
+      "target": "CP20P0007 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0007 END",
+          "candidateText": "CP20P0007 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "blockId": "p0008-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0008 END",
+      "target": "CP20P0008 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0008 END",
+          "candidateText": "CP20P0008 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "blockId": "p0009-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0009 END",
+      "target": "CP20P0009 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0009 END",
+          "candidateText": "CP20P0009 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "blockId": "p0010-b0003",
+      "category": "traceFooter",
+      "outcome": "rejected",
+      "source": "CP20P0010 END",
+      "target": "CP20P0010 END",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+          "segmentSource": "CP20P0010 END",
+          "candidateText": "CP20P0010 end",
+          "rawCandidate": "<sslit0/> end"
+        }
+      ]
+    }
+  ],
+  "method": "Descriptive breakdown of actual application outcomes using the declared synthetic fixture trace schema. English END footer is deliberately reported separately as mixed-language trace metadata. Rejected is never reclassified as success. No semantic accuracy score is inferred; translated prose still requires independent semantic review.",
+  "humanApprovals": 0
+}

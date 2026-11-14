@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+  "direction": "en-id",
+  "source": "official complementary OPUS archive (separate from user supplied source)",
+  "sourceArchiveSha256": "0ec904c9c504ee24cb03c1059194b069e7e39fc5089a008dd2a34ec9056f0b4d",
+  "weightsSha256": "b26de8ffd141b0996bff4922a0c30b0458eb26e7048151f9639b51df9d5f87f7",
+  "runtime": "onnxruntime-web/WASM",
+  "format": "ONNX opset17 per-channel signed int8 weight quantization",
+  "vocabSize": 54796,
+  "padTokenId": 54795,
+  "eosTokenId": 0,
+  "unkTokenId": 1,
+  "maxInputTokens": 512,
+  "maxOutputTokens": 512,
+  "inferenceDefault": "greedy",
+  "sourceDecoderBeamSize": 6,
+  "layerNormEpsilon": 0.000001,
+  "positionFormula": "Marian v1.8.2: sin/cos(position * exp(-i*log(10000)/(d_model/2-1)))",
+  "license": "CC-BY-4.0 (archive LICENSE)",
+  "parityReport": "parity-en-id.json",
+  "files": [
+    {
+      "name": "encoder_q8.onnx",
+      "size": 47701389,
+      "sha256": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721",
+      "parts": [
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part000.gz",
+          "size": 11378532,
+          "sha256": "372b5946dd9e0bef93a16bc90506c984764e40c936d6f291db68c24c4adc2e93",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "bba27b724e94515f368f8b22df77888a88c1d74059c55dc679ff2ae4cfc2a90e"
+        },
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part001.gz",
+          "size": 11410735,
+          "sha256": "ed65d0475698cc9fb039187e75f0b0bc51885efd4a126743322c57d40f687bf2",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "5536519a1c9321035d8200cecba4c2d96ce8f1fc1b532da43277ed2b83ef241a"
+        },
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part002.gz",
+          "size": 12864169,
+          "sha256": "bc61ae7b3c634f41942e33e20ed08c388e508d50fdb220733ff45e570b5e0309",
+          "encoding": "gzip",
+          "decodedSize": 14146957,
+          "decodedSha256": "b122763ff32f8ab4da656e7ee32f85b0f1a722dc5a0d2aeee67cb8458230bb89"
+        }
+      ]
+    },
+    {
+      "name": "decoder_q8.onnx",
+      "size": 82870344,
+      "sha256": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6",
+      "parts": [
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part000.gz",
+          "size": 11366970,
+          "sha256": "1986f9c3e39e37a65a108442f94e6415340b1269b56fa009523268b868990d5d",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "0033b46ecf7df6b22636830c176ed5037c9149783139fa858a587d31b95c6341"
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part001.gz",
+          "size": 11327128,
+          "sha256": "6f9eb67f7b941594e96e4d642f55461f7beabf7e60427c714578cd506b5c8373",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "fe5d76f3f51ab86a40fc6a0112e641c8f0930672468828e3e772afd08188c361"
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part002.gz",
+          "size": 15344608,
+          "sha256": "ecbb2b17b32f22aee75d5b0eb4a042d3fe4ddf6860e1e9b3be1db837336fd087",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "b80046489e95a741f449bc22bda037fd41ad6ae3003bd19d2196e01172d9223d"
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part003.gz",
+          "size": 14103302,
+          "sha256": "a4b9feee79759cad701db7a4925ec748823a7746d475d3dfa87a28fd882ccf79",
+          "encoding": "gzip",
+          "decodedSize": 16777216,
+          "decodedSha256": "62f89694db21e99fef6edcb39d8d14838e5ceb76dda9005228abbbd7dbb1af48"
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part004.gz",
+          "size": 12864686,
+          "sha256": "438dd521ab5405a19b69c52ef8c4a8b389395188ac54e73b014811d3cb691f93",
+          "encoding": "gzip",
+          "decodedSize": 15761480,
+          "decodedSha256": "c1b12260d0d0f9d97975c03b3683f9bf0d67cef6799c34e24b4e1fdf831157e6"
+        }
+      ]
+    },
+    {
+      "name": "source.spm",
+      "size": 795925,
+      "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "parts": [
+        {
+          "path": "/models/en-id/source.spm.part000",
+          "size": 795925,
+          "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+          "encoding": "identity",
+          "decodedSize": 795925,
+          "decodedSha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+        }
+      ]
+    },
+    {
+      "name": "target.spm",
+      "size": 800687,
+      "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "parts": [
+        {
+          "path": "/models/en-id/target.spm.part000",
+          "size": 800687,
+          "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+          "encoding": "identity",
+          "decodedSize": 800687,
+          "decodedSha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+        }
+      ]
+    },
+    {
+      "name": "vocab.json",
+      "size": 1366984,
+      "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "parts": [
+        {
+          "path": "/models/en-id/vocab.json.part000",
+          "size": 1366984,
+          "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+          "encoding": "identity",
+          "decodedSize": 1366984,
+          "decodedSha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+        }
+      ]
+    },
+    {
+      "name": "config.json",
+      "size": 958,
+      "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "parts": [
+        {
+          "path": "/models/en-id/config.json.part000",
+          "size": 958,
+          "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+          "encoding": "identity",
+          "decodedSize": 958,
+          "decodedSha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+        }
+      ]
+    },
+    {
+      "name": "LICENSE",
+      "size": 18652,
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "parts": [
+        {
+          "path": "/models/en-id/LICENSE.part000",
+          "size": 18652,
+          "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+          "encoding": "identity",
+          "decodedSize": 18652,
+          "decodedSha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+        }
+      ]
+    },
+    {
+      "name": "ORIGINAL_MODEL_README.md",
+      "size": 601,
+      "sha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "parts": [
+        {
+          "path": "/models/en-id/ORIGINAL_MODEL_README.md.part000",
+          "size": 601,
+          "sha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+          "encoding": "identity",
+          "decodedSize": 601,
+          "decodedSha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3"
+        }
+      ]
+    }
+  ],
+  "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+}

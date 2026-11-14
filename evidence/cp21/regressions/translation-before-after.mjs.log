@@ -1,0 +1,47 @@
+[
+  {
+    "id": "TR-02-μM",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "TR-02-nM",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "TR-02-Ca",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "TR-04-binding",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "OUT-03-empty-set-letter",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "OUT-03-empty-set-degree",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "OUT-01-italic-x",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "OUT-04-slug",
+    "beforeDetected": true,
+    "afterDetected": true
+  },
+  {
+    "id": "OUT-01-absolute-var",
+    "beforeDetected": true,
+    "afterDetected": true
+  }
+]

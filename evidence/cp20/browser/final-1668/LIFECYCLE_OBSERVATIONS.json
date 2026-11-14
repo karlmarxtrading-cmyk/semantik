@@ -1,0 +1,55 @@
+{
+  "build": "cp20-1668833ad37c9dd8",
+  "method": "Observed actual Chrome consumer controls via CUA",
+  "events": [
+    {
+      "test": "Pause while translating1001-pagePDF",
+      "status": "PASS",
+      "savedPages": 124,
+      "blocks": 372,
+      "translated": 369,
+      "pending": 3
+    },
+    {
+      "test": "ActualpartialMDdownload",
+      "status": "PASS",
+      "file": "PAUSE_RELOAD_124_PAGES_PARTIAL.md"
+    },
+    {
+      "test": "Reloadandresume",
+      "status": "PASS",
+      "restoredPages": 124,
+      "restoredBlocks": 372,
+      "sourceReselectionRequired": false
+    },
+    {
+      "test": "Actual second-tab resume attempt while primary translating",
+      "status": "PASS",
+      "observedMessage": "Progres sedang dibuka di tab lain. Tutup tab tersebut lalu coba kembali.",
+      "primaryContinuedPage": 135
+    },
+    {
+      "test": "Resume completed all1001 pages and actualMD downloaded",
+      "status": "PASS",
+      "pages": 1001,
+      "blocks": 3003
+    },
+    {
+      "test": "Automatic quota recovery in actual consumer browser",
+      "status": "PASS",
+      "cause": "QuotaExceededError",
+      "at": "2026-11-13T07:36:08.587Z",
+      "page": 252,
+      "removedPublicModelEntries": 5,
+      "atomicRetryCount": 1,
+      "succeeded": true,
+      "sourceAndProgressRetained": true,
+      "modelWorkerContinued": true,
+      "offlineWarningVisible": true
+    }
+  ],
+  "limits": [
+    "Physicalsleep/wake/processkillnotrun",
+    "Executionbuild1668; final8c adds ETA/history fixes with outputparitytests."
+  ]
+}

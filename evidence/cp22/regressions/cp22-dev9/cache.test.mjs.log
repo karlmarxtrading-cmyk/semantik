@@ -1,0 +1,88 @@
+TAP version 13
+# Subtest: V1 refuses V2 bytes for uncached lazy module; no mixed execution
+ok 1 - V1 refuses V2 bytes for uncached lazy module; no mixed execution
+  ---
+  duration_ms: 20.027779
+  type: 'test'
+  ...
+# Subtest: verified V1 cache remains V1 while V2 origin exists, then offline
+ok 2 - verified V1 cache remains V1 while V2 origin exists, then offline
+  ---
+  duration_ms: 6.440993
+  type: 'test'
+  ...
+# Subtest: corrupt cache evicted; valid network verified and reused offline
+ok 3 - corrupt cache evicted; valid network verified and reused offline
+  ---
+  duration_ms: 3.742935
+  type: 'test'
+  ...
+# Subtest: cache denial and quota failure preserve verified online reading
+ok 4 - cache denial and quota failure preserve verified online reading
+  ---
+  duration_ms: 5.620035
+  type: 'test'
+  ...
+# Subtest: initial shell contains no heavy parser OCR engine or model
+ok 5 - initial shell contains no heavy parser OCR engine or model
+  ---
+  duration_ms: 0.225384
+  type: 'test'
+  ...
+# Subtest: all manifest assets match actual final dist bytes
+ok 6 - all manifest assets match actual final dist bytes
+  ---
+  duration_ms: 167.231496
+  type: 'test'
+  ...
+# Subtest: rollback activation retains prior release caches
+ok 7 - rollback activation retains prior release caches
+  ---
+  duration_ms: 1.020688
+  type: 'test'
+  ...
+# Subtest: model denied cache preserves bytes with honest status
+ok 8 - model denied cache preserves bytes with honest status
+  ---
+  duration_ms: 3.02219
+  type: 'test'
+  ...
+# Subtest: model quota cache preserves bytes with honest status
+ok 9 - model quota cache preserves bytes with honest status
+  ---
+  duration_ms: 2.231834
+  type: 'test'
+  ...
+# Subtest: model persistent cache preserves bytes with honest status
+ok 10 - model persistent cache preserves bytes with honest status
+  ---
+  duration_ms: 4.013936
+  type: 'test'
+  ...
+# Subtest: session fallback still rejects bad model hash
+ok 11 - session fallback still rejects bad model hash
+  ---
+  duration_ms: 1.526691
+  type: 'test'
+  ...
+# Subtest: model shards bypass static SW and keep engine-owned verification
+ok 12 - model shards bypass static SW and keep engine-owned verification
+  ---
+  duration_ms: 0.995528
+  type: 'test'
+  ...
+# Subtest: unknown release-scoped asset fails closed instead of mixing versions
+ok 13 - unknown release-scoped asset fails closed instead of mixing versions
+  ---
+  duration_ms: 1.455609
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 223.105446

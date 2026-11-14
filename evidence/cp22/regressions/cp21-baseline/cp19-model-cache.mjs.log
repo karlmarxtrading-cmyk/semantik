@@ -1,0 +1,15 @@
+[
+  {
+    name: 'identical model bytes across two release paths fetch exactly once',
+    pass: true
+  },
+  { name: 'changed hash never accepts earlier content', pass: true },
+  {
+    name: 'legacy bytes migrate only after verification, without deleting rollback assets',
+    pass: true
+  },
+  {
+    name: 'corrupted content-addressed cache cannot suppress verified network retrieval',
+    pass: true
+  }
+]

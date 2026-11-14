@@ -1,0 +1,15 @@
+{
+  "build": "cp20-8c643bea6962471f",
+  "at": "2026-11-13T08:40:10.765Z",
+  "input": "light-and-matter.pdf",
+  "bytes": 85937593,
+  "pages": 1062,
+  "method": "Actual consumer browser filechooser and Translate click",
+  "status": "FAIL_STORAGE_IN_THIS_BROWSER",
+  "observed": [
+    "Browser menolak penulisan karena kuota penyimpanan (QuotaExceededError).",
+    "82.0 MiB · 1062 halaman · BELUM TERSIMPAN — unduh sebelum menutup tab",
+    "Dokumen panjang memerlukan penyimpanan lokal dan penguncian tab. Pulihkan izin atau ruang penyimpanan, lalu coba simpan kembali sebelum melanjutkan."
+  ],
+  "scope": "PDF selected/page count read; source could not be persisted in this cloud browser. Full translation not started. Not a universal byte cap or physical-device result."
+}

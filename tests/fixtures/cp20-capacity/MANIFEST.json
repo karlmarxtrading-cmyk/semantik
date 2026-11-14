@@ -1,0 +1,72 @@
+{
+  "fixtureKind": "AI-authored synthetic capacity fixtures; not semantic gold standard",
+  "license": "CC0 original text; embedded DejaVu license retained by project",
+  "files": [
+    {
+      "file": "capacity-300-en.pdf",
+      "pages": 300,
+      "language": "en",
+      "rich": false,
+      "bytes": 248206,
+      "sha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+      "sourceCharacters": 70347,
+      "uniqueProseParagraphs": 300,
+      "traceManifest": "capacity-300-en.json"
+    },
+    {
+      "file": "capacity-301-en.pdf",
+      "pages": 301,
+      "language": "en",
+      "rich": false,
+      "bytes": 248887,
+      "sha256": "c9779437ea9d9378e750379575800d24cf0a5f9da9889fa205fb2c358e9ffe2f",
+      "sourceCharacters": 70581,
+      "uniqueProseParagraphs": 301,
+      "traceManifest": "capacity-301-en.json"
+    },
+    {
+      "file": "capacity-1000-en.pdf",
+      "pages": 1000,
+      "language": "en",
+      "rich": false,
+      "bytes": 731237,
+      "sha256": "803d4001dbe50d5f796097c5e0e5ec397a542b8eafecf320cc0fcf32d961977b",
+      "sourceCharacters": 234847,
+      "uniqueProseParagraphs": 1000,
+      "traceManifest": "capacity-1000-en.json"
+    },
+    {
+      "file": "capacity-1001-en.pdf",
+      "pages": 1001,
+      "language": "en",
+      "rich": false,
+      "bytes": 731923,
+      "sha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "sourceCharacters": 235081,
+      "uniqueProseParagraphs": 1001,
+      "traceManifest": "capacity-1001-en.json"
+    },
+    {
+      "file": "capacity-1500-id.pdf",
+      "pages": 1500,
+      "language": "id",
+      "rich": false,
+      "bytes": 1063857,
+      "sha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "sourceCharacters": 337571,
+      "uniqueProseParagraphs": 1500,
+      "traceManifest": "capacity-1500-id.json"
+    },
+    {
+      "file": "capacity-1001-en-rich.pdf",
+      "pages": 1001,
+      "language": "en",
+      "rich": true,
+      "bytes": 1910126,
+      "sha256": "a4d651a2cfce36a5e99c1831886816560a451f80cc5a4664cffc73be28d9cc5e",
+      "sourceCharacters": 2525945,
+      "uniqueProseParagraphs": 13013,
+      "traceManifest": "capacity-1001-en-rich.json"
+    }
+  ]
+}

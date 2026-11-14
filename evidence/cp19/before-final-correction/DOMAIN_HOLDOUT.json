@@ -1,0 +1,700 @@
+{
+  "build": {
+    "release": "cp19-293d71e3e56f1283",
+    "version": "0.19.0",
+    "sourceHash": "293d71e3e56f1283c748ad0db7969904c3c6cc0757b7298d2c77b2403e3b097a",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/293d71e3e56f1283/"
+  },
+  "method": "Actual final-dist local WASM/ONNX; new AI-authored bilingual controls after patch freeze, no tuning using these outputs, no human approval.",
+  "humanApproval": false,
+  "rows": [
+    {
+      "id": "CP19-H-001",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A necessary condition is not always a sufficient condition.",
+      "reference": "Syarat yang perlu tidak selalu merupakan syarat yang cukup.",
+      "text": "Kondisi yang diperlukan tidak selalu kondisi yang cukup.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 9,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A necessary condition is not always a sufficient condition."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 543,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-002",
+      "domain": "physics",
+      "direction": "en-id",
+      "source": "The wavelength increases while the frequency decreases.",
+      "reference": "Panjang gelombang bertambah sedangkan frekuensi berkurang.",
+      "text": "Panjang gelombang meningkat sementara frekuensi menurun.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 10,
+      "outputTokens": 7,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The wavelength increases while the frequency decreases."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 196,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-003",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "The equilibrium constant depends on temperature, not on the initial concentration.",
+      "reference": "Tetapan kesetimbangan bergantung pada suhu, bukan pada konsentrasi awal.",
+      "text": "Keseimbangan konstan tergantung pada suhu, bukan pada konsentrasi awal.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 14,
+      "outputTokens": 13,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The equilibrium constant depends on temperature, not on the initial concentration."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 436,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-004",
+      "domain": "biology",
+      "direction": "en-id",
+      "source": "The mutation changes gene expression without changing the protein sequence.",
+      "reference": "Mutasi mengubah ekspresi gen tanpa mengubah urutan protein.",
+      "text": "Mutasi mengubah ekspresi gen tanpa mengubah urutan protein.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 10,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The mutation changes gene expression without changing the protein sequence."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 378,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-005",
+      "domain": "medicine",
+      "direction": "en-id",
+      "source": "The confidence interval includes no effect; a benefit has not been established.",
+      "reference": "Interval kepercayaan mencakup tidak adanya efek; manfaat belum terbukti.",
+      "text": "interval kepercayaan tidak mengandung efek; sebuah manfaat belum didirikan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 19,
+      "outputTokens": 14,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The confidence interval includes no effect; a benefit has not been established."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 488,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-006",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "The median remained stable even though the variance increased.",
+      "reference": "Median tetap stabil meskipun varians meningkat.",
+      "text": "Median tetap stabil meskipun varians meningkat.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 10,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The median remained stable even though the variance increased."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 367,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-007",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "Higher nominal wages do not necessarily imply higher purchasing power.",
+      "reference": "Upah nominal yang lebih tinggi tidak selalu berarti daya beli yang lebih tinggi.",
+      "text": "Upah nominal yang lebih tinggi tidak selalu menyiratkan daya beli yang lebih tinggi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 16,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Higher nominal wages do not necessarily imply higher purchasing power."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 609,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-008",
+      "domain": "social-science",
+      "direction": "en-id",
+      "source": "Self-reported intentions may differ from observed behavior.",
+      "reference": "Niat yang dilaporkan sendiri mungkin berbeda dari perilaku yang diamati.",
+      "text": "Niat yang dilaporkan sendiri mungkin berbeda dari perilaku yang diamati.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Self-reported intentions may differ from observed behavior."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 441,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-009",
+      "domain": "research-methods",
+      "direction": "en-id",
+      "source": "Participants were allocated randomly, but outcome assessors knew the allocation.",
+      "reference": "Peserta dialokasikan secara acak, tetapi penilai luaran mengetahui alokasinya.",
+      "text": "Peserta dialokasikan secara acak, tapi hasil pemeriksaan tahu alokasi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 19,
+      "outputTokens": 15,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Participants were allocated randomly, but outcome assessors knew the allocation."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 457,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-010",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Syarat yang perlu tidak selalu merupakan syarat yang cukup.",
+      "reference": "A necessary condition is not always a sufficient condition.",
+      "text": "Required conditions are not always sufficient.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 8,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Syarat yang perlu tidak selalu merupakan syarat yang cukup."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 337,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-011",
+      "domain": "physics",
+      "direction": "id-en",
+      "source": "Panjang gelombang bertambah sedangkan frekuensi berkurang.",
+      "reference": "The wavelength increases while the frequency decreases.",
+      "text": "Wave length is increasing while frequency is decreasing.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 8,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Panjang gelombang bertambah sedangkan frekuensi berkurang."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 234,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-012",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Tetapan kesetimbangan bergantung pada suhu, bukan pada konsentrasi awal.",
+      "reference": "The equilibrium constant depends on temperature, not on the initial concentration.",
+      "text": "The balance of balance depends on temperature, not early concentration.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 15,
+      "outputTokens": 12,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Tetapan kesetimbangan bergantung pada suhu, bukan pada konsentrasi awal."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 279,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-013",
+      "domain": "biology",
+      "direction": "id-en",
+      "source": "Mutasi mengubah ekspresi gen tanpa mengubah urutan protein.",
+      "reference": "The mutation changes gene expression without changing the protein sequence.",
+      "text": "Mutation changes gene expression without changing protein sequence.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Mutasi mengubah ekspresi gen tanpa mengubah urutan protein."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 245,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-014",
+      "domain": "medicine",
+      "direction": "id-en",
+      "source": "Interval kepercayaan mencakup tidak adanya efek; manfaat belum terbukti.",
+      "reference": "The confidence interval includes no effect; a benefit has not been established.",
+      "text": "Confidence interval includes no effect; benefits have not been proven.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 15,
+      "outputTokens": 16,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Interval kepercayaan mencakup tidak adanya efek; manfaat belum terbukti."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 390,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-015",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Median tetap stabil meskipun varians meningkat.",
+      "reference": "The median remained stable even though the variance increased.",
+      "text": "Medians remain stable despite the increasing variants.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Median tetap stabil meskipun varians meningkat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 249,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-016",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Upah nominal yang lebih tinggi tidak selalu berarti daya beli yang lebih tinggi.",
+      "reference": "Higher nominal wages do not necessarily imply higher purchasing power.",
+      "text": "Higher wages do not necessarily mean higher purchases.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 17,
+      "outputTokens": 10,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Upah nominal yang lebih tinggi tidak selalu berarti daya beli yang lebih tinggi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 253,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-017",
+      "domain": "social-science",
+      "direction": "id-en",
+      "source": "Niat yang dilaporkan sendiri mungkin berbeda dari perilaku yang diamati.",
+      "reference": "Self-reported intentions may differ from observed behavior.",
+      "text": "The intended self - reported may differ from observed behavior.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 12,
+      "outputTokens": 11,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Niat yang dilaporkan sendiri mungkin berbeda dari perilaku yang diamati."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 398,
+      "humanVerdict": "PENDING"
+    },
+    {
+      "id": "CP19-H-018",
+      "domain": "research-methods",
+      "direction": "id-en",
+      "source": "Peserta dialokasikan secara acak, tetapi penilai luaran mengetahui alokasinya.",
+      "reference": "Participants were allocated randomly, but outcome assessors knew the allocation.",
+      "text": "Participals are randomly allocated, but external assessments know their allocation.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 19,
+      "outputTokens": 19,
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Peserta dialokasikan secara acak, tetapi penilai luaran mengetahui alokasinya."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 486,
+      "humanVerdict": "PENDING"
+    }
+  ]
+}

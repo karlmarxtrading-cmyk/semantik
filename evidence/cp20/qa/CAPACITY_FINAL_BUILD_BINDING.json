@@ -1,0 +1,81 @@
+{
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "method": "Unchanged-module evidence reuse. All source bytes touched by each declared parser test must match the current packaged release. This is not a new browser, translation, storage, or semantic test.",
+  "rows": [
+    {
+      "name": "capacity-parser",
+      "evidence": "evidence/cp20/qa/capacity-parser-final/RESULTS.json",
+      "status": "PASS",
+      "originalPassed": true,
+      "modules": [
+        {
+          "file": "pdf-reader.js",
+          "testedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "packagedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "pass": true
+        },
+        {
+          "file": "layout.js",
+          "testedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "packagedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "pass": true
+        },
+        {
+          "file": "math-geometry.js",
+          "testedSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+          "packagedSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "input-byte-limit",
+      "evidence": "evidence/cp20/qa/byte-limit.json",
+      "status": "PASS",
+      "originalPassed": true,
+      "modules": [
+        {
+          "file": "pdf-reader.js",
+          "testedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "packagedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "pass": true
+        },
+        {
+          "file": "layout.js",
+          "testedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "packagedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "references-real-parser",
+      "evidence": "evidence/cp20/qa/reference-real-parser.json",
+      "status": "PASS",
+      "originalPassed": true,
+      "modules": [
+        {
+          "file": "pdf-reader.js",
+          "testedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "packagedSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+          "pass": true
+        },
+        {
+          "file": "layout.js",
+          "testedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "packagedSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+          "pass": true
+        }
+      ]
+    }
+  ]
+}

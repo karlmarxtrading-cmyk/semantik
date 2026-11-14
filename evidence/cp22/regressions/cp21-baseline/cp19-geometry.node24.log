@@ -1,0 +1,129 @@
+Warning: Please use the `legacy` build in Node.js environments.
+{
+  "scope": "Actual PDF.js extraction + geometry reconstruction; independent synthetic PDF controls; explicit validator/geometry mutations. No browser, OCR, human review, or rendered-LaTeX equivalence claim.",
+  "generatedAt": "2026-11-14T00:02:59.154Z",
+  "moduleSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+  "pdfjsVersion": "6.2.108",
+  "inputs": [
+    {
+      "path": "/home/claude/w/QA_A/cp21/audit/evidence/pdf_math/mathematics_fixture.pdf",
+      "sha256": "f66a404b56293dc093d9ecb5c7dbe9b845df0467bec5134761dd9c8dec67e558"
+    },
+    {
+      "path": "/home/claude/w/QA_A/cp21/research-math/independent-controls.pdf",
+      "sha256": "92c02fa4cd8c8c0e6a3b4609d2eddf35e532aafda7e8ea3f67745af0cee47417"
+    }
+  ],
+  "passed": 27,
+  "failed": 0,
+  "results": [
+    {
+      "name": "actual-audit-expression-1",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-2",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-3",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-4",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-5",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-6",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-7",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-audit-expression-8",
+      "status": "PASS"
+    },
+    {
+      "name": "audit-no-header-or-footer-consumed",
+      "status": "PASS"
+    },
+    {
+      "name": "audit-every-consumed-id-exists-once",
+      "status": "PASS"
+    },
+    {
+      "name": "audit-actual-vector-provenance",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-1",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-2",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-3",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-4",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-5",
+      "status": "PASS"
+    },
+    {
+      "name": "independent-transformed-PDF-6",
+      "status": "PASS"
+    },
+    {
+      "name": "unbounded-radical-never-guessed",
+      "status": "PASS"
+    },
+    {
+      "name": "prose-with-inline-value-not-claimed-as-display",
+      "status": "PASS"
+    },
+    {
+      "name": "removed-fraction-line-does-not-yield-verified-flattened-equation",
+      "status": "PASS"
+    },
+    {
+      "name": "unresolved-curve-marks-nearby-formula-unverified",
+      "status": "PASS"
+    },
+    {
+      "name": "scale-translation-invariance",
+      "status": "PASS"
+    },
+    {
+      "name": "compact-Unicode-superscripts-subscripts-and-primes",
+      "status": "PASS"
+    },
+    {
+      "name": "empty-set-never-rewritten-to-letter-or-degree",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown-symbols-are-not-verified",
+      "status": "PASS"
+    },
+    {
+      "name": "PDF-text-LaTeX-injection-is-not-trusted",
+      "status": "PASS"
+    },
+    {
+      "name": "rotated-math-never-claimed-verified",
+      "status": "PASS"
+    }
+  ]
+}

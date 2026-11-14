@@ -1,0 +1,292 @@
+{
+  "kind": "real-browser-export",
+  "startedAt": "2026-11-11T19:29:23.309Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "name": "ZIP library remains lazy before export",
+      "pass": true,
+      "detail": [
+        "http://127.0.0.1:8765/tests/engine-browser.css",
+        "http://127.0.0.1:8765/tests/export-browser.js",
+        "http://127.0.0.1:8765/app/export.js",
+        "http://127.0.0.1:8765/app/pdf-reader.js",
+        "http://127.0.0.1:8765/app/layout.js"
+      ]
+    },
+    {
+      "name": "Source export excludes translated content",
+      "pass": true
+    },
+    {
+      "name": "Translation export excludes translated block source",
+      "pass": true
+    },
+    {
+      "name": "Bilingual export contains explicit source and target",
+      "pass": true
+    },
+    {
+      "name": "Incomplete job cannot be labeled complete",
+      "pass": true
+    },
+    {
+      "name": "Missing target is labeled and retained",
+      "pass": true
+    },
+    {
+      "name": "Empty target is labeled and source retained",
+      "pass": true
+    },
+    {
+      "name": "Formula and table bytes remain literal",
+      "pass": true
+    },
+    {
+      "name": "Single Markdown gives visual-asset fallback notice",
+      "pass": true
+    },
+    {
+      "name": "Inline notation preserves backslash and underscore",
+      "pass": true,
+      "detail": "Notation ` $\\alpha_i^2$ ` and ` \\(x_i < 5\\) `."
+    },
+    {
+      "name": "Multiline display notation remains literal",
+      "pass": true
+    },
+    {
+      "name": "Raw HTML is escaped in prose and metadata",
+      "pass": true
+    },
+    {
+      "name": "Markdown links cannot become active injected links",
+      "pass": true
+    },
+    {
+      "name": "No injected script runs",
+      "pass": true
+    },
+    {
+      "name": "QA explicitly disclaims semantic verification",
+      "pass": true
+    },
+    {
+      "name": "QA counts empty and missing targets as unfinished",
+      "pass": true
+    },
+    {
+      "name": "Original Markdown preserves immutable OCR extraction",
+      "pass": true
+    },
+    {
+      "name": "Original Markdown records that source correction exists",
+      "pass": true
+    },
+    {
+      "name": "Bilingual separates original, corrected source, and target",
+      "pass": true
+    },
+    {
+      "name": "QA and ledger retain source correction timestamp",
+      "pass": true
+    },
+    {
+      "name": "Corrected formula text is distinct from original PDF image",
+      "pass": true
+    },
+    {
+      "name": "CSV formula prefixes including whitespace are neutralized",
+      "pass": true,
+      "detail": "\"id\",\"halaman\",\"jenis\",\"sumber\",\"bbox\",\"status\",\"item_sumber\",\"catatan\",\"ditinjau_pengguna\",\"diubah_pengguna\",\"sumber_dikoreksi\",\"waktu_koreksi_sumber\"\r\n\"'=1+1\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'=1+1\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'+SUM(A1)\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'+SUM(A1)\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'-1+2\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'-1+2\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'@SUM(A1)\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'@SUM(A1)\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'  =1+1\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'  =1+1\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'\t=1+1\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'\t=1+1\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'\r=1+1\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'\r=1+1\",\"\",\"false\",\"\",\"false\",\"\"\r\n\"'\n=1+1\",\"1\",\"paragraph\",\"digital\",\"10 20 230 80\",\"translated\",\"'\n=1+1\",\"\",\"false\",\"\",\"false\",\"\""
+    },
+    {
+      "name": "ZIP has PK signature",
+      "pass": true,
+      "detail": {
+        "bytes": 48943,
+        "type": "application/zip"
+      }
+    },
+    {
+      "name": "ZIP progress reaches 100%",
+      "pass": true,
+      "detail": {
+        "last": 100
+      }
+    },
+    {
+      "name": "ZIP file tree is exact",
+      "pass": true,
+      "detail": [
+        "BACA_DULU.txt",
+        "JURNAL_ASLI.md",
+        "JURNAL_BILINGUAL.md",
+        "JURNAL_SUMBER.pdf",
+        "JURNAL_TERJEMAHAN.md",
+        "LAPORAN_QA.md",
+        "LEDGER_BAGIAN.csv",
+        "SHA256SUMS.txt",
+        "assets/figure.png",
+        "assets/formula.png",
+        "assets/page-0001.png",
+        "assets/table.png"
+      ]
+    },
+    {
+      "name": "Original PDF bytes and SHA-256 are identical",
+      "pass": true,
+      "detail": {
+        "expected": "902f5bdf1f9cf3dd026d5e1241f8f97d09c958c8b0d8c5f8e2c58c6fbffe4e06",
+        "actual": "902f5bdf1f9cf3dd026d5e1241f8f97d09c958c8b0d8c5f8e2c58c6fbffe4e06"
+      }
+    },
+    {
+      "name": "All main document and asset hashes verify",
+      "pass": true,
+      "detail": [
+        {
+          "name": "JURNAL_ASLI.md",
+          "valid": true
+        },
+        {
+          "name": "JURNAL_TERJEMAHAN.md",
+          "valid": true
+        },
+        {
+          "name": "JURNAL_BILINGUAL.md",
+          "valid": true
+        },
+        {
+          "name": "LAPORAN_QA.md",
+          "valid": true
+        },
+        {
+          "name": "LEDGER_BAGIAN.csv",
+          "valid": true
+        },
+        {
+          "name": "JURNAL_SUMBER.pdf",
+          "valid": true
+        },
+        {
+          "name": "assets/page-0001.png",
+          "valid": true
+        },
+        {
+          "name": "assets/formula.png",
+          "valid": true
+        },
+        {
+          "name": "assets/table.png",
+          "valid": true
+        },
+        {
+          "name": "assets/figure.png",
+          "valid": true
+        }
+      ]
+    },
+    {
+      "name": "All Markdown image links resolve in ZIP",
+      "pass": true,
+      "detail": [
+        "assets/formula.png",
+        "assets/table.png",
+        "assets/figure.png",
+        "assets/page-0001.png"
+      ]
+    },
+    {
+      "name": "CSV UTF-8 BOM is present",
+      "pass": true
+    },
+    {
+      "name": "ZIP filename never uses hostile source filename",
+      "pass": true
+    },
+    {
+      "name": "Export package does not promise JSON/ZIP reimport",
+      "pass": true
+    },
+    {
+      "name": "Reject asset path ../outside.png",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path assets/../outside.png",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path assets/..",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path /assets/a.png",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path assets/a.html",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path assets/%2e%2e.png",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject asset path assets/a\\b.png",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject duplicate asset paths",
+      "pass": true,
+      "detail": "Aset ekspor tidak valid atau berulang."
+    },
+    {
+      "name": "Reject missing referenced visual asset",
+      "pass": true,
+      "detail": "Referensi aset visual hilang atau tidak valid."
+    },
+    {
+      "name": "Reject ZIP without original PDF",
+      "pass": true,
+      "detail": "PDF sumber tidak tersedia. Buka kembali PDF sebelum membuat paket lengkap."
+    },
+    {
+      "name": "Reject JSON pretending to be export source PDF",
+      "pass": true,
+      "detail": "Berkas sumber bukan PDF yang valid."
+    },
+    {
+      "name": "Reject orphan block instead of dropping it",
+      "pass": true,
+      "detail": "Bagian dokumen tidak memiliki halaman sumber yang valid."
+    },
+    {
+      "name": "Public PDF validator rejects JSON import",
+      "pass": true,
+      "detail": "Hanya dokumen PDF (.pdf) yang dapat dibuka."
+    },
+    {
+      "name": "Public PDF validator rejects renamed JSON",
+      "pass": true,
+      "detail": "Isi berkas bukan PDF yang valid; mengganti ekstensi berkas tidak cukup."
+    },
+    {
+      "name": "Export contains no JSON user document",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T19:29:23.382Z",
+  "passed": 46,
+  "failed": 0,
+  "complete": true
+}

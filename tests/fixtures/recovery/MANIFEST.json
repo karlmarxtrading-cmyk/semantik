@@ -1,0 +1,18 @@
+[
+  {
+    "file": "RECOVERY_3_PAGES_ID.pdf",
+    "source": "recovery/work/tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+    "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+    "selection": "first three pages only; no regeneration of 1500-page corpus",
+    "bytes": 44260,
+    "sha256": "212e3477eb08d6333d5dde60113513fd76dac3081218a7326ffc0d1706a70ffc"
+  },
+  {
+    "file": "RECOVERY_3_PAGES_EN.pdf",
+    "source": "recovery/work/tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+    "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+    "selection": "first three pages only; no regeneration of 1500-page corpus",
+    "bytes": 44279,
+    "sha256": "b26b6f085edaf4b7f64a2914020d01a86ab163f245d72ab8bebbe21e71f23986"
+  }
+]

@@ -1,0 +1,2045 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-12T03:02:03.625352+00:00",
+  "baselineArchiveSha256": "02e31d4195b72377b9fed94f130ffa84d6ec9ec5d5ab2b6fcc1c52c109d4d623",
+  "note": "18 product findings and 8 output themes overlap; they are not 26 independent bugs. Statuses require actual CP18 evidence.",
+  "allowedStatuses": [
+    "BLOCKED_EXTERNAL",
+    "FAIL",
+    "FIXED_UNVERIFIED",
+    "IN_PROGRESS",
+    "NOT_APPLICABLE_WITH_EVIDENCE",
+    "OPEN",
+    "VERIFIED"
+  ],
+  "findings": [
+    {
+      "id": "LIFE-01",
+      "category": "product",
+      "priority": "P1",
+      "title": "Koreksi sumber hilang dari checkpoint setelah pengaturan berubah dan persiapan dihentikan",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "Exact-main VM: RAM mempertahankan Dosis sampel adalah 20 mg.; clearTranslations menghapus satu-satunya koreksi persisten; source.document masih Dosis sampel adalah 10 mg.; payload resume kembali ke10mg."
+      ],
+      "certainty": "confirmed_logic_defect",
+      "rootCause": "Sumber satu blok dikoreksi; glosarium/arah berubah; penerjemahan berikutnya berhenti/gagal sebelum blok itu selesai.",
+      "baselineEvidence": "repros/lifecycle-audit.mjs",
+      "acceptance": "Koreksi blok akhir, ubah glosarium, hentikan saat prepare/awal run, reload/resume: teks terkoreksi dan originalText keduanya tetap utuh. Ulangi dengan error/quota atau crash antar-commit.",
+      "gates": [
+        "G1"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/storage.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/storage-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "5890e6a6326919097b5d3833e6788cef1f2ee239ed753943d14a8aa9af1f1f18"
+        },
+        {
+          "path": "evidence/lifecycle/table-edit-integration-after.json",
+          "scope": "ACTUAL_MAIN_STORAGE_EXPORT_LOCAL_INTEGRATION",
+          "sha256": "adf84ec8dc6c1d8de54aab2bf8fec1928e579241cc4b8699e872f49ad25051be"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Corrected source and originalText survive config invalidation/cancel/fail in exact-main VM; atomic storage rollback and prior extraction restore verified locally.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Isi sumber yang akan diterjemahkan setelah reload berbeda dari yang ditampilkan sebelum reload. Original PDF tetap tersedia tetapi koreksi pengguna lenyap tanpa penanda.",
+      "relatedFindings": [],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-02",
+      "category": "product",
+      "priority": "P1",
+      "title": "Kegagalan penyimpanan dapat tertutup pesan berhasil",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "Injected quota failure: saveEnabled false, tetapi notice Koreksi sumber disimpan dan badge Progres disimpan lokal tetap tampil."
+      ],
+      "certainty": "confirmed_logic_defect",
+      "rootCause": "IndexedDB menolak penyimpanan, misalnya QuotaExceededError ketika koreksi sumber atau hasil baru ditulis.",
+      "baselineEvidence": "repros/lifecycle-audit.mjs",
+      "acceptance": "Tolak setiap write checkpoint secara bergantian; UI tidak pernah mengklaim tersimpan, dirty-state tetap terlihat sampai data disimpan/diunduh.",
+      "gates": [
+        "G1"
+      ],
+      "changedFiles": [
+        "app/main.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/table-edit-integration-after.json",
+          "scope": "ACTUAL_MAIN_STORAGE_EXPORT_LOCAL_INTEGRATION",
+          "sha256": "adf84ec8dc6c1d8de54aab2bf8fec1928e579241cc4b8699e872f49ad25051be"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "QuotaExceeded/SecurityError maintain dirty state; retry snapshot and save status tested with explicit boundaries.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Pengguna dapat menutup tab dengan keyakinan progres aman, padahal perubahan hanya berada di RAM.",
+      "relatedFindings": [
+        "OUT-06"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-03",
+      "category": "product",
+      "priority": "P1",
+      "title": "Service worker mencampur versi aset saat deployment berubah",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "Actual SW VM serves release2 body and writes it into cache semantik-pdf-cp17-605158f333e9 that initially contained release1 body; then serves release2 again offline."
+      ],
+      "certainty": "confirmed_logic_defect",
+      "rootCause": "Tab versi lama masih terbuka ketika server/deployment memperbarui file dengan URL stabil seperti /app/translation.js.",
+      "baselineEvidence": "repros/lifecycle-audit.mjs",
+      "acceptance": "BukaV1, deployV2, minta modul lazy yang belum dimuat, pindahoffline: V1 harus memakai asetV1 atau menolak dengan pemulihan aman, tidak mengeksekusi campuranV1/V2.",
+      "gates": [
+        "G5",
+        "G6"
+      ],
+      "changedFiles": [
+        "sw.js",
+        "scripts/sw-template.js",
+        "app/offline.js",
+        "scripts/build.py"
+      ],
+      "tests": [
+        {
+          "path": "evidence/cache/regression.tap",
+          "scope": "LOCAL_CACHE_AND_SW_HARNESS",
+          "sha256": "af92d11b08f24cf017a4ad060da3379b4ee4fa4c23a8abc6f622fbda0fe0aa45"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Version namespaces and digest checks tested in local SW/cache harness. Root observed preview index.html byte injection: SW installation correctly refuses mismatched shell.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Lazy imports lama dapat memperoleh modul baru yang tidak sesuai kontrak. Cache yang sebelumnya lolos hash dapat ditimpa tanpa verifikasi. Menunggu aktivasi SW baru tidak menjamin tab aktif tetap satu versi.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Release-pinned byte validation passes controlled V1/V2 tests. Actual install/offline/update/rollback is not proven because preview modifies HTML.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-04",
+      "category": "product",
+      "priority": "P1",
+      "title": "Pemulihan BFCache tidak mengambil kembali kunci dokumen",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "Actual-main VM lifecycle sequence gives pageshowHandlers0, releaseLocknull, active document true, and an edit write while simulated lock owner is tabB. This is logic proof conditional on BFCache restoration, not a live eligibility claim."
+      ],
+      "certainty": "conditional_lifecycle_defect",
+      "rootCause": "Browser memulihkan JS heap dari BFCache setelah pagehide melepaskan kunci; tablain sudah membuka/mengganti pekerjaan.",
+      "baselineEvidence": "repros/lifecycle-audit.mjs",
+      "acceptance": "Uji browser nyata A→navigasi pergi; B membukaPDFbaru; kembaliA: A harus read-only atau meminta pemulihan, dan checkpointB tidak berubah. Jika BFCache tidak berlaku pada browser tertentu, catat sebagai not-applicable.",
+      "gates": [
+        "G1",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/storage.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/storage-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "5890e6a6326919097b5d3833e6788cef1f2ee239ed753943d14a8aa9af1f1f18"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Persisted pageshow reacquires lock; job ID/write epoch CAS prevents stale mutations in fake-IDB+VM tests.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Dokumen lama dapat menulis blok ke checkpoint pekerjaan tablain; block IDs are reused across PDFs.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Two-tab lock and stale-write guards tested. A real BFCache-eligible navigation across competing jobs remains unverified.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-05",
+      "category": "product",
+      "priority": "P2",
+      "title": "Tombol Hentikan tidak membatalkan pembuatan ZIP",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "download() enables busy/cancel but creates no AbortController; createZip and exportDocument accept no signal; handler only aborts state.controller (null in export) and translator, so ZIP continues."
+      ],
+      "certainty": "confirmed_code_path",
+      "rootCause": "Paket ZIP besar sedang disusun.",
+      "baselineEvidence": null,
+      "acceptance": "Mulai ekspor besar lalu Hentikan: UI pulih, tidak muncul unduhan belakangan, memori rilis.",
+      "gates": [
+        "G1",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/export.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Actual shipped JSZip stream abort tested; canceled generation does not yield late download. Individual Blob/hash calls finish before next signal check.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Kontrol konsumen menjanjikan penghentian tetapi kompresi/hash/pengumpulanBlob berlanjut dan unduhan masih dapat terpicu.",
+      "relatedFindings": [
+        "OUT-07"
+      ],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Actual ZIP cancellation is regression-tested with controlled abort. Consumer large-export cancellation and process memory release have no complete browser measurement.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-06",
+      "category": "product",
+      "priority": "P2",
+      "title": "Hapus dokumen menyisakan konten di DOM dan canvas tersembunyi",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "IDB and state are cleared, but block-list children are not removed, text fields are not cleared, and canvas dimensions/pixels are not reset; only parent containers hidden."
+      ],
+      "certainty": "confirmed_code_path",
+      "rootCause": "Pengguna meninjau hasil/preview lalu memilih Hapus dokumen & progres.",
+      "baselineEvidence": null,
+      "acceptance": "Sesudah hapus, inspeksi DOM tidak memuat teks/filename sumber dan canvas kosong; reload tidak menawarkan checkpoint.",
+      "gates": [
+        "G1",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/storage.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/storage-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "5890e6a6326919097b5d3833e6788cef1f2ee239ed753943d14a8aa9af1f1f18"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "DOM/fields/canvas/object URL/state/store clearing verified under controlled main VM and fake IndexedDB.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Konten sumber/target dan citra masih berada dalam halaman yang hidup setelah aksi hapus. Ini celah penghapusan lokal, bukan bukti eksfiltrasi atau bypass CSP.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Cleanup passes exact-main/DOM lifecycle regression. Final browser document-removal and canvas inspection not independently recorded.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "LIFE-07",
+      "category": "product",
+      "priority": "P2",
+      "title": "Inferensi bergantung pada keberhasilan cache model tanpa mode sementara",
+      "sourceEvidence": [
+        "audit_produk/findings_lifecycle.json",
+        "Exact compiled ir() reproduction: caches.open SecurityError prevents fetch; cache.put QuotaExceededError after valid download rejects preparation."
+      ],
+      "certainty": "confirmed_design_dependency",
+      "rootCause": "CacheStorage ditolak atau quota full ketika model disiapkan.",
+      "baselineEvidence": "repros/lifecycle-cache-failure.mjs",
+      "acceptance": "Storage denied/quota-full harus menghasilkan pemulihan yang bisa dilakukan konsumen, tanpa success offline palsu atau unduhan berulang tanpa penjelasan.",
+      "gates": [
+        "G5"
+      ],
+      "changedFiles": [
+        "assets/engine.worker-4c3dcfee.js",
+        "scripts/engine-cache-fragment.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/cache/regression.tap",
+          "scope": "LOCAL_CACHE_AND_SW_HARNESS",
+          "sha256": "af92d11b08f24cf017a4ad060da3379b4ee4fa4c23a8abc6f622fbda0fe0aa45"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Cache denial/quota permits temporary in-memory session fallback in local harness; preliminary real Chrome prepares both directions with persistent cache.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Terjemahan tidak dapat berjalan meskipun jaringan tersedia dan model dapat dimuat ke memori. Persiapan tidak memeriksa kebutuhan storage terlebih dahulu. README menyebut CacheStorage sebagai kebutuhan; ini batas desain yang perlu dikomunikasikan dan diperkuat, bukan regresi tersembunyi.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Cache denial/quota fallback tested with fault injection; persistent cache works in Chrome. Native quota exhaustion/end-to-end offline recovery remain unverified.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "PDF-01",
+      "category": "product",
+      "priority": "P1",
+      "title": "Mixed pages with >=400 digital characters skip OCR even when essential body text exists only in a large image",
+      "sourceEvidence": [
+        "audit_produk/findings_pdf.json",
+        [
+          "repros/mixed-digital-500-scan.pdf",
+          "repros/mixed-digital-500-scan.png",
+          "repros/pdf-mixed-real-parser.mjs",
+          "repros/pdf-mixed-real-parser-result.json"
+        ]
+      ],
+      "certainty": "CONFIRMED_DECISION_LOGIC_AND_REAL_PDF_PARSE",
+      "rootCause": "The synthetic PDF has 484 digital alphanumeric characters, replacementRatio 0, and one image covering 52.94% of its page. Bundled PDF.js 5.6.205 parses those values. The exact production predicate returns useOCR=false. The scanned region contains the only intervention/survival/hazard-ratio finding; its text is absent from extracted digital text.",
+      "baselineEvidence": "The synthetic PDF has 484 digital alphanumeric characters, replacementRatio 0, and one image covering 52.94% of its page. Bundled PDF.js 5.6.205 parses those values. The exact production predicate returns useOCR=false. The scanned region contains the only intervention/survival/hazard-ratio finding; its text is absent from extracted digital text.",
+      "acceptance": [
+        "Regression fixture with >=400 digital characters plus an image-only result produces that result as a source block or an explicit unresolved-region warning requiring action.",
+        "Digital strings are not duplicated when OCR overlaps an existing text layer.",
+        "Pure digital PDFs continue to avoid OCR/model downloads until needed."
+      ],
+      "gates": [
+        "G2"
+      ],
+      "changedFiles": [
+        "app/layout.js",
+        "app/layout.worker.js",
+        "app/pdf-reader.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/pdf/extract-boundaries.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "8f10d2b175680f8c496e3cac9e6acb9a7a11466f78ca4291f59506d9844e2511"
+        },
+        {
+          "path": "evidence/pdf/real-parser.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "f1a3f56072c89d1d13ca4262fa962fce017c4403e322059684d530eb48a900dc"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": " Production PDF.js6.2.108/layout checks pass; see module finding evidence for method separation.",
+      "freshExportEvidence": null,
+      "regressionRisk": "A mixed journal page can omit important scientific prose from translation while covering 100% of available digital text items. The original image remains available and a generic image warning is shown, so this is omission from translated text, not destruction of the original PDF. Source-item coverage is not visual-page text coverage.",
+      "relatedFindings": [],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "PDF-02",
+      "category": "product",
+      "priority": "P1",
+      "title": "Resume resets the 128 MiB asset budget and allows combined document assets above the configured limit",
+      "sourceEvidence": [
+        "audit_produk/findings_pdf.json",
+        [
+          "repros/pdf-budget-resume.mjs",
+          "repros/pdf-budget-resume-result.json"
+        ]
+      ],
+      "certainty": "CONFIRMED_CONTROLLED_PRODUCTION_MODULE_TEST",
+      "rootCause": "Unmodified production pdf-reader.js and layout.js are loaded via vm.SourceTextModule with explicit PDF.js/canvas dependency stubs. Each page reports an 8 MiB asset. The first run persists 16 pages = 128 MiB, then rejects page 17. A resume at page 17 succeeds because assetsBytes starts at 0 again. Main's merge produces 136 MiB combined assets, above 128 MiB.",
+      "baselineEvidence": "Unmodified production pdf-reader.js and layout.js are loaded via vm.SourceTextModule with explicit PDF.js/canvas dependency stubs. Each page reports an 8 MiB asset. The first run persists 16 pages = 128 MiB, then rejects page 17. A resume at page 17 succeeds because assetsBytes starts at 0 again. Main's merge produces 136 MiB combined assets, above 128 MiB.",
+      "acceptance": [
+        "The same document has the same aggregate asset limit whether processed in one pass, cancelled/resumed or reloaded/resumed.",
+        "A checkpoint already above the limit is rejected or requires an explicit smaller range.",
+        "The 136 MiB controlled regression fails at the same page after resume as in a continuous run."
+      ],
+      "gates": [
+        "G1",
+        "G2"
+      ],
+      "changedFiles": [
+        "app/layout.js",
+        "app/layout.worker.js",
+        "app/pdf-reader.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/pdf/budget-after.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "05df6c871b431f0fbbb8ab53531230dee8c5fcc8020f8eb6ff677307e5254fec"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": " Production PDF.js6.2.108/layout checks pass; see module finding evidence for method separation.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Large journals can evade the documented memory/storage safety limit by continuation or reload; repeated resumptions can accumulate more assets. Browser memory or storage exhaustion may occur later, including during ZIP export.",
+      "relatedFindings": [],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "PDF-03",
+      "category": "product",
+      "priority": "P2",
+      "title": "Layout grouping still has a quadratic path on the UI thread",
+      "sourceEvidence": [
+        "audit_produk/findings_pdf.json",
+        [
+          "repros/layout-worstcase.mjs",
+          "repros/layout-worstcase-result.json"
+        ]
+      ],
+      "certainty": "CONFIRMED_COMPLEXITY_PATH_WITH_CONTROLLED_INPUT",
+      "rootCause": "Allowed normalized items on one baseline trigger group.items.some for each successive item. On the audit host, 1000 items took 29 ms, 5000 took 60 ms, and 20000 took 1014 ms. The production analyzer itself ran; no PDF decoder was mocked or tested for this case.",
+      "baselineEvidence": "Allowed normalized items on one baseline trigger group.items.some for each successive item. On the audit host, 1000 items took 29 ms, 5000 took 60 ms, and 20000 took 1014 ms. The production analyzer itself ran; no PDF decoder was mocked or tested for this case.",
+      "acceptance": [
+        "Adversarial 20000-item fixtures have bounded runtime on declared minimum hardware.",
+        "Cancellation stays responsive during layout processing.",
+        "Column order, superscript handling and source-item coverage remain unchanged on existing fixtures."
+      ],
+      "gates": [
+        "G2",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/layout.js",
+        "app/layout.worker.js",
+        "app/pdf-reader.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/pdf/layout-after.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "e7732645403dc24947715b94b846f2e97f0860c2b5704040bb1f675f7489430c"
+        },
+        {
+          "path": "evidence/pdf/layout-inherited.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "e62a1926e417455d9d75305dd8ca7c4faa145968a6a736108d2a15f479fa917c"
+        },
+        {
+          "path": "evidence/pdf/real-parser.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "f1a3f56072c89d1d13ca4262fa962fce017c4403e322059684d530eb48a900dc"
+        },
+        {
+          "path": "evidence/pdf/inherited-reader.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "6a87967105eee9c51f2e7cef681545034104a1c3f4b5d642e126d86921227278"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": " Production PDF.js6.2.108/layout checks pass; see module finding evidence for method separation.",
+      "freshExportEvidence": null,
+      "regressionRisk": "A pathological allowed page can block UI progress/cancellation while synchronous layout runs. The 20,000-item ceiling limits total work but does not guarantee responsiveness.",
+      "relatedFindings": [
+        "OUT-01"
+      ],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Indexed cancellable worker and dense fixture tests pass. Declared minimum physical hardware and total decoder heap bounds are not verified.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "TR-01",
+      "category": "product",
+      "priority": "P1",
+      "title": "Ordinary uppercase scientific titles are frozen and can be reported as translated",
+      "sourceEvidence": [
+        "audit_produk/findings_translation.json",
+        [
+          "Actual en-id model: CLIMATE CHANGE -> CLIMATE CHANGE, status translated, issues[].",
+          "Actual en-id model: LITERATURE REVIEW -> LITERATURE REVIEW, status translated, issues[].",
+          "Actual id-en model: KAJIAN PUSTAKA -> KAJIAN PUSTAKA, status translated, issues[].",
+          "Actual en-id model: The CLIMATE CHANGE hypothesis was tested. -> Hipotesis CLIMATE CHANGE telah diuji., status translated, issues[].",
+          "Explicit glossary CLIMATE CHANGE=perubahan iklim did not override the frozen phrase in THE CLIMATE CHANGE hypothesis was tested."
+        ]
+      ],
+      "certainty": "confirmed_functional_bug",
+      "rootCause": "repros/engine-audit-real.mjs",
+      "baselineEvidence": "repros/engine-audit-real.mjs",
+      "acceptance": [
+        "All-capital common phrases translate or carry an explicit review reason.",
+        "Configured glossary replaces ordinary uppercase phrases.",
+        "True acronyms, chemical formulas, units and variables remain intact."
+      ],
+      "gates": [
+        "G3"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Common all-capital article titles or emphasized phrases can remain in the source language without review flag, even with explicit user glossary. Source is retained, but translation coverage is overstated.",
+      "relatedFindings": [
+        "OUT-02",
+        "OUT-05"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "TR-02",
+      "category": "product",
+      "priority": "P1",
+      "title": "Scientific validation misses common molarity units and single-element ion changes",
+      "sourceEvidence": [
+        "audit_produk/findings_translation.json",
+        [
+          "auditTranslation(The concentration was10 μM.,Konsentrasinya10 mM.) returns[].",
+          "auditTranslation(The concentration was10 nM.,Konsentrasinya10 mM.) returns[].",
+          "auditTranslation(The Ca2+ concentration increased.,Konsentrasi Ca3+ meningkat.) returns[].",
+          "Control10mg->10kg is correctly detected."
+        ]
+      ],
+      "certainty": "confirmed_guard_blind_spot",
+      "rootCause": "repros/engine-audit-guards.mjs",
+      "baselineEvidence": "repros/engine-audit-guards.mjs",
+      "acceptance": [
+        "μM->mM, nM->mM and Ca2+->Ca3+ produce review findings.",
+        "Equivalent notation normalization is explicitly defined and does not erase source provenance.",
+        "Unchanged legitimate prose and notation do not gain excessive false warnings."
+      ],
+      "gates": [
+        "G3"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Automated scientific checks can accept a changed concentration prefix or ion charge. These are meaningful literal changes even though the standalone quantity10 remains unchanged.",
+      "relatedFindings": [
+        "OUT-01",
+        "OUT-03",
+        "OUT-04"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "TR-03",
+      "category": "product",
+      "priority": "P2",
+      "title": "Recoverable failed translations become sticky source-filled results that Continue skips",
+      "sourceEvidence": [
+        "audit_produk/findings_translation.json",
+        [
+          "Deliberate rejecting Worker fixture produces original source with statusreview/sourcePreservedtrue.",
+          "Exact main.js hasTarget predicate returns true for this failed result.",
+          "The next Continue skips it via if(hasTarget(block))continue; root independently confirmed the main flow."
+        ]
+      ],
+      "certainty": "confirmed_recovery_bug",
+      "rootCause": "repros/engine-audit-guards.mjs",
+      "baselineEvidence": "repros/engine-audit-guards.mjs",
+      "acceptance": [
+        "After an injected temporary failure, retry attempts the failed block once and keeps other user edits.",
+        "Intentional references/formulas and manually approved source copies are not needlessly retransmitted to model.",
+        "Summary distinguishes translated,preserved,failed,pending and review-required counts."
+      ],
+      "gates": [
+        "G1",
+        "G3",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/export.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Retry skips valid edited/reviewed output and retries failed/rejected source fallback; outcome counts split.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Safe source fallback prevents data loss, but a transient model failure does not recover on the advertised Continue/retranslate action. User must discover manual target clearing or source editing to retry the affected block.",
+      "relatedFindings": [
+        "OUT-06"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "TR-04",
+      "category": "product",
+      "priority": "P1",
+      "title": "Functional passes do not establish academic semantic quality or number-to-claim association",
+      "sourceEvidence": [
+        "audit_produk/findings_translation.json",
+        [
+          "Fresh actual model still translates Regresi linear mengestimasi ukuran efek. as Linear regression customize effect size.; known pattern is correctly flaggedreview.",
+          "Mutation test swaps10and20 betweenTreatmentA/B and auditTranslation returns[] because numeric occurrence counts remain equal.",
+          "Fresh actual en-id model translates significant difference between treatment and control as perbedaan penting antara perawatan dan kontrol; suitability depends on intended statistical meaning."
+        ]
+      ],
+      "certainty": "acceptance_evidence_gap",
+      "rootCause": [
+        "Fresh actual model still translates Regresi linear mengestimasi ukuran efek. as Linear regression customize effect size.; known pattern is correctly flaggedreview.",
+        "Mutation test swaps10and20 betweenTreatmentA/B and auditTranslation returns[] because numeric occurrence counts remain equal.",
+        "Fresh actual en-id model translates significant difference between treatment and control as perbedaan penting antara perawatan dan kontrol; suitability depends on intended statistical meaning."
+      ],
+      "baselineEvidence": [
+        "Fresh actual model still translates Regresi linear mengestimasi ukuran efek. as Linear regression customize effect size.; known pattern is correctly flaggedreview.",
+        "Mutation test swaps10and20 betweenTreatmentA/B and auditTranslation returns[] because numeric occurrence counts remain equal.",
+        "Fresh actual en-id model translates significant difference between treatment and control as perbedaan penting antara perawatan dan kontrol; suitability depends on intended statistical meaning."
+      ],
+      "acceptance": [
+        "Acceptance criteria state critical meaning errors separately from readability and extractioncoverage.",
+        "Targeted mutation tests flag claim/quantity reattachment where the system can reliably check it; uncertain cases remain visible to reviewers.",
+        "Human sign-off corpus and model release comparisons exist before unrestricted quality claims."
+      ],
+      "gates": [
+        "G3",
+        "G7"
+      ],
+      "changedFiles": [],
+      "tests": [
+        {
+          "path": "evidence/acceptance/G7_SYNTHETIC_COMPARISON_AI_NOT_HUMAN.json",
+          "scope": "ACTUAL_NODE_WASM_INFERENCE_PLUS_AI_OBSERVATIONS",
+          "sha256": "eca2b708dd9203d9adadfcf1101953e0d77db5d30a633f3db23a5c364ae630a5"
+        },
+        {
+          "path": "evidence/acceptance/REAL_JOURNAL_REVISED_INFERENCE.json",
+          "scope": "ACTUAL_LOCAL_MODEL_NODE_WASM",
+          "sha256": "b904072221d06bf5188bff25c62013ddfc3026def436eedc6b2b071d104c4149"
+        },
+        {
+          "path": "evidence/acceptance/G7_REAL_JOURNAL_COMPARISON_AI_NOT_HUMAN.json",
+          "scope": "AI_SCREENING_NOT_HUMAN_APPROVAL",
+          "sha256": "e95d5ae000bce963e1b34b2dfe44527685a58f9971c777d9a8dde56da0a55808"
+        },
+        {
+          "path": "evidence/acceptance/FINAL_SOURCE_SCIENTIFIC_QUALITY_CONFIRMATION.json",
+          "scope": "ACTUAL_CURRENT_MODEL_AND_AI_SCREENING_NOT_HUMAN",
+          "sha256": "9aeaa56ac93329fb9ed7ad92843c7168c8abda7b433d096cf56fc56c3a699e0b"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "First frozen160 evaluation preserved (147 translated,13 safe rejections,22 AI-critical findings). After generalized structural fixes, actual current-source20 exposed negative probes still show19 AI-critical meaning defects and1 major term defect;12 critical cases have no automatic warning. Human approvals0. G7 FAIL on current source.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Numeric preservation and complete-looking output can coexist with wrong scientific relations or terminology. A reviewer-facing warning is useful but is not domain acceptance evidence.",
+      "relatedFindings": [
+        "OUT-02",
+        "OUT-08"
+      ],
+      "status": "FAIL",
+      "closureLimit": "Final-module actual inference still has critical scientific meaning defects. Human scientific approvals are absent; no model replacement qualified.",
+      "currentSemanticIdentities": {
+        "app/translation.js": "8a86cc242a52fe1e42a63c11fa0a2bcdce8654840194c2b932ce372efe40badc",
+        "app/semantic-spans.js": "fa0f6a6e8ab79b5f2e4e4fa7dc98394e2103f69ada9c46cbb9d9fcd3214a25bd",
+        "assets/engine.worker-4c3dcfee.js": "987ed9d5b9ea0094ca6e409ba4b7377bc2cb198c2a11d8e78ef49529b30eaf9b",
+        "models/en-id/manifest.json": "0e32638fae841b1c9b45aef8423f432bef1d7ad59c50c15621cb79d76088dfc6",
+        "models/id-en/manifest.json": "c7dfdb1d860c01ecab715c095005db995bb24e6483db3ac2d5dd73cc3d20c080"
+      },
+      "technicalFixStatus": "PARTIAL_QUALITY_FAILURE",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "TR-05",
+      "category": "product",
+      "priority": "P2",
+      "title": "Negation heuristic generates warnings on faithful uncertain/belum pasti equivalents",
+      "sourceEvidence": [
+        "audit_produk/findings_translation.json",
+        [
+          "Actual source The intervention may reduce mortality, but the evidence remains uncertain. -> Intervensinya mungkin mengurangi kematian, tapi bukti masih belum pasti.; reviewwarning says negativeform maychange.",
+          "Actual reverse source with belum pasti -> uncertain likewise triggersnegativepresencewarning."
+        ]
+      ],
+      "certainty": "confirmed_warning_calibration_limit",
+      "rootCause": [
+        "Actual source The intervention may reduce mortality, but the evidence remains uncertain. -> Intervensinya mungkin mengurangi kematian, tapi bukti masih belum pasti.; reviewwarning says negativeform maychange.",
+        "Actual reverse source with belum pasti -> uncertain likewise triggersnegativepresencewarning."
+      ],
+      "baselineEvidence": "repros/engine-audit-real-results.json",
+      "acceptance": [],
+      "gates": [
+        "G3",
+        "G7"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Conservative flags can create reviewer noise; broadening word lists alone will not solve scope and meaning. It is a calibration limitation, not proof of unsafe output.",
+      "relatedFindings": [
+        "OUT-05"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "DEP-01",
+      "category": "product",
+      "priority": "P1",
+      "title": "PDF.js perlu diperbarui mengikuti advisory keamanan yang relevan",
+      "sourceEvidence": [
+        "audit_produk/findings_root.json",
+        "Paket menyertakan PDF.js5.6.205. Advisory resmi GHSA-hq66-cqwq-w95j / CVE-2026-16633 menyebut rentang terdampak mulai5.6.83 dan versi perbaikan6.2.108. Prasyarat advisory adalah scripting aktif tanpa CSP yang membatasi. Integrasi aplikasi menggunakan core API/canvas, mematikan anotasi dan XFA, tidak menunjukkan PDFScriptingManager, serta memasang CSP ketat. Tidak ada eksploitasi yang dibuktikan pada aplikasi ini."
+      ],
+      "certainty": "affected_dependency_with_mitigations_not_proven_exploit",
+      "rootCause": "Paket menyertakan PDF.js5.6.205. Advisory resmi GHSA-hq66-cqwq-w95j / CVE-2026-16633 menyebut rentang terdampak mulai5.6.83 dan versi perbaikan6.2.108. Prasyarat advisory adalah scripting aktif tanpa CSP yang membatasi. Integrasi aplikasi menggunakan core API/canvas, mematikan anotasi dan XFA, tidak menunjukkan PDFScriptingManager, serta memasang CSP ketat. Tidak ada eksploitasi yang dibuktikan pada aplikasi ini.",
+      "baselineEvidence": "Paket menyertakan PDF.js5.6.205. Advisory resmi GHSA-hq66-cqwq-w95j / CVE-2026-16633 menyebut rentang terdampak mulai5.6.83 dan versi perbaikan6.2.108. Prasyarat advisory adalah scripting aktif tanpa CSP yang membatasi. Integrasi aplikasi menggunakan core API/canvas, mematikan anotasi dan XFA, tidak menunjukkan PDFScriptingManager, serta memasang CSP ketat. Tidak ada eksploitasi yang dibuktikan pada aplikasi ini.",
+      "acceptance": "Versi terpasang terbukti memuat patch; integritas pasangan library/worker cocok; fixture tetap lulus; CSP deployment diverifikasi; tidak ada klaim exploit berdasarkan nomor versi saja.",
+      "gates": [
+        "G2",
+        "G6"
+      ],
+      "changedFiles": [
+        "vendor/pdfjs/",
+        "tools/package-lock.json"
+      ],
+      "tests": [
+        {
+          "path": "evidence/dependency-audit.json",
+          "scope": "DEPENDENCY_PIN_AND_AUDIT",
+          "sha256": "27a02c1d0d552866e79785c40d928ac089ea150962e974432ca86164734ef233"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "PDF.js updated to6.2.108 with parser and worker matched; production reader test evidence uses this version.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Ada utang patch keamanan pada komponen yang memproses PDF tidak tepercaya. Keberadaan mitigasi saat ini tidak menggantikan pengelolaan versi, regresi dan verifikasi header pada deployment sebenarnya.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "PDF.js6.2.108 library/worker/assets match and PDF fixtures pass. Actual deployment CSP enforcement remains unverified.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OPS-01",
+      "category": "product",
+      "priority": "P2",
+      "title": "Provenance build dan bukti penerimaan perlu dapat direproduksi",
+      "sourceEvidence": [
+        "audit_produk/findings_root.json",
+        "Kedua manifest menunjuk parity-en-id.json/parity-id-en.json yang tidak ada di arsip deploy. Worker penerjemah berupa bundle. Lisensi dan sebagian metadata asal tersedia, tetapi arsip deploy tidak menyediakan lockfile/SBOM atau resep lengkap konversi/kuantisasi model. Tidak menaruh test harness di deploy adalah pilihan yang benar; bukti tersebut perlu berada di repo/paket rilis terpisah."
+      ],
+      "certainty": "release_evidence_and_reproducibility_gap",
+      "rootCause": "Kedua manifest menunjuk parity-en-id.json/parity-id-en.json yang tidak ada di arsip deploy. Worker penerjemah berupa bundle. Lisensi dan sebagian metadata asal tersedia, tetapi arsip deploy tidak menyediakan lockfile/SBOM atau resep lengkap konversi/kuantisasi model. Tidak menaruh test harness di deploy adalah pilihan yang benar; bukti tersebut perlu berada di repo/paket rilis terpisah.",
+      "baselineEvidence": "Kedua manifest menunjuk parity-en-id.json/parity-id-en.json yang tidak ada di arsip deploy. Worker penerjemah berupa bundle. Lisensi dan sebagian metadata asal tersedia, tetapi arsip deploy tidak menyediakan lockfile/SBOM atau resep lengkap konversi/kuantisasi model. Tidak menaruh test harness di deploy adalah pilihan yang benar; bukti tersebut perlu berada di repo/paket rilis terpisah.",
+      "acceptance": "Build dari lingkungan bersih menghasilkan artefak yang dapat ditelusuri; semua referensi laporan valid; perubahan model mempunyai parity dan evaluasi domain; CI memblokir hasil regresi yang gagal.",
+      "gates": [
+        "G6"
+      ],
+      "changedFiles": [],
+      "tests": [
+        {
+          "path": "evidence/provenance/RECOVERY_PROVENANCE.json",
+          "scope": "ACTUAL_ARCHIVE_PROVENANCE_AND_HASH_LINKAGE",
+          "sha256": "fca93a7952e8d04c10ef122f9bff0fd4a3694902a73858c3103fbcf87113e4ff"
+        },
+        {
+          "path": "evidence/provenance/CP16_TO_CP17_WORKER_REPRODUCTION.json",
+          "scope": "ACTUAL_ARCHIVE_PROVENANCE_AND_HASH_LINKAGE",
+          "sha256": "8cdcceb43f893c3d7b35679cf68c61c87fe01f727bae06a0d65d7b76ccc58820"
+        },
+        {
+          "path": "evidence/provenance/MODEL_PARITY_LINKAGE.json",
+          "scope": "ACTUAL_ARCHIVE_PROVENANCE_AND_HASH_LINKAGE",
+          "sha256": "16b435b0c420e215a55960ce5726f21c48befaa5d95af1ecc9b13e0dbe2b3199"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Recovered99 canonical provenance files from verified CP16 nested chain;30 actual CP17 model files match CP16 bytes; replayed CSP worker patch is exact;16 conversion-output manifests linked. Historical parity4 inputs/direction retained as historical.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Pemelihara tidak dapat menyimpulkan ulang provenance seluruh bundle atau kesetaraan model hasil konversi hanya dari artefak deploy. Rilis mendatang sulit dibandingkan tanpa identitas build dan laporan evaluasi yang terikat hash.",
+      "relatedFindings": [
+        "OUT-08"
+      ],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Fresh static assembly is byte reproducible; recovered model recipes and historical parity are linked. Original NPZ source/full historical compiler rebuild and external CI deployment not rerun.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OPT-01",
+      "category": "product",
+      "priority": "P3",
+      "title": "Dua salinan WASM identik menambah ukuran paket dan persiapan offline",
+      "sourceEvidence": [
+        "audit_produk/findings_root.json",
+        "Kedua berkas masing-masing11905541byte dan SHA256 identik. Keduanya tercantum dalam manifest persiapan offline. Ada pula vocabulary/tokenizer yang identik lintas arah bahasa."
+      ],
+      "certainty": "confirmed_duplicate_asset",
+      "rootCause": "Kedua berkas masing-masing11905541byte dan SHA256 identik. Keduanya tercantum dalam manifest persiapan offline. Ada pula vocabulary/tokenizer yang identik lintas arah bahasa.",
+      "baselineEvidence": "Kedua berkas masing-masing11905541byte dan SHA256 identik. Keduanya tercantum dalam manifest persiapan offline. Ada pula vocabulary/tokenizer yang identik lintas arah bahasa.",
+      "acceptance": "Kedua arah model berjalan, seluruh hash valid, persiapan offline hanya menyimpan satu copy runtime, dan cold-load tetap tanpa prefetch model.",
+      "gates": [
+        "G3",
+        "G5",
+        "G6"
+      ],
+      "changedFiles": [
+        "runtime/",
+        "vendor/",
+        "scripts/build.py"
+      ],
+      "tests": [
+        {
+          "path": "evidence/cache/regression.tap",
+          "scope": "LOCAL_CACHE_AND_SW_HARNESS",
+          "sha256": "af92d11b08f24cf017a4ad060da3379b4ee4fa4c23a8abc6f622fbda0fe0aa45"
+        },
+        {
+          "path": "evidence/cache/dedup.json",
+          "scope": "ACTUAL_BYTE_DEDUPLICATION",
+          "sha256": "091daba4cf809a6d5e3b5587ca742d05f39679fe0c77235d92570c4fcb55da7b"
+        }
+      ],
+      "beforeResult": "See immutable CP17 evidence; fresh reproduction tracked separately.",
+      "afterResult": "Duplicate byte-identical WASM removed and runtime linkage recorded; preliminary browser engine preparation works.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Ruang paket/cache dan pekerjaan persiapan offline lebih besar dari yang diperlukan. Ukuran ini adalah byte aset sebelum kompresi transport; tidak dinyatakan sebagai penghematan ZIP atau waktu unduh yang sudah diukur.",
+      "relatedFindings": [],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "Duplicate WASM removed, both model directions run in final Chrome. Full offline preparation is blocked by preview HTML mismatch.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-01",
+      "category": "output-theme",
+      "priority": "P1",
+      "title": "Mengapa sebagian formula ditolak dan sebagian dipertahankan",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "JURNAL_TERJEMAHAN.md: p0001-b0004, p0001-b0006, p0003-b0009.",
+        "code/code_findings.json: OUT-C01 dan OUT-C02; code/real-model-output-results.json: observed_formula_italic_lt serta dua kontrol formula."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Classifier layout memasukkan operator ≤, ≥, dan = ke pola formula, tetapi melewatkan < dan >. Akibatnya, bentuk pertidaksamaan ketat dapat menjadi paragraf yang dikirim ke penerjemah bahasa; bentuk tak ketat dipreservasi sebagai formula. Reproduksi fungsi analyzeLayout produksi pada variasi operator membuktikan perbedaan cabang tersebut. Pola 44 versus 56 pada hasil pengguna konsisten dengan mekanisme ini.",
+        "Setelah formula masuk penerjemah, pemindai literal worker memakai pola huruf ASCII. Variabel 𝑥 tidak dikenali seperti x. Kandidat yang menggunakan x dapat dianggap menambah literal baru, lalu memicu PROTECTED_MARKER. Probe model terhadap rumus p0001-b0004 menghasilkan penolakan yang sama; kontrol yang mengganti variabel menjadi x ASCII lolos. Ini menjelaskan pesan bertambah/berubah: x tanpa menyimpulkan rumus sumber yang diekspor sudah salah.",
+        "Sumber dipulihkan ketika kandidat ditolak, sehingga perlindungan masih mencegah kandidat bermasalah menggantikan rumus. Pengamanan tersebut perlu dipertahankan. Perbaikannya harus menutup penyebab formula masuk jalur yang keliru dan menyelaraskan identitas simbol, sambil tetap menolak perubahan variabel atau operator yang benar-benar mengubah makna."
+      ],
+      "baselineEvidence": [
+        "JURNAL_TERJEMAHAN.md: p0001-b0004, p0001-b0006, p0003-b0009.",
+        "code/code_findings.json: OUT-C01 dan OUT-C02; code/real-model-output-results.json: observed_formula_italic_lt serta dua kontrol formula."
+      ],
+      "acceptance": [
+        "Variasi <, >, ≤, ≥, 𝑥/x, dan nilai mutlak mendapat perlakuan konsisten.",
+        "Perubahan identitas matematis tetap terdeteksi; formula sah tidak menghasilkan penolakan yang dapat dihindari."
+      ],
+      "gates": [
+        "G2",
+        "G3"
+      ],
+      "changedFiles": [
+        "app/layout.js",
+        "app/layout.worker.js",
+        "app/pdf-reader.js",
+        "app/semantic-spans.js",
+        "app/translation.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        },
+        {
+          "path": "evidence/pdf/layout-after.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "e7732645403dc24947715b94b846f2e97f0860c2b5704040bb1f675f7489430c"
+        },
+        {
+          "path": "evidence/pdf/real-parser.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "f1a3f56072c89d1d13ca4262fa962fce017c4403e322059684d530eb48a900dc"
+        },
+        {
+          "path": "evidence/pdf/extracted/mathematics/document.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "ad4760f4ef94c6f01a3326a3daa074e9250492ba2eb5439f97543d9ccfb254ed"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running. Production PDF.js6.2.108/layout checks pass; see module finding evidence for method separation.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "PDF-03",
+        "TR-02"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-02",
+      "category": "output-theme",
+      "priority": "P1",
+      "title": "Mengapa istilah matematika berubah menjadi bahasa yang janggal",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "semantic_findings.json: SEM-01; markdown-statistics.json: tags_by_block.",
+        "code/real-model-output-results.json: constructed_solution_set, constructed_solution_set_glossary, dan constructed_math_instruction_glossary."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Mesin menghasilkan arti umum suatu kata tanpa cukup mempertahankan konteks bidang. Solution dapat menjadi larutan, union menjadi serikat, dan real number menjadi nomor atau jumlah yang nyata. Dalam dokumen ini, 40 pernyataan solusi memakai Set larutan, 25 instruksi memakai serikat, dan 25 memakai catatan interval. Hitungan pola tersebut saling bertumpang tindih dan bukan jumlah kesalahan independen.",
+        "Pada probe konstruksi The solution set is (−1, 1) ∪ (7, 9)., model nyata menghasilkan Set larutan adalah dengan interval yang tetap. Penambahan glosarium mengubahnya menjadi himpunan penyelesaian. Probe instruksi dengan glosarium juga memperbaiki inequality dan union. Bukti ini menunjukkan bahwa terminologi bidang dapat diperkuat, tetapi kecocokan angka saja tidak memvalidasi arti kata.",
+        "Glosarium tidak menyelesaikan seluruh persoalan. Dalam probe himpunan kosong yang memakai glosarium, kata satisfies masih tertinggal dan simbol berubah. Karena itu keberhasilan beberapa padanan harus diikuti uji kalimat lengkap, tata bahasa, dan notasi pada contoh yang tidak dipakai untuk menyusun aturan."
+      ],
+      "baselineEvidence": [
+        "semantic_findings.json: SEM-01; markdown-statistics.json: tags_by_block.",
+        "code/real-model-output-results.json: constructed_solution_set, constructed_solution_set_glossary, dan constructed_math_instruction_glossary."
+      ],
+      "acceptance": [
+        "Istilah pada instruksi dan solusi sesuai konteks matematika serta konsisten antarbagiannya.",
+        "Perubahan glosarium diuji terhadap kalimat lengkap dan tidak merusak simbol atau menyisakan prosa Inggris yang perlu diterjemahkan."
+      ],
+      "gates": [
+        "G3",
+        "G7"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        },
+        {
+          "path": "evidence/acceptance/REAL_JOURNAL_REVISED_INFERENCE.json",
+          "scope": "ACTUAL_LOCAL_MODEL_NODE_WASM",
+          "sha256": "b904072221d06bf5188bff25c62013ddfc3026def436eedc6b2b071d104c4149"
+        },
+        {
+          "path": "evidence/acceptance/G7_REAL_JOURNAL_COMPARISON_AI_NOT_HUMAN.json",
+          "scope": "AI_SCREENING_NOT_HUMAN_APPROVAL",
+          "sha256": "e95d5ae000bce963e1b34b2dfe44527685a58f9971c777d9a8dde56da0a55808"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "TR-01",
+        "TR-04"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-03",
+      "category": "output-theme",
+      "priority": "P1",
+      "title": "Mengapa simbol himpunan kosong menjadi å atau °",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "semantic_math_check.json: notationDefectQuestions [2,6,25,42,46].",
+        "code/code_findings.json: OUT-C08; code/real-model-output-results.json: constructed_empty_set dan constructed_empty_set_glossary."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Jawaban nomor 2, 6, 25, 42, dan 46 memakai Set solusi: å. Berdasarkan formula yang tampil, kelimanya memang tidak memiliki solusi real. Dengan demikian prosa tidak ada solusi konsisten, tetapi å bukan notasi himpunan kosong. Simbol ° pada 25 instruksi juga tidak tepat untuk menyatakan himpunan kosong.",
+        "Pemindai literal melindungi sejumlah simbol matematika, tetapi ∅ yang berada dalam prosa belum tercakup. Probe model nyata menerima No real number satisfies the inequality. Solution set: ∅ dan menghasilkan kalimat yang berakhir Set solusi: å, dengan status translated serta issues kosong. Dengan glosarium, simbol justru menjadi ° dan tetap tidak ditandai. Jalur model dan validator terbukti dapat membuat serta meloloskan perubahan ini tanpa OCR.",
+        "PDF asli dan teks ekstraksi historis belum tersedia. Karena itu belum dapat ditentukan apakah setiap glyph pada file pengguna mulai rusak ketika font dibaca, OCR, inferensi, atau tahap lain. Probe membuktikan mekanisme yang mungkin dan nyata pada CP17, bukan sejarah pasti seluruh glyph dalam dokumen pengguna."
+      ],
+      "baselineEvidence": [
+        "semantic_math_check.json: notationDefectQuestions [2,6,25,42,46].",
+        "code/code_findings.json: OUT-C08; code/real-model-output-results.json: constructed_empty_set dan constructed_empty_set_glossary."
+      ],
+      "acceptance": [
+        "Input ∅ yang valid tidak menjadi å atau ° tanpa penolakan atau pemulihan yang tercatat.",
+        "Fixture ∅, ℝ, ℕ, ℤ, ∈, ∉, ∪, ∩ serta interval tetap utuh dalam prosa campuran."
+      ],
+      "gates": [
+        "G3"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Known regressions corrected with actual model probes separated from deterministic mutations; exposed32 followup no structural rejection/warnings. No universal semantic claim. Fresh160real-journal evaluation running.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "TR-02"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-04",
+      "category": "output-theme",
+      "priority": "P1",
+      "title": "Mengapa kode ID ikut berubah bahasa",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "JURNAL_TERJEMAHAN.md: p0011-b0005 dan p0011-b0008.",
+        "code/code_findings.json: OUT-C07; code/real-model-output-results.json: constructed_identifier."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Seluruh 50 baris identifier memperlihatkan fragmen Indonesia, misalnya absolut-nilai-inequalities atau absolut-nilai-kekuasaan; sebagian juga memakai sum-of-jarak. Jika string tersebut dipakai sebagai kunci pencarian atau pencocokan sumber, penerjemahan bagian di dalamnya dapat merusak identitas meskipun angka di ujungnya masih sama.",
+        "Proteksi mengenali beberapa kategori literal seperti URL, angka, dan pola tertentu, tetapi slug berhuruf kecil dengan pemisah ~ tidak dianggap satu identitas utuh. Model nyata pada ID konstruksi absolute-value-inequalities menghasilkan absolut-nilai-inequalities dengan status translated tanpa issue. ID asli dalam PDF belum tersedia, sehingga perubahan byte pada seluruh ID pengguna belum dapat dibuktikan langsung; kemampuan jalur model mengubah ID sudah terkonfirmasi."
+      ],
+      "baselineEvidence": [
+        "JURNAL_TERJEMAHAN.md: p0011-b0005 dan p0011-b0008.",
+        "code/code_findings.json: OUT-C07; code/real-model-output-results.json: constructed_identifier."
+      ],
+      "acceptance": [
+        "ID soal, slug, accession number, kode versi, DOI, dan URL yang dikenal tetap identik.",
+        "Pengujian sengaja mengubah satu karakter ID harus memicu pemeriksaan atau pemulihan yang jelas."
+      ],
+      "gates": [
+        "G3"
+      ],
+      "changedFiles": [
+        "app/translation.js",
+        "app/semantic-spans.js",
+        "assets/engine.worker-4c3dcfee.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/translation/regression.json",
+          "scope": "71DETERMINISTIC_MUTATION_SPAN_FAULT_INJECTION_CONTROLS",
+          "pass": 71,
+          "fail": 0,
+          "sha256": "070d492677dab57006ffcb551471b3aeee6310976f7f70140025ce62dca79713"
+        },
+        {
+          "path": "evidence/translation/engine-literals.json",
+          "scope": "15EXACT_WORKER_LITERAL_FUNCTION_MUTATIONS",
+          "pass": true,
+          "sha256": "2e9c9258b5b7d65aa88721af34768a16acb29e71503888958433734bd479535a"
+        },
+        {
+          "path": "evidence/translation/revised-real-output.json",
+          "scope": "31KNOWN_CASES_23ACTUAL_MODEL_4LITERAL_4CONTROLLED_TERMINOLOGY",
+          "pass": true,
+          "sha256": "2cb543f7e4c54c296caa17c3c0506180e35d3d9c537f943e0e06a96fef535c73"
+        },
+        {
+          "path": "evidence/acceptance/REAL_JOURNAL_REVISED_INFERENCE.json",
+          "scope": "ACTUAL_LOCAL_MODEL_NODE_WASM",
+          "sha256": "b904072221d06bf5188bff25c62013ddfc3026def436eedc6b2b071d104c4149"
+        },
+        {
+          "path": "evidence/acceptance/G7_REAL_JOURNAL_COMPARISON_AI_NOT_HUMAN.json",
+          "scope": "AI_SCREENING_NOT_HUMAN_APPROVAL",
+          "sha256": "e95d5ae000bce963e1b34b2dfe44527685a58f9971c777d9a8dde56da0a55808"
+        },
+        {
+          "path": "evidence/translation/journal-identities-model.json",
+          "scope": "ACTUAL_LOCAL_MODEL_SPECIFIC_STRUCTURAL_INVARIANTS",
+          "sha256": "1758719c071fe9d3b43aef63eb5e95397d4375180685ae0abc8d3630cedb179d"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Original opaque IDs and newly found Roman labels/balanced function notation fixed by generalized span rules. Ten current-source actual-model controls preserve required identities, including (iii)/(iv), G(A), and scoped Nanger granti. Whole-sentence scientific quality remains failed under TR-04.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "TR-02"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-05",
+      "category": "output-theme",
+      "priority": "P2",
+      "title": "Mengapa judul masih Inggris dan URL terus diperingatkan",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "JURNAL_TERJEMAHAN.md: p0001-b0002, p0001-b0013, dan p0019-b0008.",
+        "code/code_findings.json: OUT-C04 serta OUT-C06; markdown-statistics.json: roles."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Judul Practice worksheet dan label Name/Date berada pada blok yang diekspor sebagai tabel. Kode menetapkan seluruh tabel sebagai tidak perlu diterjemahkan, sehingga prosa di dalamnya ikut dipertahankan. Dua baris formulir dengan kelompok horizontal sejajar dapat memenuhi heuristik tabel. Tanpa geometri PDF asli, audit tidak menyatakan klasifikasinya pasti salah; masalah yang terlihat adalah teks label tidak diterjemahkan.",
+        "Sebaliknya, 19 header tanggal/jam dan 19 footer URL diperlakukan seperti paragraf isi. URL dipertahankan oleh perlindungan literal, kemudian aturan teks tidak berubah bahasa memberikan peringatan pada setiap halaman. Peringatan itu menambah beban pemeriksaan meskipun URL memang harus tetap. Metadata tersebut bermanfaat bagi provenance, tetapi penyajiannya perlu dibedakan dari isi utama."
+      ],
+      "baselineEvidence": [
+        "JURNAL_TERJEMAHAN.md: p0001-b0002, p0001-b0013, dan p0019-b0008.",
+        "code/code_findings.json: OUT-C04 serta OUT-C06; markdown-statistics.json: roles."
+      ],
+      "acceptance": [
+        "Label tabel dapat diterjemahkan tanpa mengubah angka, formula, atau hubungan sel.",
+        "URL dan header berulang tidak membanjiri laporan review; metadata sumber tetap dapat diakses."
+      ],
+      "gates": [
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/export.js",
+        "app/layout.js",
+        "app/layout.worker.js",
+        "app/main.js",
+        "app/pdf-reader.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        },
+        {
+          "path": "evidence/pdf/layout-after.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "e7732645403dc24947715b94b846f2e97f0860c2b5704040bb1f675f7489430c"
+        },
+        {
+          "path": "evidence/pdf/real-parser.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "f1a3f56072c89d1d13ca4262fa962fce017c4403e322059684d530eb48a900dc"
+        },
+        {
+          "path": "evidence/pdf/layout-inherited.json",
+          "scope": "LOCAL_PDFJS_LAYOUT_OR_EXPLICIT_OCR_BOUNDARY",
+          "pass": true,
+          "sha256": "e62a1926e417455d9d75305dd8ca7c4faa145968a6a736108d2a15f479fa917c"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Table cell translation export and condensed repeated margin metadata preserve provenance in fresh synthetic object export. Production PDF.js6.2.108/layout checks pass; see module finding evidence for method separation.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "TR-01",
+        "TR-05"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-06",
+      "category": "output-theme",
+      "priority": "P2",
+      "title": "Mengapa tertulis 291/291 meskipun ada penolakan",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "markdown-statistics.json: categories; JURNAL_TERJEMAHAN.md: metadata status dan p0001-b0004.",
+        "code/code_findings.json: OUT-C03 serta OUT-C05; code/output-code-reproduction.json: completedWithRejectedFallback."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Angka 291/291 menghitung blok yang memiliki hasil target. Ketika kandidat ditolak, adapter mengisi target dengan sumber yang dipertahankan; blok itu tetap masuk jumlah diproses. Rekonsiliasi ekspor menemukan 171 blok tanpa peringatan ekspor, 56 formula dipertahankan, satu tabel dipertahankan, 44 kandidat ditolak, dan 19 peringatan teks tidak berubah. Totalnya tepat 291. Kategori tanpa peringatan juga belum menjamin bahasa benar.",
+        "Label pembuka secara eksplisit menyebut perlu peninjauan ilmiah dan tidak mengklaim verifikasi semantik menyeluruh. Jadi proses selesai memang berarti antrean selesai ditangani. Namun ringkasannya belum membantu konsumen membedakan keberhasilan penerjemahan, preservasi yang disengaja, dan kegagalan. Pesan mentah Error: Error: PROTECTED_MARKER juga ikut masuk ke naskah karena exception dibungkus beberapa lapisan lalu diteruskan oleh serializer."
+      ],
+      "baselineEvidence": [
+        "markdown-statistics.json: categories; JURNAL_TERJEMAHAN.md: metadata status dan p0001-b0004.",
+        "code/code_findings.json: OUT-C03 serta OUT-C05; code/output-code-reproduction.json: completedWithRejectedFallback."
+      ],
+      "acceptance": [
+        "Jumlah per kategori tepat dan penolakan terlihat pada ringkasan akhir.",
+        "Naskah pembaca tidak dipenuhi nama exception, tetapi status penting dan rujukan bukti tetap tersedia."
+      ],
+      "gates": [
+        "G1",
+        "G4"
+      ],
+      "changedFiles": [
+        "app/main.js",
+        "app/export.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/main-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "ce4a596751adeb7972472ea253b0c4f3e23d0e0fe0a9b0ac4ade3c4eba6bd862"
+        },
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_EXPORT_REPORT.json",
+          "scope": "FRESH_PRODUCTION_SERIALIZER_REPLAY_OF_ACTUAL_MODEL_OUTPUTS",
+          "sha256": "7204c68654229b1227bc9d52b4da68cb10ba91c174e67dd48ad1d89cc51e361e"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_HTML_VALIDATION.json",
+          "scope": "ACTUAL_MARKDOWN_HTML_RENDER_AND_ZIP_INTEGRITY",
+          "sha256": "7c05b96a76d57b27df48834c345dab0340b0e0a56548c8a933e0fa61c96a62f8"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Separate translated/preserved/rejected/failed/pending counts; raw diagnostics separated from reader text.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "TR-03",
+        "LIFE-02"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-07",
+      "category": "output-theme",
+      "priority": "P2",
+      "title": "Mengapa Markdown terlihat seperti kode dan visualnya tidak ikut",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "JURNAL_TERJEMAHAN.md: pengantar ekspor, p0001-b0004, dan p0001-b0006.",
+        "code/code_findings.json: OUT-C05; app/export.js: markdownText, sectionStatus, dan createMarkdown."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Karakter backslash, &lt;, dan &gt; pada berkas mentah berasal dari escaping Markdown/HTML yang disengaja. Renderer Markdown yang sesuai menampilkannya sebagai tanda literal. Rumus yang diklasifikasi sebagai formula ditempatkan dalam blok teks; formula yang menjadi paragraf mengikuti jalur escaping paragraf. Perbedaan tampilan ini membuat naskah tidak konsisten, tetapi escape itu sendiri bukan bukti perubahan arti matematika.",
+        "Unduhan Markdown individual memakai mode tanpa aset. File sudah menjelaskan bahwa citra halaman dan aset visual tersedia melalui PDF sumber atau ZIP lengkap. Karena hanya Markdown yang diberikan, audit tidak dapat menilai kualitas gambar, pemotongan, atau kehilangan visual pada paket ekspor pengguna. PDF audit yang turut dilampirkan adalah laporan pemeriksaan aplikasi, bukan PDF worksheet sumber."
+      ],
+      "baselineEvidence": [
+        "JURNAL_TERJEMAHAN.md: pengantar ekspor, p0001-b0004, dan p0001-b0006.",
+        "code/code_findings.json: OUT-C05; app/export.js: markdownText, sectionStatus, dan createMarkdown."
+      ],
+      "acceptance": [
+        "Uji keluaran mentah dan hasil render untuk rumus, operator, serta tanda pembatas.",
+        "Format yang menjanjikan gambar benar-benar menyertakan asetnya; ekspor teks menjelaskan cakupannya tanpa rujukan yang membingungkan."
+      ],
+      "gates": [
+        "G4",
+        "G6"
+      ],
+      "changedFiles": [
+        "app/export.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_EXPORT_REPORT.json",
+          "scope": "FRESH_PRODUCTION_SERIALIZER_REPLAY_OF_ACTUAL_MODEL_OUTPUTS",
+          "sha256": "7204c68654229b1227bc9d52b4da68cb10ba91c174e67dd48ad1d89cc51e361e"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_HTML_VALIDATION.json",
+          "scope": "ACTUAL_MARKDOWN_HTML_RENDER_AND_ZIP_INTEGRITY",
+          "sha256": "7c05b96a76d57b27df48834c345dab0340b0e0a56548c8a933e0fa61c96a62f8"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_HTML_BEFORE_MARKDOWN_FIX.json",
+          "scope": "ACTUAL_BEFORE_FAILURE",
+          "sha256": "44f345bba016146743c34af2723fb442461fec63090c859bc5acd55fa46052fc"
+        },
+        {
+          "path": "evidence/lifecycle/markdown-visible-regression.json",
+          "scope": "INDEPENDENT_SERIALIZER_REGRESSIONS",
+          "sha256": "a625c9487bc21f0d89f56015e5c77605d574ef12a23b7f7d3ea98868ae436240"
+        },
+        {
+          "path": "evidence/lifecycle/table-edit-integration-after.json",
+          "scope": "ACTUAL_MAIN_STORAGE_EXPORT_LOCAL_INTEGRATION",
+          "sha256": "adf84ec8dc6c1d8de54aab2bf8fec1928e579241cc4b8699e872f49ad25051be"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Fresh actual-output replay found six visible-text failures on literal hyphen/ordered labels. Generalized escaping fixed them without changing expectations;640 visible-text checks now PASS,160 exact source/target provenance pairs and8ZIP CRC/internal SHA256 PASS. Eighteen independent Markdown rendering regressions also pass.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "LIFE-05"
+      ],
+      "status": "VERIFIED",
+      "closureLimit": "Known audit defect is verified on labeled fixtures and applicable actual code/browser evidence. Scientific quality and full release gates remain separate; historical user worksheet PDF unavailable.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    },
+    {
+      "id": "OUT-08",
+      "category": "output-theme",
+      "priority": "P2",
+      "title": "Hubungan dengan audit sebelumnya dan penguatan yang dibutuhkan",
+      "sourceEvidence": [
+        "audit_hasil/report-content.json",
+        "prior/summary.json, prior/inventory.json, dan prior/pdf-comparison.json.",
+        "semantic_findings.json, semantic_math_check.json, dan code/code_findings.json."
+      ],
+      "certainty": "Output pattern and code/model evidence; original worksheet PDF absent.",
+      "rootCause": [
+        "Laporan lama secara jelas menyatakan kode aplikasi belum diperbaiki. ZIP bukti berisi inventaris, temuan, dan reproduksi; ia tidak berisi rilis deploy yang menutup masalah. Hasil baru menambah bukti nyata kebutuhan penerimaan domain serta memperjelas celah simbol, classifier, dan ekspor. Perilaku cache, kuota, BFCache, atau pembatalan pada 18 temuan lama tidak dapat dinilai dari Markdown akhir saja.",
+        "PDF audit unggahan berbeda ukuran karena tambahan inkremental Content Credentials. PDF lama merupakan prefix byte identik; teks, decoded content stream, ukuran halaman, dan hash citra yang diperiksa tetap sama. Ini pemeriksaan struktur dan isi, bukan validasi kriptografi credential. Selisih hash tersebut tidak menunjukkan laporan telah merevisi aplikasi.",
+        "Penguatan dapat menjaga PDF-only, pemrosesan lokal, dan lazy interaction. Kerjakan klasifikasi dan perlindungan sebelum model, evaluasi istilah setelah model, kemudian rapikan status dan ekspor. Muat worker dan model ketika diperlukan. Konsumen cukup melihat alur memilih PDF, membaca progres, memeriksa bagian bermasalah, lalu mengunduh hasil yang jelas statusnya."
+      ],
+      "baselineEvidence": [
+        "prior/summary.json, prior/inventory.json, dan prior/pdf-comparison.json.",
+        "semantic_findings.json, semantic_math_check.json, dan code/code_findings.json."
+      ],
+      "acceptance": [
+        "Perbaikan terbukti pada contoh yang sebelumnya gagal, tanpa mengurangi penjagaan literal yang benar.",
+        "Penerimaan mencakup dokumen sasaran, hasil render, pemulihan, dan batas browser; kesiapan tidak dinyatakan dari satu angka progres."
+      ],
+      "gates": [
+        "G6",
+        "G7"
+      ],
+      "changedFiles": [
+        "app/export.js"
+      ],
+      "tests": [
+        {
+          "path": "evidence/lifecycle/export-regression.json",
+          "scope": "LOCAL_HARNESS",
+          "sha256": "e602c1f11fa84dfe4cb2dd4514df6783d2a110a8946077b2befee2296e83d269"
+        },
+        {
+          "path": "evidence/acceptance/REAL_JOURNAL_REVISED_INFERENCE.json",
+          "scope": "ACTUAL_LOCAL_MODEL_NODE_WASM",
+          "sha256": "b904072221d06bf5188bff25c62013ddfc3026def436eedc6b2b071d104c4149"
+        },
+        {
+          "path": "evidence/acceptance/G7_REAL_JOURNAL_COMPARISON_AI_NOT_HUMAN.json",
+          "scope": "AI_SCREENING_NOT_HUMAN_APPROVAL",
+          "sha256": "e95d5ae000bce963e1b34b2dfe44527685a58f9971c777d9a8dde56da0a55808"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_EXPORT_REPORT.json",
+          "scope": "FRESH_PRODUCTION_SERIALIZER_REPLAY_OF_ACTUAL_MODEL_OUTPUTS",
+          "sha256": "7204c68654229b1227bc9d52b4da68cb10ba91c174e67dd48ad1d89cc51e361e"
+        },
+        {
+          "path": "evidence/acceptance/JOURNAL_REPLAY_HTML_VALIDATION.json",
+          "scope": "ACTUAL_MARKDOWN_HTML_RENDER_AND_ZIP_INTEGRITY",
+          "sha256": "7c05b96a76d57b27df48834c345dab0340b0e0a56548c8a933e0fa61c96a62f8"
+        },
+        {
+          "path": "evidence/lifecycle/table-edit-integration-after.json",
+          "scope": "ACTUAL_MAIN_STORAGE_EXPORT_LOCAL_INTEGRATION",
+          "sha256": "adf84ec8dc6c1d8de54aab2bf8fec1928e579241cc4b8699e872f49ad25051be"
+        }
+      ],
+      "beforeResult": "See historical user export and immutable audit reproductions.",
+      "afterResult": "Fresh synthetic object ZIP includes source PDF hash/build metadata/configuration/provenance; scientific corpus acceptance still pending.",
+      "freshExportEvidence": null,
+      "regressionRisk": "Preserve valid formulas/intervals, provenance, local PDF-only lazy flow; old Markdown does not prove new exports.",
+      "relatedFindings": [
+        "OPS-01",
+        "TR-04"
+      ],
+      "status": "FIXED_UNVERIFIED",
+      "closureLimit": "All findings, exports and negative evidence are linked. Original historical worksheet PDF is absent and broad scientific/hosting/device gates remain open.",
+      "technicalFixStatus": "IMPLEMENTED_AND_TESTED",
+      "verificationScope": "Exact source tests plus actual browser where linked; no universal semantic, physical-device or hosting approval inferred.",
+      "finalBuild": "cp18-7a8e787a497535f5",
+      "integrationEvidence": [
+        {
+          "path": "evidence/browser/CP18_BROWSER_EVIDENCE.json",
+          "sha256": "623d87b77a874e858f09c3ffdf4893b028a315095a884e27c3e585eb343899c3"
+        },
+        {
+          "path": "evidence/browser/BROWSER_E2E_CP18.json",
+          "sha256": "f9386115d62fd2898b7c4e8c6d445fb13106df48fb7b1fb928565a059140a02c"
+        },
+        {
+          "path": "evidence/browser/FRESH_EXPORT_VERIFICATION.json",
+          "sha256": "c6b151d2473c0368d8d5893483c6aca5b17b57447f5aa6575573e64fc08f59a7"
+        },
+        {
+          "path": "evidence/final-regression/RESULTS.json",
+          "sha256": "4edaf6dc08610329aea3536aca25935c71c458fd9eaba811ac3994724c16612c"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-12T03:42:23.195335+00:00",
+  "pdfModuleClosureEvidence": "evidence/pdf/PDF_FINDINGS_CP18.json",
+  "realJournalParsingEvidence": "evidence/pdf/real-journals-parser.json",
+  "scientificGate": "FAIL_OBSERVED_CRITICAL_ERRORS_AND_HUMAN_REVIEW_PENDING",
+  "statusCounts": {
+    "FIXED_UNVERIFIED": 25,
+    "IN_PROGRESS": 1
+  },
+  "scientificEvidenceRefreshedAt": "2026-11-12T03:50:23.859584+00:00",
+  "finalStatusCounts": {
+    "VERIFIED": 15,
+    "FIXED_UNVERIFIED": 10,
+    "FAIL": 1
+  },
+  "finalBuild": {
+    "release": "cp18-7a8e787a497535f5",
+    "version": "0.18.0",
+    "sourceHash": "7a8e787a497535f53610956553065e10d5cac6c3e32cd2b3c295bad6cec4366f",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/7a8e787a497535f5/"
+  },
+  "productionReady": false
+}

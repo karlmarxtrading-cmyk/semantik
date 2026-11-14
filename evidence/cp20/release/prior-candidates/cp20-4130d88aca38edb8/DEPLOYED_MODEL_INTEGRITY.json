@@ -1,0 +1,672 @@
+{
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "scope": "All actual current and retained deployed model shard bytes verified at stored, decompressed shard, and full reconstructed file levels. No model inference or conversion claim.",
+  "modelFiles": [
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "encoder_q8.onnx",
+      "sha256": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721",
+      "decodedBytes": 47701389,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11378532,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11410735,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12864169,
+          "decodedBytes": 14146957
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "decoder_q8.onnx",
+      "sha256": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6",
+      "decodedBytes": 82870344,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11366970,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11327128,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15344608,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 14103302,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12864686,
+          "decodedBytes": 15761480
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "source.spm",
+      "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "decodedBytes": 795925,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/source.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "target.spm",
+      "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "decodedBytes": 800687,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/target.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "vocab.json",
+      "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "decodedBytes": 1366984,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "config.json",
+      "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "decodedBytes": 958,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "LICENSE",
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "decodedBytes": 18652,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "en-id",
+      "file": "ORIGINAL_MODEL_README.md",
+      "sha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "decodedBytes": 601,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/en-id/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "encoder_q8.onnx",
+      "sha256": "54cd5f131d79009685780b3644def838a023fb997d83abe8583c91617c47426e",
+      "decodedBytes": 47701388,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12474977,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12519423,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12837315,
+          "decodedBytes": 14146956
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "decoder_q8.onnx",
+      "sha256": "1e13475e3773031eb9be4eabda7df071a32612cd520d6f5abaeece2e598a1ad0",
+      "decodedBytes": 82870343,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12424392,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12477947,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15292931,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 13489152,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12298788,
+          "decodedBytes": 15761479
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "source.spm",
+      "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "decodedBytes": 800687,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/source.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "target.spm",
+      "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "decodedBytes": 795925,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/target.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "vocab.json",
+      "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "decodedBytes": 1366984,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "config.json",
+      "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "decodedBytes": 958,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "LICENSE",
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "decodedBytes": 18652,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "4130d88aca38edb8",
+      "direction": "id-en",
+      "file": "ORIGINAL_MODEL_README.md",
+      "sha256": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "decodedBytes": 601,
+      "parts": [
+        {
+          "path": "/r/4130d88aca38edb8/models/id-en/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "encoder_q8.onnx",
+      "sha256": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721",
+      "decodedBytes": 47701389,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11378532,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11410735,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12864169,
+          "decodedBytes": 14146957
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "decoder_q8.onnx",
+      "sha256": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6",
+      "decodedBytes": 82870344,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11366970,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11327128,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15344608,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 14103302,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12864686,
+          "decodedBytes": 15761480
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "source.spm",
+      "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "decodedBytes": 795925,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/source.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "target.spm",
+      "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "decodedBytes": 800687,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/target.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "vocab.json",
+      "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "decodedBytes": 1366984,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "config.json",
+      "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "decodedBytes": 958,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "LICENSE",
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "decodedBytes": 18652,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "en-id",
+      "file": "ORIGINAL_MODEL_README.md",
+      "sha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "decodedBytes": 601,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/en-id/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "encoder_q8.onnx",
+      "sha256": "54cd5f131d79009685780b3644def838a023fb997d83abe8583c91617c47426e",
+      "decodedBytes": 47701388,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12474977,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12519423,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12837315,
+          "decodedBytes": 14146956
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "decoder_q8.onnx",
+      "sha256": "1e13475e3773031eb9be4eabda7df071a32612cd520d6f5abaeece2e598a1ad0",
+      "decodedBytes": 82870343,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12424392,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12477947,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15292931,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 13489152,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12298788,
+          "decodedBytes": 15761479
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "source.spm",
+      "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "decodedBytes": 800687,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/source.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "target.spm",
+      "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "decodedBytes": 795925,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/target.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "vocab.json",
+      "sha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "decodedBytes": 1366984,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "config.json",
+      "sha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "decodedBytes": 958,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "LICENSE",
+      "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "decodedBytes": 18652,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ],
+      "pass": true
+    },
+    {
+      "namespace": "6ed0d134e1770b27",
+      "direction": "id-en",
+      "file": "ORIGINAL_MODEL_README.md",
+      "sha256": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "decodedBytes": 601,
+      "parts": [
+        {
+          "path": "/r/6ed0d134e1770b27/models/id-en/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "allPass": true
+}

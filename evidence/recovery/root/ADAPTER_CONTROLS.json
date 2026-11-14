@@ -1,0 +1,165 @@
+{
+  "ruleset": "cp20-recovery-context-and-metadata-v5",
+  "adapterSHA256": "c8b0e501231befb3d07b1ae8b38c8c7a6f044a431910a86a44b14e71cee32fde",
+  "method": "Deterministic guard positive/negative controls; no inference or semantic approval inferred",
+  "rows": [
+    {
+      "name": "nonempty equivalence",
+      "source": "A nonempty set has 3 elements.",
+      "target": "Himpunan tidak kosong memiliki 3 elemen.",
+      "direction": "en-id",
+      "expectedNegationWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "nonempty cannot become empty",
+      "source": "A nonempty set has 3 elements.",
+      "target": "Himpunan kosong memiliki 3 elemen.",
+      "direction": "en-id",
+      "expectedNegationWarning": true,
+      "issues": [
+        "Periksa negasi leksikal: makna sifat atau perubahan mungkin berbalik."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "none equivalence",
+      "source": "None of the samples exceeded 4 mg.",
+      "target": "Tidak ada sampel yang melebihi 4 mg.",
+      "direction": "en-id",
+      "expectedNegationWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "none reversal",
+      "source": "None of the samples exceeded 4 mg.",
+      "target": "Semua sampel melebihi 4 mg.",
+      "direction": "en-id",
+      "expectedNegationWarning": true,
+      "issues": [
+        "Periksa negasi: bentuk negatif mungkin berubah."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "no existing equivalence",
+      "source": "There is no evidence of causation.",
+      "target": "Tidak ada bukti hubungan sebab akibat.",
+      "direction": "en-id",
+      "expectedNegationWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "none reverse direction",
+      "source": "Tidak ada sampel yang melebihi 4 mg.",
+      "target": "None of the samples exceeded 4 mg.",
+      "direction": "id-en",
+      "expectedNegationWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "nonempty plus independent negation",
+      "source": "The set is nonempty and not bounded.",
+      "target": "Himpunan tidak kosong dan tidak terbatas.",
+      "direction": "en-id",
+      "expectedNegationWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "incomplete equivalence",
+      "source": "The dataset is incomplete.",
+      "target": "Data tersebut tidak lengkap.",
+      "direction": "en-id",
+      "expectedWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "incomplete reversal",
+      "source": "The dataset is incomplete.",
+      "target": "Data tersebut lengkap.",
+      "direction": "en-id",
+      "expectedWarning": true,
+      "issues": [
+        "Periksa negasi leksikal: makna sifat atau perubahan mungkin berbalik."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "unchanging equivalence",
+      "source": "The value is unchanging.",
+      "target": "Nilai tersebut tidak berubah.",
+      "direction": "en-id",
+      "expectedWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "entire interval extent",
+      "source": "Fungsi ini kontinu di seluruh interval.",
+      "target": "This function is continuous over the entire interval.",
+      "direction": "id-en",
+      "expectedWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "throughout interval extent",
+      "source": "Fungsi ini kontinu di seluruh interval.",
+      "target": "This function is continuous throughout the interval.",
+      "direction": "id-en",
+      "expectedWarning": false,
+      "issues": [],
+      "status": "PASS"
+    },
+    {
+      "name": "partial interval rejected",
+      "source": "Fungsi ini kontinu di seluruh interval.",
+      "target": "This function is continuous in part of the interval.",
+      "direction": "id-en",
+      "expectedWarning": true,
+      "issues": [
+        "Periksa kuantor: cakupan pernyataan mungkin berubah."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "remaining every point still required",
+      "source": "Setiap titik berada di seluruh interval.",
+      "target": "The point is throughout the interval.",
+      "direction": "id-en",
+      "expectedWarning": true,
+      "issues": [
+        "Periksa kuantor: cakupan pernyataan mungkin berubah."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "entire sample cannot satisfy all samples",
+      "source": "Semua sampel diukur.",
+      "target": "The entire sample was measured.",
+      "direction": "id-en",
+      "expectedWarning": true,
+      "issues": [
+        "Periksa kuantor: cakupan pernyataan mungkin berubah."
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "extent noun mismatch",
+      "source": "Fungsi ini kontinu di seluruh interval.",
+      "target": "This function is continuous throughout the region.",
+      "direction": "id-en",
+      "expectedWarning": true,
+      "issues": [
+        "Periksa kuantor: cakupan pernyataan mungkin berubah."
+      ],
+      "status": "PASS"
+    }
+  ]
+}

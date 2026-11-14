@@ -1,0 +1,110 @@
+{
+  "method": "Current production module pure functions; explicit Worker boundary double. No real browser or device performance claim.",
+  "checks": [
+    {
+      "name": "formula x <",
+      "status": "PASS"
+    },
+    {
+      "name": "formula x >",
+      "status": "PASS"
+    },
+    {
+      "name": "formula x ≤",
+      "status": "PASS"
+    },
+    {
+      "name": "formula x ≥",
+      "status": "PASS"
+    },
+    {
+      "name": "formula x =",
+      "status": "PASS"
+    },
+    {
+      "name": "formula 𝑥 <",
+      "status": "PASS"
+    },
+    {
+      "name": "formula 𝑥 >",
+      "status": "PASS"
+    },
+    {
+      "name": "formula 𝑥 ≤",
+      "status": "PASS"
+    },
+    {
+      "name": "formula 𝑥 ≥",
+      "status": "PASS"
+    },
+    {
+      "name": "formula 𝑥 =",
+      "status": "PASS"
+    },
+    {
+      "name": "Formula in normal prose is not a whole frozen block",
+      "status": "PASS"
+    },
+    {
+      "name": "Table prose remains translatable; source cells/bboxes kept",
+      "status": "PASS"
+    },
+    {
+      "name": "Mixed long-digital page does not skip image region OCR",
+      "status": "PASS"
+    },
+    {
+      "name": "Digital page without images avoids OCR",
+      "status": "PASS"
+    },
+    {
+      "name": "Small uncovered image is explicit unresolved region",
+      "status": "PASS"
+    },
+    {
+      "name": "Mixed merge preserves exact digital text; OCR region coordinates/provenance retained",
+      "status": "PASS"
+    },
+    {
+      "name": "128 MiB boundary matches after resume",
+      "status": "PASS"
+    },
+    {
+      "name": "Conflicting/invalid checkpoint asset rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Only repeated margin metadata is annotated, with all IDs/provenance kept",
+      "status": "PASS"
+    },
+    {
+      "name": "Declared operator-count limit rejects before scan",
+      "status": "PASS"
+    },
+    {
+      "name": "Pre-aborted layout does not run",
+      "status": "PASS"
+    },
+    {
+      "name": "Worker transport double: abort terminates in-flight layout",
+      "status": "PASS"
+    }
+  ],
+  "timings": [
+    {
+      "count": 1000,
+      "ms": 9.330919999999992,
+      "coveredItemCount": 1000
+    },
+    {
+      "count": 5000,
+      "ms": 45.59871899999999,
+      "coveredItemCount": 5000
+    },
+    {
+      "count": 20000,
+      "ms": 192.490293,
+      "coveredItemCount": 20000
+    }
+  ]
+}

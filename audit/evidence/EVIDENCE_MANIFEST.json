@@ -1,0 +1,236 @@
+{
+  "sourceArchiveSha256": "32743e819993a011c5ff4f34de90292a76c29d9963f1258542be5382965df2dc",
+  "scope": "Evidence and report-generation script; original deployment source/model files are not duplicated.",
+  "files": [
+    {
+      "path": "evidence/README_BUKTI.txt",
+      "bytes": 5764,
+      "sha256": "740b0a6ed07a62ccf9b0f5e707dc218f522f568498a131fc461cec583f18972f"
+    },
+    {
+      "path": "evidence/browser/FRESH_TRANSLATION_en-id.md",
+      "bytes": 2037,
+      "sha256": "259c8717a7e054baa994200f792aae73a9f3d11a2f6fcc5336f316328f758c73"
+    },
+    {
+      "path": "evidence/browser/FRESH_TRANSLATION_id-en.md",
+      "bytes": 2061,
+      "sha256": "f47bb48f10dd272e4e5549286c454a6042011977472c3f4460153b89e2dee0ed"
+    },
+    {
+      "path": "evidence/browser/academic_prose_en.pdf",
+      "bytes": 44179,
+      "sha256": "a7fe1363c123c0fbed666dfa71dab38a148b6e06cd99a3398e95ba576f7efb3a"
+    },
+    {
+      "path": "evidence/browser/academic_prose_id.pdf",
+      "bytes": 44155,
+      "sha256": "86d84782f979d83b42e5987ba47ba5ee971f0f1b019d80c52c0890bef2a66ff5"
+    },
+    {
+      "path": "evidence/browser/create_prose_fixtures.py",
+      "bytes": 2988,
+      "sha256": "33167484515d971c1032b860b6089a9f422704ce3abcba88328421dd9ab4f495"
+    },
+    {
+      "path": "evidence/browser/initial_ui.py",
+      "bytes": 1937,
+      "sha256": "f368e9b8c62b66e3185d51ddd32621aa13b4f200ddcff4fdbdb9fe09c926878b"
+    },
+    {
+      "path": "evidence/browser/prose_fixture_expected.json",
+      "bytes": 1517,
+      "sha256": "1c551d7d6ee3e9c367940fc1463db1e50504a598815fc806bb9d9e4182b5263a"
+    },
+    {
+      "path": "evidence/browser/prose_pipeline.mjs",
+      "bytes": 8680,
+      "sha256": "2b574504157b254d6e3444aff00e35a8755c4719915527d8109fe93297cf7cbf"
+    },
+    {
+      "path": "evidence/browser/prose_pipeline_console.log",
+      "bytes": 31715,
+      "sha256": "f2d395c93c6eb0ed6ddfc5a22dd840df7c74e34d866eb336b3d4ded06c2a3937"
+    },
+    {
+      "path": "evidence/browser/prose_pipeline_results.json",
+      "bytes": 111298,
+      "sha256": "9c55045ce8158c1394d2d693a26c7ada675b9ee6f0116b36e1ad45582bdbf658"
+    },
+    {
+      "path": "evidence/browser/server.py",
+      "bytes": 1484,
+      "sha256": "05396b84aa4301f0ab657c3db1d1551455b0f282f52e8679025591134556f80c"
+    },
+    {
+      "path": "evidence/browser/ui_contract_and_scope.json",
+      "bytes": 1549,
+      "sha256": "1f9b317b7276a5d70fc66cd3e868511fe732ebdb317ca705845f0a9e3ad833ba"
+    },
+    {
+      "path": "evidence/consolidated_findings.json",
+      "bytes": 6189,
+      "sha256": "1259200386874a266e2ab720ed03351f8a2fd435494e251498a2dfd0ce663623"
+    },
+    {
+      "path": "evidence/engine/FINDINGS_ENGINE_CP18.md",
+      "bytes": 10218,
+      "sha256": "9d68db07c8eed21a4c6cc514200ee345f83cb58a30ae5777014d203a0dbb51bf"
+    },
+    {
+      "path": "evidence/engine/notation-model-console.log",
+      "bytes": 5616,
+      "sha256": "08adacfdadad195dda24bc0e098fa9a1084bdc9322902bafdb5bffaa1d97858b"
+    },
+    {
+      "path": "evidence/engine/notation-model-results.json",
+      "bytes": 8547,
+      "sha256": "66a8772d8cf789df6520db5cc6f1582c3ca0414ed39cfd2d794898e77e659138"
+    },
+    {
+      "path": "evidence/engine/real-model-console.log",
+      "bytes": 28663,
+      "sha256": "f7dee53a092b786fd3d712f178e7925fbcbc46a3c83c0d698688ade0c15cc7a2"
+    },
+    {
+      "path": "evidence/engine/real-model-probe.mjs",
+      "bytes": 8011,
+      "sha256": "7763bce583e8d5a92a345811b7a720f6e46bbe9c7c41e14de6378a2a875820de"
+    },
+    {
+      "path": "evidence/engine/real-model-results.json",
+      "bytes": 39246,
+      "sha256": "cd278d049ed3029e4bf2030eff066fb9ad00bf22c02117c8cbbf5dba207781c5"
+    },
+    {
+      "path": "evidence/engine/validator-probe.mjs",
+      "bytes": 2331,
+      "sha256": "df6ded69b363f1d839a5cac044885e6853680d343a144da98ac5b60e662ae945"
+    },
+    {
+      "path": "evidence/engine/validator-results.json",
+      "bytes": 5315,
+      "sha256": "1a4d256504a9b715b9fb3cd2bc5e762bafe05815f803c117a8af0dbfda7a0d15"
+    },
+    {
+      "path": "evidence/file_inventory.json",
+      "bytes": 56183,
+      "sha256": "c50872b3ad4bb03c6304e5275d080284250e97a79ee13580321f6db5fc91355c"
+    },
+    {
+      "path": "evidence/integrity/file_verification_reproduced.json",
+      "bytes": 91102,
+      "sha256": "ae06b796b4e71fb1d7d14d9f71b49a29a76a66e1668335260102e4ca21b0375e"
+    },
+    {
+      "path": "evidence/integrity/findings.json",
+      "bytes": 8838,
+      "sha256": "f46e6f0795447da0155f41b322a76f0b794d7d2582cb6dd1b847a8a8a9701ba5"
+    },
+    {
+      "path": "evidence/integrity/header_rule_analysis.json",
+      "bytes": 3493,
+      "sha256": "5bdd6fb987aff05d846d42aae432c3036c04eb0dc6882e9fb7909d6e56cb4274"
+    },
+    {
+      "path": "evidence/integrity/integrity_checks.json",
+      "bytes": 94400,
+      "sha256": "90b7a009a264e5048804fe2fbc51c6974201a9fa9793f1b635a5f9c68048e254"
+    },
+    {
+      "path": "evidence/integrity/runtime_integrity_probe.json",
+      "bytes": 3589,
+      "sha256": "459d06b7da1b6fdb9cfc17894322623707d02aad167ad8a5a545f23d00bf1348"
+    },
+    {
+      "path": "evidence/integrity/runtime_integrity_probe.mjs",
+      "bytes": 8822,
+      "sha256": "d7afad563b8fa957cdb591e22d31c3575cad868410cf367e4f159bd31b1b2839"
+    },
+    {
+      "path": "evidence/integrity/verify_files.py",
+      "bytes": 3714,
+      "sha256": "5375ccd847dfbec93b2e87d975a81de74c6e15f0fa3fce347c79567aa01adfb5"
+    },
+    {
+      "path": "evidence/pdf_math/MATHEMATICS_ACTUAL_SOURCE_EXPORT.md",
+      "bytes": 2483,
+      "sha256": "0cc158c7d57dcddf70a36292b0b722e349b5c528fe3591c88785e98d7e0da1a1"
+    },
+    {
+      "path": "evidence/pdf_math/README.txt",
+      "bytes": 1344,
+      "sha256": "0970bfbff0e127ea0065e2786ec7be8328b56dbcf79ca7cfc0e5e1d5f8095bfe"
+    },
+    {
+      "path": "evidence/pdf_math/extract_math_browser.mjs",
+      "bytes": 2988,
+      "sha256": "7ebdb9729b47e2698a00d8cec59cc7240af91dee86392edee9aed55dd1a09d41"
+    },
+    {
+      "path": "evidence/pdf_math/extract_math_node.mjs",
+      "bytes": 4910,
+      "sha256": "7cca772e41e8b68f7dee187c237f09b3b37d0dd8babbd423082180a2c442893e"
+    },
+    {
+      "path": "evidence/pdf_math/make_math_fixture.py",
+      "bytes": 2180,
+      "sha256": "7b1038fbb925518ffb1808f5e6a66963da4f9f030a8af704ce149769a0b676d6"
+    },
+    {
+      "path": "evidence/pdf_math/make_repeated_image_fixture.py",
+      "bytes": 880,
+      "sha256": "ac6f4e2508fc476538db6c05111612101b504c388f4830ad0337f274116f4d9c"
+    },
+    {
+      "path": "evidence/pdf_math/math_node_extraction.json",
+      "bytes": 64139,
+      "sha256": "cc1716332651583c80ca2413e533262aab4e07d384e5a30469561cece5b4dc73"
+    },
+    {
+      "path": "evidence/pdf_math/mathematics_fixture.pdf",
+      "bytes": 44593,
+      "sha256": "f66a404b56293dc093d9ecb5c7dbe9b845df0467bec5134761dd9c8dec67e558"
+    },
+    {
+      "path": "evidence/pdf_math/mathematics_fixture.png",
+      "bytes": 72221,
+      "sha256": "9f4e00e38e43ca431aa230712bdd72e2531bee0bba2d4406abf60dcdbcd9d33e"
+    },
+    {
+      "path": "evidence/pdf_math/pdf_math_findings.json",
+      "bytes": 6468,
+      "sha256": "fc82e74386ce4ce39887eb83c9ff74ecf0e49f4cab725e137983faa17cdac592"
+    },
+    {
+      "path": "evidence/pdf_math/repeated_image_probe.mjs",
+      "bytes": 2613,
+      "sha256": "3196d48be4137d8e08607ca85ef6fec43c3f1f79fec343191e16ab46909cd870"
+    },
+    {
+      "path": "evidence/pdf_math/repeated_image_result.json",
+      "bytes": 5242,
+      "sha256": "f6a7b211771d7eaf9e8689b445d9d5cd037d4f4b7e49f65f2b59e4e834bf9f94"
+    },
+    {
+      "path": "evidence/pdf_math/repeated_images_fixture.pdf",
+      "bytes": 9781,
+      "sha256": "2fad235b2708f8ac0063e56648f96646b0876ab53839864d26a1a6146dfa970f"
+    },
+    {
+      "path": "evidence/pdf_math/repeated_images_fixture.png",
+      "bytes": 76127,
+      "sha256": "4fd1e8efacfeb6f62adfa39bfede5998763daeebfa5d280bf521a372df4ce1b7"
+    },
+    {
+      "path": "evidence/source_excerpts.txt",
+      "bytes": 52996,
+      "sha256": "b9c70b9c7cc5f8ba27c436aec26eeefdbbccd11d63338cd7b9a2a4508d3f948a"
+    },
+    {
+      "path": "build_audit_report.py",
+      "bytes": 31918,
+      "sha256": "6962d0548390e99b913a42713087ce73f498c5039c8de5c38ee732fd5a2c0567"
+    }
+  ]
+}

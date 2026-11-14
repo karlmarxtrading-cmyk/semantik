@@ -1,0 +1,117 @@
+{
+  "corpusSha256": "b7c81139c8d6ffafff3b098209134231b1208183fa67b6988cdbc2db2a608955",
+  "files": [
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-MATH-EN.pdf",
+      "bytes": 23426,
+      "sha256": "5a4b3c4bd0fceda7d700a8503e2067eb5315fca194e48a45e3f09afc3b31cff6",
+      "documentId": "HOLDOUT-MATH-EN",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-MATH-EN-01",
+        "HOLDOUT-MATH-EN-02",
+        "HOLDOUT-MATH-EN-03",
+        "HOLDOUT-MATH-EN-04"
+      ],
+      "structure": "formula",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-MATH-ID.pdf",
+      "bytes": 23456,
+      "sha256": "ad1a1ed7dbe875b87b79d0fdf3eae6b429791e45f82216de02a5c29fcd5ead44",
+      "documentId": "HOLDOUT-MATH-ID",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-MATH-ID-01",
+        "HOLDOUT-MATH-ID-02",
+        "HOLDOUT-MATH-ID-03",
+        "HOLDOUT-MATH-ID-04"
+      ],
+      "structure": "two-column",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-STAT-EN.pdf",
+      "bytes": 23203,
+      "sha256": "e1fb0fc84156b8e8962f923d5364008742bef68ff09956646bb5f54eb6720324",
+      "documentId": "HOLDOUT-STAT-EN",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-STAT-EN-01",
+        "HOLDOUT-STAT-EN-02",
+        "HOLDOUT-STAT-EN-03",
+        "HOLDOUT-STAT-EN-04"
+      ],
+      "structure": "table",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-STAT-ID.pdf",
+      "bytes": 23123,
+      "sha256": "fff61bd2634d3f960ff03435f631b87da7515e64e6249f9b0a7000e9b823cc76",
+      "documentId": "HOLDOUT-STAT-ID",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-STAT-ID-01",
+        "HOLDOUT-STAT-ID-02",
+        "HOLDOUT-STAT-ID-03",
+        "HOLDOUT-STAT-ID-04"
+      ],
+      "structure": "digital",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-BIO-EN.pdf",
+      "bytes": 35746,
+      "sha256": "c4356fd0a2e12c31bad3a99b73187ac4a37a3c8236b8aedd39f6e3f70ec27b9a",
+      "documentId": "HOLDOUT-BIO-EN",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-BIO-EN-01",
+        "HOLDOUT-BIO-EN-02",
+        "HOLDOUT-BIO-EN-03",
+        "HOLDOUT-BIO-EN-04"
+      ],
+      "structure": "mixed",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-BIO-ID.pdf",
+      "bytes": 51287,
+      "sha256": "1c20272dc888f9163b156942fd544229718068d3731440543b099b18334a3976",
+      "documentId": "HOLDOUT-BIO-ID",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-BIO-ID-01",
+        "HOLDOUT-BIO-ID-02",
+        "HOLDOUT-BIO-ID-03",
+        "HOLDOUT-BIO-ID-04"
+      ],
+      "structure": "scan",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-ENV-EN.pdf",
+      "bytes": 23104,
+      "sha256": "f8ffad88d70cfc97bae00947253516049a0f88e393938ba3ca5932dfffb19e5a",
+      "documentId": "HOLDOUT-ENV-EN",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-ENV-EN-01",
+        "HOLDOUT-ENV-EN-02",
+        "HOLDOUT-ENV-EN-03",
+        "HOLDOUT-ENV-EN-04"
+      ],
+      "structure": "two-column",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    },
+    {
+      "path": "evidence/acceptance/fixtures/HOLDOUT-ENV-ID.pdf",
+      "bytes": 23062,
+      "sha256": "4bfa5b9eb3564a29f4576b1a08445c7998124ce7a2e414f2aeefbd0c32aa6834",
+      "documentId": "HOLDOUT-ENV-ID",
+      "expectedSourceSegmentIds": [
+        "HOLDOUT-ENV-ID-01",
+        "HOLDOUT-ENV-ID-02",
+        "HOLDOUT-ENV-ID-03",
+        "HOLDOUT-ENV-ID-04"
+      ],
+      "structure": "digital",
+      "origin": "AI_AUTHORED_SYNTHETIC_FIXTURE"
+    }
+  ]
+}

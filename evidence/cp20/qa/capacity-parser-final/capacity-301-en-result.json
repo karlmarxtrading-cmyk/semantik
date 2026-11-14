@@ -1,0 +1,83 @@
+{
+  "fixture": {
+    "file": "capacity-301-en.pdf",
+    "pages": 301,
+    "language": "en",
+    "rich": false,
+    "bytes": 248887,
+    "sha256": "c9779437ea9d9378e750379575800d24cf0a5f9da9889fa205fb2c358e9ffe2f",
+    "sourceCharacters": 70581,
+    "uniqueProseParagraphs": 301,
+    "traceManifest": "capacity-301-en.json"
+  },
+  "status": "PASS",
+  "method": "Actual production openPdf and bounded per-page extract / PDF.js 6.2.108; native Canvas and disk QA sink. No translation or browser download.",
+  "summary": {
+    "pages": 301,
+    "blocks": 903,
+    "characters": 69377,
+    "sourceItems": 1505,
+    "coveredItems": 1505,
+    "assets": 0,
+    "assetBytes": 0,
+    "traceIds": 301,
+    "maxActivePageRecords": 1
+  },
+  "sourceSha256": "c9779437ea9d9378e750379575800d24cf0a5f9da9889fa205fb2c358e9ffe2f",
+  "orderedPageRecordsSha256": "038af7cd4b5434ffd2d3cbedb744685be7c6aaf9201602fef0008ddb675062ab",
+  "elapsedMs": 2626.6742110000005,
+  "sampledPeakNodeMemoryBytes": {
+    "rss": 192131072,
+    "heapUsed": 31166816,
+    "external": 9198069,
+    "arrayBuffers": 3010060
+  },
+  "memoryLimit": "Node process only; 100ms sampled. Not total browser/worker/WASM/Canvas RAM and not a physical-device qualification.",
+  "samples": [
+    {
+      "page": 1,
+      "elapsedMs": 35.662181000000146,
+      "rss": 191520768,
+      "heapTotal": 55693312,
+      "heapUsed": 20834456,
+      "external": 8982980,
+      "arrayBuffers": 3010060
+    },
+    {
+      "page": 100,
+      "elapsedMs": 832.5353690000002,
+      "rss": 191868928,
+      "heapTotal": 54382592,
+      "heapUsed": 23936128,
+      "external": 8082237,
+      "arrayBuffers": 1861111
+    },
+    {
+      "page": 200,
+      "elapsedMs": 1736.9126930000002,
+      "rss": 192000000,
+      "heapTotal": 54906880,
+      "heapUsed": 21222264,
+      "external": 7799733,
+      "arrayBuffers": 1578607
+    },
+    {
+      "page": 300,
+      "elapsedMs": 2610.4609069999997,
+      "rss": 192131072,
+      "heapTotal": 55955456,
+      "heapUsed": 31166816,
+      "external": 8648302,
+      "arrayBuffers": 2427176
+    },
+    {
+      "page": 301,
+      "elapsedMs": 2624.52726,
+      "rss": 192131072,
+      "heapTotal": 55955456,
+      "heapUsed": 19172952,
+      "external": 8633952,
+      "arrayBuffers": 2412826
+    }
+  ]
+}

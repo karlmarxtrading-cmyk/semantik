@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#204c40">
+  <meta name="description" content="Baca dan terjemahkan jurnal PDF Indonesia–Inggris langsung di perangkat. Ekstraksi, OCR, terjemahan lokal, dan unduhan Markdown dengan sumber yang dapat ditinjau.">
+  <title>Semantik Setara — Penerjemah Jurnal PDF</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/app/styles.css">
+  <script type="module" src="/app/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Langsung ke penerjemah</a>
+  <header class="header wrap">
+    <a class="brand" href="/" aria-label="Semantik Setara, beranda"><span class="brand-mark" aria-hidden="true">s<span>≋</span></span><span>semantik<span class="brand-second">setara</span></span></a>
+    <nav aria-label="Navigasi utama"><span class="header-label">PENERJEMAH JURNAL</span><a href="#guide">Cara kerja <svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></nav>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div><p class="eyebrow"><span></span> RUANG BACA ILMIAH · INDONESIA ↔ INGGRIS</p><h1 id="hero-title">Jurnal lintas bahasa.<br><em>Lebih dekat dengan maknanya.</em></h1><p class="hero-description">Pilih PDF, terjemahkan, lalu unduh satu Markdown dengan rumus dan gambar. Semua pemrosesan berlangsung di perangkat Anda.</p></div>
+      <div class="local-note"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 27 8v8c0 7-11 13-11 13S5 23 5 16V8Z"/><path d="m11 16 3 3 7-7"/></svg><strong>Dokumen tetap milik Anda.</strong><p>Isi PDF tidak dikirim ke server.<br>Mesin penerjemah berjalan lokal.</p><span>Tanpa akun · Tanpa API berbayar</span></div>
+    </section>
+    <section id="resume-banner" class="resume-banner" hidden aria-labelledby="resume-title"><div><strong id="resume-title">Ada bacaan yang belum Anda tutup</strong><p id="resume-description"></p></div><div class="button-row"><button id="resume-button" class="button small">Lanjutkan</button><button id="discard-button" class="text-button">Hapus progres</button></div></section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section class="workspace" id="workspace" aria-labelledby="workspace-title">
+      <div class="workspace-top"><h2 id="workspace-title">Mulai dengan jurnal Anda</h2><span class="label-tag">PDF SAJA</span></div>
+      <div class="setup-grid">
+        <div class="upload-column">
+          <label id="drop-zone" class="drop-zone" for="pdf-input">
+            <input type="file" id="pdf-input" accept=".pdf,application/pdf" aria-describedby="file-help">
+            <span class="file-symbol" aria-hidden="true"><svg viewBox="0 0 48 56"><path d="M10 2h20l12 12v40H10Z"/><path d="M30 2v14h12M18 27h16M18 34h16M18 41h10"/></svg><span>PDF</span></span>
+            <strong>Pilih jurnal PDF</strong><span>atau letakkan berkas di sini</span><small id="file-help">PDF digital atau scan · maksimal 100 MiB · ruang perangkat diperiksa sebelum mulai</small>
+          </label>
+          <div id="file-card" class="file-card" hidden><span class="file-badge">PDF</span><div class="file-details"><strong id="file-name"></strong><span id="file-meta"></span></div><button id="remove-file" class="icon-button" aria-label="Hapus PDF yang dipilih">×</button></div>
+          <p class="privacy-line"><span aria-hidden="true">◉</span> Berkas dibaca di browser, bukan diunggah ke server.</p>
+        </div>
+        <div class="settings-column">
+          <label class="field-label" for="target-language">Terjemahkan ke</label>
+          <select id="target-language"><option value="auto">Otomatis · bahasa lawan</option><option value="id">Bahasa Indonesia</option><option value="en">English</option></select>
+          <p class="field-hint">Bahasa sumber dikenali otomatis. Bisa Anda sesuaikan.</p>
+          <details id="advanced"><summary>Sesuaikan pembacaan <span>Opsional</span></summary><div class="advanced-body">
+            <label class="field-label" for="source-language">Bahasa sumber</label><select id="source-language"><option value="auto">Deteksi otomatis</option><option value="en">English</option><option value="id">Bahasa Indonesia</option></select>
+            <label class="field-label" for="layout-mode">Susunan halaman</label><select id="layout-mode"><option value="auto">Deteksi otomatis</option><option value="single">Satu kolom</option><option value="two">Dua kolom</option></select>
+            <label class="field-label" for="glossary">Istilah yang ingin dikunci</label><textarea id="glossary" rows="3" maxlength="12000" placeholder="machine learning = pembelajaran mesin" aria-describedby="glossary-help"></textarea><p id="glossary-help" class="field-hint">Satu pasangan istilah per baris: sumber = terjemahan. Maksimal 100 pasangan, mengikuti arah bahasa yang dipilih.</p>
+            <button id="extract-button" class="text-button" disabled>Ekstrak PDF tanpa menerjemahkan</button>
+          </div></details>
+          <button id="translate-button" class="button primary-action" disabled><span>Terjemahkan</span><svg class="inline-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></button>
+          <p class="download-note" id="model-note">Pada penggunaan pertama, model bahasa diunduh sekali (sekitar 105 MB per arah). Proses berikutnya menggunakan salinan lokal.</p>
+        </div>
+      </div>
+      <div class="workflow-strip" aria-label="Tahapan penggunaan"><span><b>01</b> Pilih PDF</span><span><b>02</b> Terjemahkan lokal</span><span><b>03</b> Unduh hasil .md</span></div>
+    </section>
+    <section id="progress-panel" class="progress-panel" hidden aria-labelledby="progress-title"><div class="progress-heading"><div><p class="eyebrow" id="progress-stage">MEMBACA DOKUMEN</p><h2 id="progress-title">Menyiapkan jurnal Anda…</h2></div><button id="cancel-button" class="button secondary small">Jeda</button></div><progress id="job-progress" max="100" value="0" aria-label="Progres pekerjaan"></progress><p id="progress-detail" role="status" aria-live="polite"></p><p class="field-hint">Biarkan tab ini terbuka selama pemrosesan. Gunakan Jeda untuk berhenti sementara; hasil yang tersimpan tetap dapat diunduh dan dilanjutkan.</p></section>
+    <details id="source-preview" class="source-preview" hidden><summary><span>Lihat PDF sumber</span><span id="preview-label">Halaman 1</span></summary><div class="preview-body"><div class="preview-controls"><button id="preview-prev" class="button secondary small" aria-label="Halaman PDF sebelumnya">←</button><label for="preview-page">Halaman</label><input id="preview-page" type="number" min="1" value="1"><span id="preview-total"></span><button id="preview-next" class="button secondary small" aria-label="Halaman PDF berikutnya">→</button></div><p id="preview-status" role="status"></p><div class="canvas-wrap"><canvas id="pdf-canvas" aria-label="Pratinjau halaman PDF sumber"></canvas></div></div></details>
+    <section id="results" class="results" hidden aria-labelledby="results-title">
+      <div class="results-heading"><div><p class="eyebrow">HASIL DOKUMEN</p><h2 id="results-title">Bacaan Anda siap disimpan.</h2><p id="result-summary"></p></div><span id="result-status" class="status-tag">Hasil sementara</span></div>
+      <div id="qa-summary" class="qa-summary"></div>
+      <div class="export-panel"><div><h3>Satu file, siap dibaca</h3><p>Rumus yang berhasil direkonstruksi memakai LaTeX. Gambar penting disertakan; bagian yang belum pasti tetap diberi label.</p></div><div class="export-actions"><button id="download-translation" class="button" disabled>Unduh hasil .md</button><details class="secondary-exports"><summary>Unduhan tambahan · opsional</summary><button id="download-zip" class="button secondary">Paket lengkap .zip</button><div class="export-links"><button id="download-source" class="text-button">Teks sumber .md</button><button id="download-bilingual" class="text-button" disabled>Bilingual .md</button></div></details></div></div>
+      <details id="optional-review"><summary>Bandingkan sumber dan hasil · opsional</summary>
+      <div class="result-toolbar"><div class="page-controls"><button id="result-prev" class="button secondary small" aria-label="Halaman hasil sebelumnya">←</button><label for="result-page">Halaman</label><select id="result-page"></select><button id="result-next" class="button secondary small" aria-label="Halaman hasil berikutnya">→</button></div><label class="checkbox-label"><input id="review-only" type="checkbox"> Hanya yang perlu ditinjau</label><button id="view-source" class="text-button">Lihat halaman asli</button></div>
+      <div class="column-labels"><span>TEKS SUMBER</span><span>HASIL · DAPAT ANDA EDIT</span></div><div id="block-list"></div>
+      <div id="empty-results" class="empty-results" hidden>Tidak ada bagian yang perlu ditinjau pada halaman ini.</div>
+      <div class="result-bottom"><span id="page-info"></span><div class="button-row"><button id="result-prev-bottom" class="text-button">← Sebelumnya</button><button id="result-next-bottom" class="text-button">Berikutnya →</button></div></div>
+      </details>
+      <p class="review-note">Pemeriksaan otomatis membantu menemukan perubahan angka dan bagian yang bermasalah. Tinjau istilah, tabel, rumus, dan makna ilmiah sebelum memakai hasil untuk penelitian.</p>
+    </section>
+    <section id="guide" class="guide"><div><p class="eyebrow">SEDERHANA DI DEPAN. TELITI DI DALAM.</p><h2>Dari halaman ke pemahaman.</h2></div><div class="guide-grid"><article><span>01 / SUMBER</span><h3>Buka jurnalnya.</h3><p>PDF teks maupun scan dibaca lokal. Susunan halaman dan teks sumber tersedia untuk dibandingkan.</p></article><article><span>02 / MAKNA</span><h3>Terjemahkan bertahap.</h3><p>Mesin Indonesia–Inggris bekerja per bagian. Angka dan rujukan diperiksa; bagian yang meragukan diberi tanda.</p></article><article><span>03 / KENDALI</span><h3>Unduh hasil .md.</h3><p>Unduh Markdown dalam satu berkas. Perbandingan sumber dan koreksi tetap tersedia bila diperlukan; progres tersimpan di browser ini.</p></article></div></section>
+    <details class="device-settings"><summary>Data di perangkat & penggunaan offline</summary><div class="device-body"><p>PDF dan progres terakhir tersimpan di browser ini. Model disimpan setelah digunakan. Browser dapat menghapus cache ketika ruang penyimpanan menipis. Unduh hasil untuk menyimpannya secara mandiri.</p><p id="offline-status" role="status">Komponen besar disiapkan hanya ketika dibutuhkan.</p><div class="button-row"><button id="offline-button" class="button secondary small">Siapkan offline untuk bahasa tujuan ini</button><button id="clear-document" class="text-button">Hapus dokumen & progres</button><button id="clear-models" class="text-button">Hapus model lokal</button></div></div></details>
+  </main>
+  <footer class="footer wrap"><span>Semantik Setara <span aria-hidden="true">/</span> Academic PDF Translator</span><span>CP22 · Kandidat pengembangan · Pemrosesan lokal <span class="connection-dot" id="connection-label">Online</span></span></footer>
+  <dialog id="password-dialog" aria-labelledby="password-title"><form method="dialog"><h2 id="password-title">PDF ini dilindungi kata sandi</h2><p id="password-message">Masukkan kata sandi untuk membaca dokumen di perangkat Anda.</p><label class="field-label" for="pdf-password">Kata sandi PDF</label><input id="pdf-password" type="password" autocomplete="off"><div class="button-row"><button value="cancel" class="button secondary">Batal</button><button value="open" class="button">Buka PDF</button></div></form></dialog>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><h2 id="confirm-title">Konfirmasi</h2><p id="confirm-message"></p><div class="button-row"><button value="cancel" class="button secondary">Batal</button><button value="yes" class="button">Lanjutkan</button></div></form></dialog>
+  <noscript><p class="notice">Aktifkan JavaScript untuk membaca PDF dan menjalankan mesin penerjemah lokal.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,257 @@
+{
+  "build": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  },
+  "method": "One complete 32-suite run, then 6 affected/environment/version rechecks; 2 additional CP21 suites. Initial failures retained. No tests or production checks silently deleted.",
+  "coverage": [
+    {
+      "test": "cp19-guards.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp19-model-cache.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp19-markdown.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cache.test.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-regression.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-storage.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-export.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-table-integration.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-manual-resume.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-markdown-visible.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "lifecycle-markdown-visible.py",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "translation-regression.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "translation-scientific-identities.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "translation-engine-literals.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "translation-before-after.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-layout.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-layout-inherited.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-real-parser.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-inherited-reader.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-extract-boundaries.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "pdf-budget-after.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp19-geometry.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-semantic-guards.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-pipeline.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-pipeline-quota-recovery.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-pipeline-eta.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-structure.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-math-qualification.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-math-real-pdf.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp20-math-review-lifecycle.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    },
+    {
+      "test": "cp21-offline-release.mjs",
+      "status": "PASS",
+      "initialExit": 1,
+      "rechecked": true,
+      "reason": "Exact CP21 release assertion replaces the historical CP20 version assertion; all cache-integrity controls retained."
+    },
+    {
+      "test": "cp20-capacity-references.mjs",
+      "status": "PASS",
+      "initialExit": 0,
+      "rechecked": false,
+      "reason": "Targeted correction/recheck where required; unchanged suites reused."
+    }
+  ],
+  "newTests": [
+    {
+      "test": "cp21-document-warning.mjs",
+      "exitCode": 0
+    },
+    {
+      "test": "cp21-semantic-controls.mjs",
+      "exitCode": 0
+    }
+  ],
+  "allPass": true,
+  "triage": [
+    "Role guard initially rejected valid pengobatan/grup aliases and reversed non-A labels. Product guard corrected; original valid-control assertions preserved. Ambiguous A treatment still rejected.",
+    "QA clone excluded all dist directories, omitting KaTeX dist. Dependencies restored from exact npm-ci worktree; product not changed.",
+    "Historical offline test asserts CP20 version. CP21 sibling test asserts exact CP21; 10 cache/service-worker checks passed.",
+    "Early CP21 unit fixture wrongly called D treatment ambiguous; corrected to A treatment. Independent historical C/D controls required acceptance of valid D group.",
+    "Nonzero polarity normalization is paired with explicit nonzero concept rejection; ordinary negation control retained."
+  ]
+}

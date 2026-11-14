@@ -1,0 +1,74 @@
+[
+  {
+    "id": "F01",
+    "status": "PARTIAL",
+    "change": "Geometri PDF, AST, garis pecahan, script, integral/matriks dan provenance;unknown/kurva diberi unverified.",
+    "source": "app/app/math-geometry.js; app/app/pdf-reader.js",
+    "evidence": "geometry/regression-results.json; browser/math-equations-verified.jpg",
+    "remaining": "Cakupan matematika luas padaG3 masih terbuka."
+  },
+  {
+    "id": "F02",
+    "status": "CLOSED_KNOWN_REGRESSIONS",
+    "change": "Prime/doubleprime/aksen, satuan ilmiah,Unicode danidentitas terproteksi; tidak mengganti isi sumber.",
+    "source": "app/app/semantic-spans.js",
+    "evidence": "guards.json; ../final-regression/translation-scientific-identities.mjs.log; browser/RENDERED_BROWSER_EXPORTS.json",
+    "remaining": "Tidak menjamin setiap notasi jurnal yang belum diuji."
+  },
+  {
+    "id": "F03",
+    "status": "PARTIAL",
+    "change": "Guard relasi/istilah, perlindungan konteks dan bounded alternate;170 evaluasi alternatif nyata tidak membenarkan penggantian model.",
+    "source": "app/app/translation.js; app/app/claim-guards.js",
+    "evidence": "DOMAIN_HOLDOUT.json; INDEPENDENT_ACCEPTANCE.json; SEMANTIC_QA_PER_ID.json",
+    "remaining": "Meaning failures terpisah masih ada; dua reviewer danadjudicator belum tersedia."
+  },
+  {
+    "id": "F04",
+    "status": "CLOSED_KNOWN_REGRESSIONS",
+    "change": "Ekspor satuMD dengan LaTeX terverifikasi dan raster dataURI; batas inline utuh; aset hilang menggagalkan ekspor.",
+    "source": "app/app/export.js; app/app/markdown-math.js",
+    "evidence": "markdown-tests.json; browser/RENDERED_BROWSER_EXPORTS.json",
+    "remaining": "G3 tetap terbuka; renderer yang dijamin hanya konfigurasi yang diuji."
+  },
+  {
+    "id": "F05",
+    "status": "PARTIAL",
+    "change": "45 guard/regresi, relasi angka, direction/quantifier/negation, retry strategi berbeda dan cachekalimat sama; rejection bukanPASS.",
+    "source": "app/app/translation.js; app/app/claim-guards.js",
+    "evidence": "guards.json; DOMAIN_HOLDOUT.json",
+    "remaining": "Guard lexical bounded melewatkan sebagian semantik penerimaan; bukan semantic verifier universal."
+  },
+  {
+    "id": "F06",
+    "status": "PARTIAL_HOSTING",
+    "change": "AturanCache-Control dipisah shell/SW/rilis;5path tidak bertumpuk dalamsimulasi.",
+    "source": "scripts/build.py; app/_headers",
+    "evidence": "MODEL_AND_HEADERS.json; browser/hosting-final.json",
+    "remaining": "ResponsCloudflare actual belumtersedia; preview tidakmenerapkanheaders."
+  },
+  {
+    "id": "F07",
+    "status": "PARTIAL_BROWSER_UPDATE",
+    "change": "Cachemodel menggunakanhashkonten denganvalidasi setiapbaca danmigrasilegacy;rilisaktif tidakdihapusagresif.",
+    "source": "scripts/engine-cache-fragment.js; app/assets/engine.worker-4c3dcfee.js",
+    "evidence": "model-cache.json; browser/browser-final.json",
+    "remaining": "Offline/update/rollback actual belumlulus padaorigin yangutuh."
+  },
+  {
+    "id": "F08",
+    "status": "PARTIAL_MODEL_REPRODUCTION",
+    "change": "Sourceaktual,lock,patch,fixture,model,hash;staticbuildkedua identik300aset. Paritymodelhistorisdipertahankan.",
+    "source": "scripts/build.py; scripts/patch-engine.py; model-provenance-source/",
+    "evidence": "REPRODUCIBLE_BUILD.json; MODEL_AND_HEADERS.json",
+    "remaining": "NPZoriginal tidakada;konversinativeparity tidakdiulangdanbukanakurasiilmiah."
+  },
+  {
+    "id": "F09",
+    "status": "CLOSED_ACTIVE_DOCUMENTATION",
+    "change": "DokumenkanCP19aktual,PDF.js6.2.108,lokasi lisensi relatifrilis danbataspengujian;historicalsourcesdiberilabel.",
+    "source": "README.md; app/MODEL_NOTICE.txt",
+    "evidence": "../build/BUILD_MANIFEST.json",
+    "remaining": "Komentar/reporthistoris dipertahankansebagaiprovenance,bukanstatusCP19."
+  }
+]

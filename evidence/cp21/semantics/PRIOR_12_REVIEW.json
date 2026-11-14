@@ -1,0 +1,114 @@
+{
+  "method": "Internal AI comparison of all 12 prior critical cases against actual CP21 inference. No human approval. See KNOWN_REUSE_VALIDATION for final-code binding.",
+  "rows": [
+    {
+      "id": "F01-en-id",
+      "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval.",
+      "previousTarget": "Sebuah fungsi kontinu pada interval tertutup dan terikat mencapai maksimum. Kesimpulan yang sama tidak harus pegang pada interval terbuka.",
+      "actualCP21Target": "Sebuah fungsi kontinu pada interval tertutup dan terbatas mencapai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F02-en-id",
+      "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+      "previousTarget": "Dua matriks dapat memiliki determinant yang sama tanpa menjadi sama. Sebuah determinant nonnol cukup untuk matriks persegi untuk memiliki terbalik.",
+      "actualCP21Target": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi sama. Determinan tidak nol cukup untuk matriks persegi untuk memiliki invers.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F03-en-id",
+      "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute.",
+      "previousTarget": "Membagikan larutan dengan air murni mengurangi konsentrasi ketika jumlah dari terlarut tetap konstan. Pengenceran saja tidak menghapus zat terlarut.",
+      "actualCP21Target": "Mengencerkan sebuah larutan dengan air murni mengurangi konsentrasi ketika jumlah zat terlarut tetap konstan. Pengenceran saja tidak menghapus zat terlarut.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F06-en-id",
+      "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population.",
+      "previousTarget": "Tugas acak dan acak pengambilan sampel melayani tujuan yang berbeda. Tugas acak dapat mengurangi konfounding dalam percobaan; ini tidak secara otomatis membuat perwakilan sampel dari populasi.",
+      "actualCP21Target": "Penugasan acak dan pengambilan sampel acak melayani tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; ini tidak secara otomatis membuat perwakilan sampel dari populasi.",
+      "priorSeverity": "critical",
+      "disposition": "OPEN_REPRESENTATIVENESS_WORDING",
+      "note": "Random assignment and confounding are repaired. Perwakilan sampel dari populasi still leaves the representativeness relation unclear; keep open."
+    },
+    {
+      "id": "F07-en-id",
+      "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences.",
+      "previousTarget": "Sebuah langit-langit harga mengikat dapat membuat kelebihan permintaan. Pernyataan ini menyangkut pembeli kuantitas yang ingin membeli relatif terhadap penjual kuantitas, bukan perubahan selera orang.",
+      "actualCP21Target": "Batas harga maksimum yang mengikat dapat membuat kelebihan permintaan. Pernyataan ini menyangkut jumlah barang yang ingin dibeli pembeli relatif terhadap jumlah barang yang ditawarkan penjual, bukan perubahan dalam preferensi orang.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F08-en-id",
+      "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged.",
+      "previousTarget": "Peningkatan pendapatan tidak harus meningkatkan permintaan untuk setiap baik. Untuk kebaikan yang lebih rendah, permintaan dapat jatuh bahkan jika harga tetap tidak berubah.",
+      "actualCP21Target": "Peningkatan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat jatuh walaupun harga tetap tidak berubah.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F01-id-en",
+      "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+      "previousTarget": "Function continuous at closed intervals and limited to maximum value. The same conclusion need not applies at open intervals.",
+      "actualCP21Target": "Function continuous at closed and bounded interval attains maximum value. The same conclusion need not applies to open interval.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F03-id-en",
+      "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut.",
+      "previousTarget": "Expand solution with pure water lowers concentration when the number of substances dissolved remains. Dilution alone does not eliminate the dissolved substance.",
+      "actualCP21Target": "Diluting solution with pure water lower its concentration when amount of dissolved substance remains constant. Dilution alone does not remove solute.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F04-id-en",
+      "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+      "previousTarget": "The catalyst changes reaction rate, but does not change the balance of the balance at fixed temperature. Accomplishing the balance faster does not in itself imply greater balance.",
+      "actualCP21Target": "Catalyst changes rate of a reaction, but does not change its equilibrium constant in fixed temperature. Accomplished equilibrium faster not by itself implies a larger equilibrium yield.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F05-id-en",
+      "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya.",
+      "previousTarget": "Confidence interval 95% explains procedures with coverage in sampling recurrence. After this particular interval is calculated, the frequency interpretation does not give the probability 95% that the parameters remain within it.",
+      "actualCP21Target": "Confidence interval 95% explains procedure by repeated-sampling coverage. Once this special interval is calculated, frequentist interpretation does not give the probability 95% that fixed parameter is in it.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F06-id-en",
+      "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi.",
+      "previousTarget": "Random assignment and sampling randomly have different goals. Random assignment can reduce the role in experiments; it does not automatically create sample representing population.",
+      "actualCP21Target": "Random assignment and random sampling have different goals. Random assignment can reduce confounding in experiments; it does not automatically make sample represent population.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    },
+    {
+      "id": "F07-id-en",
+      "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat.",
+      "previousTarget": "Maximum binding price limit can cause excess demand. This statement discusses the amount of buyers to buy rather than the number of sellers offered, not the change in the preference of the public.",
+      "actualCP21Target": "Binding price ceiling can generate excess demand. This statement covers quantity buyers wish to buy compared quantity sellers offer, not change the preferences of the community.",
+      "priorSeverity": "critical",
+      "disposition": "TARGETED_TERMS_AND_RELATIONS_REPAIRED_REVIEW_REQUIRED",
+      "note": "The specific critical terminology/attachment failure improved in the actual output. Residual fluency and full-proposition review remain; this is not a production semantic pass."
+    }
+  ],
+  "productionReady": false
+}

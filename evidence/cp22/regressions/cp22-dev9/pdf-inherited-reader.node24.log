@@ -1,0 +1,129 @@
+Warning: Please use the `legacy` build in Node.js environments.
+Warning: Indexing all PDF objects
+{
+  "method": "Current production reader/PDF.js6.2.108 with Node nativeCanvas/fileFetch modernAPI shims as declared in pdf-real-parser. Original CP17 fixtures newly tested, NOT historical results reused.",
+  "changedExpectation": "Table remains structurally intact and translatable=true per explicit CP18 OUT05 requirement (formerly false). All content/geometry/image assertions retained.",
+  "results": [
+    {
+      "name": "digital-en.pdf",
+      "status": "PASS",
+      "sourceItems": 11,
+      "coveredItems": 11,
+      "blocks": 9,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "digital-id.pdf",
+      "status": "PASS",
+      "sourceItems": 10,
+      "coveredItems": 10,
+      "blocks": 9,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "bilingual-text.pdf",
+      "status": "PASS",
+      "sourceItems": 14,
+      "coveredItems": 14,
+      "blocks": 7,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "two-column.pdf",
+      "status": "PASS",
+      "sourceItems": 16,
+      "coveredItems": 16,
+      "blocks": 16,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "academic-structures.pdf",
+      "status": "PASS",
+      "sourceItems": 23,
+      "coveredItems": 23,
+      "blocks": 8,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "rotated.pdf",
+      "status": "PASS",
+      "sourceItems": 2,
+      "coveredItems": 2,
+      "blocks": 2,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "unsafe-strings.pdf",
+      "status": "PASS",
+      "sourceItems": 7,
+      "coveredItems": 7,
+      "blocks": 2,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "password-protected.pdf",
+      "status": "PASS",
+      "sourceItems": 11,
+      "coveredItems": 11,
+      "blocks": 9,
+      "coverage": [
+        "digital-text"
+      ]
+    },
+    {
+      "name": "json-masquerading.pdf",
+      "status": "PASS",
+      "case": "rejected input"
+    },
+    {
+      "name": "corrupt.pdf",
+      "status": "PASS",
+      "case": "rejected input"
+    },
+    {
+      "name": "page-limit-301.pdf",
+      "status": "PASS",
+      "case": "CP20 accepts 301 pages; extraction capacity is independently tested"
+    },
+    {
+      "name": "cp20-capacity-2001-limit.pdf",
+      "status": "PASS",
+      "case": "upper page safety bound retained"
+    },
+    {
+      "name": "text-limit.pdf",
+      "status": "PASS",
+      "completedPages": [
+        1
+      ]
+    },
+    {
+      "name": "references-continuation.pdf",
+      "status": "PASS",
+      "resumedAssetBytes": 34877,
+      "sourceTextCharacters": 149
+    },
+    {
+      "name": "mixed.pdf",
+      "case": "cancel after first page; no OCR tested",
+      "status": "PASS",
+      "completedPages": [
+        1
+      ]
+    }
+  ]
+}

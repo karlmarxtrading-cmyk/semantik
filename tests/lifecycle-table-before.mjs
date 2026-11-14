@@ -1,0 +1,12 @@
+import {loadMain} from './lifecycle-harness.mjs';
+import {createMarkdown} from '../evidence/lifecycle/pre-table-edit-source/export.js';
+import {writeFile,readFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const block={id:'p1-table',page:1,type:'table',translatable:true,text:'Kelompok | Dosis\nA | 10 mg',rows:[['Kelompok','Dosis'],['A','10 mg']],target:'Group | Dose\nA | 10 mg',translatedRows:[['Group','Dose'],['A','10 mg']],status:'translated',sourceIssues:[],issues:[]};
+const document={fileName:'table-fixture.pdf',numPages:1,pages:[{number:1,blocks:[block]}],blocks:[block],assets:[],warnings:[]};
+const h=await loadMain({sourcePath:new URL('../evidence/lifecycle/pre-table-edit-source/main.js',import.meta.url),translation:{detectLanguage:()=> 'id',Translator:class{async prepare(){}async translateTable(b){return{text:b.rows.map(r=>r.join(' | ')).join('\n'),translatedRows:b.rows,status:'translated',outcome:'translated',issues:[]};}async translate(text){return{text,status:'translated',issues:[]};}cancel(){}}}});
+Object.assign(h.api.state,{document,file:{name:'table-fixture.pdf',size:123},pdf:{numPages:1},config:{source:'id',target:'en',layout:'auto',glossary:[]},status:'complete',token:{jobId:'fixture',writeEpoch:1}});h.api.state.signature=JSON.stringify(h.api.state.config);h.element('target-language').value='en';h.element('source-language').value='id';
+h.api.editBlock(block,'Group | Dose\nA | 20 mg',document);await h.api.flushEdits();const targetExport=createMarkdown({document,status:'complete'},'translation');
+await h.api.correctSource(block,'Kelompok | Dosis\nA | 20 mg',document);await h.api.runNow(true);const sourceResult={source:block.text,modelInputRows:block.rows,target:block.target};
+await writeFile(new URL('../evidence/lifecycle/table-edit-integration-before.json',import.meta.url),JSON.stringify({method:'Exact pre-fix CP18 main/export; declared VM boundaries and controlled translation transport. Not real model output.',sourceHashes:Object.fromEntries(await Promise.all(['main.js','export.js'].map(async name=>[name,createHash('sha256').update(await readFile(new URL('../evidence/lifecycle/pre-table-edit-source/'+name,import.meta.url))).digest('hex')]))),targetExport,sourceResult,confirmedTargetEditStale:targetExport.includes('| A | 10 mg |'),confirmedSourceEditIgnored:sourceResult.target.includes('10 mg')},null,2));
+console.log({confirmedTargetEditStale:targetExport.includes('| A | 10 mg |'),confirmedSourceEditIgnored:sourceResult.target.includes('10 mg')});

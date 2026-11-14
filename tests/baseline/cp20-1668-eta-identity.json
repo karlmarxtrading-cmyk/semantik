@@ -1,0 +1,6 @@
+{
+  "release": "cp20-1668833ad37c9dd8",
+  "originalPath": "dist/r/1668833ad37c9dd8/app/long-document.js",
+  "sha256": "5be8cde00ac7baec00039479919bf31c76654ea27d615dd55f9de42ae0649ea3",
+  "purpose": "Exact pre-ETA-fix module retained solely for output/storage equivalence regression."
+}

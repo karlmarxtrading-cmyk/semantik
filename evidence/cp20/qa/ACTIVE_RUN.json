@@ -1,0 +1,72 @@
+{
+  "updatedAt": "2026-11-13T08:10:25.502693+00:00",
+  "activeTask": "COMPLETE: actual 1500-page pipeline/model/partial Markdown, no pending runtime work",
+  "processSession": null,
+  "activeBuild": "cp20-1668833ad37c9dd8",
+  "latestCommittedPage": 1500,
+  "liveState": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/SUMMARY.json",
+  "outputDir": "real-inference-final-1668",
+  "sourceFrozenDuringRun": true,
+  "parentMayChangeMainAndEtaOnly": true,
+  "bindingRule": "Never call historical outputs exact-current-app acceptance. Compare modules and preserve original build identities. Browser evidence owned by root.",
+  "completed": [
+    "Input ZIP CRC +1185 source manifest verification",
+    "Locked dependency restore",
+    "32 final regression suites and14 syntax modules PASS; stable source",
+    "6 actual parser capacity fixtures; rich1001 extracts2486906chars",
+    "Full text/order ground-truth reconciliation5103pages PASS",
+    "6 final-header source-only Markdown exports with fullMarked parse",
+    "Exact100MiB PDF open/extract and100MiB+1 rejection",
+    "Actual references/post-reference/margin continuation tests",
+    "Historical4694 actual1001 pipeline + partialMD;200 prose rejects,4705 engine requests",
+    "1668 actual1500 pipeline + partialMD;1500 prose translated,1500 English trace footers rejected",
+    "Final8c component binding and ETA parity PASS; no final-main browser claim"
+  ],
+  "next": [],
+  "latestCounts": {
+    "total": 4500,
+    "translated": 3000,
+    "preserved": 0,
+    "rejected": 1500,
+    "failed": 0,
+    "pending": 0,
+    "review": 1500,
+    "done": 3000,
+    "attempted": 4500
+  },
+  "currentPackagedBuild": "cp20-8c643bea6962471f",
+  "componentBinding": "LONG_1668_FINAL_COMPONENT_BINDING.json",
+  "regressionEvidence": "regressions-8c-final/RESULTS.json",
+  "output": {
+    "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+    "bytes": 1008350,
+    "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+    "stats": {
+      "pages": 1500,
+      "blocks": 4500,
+      "counts": {
+        "total": 4500,
+        "translated": 3000,
+        "preserved": 0,
+        "rejected": 1500,
+        "failed": 0,
+        "pending": 0
+      },
+      "uniqueAssets": 0,
+      "assetReferences": 0,
+      "bytes": 1008350,
+      "sink": "bounded-blob",
+      "maxActivePages": 1,
+      "coverageIncompletePages": 0,
+      "mathUncertainPages": 0,
+      "unsavedPages": [],
+      "durablePages": 1500,
+      "partial": true
+    },
+    "traceIds": 1500,
+    "ms": 2672.6286969999783
+  },
+  "runStatus": "FAIL",
+  "notProductionReady": true,
+  "summary": "QA_SUMMARY.json"
+}

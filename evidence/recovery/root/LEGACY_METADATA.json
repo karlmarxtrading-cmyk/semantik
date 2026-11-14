@@ -1,0 +1,236 @@
+{
+  "method": "Actual main.js and metadata function in VM with explicit DOM/storage/translation doubles; no real inference/browser claim. Harness links new dependency to actual module, with no weakened assertions.",
+  "sourceHashes": {
+    "app/app/main.js": "5dcae2db55c147135a91bac48b58407ea5525e6a4a6af6141424563930083b30",
+    "app/app/metadata-language.js": "4cb73e0dae69c5d0c72e9f9c0a59480ebe1d16e2218bc942c25c722892b435ca",
+    "tests/lifecycle-harness.mjs": "34395cb0f0172cc1e3a73e678b5ffe899abc1379ef2f2d14fe643b913b653bf7"
+  },
+  "rows": [
+    {
+      "direction": "id-en",
+      "status": "PASS",
+      "counts": {
+        "total": 4,
+        "translated": 2,
+        "preserved": 1,
+        "rejected": 1,
+        "failed": 0,
+        "pending": 0,
+        "review": 1,
+        "done": 3,
+        "attempted": 4
+      },
+      "engineCalls": [
+        "RPT9 AKHIR",
+        "Penelitian ini mengukur hasil dengan cermat.",
+        "Jangan mengubah angka 19."
+      ],
+      "blocks": [
+        {
+          "id": "p1-b0",
+          "page": 1,
+          "type": "paragraph",
+          "text": "RPT9 END",
+          "originalText": "RPT9 END",
+          "sourceIssues": [],
+          "issues": [],
+          "preservationReason": "already-target-metadata",
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "RPT9 END",
+          "status": "preserved",
+          "outcome": "preserved",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b1",
+          "page": 1,
+          "type": "paragraph",
+          "text": "RPT9 AKHIR",
+          "originalText": "RPT9 AKHIR",
+          "sourceIssues": [],
+          "issues": [],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Translated RPT9 AKHIR",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b2",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Penelitian ini mengukur hasil dengan cermat.",
+          "originalText": "Penelitian ini mengukur hasil dengan cermat.",
+          "sourceIssues": [],
+          "issues": [],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Translated Penelitian ini mengukur hasil dengan cermat.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b3",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Jangan mengubah angka 19.",
+          "originalText": "Jangan mengubah angka 19.",
+          "sourceIssues": [],
+          "issues": [
+            "Controlled rejected prose"
+          ],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Jangan mengubah angka 19.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": true,
+          "semanticVerified": false
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "status": "PASS",
+      "counts": {
+        "total": 4,
+        "translated": 2,
+        "preserved": 1,
+        "rejected": 1,
+        "failed": 0,
+        "pending": 0,
+        "review": 1,
+        "done": 3,
+        "attempted": 4
+      },
+      "engineCalls": [
+        "RPT9 END",
+        "The research team measured the results carefully.",
+        "Do not change value 19."
+      ],
+      "blocks": [
+        {
+          "id": "p1-b0",
+          "page": 1,
+          "type": "paragraph",
+          "text": "RPT9 AKHIR",
+          "originalText": "RPT9 AKHIR",
+          "sourceIssues": [],
+          "issues": [],
+          "preservationReason": "already-target-metadata",
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "RPT9 AKHIR",
+          "status": "preserved",
+          "outcome": "preserved",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b1",
+          "page": 1,
+          "type": "paragraph",
+          "text": "RPT9 END",
+          "originalText": "RPT9 END",
+          "sourceIssues": [],
+          "issues": [],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Translated RPT9 END",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b2",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The research team measured the results carefully.",
+          "originalText": "The research team measured the results carefully.",
+          "sourceIssues": [],
+          "issues": [],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Translated The research team measured the results carefully.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": false,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-b3",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Do not change value 19.",
+          "originalText": "Do not change value 19.",
+          "sourceIssues": [],
+          "issues": [
+            "Controlled rejected prose"
+          ],
+          "resultBuild": {
+            "release": "cp18-test",
+            "version": "0.18.0",
+            "sourceHash": "test"
+          },
+          "target": "Do not change value 19.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "diagnostics": [],
+          "engine": null,
+          "sourcePreserved": true,
+          "semanticVerified": false
+        }
+      ]
+    }
+  ]
+}

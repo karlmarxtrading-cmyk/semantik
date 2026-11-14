@@ -1,0 +1,20 @@
+{
+  "note": "Discovered after initial safety checkpoint: browser IndexedDB retained a three-page vector fixture from original CP20. Exported before new browser upload. The old 1500-page current job was no longer resident; its saved artifacts remain preserved.",
+  "artifacts": [
+    {
+      "file": "RECOVERED_OLD_BROWSER_CHECKPOINT.json",
+      "bytes": 16154,
+      "sha256": "dc47dfad768fe1b4ffb8204c561d79b0c5319d648f35684582eecb3b2e525abb"
+    },
+    {
+      "file": "RECOVERED_OLD_BROWSER_OUTPUT.md",
+      "bytes": 178643,
+      "sha256": "f7f58476047405fca440d3090ad0366868ed72a33c35ee3e03dc7fef05f5016f"
+    },
+    {
+      "file": "RECOVERED_OLD_BROWSER_FULL_PACKAGE.zip",
+      "bytes": 182719,
+      "sha256": "0833e0b495828bbc7ef46db10c5a373411860130aa600e4df885eaffb29cb520"
+    }
+  ]
+}

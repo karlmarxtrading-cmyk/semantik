@@ -1,0 +1,38 @@
+(node:359) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Local checkpoint unavailable: QuotaExceededError
+Local checkpoint unavailable: SecurityError
+{
+  "scope": "Actual application main and long pipeline modules in Node VM. DOM/storage/PDF/model doubles. Not browser, actual OCR, device memory, or real translation proof.",
+  "sourceHashes": {
+    "main.js": "6f82fb3b82969d53d9c65a1b12a197f901f5f381150ef28d50c2d7c4ffae8cd2",
+    "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+    "storage.js": "f841c7c7cc7e31bf405b69a04838628fbd52b2ab7922ce4b17ae10038ac1a7d6",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd"
+  },
+  "checks": [
+    {
+      "name": "QuotaExceededError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "SecurityError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "65 image/OCR failure fallback pages do not become a completed translation",
+      "status": "PASS",
+      "observed": {
+        "status": "needs-attention",
+        "done": 0,
+        "failed": 65,
+        "coverageIncompletePages": 65,
+        "extractionComplete": false
+      }
+    },
+    {
+      "name": "Changing forced source language to automatic redetects source and chooses opposite target",
+      "status": "PASS"
+    }
+  ]
+}

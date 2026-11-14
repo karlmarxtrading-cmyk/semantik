@@ -1,0 +1,59 @@
+{
+  "method": "Actual CP20 storage/long-document code with fake-indexeddb and controlled PDF/translator doubles. Validates sequencing, bounded active page shape and atomicity, NOT actual PDF inference, browser RAM or semantic quality.",
+  "sourceHashes": {
+    "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "long-document.js": "34d9cdfde96073a6970f9b661f3c4f1b2ddbd4fec04385889e5ad3281496e17b",
+    "main.js": "369db8e7cdd39c327f64b76a8e263eaa2e3a06c8b5474f72b40202b091033a12",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd"
+  },
+  "results": [
+    {
+      "name": "1500 unique controlled pages >2M chars process with one active page and atomic checkpoints",
+      "status": "PASS"
+    },
+    {
+      "name": "Streaming commits and metadata saves never rewrite original source File",
+      "status": "PASS"
+    },
+    {
+      "name": "Lazy restore and page iterator never call whole-store getAll",
+      "status": "PASS"
+    },
+    {
+      "name": "Resume same provenance reuses successful results without duplicate extraction/inference",
+      "status": "PASS"
+    },
+    {
+      "name": "Configuration invalidates old machine result and preserves corrected source/history",
+      "status": "PASS"
+    },
+    {
+      "name": "Subsequent extraction failure leaves all earlier pages and translations salvageable",
+      "status": "PASS"
+    },
+    {
+      "name": "Quota failure rolls page + metadata back atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "Stale writer cannot read or overwrite active long checkpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "Cancelled inference retains extracted source and pending status",
+      "status": "PASS"
+    },
+    {
+      "name": "Preflight rejects insufficient storage without starting expensive pipeline",
+      "status": "PASS"
+    },
+    {
+      "name": "Forced-source to auto redetects language rather than inheriting the forced direction",
+      "status": "PASS"
+    },
+    {
+      "name": "Unresolved image fallback remains incomplete and is not counted as translated/preserved success",
+      "status": "PASS"
+    }
+  ]
+}

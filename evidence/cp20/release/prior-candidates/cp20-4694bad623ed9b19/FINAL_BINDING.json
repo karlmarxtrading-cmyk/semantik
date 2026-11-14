@@ -1,0 +1,51 @@
+{
+  "build": {
+    "release": "cp20-4694bad623ed9b19",
+    "version": "0.20.0",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4694bad623ed9b19/"
+  },
+  "results": [
+    {
+      "file": "evidence/cp20/release/OFFLINE_RELEASE_REGRESSION.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "0d0b97f820e590877787757db6193aa0f51dd4c30600bd06813fc2e4689dd8a0"
+    },
+    {
+      "file": "evidence/cp20/release/MODEL_AND_HEADERS.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "1b491978ad14d39591d4d49ca480a73d25fa4395307904c8c5187491eecb7357"
+    },
+    {
+      "file": "evidence/cp20/release/DEPLOYED_MODEL_INTEGRITY.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "a0bd1f183b9878b07a1b877b84927a46c62382c5ec2c7da40d8b984fce3c0f15"
+    },
+    {
+      "file": "evidence/cp20/release/REPRODUCIBLE_BUILD.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "ae8a0d0eb3507e108dc9b17c3689270f0b478ca34b87d29b1541956b6f8a9735"
+    },
+    {
+      "file": "evidence/build/FINAL_STATIC_VERIFICATION.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "6b14ea44286616f7f15091039be517d9a97d964c547385178ac2c2af2a8abf6b"
+    }
+  ],
+  "allPass": true,
+  "binding": "Current final candidate reverified after storage/export/ID fixes. Source and active dist remained read-only. Model decode proof is reused only through explicit exact-byte equivalence, with prior report retained.",
+  "qualificationLimits": [
+    "Controlled Cache/Fetch/SW tests are not browser offline/update proof.",
+    "Static header matching is not actual Cloudflare response verification.",
+    "Model byte integrity is not inference quality."
+  ]
+}

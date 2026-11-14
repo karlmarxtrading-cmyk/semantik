@@ -1,0 +1,168 @@
+{
+  "method": "Development exploration of generic phrase protection through optional glossary, not blind acceptance",
+  "build": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/recovery/work/app",
+    "adapterSHA256": "c8b0e501231befb3d07b1ae8b38c8c7a6f044a431910a86a44b14e71cee32fde",
+    "rulesSHA256": "84ce4961e92dce743e07f0e618827794cdb780c77a20f414a7477d91c87e5f91",
+    "spansSHA256": "dc1de6a49e72745d9a9ffbad6e5536062030df3c14180b02d94194787d4fa7c7",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "rows": [
+    {
+      "label": "singular-observation",
+      "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "glossary": [
+        [
+          "suatu pengamatan",
+          "an observation"
+        ]
+      ],
+      "text": "Such differences are not evidence that an observation is wrongly recorded.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 15,
+      "outputTokens": 17,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 15,
+        "outputTokens": 17,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "label": "observation-noun",
+      "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "glossary": [
+        [
+          "pengamatan",
+          "observation"
+        ]
+      ],
+      "text": "Such differences are not evidence that a observation is wrongly recorded.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 16,
+      "outputTokens": 18,
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 16,
+        "outputTokens": 18,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "label": "evidence-and-observation",
+      "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "glossary": [
+        [
+          "bukti bahwa",
+          "evidence that"
+        ],
+        [
+          "suatu pengamatan",
+          "an observation"
+        ]
+      ],
+      "text": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "status": "review",
+      "outcome": "failed",
+      "retryable": true,
+      "recovery": "retry-when-ready",
+      "metrics": {
+        "inferenceCalls": 1,
+        "cacheHits": 0,
+        "inputTokens": 13,
+        "outputTokens": 15,
+        "uniqueInputs": 1
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+        }
+      ],
+      "issues": [
+        "Penerjemahan bagian ini gagal. Sumber dipertahankan; coba ulang setelah mesin siap."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Kandidat deterministik identik tidak diulang.",
+          "segmentSource": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+          "candidateText": "The difference is not evidence that an observation not recorded incorrectly.",
+          "rawCandidate": "The difference is not <ssterm0/> <ssterm1/> not recorded incorrectly."
+        }
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+{
+  "method": "Deterministic validator mutations, span/segmentation controls and explicit worker fault injection; no model inference",
+  "pass": 77,
+  "fail": 0,
+  "cases": [
+    {
+      "name": "molarity micro to milli",
+      "pass": true
+    },
+    {
+      "name": "molarity nano to milli",
+      "pass": true
+    },
+    {
+      "name": "calcium charge",
+      "pass": true
+    },
+    {
+      "name": "unicode charge",
+      "pass": true
+    },
+    {
+      "name": "kilogram mutation",
+      "pass": true
+    },
+    {
+      "name": "claim association",
+      "pass": true
+    },
+    {
+      "name": "empty set letter",
+      "pass": true
+    },
+    {
+      "name": "empty set degree",
+      "pass": true
+    },
+    {
+      "name": "unicode variable identity",
+      "pass": true
+    },
+    {
+      "name": "absolute variable identity",
+      "pass": true
+    },
+    {
+      "name": "greek identity",
+      "pass": true
+    },
+    {
+      "name": "operator relation",
+      "pass": true
+    },
+    {
+      "name": "opaque slug",
+      "pass": true
+    },
+    {
+      "name": "accession",
+      "pass": true
+    },
+    {
+      "name": "interval open boundary",
+      "pass": true
+    },
+    {
+      "name": "protect ∅",
+      "pass": true
+    },
+    {
+      "name": "protect ℝ",
+      "pass": true
+    },
+    {
+      "name": "protect ℕ",
+      "pass": true
+    },
+    {
+      "name": "protect ℤ",
+      "pass": true
+    },
+    {
+      "name": "protect ∈",
+      "pass": true
+    },
+    {
+      "name": "protect ∉",
+      "pass": true
+    },
+    {
+      "name": "protect ∪",
+      "pass": true
+    },
+    {
+      "name": "protect ∩",
+      "pass": true
+    },
+    {
+      "name": "protect ⁴",
+      "pass": true
+    },
+    {
+      "name": "protect ₃",
+      "pass": true
+    },
+    {
+      "name": "formula ||𝑥 − 4| − 4| < 1",
+      "pass": true
+    },
+    {
+      "name": "formula ||x − 4| − 4| > 1",
+      "pass": true
+    },
+    {
+      "name": "formula |𝑥 + 4| + |𝑥 + 3| ≤ 0",
+      "pass": true
+    },
+    {
+      "name": "formula |x| ≥ 2",
+      "pass": true
+    },
+    {
+      "name": "formula ∅",
+      "pass": true
+    },
+    {
+      "name": "formula (−1, 1) ∪ (7, 9)",
+      "pass": true
+    },
+    {
+      "name": "formula prose distinct",
+      "pass": true
+    },
+    {
+      "name": "no change real charge",
+      "pass": true
+    },
+    {
+      "name": "faithful binding",
+      "pass": true
+    },
+    {
+      "name": "uncertainty faithful en-id",
+      "pass": true
+    },
+    {
+      "name": "uncertainty faithful id-en",
+      "pass": true
+    },
+    {
+      "name": "negation deletion",
+      "pass": true
+    },
+    {
+      "name": "uncertainty deletion",
+      "pass": true
+    },
+    {
+      "name": "modality strengthened",
+      "pass": true
+    },
+    {
+      "name": "quantifier changed",
+      "pass": true
+    },
+    {
+      "name": "contracted negation faithful",
+      "pass": true
+    },
+    {
+      "name": "contracted negation deletion detected",
+      "pass": true
+    },
+    {
+      "name": "curly contraction faithful",
+      "pass": true
+    },
+    {
+      "name": "unchanged faithful",
+      "pass": true
+    },
+    {
+      "name": "unchanged reversal",
+      "pass": true
+    },
+    {
+      "name": "asymmetry reversal",
+      "pass": true
+    },
+    {
+      "name": "asymmetric faithful",
+      "pass": true
+    },
+    {
+      "name": "uncertainty noun faithful",
+      "pass": true
+    },
+    {
+      "name": "possible noun faithful",
+      "pass": true
+    },
+    {
+      "name": "grup faithful binding",
+      "pass": true
+    },
+    {
+      "name": "reordered group label faithful",
+      "pass": true
+    },
+    {
+      "name": "reordered group label mutation",
+      "pass": true
+    },
+    {
+      "name": "identifier label order",
+      "pass": true
+    },
+    {
+      "name": "explicit uppercase ID changed",
+      "pass": true
+    },
+    {
+      "name": "table header is not an opaque group label",
+      "pass": true
+    },
+    {
+      "name": "named table arm values swapped detected",
+      "pass": true
+    },
+    {
+      "name": "named clinical arm binding faithful",
+      "pass": true
+    },
+    {
+      "name": "named clinical arm binding swapped",
+      "pass": true
+    },
+    {
+      "name": "opaque multi-character labels unchanged",
+      "pass": true
+    },
+    {
+      "name": "opaque multi-character labels binding swapped",
+      "pass": true
+    },
+    {
+      "name": "minute unit mutation",
+      "pass": true
+    },
+    {
+      "name": "ascii hyphen variable mutation",
+      "pass": true
+    },
+    {
+      "name": "chemistry inflections",
+      "pass": true
+    },
+    {
+      "name": "estimation passive inflection",
+      "pass": true
+    },
+    {
+      "name": "URL no warning",
+      "pass": true
+    },
+    {
+      "name": "uppercase remains flagged if unchanged",
+      "pass": true
+    },
+    {
+      "name": "uppercase prose is not formula",
+      "pass": true
+    },
+    {
+      "name": "unknown capitals retained pending review",
+      "pass": true
+    },
+    {
+      "name": "known scientific title translated dictionary case",
+      "pass": true
+    },
+    {
+      "name": "unknown acronym not lowercased",
+      "pass": true
+    },
+    {
+      "name": "acronyms are literals",
+      "pass": true
+    },
+    {
+      "name": "chemistry no math glossary",
+      "pass": true
+    },
+    {
+      "name": "union political no math glossary",
+      "pass": true
+    },
+    {
+      "name": "reverse math singular",
+      "pass": true
+    },
+    {
+      "name": "math term plural",
+      "pass": true
+    },
+    {
+      "name": "lossless segmentation",
+      "pass": true
+    },
+    {
+      "name": "failure retryable and diagnosis separated",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "frozenAt": "2026-11-13T06:49:14.166639+00:00",
+  "ruleset": "cp20-context-terminology-meaning-guards-v2",
+  "files": {
+    "app/app/translation.js": "3000cb184e3dac553ac6a66f3de4caec94dcc0641327d1c6b678d3ef7c72bc08",
+    "app/app/claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "app/app/semantic-spans.js": "df80b52dbf9fd7fe4e899fecedf709fad6600f4146e4859c60f6f59789910db3",
+    "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "rubric": {
+    "meaning": "2=equivalent relations; 1=minor ambiguity; 0=wrong relation/critical concept",
+    "completeness": "2=all content; 1=minor omission; 0=missing clause/qualifier/negation",
+    "terminology": "2=domain-correct; 1=awkward but understandable; 0=wrong scientific sense",
+    "fluency": "2=natural; 1=understandable grammatical defects; 0=unintelligible",
+    "numbersNotation": "2=all preserved; 1=format only; 0=changed/dropped",
+    "consistency": "2=consistent; 1=minor variation; 0=contradiction"
+  },
+  "criticalDefinition": "Changed scientific assertion, causal or logical relation, qualifier, polarity, numeric identity, or unprocessed/rejected prose in final required corpus. Guard pass is not an accuracy score.",
+  "acceptance": "Zero critical errors on this fixed corpus, all six dimensions evaluated; human bilingual review remains separately PENDING.",
+  "provenance": "AI-authored corpus and AI assessments only. No independent human approvals; this is not population accuracy.",
+  "previousHoldout": "first-holdout-failed/HOLDOUT_INFERENCE.json; FAIL; now development regression, not current acceptance",
+  "postFreezeMetadataFix": {
+    "at": "2026-11-13T06:54:33.429975+00:00",
+    "reason": "Typed deterministic guard rejection and table retry aggregation. This changes outcome/retry metadata only; no changes to model, targets, terminology, or semantic guard rules. Same final corpus is rerun for metadata and exact target equality; no new claim of unseen corpus."
+  }
+}

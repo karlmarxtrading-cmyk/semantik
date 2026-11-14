@@ -1,0 +1,108 @@
+{
+  "method": "Actual exported validator functions, synthetic targeted mutations. Targets are deliberately wrong, not model outputs.",
+  "testedAt": "2026-11-13T18:55:05.455Z",
+  "baselineAdapterSha256": "8a86cc242a52fe1e42a63c11fa0a2bcdce8654840194c2b932ce372efe40badc",
+  "revisedAdapterSha256": "ce90ea16f6ea37fe523388d3852421489a66ff189f1c51993f738c88eca47a46",
+  "revisedSpansSha256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+  "cases": [
+    {
+      "id": "TR-02-μM",
+      "source": "The concentration was 10 μM.",
+      "mutatedTarget": "Konsentrasinya 10 mM.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "TR-02-nM",
+      "source": "The concentration was 10 nM.",
+      "mutatedTarget": "Konsentrasinya 10 mM.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "TR-02-Ca",
+      "source": "The Ca2+ concentration increased.",
+      "mutatedTarget": "Konsentrasi Ca3+ meningkat.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "TR-04-binding",
+      "source": "Treatment A increased by 10 and treatment B decreased by 20.",
+      "mutatedTarget": "Perlakuan A meningkat sebesar 20 dan perlakuan B menurun sebesar 10.",
+      "before": [
+        "Angka yang terkait kelompok/perlakuan berubah; periksa hubungan angka dengan klaim."
+      ],
+      "after": [
+        "Angka yang terkait kelompok/perlakuan berubah; periksa hubungan angka dengan klaim."
+      ]
+    },
+    {
+      "id": "OUT-03-empty-set-letter",
+      "source": "The solution set is ∅.",
+      "mutatedTarget": "Himpunan penyelesaian adalah å.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "OUT-03-empty-set-degree",
+      "source": "The solution set is ∅.",
+      "mutatedTarget": "Himpunan penyelesaian adalah °.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "OUT-01-italic-x",
+      "source": "Find 𝑥 < 1.",
+      "mutatedTarget": "Tentukan x < 1.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "OUT-04-slug",
+      "source": "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+      "mutatedTarget": "ID absolut-nilai-inequalities~challenge~nested-abs~34f24hj2-0~0",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    },
+    {
+      "id": "OUT-01-absolute-var",
+      "source": "The value is |x|.",
+      "mutatedTarget": "Nilainya |y|.",
+      "before": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ],
+      "after": [
+        "Satuan, ekspresi statistik, identitas sitasi, atau notasi ilmiah berubah."
+      ]
+    }
+  ]
+}

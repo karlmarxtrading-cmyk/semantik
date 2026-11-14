@@ -1,0 +1,8 @@
+(node:90) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS Target table edit invalidates machine rows; exact text survives save, reload and ZIP export
+PASS Source table correction preserves original rows; uses corrected whole text through translation/reload/export
+PASS Corrected table stays text-based after layout remapping; original geometry remains provenance
+PASS Old checkpoint with stale translatedRows + manual edited status exports manual text safely
+PASS Machine table target without validated translatedRows exports text instead of stale source cells
+PASS Legacy corrected table checkpoint repairs stale rows, retains old machine evidence and retries corrected text

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-11-12T02:59:21.370222+00:00",
+  "corpusSha256": "b7c81139c8d6ffafff3b098209134231b1208183fa67b6988cdbc2db2a608955",
+  "decision": "G7 BLOCKED until independent human assessment and legitimate target-domain journal corpus exist.",
+  "criteria": {
+    "criticalMeaningErrors": {
+      "maximum": 0,
+      "definition": "Changed polarity, modality/conclusion strength, entity, number-to-claim assignment, units, formula operator/variable, omitted critical content, or invented claim."
+    },
+    "literalIntegrity": {
+      "minimum": 1.0,
+      "definition": "All required source scientific literals/opaque IDs preserved exactly except explicitly approved equivalent notation."
+    },
+    "extractionCoverage": {
+      "minimumTextItemCoverage": 0.99,
+      "criticalRegionsRequired": 1.0,
+      "definition": "Every critical region extracted or flagged unresolved; unresolved critical region blocks acceptance, not counted as fully covered."
+    },
+    "fluency": {
+      "minimumMeanHumanScore": 4.0,
+      "scale": [
+        1,
+        5
+      ]
+    },
+    "terminology": {
+      "minimumHumanAcceptableFraction": 0.95,
+      "criticalMismeaningMaximum": 0
+    },
+    "falseWarningRate": {
+      "maximum": 0.1,
+      "requires": "Human-adjudicated faithful pairs; mutation tests tracked separately."
+    },
+    "knownRegressionFixtures": {
+      "criticalFailuresMaximum": 0
+    }
+  },
+  "humanProcedure": {
+    "reviewers": 2,
+    "independent": true,
+    "adjudicatorForDisagreements": true,
+    "status": "UNREVIEWED",
+    "instructions": "Review blinded baseline/CP18 outputs against source PDF and text. Record exact segment ID, severity, reason, corrected reference, reviewer identity/qualification/date. Adjudicate disagreements. AI ratings do not satisfy human approval."
+  },
+  "realJournalExtension": {
+    "minimumDocuments": 8,
+    "minimumSegments": 160,
+    "documentsPerDirection": 4,
+    "segmentsPerDirection": 80,
+    "domains": [
+      "mathematics",
+      "statistics",
+      "biomedical",
+      "environment"
+    ],
+    "minimumDocumentsPerDomain": 2,
+    "requiredStructures": [
+      "digital",
+      "scan",
+      "mixed",
+      "two-column",
+      "table",
+      "formula",
+      "references"
+    ],
+    "status": "BLOCKED_EXTERNAL",
+    "action": "Owner supplies lawful redistributable target journals with source/license and two independent bilingual scientific reviewers plus adjudicator."
+  },
+  "rules": [
+    "Never change thresholds after observing failures.",
+    "Never remove failed holdout cases from denominator.",
+    "Do not tune on holdout. Any tuning invalidates its held-out status and requires a fresh set.",
+    "Report inference, validator mutations, PDF extraction, browser tests, and human judgments separately."
+  ]
+}

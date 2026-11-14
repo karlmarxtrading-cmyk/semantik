@@ -1,0 +1,78 @@
+{
+  "scope": "Actual independent PDF.js parsing, production reader extraction, native Canvas, production streaming exporter, Marked HTML parse. All PDF pages contain vector-only figures and digital labels. No browser/physical device/OCR/translation claim.",
+  "fixtureSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+  "sourceHashes": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+    "export.js": "a9cd0b1401d4b401490e17cc781b799c1d3e292ab1dd47595d7cce6b8383e7a1",
+    "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913"
+  },
+  "pdfjsVersion": "6.2.108",
+  "limitations": [
+    "Native Canvas font glyph rendering differs from the browser. Visual review confirms vector shapes only; digital text is retained separately in the Markdown.",
+    "Markdown is source extraction with pending translations, not translation-completion evidence."
+  ],
+  "checks": [
+    {
+      "name": "Actual filled-only-bars PDF retained with optional page sources off",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual stroked-vector-curve PDF retained with optional page sources off",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual shading-only-gradient PDF retained with optional page sources off",
+      "status": "PASS"
+    },
+    {
+      "name": "Single actual streaming Markdown retains all three vector figures and renders three embedded images",
+      "status": "PASS"
+    }
+  ],
+  "graphics": [
+    {
+      "case": "filled-only-bars",
+      "rasterImageCount": 0,
+      "vectorGraphics": 3,
+      "preserveVisualSource": true,
+      "storedBytes": 15630
+    },
+    {
+      "case": "stroked-vector-curve",
+      "rasterImageCount": 0,
+      "vectorGraphics": 1,
+      "preserveVisualSource": true,
+      "storedBytes": 17302
+    },
+    {
+      "case": "shading-only-gradient",
+      "rasterImageCount": 0,
+      "vectorGraphics": 1,
+      "preserveVisualSource": true,
+      "storedBytes": 18466
+    }
+  ],
+  "markdownBytes": 71590,
+  "markdownSha256": "df521961ca9f7e3ed7bd466807f3786a2c8717d44daceb82f0cc42b9d4040bd5",
+  "exportStats": {
+    "pages": 3,
+    "blocks": 9,
+    "counts": {
+      "total": 9,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 9
+    },
+    "uniqueAssets": 3,
+    "assetReferences": 3,
+    "bytes": 71590,
+    "sink": "bounded-blob",
+    "maxActivePages": 1,
+    "coverageIncompletePages": 0,
+    "mathUncertainPages": 0,
+    "partial": true
+  }
+}

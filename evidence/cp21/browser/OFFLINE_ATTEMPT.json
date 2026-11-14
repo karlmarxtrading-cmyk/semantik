@@ -1,0 +1,8 @@
+{
+  "status": "BLOCKED",
+  "origin": "http://127.0.0.1:4173/",
+  "observedUI": "Persiapan offline belum selesai: Aplikasi offline belum aktif. Muat ulang melalui HTTPS, lalu coba lagi.",
+  "controlsReenabled": true,
+  "claim": "No browser-offline pass. Exact generated service worker and cache integrity passed separately in Node VM with controlled boundaries. No integrity/security check was removed.",
+  "actualCloudflareStaging": "NOT_RUN; no authorized Cloudflare Pages account/project binding available in this workspace or a Pages connector."
+}

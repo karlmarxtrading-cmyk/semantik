@@ -1,0 +1,318 @@
+{
+  "scope": "Bundled PDF.js operator list + actual CP18 imageCoverage/ocrPlan in Node with standard API shims; no OCR engine invoked.",
+  "pdfjsVersion": "6.2.108",
+  "items": [
+    {
+      "text": "A synthetic digital header; the actual critical result is present only inside the raster strips below.",
+      "source": "pdf-text",
+      "x": 40,
+      "y": 22.947265625,
+      "baseline": 32,
+      "width": 418.4999999999999,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f1",
+      "direction": "ltr",
+      "sourceIndex": 0,
+      "rotated": false,
+      "endOfLine": false
+    }
+  ],
+  "imageOperators": [
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    },
+    {
+      "op": "paintImageXObject",
+      "args": [
+        "img_p0_1",
+        900,
+        100
+      ]
+    }
+  ],
+  "images": {
+    "count": 10,
+    "ratio": 0.5700712589073634,
+    "regions": [
+      {
+        "bbox": [
+          40,
+          61,
+          510,
+          56
+        ],
+        "operatorIndex": 18
+      },
+      {
+        "bbox": [
+          40,
+          126,
+          510,
+          56
+        ],
+        "operatorIndex": 22
+      },
+      {
+        "bbox": [
+          40,
+          191,
+          510,
+          56
+        ],
+        "operatorIndex": 26
+      },
+      {
+        "bbox": [
+          40,
+          256,
+          510,
+          56
+        ],
+        "operatorIndex": 30
+      },
+      {
+        "bbox": [
+          40,
+          321,
+          510,
+          56
+        ],
+        "operatorIndex": 34
+      },
+      {
+        "bbox": [
+          40,
+          386,
+          510,
+          56
+        ],
+        "operatorIndex": 38
+      },
+      {
+        "bbox": [
+          40,
+          451,
+          510,
+          56
+        ],
+        "operatorIndex": 42
+      },
+      {
+        "bbox": [
+          40,
+          516,
+          510,
+          56
+        ],
+        "operatorIndex": 46
+      },
+      {
+        "bbox": [
+          40,
+          581,
+          510,
+          56
+        ],
+        "operatorIndex": 50
+      },
+      {
+        "bbox": [
+          40,
+          646,
+          510,
+          56
+        ],
+        "operatorIndex": 54
+      }
+    ]
+  },
+  "plan": {
+    "fullPage": false,
+    "useOCR": true,
+    "replacementRatio": 0,
+    "regions": [
+      {
+        "bbox": [
+          40,
+          61,
+          510,
+          56
+        ],
+        "operatorIndex": 18,
+        "id": "image-1",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          126,
+          510,
+          56
+        ],
+        "operatorIndex": 22,
+        "id": "image-2",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          191,
+          510,
+          56
+        ],
+        "operatorIndex": 26,
+        "id": "image-3",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          256,
+          510,
+          56
+        ],
+        "operatorIndex": 30,
+        "id": "image-4",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          321,
+          510,
+          56
+        ],
+        "operatorIndex": 34,
+        "id": "image-5",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          386,
+          510,
+          56
+        ],
+        "operatorIndex": 38,
+        "id": "image-6",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          451,
+          510,
+          56
+        ],
+        "operatorIndex": 42,
+        "id": "image-7",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          516,
+          510,
+          56
+        ],
+        "operatorIndex": 46,
+        "id": "image-8",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          581,
+          510,
+          56
+        ],
+        "operatorIndex": 50,
+        "id": "image-9",
+        "status": "ocr-required"
+      },
+      {
+        "bbox": [
+          40,
+          646,
+          510,
+          56
+        ],
+        "operatorIndex": 54,
+        "id": "image-10",
+        "status": "ocr-required"
+      }
+    ],
+    "textCharacters": 85
+  }
+}

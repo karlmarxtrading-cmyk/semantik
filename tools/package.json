@@ -1,0 +1,12 @@
+{
+  "name": "semantik-cp19-tools",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pdfjs-dist": "6.2.108",
+    "@napi-rs/canvas": "0.1.100",
+    "fake-indexeddb": "6.2.5",
+    "marked": "17.0.1",
+    "katex": "0.19.1"
+  }
+}

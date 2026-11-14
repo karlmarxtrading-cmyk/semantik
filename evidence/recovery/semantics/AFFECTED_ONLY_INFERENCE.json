@@ -1,0 +1,177 @@
+{
+  "sourceBinding": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/recovery/work/app",
+    "adapterSHA256": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "rulesSHA256": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+    "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "method": "Affected-only actual model rerun after reviewer role term/anchor and grammatical singular fulfillment equivalents; previous50case run retained separately, not rebranded as fullcurrent execution",
+  "rows": [
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baseline": {
+        "text": "Penginjil meminta para penulis untuk membedakan informasi yang hilang dari bukti bahwa peristiwa tidak terjadi. Catatan kosong dapat mencerminkan dokumentasi yang tidak lengkap. Ini tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang direkam dari peristiwa.",
+        "outcome": "translated"
+      },
+      "text": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 21,
+        "outputTokens": 19,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Peristiwa yang dibedakan dari bukti atau pencatatan hilang.",
+          "segmentSource": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur.",
+          "candidateText": null,
+          "rawCandidate": null
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false
+    },
+    {
+      "id": "CP20-H-017",
+      "direction": "id-en",
+      "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi.",
+      "baseline": {
+        "text": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi.",
+        "outcome": "rejected"
+      },
+      "text": "Derivative determines the rate of local changes, not the accumulated over the entire interval changes. Integration can regain the accumulated changes when the required hypothesis is fulfilled.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 39,
+      "outputTokens": 41,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 39,
+        "outputTokens": 41,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baseline": {
+        "text": "The reviewer asked the author to distinguish missing information from the evidence that a event did not occur. The blank note may reflect incomplete documentation. The record cannot be automatically considered as a recorded event absence.",
+        "outcome": "translated"
+      },
+      "text": "Reviewer asks the author to distinguish missing information from the evidence that a event did not occur. The blank note may reflect incomplete documentation. The record cannot be automatically considered as a recorded event absence.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-recovery-context-and-metadata-v5",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-recovery-context-and-metadata-v5"
+      },
+      "inputTokens": 53,
+      "outputTokens": 57,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 53,
+        "outputTokens": 57,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false
+    }
+  ]
+}

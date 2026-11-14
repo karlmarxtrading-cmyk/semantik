@@ -1,0 +1,20 @@
+(node:2334) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS LIFE01 correction + provenance persist after glossary change and cancelled prepare
+Local checkpoint unavailable: {"name":"QuotaExceededError","message":"fixture failure","page":1,"stage":"paused","at":"2026-11-14T00:02:18.433Z"}
+PASS LIFE02 QuotaExceededError produces sticky unsaved state until complete snapshot retry
+Local checkpoint unavailable: {"name":"SecurityError","message":"fixture failure","page":1,"stage":"paused","at":"2026-11-14T00:02:18.441Z"}
+PASS LIFE02 SecurityError produces sticky unsaved state until complete snapshot retry
+PASS LIFE04 simulated BFCache return with lock owned by B makes A read-only and prevents write
+PASS LIFE04 simulated BFCache return rejects different persisted job generation
+PASS TR03 retry attempts failed/rejected only and preserves edited or reviewed targets
+PASS OUT06 exclusive counters separate translations, preservation, rejection, failure and pending
+PASS LIFE06 clear removes content DOM, canvas, fields, state and checkpoint
+PASS LIFE01 cancelled layout extraction keeps prior corrected document in checkpoint payload
+PASS LIFE01 changed layout maps correction by exact original provenance and archives user edit
+PASS LIFE01 unmatched correction stops layout replacement and restores previous corrected job
+PASS LIFE04 recovered session without persisted identity cannot overwrite or delete another job
+PASS LIFE06 deletion revokes retained export object URLs
+PASS LIFE04 stale run completion after pagehide cannot clear a newer operation controller or UI
+PASS LIFE04 stale export cleanup after pagehide cannot reset a newer operation
+PASS LIFE04 stale offline preparation cleanup cannot reset a newer operation

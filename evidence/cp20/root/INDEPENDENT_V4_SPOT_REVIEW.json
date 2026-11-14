@@ -1,0 +1,28 @@
+{
+  "reviewType": "AI root spot-review; not human or blind independent validation",
+  "corpus": "evidence/cp20/semantics/V4_FRESH_ACCEPTANCE.json",
+  "rows": [
+    {
+      "id": "CP20-V4-A-03",
+      "criticalConfirmed": true,
+      "reason": "population mean is rendered populasi berarti, losing the statistic mean"
+    },
+    {
+      "id": "CP20-V4-A-08",
+      "criticalConfirmed": true,
+      "reason": "some observation was recorded incorrectly becomes a misrecorded observation is being recorded, altering proposition scope and meaning"
+    },
+    {
+      "id": "CP20-V4-A-09",
+      "criticalConfirmed": true,
+      "reason": "price of substitute goods omitted; goods go up does not retain the price variable"
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "criticalConfirmed": true,
+      "reason": "Kalibrasi becomes Calicacy in one sentence and calibration in next, corrupting operation identity"
+    }
+  ],
+  "decision": "FAIL",
+  "humanApprovals": 0
+}

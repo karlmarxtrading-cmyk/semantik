@@ -1,0 +1,86 @@
+- main:
+  - heading "Controlled academic prose fixture (id) — Terjemahan" [level=1]
+  - paragraph:
+    - strong: "Berkas sumber:"
+    - text: academic_prose_id.pdf
+    - strong: "Halaman:"
+    - text: "1"
+    - strong: "Bahasa:"
+    - text: id → en
+    - strong: "Status:"
+    - text: Pemrosesan selesai; perlu peninjauan ilmiah
+    - strong: "Bagian:"
+    - text: 11 diterjemahkan; 2 dipertahankan sengaja; 0 ditolak; 0 gagal; 0 belum diproses. Total 13.
+    - strong: "Rilis eksportir:"
+    - text: cp19-6ed0d134e1770b27 · 0.19.0.
+    - strong: "Metode:"
+    - text: ekstraksi PDF/OCR dan terjemahan mesin lokal. Tidak ada klaim verifikasi semantik menyeluruh.
+  - paragraph:
+    - strong: "SHA-256 PDF sumber:"
+    - text: 86d84782f979d83b42e5987ba47ba5ee971f0f1b019d80c52c0890bef2a66ff5
+  - paragraph:
+    - strong: "Judul metadata PDF:"
+    - text: Controlled academic prose fixture (id)
+  - paragraph:
+    - strong: "Penulis metadata PDF:"
+    - text: Independent CP18 audit
+  - paragraph: "Gambar sumber tertanam dalam berkas ini. Renderer yang diuji: Marked + KaTeX, mendukung gambar data URI. PDF asli tidak ditanamkan."
+  - heading "Halaman 1" [level=2]
+  - paragraph: Controlled academic prose fixture (id)
+  - paragraph: Synthetic audit input. Not a published study or medical guidance.
+  - heading "Abstract" [level=3]
+  - paragraph: We're researching links between exposure fine particulate matter and hospital admissions. Observational study this does not prove causal relationship.
+  - heading "Methods" [level=3]
+  - paragraph: Primary outcome is time up to disease progression. This test failed to prove non-inferiority.
+  - heading "Results" [level=3]
+  - paragraph:
+    - text: Group A accepts 10 mg, while group B receives 20 mg. The effect is not statistically significant
+    - math:
+      - generic: (
+      - generic: p
+      - generic: =
+      - generic: "0.08"
+      - generic: )
+    - generic: (p =
+    - generic: 0.08)
+    - text: .
+  - paragraph: Math
+  - paragraph:
+    - text: Given
+    - math:
+      - generic: f
+      - generic: (
+      - generic: x
+      - generic: )
+      - generic: =
+      - generic: x
+      - generic: "2"
+    - generic: f(x) =
+    - text: x
+    - generic: "2"
+    - text: ", the derivative is"
+    - math:
+      - generic: f
+      - generic: ′
+      - generic: (
+      - generic: x
+      - generic: )
+      - generic: =
+      - generic: "2"
+      - generic: x
+    - text: f
+    - generic: ′
+    - text: (x) =
+    - generic: 2x
+    - text: .
+  - paragraph: Estimator unbiased only if both requirements met.
+  - heading "Conclusion" [level=3]
+  - paragraph: Absence of evidence is not evidence of absence.
+  - heading "Citra sumber — halaman 1" [level=4]
+  - paragraph:
+    - img "Halaman sumber 1"
+  - heading "Catatan pembacaan" [level=2]
+  - list:
+    - listitem: Dokumen memuat bahasa Indonesia dan Inggris. Bagian yang sudah sesuai bahasa tujuan dipertahankan; periksa judul atau frasa pendek yang belum dapat dikenali.
+  - separator
+  - paragraph: Dibuat dengan Semantik Setara — Academic PDF Translator. Teks sumber, hasil mesin, dan koreksi pengguna dipisahkan secara eksplisit.

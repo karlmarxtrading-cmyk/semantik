@@ -1,0 +1,10 @@
+--- iteration3/semantic-spans.js
++++ final/semantic-spans.js
+@@ -175,6 +175,7 @@
+     result.push(...(direction==='en-id'?research:[['digeneralisasi','generalized'],['generalisasi','generalization'],['sampel','sample'],['populasi','population']]));
+   }
+   if(/\b(?:measurements?|measured|pengukuran|mengukur)\b/iu.test(context))result.push(...(direction==='en-id'?[['sum','jumlah']]:[['jumlahnya','their sum']]));
++  result.push(...(direction==='en-id'?[['reviewers','penelaah'],['reviewer','penelaah']]:[['penelaah','reviewer']]));
+   const academic=[['observed actions','tindakan yang diamati'],['observed action','tindakan yang diamati'],['sufficient condition','syarat cukup'],['necessary condition','syarat perlu'],['equilibrium constant','tetapan kesetimbangan'],['variance','varians'],['nominal wages','upah nominal'],['purchasing power','daya beli'],['outcome assessors','penilai luaran'],['upper confidence limit','batas atas kepercayaan'],['lower confidence limit','batas bawah kepercayaan'],['confidence limit','batas kepercayaan'],['fine particulate matter','partikulat halus'],['intensive care','perawatan intensif']];
+   result.push(...academic.map(([en,id])=>direction==='en-id'?[en,id]:[id,en]));
+   return result;

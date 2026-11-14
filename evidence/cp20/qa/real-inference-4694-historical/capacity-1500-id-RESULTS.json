@@ -1,0 +1,108 @@
+{
+  "fixture": "capacity-1500-id.pdf",
+  "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+  "build": {
+    "release": "cp20-4694bad623ed9b19",
+    "version": "0.20.0",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4694bad623ed9b19/"
+  },
+  "identity": {
+    "main.js": "4165fcb374f254bd53aa4900cda0938bdd219b32bc572155d348e927d067d345",
+    "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+    "translation.js": "4ec08bdc60c5d8be785d2c9201aff2512622c4f87b117f465b7573428ff13129",
+    "claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "semantic-spans.js": "29f26deea056f2b98d6fdc6bedd4a2975fc626fd2a1bf128d195901e8b948211",
+    "export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+  },
+  "ruleset": "cp20-context-terminology-meaning-guards-v3-identifiers",
+  "status": "FAIL",
+  "scope": "Actual final-build reader + local model + page pipeline + fake-indexeddb + Markdown saved by Node. Not browser download or reviewed semantic quality.",
+  "error": "Error: Error: Cannot find module '/workspace/scratch/17677088ccfd/cp20/tests/cp20-semantic-temporary-worker-2.mjs'\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)\n    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)\n    at Module._load (node:internal/modules/cjs/loader:1341:5)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at MessagePort.<anonymous> (node:internal/main/worker_thread:223:26)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:869:20)\n    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)\n    at worker.onerror (file:///workspace/scratch/17677088ccfd/cp20/dist/r/4694bad623ed9b19/app/translation.js:214:68)\n    at Worker.<anonymous> (file:///workspace/scratch/17677088ccfd/cp20/tests/cp20-semantic-runtime.mjs:34:171)\n    at Worker.emit (node:events:514:28)\n    at [kOnErrorMessage] (node:internal/worker:411:10)\n    at [kOnMessage] (node:internal/worker:422:37)\n    at MessagePort.<anonymous> (node:internal/worker:298:57)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:869:20)\n    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)",
+  "counts": {
+    "total": 3,
+    "translated": 0,
+    "preserved": 0,
+    "rejected": 0,
+    "failed": 0,
+    "pending": 3,
+    "review": 3,
+    "done": 0,
+    "attempted": 0
+  },
+  "pages": 1,
+  "totalPages": 1500,
+  "sourceCharacters": 214,
+  "coverage": {
+    "source": 5,
+    "covered": 5
+  },
+  "pipelineMetrics": {
+    "inferenceCalls": 0,
+    "cacheHits": 0,
+    "uniqueInputs": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "extractionMs": 100.5361349999439,
+    "inferenceMs": 0,
+    "commitMs": 3.025889999931678
+  },
+  "measurements": {
+    "modelPrepareMs": 50.492514999816194,
+    "engineRequests": 0,
+    "engineSucceeded": 0,
+    "engineFailed": 0,
+    "engineMs": 0,
+    "rawBlockCalls": 0,
+    "maskedRepeatedRequests": 0,
+    "uniqueRawBlockInputs": 0,
+    "uniqueMaskedModelInputs": 0,
+    "maxActivePages": 1,
+    "maxActiveBlocks": 3
+  },
+  "elapsedMs": 200.04655300010927,
+  "sampledPeakNodeProcessBytes": {
+    "rss": 766144512,
+    "heapUsed": 136092232,
+    "external": 12307913,
+    "arrayBuffers": 8024103
+  },
+  "memoryLimit": "250ms samples; Node process (worker_threads share process RSS), native canvas and WASM within that process where OS accounts them. fake-indexeddb retains all records in RAM; this is not browser RAM or bounded browser persistence. No physical device qualification.",
+  "samples": [],
+  "export": {
+    "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+    "bytes": 1914,
+    "sha256": "1a77d7b1cf32b335c08d2d7f9aeb2bedef1d48a6938dd9804525de9e4d783b06",
+    "stats": {
+      "pages": 1,
+      "blocks": 3,
+      "counts": {
+        "total": 3,
+        "translated": 0,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 3
+      },
+      "uniqueAssets": 0,
+      "assetReferences": 0,
+      "bytes": 1914,
+      "sink": "bounded-blob",
+      "maxActivePages": 1,
+      "coverageIncompletePages": 0,
+      "mathUncertainPages": 0,
+      "unsavedPages": [],
+      "durablePages": 1,
+      "partial": true
+    },
+    "traceIds": 1,
+    "ms": 5.751290999818593
+  }
+}

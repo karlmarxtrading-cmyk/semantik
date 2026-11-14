@@ -1,0 +1,5 @@
+pdfjs-dist 6.2.108
+https://github.com/mozilla/pdf.js
+Apache-2.0
+Locked dependency: tools/package-lock.json in source/evidence package.
+Library, worker, cmaps, standard_fonts, iccs and WASM copied from the same npm package.

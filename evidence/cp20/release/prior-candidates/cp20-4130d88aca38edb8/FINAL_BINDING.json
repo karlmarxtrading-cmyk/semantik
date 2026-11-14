@@ -1,0 +1,45 @@
+{
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "results": [
+    {
+      "file": "OFFLINE_RELEASE_REGRESSION.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "f84ab9045f3b029c9cf49d29a5a053ec9a143f6d0b11093269a258225848a2ee"
+    },
+    {
+      "file": "MODEL_AND_HEADERS.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "43255eaa920caece8563c5fb95b678f60ea986591d81c1e7c0aa7e68e9a65534"
+    },
+    {
+      "file": "DEPLOYED_MODEL_INTEGRITY.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "7f2cafd9f595dd9d07e2aa326b33cc906ff86d6de9aea905fec55124c933e6a5"
+    },
+    {
+      "file": "REPRODUCIBLE_BUILD.json",
+      "allPass": true,
+      "buildMatches": true,
+      "sha256": "309c092df1ff347f85e15277a4364e7f7acf28defaca5ec3ad1abcdaa65499d1"
+    }
+  ],
+  "allPass": true,
+  "binding": "Every final evidence file above names the exact final candidate; source/deploy were read only during verification. Reproducibility excludes only declared qa/ browser harness files that must not be deployed.",
+  "qualificationLimits": [
+    "Node controlled offline/SW tests are not browser offline/update proof.",
+    "Static header matching is not actual Cloudflare response verification.",
+    "Model byte integrity is not model accuracy or inference qualification."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "release": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "status": "NOT_PRODUCTION_READY",
+  "humanApprovals": 0,
+  "deploymentPerformed": false,
+  "liveSiteModified": false,
+  "gates": [
+    {
+      "id": "G1",
+      "status": "PASS_BOUNDED",
+      "reason": "Alur PDF → Terjemahkan otomatis → unduh satu MD diuji dua arah pada UI Chrome. Non-PDF ditolak; editor/glosarium tidak wajib.",
+      "evidence": "browser/consumer-en-final.txt; browser/consumer-id-final.txt; browser/non-pdf-final.txt"
+    },
+    {
+      "id": "G2",
+      "status": "PARTIAL",
+      "reason": "Delapan kelas fixture dan PDF rusak diuji; jurnal berlisensi 49 halaman dibaca/OCR. Cakupan semua layout kompleks, footnote, PDF batas100MiB/300halaman dan perangkat minimum belum dikualifikasi.",
+      "evidence": "browser/browser-final.json; geometry/regression-results.json"
+    },
+    {
+      "id": "G3",
+      "status": "PARTIAL",
+      "reason": "8 rumus audit + kontrol PDF independen lulus rekonstruksi;27 regresi. Prime/aksen/Unicode/inline dirender. Akar dengan cakupan overbar, sistem/cases, nomor persamaan, seluruh formula tabel/scan dan layout batas belum dibuktikan lengkap.",
+      "evidence": "geometry/regression-results.json; browser/RENDERED_BROWSER_EXPORTS.json; browser/math-equations-verified.jpg"
+    },
+    {
+      "id": "G4",
+      "status": "FAIL",
+      "reason": "Dua arah berfungsi dan cacat audit ditangani. Acceptance terpisah masih menemukan perubahan makna yang lolos guard, termasuk CP19-A-010 dan A-012. Persetujuan manusia0.",
+      "evidence": "SEMANTIC_QA_PER_ID.json; INDEPENDENT_ACCEPTANCE.json; DOMAIN_HOLDOUT.json"
+    },
+    {
+      "id": "G5",
+      "status": "PASS_BOUNDED",
+      "reason": "Tiga unduhan MD Chrome aktual dirender dengan Marked17.0.1/KaTeX0.19.1; satu berkas dengan data URI gambar, prime dan rumus tampil. Hasil matematika berlabel parsial karena1 penolakan. Tidak ada klaim semua viewer kompatibel.",
+      "evidence": "browser/RENDERED_BROWSER_EXPORTS.json; browser/render-en-final.txt; browser/render-id-final.txt; markdown-tests.json"
+    },
+    {
+      "id": "G6",
+      "status": "PARTIAL",
+      "reason": "Chrome156Linux: normal, PDF rusak/password, cancel→reload→resume, dua tab,49halaman dan ZIP aktual. Storage penuh/cachefail diuji melalui harness terkontrol. BFCache, offline terputus dan perangkat fisik bermemori rendah belum terbukti.",
+      "evidence": "browser/browser-final.json; browser/cancel-final.txt; browser/cancel-reload-final.txt; browser/two-tabs-final.txt; ../final-regression/RESULTS.json"
+    },
+    {
+      "id": "G7",
+      "status": "BLOCKED_HOSTING",
+      "reason": "300 aset cocok hash dan hasil build ulang identik;16 berkas model decoded lulus. HTTP200/MIME/Range206 aktual. Preview mengubahHTML+1212byte dan tidak menerapkan_headers: SW menolakhash dengan benar. Cloudflare CSP/cache/offline/rollback belum diuji.",
+      "evidence": "REPRODUCIBLE_BUILD.json; MODEL_AND_HEADERS.json; browser/hosting-final.json; ../build/FINAL_STATIC_VERIFICATION.json"
+    },
+    {
+      "id": "G8",
+      "status": "PARTIAL",
+      "reason": "Cold frame390px tidak memuat model/PDF/OCR/runtime. Model hash cache lintas rilis diuji4kasusVM; prepare browser dari cache ~4.0s/~2.7s. Update/offline nyata dan low-memory UI belum dikualifikasi.",
+      "evidence": "model-cache.json; browser/browser-final.json"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "status": "PARTIAL",
+      "change": "Geometri PDF, AST, garis pecahan, script, integral/matriks dan provenance;unknown/kurva diberi unverified.",
+      "source": "app/app/math-geometry.js; app/app/pdf-reader.js",
+      "evidence": "geometry/regression-results.json; browser/math-equations-verified.jpg",
+      "remaining": "Cakupan matematika luas padaG3 masih terbuka."
+    },
+    {
+      "id": "F02",
+      "status": "CLOSED_KNOWN_REGRESSIONS",
+      "change": "Prime/doubleprime/aksen, satuan ilmiah,Unicode danidentitas terproteksi; tidak mengganti isi sumber.",
+      "source": "app/app/semantic-spans.js",
+      "evidence": "guards.json; ../final-regression/translation-scientific-identities.mjs.log; browser/RENDERED_BROWSER_EXPORTS.json",
+      "remaining": "Tidak menjamin setiap notasi jurnal yang belum diuji."
+    },
+    {
+      "id": "F03",
+      "status": "PARTIAL",
+      "change": "Guard relasi/istilah, perlindungan konteks dan bounded alternate;170 evaluasi alternatif nyata tidak membenarkan penggantian model.",
+      "source": "app/app/translation.js; app/app/claim-guards.js",
+      "evidence": "DOMAIN_HOLDOUT.json; INDEPENDENT_ACCEPTANCE.json; SEMANTIC_QA_PER_ID.json",
+      "remaining": "Meaning failures terpisah masih ada; dua reviewer danadjudicator belum tersedia."
+    },
+    {
+      "id": "F04",
+      "status": "CLOSED_KNOWN_REGRESSIONS",
+      "change": "Ekspor satuMD dengan LaTeX terverifikasi dan raster dataURI; batas inline utuh; aset hilang menggagalkan ekspor.",
+      "source": "app/app/export.js; app/app/markdown-math.js",
+      "evidence": "markdown-tests.json; browser/RENDERED_BROWSER_EXPORTS.json",
+      "remaining": "G3 tetap terbuka; renderer yang dijamin hanya konfigurasi yang diuji."
+    },
+    {
+      "id": "F05",
+      "status": "PARTIAL",
+      "change": "45 guard/regresi, relasi angka, direction/quantifier/negation, retry strategi berbeda dan cachekalimat sama; rejection bukanPASS.",
+      "source": "app/app/translation.js; app/app/claim-guards.js",
+      "evidence": "guards.json; DOMAIN_HOLDOUT.json",
+      "remaining": "Guard lexical bounded melewatkan sebagian semantik penerimaan; bukan semantic verifier universal."
+    },
+    {
+      "id": "F06",
+      "status": "PARTIAL_HOSTING",
+      "change": "AturanCache-Control dipisah shell/SW/rilis;5path tidak bertumpuk dalamsimulasi.",
+      "source": "scripts/build.py; app/_headers",
+      "evidence": "MODEL_AND_HEADERS.json; browser/hosting-final.json",
+      "remaining": "ResponsCloudflare actual belumtersedia; preview tidakmenerapkanheaders."
+    },
+    {
+      "id": "F07",
+      "status": "PARTIAL_BROWSER_UPDATE",
+      "change": "Cachemodel menggunakanhashkonten denganvalidasi setiapbaca danmigrasilegacy;rilisaktif tidakdihapusagresif.",
+      "source": "scripts/engine-cache-fragment.js; app/assets/engine.worker-4c3dcfee.js",
+      "evidence": "model-cache.json; browser/browser-final.json",
+      "remaining": "Offline/update/rollback actual belumlulus padaorigin yangutuh."
+    },
+    {
+      "id": "F08",
+      "status": "PARTIAL_MODEL_REPRODUCTION",
+      "change": "Sourceaktual,lock,patch,fixture,model,hash;staticbuildkedua identik300aset. Paritymodelhistorisdipertahankan.",
+      "source": "scripts/build.py; scripts/patch-engine.py; model-provenance-source/",
+      "evidence": "REPRODUCIBLE_BUILD.json; MODEL_AND_HEADERS.json",
+      "remaining": "NPZoriginal tidakada;konversinativeparity tidakdiulangdanbukanakurasiilmiah."
+    },
+    {
+      "id": "F09",
+      "status": "CLOSED_ACTIVE_DOCUMENTATION",
+      "change": "DokumenkanCP19aktual,PDF.js6.2.108,lokasi lisensi relatifrilis danbataspengujian;historicalsourcesdiberilabel.",
+      "source": "README.md; app/MODEL_NOTICE.txt",
+      "evidence": "../build/BUILD_MANIFEST.json",
+      "remaining": "Komentar/reporthistoris dipertahankansebagaiprovenance,bukanstatusCP19."
+    }
+  ]
+}

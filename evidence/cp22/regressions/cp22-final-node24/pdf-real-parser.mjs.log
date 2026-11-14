@@ -1,0 +1,240 @@
+Warning: Please use the `legacy` build in Node.js environments.
+Warning: Indexing all PDF objects
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+{
+  "method": "Actual PDF.js 6.2.108, production openPdf/extract, native canvas transport (not real browser). Synthetic fixtures labelled. Model translation and OCR are separate tests.",
+  "node": "v24.22.1",
+  "nodeShims": [
+    "Uint8Array.toHex",
+    "Map.getOrInsertComputed",
+    "Math.sumPrecise compensated summation for fixture geometry",
+    "file URL fetch; actual local bytes",
+    "native Canvas instead of browser DOM"
+  ],
+  "results": [
+    {
+      "name": "digital-en.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 6,
+      "sourceItems": 6,
+      "coveredItems": 6,
+      "elapsedMs": 223.952043,
+      "types": [
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph"
+      ]
+    },
+    {
+      "name": "digital-id.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 6,
+      "sourceItems": 6,
+      "coveredItems": 6,
+      "elapsedMs": 70.34534300000001,
+      "types": [
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph"
+      ]
+    },
+    {
+      "name": "mathematics.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 8,
+      "sourceItems": 15,
+      "coveredItems": 15,
+      "elapsedMs": 67.31613500000003,
+      "types": [
+        "formula",
+        "formula",
+        "formula",
+        "formula",
+        "formula",
+        "formula",
+        "paragraph",
+        "paragraph"
+      ]
+    },
+    {
+      "name": "table-two-column.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 9,
+      "sourceItems": 14,
+      "coveredItems": 14,
+      "elapsedMs": 54.58003199999996,
+      "types": [
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "table"
+      ]
+    },
+    {
+      "name": "rotated.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 2,
+      "sourceItems": 2,
+      "coveredItems": 2,
+      "elapsedMs": 87.00528499999996,
+      "types": [
+        "paragraph",
+        "paragraph"
+      ]
+    },
+    {
+      "name": "dense.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 1,
+      "sourceItems": 4000,
+      "coveredItems": 4000,
+      "elapsedMs": 453.1505470000001,
+      "types": [
+        "table"
+      ]
+    },
+    {
+      "name": "password.pdf",
+      "status": "PASS",
+      "pages": 1,
+      "blocks": 6,
+      "sourceItems": 6,
+      "coveredItems": 6,
+      "elapsedMs": 45.63745199999994,
+      "types": [
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph",
+        "paragraph"
+      ]
+    },
+    {
+      "name": "corrupt.pdf",
+      "case": "malformed",
+      "status": "PASS"
+    },
+    {
+      "name": "password.pdf",
+      "case": "cancel-password",
+      "status": "PASS"
+    },
+    {
+      "name": "oversized-image.pdf",
+      "status": "PASS",
+      "expected": "Reject declared image dimensions above 24 megapixels, after operator parsing; not a predecode/heap bound"
+    },
+    {
+      "name": "json-input-rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "mixed-digital-500-scan.pdf",
+      "status": "PASS",
+      "method": "real PDF text/operator parsing + current OCR plan; no OCR inference",
+      "plan": {
+        "fullPage": false,
+        "useOCR": true,
+        "replacementRatio": 0,
+        "regions": [
+          {
+            "bbox": [
+              40,
+              257,
+              515,
+              515
+            ],
+            "operatorIndex": 53,
+            "id": "image-1",
+            "status": "ocr-required"
+          }
+        ],
+        "textCharacters": 484
+      },
+      "images": {
+        "count": 1,
+        "vectorGraphics": 0,
+        "ratio": 0.5294017844667558,
+        "regions": [
+          {
+            "bbox": [
+              40,
+              257,
+              515,
+              515
+            ],
+            "operatorIndex": 53
+          }
+        ],
+        "mathVectors": {
+          "segments": [],
+          "unsupported": []
+        }
+      }
+    },
+    {
+      "name": "scan.pdf",
+      "status": "PASS",
+      "method": "real PDF text/operator parsing + current OCR plan; no OCR inference",
+      "plan": {
+        "fullPage": true,
+        "useOCR": true,
+        "replacementRatio": 0,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              595,
+              842
+            ],
+            "operatorIndex": 9,
+            "id": "image-1",
+            "status": "ocr-required"
+          }
+        ],
+        "textCharacters": 0
+      },
+      "images": {
+        "count": 1,
+        "vectorGraphics": 0,
+        "ratio": 1,
+        "regions": [
+          {
+            "bbox": [
+              0,
+              0,
+              595,
+              842
+            ],
+            "operatorIndex": 9
+          }
+        ],
+        "mathVectors": {
+          "segments": [],
+          "unsupported": []
+        }
+      }
+    }
+  ]
+}

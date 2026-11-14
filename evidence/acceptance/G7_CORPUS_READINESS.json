@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-11-12T03:17:23.905151+00:00",
+  "syntheticCorpus": "32segments originally heldout; development-exposed after first actual evaluation; preserve initial and followup outputs.",
+  "realJournalCorpus": "8lawful PDFs/160 frozen excerpts available,4perdirection,2perdomain.",
+  "humanReferenceStatus": "UNREVIEWED",
+  "humanApprovals": 0,
+  "remainingExternalAction": "Two independent bilingual scientific reviewers plus adjudicator must validate source transcription and candidate outputs with fixed rubric.",
+  "sourcePreparationLimit": "One scanned original uses native Tesseract reference extraction; this is NOT CP18 browser OCR evidence.",
+  "excludedDownloads": [
+    {
+      "id": "original JOURNAL-05",
+      "reason": "Original selection was English and PDF-specific CC-BY-NC; replaced by Indonesian CC-BY-SA UGM scan."
+    },
+    {
+      "id": "original JOURNAL-06",
+      "reason": "PDF-specific CC-BY-NC; replaced by Indonesian CC-BY-SA UNY math article."
+    }
+  ],
+  "notDeployContent": true
+}

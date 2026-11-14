@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "schemaVersion": 2,
+    "build": {
+      "base": "/r/6ed0d134e1770b27/",
+      "modelHashes": {
+        "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+        "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+      },
+      "release": "cp19-6ed0d134e1770b27",
+      "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+      "version": "0.19.0"
+    },
+    "sourceSha256": "a7c157ec36f43aa7afbb4859c538dfe0e2517796172964866d55696ae13853b0",
+    "configuration": {
+      "source": "id",
+      "target": "en"
+    },
+    "counts": {
+      "total": 6,
+      "translated": 6,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "semanticVerified": false,
+    "humanApproval": false,
+    "generatedAt": "2026-11-12T13:56:05.092Z"
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 1,
+      "imagePath": "assets/halaman-0001.jpg",
+      "imageBlob": {},
+      "warnings": [],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 6,
+      "coveredItemCount": 6,
+      "referenceSection": false,
+      "sourceTextCharacters": 188
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Hasil ilmiah",
+      "bbox": [
+        40,
+        41.78955078125,
+        63.948241499999995,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        0
+      ],
+      "sourceItems": [
+        {
+          "id": 0,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            41.78955078125,
+            63.94824149999999,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Hasil ilmiah"
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Scientific results",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Intervensi tidak meningkatkan kelangsungan hidup.",
+      "bbox": [
+        40,
+        76.78955078125,
+        286.9936575,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        1
+      ],
+      "sourceItems": [
+        {
+          "id": 1,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            76.78955078125,
+            286.9936575,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Intervensi tidak meningkatkan kelangsungan hidup."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Intervention doesn't improve survival.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0003",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Regresi linear mengestimasi ukuran efek.",
+      "bbox": [
+        40,
+        111.78955078125,
+        229.94189789999996,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        2
+      ],
+      "sourceItems": [
+        {
+          "id": 2,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            111.78955078125,
+            229.9418979,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Regresi linear mengestimasi ukuran efek."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Linear regression estimates effect size.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0004",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Konsentrasi sampel adalah 10 μM.",
+      "bbox": [
+        40,
+        146.78955078125,
+        189.94336240000004,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        3
+      ],
+      "sourceItems": [
+        {
+          "id": 3,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            146.78955078125,
+            189.94336240000004,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Konsentrasi sampel adalah 10 μM."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Sample concentration is 10 μM.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0005",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Bukti masih belum pasti.",
+      "bbox": [
+        40,
+        181.78955078125,
+        136.7749031,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        4
+      ],
+      "sourceItems": [
+        {
+          "id": 4,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            181.78955078125,
+            136.7749031,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Bukti masih belum pasti."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "The evidence is still unclear.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0006",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Himpunan penyelesaian adalah ∅.",
+      "bbox": [
+        40,
+        216.78955078125,
+        190.54492600000006,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        5
+      ],
+      "sourceItems": [
+        {
+          "id": 5,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            216.78955078125,
+            190.54492600000006,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Himpunan penyelesaian adalah ∅."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Solution set is ∅.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    }
+  ],
+  "recoveredCorrections": [],
+  "revisionHistory": []
+}

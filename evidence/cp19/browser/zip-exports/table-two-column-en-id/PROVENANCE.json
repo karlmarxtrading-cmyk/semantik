@@ -1,0 +1,563 @@
+{
+  "metadata": {
+    "schemaVersion": 2,
+    "build": {
+      "base": "/r/6ed0d134e1770b27/",
+      "modelHashes": {
+        "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+        "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+      },
+      "release": "cp19-6ed0d134e1770b27",
+      "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+      "version": "0.19.0"
+    },
+    "sourceSha256": "29b42ba9519f75a28cf86e4e80cb1a3fbc539f31d441b03a1af2b66e06ad322b",
+    "configuration": {
+      "source": "en",
+      "target": "id"
+    },
+    "counts": {
+      "total": 9,
+      "translated": 9,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "semanticVerified": false,
+    "humanApproval": false,
+    "generatedAt": "2026-11-12T13:55:59.481Z"
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 2,
+      "imagePath": "assets/halaman-0001.jpg",
+      "imageBlob": {},
+      "warnings": [
+        "Layout dua kolom terdeteksi. Periksa urutan baca di pratinjau."
+      ],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 14,
+      "coveredItemCount": 14,
+      "referenceSection": false,
+      "sourceTextCharacters": 353
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Left column scientific prose line 1.",
+      "bbox": [
+        35,
+        51.78955078125,
+        189.05712979999998,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        0
+      ],
+      "sourceItems": [
+        {
+          "id": 0,
+          "source": "pdf-text",
+          "bbox": [
+            35,
+            51.78955078125,
+            189.05712979999998,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Left column scientific prose line 1."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Kolom kiri ilmiah prosa baris 1.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Left column scientific prose line 2.",
+      "bbox": [
+        35,
+        81.78955078125,
+        189.05712979999998,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        3
+      ],
+      "sourceItems": [
+        {
+          "id": 3,
+          "source": "pdf-text",
+          "bbox": [
+            35,
+            81.78955078125,
+            189.05712979999998,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Left column scientific prose line 2."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Kolom kiri ilmiah prosa baris 2.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0003",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Left column scientific prose line 3.",
+      "bbox": [
+        35,
+        111.78955078125,
+        189.05712979999998,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        6
+      ],
+      "sourceItems": [
+        {
+          "id": 6,
+          "source": "pdf-text",
+          "bbox": [
+            35,
+            111.78955078125,
+            189.05712979999998,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Left column scientific prose line 3."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Kolom kiri ilmiah prosa baris 3.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0004",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Left column scientific prose line 4.",
+      "bbox": [
+        35,
+        141.78955078125,
+        189.05712979999998,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        9
+      ],
+      "sourceItems": [
+        {
+          "id": 9,
+          "source": "pdf-text",
+          "bbox": [
+            35,
+            141.78955078125,
+            189.05712979999998,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Left column scientific prose line 4."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Kolom kiri ilmiah prosa baris 4.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0005",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Right column results and discussion 1.",
+      "bbox": [
+        315,
+        51.78955078125,
+        212.23339940000005,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 1,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        2
+      ],
+      "sourceItems": [
+        {
+          "id": 2,
+          "source": "pdf-text",
+          "bbox": [
+            315,
+            51.78955078125,
+            212.23339940000002,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Right column results and discussion 1."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Hasil kolom kanan dan diskusi 1.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0006",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Right column results and discussion 2.",
+      "bbox": [
+        315,
+        81.78955078125,
+        212.23339940000005,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 1,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        5
+      ],
+      "sourceItems": [
+        {
+          "id": 5,
+          "source": "pdf-text",
+          "bbox": [
+            315,
+            81.78955078125,
+            212.23339940000002,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Right column results and discussion 2."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Hasil kolom kanan dan diskusi 2.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0007",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Right column results and discussion 3.",
+      "bbox": [
+        315,
+        111.78955078125,
+        212.23339940000005,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 1,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        8
+      ],
+      "sourceItems": [
+        {
+          "id": 8,
+          "source": "pdf-text",
+          "bbox": [
+            315,
+            111.78955078125,
+            212.23339940000002,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Right column results and discussion 3."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Hasil kolom kanan dan diskusi 3.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0008",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Right column results and discussion 4.",
+      "bbox": [
+        315,
+        141.78955078125,
+        212.23339940000005,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 1,
+      "rotated": false,
+      "confidence": 0.84,
+      "issues": [],
+      "sourceItemIds": [
+        11
+      ],
+      "sourceItems": [
+        {
+          "id": 11,
+          "source": "pdf-text",
+          "bbox": [
+            315,
+            141.78955078125,
+            212.23339940000002,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Right column results and discussion 4."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "target": "Hasil kolom kanan dan diskusi 4.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false
+    },
+    {
+      "id": "p0001-b0009",
+      "page": 1,
+      "type": "table",
+      "text": "Treatment Outcome\nControl group 10 mg\nIntervention group 20 mg",
+      "bbox": [
+        40,
+        271.78955078125,
+        320.2036139,
+        71
+      ],
+      "source": "pdf-text",
+      "column": -1,
+      "rotated": false,
+      "confidence": 0.72,
+      "issues": [],
+      "sourceItemIds": [
+        12,
+        14,
+        15,
+        17,
+        18,
+        20
+      ],
+      "sourceItems": [
+        {
+          "id": 12,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            271.78955078125,
+            57.8305662,
+            11
+          ]
+        },
+        {
+          "id": 14,
+          "source": "pdf-text",
+          "bbox": [
+            310,
+            271.78955078125,
+            50.20361389999999,
+            11
+          ]
+        },
+        {
+          "id": 15,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            301.78955078125,
+            75.68945229999999,
+            11
+          ]
+        },
+        {
+          "id": 17,
+          "source": "pdf-text",
+          "bbox": [
+            310,
+            301.78955078125,
+            35.19140680000001,
+            11
+          ]
+        },
+        {
+          "id": 18,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            331.78955078125,
+            102.82421929999998,
+            11
+          ]
+        },
+        {
+          "id": 20,
+          "source": "pdf-text",
+          "bbox": [
+            310,
+            331.78955078125,
+            35.19140680000001,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Treatment Outcome",
+        "Control group 10 mg",
+        "Intervention group 20 mg"
+      ],
+      "rows": [
+        [
+          "Treatment",
+          "Outcome"
+        ],
+        [
+          "Control group",
+          "10 mg"
+        ],
+        [
+          "Intervention group",
+          "20 mg"
+        ]
+      ],
+      "cellBboxes": [
+        [
+          [
+            40,
+            271.78955078125,
+            57.83056619999999,
+            11
+          ],
+          [
+            310,
+            271.78955078125,
+            50.20361389999999,
+            11
+          ]
+        ],
+        [
+          [
+            40,
+            301.78955078125,
+            75.68945229999999,
+            11
+          ],
+          [
+            310,
+            301.78955078125,
+            35.19140679999998,
+            11
+          ]
+        ],
+        [
+          [
+            40,
+            331.78955078125,
+            102.82421929999998,
+            11
+          ],
+          [
+            310,
+            331.78955078125,
+            35.19140679999998,
+            11
+          ]
+        ]
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p0001-b0009.png",
+      "target": "Pengobatan | Outcome\nGrup kendali | 10 mg\nKelompok Intervensi | 20 mg",
+      "translatedRows": [
+        [
+          "Pengobatan",
+          "Outcome"
+        ],
+        [
+          "Grup kendali",
+          "10 mg"
+        ],
+        [
+          "Kelompok Intervensi",
+          "20 mg"
+        ]
+      ],
+      "status": "translated",
+      "outcome": "translated",
+      "sourcePreserved": false,
+      "retryable": false
+    }
+  ],
+  "recoveredCorrections": [],
+  "revisionHistory": []
+}

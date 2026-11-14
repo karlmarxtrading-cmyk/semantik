@@ -1,0 +1,115 @@
+{
+  "createdUTC": "2026-11-13T18:54:58.566617+00:00",
+  "freezeSourceHash": "4f600f19789edea73d3642e65c10d5b3a43f5e0f79b36fc9d2c91dc597da78e3",
+  "method": "New internal AI-authored holdout after product freeze; no sentence-specific code changes afterwards. Not independent human review. No reference target fed to model.",
+  "dimensions": [
+    "scientific meaning",
+    "numbers units formula",
+    "negation quantifiers",
+    "causal and modal scope",
+    "completeness relations",
+    "terminology fluency"
+  ],
+  "cases": [
+    {
+      "id": "CP21-N01",
+      "direction": "en-id",
+      "source": "The median stayed at 18 while the mean increased. This can happen when a few large observations change; it does not imply that every observation increased."
+    },
+    {
+      "id": "CP21-N02",
+      "direction": "en-id",
+      "source": "An injective map need not be surjective. Restricting the codomain to the image changes that statement without changing the values of the map."
+    },
+    {
+      "id": "CP21-N03",
+      "direction": "en-id",
+      "source": "Adding an inert gas at constant volume does not change the partial pressures of the reacting gases. This claim assumes ideal behavior and a constant temperature."
+    },
+    {
+      "id": "CP21-N04",
+      "direction": "en-id",
+      "source": "A lower p-value does not measure a larger effect. The estimate and its uncertainty must be examined separately from the decision threshold."
+    },
+    {
+      "id": "CP21-N05",
+      "direction": "en-id",
+      "source": "The enzyme was inactive after heating, although its mass was unchanged. Unchanged mass is insufficient evidence that the molecular structure survived."
+    },
+    {
+      "id": "CP21-N06",
+      "direction": "en-id",
+      "source": "A subsidy paid to producers may also benefit consumers. Who receives the payment does not by itself determine who ultimately gains from the policy."
+    },
+    {
+      "id": "CP21-N07",
+      "direction": "en-id",
+      "source": "Only participants assigned before the protocol change were included in the first analysis. The later analysis included both groups but did not combine their outcomes."
+    },
+    {
+      "id": "CP21-N08",
+      "direction": "en-id",
+      "source": "The integral over the whole interval equals zero although the function is not zero everywhere. Positive and negative contributions can cancel."
+    },
+    {
+      "id": "CP21-N09",
+      "direction": "en-id",
+      "source": "Group C lost 4 samples whereas group D lost 9 samples. Those numbers are losses, not the numbers remaining in either group."
+    },
+    {
+      "id": "CP21-N10",
+      "direction": "en-id",
+      "source": "The table records detection limits rather than measured concentrations. A value below the limit should not be reported as an exact zero."
+    },
+    {
+      "id": "CP21-N11",
+      "direction": "id-en",
+      "source": "Peluang bersyarat bergantung pada peristiwa yang dijadikan syarat. Menukar urutan dua peristiwa tidak selalu menghasilkan peluang yang sama."
+    },
+    {
+      "id": "CP21-N12",
+      "direction": "id-en",
+      "source": "Jumlah mol gas tetap, sedangkan volumenya bertambah. Pada suhu yang tetap, tekanan gas ideal menurun; kesimpulan ini tidak mengasumsikan bahwa gas keluar dari wadah."
+    },
+    {
+      "id": "CP21-N13",
+      "direction": "id-en",
+      "source": "Uji tersebut gagal menolak hipotesis nol. Kegagalan itu bukan bukti bahwa kedua perlakuan mempunyai efek yang identik."
+    },
+    {
+      "id": "CP21-N14",
+      "direction": "id-en",
+      "source": "Dua vektor yang tegak lurus tidak harus memiliki panjang yang sama. Pernyataan tentang sudut tidak menentukan besarnya masing-masing vektor."
+    },
+    {
+      "id": "CP21-N15",
+      "direction": "id-en",
+      "source": "Biaya rata-rata dapat turun sementara biaya total naik. Kedua besaran memakai penyebut yang berbeda sehingga arah perubahannya tidak harus sama."
+    },
+    {
+      "id": "CP21-N16",
+      "direction": "id-en",
+      "source": "Sebagian enzim tetap aktif setelah pembekuan. Hasil ini tidak menunjukkan bahwa semua molekul bertahan tanpa perubahan struktur."
+    },
+    {
+      "id": "CP21-N17",
+      "direction": "id-en",
+      "source": "Kelompok E menerima 6 mg dan kelompok F menerima 8 mg. Dosis yang lebih tinggi tidak dengan sendirinya menunjukkan manfaat yang lebih besar."
+    },
+    {
+      "id": "CP21-N18",
+      "direction": "id-en",
+      "source": "Penulis menyebutkan dua kemungkinan penyebab, tetapi tidak memilih salah satunya. Menghapus kata mungkin akan mengubah tingkat kepastian klaim."
+    },
+    {
+      "id": "CP21-N19",
+      "direction": "id-en",
+      "source": "Kurva penawaran yang tetap digunakan untuk membandingkan dua keadaan pasar. Asumsi itu tidak menyatakan bahwa jumlah yang ditawarkan tetap pada setiap harga."
+    },
+    {
+      "id": "CP21-N20",
+      "direction": "id-en",
+      "source": "Pengukuran dilakukan setelah alat mencapai kesetimbangan termal. Waktu tunggu bukan bagian dari durasi pengambilan data yang dilaporkan."
+    }
+  ]
+}

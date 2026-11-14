@@ -1,0 +1,1141 @@
+{
+  "schemaVersion": 1,
+  "fileName": "mathematics.pdf",
+  "fileSize": 33000,
+  "numPages": 1,
+  "processedRange": [
+    1,
+    1
+  ],
+  "metadata": {
+    "title": "CP18 SYNTHETIC FIXTURE: Inequality notation and mathematical identifiers",
+    "author": "Semantik Setara regression fixtures (CC0)",
+    "subject": "unspecified",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20000101000000+00'00'",
+    "language": ""
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 1,
+      "blocks": [
+        {
+          "id": "p1-math-1",
+          "page": 1,
+          "type": "formula",
+          "text": "||𝑥 − 4| − 4| < 1",
+          "originalText": "||𝑥 − 4| − 4| < 1",
+          "translatable": false,
+          "bbox": [
+            40,
+            40.12,
+            116.745,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            0
+          ],
+          "math": {
+            "id": "p1-math-1",
+            "bbox": [
+              40,
+              40.12,
+              116.745,
+              15
+            ],
+            "latex": "||x - 4| - 4| < 1",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "||𝑥 − 4| − 4| < 1"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              0
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "||𝑥 − 4| − 4| < 1"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-1.png"
+        },
+        {
+          "id": "p1-math-2",
+          "page": 1,
+          "type": "formula",
+          "text": "||x − 4| − 4| > 1",
+          "originalText": "||x − 4| − 4| > 1",
+          "translatable": false,
+          "bbox": [
+            40,
+            85.12,
+            114.6,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            1
+          ],
+          "math": {
+            "id": "p1-math-2",
+            "bbox": [
+              40,
+              85.12,
+              114.6,
+              15
+            ],
+            "latex": "||x - 4| - 4| > 1",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "||x − 4| − 4| > 1"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              1
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "||x − 4| − 4| > 1"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-2.png"
+        },
+        {
+          "id": "p1-math-3",
+          "page": 1,
+          "type": "formula",
+          "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+          "originalText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+          "translatable": false,
+          "bbox": [
+            40,
+            130.12,
+            148.64999999999998,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            2
+          ],
+          "math": {
+            "id": "p1-math-3",
+            "bbox": [
+              40,
+              130.12,
+              148.64999999999998,
+              15
+            ],
+            "latex": "|x + 4| + |x + 3| \\le 0",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              2
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-3.png"
+        },
+        {
+          "id": "p1-math-4",
+          "page": 1,
+          "type": "formula",
+          "text": "x ≥ 2",
+          "originalText": "x ≥ 2",
+          "translatable": false,
+          "bbox": [
+            40,
+            175.12,
+            39.405,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            3
+          ],
+          "math": {
+            "id": "p1-math-4",
+            "bbox": [
+              40,
+              175.12,
+              39.405,
+              15
+            ],
+            "latex": "x \\ge 2",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "x ≥ 2"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              3
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "x ≥ 2"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-4.png"
+        },
+        {
+          "id": "p1-math-5",
+          "page": 1,
+          "type": "formula",
+          "text": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+          "originalText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+          "translatable": false,
+          "bbox": [
+            40,
+            220.12,
+            198.95999999999992,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "math": {
+            "id": "p1-math-5",
+            "bbox": [
+              40,
+              220.12,
+              198.95999999999992,
+              15
+            ],
+            "latex": "\\varnothing \\mathbb{R} \\mathbb{N} \\mathbb{Z} \\in \\notin \\cup \\cap",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "∅"
+                },
+                {
+                  "type": "text",
+                  "text": "ℝ"
+                },
+                {
+                  "type": "text",
+                  "text": "ℕ"
+                },
+                {
+                  "type": "text",
+                  "text": "ℤ"
+                },
+                {
+                  "type": "text",
+                  "text": "∈"
+                },
+                {
+                  "type": "text",
+                  "text": "∉"
+                },
+                {
+                  "type": "text",
+                  "text": "∪"
+                },
+                {
+                  "type": "text",
+                  "text": "∩"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-5.png"
+        },
+        {
+          "id": "p1-math-6",
+          "page": 1,
+          "type": "formula",
+          "text": "(−∞, −3) ∪ (2, ∞)",
+          "originalText": "(−∞, −3) ∪ (2, ∞)",
+          "translatable": false,
+          "bbox": [
+            40,
+            265.12,
+            131.85,
+            15
+          ],
+          "confidence": 0.95,
+          "source": "pdf-geometry",
+          "sourceItemIds": [
+            19
+          ],
+          "math": {
+            "id": "p1-math-6",
+            "bbox": [
+              40,
+              265.12,
+              131.85,
+              15
+            ],
+            "latex": "(-\\infty , -3) \\cup (2, \\infty )",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "(−∞, −3) ∪ (2, ∞)"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              19
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "(−∞, −3) ∪ (2, ∞)"
+          },
+          "issues": [],
+          "pageImagePath": "assets/halaman-0001.jpg",
+          "assetPath": "assets/p1-math-6.png"
+        },
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Solve the inequality. Express the solution set in interval notation.",
+          "bbox": [
+            40,
+            373.64599609375,
+            294.86865240000014,
+            9
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            21
+          ],
+          "sourceItems": [
+            {
+              "id": 21,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                373.64599609375,
+                294.86865240000014,
+                9
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Solve the inequality. Express the solution set in interval notation."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "paragraph",
+          "text": "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+          "bbox": [
+            40,
+            403.64599609375,
+            312.5478528,
+            9
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            22
+          ],
+          "sourceItems": [
+            {
+              "id": 22,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                403.64599609375,
+                312.5478528,
+                9
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0"
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        }
+      ],
+      "imagePath": "assets/halaman-0001.jpg",
+      "preserveVisualSource": false,
+      "imageBlob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "warnings": [],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [
+          {
+            "id": "p1-math-1",
+            "bbox": [
+              40,
+              40.12,
+              116.745,
+              15
+            ],
+            "latex": "||x - 4| - 4| < 1",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "||𝑥 − 4| − 4| < 1"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              0
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "||𝑥 − 4| − 4| < 1"
+          },
+          {
+            "id": "p1-math-2",
+            "bbox": [
+              40,
+              85.12,
+              114.6,
+              15
+            ],
+            "latex": "||x - 4| - 4| > 1",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "||x − 4| − 4| > 1"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              1
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "||x − 4| − 4| > 1"
+          },
+          {
+            "id": "p1-math-3",
+            "bbox": [
+              40,
+              130.12,
+              148.64999999999998,
+              15
+            ],
+            "latex": "|x + 4| + |x + 3| \\le 0",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              2
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+          },
+          {
+            "id": "p1-math-4",
+            "bbox": [
+              40,
+              175.12,
+              39.405,
+              15
+            ],
+            "latex": "x \\ge 2",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "x ≥ 2"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              3
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "x ≥ 2"
+          },
+          {
+            "id": "p1-math-5",
+            "bbox": [
+              40,
+              220.12,
+              198.95999999999992,
+              15
+            ],
+            "latex": "\\varnothing \\mathbb{R} \\mathbb{N} \\mathbb{Z} \\in \\notin \\cup \\cap",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "∅"
+                },
+                {
+                  "type": "text",
+                  "text": "ℝ"
+                },
+                {
+                  "type": "text",
+                  "text": "ℕ"
+                },
+                {
+                  "type": "text",
+                  "text": "ℤ"
+                },
+                {
+                  "type": "text",
+                  "text": "∈"
+                },
+                {
+                  "type": "text",
+                  "text": "∉"
+                },
+                {
+                  "type": "text",
+                  "text": "∪"
+                },
+                {
+                  "type": "text",
+                  "text": "∩"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              4,
+              6,
+              8,
+              10,
+              12,
+              14,
+              16,
+              18
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩"
+          },
+          {
+            "id": "p1-math-6",
+            "bbox": [
+              40,
+              265.12,
+              131.85,
+              15
+            ],
+            "latex": "(-\\infty , -3) \\cup (2, \\infty )",
+            "ast": {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "(−∞, −3) ∪ (2, ∞)"
+                }
+              ]
+            },
+            "verified": true,
+            "verification": "supported-geometry-only",
+            "sourceItemIds": [
+              19
+            ],
+            "vectorIds": [],
+            "warnings": [],
+            "sourceText": "(−∞, −3) ∪ (2, ∞)"
+          }
+        ],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 15,
+      "coveredItemCount": 15,
+      "referenceSection": false,
+      "sourceTextCharacters": 220
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p1-math-1",
+      "page": 1,
+      "type": "formula",
+      "text": "||𝑥 − 4| − 4| < 1",
+      "originalText": "||𝑥 − 4| − 4| < 1",
+      "translatable": false,
+      "bbox": [
+        40,
+        40.12,
+        116.745,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        0
+      ],
+      "math": {
+        "id": "p1-math-1",
+        "bbox": [
+          40,
+          40.12,
+          116.745,
+          15
+        ],
+        "latex": "||x - 4| - 4| < 1",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "||𝑥 − 4| − 4| < 1"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          0
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "||𝑥 − 4| − 4| < 1"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-1.png"
+    },
+    {
+      "id": "p1-math-2",
+      "page": 1,
+      "type": "formula",
+      "text": "||x − 4| − 4| > 1",
+      "originalText": "||x − 4| − 4| > 1",
+      "translatable": false,
+      "bbox": [
+        40,
+        85.12,
+        114.6,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        1
+      ],
+      "math": {
+        "id": "p1-math-2",
+        "bbox": [
+          40,
+          85.12,
+          114.6,
+          15
+        ],
+        "latex": "||x - 4| - 4| > 1",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "||x − 4| − 4| > 1"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          1
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "||x − 4| − 4| > 1"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-2.png"
+    },
+    {
+      "id": "p1-math-3",
+      "page": 1,
+      "type": "formula",
+      "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+      "originalText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+      "translatable": false,
+      "bbox": [
+        40,
+        130.12,
+        148.64999999999998,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        2
+      ],
+      "math": {
+        "id": "p1-math-3",
+        "bbox": [
+          40,
+          130.12,
+          148.64999999999998,
+          15
+        ],
+        "latex": "|x + 4| + |x + 3| \\le 0",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          2
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-3.png"
+    },
+    {
+      "id": "p1-math-4",
+      "page": 1,
+      "type": "formula",
+      "text": "x ≥ 2",
+      "originalText": "x ≥ 2",
+      "translatable": false,
+      "bbox": [
+        40,
+        175.12,
+        39.405,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        3
+      ],
+      "math": {
+        "id": "p1-math-4",
+        "bbox": [
+          40,
+          175.12,
+          39.405,
+          15
+        ],
+        "latex": "x \\ge 2",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "x ≥ 2"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          3
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "x ≥ 2"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-4.png"
+    },
+    {
+      "id": "p1-math-5",
+      "page": 1,
+      "type": "formula",
+      "text": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+      "originalText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+      "translatable": false,
+      "bbox": [
+        40,
+        220.12,
+        198.95999999999992,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+      ],
+      "math": {
+        "id": "p1-math-5",
+        "bbox": [
+          40,
+          220.12,
+          198.95999999999992,
+          15
+        ],
+        "latex": "\\varnothing \\mathbb{R} \\mathbb{N} \\mathbb{Z} \\in \\notin \\cup \\cap",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "∅"
+            },
+            {
+              "type": "text",
+              "text": "ℝ"
+            },
+            {
+              "type": "text",
+              "text": "ℕ"
+            },
+            {
+              "type": "text",
+              "text": "ℤ"
+            },
+            {
+              "type": "text",
+              "text": "∈"
+            },
+            {
+              "type": "text",
+              "text": "∉"
+            },
+            {
+              "type": "text",
+              "text": "∪"
+            },
+            {
+              "type": "text",
+              "text": "∩"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-5.png"
+    },
+    {
+      "id": "p1-math-6",
+      "page": 1,
+      "type": "formula",
+      "text": "(−∞, −3) ∪ (2, ∞)",
+      "originalText": "(−∞, −3) ∪ (2, ∞)",
+      "translatable": false,
+      "bbox": [
+        40,
+        265.12,
+        131.85,
+        15
+      ],
+      "confidence": 0.95,
+      "source": "pdf-geometry",
+      "sourceItemIds": [
+        19
+      ],
+      "math": {
+        "id": "p1-math-6",
+        "bbox": [
+          40,
+          265.12,
+          131.85,
+          15
+        ],
+        "latex": "(-\\infty , -3) \\cup (2, \\infty )",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "(−∞, −3) ∪ (2, ∞)"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          19
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "(−∞, −3) ∪ (2, ∞)"
+      },
+      "issues": [],
+      "pageImagePath": "assets/halaman-0001.jpg",
+      "assetPath": "assets/p1-math-6.png"
+    },
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Solve the inequality. Express the solution set in interval notation.",
+      "bbox": [
+        40,
+        373.64599609375,
+        294.86865240000014,
+        9
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        21
+      ],
+      "sourceItems": [
+        {
+          "id": 21,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            373.64599609375,
+            294.86865240000014,
+            9
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Solve the inequality. Express the solution set in interval notation."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+      "bbox": [
+        40,
+        403.64599609375,
+        312.5478528,
+        9
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        22
+      ],
+      "sourceItems": [
+        {
+          "id": 22,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            403.64599609375,
+            312.5478528,
+            9
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0"
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/halaman-0001.jpg",
+      "blob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "page": 1,
+      "kind": "page"
+    },
+    {
+      "path": "assets/p1-math-1.png",
+      "blob": {
+        "bytes": 245,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    },
+    {
+      "path": "assets/p1-math-2.png",
+      "blob": {
+        "bytes": 239,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    },
+    {
+      "path": "assets/p1-math-3.png",
+      "blob": {
+        "bytes": 256,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    },
+    {
+      "path": "assets/p1-math-4.png",
+      "blob": {
+        "bytes": 213,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    },
+    {
+      "path": "assets/p1-math-5.png",
+      "blob": {
+        "bytes": 274,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    },
+    {
+      "path": "assets/p1-math-6.png",
+      "blob": {
+        "bytes": 250,
+        "type": "image/png"
+      },
+      "page": 1,
+      "kind": "formula"
+    }
+  ],
+  "warnings": [],
+  "sourceItemCount": 15,
+  "coveredItemCount": 15,
+  "sourceTextCharacters": 220,
+  "assetsBytes": 11782,
+  "createdAt": "2026-11-13T07:43:41.421Z"
+}

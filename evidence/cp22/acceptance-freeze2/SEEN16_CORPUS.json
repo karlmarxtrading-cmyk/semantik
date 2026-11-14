@@ -1,0 +1,87 @@
+{
+ "createdUTC": "2026-11-14T00:10:09.686960+00:00",
+ "freezeSourceHash": "f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+ "method": "REGRESSION ONLY: corpus already seen (not an acceptance holdout).",
+ "cases": [
+  {
+   "id": "CP22-G01",
+   "direction": "en-id",
+   "source": "Doubling the length of a pendulum does not double its period. The period grows with the square root of the length."
+  },
+  {
+   "id": "CP22-G02",
+   "direction": "en-id",
+   "source": "The mutant strain grew more slowly at 37 °C, but its final cell density was similar to that of the wild type. Growth rate and yield must therefore be reported separately."
+  },
+  {
+   "id": "CP22-G03",
+   "direction": "en-id",
+   "source": "A correlation coefficient of 0.8 indicates a strong linear association. It does not show which variable influences the other."
+  },
+  {
+   "id": "CP22-G04",
+   "direction": "en-id",
+   "source": "The catalyst shortened the time needed to reach equilibrium. It did not change the final ratio of products to reactants."
+  },
+  {
+   "id": "CP22-G05",
+   "direction": "en-id",
+   "source": "Inflation reduces the real value of fixed loan repayments. Borrowers therefore benefit when inflation exceeds the rate they expected."
+  },
+  {
+   "id": "CP22-G06",
+   "direction": "en-id",
+   "source": "Every finite set of real numbers has a largest element. An infinite set may have no largest element even if all of its elements are smaller than 1."
+  },
+  {
+   "id": "CP22-G07",
+   "direction": "en-id",
+   "source": "The vaccine reduced hospital admissions by 40 percent among older adults. Its effect on mild infections was not measured in this trial."
+  },
+  {
+   "id": "CP22-G08",
+   "direction": "en-id",
+   "source": "Sediment cores record changes in rainfall over several centuries. Gaps in deposition can make two distant layers appear consecutive."
+  },
+  {
+   "id": "CP22-H01",
+   "direction": "id-en",
+   "source": "Gaya gesek bekerja berlawanan dengan arah gerak benda. Besarnya bergantung pada jenis permukaan, bukan pada luas bidang sentuh."
+  },
+  {
+   "id": "CP22-H02",
+   "direction": "id-en",
+   "source": "Median lebih tahan terhadap nilai ekstrem daripada rata-rata. Karena itu, median sering dipilih untuk data pendapatan yang menceng."
+  },
+  {
+   "id": "CP22-H03",
+   "direction": "id-en",
+   "source": "Larutan penyangga mempertahankan pH ketika sedikit asam ditambahkan. Kapasitasnya terbatas dan dapat habis jika asam terus ditambahkan."
+  },
+  {
+   "id": "CP22-H04",
+   "direction": "id-en",
+   "source": "Tanaman yang kekurangan nitrogen menunjukkan daun yang menguning. Gejala ini juga dapat muncul akibat kekurangan air, sehingga diagnosis memerlukan uji tanah."
+  },
+  {
+   "id": "CP22-H05",
+   "direction": "id-en",
+   "source": "Subsidi harga pupuk menurunkan biaya produksi petani. Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu."
+  },
+  {
+   "id": "CP22-H06",
+   "direction": "id-en",
+   "source": "Peneliti mewawancarai 25 guru dari tiga sekolah negeri. Temuan ini tidak dapat digeneralisasi ke sekolah swasta tanpa data tambahan."
+  },
+  {
+   "id": "CP22-H07",
+   "direction": "id-en",
+   "source": "Turunan fungsi konstan selalu nol. Sebaliknya, fungsi dengan turunan nol pada suatu interval adalah konstan pada interval tersebut."
+  },
+  {
+   "id": "CP22-H08",
+   "direction": "id-en",
+   "source": "Pasien yang menghentikan pengobatan lebih awal dikeluarkan dari analisis utama. Pengecualian ini dapat membuat efek pengobatan tampak lebih besar."
+  }
+ ]
+}

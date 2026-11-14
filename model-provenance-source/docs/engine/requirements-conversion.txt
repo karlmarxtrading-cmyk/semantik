@@ -1,0 +1,7 @@
+# Install torch using https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+transformers==4.44.2
+onnx==1.17.0
+onnxruntime==1.20.1
+sentencepiece==0.2.1
+sacremoses==0.1.1

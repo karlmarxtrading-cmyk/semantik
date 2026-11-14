@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-11-12T02:59:21.370222+00:00",
+  "purpose": "Synthetic holdout pilot only. Freeze before baseline/CP18 inference. No optimization to these samples.",
+  "documents": [
+    {
+      "documentId": "HOLDOUT-MATH-EN",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "structure": "formula",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-MATH-EN-01",
+          "source": "For this example, the solution set contains two disjoint intervals.",
+          "aiReference": "Dalam contoh ini, himpunan penyelesaian terdiri atas dua interval yang saling lepas.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-EN-02",
+          "source": "Let A = ∅ and B = ℝ. Their union equals B.",
+          "aiReference": "Misalkan A = ∅ dan B = ℝ. Gabungan keduanya sama dengan B.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-EN-03",
+          "source": "If |x| < 3, then x lies in (−3, 3).",
+          "aiReference": "Jika |x| < 3, maka x berada dalam (−3, 3).",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-EN-04",
+          "source": "Record the identifier sample-alpha~run-7~trial-2 exactly.",
+          "aiReference": "Catat identifier sample-alpha~run-7~trial-2 secara persis.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-MATH-ID",
+      "direction": "id-en",
+      "domain": "mathematics",
+      "structure": "two-column",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-MATH-ID-01",
+          "source": "Himpunan penyelesaian tidak mencakup kedua titik batas.",
+          "aiReference": "The solution set does not include either boundary point.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-ID-02",
+          "source": "Untuk setiap n ∈ ℕ, berlaku n ≥ 0 menurut konvensi yang digunakan di sini.",
+          "aiReference": "For every n ∈ ℕ, n ≥ 0 holds under the convention used here.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-ID-03",
+          "source": "Gabungan kedua interval ditulis sebagai (−5, −2) ∪ (4, 8).",
+          "aiReference": "The union of the two intervals is written as (−5, −2) ∪ (4, 8).",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-MATH-ID-04",
+          "source": "Pernyataan ini merupakan asumsi, bukan kesimpulan dari data.",
+          "aiReference": "This statement is an assumption, not a conclusion from the data.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-STAT-EN",
+      "direction": "en-id",
+      "domain": "statistics",
+      "structure": "table",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-STAT-EN-01",
+          "source": "Group C included 12 participants, whereas group D included 18 participants.",
+          "aiReference": "Kelompok C mencakup 12 peserta, sedangkan kelompok D mencakup 18 peserta.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-EN-02",
+          "source": "The confidence interval includes zero; the estimated effect is therefore uncertain.",
+          "aiReference": "Interval kepercayaan mencakup nol; karena itu, efek yang diestimasi masih belum pasti.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-EN-03",
+          "source": "The median is reported because the distribution is asymmetric.",
+          "aiReference": "Median dilaporkan karena distribusinya tidak simetris.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-EN-04",
+          "source": "The table reports observations rather than causal effects.",
+          "aiReference": "Tabel tersebut melaporkan pengamatan, bukan efek kausal.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-STAT-ID",
+      "direction": "id-en",
+      "domain": "statistics",
+      "structure": "digital",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-STAT-ID-01",
+          "source": "Kelompok C memiliki 14 pengamatan dan kelompok D memiliki 21 pengamatan.",
+          "aiReference": "Group C has 14 observations and group D has 21 observations.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-ID-02",
+          "source": "Simpangan baku menggambarkan sebaran data, bukan ketidakpastian rata-rata sampel.",
+          "aiReference": "The standard deviation describes the dispersion of the data, not the uncertainty of the sample mean.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-ID-03",
+          "source": "Model ini mungkin menjelaskan sebagian variasi, tetapi tidak membuktikan hubungan sebab akibat.",
+          "aiReference": "This model may explain some of the variation, but it does not prove causation.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-STAT-ID-04",
+          "source": "Parameter diestimasi dari data pelatihan dan dievaluasi pada data terpisah.",
+          "aiReference": "The parameters were estimated from training data and evaluated on separate data.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-BIO-EN",
+      "direction": "en-id",
+      "domain": "biomedical",
+      "structure": "mixed",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-BIO-EN-01",
+          "source": "The reagent concentration was 7 μM and the incubation time was 15 min.",
+          "aiReference": "Konsentrasi reagen adalah 7 μM dan waktu inkubasi adalah 15 min.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-EN-02",
+          "source": "The Ca2+ signal did not increase after treatment.",
+          "aiReference": "Sinyal Ca2+ tidak meningkat setelah perlakuan.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-EN-03",
+          "source": "This small experiment cannot establish clinical effectiveness.",
+          "aiReference": "Eksperimen kecil ini tidak dapat membuktikan efektivitas klinis.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-EN-04",
+          "source": "A solution containing sodium chloride was prepared before the assay.",
+          "aiReference": "Larutan yang mengandung natrium klorida disiapkan sebelum pengujian.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-BIO-ID",
+      "direction": "id-en",
+      "domain": "biomedical",
+      "structure": "scan",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-BIO-ID-01",
+          "source": "Larutan mengandung 8 nM reagen dan disimpan pada 4 °C.",
+          "aiReference": "The solution contains 8 nM reagent and is stored at 4 °C.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-ID-02",
+          "source": "Konsentrasi Ca2+ diukur sebelum dan sesudah perlakuan.",
+          "aiReference": "The Ca2+ concentration was measured before and after treatment.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-ID-03",
+          "source": "Tidak ada bukti yang cukup untuk menyatakan bahwa terapi ini aman bagi semua pasien.",
+          "aiReference": "There is insufficient evidence to state that this therapy is safe for all patients.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-BIO-ID-04",
+          "source": "Hasil awal menunjukkan kemungkinan manfaat, tetapi penelitian lanjutan masih diperlukan.",
+          "aiReference": "The preliminary results suggest possible benefit, but further research is still needed.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-ENV-EN",
+      "direction": "en-id",
+      "domain": "environment",
+      "structure": "two-column",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-ENV-EN-01",
+          "source": "Rainfall increased at station P but decreased at station Q.",
+          "aiReference": "Curah hujan meningkat di stasiun P tetapi menurun di stasiun Q.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-EN-02",
+          "source": "The model predicts a possible change, not a certain outcome.",
+          "aiReference": "Model memprediksi kemungkinan perubahan, bukan hasil yang pasti.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-EN-03",
+          "source": "Measurements were collected at 6 m and 9 m above ground.",
+          "aiReference": "Pengukuran dilakukan pada ketinggian 6 m dan 9 m di atas tanah.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-EN-04",
+          "source": "The dataset identifier climate-observations~site-P~2026 must remain unchanged.",
+          "aiReference": "Identifier dataset climate-observations~site-P~2026 harus tetap tidak berubah.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    },
+    {
+      "documentId": "HOLDOUT-ENV-ID",
+      "direction": "id-en",
+      "domain": "environment",
+      "structure": "digital",
+      "sourceKind": "AI_AUTHORED_SYNTHETIC_FIXTURE",
+      "sourceOrigin": "New original test sentences authored for CP18 acceptance on 2026-11-12; not a real journal or historic user PDF.",
+      "distributionPermission": "Task-created original fixture; no third-party copied passage.",
+      "humanReferenceStatus": "UNREVIEWED",
+      "segments": [
+        {
+          "id": "HOLDOUT-ENV-ID-01",
+          "source": "Suhu rata-rata meningkat di lokasi P dan menurun di lokasi Q.",
+          "aiReference": "The average temperature increased at site P and decreased at site Q.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-ID-02",
+          "source": "Hubungan yang diamati tidak selalu menunjukkan mekanisme sebab akibat.",
+          "aiReference": "The observed association does not necessarily indicate a causal mechanism.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-ID-03",
+          "source": "Sensor ditempatkan pada kedalaman 3 m selama 24 h.",
+          "aiReference": "The sensor was placed at a depth of 3 m for 24 h.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        },
+        {
+          "id": "HOLDOUT-ENV-ID-04",
+          "source": "Ketidakpastian pengukuran harus dilaporkan bersama estimasi.",
+          "aiReference": "Measurement uncertainty must be reported alongside the estimate.",
+          "referenceOrigin": "AI_AUTHORED_NOT_HUMAN_APPROVED",
+          "humanReference": null,
+          "reviewerA": null,
+          "reviewerB": null,
+          "adjudication": null
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "documents": 8,
+    "segments": 32,
+    "perDirection": {
+      "en-id": {
+        "documents": 4,
+        "segments": 16
+      },
+      "id-en": {
+        "documents": 4,
+        "segments": 16
+      }
+    },
+    "perDomain": {
+      "mathematics": {
+        "documents": 2,
+        "segments": 8
+      },
+      "statistics": {
+        "documents": 2,
+        "segments": 8
+      },
+      "biomedical": {
+        "documents": 2,
+        "segments": 8
+      },
+      "environment": {
+        "documents": 2,
+        "segments": 8
+      }
+    },
+    "pdfStructures": {
+      "digital": 2,
+      "two-column": 2,
+      "table": 1,
+      "formula": 1,
+      "mixed": 1,
+      "scan": 1
+    }
+  },
+  "limitations": [
+    "All references and source sentences are AI-authored. No human approval has occurred.",
+    "This 32-segment set is not representative of unrestricted scientific translation.",
+    "The historical worksheet PDF is absent. These fixtures never replace it."
+  ]
+}

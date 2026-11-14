@@ -1,0 +1,37 @@
+{
+  "build": "cp20-8c643bea6962471f",
+  "math": {
+    "actualDownloadedMarkdown": true,
+    "visibleFormulas": 6,
+    "syntaxErrors": 0,
+    "screenshot": "CP20_MATHEMATICS_RENDER.jpg",
+    "semanticApproval": false
+  },
+  "figures": {
+    "actualDownloadedMarkdown": true,
+    "images": [
+      {
+        "complete": true,
+        "width": 1101,
+        "height": 1425
+      },
+      {
+        "complete": true,
+        "width": 1101,
+        "height": 1425
+      },
+      {
+        "complete": true,
+        "width": 1101,
+        "height": 1425
+      }
+    ],
+    "screenshot": "CP20_FIGURE_RENDER.jpg",
+    "semanticApproval": false
+  },
+  "method": "Actual consumer downloads parsed by Marked17.0.1/KaTeX0.19.1, opened in realChrome, DOM dimensions and screenshots inspected",
+  "limitations": [
+    "Caption/heading translation remains inaccurate; figure preservation is not semantic acceptance",
+    "Only this renderer qualified; not every Markdown editor"
+  ]
+}

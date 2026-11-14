@@ -1,0 +1,97 @@
+[
+  {
+    "name": "References ends at an unfamiliar chapter title and repeated chapter bibliography",
+    "status": "PASS",
+    "ms": 6.445484999999991
+  },
+  {
+    "name": "Sparse page unfamiliar heading works without a bold font-name signal",
+    "status": "PASS",
+    "ms": 0.32798200000002
+  },
+  {
+    "name": "Bibliography continuation and prominent citation entry stay references",
+    "status": "PASS",
+    "ms": 0.19930299999998624
+  },
+  {
+    "name": "Small running title above continuing citation does not end References",
+    "status": "PASS",
+    "ms": 0.3061529999999948
+  },
+  {
+    "name": "Ordinary prose beginning Part of does not become a chapter",
+    "status": "PASS",
+    "ms": 0.1284700000000214
+  },
+  {
+    "name": "Lists have explicit markers and continuation source item coverage",
+    "status": "PASS",
+    "ms": 0.2967919999999822
+  },
+  {
+    "name": "Hierarchy preserved and page numbers do not replace chapters",
+    "status": "PASS",
+    "ms": 2.3704970000000003
+  },
+  {
+    "name": "Identical image bytes with different paths embedded once and still render",
+    "status": "PASS",
+    "ms": 29.62436299999999
+  },
+  {
+    "name": "Digital page source raster optional while required fallback always available",
+    "status": "PASS",
+    "ms": 23.941063999999983
+  },
+  {
+    "name": "Successful figure OCR preserves essential visual in legacy and streaming exports",
+    "status": "PASS",
+    "ms": 14.675927999999999
+  },
+  {
+    "name": "Unresolved per-page coverage and math warnings are exported and cannot claim complete",
+    "status": "PASS",
+    "ms": 4.485258000000016
+  },
+  {
+    "name": "Ordered and unordered lists render as lists while hostile source HTML stays escaped",
+    "status": "PASS",
+    "ms": 4.890268999999989
+  },
+  {
+    "name": "1500 unique pages beyond two million characters export with reconciled IDs",
+    "status": "PASS",
+    "ms": 2933.507948
+  },
+  {
+    "name": "Partial extraction can export committed prefix with pending blocks clearly marked",
+    "status": "PASS",
+    "ms": 2.275310999999874
+  },
+  {
+    "name": "Quota-rescue output distinguishes available pages from unsaved changes",
+    "status": "PASS",
+    "ms": 4.075402999999824
+  },
+  {
+    "name": "Missing pages, aggregate mismatch and duplicate IDs fail closed",
+    "status": "PASS",
+    "ms": 10.644693000000188
+  },
+  {
+    "name": "Fallback has a measured byte cap and cancellation prevents usable output",
+    "status": "PASS",
+    "ms": 1.32143300000007
+  },
+  {
+    "name": "OPFS boundary commits a file, exposes cleanup and aborts failed writes",
+    "status": "PASS",
+    "ms": 3.949025000000347
+  },
+  {
+    "name": "Denied OPFS allows bounded small rescue export",
+    "status": "PASS",
+    "ms": 1.621473000000151
+  }
+]

@@ -1,0 +1,21 @@
+Semantik Setara — model attribution and runtime notices
+
+OPUS-MT / Language Technology Research Group, University of Helsinki
+Models: id-en and en-id, release 2019-12-18.
+ID→EN: supplied by the project owner. EN→ID: separately obtained official complementary model.
+Sources:
+https://object.pouta.csc.fi/OPUS-MT-models/id-en/opus-2019-12-18.zip
+https://object.pouta.csc.fi/OPUS-MT-models/en-id/opus-2019-12-18.zip
+Model archive license: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+Changes: Marian NPZ to ONNX opset17 conversion, native LayerNorm/sinusoidal-position corrections, PAD handling, per-channel int8 quantization, 16 MiB source shards and lossless gzip transport compression. No endorsement is implied.
+Original model licenses and READMEs accompany the model shards.
+Runtime: ONNX Runtime Web 1.23.2, @sctg/sentencepiece-js 1.3.3, @zip.js/zip.js 2.24.0.
+Runtime license copies are available in licenses/ beside this notice (inside the same content-addressed release).
+This notice does not change ownership or licensing of user documents.
+
+CP17 PDF-only revision (2026-11-12):
+The CP16 SentencePiece embind worker wrapper was modified to replace two dynamic Function constructors with equivalent closures, allowing the runtime to operate under script-src self wasm-unsafe-eval without unsafe-eval. No model, vocabulary, tokenizer, model shard, or quantization was changed in this revision. The patch, before/after hashes, and real inference tests accompany the source/QA package.
+Added local components: PDF.js 6.2.108, Tesseract.js/core 7.0.0 with tessdata_fast eng/ind, and JSZip 3.10.1 for export. License copies and OCR source hashes are included in licenses/.
+
+CP19: content-addressed, verified model transport cache; typed scientific notation and conservative geometry-to-LaTeX extraction. No weights or tokenizer changed. Deployment remains a candidate until the release gates pass.

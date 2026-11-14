@@ -1,0 +1,188 @@
+[
+  {
+    "pair": "id-en",
+    "path": "LICENSE",
+    "size_bytes": 18652,
+    "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+    "role": "license",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "README.md",
+    "size_bytes": 601,
+    "sha256": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "decoder.yml",
+    "size_bytes": 265,
+    "sha256": "29ddfbbf6e9e97f160da3dfb0854d32069af9cddca00cf45eaffd2c44c6a619d",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "opus.spm32k-spm32k.transformer-align.model1.npz.best-perplexity.npz",
+    "size_bytes": 289046665,
+    "sha256": "872ba336dc22b2bf666114cfdc06503a8c848961e4a59644a6a1c4f3833ea1f9",
+    "role": "weights"
+  },
+  {
+    "pair": "id-en",
+    "path": "opus.spm32k-spm32k.transformer-align.train1.log",
+    "size_bytes": 62385,
+    "sha256": "3ec2daeb3a227fec39a05ec185e6ca20f1486de06843a93bbe072b259732a03a",
+    "role": "training_telemetry",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "opus.spm32k-spm32k.transformer-align.valid1.log",
+    "size_bytes": 4262,
+    "sha256": "bd848ce5abe6fc97c5bd07a37c9f24ae6dc4d374e56cc9ace6f931b5c27cd748",
+    "role": "training_telemetry",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "opus.spm32k-spm32k.vocab.yml",
+    "size_bytes": 921930,
+    "sha256": "738b824fa7da9da30209e4790ecb713ee22b22079d92ac0871cf95ed503655bc",
+    "role": "vocabulary",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "postprocess.sh",
+    "size_bytes": 80,
+    "sha256": "039cec87f6d037fa216e918f3b0a7d4fd46517e54f4d422e73e0b4d6fc27ac0d",
+    "role": "preprocess_native_script",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "preprocess.sh",
+    "size_bytes": 842,
+    "sha256": "a795dca6f69e9fd32a8f0b5a05a3c96ef1d2b45f68b925dd5f64699ef5d27952",
+    "role": "preprocess_native_script",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "source.spm",
+    "size_bytes": 800687,
+    "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+    "role": "tokenizer"
+  },
+  {
+    "pair": "id-en",
+    "path": "source.tcmodel",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "id-en",
+    "path": "target.spm",
+    "size_bytes": 795925,
+    "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+    "role": "tokenizer"
+  },
+  {
+    "pair": "en-id",
+    "path": "LICENSE",
+    "size_bytes": 18652,
+    "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+    "role": "license",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "README.md",
+    "size_bytes": 601,
+    "sha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "decoder.yml",
+    "size_bytes": 265,
+    "sha256": "29ddfbbf6e9e97f160da3dfb0854d32069af9cddca00cf45eaffd2c44c6a619d",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "opus.spm32k-spm32k.transformer-align.model1.npz.best-perplexity.npz",
+    "size_bytes": 289046665,
+    "sha256": "b26de8ffd141b0996bff4922a0c30b0458eb26e7048151f9639b51df9d5f87f7",
+    "role": "weights"
+  },
+  {
+    "pair": "en-id",
+    "path": "opus.spm32k-spm32k.transformer-align.train1.log",
+    "size_bytes": 53667,
+    "sha256": "c984a7f8a549bee8fb385c43bdafe816f64316e2c410bf91d974efa331e00221",
+    "role": "training_telemetry",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "opus.spm32k-spm32k.transformer-align.valid1.log",
+    "size_bytes": 3141,
+    "sha256": "7645402b4b019aafd945825d80f37b406c0bf5f3718dec0bcfd23df8703b6c94",
+    "role": "training_telemetry",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "opus.spm32k-spm32k.vocab.yml",
+    "size_bytes": 921930,
+    "sha256": "738b824fa7da9da30209e4790ecb713ee22b22079d92ac0871cf95ed503655bc",
+    "role": "vocabulary",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "postprocess.sh",
+    "size_bytes": 80,
+    "sha256": "039cec87f6d037fa216e918f3b0a7d4fd46517e54f4d422e73e0b4d6fc27ac0d",
+    "role": "preprocess_native_script",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "preprocess.sh",
+    "size_bytes": 842,
+    "sha256": "a795dca6f69e9fd32a8f0b5a05a3c96ef1d2b45f68b925dd5f64699ef5d27952",
+    "role": "preprocess_native_script",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "source.spm",
+    "size_bytes": 795925,
+    "sha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+    "role": "tokenizer"
+  },
+  {
+    "pair": "en-id",
+    "path": "source.tcmodel",
+    "size_bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "role": "metadata",
+    "utf8_readable": true
+  },
+  {
+    "pair": "en-id",
+    "path": "target.spm",
+    "size_bytes": 800687,
+    "sha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+    "role": "tokenizer"
+  }
+]

@@ -1,0 +1,21 @@
+Warning: Please use the `legacy` build in Node.js environments.
+node:internal/modules/cjs/loader:1611
+  const err = new Error(`Cannot find module '${request}'`);
+              ^
+
+Error: Cannot find module '/workspace/scratch/17677088ccfd/cp21/qa-run/tools/node_modules/katex/dist/katex.js'
+    at createEsmNotFoundErr (node:internal/modules/cjs/loader:1611:15)
+    at finalizeEsmResolution (node:internal/modules/cjs/loader:1600:9)
+    at resolveExports (node:internal/modules/cjs/loader:754:14)
+    at Module._findPath (node:internal/modules/cjs/loader:821:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1557:27)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at Module._load (node:internal/modules/cjs/loader:1341:5)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19) {
+  code: 'MODULE_NOT_FOUND',
+  path: '/workspace/scratch/17677088ccfd/cp21/qa-run/tools/node_modules/katex'
+}
+
+Node.js v24.22.1

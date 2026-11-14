@@ -1,0 +1,6 @@
+{
+  "file": "exact-100MiB-inert.pdf",
+  "bytes": 104857600,
+  "sha256": "f172433a36b6cf34cd5018bf486d78f048979166670f25c523e51d4f7468d41d",
+  "scope": "Synthetic 1-page PDF with unreferenced inert stream to isolate input-byte ceiling; no large-asset/scan claim"
+}

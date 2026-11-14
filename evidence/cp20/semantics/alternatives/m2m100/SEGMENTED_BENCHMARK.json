@@ -1,0 +1,1617 @@
+{
+  "model": "Xenova/m2m100_418M",
+  "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+  "license": "MIT from facebook/m2m100_418M model card; converted repository links base model",
+  "runtime": "@huggingface/transformers 3.8.1 / onnxruntime-node 1.21.0 CPU",
+  "dtype": "q8",
+  "generation": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "method": "Isolated real CPU inference, sentence/clause segmentation using frozen production splitForTranslation; raw segment text without term masking. Fourteen selected existing cases are comparative development, not newly blind acceptance. Same source corpus, language directions and per-sentence processing as production; no candidate glossary/claim guard means not a full adapter equivalence test. Node CPU only, no browser/WASM performance claim.",
+  "download": {
+    "model": "Xenova/m2m100_418M",
+    "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+    "rows": [
+      {
+        "path": "config.json",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 908,
+        "httpStatus": 200,
+        "bytes": 908,
+        "sha256": "1dbdf77ddc7809acd4c54ccf0eab46f840b40174afb1b6f6de8787244e832938",
+        "seconds": 16.88,
+        "status": "PASS"
+      },
+      {
+        "path": "generation_config.json",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 233,
+        "httpStatus": 200,
+        "bytes": 233,
+        "sha256": "722210dd0bee7bef4e8e7f9a8574d8c56a2dfff723d73f390ce67892740b9009",
+        "seconds": 16.87,
+        "status": "PASS"
+      },
+      {
+        "path": "onnx/decoder_model_merged_quantized.onnx",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 344128178,
+        "httpStatus": 200,
+        "bytes": 344128178,
+        "sha256": "007654bcabb6cea6fd3bde34ce933137b431330b3755781145d7b6906270b45a",
+        "seconds": 27.44,
+        "status": "PASS"
+      },
+      {
+        "path": "onnx/encoder_model_quantized.onnx",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 287856370,
+        "httpStatus": 200,
+        "bytes": 287856370,
+        "sha256": "13a94e354a9140764eb81102d77d3ec6952d796e6f113c651eeb3c3443da0386",
+        "seconds": 24.94,
+        "status": "PASS"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 1559,
+        "httpStatus": 200,
+        "bytes": 1559,
+        "sha256": "009ea667e0ca903c10dac22cf7ae3a3a0b173ff33f8c64154fddd8c043805622",
+        "seconds": 13.02,
+        "status": "PASS"
+      },
+      {
+        "path": "tokenizer.json",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 7988527,
+        "httpStatus": 200,
+        "bytes": 7988527,
+        "sha256": "03d9e111731c2d71f39a2c2a88499743e4c251385d07f0384b4349a23ba54363",
+        "seconds": 10.85,
+        "status": "PASS"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+        "expectedBytes": 1813,
+        "httpStatus": 200,
+        "bytes": 1813,
+        "sha256": "bacfd4b9da25a61e01f17abe660465f616c9a1a3f5e23ab9ad3326c3788f2d9f",
+        "seconds": 17.84,
+        "status": "PASS"
+      }
+    ],
+    "allVerified": true
+  },
+  "rows": [
+    {
+      "id": "CP20-H-001",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint.",
+      "baselineTarget": "Sebuah fungsi kontinu pada interval tertutup mencapai maksimum. Teorema ini tidak memerlukan fungsi menjadi dapat diturunkan sepanjang interval. Maksimum tidak harus terjadi di sebuah titik akhir.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Fungsi berterusan pada interval tertutup mencapai maksimum. Teori ini tidak memerlukan fungsi untuk dapat dibedakan sepanjang interval. Maksimum kebutuhan tidak terjadi pada titik akhir.",
+      "parts": [
+        {
+          "source": "A continuous function on a closed interval attains a maximum. ",
+          "target": "Fungsi berterusan pada interval tertutup mencapai maksimum.",
+          "ms": 2367
+        },
+        {
+          "source": "This theorem does not require the function to be differentiable throughout the interval. ",
+          "target": "Teori ini tidak memerlukan fungsi untuk dapat dibedakan sepanjang interval.",
+          "ms": 2204
+        },
+        {
+          "source": "The maximum need not occur at an endpoint.",
+          "target": "Maksimum kebutuhan tidak terjadi pada titik akhir.",
+          "ms": 1675
+        }
+      ],
+      "ms": 6274
+    },
+    {
+      "id": "CP20-H-003",
+      "direction": "en-id",
+      "domain": "mathematics",
+      "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size.",
+      "baselineTarget": "Sebuah elemen tunggal himpunan hingga memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi terbatas mengubah masalah. Klaim ini tentang pemesanan elemen dan bukan tentang ukuran fisik mereka.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Set nonempty finite memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi finiteness mengubah masalah. Keterangan ini adalah tentang perintah unsur-unsur dan bukan tentang ukuran fisik mereka.",
+      "parts": [
+        {
+          "source": "A nonempty finite set has a greatest element under a suitable ordering. ",
+          "target": "Set nonempty finite memiliki elemen terbesar di bawah pesanan yang sesuai.",
+          "ms": 2618
+        },
+        {
+          "source": "Removing the finiteness assumption changes the problem. ",
+          "target": "Menghapus asumsi finiteness mengubah masalah.",
+          "ms": 1782
+        },
+        {
+          "source": "The claim is about the ordering of elements and not about their physical size.",
+          "target": "Keterangan ini adalah tentang perintah unsur-unsur dan bukan tentang ukuran fisik mereka.",
+          "ms": 2890
+        }
+      ],
+      "ms": 7301
+    },
+    {
+      "id": "CP20-H-004",
+      "direction": "en-id",
+      "domain": "chemistry",
+      "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "baselineTarget": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Penyelesaian gula dalam air meningkatkan massa penyelesaian. Evaporasi menghapus sebagian air tetapi tidak menghapus gula yang larut. Oleh karena itu, cairan yang tersisa memiliki konsentrasi yang lebih tinggi.",
+      "parts": [
+        {
+          "source": "Dissolving sugar in water increases the mass of the solution. ",
+          "target": "Penyelesaian gula dalam air meningkatkan massa penyelesaian.",
+          "ms": 1957
+        },
+        {
+          "source": "Evaporation removes some of the water but does not remove the dissolved sugar. ",
+          "target": "Evaporasi menghapus sebagian air tetapi tidak menghapus gula yang larut.",
+          "ms": 2653
+        },
+        {
+          "source": "The remaining liquid therefore has a higher concentration.",
+          "target": "Oleh karena itu, cairan yang tersisa memiliki konsentrasi yang lebih tinggi.",
+          "ms": 2557
+        }
+      ],
+      "ms": 7182
+    },
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "domain": "statistics",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "baselineTarget": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Terapi A menghasilkan 7 respons dan Terapi B menghasilkan 11 respons. Angka ini tidak dapat dibandingkan dengan benar tanpa mengetahui berapa banyak peserta yang menerima setiap perawatan. Dan penting juga dengan nomer.",
+      "parts": [
+        {
+          "source": "Treatment A produced 7 responses and treatment B produced 11 responses. ",
+          "target": "Terapi A menghasilkan 7 respons dan Terapi B menghasilkan 11 respons.",
+          "ms": 2163
+        },
+        {
+          "source": "These counts cannot be compared fairly without knowing how many participants received each treatment. ",
+          "target": "Angka ini tidak dapat dibandingkan dengan benar tanpa mengetahui berapa banyak peserta yang menerima setiap perawatan.",
+          "ms": 2866
+        },
+        {
+          "source": "The denominator matters as well as the numerator.",
+          "target": "Dan penting juga dengan nomer.",
+          "ms": 1235
+        }
+      ],
+      "ms": 6277
+    },
+    {
+      "id": "CP20-H-009",
+      "direction": "en-id",
+      "domain": "statistics",
+      "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article.",
+      "baselineTarget": "Analisis yang digunakan Median karena beberapa nilai ekstrim sangat mempengaruhi rata-rata sampel. Memilih Median tidak menghapus pengamatan tersebut dari dataset. Kedua statistik dilaporkan dalam lampiran dari artikel tersebut.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Analisis menggunakan median karena beberapa nilai ekstrim sangat mempengaruhi sampel medium. Memilih media tidak menghapus perhatikan tersebut dari database. Kedua statistik tersebut dilaporkan dalam lampiran artikel.",
+      "parts": [
+        {
+          "source": "The analysis used the median because a few extreme values strongly affected the sample mean. ",
+          "target": "Analisis menggunakan median karena beberapa nilai ekstrim sangat mempengaruhi sampel medium.",
+          "ms": 2504
+        },
+        {
+          "source": "Choosing the median did not remove those observations from the dataset. ",
+          "target": "Memilih media tidak menghapus perhatikan tersebut dari database.",
+          "ms": 1872
+        },
+        {
+          "source": "Both statistics were reported in the appendix of the article.",
+          "target": "Kedua statistik tersebut dilaporkan dalam lampiran artikel.",
+          "ms": 1534
+        }
+      ],
+      "ms": 5919
+    },
+    {
+      "id": "CP20-H-010",
+      "direction": "en-id",
+      "domain": "economics",
+      "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered.",
+      "baselineTarget": "Pajak pada penjual dapat mempengaruhi harga yang dibayarkan oleh pembeli. Kewajiban hukum untuk membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Responsi relatif dari pasokan dan permintaan juga harus dipertimbangkan.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Anggaran penjual dapat mempengaruhi harga yang dibayar oleh pembeli. Kewajiban hukum untuk membayar pajak tidak menentukan siapa yang menanggung beban ekonomi. Jawaban relatif dari penawaran dan permintaan juga harus dipertimbangkan.",
+      "parts": [
+        {
+          "source": "A tax on sellers can affect the price paid by buyers. ",
+          "target": "Anggaran penjual dapat mempengaruhi harga yang dibayar oleh pembeli.",
+          "ms": 2087
+        },
+        {
+          "source": "The legal obligation to pay the tax does not by itself determine who bears its economic burden. ",
+          "target": "Kewajiban hukum untuk membayar pajak tidak menentukan siapa yang menanggung beban ekonomi.",
+          "ms": 2538
+        },
+        {
+          "source": "The relative responsiveness of supply and demand must also be considered.",
+          "target": "Jawaban relatif dari penawaran dan permintaan juga harus dipertimbangkan.",
+          "ms": 2350
+        }
+      ],
+      "ms": 6986
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "domain": "academic-prose",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baselineTarget": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "Peneliti meminta para penulis untuk membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Rekaman putih dapat mencerminkan dokumentasi yang tidak lengkap. Tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang tercatat dari acara.",
+      "parts": [
+        {
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. ",
+          "target": "Peneliti meminta para penulis untuk membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi.",
+          "ms": 3235
+        },
+        {
+          "source": "A blank record may reflect incomplete documentation. ",
+          "target": "Rekaman putih dapat mencerminkan dokumentasi yang tidak lengkap.",
+          "ms": 1902
+        },
+        {
+          "source": "It cannot automatically be treated as a recorded absence of the event.",
+          "target": "Tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang tercatat dari acara.",
+          "ms": 2561
+        }
+      ],
+      "ms": 7710
+    },
+    {
+      "id": "CP20-H-016",
+      "direction": "id-en",
+      "domain": "mathematics",
+      "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung.",
+      "baselineTarget": "Function continuous at closed intervals reaches maximum value. This theorem does not require function differentiable at all intervals. Maximum value need not occurs at edge.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Continuous function at the closed interval reaches the maximum value. This theorem does not require that the function can be lowered throughout the interval. The maximum value should not occur at the end point.",
+      "parts": [
+        {
+          "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. ",
+          "target": "Continuous function at the closed interval reaches the maximum value.",
+          "ms": 2051
+        },
+        {
+          "source": "Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. ",
+          "target": "This theorem does not require that the function can be lowered throughout the interval.",
+          "ms": 2520
+        },
+        {
+          "source": "Nilai maksimum tidak harus terjadi di titik ujung.",
+          "target": "The maximum value should not occur at the end point.",
+          "ms": 1651
+        }
+      ],
+      "ms": 6238
+    },
+    {
+      "id": "CP20-H-018",
+      "direction": "id-en",
+      "domain": "mathematics",
+      "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "baselineTarget": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "The set up to the unpull has the greatest element in the appropriate sequence. Removing the supposition of end changes the problem. The claim is about the sequence of the element, not its physical size.",
+      "parts": [
+        {
+          "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. ",
+          "target": "The set up to the unpull has the greatest element in the appropriate sequence.",
+          "ms": 2637
+        },
+        {
+          "source": "Menghapus asumsi kehinggaan mengubah masalah. ",
+          "target": "Removing the supposition of end changes the problem.",
+          "ms": 1806
+        },
+        {
+          "source": "Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+          "target": "The claim is about the sequence of the element, not its physical size.",
+          "ms": 2330
+        }
+      ],
+      "ms": 6785
+    },
+    {
+      "id": "CP20-H-019",
+      "direction": "id-en",
+      "domain": "chemistry",
+      "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+      "baselineTarget": "Solving sugar in water increases the mass of solution. The evaporation removes some of the water but does not eliminate the soluted sugar. Therefore, the remaining liquids have higher concentration.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Sugar in water increases the mass of the solution. The sweetening removes some of the water but does not remove the soluble sugar. The remaining fluid has a higher concentration.",
+      "parts": [
+        {
+          "source": "Melarutkan gula dalam air meningkatkan massa larutan. ",
+          "target": "Sugar in water increases the mass of the solution.",
+          "ms": 1771
+        },
+        {
+          "source": "Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. ",
+          "target": "The sweetening removes some of the water but does not remove the soluble sugar.",
+          "ms": 2781
+        },
+        {
+          "source": "Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+          "target": "The remaining fluid has a higher concentration.",
+          "ms": 1631
+        }
+      ],
+      "ms": 6197
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "domain": "statistics",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "baselineTarget": "A treatment generates 7 response and treatment B produces 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. The mention is as important as the numerator.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Treatment A generates 7 responses and treatment B generates 11 responses. This number cannot be compared fairly without knowing how many participants receive each treatment. The name is as important as the manufacturer.",
+      "parts": [
+        {
+          "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. ",
+          "target": "Treatment A generates 7 responses and treatment B generates 11 responses.",
+          "ms": 2560
+        },
+        {
+          "source": "Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. ",
+          "target": "This number cannot be compared fairly without knowing how many participants receive each treatment.",
+          "ms": 2502
+        },
+        {
+          "source": "Penyebut sama pentingnya dengan pembilang.",
+          "target": "The name is as important as the manufacturer.",
+          "ms": 1490
+        }
+      ],
+      "ms": 6566
+    },
+    {
+      "id": "CP20-H-024",
+      "direction": "id-en",
+      "domain": "statistics",
+      "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel.",
+      "baselineTarget": "Analyze using median because some extreme values have a profound effect on sample mean. Median selection does not remove the observations from the data set. Both statistics reported in appendix articles.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Analysis uses median because some extreme values greatly affect the sample average. Media selection does not remove such observations from the data group. Both statistics are in the attachment to the article.",
+      "parts": [
+        {
+          "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. ",
+          "target": "Analysis uses median because some extreme values greatly affect the sample average.",
+          "ms": 2632
+        },
+        {
+          "source": "Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. ",
+          "target": "Media selection does not remove such observations from the data group.",
+          "ms": 2058
+        },
+        {
+          "source": "Kedua statistik dilaporkan di lampiran artikel.",
+          "target": "Both statistics are in the attachment to the article.",
+          "ms": 2008
+        }
+      ],
+      "ms": 6710
+    },
+    {
+      "id": "CP20-H-025",
+      "direction": "id-en",
+      "domain": "economics",
+      "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+      "baselineTarget": "Taxes against sellers can affect the price paid by buyers. The legal obligation to pay taxes does not necessarily determine who carries the cost of the economy. The relativeity of the offer and demand should also be considered.",
+      "baselineOutcome": "translated",
+      "candidateTarget": "Tax on the seller can affect the price paid by the buyer. The legal obligation to pay taxes does not determine by itself who is responsible for the burden of its economy. The relative sensitivity of supply and demand should also be considered.",
+      "parts": [
+        {
+          "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. ",
+          "target": "Tax on the seller can affect the price paid by the buyer.",
+          "ms": 2181
+        },
+        {
+          "source": "Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. ",
+          "target": "The legal obligation to pay taxes does not determine by itself who is responsible for the burden of its economy.",
+          "ms": 3352
+        },
+        {
+          "source": "Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+          "target": "The relative sensitivity of supply and demand should also be considered.",
+          "ms": 2027
+        }
+      ],
+      "ms": 7569
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "domain": "academic-prose",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baselineTarget": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baselineOutcome": "rejected",
+      "candidateTarget": "The investigator asked the author to distinguish the lost information from the evidence that an event did not occur. Empty notes may reflect incomplete documentation. The recording cannot automatically be considered as the absence of recorded events.",
+      "parts": [
+        {
+          "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. ",
+          "target": "The investigator asked the author to distinguish the lost information from the evidence that an event did not occur.",
+          "ms": 3410
+        },
+        {
+          "source": "Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. ",
+          "target": "Empty notes may reflect incomplete documentation.",
+          "ms": 1895
+        },
+        {
+          "source": "Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+          "target": "The recording cannot automatically be considered as the absence of recorded events.",
+          "ms": 2828
+        }
+      ],
+      "ms": 8145
+    }
+  ],
+  "memorySamples": [
+    {
+      "ms": 224,
+      "rss": 76496896,
+      "heapUsed": 14550600,
+      "external": 7935100
+    },
+    {
+      "ms": 2669,
+      "rss": 548749312,
+      "heapUsed": 15037304,
+      "external": 16388293
+    },
+    {
+      "ms": 6110,
+      "rss": 1438638080,
+      "heapUsed": 15074128,
+      "external": 16650437
+    },
+    {
+      "ms": 6617,
+      "rss": 1619578880,
+      "heapUsed": 113624568,
+      "external": 53424637
+    },
+    {
+      "ms": 7139,
+      "rss": 2143236096,
+      "heapUsed": 76294312,
+      "external": 35174243
+    },
+    {
+      "ms": 7670,
+      "rss": 2144808960,
+      "heapUsed": 77069928,
+      "external": 41298614
+    },
+    {
+      "ms": 8202,
+      "rss": 2152542208,
+      "heapUsed": 77652656,
+      "external": 48871642
+    },
+    {
+      "ms": 8742,
+      "rss": 2161717248,
+      "heapUsed": 78224888,
+      "external": 58017534
+    },
+    {
+      "ms": 9321,
+      "rss": 2171678720,
+      "heapUsed": 79121464,
+      "external": 67966690
+    },
+    {
+      "ms": 9880,
+      "rss": 2177970176,
+      "heapUsed": 79666104,
+      "external": 74360070
+    },
+    {
+      "ms": 10410,
+      "rss": 2185965568,
+      "heapUsed": 80191864,
+      "external": 82326314
+    },
+    {
+      "ms": 10947,
+      "rss": 2195533824,
+      "heapUsed": 80715560,
+      "external": 91865422
+    },
+    {
+      "ms": 11520,
+      "rss": 2203791360,
+      "heapUsed": 76192944,
+      "external": 101191866
+    },
+    {
+      "ms": 12092,
+      "rss": 2203791360,
+      "heapUsed": 76729768,
+      "external": 38840527
+    },
+    {
+      "ms": 12622,
+      "rss": 2203791360,
+      "heapUsed": 77256504,
+      "external": 46806771
+    },
+    {
+      "ms": 12891,
+      "rss": 2203791360,
+      "heapUsed": 77477080,
+      "external": 51379821
+    },
+    {
+      "ms": 13220,
+      "rss": 2204708864,
+      "heapUsed": 76465248,
+      "external": 35466044
+    },
+    {
+      "ms": 13781,
+      "rss": 2204708864,
+      "heapUsed": 77001184,
+      "external": 41859424
+    },
+    {
+      "ms": 14318,
+      "rss": 2205102080,
+      "heapUsed": 74416856,
+      "external": 42201678
+    },
+    {
+      "ms": 14844,
+      "rss": 2205102080,
+      "heapUsed": 74947264,
+      "external": 51740786
+    },
+    {
+      "ms": 15388,
+      "rss": 2204520448,
+      "heapUsed": 74321096,
+      "external": 49481104
+    },
+    {
+      "ms": 15969,
+      "rss": 2205831168,
+      "heapUsed": 74381208,
+      "external": 45835175
+    },
+    {
+      "ms": 16506,
+      "rss": 2205831168,
+      "heapUsed": 73965664,
+      "external": 39701157
+    },
+    {
+      "ms": 17038,
+      "rss": 2205831168,
+      "heapUsed": 74491608,
+      "external": 48060617
+    },
+    {
+      "ms": 17615,
+      "rss": 2205700096,
+      "heapUsed": 74053168,
+      "external": 39611077
+    },
+    {
+      "ms": 18142,
+      "rss": 2205700096,
+      "heapUsed": 74580528,
+      "external": 46004457
+    },
+    {
+      "ms": 18672,
+      "rss": 2206355456,
+      "heapUsed": 74215424,
+      "external": 46346711
+    },
+    {
+      "ms": 19207,
+      "rss": 2206355456,
+      "heapUsed": 74741264,
+      "external": 55885819
+    },
+    {
+      "ms": 19729,
+      "rss": 2206355456,
+      "heapUsed": 75267496,
+      "external": 66997791
+    },
+    {
+      "ms": 20194,
+      "rss": 2206355456,
+      "heapUsed": 74019600,
+      "external": 49438910
+    },
+    {
+      "ms": 20247,
+      "rss": 2206355456,
+      "heapUsed": 74227720,
+      "external": 45271276
+    },
+    {
+      "ms": 20774,
+      "rss": 2206355456,
+      "heapUsed": 74760288,
+      "external": 52451088
+    },
+    {
+      "ms": 21307,
+      "rss": 2206355456,
+      "heapUsed": 74224728,
+      "external": 46624302
+    },
+    {
+      "ms": 21834,
+      "rss": 2206355456,
+      "heapUsed": 74750600,
+      "external": 55376978
+    },
+    {
+      "ms": 22357,
+      "rss": 2206355456,
+      "heapUsed": 74173624,
+      "external": 49097853
+    },
+    {
+      "ms": 22876,
+      "rss": 2206355456,
+      "heapUsed": 74700040,
+      "external": 55098017
+    },
+    {
+      "ms": 23416,
+      "rss": 2206355456,
+      "heapUsed": 74165768,
+      "external": 49729166
+    },
+    {
+      "ms": 24020,
+      "rss": 2206355456,
+      "heapUsed": 74831352,
+      "external": 61407291
+    },
+    {
+      "ms": 24558,
+      "rss": 2206486528,
+      "heapUsed": 74319992,
+      "external": 57873815
+    },
+    {
+      "ms": 25129,
+      "rss": 2206748672,
+      "heapUsed": 74267248,
+      "external": 47066253
+    },
+    {
+      "ms": 25653,
+      "rss": 2206748672,
+      "heapUsed": 74793072,
+      "external": 53459633
+    },
+    {
+      "ms": 26193,
+      "rss": 2206748672,
+      "heapUsed": 75320048,
+      "external": 61425877
+    },
+    {
+      "ms": 26719,
+      "rss": 2206748672,
+      "heapUsed": 74258704,
+      "external": 51609165
+    },
+    {
+      "ms": 27252,
+      "rss": 2206748672,
+      "heapUsed": 74480288,
+      "external": 61084960
+    },
+    {
+      "ms": 27384,
+      "rss": 2206748672,
+      "heapUsed": 74570576,
+      "external": 64108873
+    },
+    {
+      "ms": 27855,
+      "rss": 2206748672,
+      "heapUsed": 74558400,
+      "external": 52015086
+    },
+    {
+      "ms": 28430,
+      "rss": 2206748672,
+      "heapUsed": 75087104,
+      "external": 58801682
+    },
+    {
+      "ms": 28961,
+      "rss": 2206748672,
+      "heapUsed": 75619168,
+      "external": 67161142
+    },
+    {
+      "ms": 29565,
+      "rss": 2206879744,
+      "heapUsed": 74777136,
+      "external": 65149665
+    },
+    {
+      "ms": 30090,
+      "rss": 2206879744,
+      "heapUsed": 74484160,
+      "external": 55894535
+    },
+    {
+      "ms": 30591,
+      "rss": 2206879744,
+      "heapUsed": 74749648,
+      "external": 59287833
+    },
+    {
+      "ms": 31093,
+      "rss": 2206879744,
+      "heapUsed": 74277072,
+      "external": 58015358
+    },
+    {
+      "ms": 31703,
+      "rss": 2206879744,
+      "heapUsed": 74934992,
+      "external": 70185003
+    },
+    {
+      "ms": 32301,
+      "rss": 2206879744,
+      "heapUsed": 74641480,
+      "external": 70756633
+    },
+    {
+      "ms": 32812,
+      "rss": 2206879744,
+      "heapUsed": 74264016,
+      "external": 55061637
+    },
+    {
+      "ms": 33428,
+      "rss": 2206879744,
+      "heapUsed": 74908160,
+      "external": 63299122
+    },
+    {
+      "ms": 33664,
+      "rss": 2206879744,
+      "heapUsed": 75110744,
+      "external": 67282324
+    },
+    {
+      "ms": 33957,
+      "rss": 2206879744,
+      "heapUsed": 74429016,
+      "external": 57658453
+    },
+    {
+      "ms": 34560,
+      "rss": 2206879744,
+      "heapUsed": 75077824,
+      "external": 65895938
+    },
+    {
+      "ms": 35072,
+      "rss": 2206879744,
+      "heapUsed": 74469280,
+      "external": 64393783
+    },
+    {
+      "ms": 35575,
+      "rss": 2206879744,
+      "heapUsed": 74982248,
+      "external": 73932891
+    },
+    {
+      "ms": 36180,
+      "rss": 2206879744,
+      "heapUsed": 74472864,
+      "external": 69997591
+    },
+    {
+      "ms": 36703,
+      "rss": 2206879744,
+      "heapUsed": 74277528,
+      "external": 61845102
+    },
+    {
+      "ms": 37209,
+      "rss": 2206879744,
+      "heapUsed": 74792224,
+      "external": 69024914
+    },
+    {
+      "ms": 37816,
+      "rss": 2206879744,
+      "heapUsed": 74304008,
+      "external": 66563694
+    },
+    {
+      "ms": 38322,
+      "rss": 2206879744,
+      "heapUsed": 75001856,
+      "external": 76205602
+    },
+    {
+      "ms": 38922,
+      "rss": 2206879744,
+      "heapUsed": 74557632,
+      "external": 67749200
+    },
+    {
+      "ms": 39463,
+      "rss": 2206879744,
+      "heapUsed": 74299648,
+      "external": 67031038
+    },
+    {
+      "ms": 39585,
+      "rss": 2206879744,
+      "heapUsed": 74114976,
+      "external": 69366767
+    },
+    {
+      "ms": 39988,
+      "rss": 2206879744,
+      "heapUsed": 74924248,
+      "external": 72074936
+    },
+    {
+      "ms": 40572,
+      "rss": 2206879744,
+      "heapUsed": 74871432,
+      "external": 76626945
+    },
+    {
+      "ms": 41173,
+      "rss": 2206879744,
+      "heapUsed": 74803720,
+      "external": 75651273
+    },
+    {
+      "ms": 41686,
+      "rss": 2206879744,
+      "heapUsed": 74251912,
+      "external": 69913765
+    },
+    {
+      "ms": 42229,
+      "rss": 2206879744,
+      "heapUsed": 74885472,
+      "external": 78006985
+    },
+    {
+      "ms": 42841,
+      "rss": 2206879744,
+      "heapUsed": 74475040,
+      "external": 72712743
+    },
+    {
+      "ms": 43480,
+      "rss": 2206879744,
+      "heapUsed": 74356896,
+      "external": 73838686
+    },
+    {
+      "ms": 44100,
+      "rss": 2206879744,
+      "heapUsed": 74746176,
+      "external": 83642681
+    },
+    {
+      "ms": 44635,
+      "rss": 2206879744,
+      "heapUsed": 74473608,
+      "external": 70086726
+    },
+    {
+      "ms": 45149,
+      "rss": 2206879744,
+      "heapUsed": 74986696,
+      "external": 76873322
+    },
+    {
+      "ms": 45695,
+      "rss": 2206879744,
+      "heapUsed": 75499712,
+      "external": 85232782
+    },
+    {
+      "ms": 46328,
+      "rss": 2207010816,
+      "heapUsed": 74448864,
+      "external": 75055622
+    },
+    {
+      "ms": 46573,
+      "rss": 2207010816,
+      "heapUsed": 74300680,
+      "external": 77950662
+    },
+    {
+      "ms": 46873,
+      "rss": 2207141888,
+      "heapUsed": 74989952,
+      "external": 83969896
+    },
+    {
+      "ms": 47372,
+      "rss": 2207141888,
+      "heapUsed": 74460048,
+      "external": 75792062
+    },
+    {
+      "ms": 47960,
+      "rss": 2207141888,
+      "heapUsed": 74845832,
+      "external": 81619289
+    },
+    {
+      "ms": 48578,
+      "rss": 2207404032,
+      "heapUsed": 74253256,
+      "external": 77454133
+    },
+    {
+      "ms": 49190,
+      "rss": 2207404032,
+      "heapUsed": 74895672,
+      "external": 91098338
+    },
+    {
+      "ms": 49698,
+      "rss": 2207404032,
+      "heapUsed": 74392064,
+      "external": 84180670
+    },
+    {
+      "ms": 50227,
+      "rss": 2207404032,
+      "heapUsed": 75089152,
+      "external": 93322898
+    },
+    {
+      "ms": 50729,
+      "rss": 2207404032,
+      "heapUsed": 74526296,
+      "external": 79757735
+    },
+    {
+      "ms": 51342,
+      "rss": 2207404032,
+      "heapUsed": 74394584,
+      "external": 81059358
+    },
+    {
+      "ms": 51886,
+      "rss": 2207404032,
+      "heapUsed": 74266536,
+      "external": 76044476
+    },
+    {
+      "ms": 52397,
+      "rss": 2207404032,
+      "heapUsed": 74784760,
+      "external": 82044640
+    },
+    {
+      "ms": 53014,
+      "rss": 2207404032,
+      "heapUsed": 74380384,
+      "external": 82517598
+    },
+    {
+      "ms": 53622,
+      "rss": 2207404032,
+      "heapUsed": 75047624,
+      "external": 94687243
+    },
+    {
+      "ms": 54139,
+      "rss": 2207928320,
+      "heapUsed": 74654928,
+      "external": 92136816
+    },
+    {
+      "ms": 54285,
+      "rss": 2209763328,
+      "heapUsed": 74734568,
+      "external": 95259041
+    },
+    {
+      "ms": 54717,
+      "rss": 2210287616,
+      "heapUsed": 74744536,
+      "external": 81547238
+    },
+    {
+      "ms": 55235,
+      "rss": 2210287616,
+      "heapUsed": 75262000,
+      "external": 88333834
+    },
+    {
+      "ms": 55738,
+      "rss": 2210287616,
+      "heapUsed": 75779704,
+      "external": 96693294
+    },
+    {
+      "ms": 56358,
+      "rss": 2211336192,
+      "heapUsed": 74579488,
+      "external": 88297398
+    },
+    {
+      "ms": 56881,
+      "rss": 2211336192,
+      "heapUsed": 75216160,
+      "external": 95878618
+    },
+    {
+      "ms": 57391,
+      "rss": 2211336192,
+      "heapUsed": 74749064,
+      "external": 90503392
+    },
+    {
+      "ms": 58012,
+      "rss": 2211336192,
+      "heapUsed": 74329744,
+      "external": 87354053
+    },
+    {
+      "ms": 58632,
+      "rss": 2211336192,
+      "heapUsed": 74345840,
+      "external": 89483973
+    },
+    {
+      "ms": 59151,
+      "rss": 2213433344,
+      "heapUsed": 75003400,
+      "external": 99699297
+    },
+    {
+      "ms": 59655,
+      "rss": 2214612992,
+      "heapUsed": 74470416,
+      "external": 87932414
+    },
+    {
+      "ms": 60271,
+      "rss": 2214612992,
+      "heapUsed": 75112952,
+      "external": 98135979
+    },
+    {
+      "ms": 60528,
+      "rss": 2214612992,
+      "heapUsed": 74266200,
+      "external": 89594597
+    },
+    {
+      "ms": 60821,
+      "rss": 2214612992,
+      "heapUsed": 74974128,
+      "external": 94868263
+    },
+    {
+      "ms": 61437,
+      "rss": 2214612992,
+      "heapUsed": 74578352,
+      "external": 91496030
+    },
+    {
+      "ms": 62039,
+      "rss": 2214612992,
+      "heapUsed": 75227256,
+      "external": 102191115
+    },
+    {
+      "ms": 62543,
+      "rss": 2214612992,
+      "heapUsed": 74627768,
+      "external": 98419175
+    },
+    {
+      "ms": 63057,
+      "rss": 2221297664,
+      "heapUsed": 74373592,
+      "external": 95615701
+    },
+    {
+      "ms": 63570,
+      "rss": 2221297664,
+      "heapUsed": 75068384,
+      "external": 104356473
+    },
+    {
+      "ms": 64183,
+      "rss": 2221297664,
+      "heapUsed": 74643824,
+      "external": 95707527
+    },
+    {
+      "ms": 64724,
+      "rss": 2221297664,
+      "heapUsed": 75161888,
+      "external": 104460203
+    },
+    {
+      "ms": 65272,
+      "rss": 2221297664,
+      "heapUsed": 74807968,
+      "external": 100012847
+    },
+    {
+      "ms": 65774,
+      "rss": 2221297664,
+      "heapUsed": 74557656,
+      "external": 100811110
+    },
+    {
+      "ms": 66276,
+      "rss": 2221297664,
+      "heapUsed": 74755864,
+      "external": 101049712
+    },
+    {
+      "ms": 66788,
+      "rss": 2221297664,
+      "heapUsed": 74476456,
+      "external": 100036638
+    },
+    {
+      "ms": 67315,
+      "rss": 2221428736,
+      "heapUsed": 74702192,
+      "external": 106817032
+    },
+    {
+      "ms": 67317,
+      "rss": 2221559808,
+      "heapUsed": 74759056,
+      "external": 106882568
+    },
+    {
+      "ms": 67859,
+      "rss": 2222084096,
+      "heapUsed": 74905920,
+      "external": 97870215
+    },
+    {
+      "ms": 68360,
+      "rss": 2222084096,
+      "heapUsed": 74482928,
+      "external": 97426037
+    },
+    {
+      "ms": 68863,
+      "rss": 2222084096,
+      "heapUsed": 75001224,
+      "external": 106178713
+    },
+    {
+      "ms": 69394,
+      "rss": 2224836608,
+      "heapUsed": 74530184,
+      "external": 97143789
+    },
+    {
+      "ms": 69993,
+      "rss": 2224836608,
+      "heapUsed": 75180520,
+      "external": 105381274
+    },
+    {
+      "ms": 70507,
+      "rss": 2225885184,
+      "heapUsed": 74537544,
+      "external": 102788654
+    },
+    {
+      "ms": 71120,
+      "rss": 2227720192,
+      "heapUsed": 75191416,
+      "external": 115449819
+    },
+    {
+      "ms": 71639,
+      "rss": 2237419520,
+      "heapUsed": 74534512,
+      "external": 107507246
+    },
+    {
+      "ms": 72163,
+      "rss": 2237419520,
+      "heapUsed": 75229224,
+      "external": 118525466
+    },
+    {
+      "ms": 72776,
+      "rss": 2237550592,
+      "heapUsed": 74790032,
+      "external": 106349904
+    },
+    {
+      "ms": 73394,
+      "rss": 2237550592,
+      "heapUsed": 75437592,
+      "external": 117044989
+    },
+    {
+      "ms": 73516,
+      "rss": 2237550592,
+      "heapUsed": 75514232,
+      "external": 119479030
+    },
+    {
+      "ms": 73936,
+      "rss": 2237550592,
+      "heapUsed": 74895264,
+      "external": 103945796
+    },
+    {
+      "ms": 74561,
+      "rss": 2237550592,
+      "heapUsed": 74556760,
+      "external": 105016005
+    },
+    {
+      "ms": 75084,
+      "rss": 2237550592,
+      "heapUsed": 75074320,
+      "external": 113768681
+    },
+    {
+      "ms": 75706,
+      "rss": 2238074880,
+      "heapUsed": 75721008,
+      "external": 126921366
+    },
+    {
+      "ms": 76264,
+      "rss": 2250264576,
+      "heapUsed": 74462752,
+      "external": 139426466
+    },
+    {
+      "ms": 76870,
+      "rss": 2250264576,
+      "heapUsed": 75110224,
+      "external": 111811281
+    },
+    {
+      "ms": 77371,
+      "rss": 2250264576,
+      "heapUsed": 75630768,
+      "external": 119777525
+    },
+    {
+      "ms": 77986,
+      "rss": 2250264576,
+      "heapUsed": 74675912,
+      "external": 111510006
+    },
+    {
+      "ms": 78597,
+      "rss": 2250264576,
+      "heapUsed": 75045024,
+      "external": 123279969
+    },
+    {
+      "ms": 79117,
+      "rss": 2250264576,
+      "heapUsed": 74843544,
+      "external": 110248295
+    },
+    {
+      "ms": 79718,
+      "rss": 2250264576,
+      "heapUsed": 75490032,
+      "external": 119468820
+    },
+    {
+      "ms": 80086,
+      "rss": 2250264576,
+      "heapUsed": 75824824,
+      "external": 126180887
+    },
+    {
+      "ms": 80268,
+      "rss": 2250264576,
+      "heapUsed": 74669384,
+      "external": 108952218
+    },
+    {
+      "ms": 80876,
+      "rss": 2250264576,
+      "heapUsed": 75312008,
+      "external": 116698183
+    },
+    {
+      "ms": 81496,
+      "rss": 2250264576,
+      "heapUsed": 75955952,
+      "external": 126901748
+    },
+    {
+      "ms": 82114,
+      "rss": 2250264576,
+      "heapUsed": 74581704,
+      "external": 116230885
+    },
+    {
+      "ms": 82734,
+      "rss": 2250264576,
+      "heapUsed": 75285560,
+      "external": 131350098
+    },
+    {
+      "ms": 83295,
+      "rss": 2252492800,
+      "heapUsed": 74908392,
+      "external": 115844023
+    },
+    {
+      "ms": 83908,
+      "rss": 2252492800,
+      "heapUsed": 75560504,
+      "external": 125064548
+    },
+    {
+      "ms": 84420,
+      "rss": 2252492800,
+      "heapUsed": 75026136,
+      "external": 124971225
+    },
+    {
+      "ms": 84953,
+      "rss": 2252492800,
+      "heapUsed": 75706672,
+      "external": 135374901
+    },
+    {
+      "ms": 85567,
+      "rss": 2252492800,
+      "heapUsed": 75169568,
+      "external": 120850961
+    },
+    {
+      "ms": 86177,
+      "rss": 2252492800,
+      "heapUsed": 75817400,
+      "external": 131054526
+    },
+    {
+      "ms": 86799,
+      "rss": 2252492800,
+      "heapUsed": 74493128,
+      "external": 120421085
+    },
+    {
+      "ms": 86800,
+      "rss": 2252492800,
+      "heapUsed": 74556248,
+      "external": 120461427
+    },
+    {
+      "ms": 87346,
+      "rss": 2252492800,
+      "heapUsed": 75443312,
+      "external": 128137127
+    },
+    {
+      "ms": 87952,
+      "rss": 2252492800,
+      "heapUsed": 75369272,
+      "external": 133140314
+    },
+    {
+      "ms": 88459,
+      "rss": 2252492800,
+      "heapUsed": 74782280,
+      "external": 124190270
+    },
+    {
+      "ms": 89000,
+      "rss": 2252492800,
+      "heapUsed": 75380760,
+      "external": 134909554
+    },
+    {
+      "ms": 89613,
+      "rss": 2252492800,
+      "heapUsed": 75011432,
+      "external": 123573207
+    },
+    {
+      "ms": 90236,
+      "rss": 2252492800,
+      "heapUsed": 74583408,
+      "external": 123554597
+    },
+    {
+      "ms": 90828,
+      "rss": 2252492800,
+      "heapUsed": 75230824,
+      "external": 135232722
+    },
+    {
+      "ms": 91377,
+      "rss": 2252492800,
+      "heapUsed": 74711168,
+      "external": 129887918
+    },
+    {
+      "ms": 91978,
+      "rss": 2265337856,
+      "heapUsed": 75358208,
+      "external": 145989723
+    },
+    {
+      "ms": 92490,
+      "rss": 2265468928,
+      "heapUsed": 75033560,
+      "external": 137208863
+    },
+    {
+      "ms": 93092,
+      "rss": 2265468928,
+      "heapUsed": 74573440,
+      "external": 125098677
+    },
+    {
+      "ms": 93624,
+      "rss": 2265468928,
+      "heapUsed": 75091800,
+      "external": 133064921
+    },
+    {
+      "ms": 94248,
+      "rss": 2265468928,
+      "heapUsed": 74699856,
+      "external": 131137086
+    },
+    {
+      "ms": 94370,
+      "rss": 2265468928,
+      "heapUsed": 74777808,
+      "external": 133866063
+    },
+    {
+      "ms": 94795,
+      "rss": 2265468928,
+      "heapUsed": 74888696,
+      "external": 134164966
+    },
+    {
+      "ms": 95305,
+      "rss": 2265468928,
+      "heapUsed": 75077008,
+      "external": 132814240
+    },
+    {
+      "ms": 95861,
+      "rss": 2265468928,
+      "heapUsed": 75465296,
+      "external": 138936379
+    },
+    {
+      "ms": 96436,
+      "rss": 2265468928,
+      "heapUsed": 74940456,
+      "external": 136975775
+    },
+    {
+      "ms": 97035,
+      "rss": 2265468928,
+      "heapUsed": 75461232,
+      "external": 148087747
+    },
+    {
+      "ms": 97655,
+      "rss": 2265468928,
+      "heapUsed": 75001544,
+      "external": 144348576
+    },
+    {
+      "ms": 98209,
+      "rss": 2268745728,
+      "heapUsed": 74913408,
+      "external": 130736198
+    },
+    {
+      "ms": 98813,
+      "rss": 2268745728,
+      "heapUsed": 74723784,
+      "external": 131862141
+    },
+    {
+      "ms": 99328,
+      "rss": 2268745728,
+      "heapUsed": 75014344,
+      "external": 138978608
+    },
+    {
+      "ms": 99906,
+      "rss": 2268745728,
+      "heapUsed": 74595232,
+      "external": 150009108
+    },
+    {
+      "ms": 100416,
+      "rss": 2268745728,
+      "heapUsed": 75113784,
+      "external": 136541936
+    },
+    {
+      "ms": 100926,
+      "rss": 2268745728,
+      "heapUsed": 74761216,
+      "external": 136020382
+    },
+    {
+      "ms": 101464,
+      "rss": 2268745728,
+      "heapUsed": 74994680,
+      "external": 142308736
+    },
+    {
+      "ms": 102201,
+      "rss": 2268745728,
+      "heapUsed": 74714632,
+      "external": 141000750
+    },
+    {
+      "ms": 102519,
+      "rss": 2268745728,
+      "heapUsed": 74683520,
+      "external": 141733646
+    },
+    {
+      "ms": 102597,
+      "rss": 763129856,
+      "heapUsed": 74789360,
+      "external": 142632873
+    }
+  ],
+  "humanApproval": 0,
+  "coldPreparationMs": 6391,
+  "processMaxRSSBytes": 2268745728,
+  "completedCases": 14,
+  "status": "COMPLETED_NOT_QUALITY_ACCEPTED"
+}

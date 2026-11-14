@@ -1,0 +1,24 @@
+[
+  {
+    "language": "eng",
+    "source_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/eng.traineddata",
+    "retrieved_date": "2026-11-12",
+    "license": "Apache-2.0",
+    "uncompressed_bytes": 4113088,
+    "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "transport": "gzip",
+    "transport_bytes": 1967599,
+    "transport_sha256": "f1c22599ed6fd3eb821d87fdb43e09f98b61179a4abe38c43cfca2cdcb9f5ec2"
+  },
+  {
+    "language": "ind",
+    "source_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/ind.traineddata",
+    "retrieved_date": "2026-11-12",
+    "license": "Apache-2.0",
+    "uncompressed_bytes": 1122661,
+    "sha256": "69786901da87ab8766c1ea7fbb10b28f2110c14da3f6c8f2735df131fba95d88",
+    "transport": "gzip",
+    "transport_bytes": 607760,
+    "transport_sha256": "0dba11114887d7dcd299db7303eee78f49ace1c0411084d49314a2ed09138999"
+  }
+]

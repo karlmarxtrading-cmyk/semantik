@@ -1,0 +1,15 @@
+node:internal/fs/promises:1345
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/workspace/scratch/17677088ccfd/cp20/dist/sw.js'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:2003:14)
+    at async file:///workspace/scratch/17677088ccfd/cp20/tests/cache.test.mjs:3:10 {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/scratch/17677088ccfd/cp20/dist/sw.js'
+}
+
+Node.js v24.22.1

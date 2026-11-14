@@ -1,0 +1,2439 @@
+{
+  "build": {
+    "release": "cp19-acbd800be6d6918d",
+    "version": "0.19.0",
+    "sourceHash": "acbd800be6d6918d194fd30b9a6eb387358d7dcb40c6ebf2896d59f43fbd6f5b",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/acbd800be6d6918d/"
+  },
+  "method": "Final dist: actual PDF.js and native Canvas boundary -> geometry -> actual bundled WASM/ONNX via Node Worker transport bridge -> standalone Markdown -> actual Marked/KaTeX. Not browser, OCR or human approval.",
+  "started": "2026-11-12T13:29:41.652Z",
+  "documents": [
+    {
+      "id": "mathematics",
+      "inputSHA256": "f66a404b56293dc093d9ecb5c7dbe9b845df0467bec5134761dd9c8dec67e558",
+      "status": "needs-attention",
+      "counts": {
+        "total": 18,
+        "translated": 7,
+        "preserved": 8,
+        "rejected": 3,
+        "failed": 0,
+        "pending": 0
+      },
+      "math": [
+        {
+          "id": "p1-math-1",
+          "bbox": [
+            64,
+            141.78955078125,
+            57.9985355,
+            20.50244140625
+          ],
+          "latex": "y = x^{2}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "y = "
+                  },
+                  {
+                    "type": "scripts",
+                    "base": {
+                      "type": "text",
+                      "text": "x"
+                    },
+                    "sup": {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            7,
+            9
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "y = x 2"
+        },
+        {
+          "id": "p1-math-2",
+          "bbox": [
+            245,
+            144.2919921875,
+            55.056152,
+            23.49755859375
+          ],
+          "latex": "z = a_{i}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "z = "
+                  },
+                  {
+                    "type": "scripts",
+                    "base": {
+                      "type": "text",
+                      "text": "a"
+                    },
+                    "sub": {
+                      "type": "text",
+                      "text": "i"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            11,
+            13
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "z = a i"
+        },
+        {
+          "id": "p1-math-3",
+          "bbox": [
+            64,
+            225.1484375,
+            123.22656319999999,
+            42
+          ],
+          "latex": "f(x) = \\frac{x + 1}{x - 1}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "f(x) ="
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "x + 1"
+                    }
+                  ]
+                },
+                "denominator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "x − 1"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            17,
+            19,
+            20
+          ],
+          "vectorIds": [
+            "op87:seg0"
+          ],
+          "warnings": [],
+          "sourceText": "f(x) = x + 1 x − 1"
+        },
+        {
+          "id": "p1-math-4",
+          "bbox": [
+            64,
+            323.7177734375,
+            123.54345749999999,
+            51
+          ],
+          "latex": "\\int_{0}^{1} x^{2} dx = \\frac{1}{3}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "operator",
+                "symbol": "∫",
+                "sup": {
+                  "type": "text",
+                  "text": "1"
+                },
+                "sub": {
+                  "type": "text",
+                  "text": "0"
+                }
+              },
+              {
+                "type": "scripts",
+                "base": {
+                  "type": "text",
+                  "text": "x"
+                },
+                "sup": {
+                  "type": "text",
+                  "text": "2"
+                }
+              },
+              {
+                "type": "text",
+                "text": "dx ="
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    }
+                  ]
+                },
+                "denominator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            24,
+            25,
+            26,
+            28,
+            29,
+            31,
+            33,
+            34
+          ],
+          "vectorIds": [
+            "op152:seg0"
+          ],
+          "warnings": [],
+          "sourceText": "∫ 1 0 x 2 dx = 1 3"
+        },
+        {
+          "id": "p1-math-5",
+          "bbox": [
+            64,
+            450,
+            116,
+            46
+          ],
+          "latex": "A = \\begin{bmatrix}1 & 2 \\\\ 3 & 4\\end{bmatrix}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "A ="
+              },
+              {
+                "type": "matrix",
+                "rows": [
+                  [
+                    {
+                      "type": "text",
+                      "text": "1"
+                    },
+                    {
+                      "type": "text",
+                      "text": "2"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "text": "3"
+                    },
+                    {
+                      "type": "text",
+                      "text": "4"
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            38,
+            40,
+            42,
+            43,
+            45
+          ],
+          "vectorIds": [
+            "op176:seg1",
+            "op176:seg4",
+            "op176:seg0",
+            "op176:seg2",
+            "op176:seg3",
+            "op176:seg5"
+          ],
+          "warnings": [],
+          "sourceText": "A = 1 2 3 4"
+        },
+        {
+          "id": "p1-math-6",
+          "bbox": [
+            64,
+            560.2919921875,
+            166.3242174,
+            18
+          ],
+          "latex": "y = \\sin(x) + \\log(x)",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "y = sin(x) + log(x)"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            49
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "y = sin(x) + log(x)"
+        },
+        {
+          "id": "p1-math-7",
+          "bbox": [
+            64,
+            647.2919921875,
+            98.7363306,
+            18
+          ],
+          "latex": "|x - 4| < 1",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "|x − 4| < 1"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            53
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "|x − 4| < 1"
+        },
+        {
+          "id": "p1-math-8",
+          "bbox": [
+            280,
+            647.2919921875,
+            98.73633060000003,
+            18
+          ],
+          "latex": "|x - 4| \\le 1",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "|x − 4| ≤ 1"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            55
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "|x − 4| ≤ 1"
+        }
+      ],
+      "renderedFormulas": [
+        {
+          "text": "y = x^{2}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "z = a_{i}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "f(x) = \\frac{x + 1}{x - 1}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "\\int_{0}^{1} x^{2} dx = \\frac{1}{3}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "A = \\begin{bmatrix}1 & 2 \\\\ 3 & 4\\end{bmatrix}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "y = \\sin(x) + \\log(x)",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "|x - 4| < 1",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "|x - 4| \\le 1",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "=x^{2}",
+          "displayMode": false,
+          "mathML": true
+        },
+        {
+          "text": "=(x+1)/(x-1",
+          "displayMode": false,
+          "mathML": true
+        }
+      ],
+      "ms": 78012,
+      "peakProcessRSS": 1210847232,
+      "results": [
+        {
+          "id": "p0001-b0001",
+          "type": "heading",
+          "source": "Scientific mathematics regression fixture",
+          "text": "Perbaikan regresi matematika ilmiah",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 8,
+          "outputTokens": 7,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Scientific mathematics regression fixture"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "source": "Purpose: verify exact mathematical structure in a PDF-to-Markdown pipeline.",
+          "text": "Tujuan: verifikasi struktur matematika yang tepat dalam sebuah baris pipa PDF-ke-Markdown.",
+          "status": "review",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [
+            "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+          ],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 22,
+          "outputTokens": 22,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Purpose: verify exact mathematical structure in a PDF-to-Markdown pipeline."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0003",
+          "type": "paragraph",
+          "source": "These examples are synthetic tests, not a journal-quality evaluation corpus.",
+          "text": "Contoh ini adalah tes sintetis, bukan evaluasi kualitas jurnal korpus.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 17,
+          "outputTokens": 13,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "These examples are synthetic tests, not a journal-quality evaluation corpus."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0004",
+          "type": "paragraph",
+          "source": "1. Power and subscript",
+          "text": "1. Power dan subskrip",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 13,
+          "outputTokens": 11,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "1."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Power and subscript"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-1",
+          "type": "formula",
+          "source": "y = x 2",
+          "text": "y = x 2",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-2",
+          "type": "formula",
+          "source": "z = a i",
+          "text": "z = a i",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0005",
+          "type": "paragraph",
+          "source": "2. Stacked fraction",
+          "text": "2. Ter-stack pecahan",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 17,
+          "outputTokens": 15,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "2."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Stacked fraction"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-3",
+          "type": "formula",
+          "source": "f(x) = x + 1 x − 1",
+          "text": "f(x) = x + 1 x − 1",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0006",
+          "type": "paragraph",
+          "source": "3. Definite integral",
+          "text": "3. Definite integral",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "3."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Definite integral"
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+              "segmentSource": "Definite integral",
+              "candidateText": "Definite integral",
+              "rawCandidate": "Definite integral"
+            }
+          ],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-4",
+          "type": "formula",
+          "source": "∫ 1 0 x 2 dx = 1 3",
+          "text": "∫ 1 0 x 2 dx = 1 3",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0007",
+          "type": "paragraph",
+          "source": "4. Matrix",
+          "text": "4. Matrix",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 10,
+          "outputTokens": 7,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "4."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Matrix"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-5",
+          "type": "formula",
+          "source": "A = 1 2 3 4",
+          "text": "A = 1 2 3 4",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0008",
+          "type": "paragraph",
+          "source": "5. Named mathematical functions",
+          "text": "5. Nama fungsi matematika",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 13,
+          "outputTokens": 9,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "5."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Named mathematical functions"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-6",
+          "type": "formula",
+          "source": "y = sin(x) + log(x)",
+          "text": "y = sin(x) + log(x)",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0009",
+          "type": "paragraph",
+          "source": "6. Strict and non-strict inequalities",
+          "text": "6. Strict and non-strict inequalities",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "6."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Strict and non-strict inequalities"
+            },
+            {
+              "strategy": "literal-only-context",
+              "source": "Strict and non-strict inequalities"
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+              "segmentSource": "Strict and non-strict inequalities",
+              "candidateText": "Strict dan bukan-strict pertidaksamaan",
+              "rawCandidate": "Strict dan bukan-strict <ssterm0/>"
+            }
+          ],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-7",
+          "type": "formula",
+          "source": "|x − 4| < 1",
+          "text": "|x − 4| < 1",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-8",
+          "type": "formula",
+          "source": "|x − 4| ≤ 1",
+          "text": "|x − 4| ≤ 1",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0010",
+          "type": "paragraph",
+          "source": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to 1 of x² dx=1/3; A is the two-by-two matrix with rows (1,2) and (3,4). Parentheses and symbols matter.",
+          "text": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to 1 of x² dx=1/3; A is the two-by-two matrix with rows (1,2) and (3,4). Parentheses and symbols matter.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to 1 of x² dx=1/3; A is the two-by-two matrix with rows (1,2) and (3,4)."
+            },
+            {
+              "strategy": "clause-split",
+              "source": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to"
+            },
+            {
+              "strategy": "clause-split",
+              "source": "Expected structure: y=x²; z=aᵢ;"
+            },
+            {
+              "strategy": "clause-split",
+              "source": "f(x)=(x+1)/(x−1); integral from 0 to"
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Error: Error: PROTECTED_MARKER: Literal terlindungi bertambah/berubah: 5\n    at Jn (file:///workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-temporary-worker.mjs:70:31415)\n    at async ur (file:///workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-temporary-worker.mjs:150:3453)\n    at async self.onmessage (file:///workspace/scratch/9892cee08ee5/cp19/work/tests/cp19-temporary-worker.mjs:150:4398)",
+              "segmentSource": "f(x)=(x+1)/(x−1); integral from 0 to",
+              "candidateText": null,
+              "rawCandidate": null
+            }
+          ],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        }
+      ],
+      "markdownSHA256": "3697acef5ec648b84d9caacfefd6214615c69852e29815f82dc64d95c8889683"
+    },
+    {
+      "id": "en-to-id",
+      "inputSHA256": "a7fe1363c123c0fbed666dfa71dab38a148b6e06cd99a3398e95ba576f7efb3a",
+      "status": "needs-attention",
+      "counts": {
+        "total": 13,
+        "translated": 12,
+        "preserved": 0,
+        "rejected": 1,
+        "failed": 0,
+        "pending": 0
+      },
+      "math": [],
+      "renderedFormulas": [
+        {
+          "text": "p = 0.08",
+          "displayMode": false,
+          "mathML": true
+        },
+        {
+          "text": "=x^{2}",
+          "displayMode": false,
+          "mathML": true
+        },
+        {
+          "text": "f'(x)",
+          "displayMode": false,
+          "mathML": true
+        }
+      ],
+      "ms": 4614,
+      "peakProcessRSS": 1210847232,
+      "results": [
+        {
+          "id": "p0001-b0001",
+          "type": "paragraph",
+          "source": "Controlled academic prose fixture (en)",
+          "text": "Perbaikan prosa akademik yang diatur (en)",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 16,
+          "outputTokens": 12,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Controlled academic prose fixture (en)"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "source": "Synthetic audit input. Not a published study or medical guidance.",
+          "text": "Masukan audit sintetis. Bukan penelitian yang diterbitkan atau bimbingan medis.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 17,
+          "outputTokens": 12,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Synthetic audit input."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Not a published study or medical guidance."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0003",
+          "type": "heading",
+          "source": "Abstract",
+          "text": "Abstrak",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0004",
+          "type": "paragraph",
+          "source": "We examined the association between fine particulate matter exposure and hospital admissions. This observational study does not establish a causal relationship.",
+          "text": "Kami memeriksa asosiasi antara eksposur partikulat halus dan penerimaan rumah sakit. Penelitian observasi ini tidak membangun hubungan sebab - akibat.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 32,
+          "outputTokens": 26,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "We examined the association between fine particulate matter exposure and hospital admissions."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "This observational study does not establish a causal relationship."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0005",
+          "type": "heading",
+          "source": "Methods",
+          "text": "Metode",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0006",
+          "type": "paragraph",
+          "source": "The primary endpoint was time to disease progression. The trial failed to demonstrate non-inferiority.",
+          "text": "Titik akhir utama adalah waktu untuk perkembangan penyakit. uji coba gagal mendemonstrasikan non-inferioritas.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 30,
+          "outputTokens": 26,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "The primary endpoint was time to disease progression."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "The trial failed to demonstrate non-inferiority."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0007",
+          "type": "heading",
+          "source": "Results",
+          "text": "Hasil",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0008",
+          "type": "paragraph",
+          "source": "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically significant (p = 0.08).",
+          "text": "Grup A diterima 10 mg, dimana grup B menerima 20 mg. Efeknya bukan signifikan secara statistik (p = 0.08).",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 41,
+          "outputTokens": 35,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Group A received 10 mg, whereas group B received 20 mg."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "The effect was not statistically significant (p = 0.08)."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0009",
+          "type": "paragraph",
+          "source": "Mathematics",
+          "text": "Matematika",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 3,
+          "outputTokens": 1,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Mathematics"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0010",
+          "type": "paragraph",
+          "source": "Given f(x)=x², the derivative is f′(x)=2x.",
+          "text": "Mengingat f(x)=x², turunan adalah f′(x)=2x.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 26,
+          "outputTokens": 23,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Given f(x)=x², the derivative is f′(x)=2x."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0011",
+          "type": "paragraph",
+          "source": "The estimator is unbiased only if both conditions hold.",
+          "text": "The estimator is unbiased only if both conditions hold.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "The estimator is unbiased only if both conditions hold."
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Kuantor kedua/both hilang atau berubah menjadi urutan kedua. Periksa negasi: bentuk negatif mungkin berubah.",
+              "segmentSource": "The estimator is unbiased only if both conditions hold.",
+              "candidateText": "Estimator tidak akan bisa dicocokkan jika kondisi keduanya baik-baik saja.",
+              "rawCandidate": "Estimator tidak akan bisa dicocokkan jika kondisi keduanya baik-baik saja."
+            }
+          ],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0012",
+          "type": "heading",
+          "source": "Conclusion",
+          "text": "Kesimpulan",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0013",
+          "type": "paragraph",
+          "source": "Absence of evidence is not evidence of absence.",
+          "text": "Bukti yang tak ada bukanlah bukti ketidakhadiran.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 12,
+          "outputTokens": 8,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Absence of evidence is not evidence of absence."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        }
+      ],
+      "markdownSHA256": "3a1b20090fa3f0f3527114195d0e4b3b9f15af57c3387a17e5e559222006831c"
+    },
+    {
+      "id": "id-to-en",
+      "inputSHA256": "86d84782f979d83b42e5987ba47ba5ee971f0f1b019d80c52c0890bef2a66ff5",
+      "status": "needs-attention",
+      "counts": {
+        "total": 13,
+        "translated": 10,
+        "preserved": 0,
+        "rejected": 3,
+        "failed": 0,
+        "pending": 0
+      },
+      "math": [],
+      "renderedFormulas": [
+        {
+          "text": "p = 0.08",
+          "displayMode": false,
+          "mathML": true
+        },
+        {
+          "text": "=x^{2}",
+          "displayMode": false,
+          "mathML": true
+        },
+        {
+          "text": "f'(x)",
+          "displayMode": false,
+          "mathML": true
+        }
+      ],
+      "ms": 6477,
+      "peakProcessRSS": 1511182336,
+      "results": [
+        {
+          "id": "p0001-b0001",
+          "type": "paragraph",
+          "source": "Controlled academic prose fixture (id)",
+          "text": "Controlled academic prose fixture (id)",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Controlled academic prose fixture (id)"
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+              "segmentSource": "Controlled academic prose fixture (id)",
+              "candidateText": "Controlled academic prose fixture (id)",
+              "rawCandidate": "Controlled academic prose fixture (id)"
+            }
+          ],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "source": "Synthetic audit input. Not a published study or medical guidance.",
+          "text": "Synthetic audit input. Not a published study or medical guidance.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Synthetic audit input."
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan.",
+              "segmentSource": "Synthetic audit input.",
+              "candidateText": "Synthetic audit input.",
+              "rawCandidate": "Synthetic audit input."
+            }
+          ],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0003",
+          "type": "heading",
+          "source": "Abstrak",
+          "text": "Abstract",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0004",
+          "type": "paragraph",
+          "source": "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian observasional ini tidak membuktikan hubungan sebab akibat.",
+          "text": "We're researching the link between exposure fine particulate matter and intimacy. This observational study does not prove cause-related consequences.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 27,
+          "outputTokens": 32,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Penelitian observasional ini tidak membuktikan hubungan sebab akibat."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0005",
+          "type": "heading",
+          "source": "Metode",
+          "text": "Methods",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0006",
+          "type": "paragraph",
+          "source": "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan non-inferioritas.",
+          "text": "The main edge is the time to the progression of disease. This test failed to prove non-inferiority.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 24,
+          "outputTokens": 25,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Luaran utama adalah waktu hingga progresi penyakit."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Uji ini gagal membuktikan non-inferioritas."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0007",
+          "type": "heading",
+          "source": "Hasil",
+          "text": "Results",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0008",
+          "type": "paragraph",
+          "source": "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak signifikan secara statistik (p = 0.08).",
+          "text": "Group A accepts 10 mg, while group B receives 20 mg. The effect is not statistically significant (p = 0.08).",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 37,
+          "outputTokens": 40,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg."
+            },
+            {
+              "strategy": "protected-context",
+              "source": "Efek tersebut tidak signifikan secara statistik (p = 0.08)."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0009",
+          "type": "paragraph",
+          "source": "Matematika",
+          "text": "Math",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 2,
+          "outputTokens": 1,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Matematika"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0010",
+          "type": "paragraph",
+          "source": "Diberikan f(x)=x², turunannya adalah f′(x)=2x.",
+          "text": "Given f(x)=x², the derivative is f′(x)=2x.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 25,
+          "outputTokens": 25,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Diberikan f(x)=x², turunannya adalah f′(x)=2x."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0011",
+          "type": "paragraph",
+          "source": "Penduga tidak bias hanya jika kedua syarat terpenuhi.",
+          "text": "Expectants are not biased only if both conditions are met.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 11,
+          "outputTokens": 12,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Penduga tidak bias hanya jika kedua syarat terpenuhi."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0012",
+          "type": "heading",
+          "source": "Kesimpulan",
+          "text": "Conclusion",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "attempts": [],
+          "method": "controlled-terminology",
+          "semanticVerified": false
+        },
+        {
+          "id": "p0001-b0013",
+          "type": "paragraph",
+          "source": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+          "text": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+          "status": "review",
+          "outcome": "rejected",
+          "retryable": false,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Ketiadaan bukti bukanlah bukti ketiadaan."
+            }
+          ],
+          "issues": [
+            "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+          ],
+          "diagnostics": [
+            {
+              "stage": "translation",
+              "name": "Error",
+              "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+              "segmentSource": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+              "candidateText": "Lack of evidence is not evidence of nothing.",
+              "rawCandidate": "Lack of evidence is not evidence of nothing."
+            }
+          ],
+          "engine": {
+            "direction": "id-en",
+            "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "sourcePreserved": true,
+          "semanticVerified": false
+        }
+      ],
+      "markdownSHA256": "cb1857d60289348357e15974e52d1e0a52bbb52708356a17085aa1994a3868d4"
+    },
+    {
+      "id": "independent-math",
+      "inputSHA256": "92c02fa4cd8c8c0e6a3b4609d2eddf35e532aafda7e8ea3f67745af0cee47417",
+      "status": "complete",
+      "counts": {
+        "total": 9,
+        "translated": 2,
+        "preserved": 7,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0
+      },
+      "math": [
+        {
+          "id": "p1-math-1",
+          "bbox": [
+            59,
+            92.03212890625,
+            52.38955109999999,
+            24.65000000000005
+          ],
+          "latex": "q = b_{j}^{3}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "q = "
+                  },
+                  {
+                    "type": "scripts",
+                    "base": {
+                      "type": "text",
+                      "text": "b"
+                    },
+                    "sup": {
+                      "type": "text",
+                      "text": "3"
+                    },
+                    "sub": {
+                      "type": "text",
+                      "text": "j"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            2,
+            3,
+            4
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "q = b 3 j"
+        },
+        {
+          "id": "p1-math-2",
+          "bbox": [
+            59,
+            156.69313964843755,
+            95.64616755000003,
+            57.922021484374994
+          ],
+          "latex": "r = \\frac{\\frac{1}{u + 2}}{v - 3}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "r ="
+              },
+              {
+                "type": "fraction",
+                "numerator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "fraction",
+                      "numerator": {
+                        "type": "sequence",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "1"
+                          }
+                        ]
+                      },
+                      "denominator": {
+                        "type": "sequence",
+                        "children": [
+                          {
+                            "type": "text",
+                            "text": "u + 2"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "denominator": {
+                  "type": "sequence",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "v − 3"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            6,
+            8,
+            9,
+            11
+          ],
+          "vectorIds": [
+            "op53:seg0",
+            "op63:seg0"
+          ],
+          "warnings": [],
+          "sourceText": "r = 1 u + 2 v − 3"
+        },
+        {
+          "id": "p1-math-3",
+          "bbox": [
+            59,
+            267.860107421875,
+            66.71088762,
+            45.049999999999955
+          ],
+          "latex": "\\int_{2}^{4} t^{3} dt",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "operator",
+                "symbol": "∫",
+                "sup": {
+                  "type": "text",
+                  "text": "4"
+                },
+                "sub": {
+                  "type": "text",
+                  "text": "2"
+                }
+              },
+              {
+                "type": "scripts",
+                "base": {
+                  "type": "text",
+                  "text": "t"
+                },
+                "sup": {
+                  "type": "text",
+                  "text": "3"
+                }
+              },
+              {
+                "type": "text",
+                "text": "dt"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            13,
+            14,
+            15,
+            17,
+            19,
+            21
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "∫ 4 2 t 3 dt"
+        },
+        {
+          "id": "p1-math-4",
+          "bbox": [
+            59,
+            373.5,
+            129.2,
+            45.05000000000001
+          ],
+          "latex": "B = \\begin{bmatrix}a & b & c \\\\ d & e & f\\end{bmatrix}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "B ="
+              },
+              {
+                "type": "matrix",
+                "rows": [
+                  [
+                    {
+                      "type": "text",
+                      "text": "a"
+                    },
+                    {
+                      "type": "text",
+                      "text": "b"
+                    },
+                    {
+                      "type": "text",
+                      "text": "c"
+                    }
+                  ],
+                  [
+                    {
+                      "type": "text",
+                      "text": "d"
+                    },
+                    {
+                      "type": "text",
+                      "text": "e"
+                    },
+                    {
+                      "type": "text",
+                      "text": "f"
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            22,
+            24,
+            26,
+            28,
+            29,
+            31,
+            33
+          ],
+          "vectorIds": [
+            "op125:seg0",
+            "op134:seg0",
+            "op122:seg0",
+            "op128:seg0",
+            "op131:seg0",
+            "op137:seg0"
+          ],
+          "warnings": [],
+          "sourceText": "B = a b c d e f"
+        },
+        {
+          "id": "p1-math-5",
+          "bbox": [
+            59,
+            461.298193359375,
+            75.51386757,
+            15.300000000000011
+          ],
+          "latex": "g'(x) = 2x",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "g′(x) = 2x"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            35
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "g′(x) = 2x"
+        },
+        {
+          "id": "p1-math-6",
+          "bbox": [
+            59,
+            503.798193359375,
+            152.17075530000002,
+            15.299999999999955
+          ],
+          "latex": "S = \\{x \\in \\mathbb{R} : x \\ge 0\\}",
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "S = {x ∈ ℝ : x ≥ 0}"
+              }
+            ]
+          },
+          "verified": true,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            36
+          ],
+          "vectorIds": [],
+          "warnings": [],
+          "sourceText": "S = {x ∈ ℝ : x ≥ 0}"
+        },
+        {
+          "id": "p1-math-7",
+          "bbox": [
+            59,
+            546.298193359375,
+            51.04731474000002,
+            15.299999999999955
+          ],
+          "latex": null,
+          "ast": {
+            "type": "sequence",
+            "children": [
+              {
+                "type": "text",
+                "text": "h = √x"
+              }
+            ]
+          },
+          "verified": false,
+          "verification": "supported-geometry-only",
+          "sourceItemIds": [
+            37
+          ],
+          "vectorIds": [],
+          "warnings": [
+            "radical-scope-needs-geometry"
+          ],
+          "sourceText": "h = √x"
+        }
+      ],
+      "renderedFormulas": [
+        {
+          "text": "q = b_{j}^{3}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "r = \\frac{\\frac{1}{u + 2}}{v - 3}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "\\int_{2}^{4} t^{3} dt",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "B = \\begin{bmatrix}a & b & c \\\\ d & e & f\\end{bmatrix}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "g'(x) = 2x",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "S = \\{x \\in \\mathbb{R} : x \\ge 0\\}",
+          "displayMode": true,
+          "mathML": true
+        },
+        {
+          "text": "p = 0.05",
+          "displayMode": false,
+          "mathML": true
+        }
+      ],
+      "ms": 2387,
+      "peakProcessRSS": 1643106304,
+      "results": [
+        {
+          "id": "p0001-b0001",
+          "type": "paragraph",
+          "source": "Synthetic independent geometry controls",
+          "text": "Kontrol geometri independen sintetis",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 8,
+          "outputTokens": 4,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "Synthetic independent geometry controls"
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        },
+        {
+          "id": "p1-math-1",
+          "type": "formula",
+          "source": "q = b 3 j",
+          "text": "q = b 3 j",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-2",
+          "type": "formula",
+          "source": "r = 1 u + 2 v − 3",
+          "text": "r = 1 u + 2 v − 3",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-3",
+          "type": "formula",
+          "source": "∫ 4 2 t 3 dt",
+          "text": "∫ 4 2 t 3 dt",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-4",
+          "type": "formula",
+          "source": "B = a b c d e f",
+          "text": "B = a b c d e f",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-5",
+          "type": "formula",
+          "source": "g′(x) = 2x",
+          "text": "g′(x) = 2x",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-6",
+          "type": "formula",
+          "source": "S = {x ∈ ℝ : x ≥ 0}",
+          "text": "S = {x ∈ ℝ : x ≥ 0}",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p1-math-7",
+          "type": "formula",
+          "source": "h = √x",
+          "text": "h = √x",
+          "status": "preserved",
+          "outcome": "preserved",
+          "issues": []
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "source": "This result is reported with p = 0.05 for the control group.",
+          "text": "Hasil ini dilaporkan dengan p = 0.05 untuk grup kendali.",
+          "status": "translated",
+          "outcome": "translated",
+          "retryable": false,
+          "issues": [],
+          "engine": {
+            "direction": "en-id",
+            "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+            "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+            "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+            "maxInputTokens": 128,
+            "maxOutputTokens": 256,
+            "offlineReady": true,
+            "storageMode": "persistent",
+            "storageWarning": "",
+            "supportsAbort": "worker termination",
+            "supportsGlossaryConstraints": false,
+            "requiresNetworkForInference": false
+          },
+          "inputTokens": 17,
+          "outputTokens": 13,
+          "attempts": [
+            {
+              "strategy": "protected-context",
+              "source": "This result is reported with p = 0.05 for the control group."
+            }
+          ],
+          "method": "local-model-with-protected-spans",
+          "semanticVerified": false
+        }
+      ],
+      "markdownSHA256": "c87a9f0b7ebbff84d8320e3ae85fed6bf9971d93519362b5eadc80b855a0c79d"
+    }
+  ]
+}

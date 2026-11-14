@@ -1,0 +1,331 @@
+{
+ "status": "FAIL_NOT_PRODUCTION_READY",
+ "createdUTC": "2026-11-14T00:14:10.736126+00:00",
+ "build": {
+  "release": "cp22-12d9d6b9f49020d9",
+  "version": "0.22.0",
+  "sourceHash": "12d9d6b9f49020d90438bfd10f4388ca19b8e9ed5f5c80030fde3332d41bb255",
+  "modelHashes": {
+   "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+   "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+  },
+  "base": "/r/12d9d6b9f49020d9/"
+ },
+ "inferenceSHA256": "7b367780365860f3d227802206fac06fdc151d5ecaf0f065833e41c8b7698b1c",
+ "method": "Internal AI bilingual reading (Claude, also the developer) of every post-freeze target across six dimensions, same severity scale as CP21. Not human or independent review. Severity assigned before comparing with the CP21 baseline run.",
+ "counts": {
+  "critical": 6,
+  "major": 3,
+  "adequate": 3,
+  "minor": 3,
+  "incomplete": 1
+ },
+ "humanApprovals": 0,
+ "comparisonWithCP21": "Pristine CP21 code produced byte-identical targets for all 16 cases (CP21_BASELINE_SAME_CORPUS.json). CP22 differs only by visible coverage notes (6 cases), including on 2 of 6 critical errors (H01, H02). The CP22 repair mechanism did not trigger on this unseen corpus.",
+ "rows": [
+  {
+   "id": "CP22-G01",
+   "direction": "en-id",
+   "source": "Doubling the length of a pendulum does not double its period. The period grows with the square root of the length.",
+   "actualTarget": "Dua kali lipat panjang pendulum tidak berlipat ganda dari periodenya. Periode tumbuh dengan akar kuadrat panjang.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "FAIL"
+   },
+   "reason": "Doubling/period claim is malformed (\"tidak berlipat ganda dari periodenya\"); the non-proportionality claim is not preserved.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G02",
+   "direction": "en-id",
+   "source": "The mutant strain grew more slowly at 37 °C, but its final cell density was similar to that of the wild type. Growth rate and yield must therefore be reported separately.",
+   "actualTarget": "Strain mutan tumbuh lebih lambat pada 37 °C, namun kepadatan sel terakhirnya mirip dengan jenis liar. Tingkat pertumbuhan dan hasil harus dilaporkan secara terpisah.",
+   "runtimeOutcome": "translated",
+   "severity": "major",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "FAIL",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "REVIEW"
+   },
+   "reason": "\"therefore\" (inference from the observation to separate reporting) omitted; wild type rendered \"jenis liar\".",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G03",
+   "direction": "en-id",
+   "source": "A correlation coefficient of 0.8 indicates a strong linear association. It does not show which variable influences the other.",
+   "actualTarget": "Koefisien korelasi dari 0.8 mengindikasikan asosiasi linear yang kuat. Ini tidak menunjukkan variabel mana yang mempengaruhi yang lain.",
+   "runtimeOutcome": "translated",
+   "severity": "adequate",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "Strong linear association and non-directionality preserved; \"dari 0.8\" slightly awkward.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G04",
+   "direction": "en-id",
+   "source": "The catalyst shortened the time needed to reach equilibrium. It did not change the final ratio of products to reactants.",
+   "actualTarget": "Katalis dipersingkat waktu yang diperlukan untuk mencapai kesetimbangan. Hal itu tidak mengubah rasio akhir produk menjadi reaktan.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "FAIL"
+   },
+   "reason": "\"Katalis dipersingkat\" inverts agent/voice; \"rasio akhir produk menjadi reaktan\" turns \"ratio of products to reactants\" into products becoming reactants.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G05",
+   "direction": "en-id",
+   "source": "Inflation reduces the real value of fixed loan repayments. Borrowers therefore benefit when inflation exceeds the rate they expected.",
+   "actualTarget": "Inflasi mengurangi nilai sebenarnya dari pembayaran pinjaman yang tetap. Oleh karena itu, para peminjam memperoleh manfaat sewaktu inflasi melebihi tingkat yang mereka harapkan.",
+   "runtimeOutcome": "translated",
+   "severity": "major",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "FAIL"
+   },
+   "reason": "\"real value\" rendered \"nilai sebenarnya\" (actual value) instead of nilai riil; economic term changed. Flagged by coverage note.",
+   "visibleIssues": [
+    "Periksa konsep: \"real\" mungkin hilang atau berubah dalam terjemahan.",
+    "Periksa konsep: \"rate\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  },
+  {
+   "id": "CP22-G06",
+   "direction": "en-id",
+   "source": "Every finite set of real numbers has a largest element. An infinite set may have no largest element even if all of its elements are smaller than 1.",
+   "actualTarget": "Setiap himpunan hingga dari bilangan real memiliki elemen terbesar. Sebuah himpunan tak hingga mungkin tidak memiliki elemen terbesar bahkan jika semua elemennya lebih kecil dari 1.",
+   "runtimeOutcome": "translated",
+   "severity": "adequate",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "Finite/infinite, largest element, bound 1 and modality preserved.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G07",
+   "direction": "en-id",
+   "source": "The vaccine reduced hospital admissions by 40 percent among older adults. Its effect on mild infections was not measured in this trial.",
+   "actualTarget": "Vaksin ini diturunkan rawat inap oleh 40 persen di antara orang dewasa yang lebih tua. Efeknya pada infeksi ringan tidak diukur dalam uji coba ini.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "REVIEW",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "\"Vaksin ini diturunkan rawat inap oleh 40 persen\": active reduction becomes passive with \"oleh\" (agent); the 40 percent reduction claim becomes ungrammatical/ambiguous.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-G08",
+   "direction": "en-id",
+   "source": "Sediment cores record changes in rainfall over several centuries. Gaps in deposition can make two distant layers appear consecutive.",
+   "actualTarget": "Inti Sedimen merekam perubahan curah hujan selama beberapa abad. Celah dalam deposisi dapat membuat dua lapisan jauh muncul berturut-turut.",
+   "runtimeOutcome": "translated",
+   "severity": "minor",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "REVIEW"
+   },
+   "reason": "Meaning preserved; \"Inti Sedimen\" capitalisation and \"muncul berturut-turut\" wording.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-H01",
+   "direction": "id-en",
+   "source": "Gaya gesek bekerja berlawanan dengan arah gerak benda. Besarnya bergantung pada jenis permukaan, bukan pada luas bidang sentuh.",
+   "actualTarget": "The stroke style works in opposite direction to the object. The size depends on the surface type, not the area of touch.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "FAIL"
+   },
+   "reason": "\"Gaya gesek\" (friction force) became \"stroke style\"; motion referent lost. Detected: visible coverage note in output.",
+   "visibleIssues": [
+    "Periksa konsep: \"gesek\", \"gerak\" mungkin hilang atau berubah dalam terjemahan.",
+    "Periksa konsep: \"luas\", \"bidang\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  },
+  {
+   "id": "CP22-H02",
+   "direction": "id-en",
+   "source": "Median lebih tahan terhadap nilai ekstrem daripada rata-rata. Karena itu, median sering dipilih untuk data pendapatan yang menceng.",
+   "actualTarget": "Median is more resistant to extreme value than average. Hence, medians are often selected for supporting income data.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "FAIL",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "\"menceng\" (skewed) became \"supporting\"; the reason for preferring the median is lost. Detected: visible coverage note.",
+   "visibleIssues": [
+    "Periksa konsep: \"menceng\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  },
+  {
+   "id": "CP22-H03",
+   "direction": "id-en",
+   "source": "Larutan penyangga mempertahankan pH ketika sedikit asam ditambahkan. Kapasitasnya terbatas dan dapat habis jika asam terus ditambahkan.",
+   "actualTarget": "Solution buffer maintains pH when a little acid is added. The capacity is limited and can be exhausted if the acid continues to be added.",
+   "runtimeOutcome": "translated",
+   "severity": "minor",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "REVIEW"
+   },
+   "reason": "\"Solution buffer\" order reversed (buffer solution); capacity limit and exhaustion preserved.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-H04",
+   "direction": "id-en",
+   "source": "Tanaman yang kekurangan nitrogen menunjukkan daun yang menguning. Gejala ini juga dapat muncul akibat kekurangan air, sehingga diagnosis memerlukan uji tanah.",
+   "actualTarget": "The nitrogen-deprived plant shows yellowing leaves. These symptoms can also be attributed to water shortages, so diagnosis requires soil testing.",
+   "runtimeOutcome": "translated",
+   "severity": "adequate",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "Nitrogen deficiency, yellowing, alternative cause and need for soil test preserved.",
+   "visibleIssues": [
+    "Periksa konsep: \"muncul\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  },
+  {
+   "id": "CP22-H05",
+   "direction": "id-en",
+   "source": "Subsidi harga pupuk menurunkan biaya produksi petani. Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu.",
+   "actualTarget": "Subsidi harga pupuk menurunkan biaya produksi petani. Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu.",
+   "runtimeOutcome": "rejected",
+   "severity": "incomplete",
+   "dimensions": {
+    "scientificMeaning": "NOT_ASSESSED",
+    "numbersUnitsFormula": "NOT_ASSESSED",
+    "negationQuantifiers": "NOT_ASSESSED",
+    "causalModalScope": "NOT_ASSESSED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "NOT_ASSESSED"
+   },
+   "reason": "Safe rejection (direction-of-change guard); source preserved with marker. Not a translation.",
+   "visibleIssues": [
+    "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+   ]
+  },
+  {
+   "id": "CP22-H06",
+   "direction": "id-en",
+   "source": "Peneliti mewawancarai 25 guru dari tiga sekolah negeri. Temuan ini tidak dapat digeneralisasi ke sekolah swasta tanpa data tambahan.",
+   "actualTarget": "Researchers interview 25 teachers from three public schools. This discovery cannot be generalized into private schools without additional data.",
+   "runtimeOutcome": "translated",
+   "severity": "minor",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "REVIEW"
+   },
+   "reason": "\"This discovery\" for temuan, tense \"interview\"; generalisation limit preserved.",
+   "visibleIssues": [
+    "Periksa konsep: \"negeri\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  },
+  {
+   "id": "CP22-H07",
+   "direction": "id-en",
+   "source": "Turunan fungsi konstan selalu nol. Sebaliknya, fungsi dengan turunan nol pada suatu interval adalah konstan pada interval tersebut.",
+   "actualTarget": "Derivative constant functions are always zero. Instead, the function with derivative zero at an interval is constant at that interval.",
+   "runtimeOutcome": "translated",
+   "severity": "critical",
+   "dimensions": {
+    "scientificMeaning": "FAIL",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "FAIL",
+    "terminologyFluency": "PASS_OBSERVED"
+   },
+   "reason": "\"Derivative constant functions are always zero\" garbles the subject; \"Sebaliknya\" (conversely) rendered \"Instead\", obscuring that the second sentence is the converse.",
+   "visibleIssues": []
+  },
+  {
+   "id": "CP22-H08",
+   "direction": "id-en",
+   "source": "Pasien yang menghentikan pengobatan lebih awal dikeluarkan dari analisis utama. Pengecualian ini dapat membuat efek pengobatan tampak lebih besar.",
+   "actualTarget": "Patients who stopped treatment earlier were removed from primary analysis. These exceptions can make the treatment effect appear larger.",
+   "runtimeOutcome": "translated",
+   "severity": "major",
+   "dimensions": {
+    "scientificMeaning": "PASS_OBSERVED",
+    "numbersUnitsFormula": "PASS_OBSERVED",
+    "negationQuantifiers": "PASS_OBSERVED",
+    "causalModalScope": "PASS_OBSERVED",
+    "completenessRelations": "PASS_OBSERVED",
+    "terminologyFluency": "FAIL"
+   },
+   "reason": "\"Pengecualian\" (exclusion from analysis) rendered \"exceptions\"; methodological term changed.",
+   "visibleIssues": [
+    "Periksa konsep: \"awal\", \"dikeluarkan\" mungkin hilang atau berubah dalam terjemahan."
+   ]
+  }
+ ]
+}

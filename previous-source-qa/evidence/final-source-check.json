@@ -1,0 +1,47 @@
+{
+  "checkedAtUTC": "2026-11-12T00:52:32.574701+00:00",
+  "sourceSyntax": [
+    {
+      "path": "app/export.js",
+      "pass": true,
+      "sha256": "565defb1be34a5b59fd1f9cfd8ae6cd3f918dbeab4f0dd53c86c61c0f0ce5a3e"
+    },
+    {
+      "path": "app/layout.js",
+      "pass": true,
+      "sha256": "20a33165e7c945d42c5bc48f0174c94f91c909118d742e455cf445e33f94b3f2"
+    },
+    {
+      "path": "app/main.js",
+      "pass": true,
+      "sha256": "82adf569d0cd67c6f8322380095646bbd02a93c82c2bf5539696459d85122520"
+    },
+    {
+      "path": "app/offline.js",
+      "pass": true,
+      "sha256": "56e52723752922bdfbc4c63f14bbda0ec9641953ea40dc6b5bce0ad7f71b66e9"
+    },
+    {
+      "path": "app/pdf-reader.js",
+      "pass": true,
+      "sha256": "7410aa741aeea16b8efb913b305f1b46cd5557d5e38f780b5cadb61e289607d9"
+    },
+    {
+      "path": "app/storage.js",
+      "pass": true,
+      "sha256": "de68c1cc33d82c9799fadcb5b118780a3da406a2221a14b1b1a020059090a342"
+    },
+    {
+      "path": "app/translation.js",
+      "pass": true,
+      "sha256": "7b18c78eb967c32c54c35e53b134e66578337698c9a2016f9bb62aa99b70f894"
+    },
+    {
+      "path": "sw.js",
+      "pass": true,
+      "sha256": "e9fe32f8e5db6b8567baf5605f40fa2b12449c60ce3039c3698011402e573a9c"
+    }
+  ],
+  "offlineManifestCache": "semantik-pdf-cp17-605158f333e9",
+  "deployment": "Not published to a live Cloudflare project in this task"
+}

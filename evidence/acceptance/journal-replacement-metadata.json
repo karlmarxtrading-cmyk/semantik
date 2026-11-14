@@ -1,0 +1,116 @@
+[
+  {
+    "id": "JOURNAL-05",
+    "url": "https://journal.ugm.ac.id/buletinpeternakan/article/view/1757",
+    "pdfUrl": "https://journal.ugm.ac.id/buletinpeternakan/article/download/1757/1571",
+    "metadata": {
+      "citation_journal_title": [
+        "Buletin Peternakan"
+      ],
+      "citation_issn": [
+        "2407-876X"
+      ],
+      "citation_author": [
+        "S. Prawirodigdo"
+      ],
+      "citation_title": [
+        "Aplikasi Statistika untuk Evaluasi Performans Produksi dan Reproduksi Ternak Pada Perusahaan Ternak Babi"
+      ],
+      "citation_date": [
+        "2013/04/18"
+      ],
+      "citation_volume": [
+        "15"
+      ],
+      "citation_issue": [
+        "1"
+      ],
+      "citation_firstpage": [
+        "5"
+      ],
+      "citation_lastpage": [
+        "9"
+      ],
+      "citation_doi": [
+        "10.21059/buletinpeternak.v15i1.1757"
+      ],
+      "citation_abstract_html_url": [
+        "https://journal.ugm.ac.id/buletinpeternakan/article/view/1757"
+      ],
+      "citation_language": [
+        "id"
+      ],
+      "citation_pdf_url": [
+        "https://journal.ugm.ac.id/buletinpeternakan/article/download/1757/1571"
+      ]
+    },
+    "licenseLinks": [
+      "http://creativecommons.org/licenses/by-sa/4.0",
+      "http://creativecommons.org/licenses/by-sa/4.0/",
+      "http://creativecommons.org/licenses/by-sa/4.0/",
+      "http://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "file": "journals/JOURNAL-05-replacement.pdf",
+    "bytes": 2548996,
+    "sha256": "f1ba5d010a5b20ca63eb1be945d2dc2f29ca0085db60fb4b65db69363f85a239",
+    "pages": 5
+  },
+  {
+    "url": "https://journal.uny.ac.id/index.php/jsd/article/view/2375",
+    "pdfUrl": "https://journal.uny.ac.id/index.php/jsd/article/download/2375/1971",
+    "metadata": {
+      "citation_journal_title": [
+        "Jurnal Sains Dasar"
+      ],
+      "citation_journal_abbrev": [
+        "J. Sains Dasar"
+      ],
+      "citation_issn": [
+        "2443-1273"
+      ],
+      "citation_author": [
+        "Musthofa .",
+        "Nikenasih Binatari"
+      ],
+      "citation_author_institution": [
+        "Yogyakarta State University",
+        "Yogyakarta State University"
+      ],
+      "citation_title": [
+        "Sifat-sifat Nilai Eigen dan Vektor Eigen Matriks atas Aljabar Maxplus"
+      ],
+      "citation_language": [
+        "en"
+      ],
+      "citation_date": [
+        "2013"
+      ],
+      "citation_volume": [
+        "2"
+      ],
+      "citation_issue": [
+        "1"
+      ],
+      "citation_doi": [
+        "10.21831/jsd.v2i1.2375"
+      ],
+      "citation_abstract_html_url": [
+        "https://journal.uny.ac.id/index.php/jsd/article/view/2375"
+      ],
+      "citation_pdf_url": [
+        "https://journal.uny.ac.id/index.php/jsd/article/download/2375/1971"
+      ]
+    },
+    "licenseLinks": [
+      "https://creativecommons.org/licenses/by-sa/4.0/",
+      "https://creativecommons.org/licenses/by-sa/4.0/",
+      "https://creativecommons.org/licenses/by-sa/4.0/",
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "id": "JOURNAL-06",
+    "file": "journals/JOURNAL-06-replacement.pdf",
+    "bytes": 344936,
+    "sha256": "23abf136d3641a5492fa063e76b2d36dcfaceaadbb682e729de76a9546671be3",
+    "pages": 7
+  }
+]

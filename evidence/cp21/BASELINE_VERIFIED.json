@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "baselineArchive": "/workspace/scratch/17677088ccfd/cp21/original/SEMANTIK_SETARA_CP19_RECOVERED_SOURCE.zip",
+  "bytes": 266111225,
+  "sha256": "94cd0832c1163b0a01cdd99409c0efbf3eb52e4788eb66ddd8d291550d0d3bfa",
+  "manifestFiles": 14747,
+  "zipCRC": "PASS",
+  "safeExtraction": "PASS",
+  "allManifestHashes": "PASS",
+  "baselineReadOnly": true,
+  "build": {
+    "release": "cp20-2e4d8ef18eb32385",
+    "version": "0.20.0",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/2e4d8ef18eb32385/"
+  },
+  "sourceLibraryID": "libfile_fde3_f-8556e57959008191b024d7fe37c83c89_6a790e7c218c81918b962131f5a46ccd",
+  "workingCopy": "/workspace/scratch/17677088ccfd/cp21/work",
+  "next": "Fix only semantic defects and document-scoped quota warnings. Preserve historical evidence. No1500 rerun."
+}

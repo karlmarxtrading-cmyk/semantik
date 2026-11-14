@@ -1,0 +1,208 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "real-PDF-square-root",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-curved-brace-retained-as-uncertain",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-separate-equation-label-not-flattened",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-source-caption-remains-unconsumed",
+      "status": "PASS"
+    },
+    {
+      "name": "actual-root-LaTeX-accepted-by-target-KaTeX",
+      "status": "PASS"
+    }
+  ],
+  "result": {
+    "regions": [
+      {
+        "id": "p1-math-1",
+        "bbox": [
+          50,
+          53.6,
+          101,
+          22.4
+        ],
+        "latex": "y = \\sqrt{x + 1}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "y ="
+            },
+            {
+              "type": "sqrt",
+              "radicand": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "x + 1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          0,
+          2,
+          4
+        ],
+        "vectorIds": [
+          "op18:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "y = √ x + 1"
+      },
+      {
+        "id": "p1-math-2",
+        "bbox": [
+          143,
+          155,
+          50.024,
+          20.19999999999999
+        ],
+        "latex": null,
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "y = x"
+            }
+          ]
+        },
+        "verified": false,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          5
+        ],
+        "vectorIds": [
+          "op25:curve0"
+        ],
+        "warnings": [
+          "unresolved-nearby-vector-curve"
+        ],
+        "sourceText": "y = x"
+      },
+      {
+        "id": "p1-math-3",
+        "bbox": [
+          50,
+          259.2,
+          67.656,
+          16
+        ],
+        "latex": null,
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "z = t"
+            },
+            {
+              "type": "text",
+              "text": "(2)"
+            }
+          ]
+        },
+        "verified": false,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          6,
+          8
+        ],
+        "vectorIds": [],
+        "warnings": [
+          "equation-label-needs-layout-context"
+        ],
+        "sourceText": "z = t (2)"
+      }
+    ],
+    "consumedItemIds": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      8
+    ],
+    "remainingItems": [
+      {
+        "text": "This PDF tests geometric reconstruction, not translation quality.",
+        "source": "pdf-text",
+        "x": 50,
+        "y": 362.4,
+        "baseline": 372,
+        "width": 307.6560000000002,
+        "height": 12,
+        "fontSize": 12,
+        "bold": false,
+        "fontName": "g_d0_f1",
+        "direction": "ltr",
+        "sourceIndex": 10,
+        "rotated": false,
+        "endOfLine": false
+      }
+    ],
+    "warnings": [
+      {
+        "regionId": "p1-math-2",
+        "warnings": [
+          "unresolved-nearby-vector-curve"
+        ]
+      },
+      {
+        "regionId": "p1-math-3",
+        "warnings": [
+          "equation-label-needs-layout-context"
+        ]
+      }
+    ],
+    "vectorEvidence": {
+      "usedVectorIds": [
+        "op18:seg0"
+      ],
+      "unsupported": [
+        {
+          "id": "op25:curve0",
+          "operatorIndex": 25,
+          "kind": "curve",
+          "points": [
+            [
+              153,
+              155
+            ],
+            [
+              143,
+              159
+            ],
+            [
+              143,
+              167
+            ],
+            [
+              153,
+              171
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

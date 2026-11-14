@@ -1,0 +1,83 @@
+- main:
+  - heading "Controlled academic prose fixture (en) — Terjemahan" [level=1]
+  - paragraph:
+    - strong: "Berkas sumber:"
+    - text: academic_prose_en.pdf
+    - strong: "Halaman:"
+    - text: "1"
+    - strong: "Bahasa:"
+    - text: en → id
+    - strong: "Status:"
+    - text: Pemrosesan selesai; perlu peninjauan ilmiah
+    - strong: "Bagian:"
+    - text: 13 diterjemahkan; 0 dipertahankan sengaja; 0 ditolak; 0 gagal; 0 belum diproses. Total 13.
+    - strong: "Rilis eksportir:"
+    - text: cp19-6ed0d134e1770b27 · 0.19.0.
+    - strong: "Metode:"
+    - text: ekstraksi PDF/OCR dan terjemahan mesin lokal. Tidak ada klaim verifikasi semantik menyeluruh.
+  - paragraph:
+    - strong: "SHA-256 PDF sumber:"
+    - text: a7fe1363c123c0fbed666dfa71dab38a148b6e06cd99a3398e95ba576f7efb3a
+  - paragraph:
+    - strong: "Judul metadata PDF:"
+    - text: Controlled academic prose fixture (en)
+  - paragraph:
+    - strong: "Penulis metadata PDF:"
+    - text: Independent CP18 audit
+  - paragraph: "Gambar sumber tertanam dalam berkas ini. Renderer yang diuji: Marked + KaTeX, mendukung gambar data URI. PDF asli tidak ditanamkan."
+  - heading "Halaman 1" [level=2]
+  - paragraph: Perbaikan prosa akademik yang diatur (en)
+  - paragraph: Masukan audit sintetis. Bukan penelitian yang diterbitkan atau bimbingan medis.
+  - heading "Abstrak" [level=3]
+  - paragraph: Kami memeriksa asosiasi antara partikulat halus paparan dan rawat inap. penelitian observasional ini tidak menetapkan hubungan sebab akibat.
+  - heading "Metode" [level=3]
+  - paragraph: luaran primer adalah waktu untuk progresi penyakit. uji coba gagal mendemonstrasikan non-inferioritas.
+  - heading "Hasil" [level=3]
+  - paragraph:
+    - text: Grup A diterima 10 mg, dimana grup B menerima 20 mg. Efeknya bukan signifikan secara statistik
+    - math:
+      - generic: (
+      - generic: p
+      - generic: =
+      - generic: "0.08"
+      - generic: )
+    - generic: (p =
+    - generic: 0.08)
+    - text: .
+  - paragraph: Matematika
+  - paragraph:
+    - text: Mengingat
+    - math:
+      - generic: f
+      - generic: (
+      - generic: x
+      - generic: )
+      - generic: =
+      - generic: x
+      - generic: "2"
+    - generic: f(x) =
+    - text: x
+    - generic: "2"
+    - text: ", turunan adalah"
+    - math:
+      - generic: f
+      - generic: ′
+      - generic: (
+      - generic: x
+      - generic: )
+      - generic: =
+      - generic: "2"
+      - generic: x
+    - text: f
+    - generic: ′
+    - text: (x) =
+    - generic: 2x
+    - text: .
+  - paragraph: penduga adalah tidak bias hanya jika kedua kondisi ini berlaku.
+  - heading "Kesimpulan" [level=3]
+  - paragraph: Ketiadaan bukti bukan bukti absen.
+  - heading "Citra sumber — halaman 1" [level=4]
+  - paragraph:
+    - img "Halaman sumber 1"
+  - separator
+  - paragraph: Dibuat dengan Semantik Setara — Academic PDF Translator. Teks sumber, hasil mesin, dan koreksi pengguna dipisahkan secara eksplisit.

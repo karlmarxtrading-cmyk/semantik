@@ -1,0 +1,113 @@
+{
+  "status": "COMPLETE_PROCESSING_AND_ACTUAL_DOWNLOADS_WITH_SEMANTIC_FAILURE",
+  "runs": [
+    {
+      "build": {
+        "base": "/r/1668833ad37c9dd8/",
+        "modelHashes": {
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+        },
+        "release": "cp20-1668833ad37c9dd8",
+        "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+        "version": "0.20.0"
+      },
+      "pages": 1001,
+      "blocks": 3003,
+      "characters": 233079,
+      "progress": {
+        "total": 3003,
+        "translated": 3003,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0,
+        "review": 0,
+        "done": 3003,
+        "attempted": 3003
+      },
+      "metrics": {
+        "inferenceCalls": 5005,
+        "cacheHits": 0,
+        "uniqueInputs": 5005,
+        "inputTokens": 61656,
+        "outputTokens": 48942,
+        "extractionMs": 41584.69999998901,
+        "inferenceMs": 1196264.6999999546,
+        "commitMs": 12512.899999995716,
+        "totalRunMs": 1117990.4000000004
+      },
+      "wallElapsedMsIncludingDeliberateInterruptionsAndConcurrentTests": 1304106,
+      "duplicateBlockIDs": [],
+      "sourceBytes": 731923,
+      "checkpointEvidence": "final-1668/BROWSER_1001_COMPLETE.json",
+      "humanApprovals": 0
+    },
+    {
+      "build": {
+        "base": "/r/8c643bea6962471f/",
+        "modelHashes": {
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+        },
+        "release": "cp20-8c643bea6962471f",
+        "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+        "version": "0.20.0"
+      },
+      "pages": 1500,
+      "blocks": 4500,
+      "characters": 334571,
+      "progress": {
+        "total": 4500,
+        "translated": 3000,
+        "preserved": 0,
+        "rejected": 1500,
+        "failed": 0,
+        "pending": 0,
+        "review": 1500,
+        "done": 3000,
+        "attempted": 4500
+      },
+      "metrics": {
+        "inferenceCalls": 7650,
+        "cacheHits": 0,
+        "uniqueInputs": 7650,
+        "inputTokens": 83250,
+        "outputTokens": 85500,
+        "extractionMs": 579423.099999981,
+        "inferenceMs": 1985348.2000000551,
+        "commitMs": 17498.299999952316,
+        "totalRunMs": 1599406.3000000007
+      },
+      "wallElapsedMsIncludingDeliberateInterruptionsAndConcurrentTests": 2685742,
+      "duplicateBlockIDs": [],
+      "sourceBytes": 1063857,
+      "checkpointEvidence": "final-8c643/BROWSER_1500_COMPLETE.json",
+      "humanApprovals": 0
+    }
+  ],
+  "limitations": [
+    "translated does not mean scientifically correct",
+    "1500run has1500 rejected metadata blocks; all are retained with markers; prose also has semantic failures",
+    "1001inference executed1668; final8c onlyrestored/exported, exact component+ETA outputparity bindings included",
+    "Perblock uniqueInputs sums are not global unique inputs; Node engine JSONL provides separate global dedupcounts",
+    "Metric totalRunMs is last resumed segment, not entire wall time; extraction metric includes actual awaited work; no whole-browser RAM available",
+    "1500storageRecoveries includes earlier1001 page252event bytimestamp, not a new1500quota recovery",
+    "8GBdeviceMemory browser hint is not measuredphysicalRAM; no laptopqualification"
+  ],
+  "actualAuthenticBook": {
+    "build": "cp20-8c643bea6962471f",
+    "at": "2026-11-13T08:40:10.765Z",
+    "input": "light-and-matter.pdf",
+    "bytes": 85937593,
+    "pages": 1062,
+    "method": "Actual consumer browser filechooser and Translate click",
+    "status": "FAIL_STORAGE_IN_THIS_BROWSER",
+    "observed": [
+      "Browser menolak penulisan karena kuota penyimpanan (QuotaExceededError).",
+      "82.0 MiB \u00b7 1062 halaman \u00b7 BELUM TERSIMPAN \u2014 unduh sebelum menutup tab",
+      "Dokumen panjang memerlukan penyimpanan lokal dan penguncian tab. Pulihkan izin atau ruang penyimpanan, lalu coba simpan kembali sebelum melanjutkan."
+    ],
+    "scope": "PDF selected/page count read; source could not be persisted in this cloud browser. Full translation not started. Not a universal byte cap or physical-device result."
+  }
+}

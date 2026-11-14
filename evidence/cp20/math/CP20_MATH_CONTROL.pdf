@@ -1,0 +1,44 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Symbol >>
+endobj
+6 0 obj
+<< /Length 389 >>
+stream
+BT /F1 16 Tf 50 720 Td (y =) Tj ET
+BT /F2 20 Tf 100 720 Td (\326) Tj ET
+BT /F1 16 Tf 114 720 Td (x + 1) Tj ET
+0.8 w 111 738 m 151 738 l S
+BT /F1 16 Tf 160 620 Td (y = x) Tj ET
+1 w 153 637 m 143 633 143 625 153 621 c S
+BT /F1 16 Tf 50 520 Td (z = t) Tj ET
+BT /F1 16 Tf 99 520 Td (\(2\)) Tj ET
+BT /F1 12 Tf 50 420 Td (This PDF tests geometric reconstruction, not translation quality.) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000323 00000 n 
+0000000390 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+829
+%%EOF

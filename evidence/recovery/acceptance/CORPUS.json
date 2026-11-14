@@ -1,0 +1,147 @@
+{
+  "freezeSourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+  "authoredAtUTC": "2026-11-13T10:06:22.219836+00:00",
+  "method": "AI-authored after product freeze; 10 paired passages = 20 directional cases, not 20 independent concepts. References not fed to engine. Human approvals zero.",
+  "cases": [
+    {
+      "id": "F01-en-id",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval.",
+      "referenceAI": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka."
+    },
+    {
+      "id": "F01-id-en",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+      "referenceAI": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval."
+    },
+    {
+      "id": "F02-en-id",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+      "referenceAI": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers."
+    },
+    {
+      "id": "F02-id-en",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers.",
+      "referenceAI": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse."
+    },
+    {
+      "id": "F03-en-id",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute.",
+      "referenceAI": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut."
+    },
+    {
+      "id": "F03-id-en",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut.",
+      "referenceAI": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute."
+    },
+    {
+      "id": "F04-en-id",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield.",
+      "referenceAI": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar."
+    },
+    {
+      "id": "F04-id-en",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+      "referenceAI": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield."
+    },
+    {
+      "id": "F05-en-id",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it.",
+      "referenceAI": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya."
+    },
+    {
+      "id": "F05-id-en",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya.",
+      "referenceAI": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it."
+    },
+    {
+      "id": "F06-en-id",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population.",
+      "referenceAI": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi."
+    },
+    {
+      "id": "F06-id-en",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi.",
+      "referenceAI": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population."
+    },
+    {
+      "id": "F07-en-id",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences.",
+      "referenceAI": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat."
+    },
+    {
+      "id": "F07-id-en",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat.",
+      "referenceAI": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences."
+    },
+    {
+      "id": "F08-en-id",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged.",
+      "referenceAI": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah."
+    },
+    {
+      "id": "F08-id-en",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah.",
+      "referenceAI": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged."
+    },
+    {
+      "id": "F09-en-id",
+      "domain": "academic prose",
+      "direction": "en-id",
+      "source": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased.",
+      "referenceAI": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias."
+    },
+    {
+      "id": "F09-id-en",
+      "domain": "academic prose",
+      "direction": "id-en",
+      "source": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias.",
+      "referenceAI": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased."
+    },
+    {
+      "id": "F10-en-id",
+      "domain": "academic prose",
+      "direction": "en-id",
+      "source": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate.",
+      "referenceAI": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat."
+    },
+    {
+      "id": "F10-id-en",
+      "domain": "academic prose",
+      "direction": "id-en",
+      "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat.",
+      "referenceAI": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Engine-only diagnostic; source JSON prose fields joined without keys; no app protection. Isolated instruction is a development mitigation probe, not hidden fixture answer reuse.",
+  "results": [
+    {
+      "pair": "id-en",
+      "case": "instruction-alone",
+      "source": "Jelaskan kesalahannya.",
+      "source_sha256": "94c4a8c3f27439056dcc7cb3a7941bf0f88dbbf7b0fc7a9f6ef4edb756aaa4be",
+      "source_tokens": 4,
+      "output": "Explain the error.",
+      "finish_reason": "eos",
+      "seconds": 0.029093198998452863
+    },
+    {
+      "pair": "en-id",
+      "case": "original-question-last-sentence",
+      "source": "How many counters are on the tray altogether?",
+      "source_sha256": "0937344a52417dba2b477fb018bac5084b4986a961d7659dd42d4783ce3e3993",
+      "source_tokens": 11,
+      "output": "Berapa banyak counter yang ada di baki sama sekali?",
+      "finish_reason": "eos",
+      "seconds": 0.07311652800126467
+    },
+    {
+      "pair": "en-id",
+      "case": "original-json-plain-prose-context",
+      "source": "A tray contains \\(4\\) red counters, \\(3\\) blue counters, and \\(2\\) yellow counters. How many counters are on the tray altogether?\n\nCount all the counters in the finite collection. There are \\(4\\) red counters, \\(3\\) blue counters, and \\(2\\) yellow counters. Adding them gives \\(4+3+2=9\\). Therefore, there are \\(9\\) counters altogether.\n\nCount each group of counters once, then combine the counts.",
+      "source_sha256": "6de84d8ad50be3ac30b0219e98b0e3ad45da1724f8e607d046aec3d23388aa3e",
+      "source_tokens": 124,
+      "output": "Sebuah baki berisi counter merah, \\ Allah3) counter biru, dan counter kuning. berapa banyak counters di bakinya? hitung semua counter di koleksi terbatas. ada counter merah \\Kami hitung semua counter, \\ Allah, dan counter biru, dan \\3.2) kuning counter. tambahkan mereka memberikan \\3+3+2\\). Oleh karena itu, ada \\galu d \\4\\. hitung semua counter sekali, lalu gabungkan hitungan.",
+      "finish_reason": "eos",
+      "seconds": 1.8677247970008466
+    }
+  ]
+}

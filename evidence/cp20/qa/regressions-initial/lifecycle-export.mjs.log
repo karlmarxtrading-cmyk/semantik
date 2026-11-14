@@ -1,0 +1,27 @@
+PASS OUT06 fresh Markdown distinguishes fallback rejection from intentional preservation
+PASS OUT07 metadata title, LaTeX formula (CP19 explicit output contract), safe prose and translated table shape
+PASS OUT05 repeated margin metadata condensed in reader export but retained in source and provenance
+PASS OUT07 Markdown render retains strict inequality and escapes source HTML
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'cp20-development'
+- 'cp19-development'
+     ^
+
+    at file:///workspace/scratch/17677088ccfd/cp20/tests/lifecycle-export.mjs:18:551
+    at async test (file:///workspace/scratch/17677088ccfd/cp20/tests/lifecycle-export.mjs:11:46)
+    at async file:///workspace/scratch/17677088ccfd/cp20/tests/lifecycle-export.mjs:18:1 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'cp20-development',
+  expected: 'cp19-development',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

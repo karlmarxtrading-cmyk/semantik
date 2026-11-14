@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "command": "npm ci --ignore-scripts --no-audit --no-fund",
+  "node": "v24.22.1",
+  "npm": "11.9.0",
+  "dependencies": {
+    "pdfjs-dist": {
+      "requested": "6.2.108",
+      "installed": "6.2.108"
+    },
+    "@napi-rs/canvas": {
+      "requested": "0.1.100",
+      "installed": "0.1.100"
+    },
+    "fake-indexeddb": {
+      "requested": "6.2.5",
+      "installed": "6.2.5"
+    },
+    "marked": {
+      "requested": "17.0.1",
+      "installed": "17.0.1"
+    },
+    "katex": {
+      "requested": "0.19.1",
+      "installed": "0.19.1"
+    }
+  },
+  "packageLockSHA256": "d1ace7393dd80100323f1b66b783ceb5fe46ddb3cdcea1a86eed7b78650229a8",
+  "method": "Locked npm installation completed; direct installed-version comparison. No claim that package install is a security audit."
+}

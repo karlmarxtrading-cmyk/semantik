@@ -1,0 +1,102 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "files": 300,
+  "bytes": 252056025,
+  "maxAssetBytes": 15344608
+}
+{
+  "build": {
+    "release": "cp20-2e4d8ef18eb32385",
+    "version": "0.20.0",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/2e4d8ef18eb32385/"
+  },
+  "files": 599,
+  "bytes": 504159126,
+  "maxAssetBytes": 15344608,
+  "retainedReleases": [
+    {
+      "base": "/r/6ed0d134e1770b27/",
+      "files": 297,
+      "bytes": 252003471,
+      "inventorySha256": "5c936a25f699af490a900905bc68bcbd6e24d6f2f47a99b332d802df52e250f5"
+    }
+  ]
+}
+{
+  "build": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  },
+  "files": 899,
+  "bytes": 756267690,
+  "maxAssetBytes": 15344608,
+  "retainedReleases": [
+    {
+      "base": "/r/2e4d8ef18eb32385/",
+      "files": 299,
+      "bytes": 252097737,
+      "inventorySha256": "1a4e118dd0408d620e2cdc0a03431765a2686b0cfc20fef139f92723f4d8cc06"
+    },
+    {
+      "base": "/r/6ed0d134e1770b27/",
+      "files": 297,
+      "bytes": 252003471,
+      "inventorySha256": "5c936a25f699af490a900905bc68bcbd6e24d6f2f47a99b332d802df52e250f5"
+    }
+  ]
+}
+{
+  "build": {
+    "release": "cp22-f995042b7da24e42",
+    "version": "0.22.0",
+    "sourceHash": "f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/f995042b7da24e42/"
+  },
+  "files": 1200,
+  "bytes": 1008411928,
+  "maxAssetBytes": 15344608,
+  "retainedReleases": [
+    {
+      "base": "/r/2e4d8ef18eb32385/",
+      "files": 299,
+      "bytes": 252097737,
+      "inventorySha256": "1a4e118dd0408d620e2cdc0a03431765a2686b0cfc20fef139f92723f4d8cc06"
+    },
+    {
+      "base": "/r/6ed0d134e1770b27/",
+      "files": 297,
+      "bytes": 252003471,
+      "inventorySha256": "5c936a25f699af490a900905bc68bcbd6e24d6f2f47a99b332d802df52e250f5"
+    },
+    {
+      "base": "/r/ba83aed6acb74963/",
+      "files": 300,
+      "bytes": 252108421,
+      "inventorySha256": "dcd3f97bae1731fe0678689b7392b269d82f45db81cfb072053fc1b9b075448d"
+    }
+  ]
+}

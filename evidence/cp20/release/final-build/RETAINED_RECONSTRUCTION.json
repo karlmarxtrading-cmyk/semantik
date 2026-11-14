@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "priorBuild": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "priorFiles": 300,
+  "priorInventorySha256": "07b05f17230e4e21ba70755560d3c8c1bbe26cfff952fecfd9a1fe3cbcb1cd31",
+  "historyManifestSha256": "b8fef2af0b287193d8e16950d6a06cdd93812d47c801e8b3065893cd60bbc739",
+  "reconstruction": "All historical source entries verified, original CP19 builder executed, exact baseline source/release identity matched."
+}

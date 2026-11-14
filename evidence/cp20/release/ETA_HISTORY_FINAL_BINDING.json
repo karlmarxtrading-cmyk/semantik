@@ -1,0 +1,49 @@
+{
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "priorRelease": "cp20-1668833ad37c9dd8",
+  "changedSourceManifestPaths": [
+    "app/long-document.js",
+    "app/main.js"
+  ],
+  "sourceHashesMatchEtaRegression": true,
+  "sourceHashes": {
+    "main.js": "369db8e7cdd39c327f64b76a8e263eaa2e3a06c8b5474f72b40202b091033a12",
+    "long-document.js": "34d9cdfde96073a6970f9b661f3c4f1b2ddbd4fec04385889e5ad3281496e17b"
+  },
+  "checks": [
+    {
+      "name": "123 fast cached pages and a partial resumed page cannot inflate throughput",
+      "status": "PASS"
+    },
+    {
+      "name": "ETA requires three new full-page measurements and retains only recent samples",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual pipeline excludes cached replay and partial resumed page from ETA samples",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual resume restores bounded quota recovery/failure history and preserves it in subsequent metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "ETA-only patch preserves exact document records, atomic writes, inference requests and non-ETA progress",
+      "status": "PASS"
+    }
+  ],
+  "parityScope": "Five controlled pipeline/resume checks from pipeline agent match final source hashes. Only ETA calculation and bounded storage event-history restoration changed in build inputs; exact record/atomic write/inference-request/non-ETA progress parity is tested for the controlled case, not a rerun of full1500-page final inference.",
+  "regressionEvidence": "evidence/cp20/pipeline/eta-resume-results.json",
+  "regressionEvidenceSha256": "6ee35dfa493a3606da4953c02ce161ba921542cfe21dff885d1d8a6ddae070d2",
+  "patchEvidenceSha256": "8a9be2ff5de67af44e1494a6f3471c29175351784b54d3fb4945ee54d994c961",
+  "allPass": true
+}

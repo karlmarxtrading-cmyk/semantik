@@ -1,0 +1,20 @@
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {auditTranslation} from '../app/app/translation.js';
+import {auditTranslatedTable,serializeTableRows} from './translation-table-contract.js';
+const actual=JSON.parse(await fs.readFile(new URL('../evidence/translation/table-fixture-repro.json',import.meta.url)));
+const table=actual.output.find(x=>x.type==='table');
+const block={text:table.source,rows:table.sourceRows},result=table.result,checks=[];
+function test(name,fn){try{fn();checks.push({name,pass:true});}catch(e){checks.push({name,pass:false,error:e.stack});}}
+test('actual matrix contract',()=>assert.deepEqual(auditTranslatedTable(block,result,auditTranslation),[]));
+test('scalar unlike serializers is still rejected',()=>assert.ok(auditTranslation(block.text,result.text).length));
+test('swapped row quantities rejected',()=>{const r=structuredClone(result);[r.translatedRows[1][1],r.translatedRows[2][1]]=[r.translatedRows[2][1],r.translatedRows[1][1]];r.text=serializeTableRows(r.translatedRows);assert.ok(auditTranslatedTable(block,r,auditTranslation).length);});
+test('dropped cell rejected',()=>{const r=structuredClone(result);r.translatedRows[1].pop();assert.ok(auditTranslatedTable(block,r,auditTranslation).length);});
+test('dropped row rejected',()=>{const r=structuredClone(result);r.translatedRows.pop();assert.ok(auditTranslatedTable(block,r,auditTranslation).length);});
+test('invalid matrix row rejected',()=>{const r=structuredClone(result);r.translatedRows[1]=null;assert.ok(auditTranslatedTable(block,r,auditTranslation).length);});
+test('displayed result must match matrix',()=>assert.ok(auditTranslatedTable(block,{...result,text:'An unrelated result'},auditTranslation).length));
+test('source extracted quantity omission rejected',()=>assert.ok(auditTranslatedTable({...block,text:block.text+' 99 mg'},result,auditTranslation).length));
+test('formula bars not stripped',()=>{const b={text:'Formula |x| < 3',rows:[['Formula','|x| < 3']]};const r={text:'Rumus | |x| < 3',translatedRows:[['Rumus','|x| < 3']]};assert.deepEqual(auditTranslatedTable(b,r,auditTranslation),[]);r.translatedRows[0][1]='x < 3';r.text=serializeTableRows(r.translatedRows);assert.ok(auditTranslatedTable(b,r,auditTranslation).length);});
+test('formula operator mutation rejected',()=>assert.ok(auditTranslatedTable({rows:[['Formula','|x| < 3']]},{translatedRows:[['Rumus','|x| > 3']],text:'Rumus | |x| > 3'},auditTranslation).length));
+const report={testedAt:new Date().toISOString(),method:'QA helper applied to actual model result plus explicitly constructed negative mutations; product validator unchanged for pipe symbols.',actualEvidence:'table-fixture-repro.json',sourceIdentities:actual.identities,checks,pass:checks.every(x=>x.pass)};
+await fs.writeFile(new URL('../evidence/translation/table-contract-controls.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));if(!report.pass)process.exitCode=1;

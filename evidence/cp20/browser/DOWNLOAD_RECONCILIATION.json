@@ -1,0 +1,372 @@
+{
+  "status": "PASS_FOR_STRUCTURAL_RECONCILIATION_ONLY",
+  "outputs": [
+    {
+      "path": "evidence/cp20/browser/final-1668/PAUSE_RELOAD_124_PAGES_PARTIAL.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 124,
+      "expectedBlocks": 372,
+      "expectedTraceIDs": 124,
+      "scope": "Actual consumer browser partial download after deliberate pause; not long completion.",
+      "exporter": "cp20-1668833ad37c9dd8",
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "bytes": 50426,
+      "sha256": "00d3528d6bdc7383bdb92ab0605b07ca1251f69bc931c4f4d6445c8e6574874a",
+      "pages": 124,
+      "blocks": 372,
+      "traceIDs": 124,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 19.656704999999988,
+      "renderPath": "evidence/cp20/browser/final-1668/PAUSE_RELOAD_124_PAGES_PARTIAL.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 0
+        },
+        {
+          "level": 3,
+          "count": 124
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "HASIL SEMENTARA — pemrosesan belum selesai",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-1668/BROWSER_1001_EN_TO_ID.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 1001,
+      "expectedBlocks": 3003,
+      "expectedTraceIDs": 1001,
+      "scope": "Actual consumer browser PDF to full Markdown; build1668, final8c differs only in ETA/history with explicit component and output-parity binding. Scientific semantic acceptance remainsFAIL.",
+      "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 1304106,
+      "completedAt": "2026-11-13T07:51:34.220Z",
+      "metricsWarning": "Browser uniqueInputs is summed per block, not globally deduplicated model inputs; 5005 actual inferenceCalls and zero cacheHits recorded.",
+      "exporter": "cp20-1668833ad37c9dd8",
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "bytes": 400286,
+      "sha256": "fe8805e522850852c0693a1b73e9b81e147105be424ff0d6211a07cc8a9e4f7d",
+      "pages": 1001,
+      "blocks": 3003,
+      "traceIDs": 1001,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 21.881394,
+      "renderPath": "evidence/cp20/browser/final-1668/BROWSER_1001_EN_TO_ID.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 1
+        },
+        {
+          "level": 3,
+          "count": 1001
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1001_EN_TO_ID.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "expectedPages": 1001,
+      "expectedBlocks": 3003,
+      "expectedTraceIDs": 1001,
+      "scope": "Actual final8c consumer restore and export of completed1668 inference checkpoint. No final8c re-inference claimed; models/semantic/parser/storage/export components bind exactly; ETA-only output parity tested.",
+      "exporter": "cp20-8c643bea6962471f",
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "bytes": 703589,
+      "sha256": "8f0398f06ca95b6ee23657f54271a71817ba62a4c344cf39107c8fdf87efaabb",
+      "pages": 1001,
+      "blocks": 3003,
+      "traceIDs": 1001,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 60.90848100000005,
+      "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_1001_EN_TO_ID.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 1
+        },
+        {
+          "level": 3,
+          "count": 1001
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/PAUSE_BFCACHE_195_PAGES_PARTIAL.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+      "expectedPages": 195,
+      "expectedBlocks": 585,
+      "expectedTraceIDs": 195,
+      "scope": "Actual final8c consumer partial export after deliberate pause; before real BFCache navigation/back.",
+      "exporter": "cp20-8c643bea6962471f",
+      "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "bytes": 131328,
+      "sha256": "5025b6140ea05351161fc80b16878e1d50c80c1cedfa5d09ac3b0c344472a909",
+      "pages": 195,
+      "blocks": 585,
+      "traceIDs": 195,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 12.866571999999962,
+      "renderPath": "evidence/cp20/browser/final-8c643/PAUSE_BFCACHE_195_PAGES_PARTIAL.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 0
+        },
+        {
+          "level": 3,
+          "count": 195
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "HASIL SEMENTARA — pemrosesan belum selesai",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.md",
+      "source": "tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+      "expectedPages": 1500,
+      "expectedBlocks": 4500,
+      "expectedTraceIDs": 1500,
+      "scope": "Actual final8c consumer inference and downloaded partial translation. All pages/blocks included,3000translated1500rejected. Semantic acceptanceFAIL; not complete translated coverage.",
+      "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 2685742,
+      "completedAt": "2026-11-13T08:38:35.562Z",
+      "metricsWarning": "Inference calls are completed engine requests, not ONNX forward passes; uniqueInputs sums perblock, not globalunique.",
+      "exporter": "cp20-8c643bea6962471f",
+      "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "bytes": 1008613,
+      "sha256": "0987a042d914584c3afd84938506ae0c0c4c56eebc9094d4c2c9fac78f8fa7f0",
+      "pages": 1500,
+      "blocks": 4500,
+      "traceIDs": 1500,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 31.308673999999996,
+      "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 1
+        },
+        {
+          "level": 3,
+          "count": 1500
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "HASIL SEMENTARA — pemrosesan belum selesai",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_MATHEMATICS_EN_TO_ID.md",
+      "source": "tests/fixtures/mathematics.pdf",
+      "expectedPages": 1,
+      "expectedBlocks": 8,
+      "scope": "Actual final8c PDF→local translation→download:1translated7preserved,0rejected; math formula syntax/render only, not independent math approval.",
+      "exporter": "cp20-8c643bea6962471f",
+      "sourceSha256": "2a899abe5d8ff992f432ff04df1b7095b2300c253bddd94b32c900ed06a21575",
+      "bytes": 1926,
+      "sha256": "2714f18fe52d8de4eb168a3ceefef9b0bc0f6e356ceb4b0506463c4c0a92ba5f",
+      "pages": 1,
+      "blocks": 8,
+      "traceIDs": 0,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 0,
+      "mathCount": 6,
+      "mathErrors": [],
+      "renderMs": 9.456502,
+      "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_MATHEMATICS_EN_TO_ID.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 0
+        },
+        {
+          "level": 3,
+          "count": 0
+        },
+        {
+          "level": 4,
+          "count": 0
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_VECTOR_FIGURES_EN_TO_ID.md",
+      "source": "evidence/cp20/math/CP20_VECTOR_ONLY_FIGURES.pdf",
+      "expectedPages": 3,
+      "expectedBlocks": 9,
+      "scope": "Actual final8c vectorfigures PDF→local translation→download,9translated. Figure preservation/dedup/render tested; not human semantic approval.",
+      "exporter": "cp20-8c643bea6962471f",
+      "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+      "bytes": 177471,
+      "sha256": "5c177e5c2e1db3e890a92f6acca1f738da0d5fd9e554ad0c35098a03b788582b",
+      "pages": 3,
+      "blocks": 9,
+      "traceIDs": 0,
+      "duplicateBlocks": 0,
+      "imageDefinitions": 3,
+      "mathCount": 0,
+      "mathErrors": [],
+      "renderMs": 2.410999000000004,
+      "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_VECTOR_FIGURES_EN_TO_ID.rendered.html",
+      "renderedHeadingCounts": [
+        {
+          "level": 1,
+          "count": 1
+        },
+        {
+          "level": 2,
+          "count": 0
+        },
+        {
+          "level": 3,
+          "count": 3
+        },
+        {
+          "level": 4,
+          "count": 3
+        },
+        {
+          "level": 5,
+          "count": 0
+        },
+        {
+          "level": 6,
+          "count": 0
+        }
+      ],
+      "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+      "structuralStatus": "PASS",
+      "semanticStatus": "NOT_APPROVED",
+      "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+    }
+  ],
+  "limits": [
+    "No semantic acceptance inferred from translated count or structural pass",
+    "Synthetic capacity templates repeat conceptual patterns; not natural-book diversity",
+    "Render parsing does not qualify all Markdown editors",
+    "Exporter and source build identities are explicit; any later build bindings must be documented separately"
+  ]
+}

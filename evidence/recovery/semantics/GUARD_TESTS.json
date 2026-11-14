@@ -1,0 +1,150 @@
+{
+  "sourceBinding": {
+    "translation.js": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "claim-guards.js": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+    "semantic-spans.js": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e"
+  },
+  "method": "Targeted negative and positive semantic invariant controls, not general semantic proof",
+  "tests": [
+    {
+      "name": "Population mean mistranslated",
+      "status": "PASS"
+    },
+    {
+      "name": "Price subject omitted",
+      "status": "PASS"
+    },
+    {
+      "name": "Calibration identity lost",
+      "status": "PASS"
+    },
+    {
+      "name": "Incorrect recording predicate shifted",
+      "status": "PASS"
+    },
+    {
+      "name": "Dependence replaced with imperative",
+      "status": "PASS"
+    },
+    {
+      "name": "Numbered experiment became quantity",
+      "status": "PASS"
+    },
+    {
+      "name": "Rubric changed into generic feature",
+      "status": "PASS"
+    },
+    {
+      "name": "One interval becomes all intervals",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer role changed",
+      "status": "PASS"
+    },
+    {
+      "name": "Satisfaction of conditions changed",
+      "status": "PASS"
+    },
+    {
+      "name": "Passive recording auxiliary missing",
+      "status": "PASS"
+    },
+    {
+      "name": "Price predicate replaced by nominal increase",
+      "status": "PASS"
+    },
+    {
+      "name": "Event vanished from evidence proposition",
+      "status": "PASS"
+    },
+    {
+      "name": "Quantity demanded lost",
+      "status": "PASS"
+    },
+    {
+      "name": "Certify weakened to mere statement",
+      "status": "PASS"
+    },
+    {
+      "name": "Population mean correct",
+      "status": "PASS"
+    },
+    {
+      "name": "Numbered experiment correct",
+      "status": "PASS"
+    },
+    {
+      "name": "Quantity of experiments unchanged",
+      "status": "PASS"
+    },
+    {
+      "name": "Price subject correct",
+      "status": "PASS"
+    },
+    {
+      "name": "Incorrect recording predicate correct",
+      "status": "PASS"
+    },
+    {
+      "name": "Mathematical interval scope retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Event proposition preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Quantity demanded retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Certification disclaimer retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer role retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Singular hypothesis fulfillment",
+      "status": "PASS"
+    },
+    {
+      "name": "Plural condition fulfillment",
+      "status": "PASS"
+    },
+    {
+      "name": "None polarity equivalence",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonempty polarity equivalence",
+      "status": "PASS"
+    },
+    {
+      "name": "Nonempty deletion is not accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "Interview time is not a question instrument",
+      "status": "PASS"
+    },
+    {
+      "name": "Interview questions context selects instrument",
+      "status": "PASS"
+    },
+    {
+      "name": "Financial balance not assigned to equilibrium",
+      "status": "PASS"
+    },
+    {
+      "name": "Rubrik as newspaper column is not assessment",
+      "status": "PASS"
+    },
+    {
+      "name": "Permintaan for personal help is not turned into supply",
+      "status": "PASS"
+    }
+  ]
+}

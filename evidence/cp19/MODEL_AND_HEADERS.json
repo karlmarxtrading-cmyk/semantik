@@ -1,0 +1,349 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "scope": "Actual gzip/decoded bytes; static Cloudflare matching-rule simulation only, not response-header verification",
+  "modelFiles": [
+    {
+      "direction": "en-id",
+      "name": "encoder_q8.onnx",
+      "pass": true,
+      "actualSha256": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721",
+      "parts": [
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11378532,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11410735,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12864169,
+          "decodedBytes": 14146957
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "decoder_q8.onnx",
+      "pass": true,
+      "actualSha256": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6",
+      "parts": [
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 11366970,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 11327128,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15344608,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 14103302,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/en-id/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12864686,
+          "decodedBytes": 15761480
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "source.spm",
+      "pass": true,
+      "actualSha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "parts": [
+        {
+          "path": "/models/en-id/source.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "target.spm",
+      "pass": true,
+      "actualSha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "parts": [
+        {
+          "path": "/models/en-id/target.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "vocab.json",
+      "pass": true,
+      "actualSha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "parts": [
+        {
+          "path": "/models/en-id/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "config.json",
+      "pass": true,
+      "actualSha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "parts": [
+        {
+          "path": "/models/en-id/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "LICENSE",
+      "pass": true,
+      "actualSha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "parts": [
+        {
+          "path": "/models/en-id/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ]
+    },
+    {
+      "direction": "en-id",
+      "name": "ORIGINAL_MODEL_README.md",
+      "pass": true,
+      "actualSha256": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "parts": [
+        {
+          "path": "/models/en-id/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "encoder_q8.onnx",
+      "pass": true,
+      "actualSha256": "54cd5f131d79009685780b3644def838a023fb997d83abe8583c91617c47426e",
+      "parts": [
+        {
+          "path": "/models/id-en/encoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12474977,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/encoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12519423,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/encoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 12837315,
+          "decodedBytes": 14146956
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "decoder_q8.onnx",
+      "pass": true,
+      "actualSha256": "1e13475e3773031eb9be4eabda7df071a32612cd520d6f5abaeece2e598a1ad0",
+      "parts": [
+        {
+          "path": "/models/id-en/decoder_q8.onnx.part000.gz",
+          "pass": true,
+          "storedBytes": 12424392,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/decoder_q8.onnx.part001.gz",
+          "pass": true,
+          "storedBytes": 12477947,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/decoder_q8.onnx.part002.gz",
+          "pass": true,
+          "storedBytes": 15292931,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/decoder_q8.onnx.part003.gz",
+          "pass": true,
+          "storedBytes": 13489152,
+          "decodedBytes": 16777216
+        },
+        {
+          "path": "/models/id-en/decoder_q8.onnx.part004.gz",
+          "pass": true,
+          "storedBytes": 12298788,
+          "decodedBytes": 15761479
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "source.spm",
+      "pass": true,
+      "actualSha256": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "parts": [
+        {
+          "path": "/models/id-en/source.spm.part000",
+          "pass": true,
+          "storedBytes": 800687,
+          "decodedBytes": 800687
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "target.spm",
+      "pass": true,
+      "actualSha256": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "parts": [
+        {
+          "path": "/models/id-en/target.spm.part000",
+          "pass": true,
+          "storedBytes": 795925,
+          "decodedBytes": 795925
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "vocab.json",
+      "pass": true,
+      "actualSha256": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "parts": [
+        {
+          "path": "/models/id-en/vocab.json.part000",
+          "pass": true,
+          "storedBytes": 1366984,
+          "decodedBytes": 1366984
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "config.json",
+      "pass": true,
+      "actualSha256": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "parts": [
+        {
+          "path": "/models/id-en/config.json.part000",
+          "pass": true,
+          "storedBytes": 958,
+          "decodedBytes": 958
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "LICENSE",
+      "pass": true,
+      "actualSha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "parts": [
+        {
+          "path": "/models/id-en/LICENSE.part000",
+          "pass": true,
+          "storedBytes": 18652,
+          "decodedBytes": 18652
+        }
+      ]
+    },
+    {
+      "direction": "id-en",
+      "name": "ORIGINAL_MODEL_README.md",
+      "pass": true,
+      "actualSha256": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "parts": [
+        {
+          "path": "/models/id-en/ORIGINAL_MODEL_README.md.part000",
+          "pass": true,
+          "storedBytes": 601,
+          "decodedBytes": 601
+        }
+      ]
+    }
+  ],
+  "cacheControl": [
+    {
+      "path": "/",
+      "values": [
+        "no-cache"
+      ],
+      "pass": true
+    },
+    {
+      "path": "/index.html",
+      "values": [
+        "no-cache"
+      ],
+      "pass": true
+    },
+    {
+      "path": "/sw.js",
+      "values": [
+        "no-cache"
+      ],
+      "pass": true
+    },
+    {
+      "path": "/r/6ed0d134e1770b27/app/main.js",
+      "values": [
+        "public, max-age=31536000, immutable"
+      ],
+      "pass": true
+    },
+    {
+      "path": "/r/6ed0d134e1770b27/models/en-id/encoder_q8.onnx.part000.gz",
+      "values": [
+        "public, max-age=31536000, immutable"
+      ],
+      "pass": true
+    }
+  ],
+  "allPass": true
+}

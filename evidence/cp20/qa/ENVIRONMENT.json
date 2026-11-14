@@ -1,0 +1,14 @@
+{
+  "scope": "Execution container description, not physical-device minimum qualification",
+  "capturedAt": "2026-11-13T07:25:35.941Z",
+  "node": "v24.22.1",
+  "platform": "linux",
+  "release": "6.18.57",
+  "architecture": "x64",
+  "logicalCPUCount": 9,
+  "availableParallelism": 9,
+  "cpuModel": "INTEL(R) XEON(R) PLATINUM 8573C",
+  "hostReportedTotalMemoryBytes": 10451423232,
+  "cgroupMemoryLimit": null,
+  "limits": "Host-reported resources can exceed container entitlement. Runtime contentions and cloud-browser resources are separate. No claim that this is a supported minimum user device."
+}

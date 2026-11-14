@@ -1,0 +1,155 @@
+{
+  "scope": "Helper and lifecycle tests; FakeWorker is explicit and never counted as model/browser inference evidence",
+  "passed": 37,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "Import and construction are lazy",
+      "pass": true
+    },
+    {
+      "name": "English detection",
+      "pass": true
+    },
+    {
+      "name": "Indonesian detection",
+      "pass": true
+    },
+    {
+      "name": "Ambiguous detection remains unknown",
+      "pass": true
+    },
+    {
+      "name": "Equal numbers and DOI pass",
+      "pass": true
+    },
+    {
+      "name": "Changed number rejected",
+      "pass": true
+    },
+    {
+      "name": "Duplicate number rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed DOI rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed formula rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed citation rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed scientific unit rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed author identity rejected",
+      "pass": true
+    },
+    {
+      "name": "Empty target rejected",
+      "pass": true
+    },
+    {
+      "name": "Lossless long input segmentation",
+      "pass": true
+    },
+    {
+      "name": "Formula is not split",
+      "pass": true
+    },
+    {
+      "name": "Invalid direction cannot create worker",
+      "pass": true
+    },
+    {
+      "name": "Prepare creates exactly one worker",
+      "pass": true
+    },
+    {
+      "name": "Repeated prepare reuses direction",
+      "pass": true
+    },
+    {
+      "name": "Ordinary translation structurally passes",
+      "pass": true
+    },
+    {
+      "name": "Scientific tokens are masked and restored",
+      "pass": true
+    },
+    {
+      "name": "Glossary entries are restored as required",
+      "pass": true
+    },
+    {
+      "name": "Glossary cannot alter numbers",
+      "pass": true
+    },
+    {
+      "name": "Bad numeric candidate preserves source",
+      "pass": true
+    },
+    {
+      "name": "Worker rejection preserves source",
+      "pass": true
+    },
+    {
+      "name": "Academic heading translates deterministically",
+      "pass": true
+    },
+    {
+      "name": "Heading translates with empty glossary",
+      "pass": true
+    },
+    {
+      "name": "All exact academic defaults translate English to Indonesian",
+      "pass": true
+    },
+    {
+      "name": "Uppercase academic phrase is not frozen as an acronym",
+      "pass": true
+    },
+    {
+      "name": "User phrase overrides academic default",
+      "pass": true
+    },
+    {
+      "name": "Overlapping shorter user term suppresses longer default",
+      "pass": true
+    },
+    {
+      "name": "Academic defaults do not rewrite literal code",
+      "pass": true
+    },
+    {
+      "name": "Default terms match whole phrases only",
+      "pass": true
+    },
+    {
+      "name": "Academic defaults are bidirectional",
+      "pass": true
+    },
+    {
+      "name": "Known estimation-verb mismatch is reviewed",
+      "pass": true
+    },
+    {
+      "name": "Cancellation rejects and next prepare is isolated",
+      "pass": true
+    },
+    {
+      "name": "Already aborted preparation creates no worker",
+      "pass": true
+    },
+    {
+      "name": "Dispose releases worker",
+      "pass": true
+    }
+  ]
+}

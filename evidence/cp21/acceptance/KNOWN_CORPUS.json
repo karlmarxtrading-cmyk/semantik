@@ -1,0 +1,356 @@
+{
+  "freezeSourceHash": "4f600f19789edea73d3642e65c10d5b3a43f5e0f79b36fc9d2c91dc597da78e3",
+  "method": "Final rerun of 50 known regressions plus 20 previous CP20 holdout cases. Development/regression, not fresh acceptance.",
+  "cases": [
+    {
+      "id": "CP20-V4-A-01",
+      "direction": "en-id",
+      "source": "A differentiable function is continuous at the same point. The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists."
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "direction": "en-id",
+      "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution."
+    },
+    {
+      "id": "CP20-V4-A-03",
+      "direction": "en-id",
+      "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased. The difference is not evidence that any observation was recorded incorrectly."
+    },
+    {
+      "id": "CP20-V4-A-04",
+      "direction": "en-id",
+      "source": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements."
+    },
+    {
+      "id": "CP20-V4-A-05",
+      "direction": "en-id",
+      "source": "The laboratory instrument was calibrated before data collection. Calibration reduces measurement error; it does not prove that the proposed explanation is correct."
+    },
+    {
+      "id": "CP20-H-001",
+      "direction": "en-id",
+      "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint."
+    },
+    {
+      "id": "CP20-H-002",
+      "direction": "en-id",
+      "source": "The derivative determines a local rate of change, not the accumulated change over the entire interval. Integration can recover the accumulated change when the required hypotheses hold."
+    },
+    {
+      "id": "CP20-H-003",
+      "direction": "en-id",
+      "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size."
+    },
+    {
+      "id": "CP20-H-004",
+      "direction": "en-id",
+      "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration."
+    },
+    {
+      "id": "CP20-H-005",
+      "direction": "en-id",
+      "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared."
+    },
+    {
+      "id": "CP20-H-006",
+      "direction": "en-id",
+      "source": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled."
+    },
+    {
+      "id": "CP20-H-007",
+      "direction": "en-id",
+      "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities."
+    },
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator."
+    },
+    {
+      "id": "CP20-H-009",
+      "direction": "en-id",
+      "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article."
+    },
+    {
+      "id": "CP20-H-010",
+      "direction": "en-id",
+      "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered."
+    },
+    {
+      "id": "CP20-H-011",
+      "direction": "en-id",
+      "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change."
+    },
+    {
+      "id": "CP20-H-012",
+      "direction": "en-id",
+      "source": "The household saved more money in nominal terms, but prices also rose. Whether the household could purchase more goods depends on the change in purchasing power, not merely on the balance shown in the account."
+    },
+    {
+      "id": "CP20-H-013",
+      "direction": "en-id",
+      "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way."
+    },
+    {
+      "id": "CP20-H-014",
+      "direction": "en-id",
+      "source": "The results were obtained from volunteers who had access to the required equipment. Generalization to people without that access requires additional evidence. The authors discuss this limitation before presenting their recommendations."
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event."
+    },
+    {
+      "id": "CP20-V4-A-06",
+      "direction": "id-en",
+      "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama. Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+    },
+    {
+      "id": "CP20-V4-A-07",
+      "direction": "id-en",
+      "source": "Pemanasan dihentikan sebelum pelarut mendidih. Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan."
+    },
+    {
+      "id": "CP20-V4-A-08",
+      "direction": "id-en",
+      "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias. Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+    },
+    {
+      "id": "CP20-V4-A-09",
+      "direction": "id-en",
+      "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat. Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi."
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "direction": "id-en",
+      "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar."
+    },
+    {
+      "id": "CP20-H-016",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung."
+    },
+    {
+      "id": "CP20-H-017",
+      "direction": "id-en",
+      "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi."
+    },
+    {
+      "id": "CP20-H-018",
+      "direction": "id-en",
+      "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya."
+    },
+    {
+      "id": "CP20-H-019",
+      "direction": "id-en",
+      "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi."
+    },
+    {
+      "id": "CP20-H-020",
+      "direction": "id-en",
+      "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan."
+    },
+    {
+      "id": "CP20-H-021",
+      "direction": "id-en",
+      "source": "Larutan mengandung 6 mmol garam terlarut dalam 2 L pelarut. Penambahan 2 L pelarut menurunkan konsentrasi sambil mempertahankan jumlah garam, asalkan tidak ada larutan yang tumpah."
+    },
+    {
+      "id": "CP20-H-022",
+      "direction": "id-en",
+      "source": "Interval kepercayaan menggambarkan ketidakpastian dalam prosedur pengambilan sampel yang diasumsikan. Interval tersebut tidak boleh ditafsirkan sebagai rentang yang memuat seluruh pengamatan individual. Keduanya merupakan besaran statistik yang berbeda."
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang."
+    },
+    {
+      "id": "CP20-H-024",
+      "direction": "id-en",
+      "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel."
+    },
+    {
+      "id": "CP20-H-025",
+      "direction": "id-en",
+      "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan."
+    },
+    {
+      "id": "CP20-H-026",
+      "direction": "id-en",
+      "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga."
+    },
+    {
+      "id": "CP20-H-027",
+      "direction": "id-en",
+      "source": "Rumah tangga menabung lebih banyak uang secara nominal, tetapi harga juga naik. Apakah rumah tangga itu dapat membeli lebih banyak barang bergantung pada perubahan daya beli, bukan hanya saldo yang ditampilkan di rekening."
+    },
+    {
+      "id": "CP20-H-028",
+      "direction": "id-en",
+      "source": "Laporan menempatkan pedoman wawancara di lampiran agar peneliti lain dapat memeriksa pertanyaannya. Lampiran mendokumentasikan prosedur; lampiran tidak menjamin bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama."
+    },
+    {
+      "id": "CP20-H-029",
+      "direction": "id-en",
+      "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka."
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat."
+    },
+    {
+      "id": "LONG-PROSE-01",
+      "direction": "id-en",
+      "source": "CP20B0001_00. Tim penelitian mengukur 18 sampel sebelum intervensi. Kelompok pembanding tidak menerima perlakuan. Pengamatan ini saja tidak membuktikan hubungan sebab akibat."
+    },
+    {
+      "id": "LONG-PROSE-02",
+      "direction": "id-en",
+      "source": "CP20B0002_00. Larutan kimia mengandung 25 miligram garam terlarut. Pemanasan menghilangkan pelarut tetapi tidak menghancurkan garam. Konsentrasi bergantung pada volume akhir."
+    },
+    {
+      "id": "LONG-PROSE-03",
+      "direction": "id-en",
+      "source": "CP20B0003_00. Himpunan hingga dalam percobaan 32 berisi elemen yang berbeda. Subgrup harus memuat elemen identitas. Objek matematika ini didefinisikan secara terpisah."
+    },
+    {
+      "id": "LONG-PROSE-04",
+      "direction": "id-en",
+      "source": "CP20B0004_00. Survei ekonomi mencatat 39 transaksi. Permintaan meningkat ketika harga turun sementara kondisi lain tetap. Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar."
+    },
+    {
+      "id": "LONG-PROSE-05",
+      "direction": "id-en",
+      "source": "CP20B0005_00. Analisis statistika menggunakan 46 pengamatan. Rata-rata sampel berbeda dari rata-rata populasi. Interval kepercayaan menyatakan ketidakpastian dalam model yang disebutkan."
+    },
+    {
+      "id": "LONG-PROSE-06",
+      "direction": "id-en",
+      "source": "CP20B0006_00. Penelitian ekologi mengikuti 53 pohon yang ditandai. Pertumbuhan berbeda antar lokasi karena curah hujan dan kondisi tanah berbeda. Penulis melaporkan keterbatasan pengukuran."
+    },
+    {
+      "id": "LONG-PROSE-07",
+      "direction": "id-en",
+      "source": "CP20B0007_00. Penelitian pendidikan mencakup 60 jawaban tertulis. Rubrik membedakan jawaban tanpa alasan dari penjelasan yang didukung bukti. Dua penilai membandingkan penilaian mereka."
+    },
+    {
+      "id": "LONG-PROSE-08",
+      "direction": "id-en",
+      "source": "CP20B0008_00. Laboratorium teknik mencatat 67 pengukuran tekanan. Instrumen dikalibrasi sebelum setiap sesi. Satuan yang dilaporkan dan ketidakpastian pengukuran harus tetap bersama."
+    },
+    {
+      "id": "LONG-PROSE-09",
+      "direction": "id-en",
+      "source": "CP20B0009_00. Arsip sejarah memuat 74 entri berindeks. Penafsiran berikutnya dapat bertentangan dengan catatan asli. Peneliti memisahkan bukti dokumenter dari spekulasi."
+    },
+    {
+      "id": "LONG-PROSE-10",
+      "direction": "id-en",
+      "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda."
+    },
+    {
+      "id": "F01-en-id",
+      "direction": "en-id",
+      "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval."
+    },
+    {
+      "id": "F01-id-en",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka."
+    },
+    {
+      "id": "F02-en-id",
+      "direction": "en-id",
+      "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse."
+    },
+    {
+      "id": "F02-id-en",
+      "direction": "id-en",
+      "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers."
+    },
+    {
+      "id": "F03-en-id",
+      "direction": "en-id",
+      "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute."
+    },
+    {
+      "id": "F03-id-en",
+      "direction": "id-en",
+      "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut."
+    },
+    {
+      "id": "F04-en-id",
+      "direction": "en-id",
+      "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield."
+    },
+    {
+      "id": "F04-id-en",
+      "direction": "id-en",
+      "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar."
+    },
+    {
+      "id": "F05-en-id",
+      "direction": "en-id",
+      "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it."
+    },
+    {
+      "id": "F05-id-en",
+      "direction": "id-en",
+      "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya."
+    },
+    {
+      "id": "F06-en-id",
+      "direction": "en-id",
+      "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population."
+    },
+    {
+      "id": "F06-id-en",
+      "direction": "id-en",
+      "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi."
+    },
+    {
+      "id": "F07-en-id",
+      "direction": "en-id",
+      "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences."
+    },
+    {
+      "id": "F07-id-en",
+      "direction": "id-en",
+      "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat."
+    },
+    {
+      "id": "F08-en-id",
+      "direction": "en-id",
+      "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged."
+    },
+    {
+      "id": "F08-id-en",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah."
+    },
+    {
+      "id": "F09-en-id",
+      "direction": "en-id",
+      "source": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased."
+    },
+    {
+      "id": "F09-id-en",
+      "direction": "id-en",
+      "source": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias."
+    },
+    {
+      "id": "F10-en-id",
+      "direction": "en-id",
+      "source": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate."
+    },
+    {
+      "id": "F10-id-en",
+      "direction": "id-en",
+      "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat."
+    }
+  ]
+}

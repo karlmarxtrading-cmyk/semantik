@@ -1,0 +1,33 @@
+{
+  "method": "Static inspection of exact index.html/main.js plus exact SW install harness, not browser interaction success.",
+  "sourceFileInputs": [
+    {
+      "type": "file",
+      "id": "pdf-input",
+      "accept": ".pdf,application/pdf",
+      "aria-describedby": "file-help"
+    }
+  ],
+  "normalPath": [
+    "selectFile -> open PDF -> selected state",
+    "run(true) -> extract -> detect language -> prepare direction model lazily -> translate blocks",
+    "download(translation) -> createMarkdown -> .md download"
+  ],
+  "mandatoryPerBlockReview": false,
+  "evidence": [
+    "index.html:32,43-49,53,58-65",
+    "app/main.js:202-205,335-434,524-533,592-602"
+  ],
+  "downloadGate": "state.busy false and stats.done > 0; no all-blocks-reviewed or all-complete requirement.",
+  "consumerMismatch": "Review workspace and four export actions remain prominent; source corrections/glossary/layout settings optional. NeedsAttention cases tell user to continue/review. Does not force every user through manual review.",
+  "browserTest": {
+    "status": "BLOCKED_BEFORE_APP_LOAD",
+    "error": "Chromium process singleton socket() failed: Operation not permitted (1)",
+    "implication": "No claims about successful real-browser, mobile, download, BFCache, quota or offline workflow."
+  },
+  "lazy": "Only 7 shell paths precached on install (SW harness); model preparation follows Translate/explicit optional offline action. Actual first-visit network trace unavailable.",
+  "sourceModificationCheck": {
+    "filesChecked": 297,
+    "changed": []
+  }
+}

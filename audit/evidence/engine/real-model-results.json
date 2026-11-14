@@ -1,0 +1,926 @@
+{
+  "mode": "Actual bundled ONNX inference through browser-worker Node transport bridge; no browser lifecycle or PDF extraction claim.",
+  "originalWorkerSha256": "55016f3a12085ddfa7d80c014110a1dc05b1164e6bad0a5406761e5a4072a4fb",
+  "bridgeOnlyChanges": [
+    "N.wasm.wasmPaths=`/r/7a8e787a497535f5/runtime/`",
+    "t.exports={}})),kn=",
+    "error:String(e),"
+  ],
+  "cases": [
+    {
+      "direction": "en-id",
+      "id": "cp17-capital-heading",
+      "source": "CLIMATE CHANGE",
+      "result": {
+        "text": "Perubahan iklim",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "method": "controlled-terminology",
+        "semanticVerified": false
+      },
+      "elapsedMs": 57.72863700000016
+    },
+    {
+      "direction": "en-id",
+      "id": "cp17-empty-set",
+      "source": "No real number satisfies the inequality. Solution set: ∅",
+      "result": {
+        "text": "Tidak ada bilangan real memenuhi pertidaksamaan. Himpunan penyelesaian: ∅",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 16,
+        "outputTokens": 13,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 602.2329629999995
+    },
+    {
+      "direction": "en-id",
+      "id": "cp17-italic-formula",
+      "source": "|𝑥−4| < 1",
+      "result": {
+        "text": "|𝑥−4| < 1",
+        "status": "preserved",
+        "outcome": "preserved",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "method": "literal-preservation",
+        "semanticVerified": false
+      },
+      "elapsedMs": 0.055530999999973574
+    },
+    {
+      "direction": "en-id",
+      "id": "cp17-id",
+      "source": "ID: absolute-value-inequalities~challenge~07",
+      "result": {
+        "text": "ID: absolute-value-inequalities~challenge~07",
+        "status": "preserved",
+        "outcome": "preserved",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "method": "literal-preservation",
+        "semanticVerified": false
+      },
+      "elapsedMs": 0.20233399999960966
+    },
+    {
+      "direction": "en-id",
+      "id": "capital-new-heading",
+      "source": "ELASTIC NET REGULARIZATION",
+      "result": {
+        "text": "ELASTIC NET REGULARIZATION",
+        "status": "review",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [
+          "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium.",
+          "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan."
+        ],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "method": "controlled-terminology",
+        "semanticVerified": false
+      },
+      "elapsedMs": 1.3188279999994847
+    },
+    {
+      "direction": "en-id",
+      "id": "causal-restraint",
+      "source": "The intervention was associated with lower mortality, but this observational study does not establish causality.",
+      "result": {
+        "text": "Intervensi dikaitkan dengan kematian yang lebih rendah, tetapi penelitian observasi ini tidak membangun sebab-akibat.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 21,
+        "outputTokens": 20,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 664.5601619999998
+    },
+    {
+      "direction": "en-id",
+      "id": "noninferiority",
+      "source": "The trial failed to demonstrate non-inferiority.",
+      "result": {
+        "text": "Pengadilan gagal menunjukkan non-inferiority.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 13,
+        "outputTokens": 11,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 323.8652250000014
+    },
+    {
+      "direction": "en-id",
+      "id": "evidence-absence",
+      "source": "Absence of evidence is not evidence of absence.",
+      "result": {
+        "text": "Bukti yang tak ada bukanlah bukti ketidakhadiran.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 12,
+        "outputTokens": 8,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 220.12507899999946
+    },
+    {
+      "direction": "en-id",
+      "id": "confidence-margin",
+      "source": "The upper confidence limit exceeded the non-inferiority margin.",
+      "result": {
+        "text": "Batas kepercayaan diri atas melebihi batas non-inferiority.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 15,
+        "outputTokens": 14,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 391.4644250000001
+    },
+    {
+      "direction": "en-id",
+      "id": "adjustment",
+      "source": "After adjustment for age and sex, the association was no longer statistically significant.",
+      "result": {
+        "text": "Setelah penyesuaian usia dan seks, asosiasi tidak lagi signifikan secara statistik.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 20,
+        "outputTokens": 15,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 477.1752689999994
+    },
+    {
+      "direction": "en-id",
+      "id": "micromolar-nanomolar",
+      "source": "Bacterial growth was inhibited at 10 μM, whereas no inhibition was observed at 10 nM.",
+      "result": {
+        "text": "Pertumbuhan bakteriial dihambat pada 10 μM, sedangkan tidak ada hambatan yang diamati pada 10 nM.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 31,
+        "outputTokens": 27,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 1009.4909159999988
+    },
+    {
+      "direction": "en-id",
+      "id": "entity-values",
+      "source": "Treatment A reduced mortality by 10%, whereas treatment B increased mortality by 20%.",
+      "result": {
+        "text": "Treatment A reduced mortality by 10%, whereas treatment B increased mortality by 20%.",
+        "status": "review",
+        "outcome": "rejected",
+        "retryable": true,
+        "issues": [
+          "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan; coba ulang atau tinjau bagian ini."
+        ],
+        "diagnostics": [
+          {
+            "stage": "translation",
+            "name": "Error",
+            "message": "Angka yang terkait kelompok/perlakuan berubah; periksa hubungan angka dengan klaim.",
+            "segmentSource": "Treatment A reduced mortality by 10%, whereas treatment B increased mortality by 20%.",
+            "candidateText": "Pengobatan A mengurangi kematian oleh 10%, sedangkan pengobatan B meningkatkan kematian oleh 20%.",
+            "rawCandidate": "Pengobatan A mengurangi kematian oleh 10%, sedangkan pengobatan B meningkatkan kematian oleh 20%."
+          }
+        ],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "sourcePreserved": true,
+        "semanticVerified": false
+      },
+      "elapsedMs": 793.3958919999986
+    },
+    {
+      "direction": "en-id",
+      "id": "relative-risk",
+      "source": "The risk was twice as high in smokers as in nonsmokers.",
+      "result": {
+        "text": "Risikonya dua kali lebih tinggi pada perokok seperti pada orang yang tidak merokok.",
+        "status": "review",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [
+          "Periksa negasi: bentuk negatif mungkin berubah."
+        ],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 18,
+        "outputTokens": 15,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 434.24359600000025
+    },
+    {
+      "direction": "en-id",
+      "id": "confounding",
+      "source": "We could not rule out residual confounding.",
+      "result": {
+        "text": "Kita tidak bisa mengesampingkan sisa-sisa membingungkan.",
+        "status": "review",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [
+          "Periksa modalitas: kemungkinan tidak boleh berubah menjadi kepastian."
+        ],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 11,
+        "outputTokens": 9,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 298.77232899999944
+    },
+    {
+      "direction": "en-id",
+      "id": "functional-notation",
+      "source": "Given f(x)=x², the derivative is f′(x)=2x.",
+      "result": {
+        "text": "Mengingat f(x)=x², turunan adalah fåx)=2x.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 30,
+        "outputTokens": 27,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 1013.7312930000007
+    },
+    {
+      "direction": "en-id",
+      "id": "taxon-without-cue",
+      "source": "Escherichia coli was cultured under anaerobic conditions.",
+      "result": {
+        "text": "Escherichia coli dibudidayakan dalam kondisi anaerobik.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 18,
+        "outputTokens": 18,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 529.7011940000011
+    },
+    {
+      "direction": "en-id",
+      "id": "formula-prose",
+      "source": "For all x ∈ ℝ, if x > 0 then f(x) = ln(x).",
+      "result": {
+        "text": "Untuk semua x ∈ ℝ, jika x > 0 kemudian f(x) = ln(x).",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 26,
+        "outputTokens": 22,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 794.3556549999994
+    },
+    {
+      "direction": "en-id",
+      "id": "scientific-abstract",
+      "source": "We investigated whether exposure to fine particulate matter was associated with hospital admission. The analysis included 240 participants followed for 12 months. Although the adjusted risk ratio was 1.20, the confidence interval included the null value. These findings do not establish a causal relationship and should be interpreted cautiously.",
+      "result": {
+        "text": "Kami menyelidiki apakah paparan partikel halus berhubungan dengan penerimaan rumah sakit. Analisis termasuk 240 peserta diikuti untuk 12 bulan. Meskipun rasio resiko yang disesuaikan adalah 1.20, interval kepercayaan termasuk nilai kosong. Temuan ini tidak menjalin hubungan sebab - akibat dan hendaknya ditafsirkan dengan cermat.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "en-id",
+          "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 82,
+        "outputTokens": 64,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 2352.976655999999
+    },
+    {
+      "direction": "id-en",
+      "id": "cp17-regression",
+      "source": "Regresi linear mengestimasi ukuran efek.",
+      "result": {
+        "text": "Linear regression estimates effect size.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "method": "controlled-terminology",
+        "semanticVerified": false
+      },
+      "elapsedMs": 24.31833999999799
+    },
+    {
+      "direction": "id-en",
+      "id": "cp17-heading",
+      "source": "KAJIAN PUSTAKA",
+      "result": {
+        "text": "Literature review",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "method": "controlled-terminology",
+        "semanticVerified": false
+      },
+      "elapsedMs": 1.281634999999369
+    },
+    {
+      "direction": "id-en",
+      "id": "causal-restraint",
+      "source": "Intervensi ini berhubungan dengan mortalitas yang lebih rendah, tetapi penelitian observasional ini tidak membuktikan hubungan sebab akibat.",
+      "result": {
+        "text": "This intervention is related to lower mortality, but observational research does not prove the causality of effect.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 24,
+        "outputTokens": 22,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 804.3494610000016
+    },
+    {
+      "direction": "id-en",
+      "id": "noninferiority",
+      "source": "Uji klinis ini gagal menunjukkan noninferioritas.",
+      "result": {
+        "text": "The clinical trial failed to show noninferiority.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 13,
+        "outputTokens": 13,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 353.84634000000005
+    },
+    {
+      "direction": "id-en",
+      "id": "evidence-absence",
+      "source": "Tidak adanya bukti bukanlah bukti ketiadaan.",
+      "result": {
+        "text": "Evidence absence is not evidence of nothingness.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 8,
+        "outputTokens": 9,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 217.41585399999894
+    },
+    {
+      "direction": "id-en",
+      "id": "adjustment",
+      "source": "Setelah disesuaikan untuk usia dan jenis kelamin, hubungan tersebut tidak lagi signifikan secara statistik.",
+      "result": {
+        "text": "After adjusting for age and gender, the relationship no longer statistically significant.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 19,
+        "outputTokens": 18,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 526.3682599999993
+    },
+    {
+      "direction": "id-en",
+      "id": "entity-values",
+      "source": "Perlakuan A menurunkan mortalitas sebesar 10%, sedangkan perlakuan B meningkatkan mortalitas sebesar 20%.",
+      "result": {
+        "text": "A treatment lowers mortality by 10%, whereas treatment B increases mortality by 20%.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 29,
+        "outputTokens": 26,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 895.6052529999979
+    },
+    {
+      "direction": "id-en",
+      "id": "confounding",
+      "source": "Kami tidak dapat menyingkirkan kemungkinan perancuan residual.",
+      "result": {
+        "text": "We can't get rid of possible residueal interference.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 12,
+        "outputTokens": 12,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 362.9658129999989
+    },
+    {
+      "direction": "id-en",
+      "id": "mathematical-prose",
+      "source": "Himpunan penyelesaian pertidaksamaan tersebut adalah ∅. Tidak ada bilangan riil yang memenuhi kedua syarat.",
+      "result": {
+        "text": "Solution set inequality is ∅. No real number satisfies second condition.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 31,
+        "outputTokens": 30,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 898.6219780000029
+    },
+    {
+      "direction": "id-en",
+      "id": "scientific-abstract",
+      "source": "Penelitian ini menilai hubungan antara paparan partikulat halus dan rawat inap. Analisis mencakup 240 peserta yang diikuti selama 12 bulan. Meskipun rasio risiko yang disesuaikan adalah 1.20, interval kepercayaan mencakup nilai nol. Temuan ini tidak membuktikan hubungan sebab akibat dan harus ditafsirkan secara hati-hati.",
+      "result": {
+        "text": "This study assessed the relationship between exposure to delicate party and intrusive care. Analysis includes 240 participants followed during 12 months. While the adjusted risk ratio is 1.20, confidence interval includes zero. This find doesn't prove cause-cause-effect relationship and should be interpreted carefully.",
+        "status": "translated",
+        "outcome": "translated",
+        "retryable": false,
+        "issues": [],
+        "engine": {
+          "direction": "id-en",
+          "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+          "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+          "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+          "maxInputTokens": 128,
+          "maxOutputTokens": 256,
+          "offlineReady": true,
+          "storageMode": "persistent",
+          "storageWarning": "",
+          "supportsAbort": "worker termination",
+          "supportsGlossaryConstraints": false,
+          "requiresNetworkForInference": false
+        },
+        "inputTokens": 73,
+        "outputTokens": 78,
+        "method": "local-model-with-protected-spans",
+        "semanticVerified": false
+      },
+      "elapsedMs": 2412.987208999999
+    }
+  ],
+  "en-id": {
+    "engine": {
+      "direction": "en-id",
+      "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+      "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+      "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+      "maxInputTokens": 128,
+      "maxOutputTokens": 256,
+      "offlineReady": true,
+      "storageMode": "persistent",
+      "storageWarning": "",
+      "supportsAbort": "worker termination",
+      "supportsGlossaryConstraints": false,
+      "requiresNetworkForInference": false
+    },
+    "prepareMs": 7357.837006
+  },
+  "id-en": {
+    "engine": {
+      "direction": "id-en",
+      "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+      "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+      "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+      "maxInputTokens": 128,
+      "maxOutputTokens": 256,
+      "offlineReady": true,
+      "storageMode": "persistent",
+      "storageWarning": "",
+      "supportsAbort": "worker termination",
+      "supportsGlossaryConstraints": false,
+      "requiresNetworkForInference": false
+    },
+    "prepareMs": 4353.842299
+  }
+}

@@ -1,0 +1,89 @@
+Warning: Please use the `legacy` build in Node.js environments.
+1 0 452 MiB RSS
+50 101195 495 MiB RSS
+100 199763 552 MiB RSS
+150 299428 553 MiB RSS
+200 390047 558 MiB RSS
+250 466069 574 MiB RSS
+300 565879 587 MiB RSS
+350 673641 599 MiB RSS
+400 777454 613 MiB RSS
+450 885641 614 MiB RSS
+500 979670 638 MiB RSS
+550 1093014 640 MiB RSS
+600 1209391 647 MiB RSS
+650 1306088 636 MiB RSS
+700 1413999 644 MiB RSS
+750 1515541 640 MiB RSS
+800 1638020 674 MiB RSS
+850 1749872 674 MiB RSS
+900 1837626 635 MiB RSS
+950 1933380 644 MiB RSS
+1000 2035796 650 MiB RSS
+1050 2140778 668 MiB RSS
+1062 2159653 668 MiB RSS
+{
+  "status": "PASS",
+  "scope": "Original author-published scientific textbook, actual final-dist production reader bounded source extraction only. No translation inference, no browser IndexedDB/export test. Incomplete OCR and uncertain formulas remain explicitly unresolved; item accounting is not semantic coverage.",
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "fixturePath": "/workspace/scratch/17677088ccfd/cp20/tests/fixtures/cp20-authentic/light-and-matter.pdf",
+  "sourceSha256": "43bc4835b63fe4dca599fe14982596b54a261e4d01af9c23a48070ca88bde105",
+  "numPages": 1062,
+  "summary": {
+    "pages": 1062,
+    "blocks": 11042,
+    "characters": 2159653,
+    "sourceItems": 88633,
+    "coveredItems": 88633,
+    "assets": 4684,
+    "assetBytes": 56757057,
+    "maxActivePageRecords": 1,
+    "coverageStatuses": {
+      "incomplete": 646,
+      "digital-text": 416
+    },
+    "mathStatuses": {
+      "undefined": 3229
+    },
+    "warningPages": 849,
+    "blockTypes": {
+      "image": 646,
+      "paragraph": 5957,
+      "heading": 458,
+      "table": 483,
+      "list-item": 253,
+      "formula": 3235,
+      "caption": 8,
+      "reference": 2
+    }
+  },
+  "sourceBefore": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098"
+  },
+  "sourceAfter": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098"
+  },
+  "sourceStable": true,
+  "orderedSourceTextSha256": "96e028708d4fbd9cc2873723f0dc55cd36c056814df707b9ce6df12576216462",
+  "elapsedMs": 177840.532732,
+  "sampledPeakNodeMemoryBytes": {
+    "rss": 746188800,
+    "heapUsed": 94536856,
+    "external": 279510960,
+    "arrayBuffers": 355131355
+  },
+  "memoryLimit": "Node process RSS sampled every100ms; abort cap1536MiB,360s. Not browser/physical laptop RAM qualification."
+}

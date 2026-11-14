@@ -1,0 +1,312 @@
+{
+  "status": "PASS_TARGETED_REUSE_NOT_NEW_70_CASE_EXECUTION",
+  "changedProductFiles": [
+    "app/app/claim-guards.js"
+  ],
+  "finalBuild": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  },
+  "method": "Translation adapter, segmentation, terminology and worker hashes are unchanged between freezes. Only label-alias validation changed. Every saved real target passes final guards; two label-bearing cases were actually rerun on final deploy bytes and match. Does not assert human semantic accuracy.",
+  "priorInferenceSHA256": "326b7ca62af41e2dc271370e2de759369fac9ab7ede0a4ed44c5e4cfa230289a",
+  "rows": [
+    {
+      "id": "CP20-V4-A-01",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-03",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-04",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-05",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-001",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-002",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-003",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-004",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-005",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-006",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-007",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-008",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-009",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-010",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-011",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-012",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-013",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-014",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-015",
+      "issues": []
+    },
+    {
+      "id": "F01-en-id",
+      "issues": []
+    },
+    {
+      "id": "F02-en-id",
+      "issues": []
+    },
+    {
+      "id": "F03-en-id",
+      "issues": []
+    },
+    {
+      "id": "F04-en-id",
+      "issues": []
+    },
+    {
+      "id": "F05-en-id",
+      "issues": []
+    },
+    {
+      "id": "F06-en-id",
+      "issues": []
+    },
+    {
+      "id": "F07-en-id",
+      "issues": []
+    },
+    {
+      "id": "F08-en-id",
+      "issues": []
+    },
+    {
+      "id": "F09-en-id",
+      "issues": []
+    },
+    {
+      "id": "F10-en-id",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-06",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-07",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-08",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-09",
+      "issues": []
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-016",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-017",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-018",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-019",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-020",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-021",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-022",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-023",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-024",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-025",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-026",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-027",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-028",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-029",
+      "issues": []
+    },
+    {
+      "id": "CP20-H-030",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-01",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-02",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-03",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-04",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-05",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-06",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-07",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-08",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-09",
+      "issues": []
+    },
+    {
+      "id": "LONG-PROSE-10",
+      "issues": []
+    },
+    {
+      "id": "F01-id-en",
+      "issues": []
+    },
+    {
+      "id": "F02-id-en",
+      "issues": []
+    },
+    {
+      "id": "F03-id-en",
+      "issues": []
+    },
+    {
+      "id": "F04-id-en",
+      "issues": []
+    },
+    {
+      "id": "F05-id-en",
+      "issues": []
+    },
+    {
+      "id": "F06-id-en",
+      "issues": []
+    },
+    {
+      "id": "F07-id-en",
+      "issues": []
+    },
+    {
+      "id": "F08-id-en",
+      "issues": []
+    },
+    {
+      "id": "F09-id-en",
+      "issues": []
+    },
+    {
+      "id": "F10-id-en",
+      "issues": []
+    }
+  ],
+  "actualReruns": [
+    {
+      "id": "CP20-H-008",
+      "sameText": true,
+      "outcome": "translated"
+    },
+    {
+      "id": "CP20-H-023",
+      "sameText": true,
+      "outcome": "translated"
+    }
+  ]
+}

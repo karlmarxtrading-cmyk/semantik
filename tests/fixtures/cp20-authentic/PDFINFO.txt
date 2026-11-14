@@ -1,0 +1,18 @@
+Creator:         TeX
+Producer:        pdfTeX-1.40.20
+CreationDate:    Fri May  8 03:14:50 2020 +07
+ModDate:         Fri May  8 03:14:50 2020 +07
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           1062
+Encrypted:       no
+Page size:       612 x 792 pts (letter)
+Page rot:        0
+File size:       85937593 bytes
+Optimized:       no
+PDF version:     1.4

@@ -1,0 +1,8 @@
+[
+  {
+    "id": "valid:Treatment A was given 10 mg and treatment B was given 20 mg.",
+    "pass": false,
+    "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'Identitas label setelah peran eksperimen hilang atau ambigu.'\n+ ]\n- []\n\n    at file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp19-guards.mjs:18:41\n    at test (file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp19-guards.mjs:5:52)\n    at file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp19-guards.mjs:18:9"
+  }
+]
+44/45 PASS

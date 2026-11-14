@@ -1,0 +1,483 @@
+{
+  "build": {
+    "base": "/r/2e4d8ef18eb32385/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-2e4d8ef18eb32385",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "version": "0.20.0"
+  },
+  "started": "2026-11-13T10:07:39.771Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "cores": 9,
+    "deviceMemoryGB": 8,
+    "platform": "Linux x86_64"
+  },
+  "method": "Actual cloud Chrome via visible QA controls; viewport is not a physical mobile device. No human semantic approval.",
+  "results": [
+    {
+      "name": "Stored source/output page and block reconciliation",
+      "status": "PASS",
+      "milliseconds": 8,
+      "detail": {
+        "meta": {
+          "filename": "CP20_VECTOR_ONLY_FIGURES.pdf",
+          "size": 2322,
+          "numPages": 3,
+          "streaming": true,
+          "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+          "committedPageCount": 3,
+          "status": "complete",
+          "config": {
+            "target": "auto",
+            "source": "auto",
+            "layout": "auto",
+            "glossary": []
+          },
+          "signature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+          "page": 3,
+          "progress": {
+            "total": 9,
+            "translated": 9,
+            "preserved": 0,
+            "rejected": 0,
+            "failed": 0,
+            "pending": 0,
+            "review": 0,
+            "done": 9,
+            "attempted": 9
+          },
+          "revision": "cp20-8c643bea6962471f",
+          "build": {
+            "base": "/r/8c643bea6962471f/",
+            "modelHashes": {
+              "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+              "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+            },
+            "release": "cp20-8c643bea6962471f",
+            "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+            "version": "0.20.0"
+          },
+          "offlineCacheWarning": "Ruang browser diprioritaskan untuk dokumen dan hasil Anda. Salinan model unduhan telah dihapus; mesin yang sudah dimuat tetap berjalan pada sesi ini. Offline belum siap. Setelah menutup tab, hubungkan jaringan untuk memuat model kembali.",
+          "storageRecoveries": [
+            {
+              "cause": "QuotaExceededError",
+              "removedModelEntries": 5,
+              "retryCount": 1,
+              "succeeded": true,
+              "page": 252,
+              "at": "2026-11-13T07:36:08.587Z"
+            },
+            {
+              "cause": "QuotaExceededError",
+              "removedModelEntries": 4,
+              "retryCount": 1,
+              "succeeded": false,
+              "page": 1,
+              "at": "2026-11-13T08:39:34.026Z"
+            }
+          ],
+          "storageFailures": [],
+          "documentInfo": {
+            "sourceLanguage": "en",
+            "targetLanguage": "id",
+            "warnings": []
+          },
+          "jobId": "4bb049d1-d81d-4979-b279-fe33870f9d75",
+          "writeEpoch": 1,
+          "streamDocument": {
+            "schemaVersion": 2,
+            "streaming": true,
+            "fileName": "CP20_VECTOR_ONLY_FIGURES.pdf",
+            "fileSize": 2322,
+            "numPages": 3,
+            "metadata": {
+              "title": "",
+              "author": "",
+              "subject": "",
+              "producer": "",
+              "creationDate": "",
+              "language": ""
+            },
+            "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+            "createdAt": "2026-11-13T08:43:04.743Z",
+            "committedPageCount": 3,
+            "counts": {
+              "total": 9,
+              "translated": 9,
+              "preserved": 0,
+              "rejected": 0,
+              "failed": 0,
+              "pending": 0,
+              "review": 0,
+              "done": 9,
+              "attempted": 9
+            },
+            "sourceItemCount": 9,
+            "coveredItemCount": 9,
+            "sourceTextCharacters": 588,
+            "assetsBytes": 130937,
+            "warnings": [],
+            "metrics": {
+              "inferenceCalls": 9,
+              "cacheHits": 0,
+              "uniqueInputs": 9,
+              "inputTokens": 123,
+              "outputTokens": 106,
+              "extractionMs": 2302.0999999996275,
+              "inferenceMs": 2929.5000000018626,
+              "commitMs": 90.99999999813735,
+              "totalRunMs": 8605.599999999627
+            },
+            "streamProvenance": {
+              "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+              "configSignature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+              "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+              "release": "cp20-8c643bea6962471f"
+            },
+            "coverageIncompletePages": 0,
+            "mathUncertainPages": 0,
+            "blocks": [],
+            "pages": [],
+            "assets": [],
+            "preflight": {
+              "numPages": 3,
+              "pdfBytes": 2322,
+              "availableBytes": 10737418240,
+              "persistent": true,
+              "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+              "checkedAt": "2026-11-13T08:43:04.742Z",
+              "minimumWorkingReserveBytes": 33554432,
+              "sampledPage": 3,
+              "scanIndication": "digital-or-unknown"
+            },
+            "savedPageCount": 3,
+            "sourceLanguage": "en",
+            "targetLanguage": "id",
+            "extractionComplete": true
+          },
+          "id": "current",
+          "updatedAt": "2026-11-13T08:43:13.349Z"
+        },
+        "sourceBytes": 2322,
+        "document": {
+          "schemaVersion": 2,
+          "streaming": true,
+          "fileName": "CP20_VECTOR_ONLY_FIGURES.pdf",
+          "fileSize": 2322,
+          "numPages": 3,
+          "metadata": {
+            "title": "",
+            "author": "",
+            "subject": "",
+            "producer": "",
+            "creationDate": "",
+            "language": ""
+          },
+          "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+          "createdAt": "2026-11-13T08:43:04.743Z",
+          "committedPageCount": 3,
+          "counts": {
+            "total": 9,
+            "translated": 9,
+            "preserved": 0,
+            "rejected": 0,
+            "failed": 0,
+            "pending": 0,
+            "review": 0,
+            "done": 9,
+            "attempted": 9
+          },
+          "sourceItemCount": 9,
+          "coveredItemCount": 9,
+          "sourceTextCharacters": 588,
+          "assetsBytes": 130937,
+          "warnings": [],
+          "metrics": {
+            "inferenceCalls": 9,
+            "cacheHits": 0,
+            "uniqueInputs": 9,
+            "inputTokens": 123,
+            "outputTokens": 106,
+            "extractionMs": 2302.0999999996275,
+            "inferenceMs": 2929.5000000018626,
+            "commitMs": 90.99999999813735,
+            "totalRunMs": 8605.599999999627
+          },
+          "streamProvenance": {
+            "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+            "configSignature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+            "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+            "release": "cp20-8c643bea6962471f"
+          },
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "preflight": {
+            "numPages": 3,
+            "pdfBytes": 2322,
+            "availableBytes": 10737418240,
+            "persistent": true,
+            "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+            "checkedAt": "2026-11-13T08:43:04.742Z",
+            "minimumWorkingReserveBytes": 33554432,
+            "sampledPage": 3,
+            "scanIndication": "digital-or-unknown"
+          },
+          "savedPageCount": 3,
+          "sourceLanguage": "en",
+          "targetLanguage": "id",
+          "extractionComplete": true
+        },
+        "pages": 3,
+        "blocks": 9,
+        "characters": 588,
+        "statusCounts": {
+          "translated": 9
+        },
+        "uniqueBlockIDs": 9,
+        "duplicateBlockIDs": [],
+        "metrics": {
+          "inferenceCalls": 9,
+          "cacheHits": 0
+        },
+        "pageIDs": [
+          1,
+          2,
+          3
+        ],
+        "traceIDs": []
+      }
+    }
+  ],
+  "checkpoint": {
+    "meta": {
+      "filename": "CP20_VECTOR_ONLY_FIGURES.pdf",
+      "size": 2322,
+      "numPages": 3,
+      "streaming": true,
+      "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+      "committedPageCount": 3,
+      "status": "complete",
+      "config": {
+        "target": "auto",
+        "source": "auto",
+        "layout": "auto",
+        "glossary": []
+      },
+      "signature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+      "page": 3,
+      "progress": {
+        "total": 9,
+        "translated": 9,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0,
+        "review": 0,
+        "done": 9,
+        "attempted": 9
+      },
+      "revision": "cp20-8c643bea6962471f",
+      "build": {
+        "base": "/r/8c643bea6962471f/",
+        "modelHashes": {
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+        },
+        "release": "cp20-8c643bea6962471f",
+        "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+        "version": "0.20.0"
+      },
+      "offlineCacheWarning": "Ruang browser diprioritaskan untuk dokumen dan hasil Anda. Salinan model unduhan telah dihapus; mesin yang sudah dimuat tetap berjalan pada sesi ini. Offline belum siap. Setelah menutup tab, hubungkan jaringan untuk memuat model kembali.",
+      "storageRecoveries": [
+        {
+          "cause": "QuotaExceededError",
+          "removedModelEntries": 5,
+          "retryCount": 1,
+          "succeeded": true,
+          "page": 252,
+          "at": "2026-11-13T07:36:08.587Z"
+        },
+        {
+          "cause": "QuotaExceededError",
+          "removedModelEntries": 4,
+          "retryCount": 1,
+          "succeeded": false,
+          "page": 1,
+          "at": "2026-11-13T08:39:34.026Z"
+        }
+      ],
+      "storageFailures": [],
+      "documentInfo": {
+        "sourceLanguage": "en",
+        "targetLanguage": "id",
+        "warnings": []
+      },
+      "jobId": "4bb049d1-d81d-4979-b279-fe33870f9d75",
+      "writeEpoch": 1,
+      "streamDocument": {
+        "schemaVersion": 2,
+        "streaming": true,
+        "fileName": "CP20_VECTOR_ONLY_FIGURES.pdf",
+        "fileSize": 2322,
+        "numPages": 3,
+        "metadata": {
+          "title": "",
+          "author": "",
+          "subject": "",
+          "producer": "",
+          "creationDate": "",
+          "language": ""
+        },
+        "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+        "createdAt": "2026-11-13T08:43:04.743Z",
+        "committedPageCount": 3,
+        "counts": {
+          "total": 9,
+          "translated": 9,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 0,
+          "review": 0,
+          "done": 9,
+          "attempted": 9
+        },
+        "sourceItemCount": 9,
+        "coveredItemCount": 9,
+        "sourceTextCharacters": 588,
+        "assetsBytes": 130937,
+        "warnings": [],
+        "metrics": {
+          "inferenceCalls": 9,
+          "cacheHits": 0,
+          "uniqueInputs": 9,
+          "inputTokens": 123,
+          "outputTokens": 106,
+          "extractionMs": 2302.0999999996275,
+          "inferenceMs": 2929.5000000018626,
+          "commitMs": 90.99999999813735,
+          "totalRunMs": 8605.599999999627
+        },
+        "streamProvenance": {
+          "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+          "configSignature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+          "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+          "release": "cp20-8c643bea6962471f"
+        },
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "blocks": [],
+        "pages": [],
+        "assets": [],
+        "preflight": {
+          "numPages": 3,
+          "pdfBytes": 2322,
+          "availableBytes": 10737418240,
+          "persistent": true,
+          "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+          "checkedAt": "2026-11-13T08:43:04.742Z",
+          "minimumWorkingReserveBytes": 33554432,
+          "sampledPage": 3,
+          "scanIndication": "digital-or-unknown"
+        },
+        "savedPageCount": 3,
+        "sourceLanguage": "en",
+        "targetLanguage": "id",
+        "extractionComplete": true
+      },
+      "id": "current",
+      "updatedAt": "2026-11-13T08:43:13.349Z"
+    },
+    "sourceBytes": 2322,
+    "document": {
+      "schemaVersion": 2,
+      "streaming": true,
+      "fileName": "CP20_VECTOR_ONLY_FIGURES.pdf",
+      "fileSize": 2322,
+      "numPages": 3,
+      "metadata": {
+        "title": "",
+        "author": "",
+        "subject": "",
+        "producer": "",
+        "creationDate": "",
+        "language": ""
+      },
+      "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+      "createdAt": "2026-11-13T08:43:04.743Z",
+      "committedPageCount": 3,
+      "counts": {
+        "total": 9,
+        "translated": 9,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0,
+        "review": 0,
+        "done": 9,
+        "attempted": 9
+      },
+      "sourceItemCount": 9,
+      "coveredItemCount": 9,
+      "sourceTextCharacters": 588,
+      "assetsBytes": 130937,
+      "warnings": [],
+      "metrics": {
+        "inferenceCalls": 9,
+        "cacheHits": 0,
+        "uniqueInputs": 9,
+        "inputTokens": 123,
+        "outputTokens": 106,
+        "extractionMs": 2302.0999999996275,
+        "inferenceMs": 2929.5000000018626,
+        "commitMs": 90.99999999813735,
+        "totalRunMs": 8605.599999999627
+      },
+      "streamProvenance": {
+        "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+        "configSignature": "{\"target\":\"auto\",\"source\":\"auto\",\"layout\":\"auto\",\"glossary\":[]}",
+        "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+        "release": "cp20-8c643bea6962471f"
+      },
+      "coverageIncompletePages": 0,
+      "mathUncertainPages": 0,
+      "preflight": {
+        "numPages": 3,
+        "pdfBytes": 2322,
+        "availableBytes": 10737418240,
+        "persistent": true,
+        "sourceSha256": "e67819ed4cb4f9fafd7c5757c6008fb9da71dd80010c71aa440cc39c551aa224",
+        "checkedAt": "2026-11-13T08:43:04.742Z",
+        "minimumWorkingReserveBytes": 33554432,
+        "sampledPage": 3,
+        "scanIndication": "digital-or-unknown"
+      },
+      "savedPageCount": 3,
+      "sourceLanguage": "en",
+      "targetLanguage": "id",
+      "extractionComplete": true
+    },
+    "pages": 3,
+    "blocks": 9,
+    "characters": 588,
+    "statusCounts": {
+      "translated": 9
+    },
+    "uniqueBlockIDs": 9,
+    "duplicateBlockIDs": [],
+    "metrics": {
+      "inferenceCalls": 9,
+      "cacheHits": 0
+    },
+    "pageIDs": [
+      1,
+      2,
+      3
+    ],
+    "traceIDs": []
+  }
+}

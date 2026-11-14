@@ -1,0 +1,24 @@
+CP22-G01 translated 1955
+CP22-G02 translated 3102
+CP22-G03 translated 2186
+CP22-G04 translated 2331
+CP22-G05 translated 2151
+CP22-G06 translated 3229
+CP22-G07 translated 2753
+CP22-G08 translated 2465
+CP22-H01 translated 2789
+CP22-H02 translated 2051
+CP22-H03 translated 2102
+CP22-H04 translated 2302
+CP22-H05 rejected 2007
+CP22-H06 translated 2269
+CP22-H07 translated 2055
+CP22-H08 translated 1754
+{
+  cases: 16,
+  translated: 15,
+  rejected: 1,
+  failed: 0,
+  inferenceCalls: 32,
+  cacheHits: 0
+}

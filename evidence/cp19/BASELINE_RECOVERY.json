@@ -1,0 +1,18 @@
+[
+  {
+    "archive": "SEMANTIK_SETARA_CP18_SOURCE_AND_EVIDENCE.zip",
+    "bytes": 498820104,
+    "files": 1418,
+    "sha256": "3e2a220b34fc03b0a33c0be96d2442ded4cb2f85dd36eed0a423a199b8212aaa",
+    "crc": "PASS",
+    "source": "Recovered prior saved CP18 artifact; not the failed new attachment."
+  },
+  {
+    "archive": "SEMANTIK_SETARA_CP18_CANDIDATE_NOT_PRODUCTION_READY.zip",
+    "bytes": 223289243,
+    "files": 297,
+    "sha256": "32743e819993a011c5ff4f34de90292a76c29d9963f1258542be5382965df2dc",
+    "crc": "PASS",
+    "source": "Recovered prior saved CP18 artifact; not the failed new attachment."
+  }
+]

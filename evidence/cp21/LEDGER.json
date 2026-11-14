@@ -1,0 +1,124 @@
+{
+  "status": "NOT_PRODUCTION_READY",
+  "baseline": {
+    "release": "cp20-2e4d8ef18eb32385",
+    "version": "0.20.0",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/2e4d8ef18eb32385/"
+  },
+  "phases": [
+    {
+      "id": "P0",
+      "status": "PASS",
+      "evidence": "BASELINE_VERIFIED.json",
+      "next": "Implement targeted fixes"
+    },
+    {
+      "id": "P1",
+      "status": "IMPLEMENTED_TARGETED_TESTS_PASS_ACCEPTANCE_PENDING",
+      "evidence": [
+        "lifecycle/WARNING_SCOPE.json",
+        "semantics/GUARD_CONTROLS.json",
+        "semantics/FINAL_AFFECTED.json",
+        "semantics/CLAUSE_RECOVERY.json"
+      ],
+      "next": "Freeze product, author new holdout, execute final regressions and browser smoke."
+    },
+    {
+      "id": "P2",
+      "status": "COMPLETE_WITH_FAILED_ACCEPTANCE",
+      "evidence": [
+        "acceptance/AI_REVIEW.json",
+        "REGRESSION_RECONCILIATION.json",
+        "browser/BROWSER_DOWNLOADS.json",
+        "browser/OFFLINE_ATTEMPT.json"
+      ],
+      "next": "Deliver verified source/deploy/QA and checkpoint. Subsequent development starts at final fresh semantic failures, not CP19 or a repeated 1500-page run."
+    },
+    {
+      "id": "P3",
+      "status": "DELIVERED_WITH_KNOWN_FAILED_PRODUCTION_GATES",
+      "evidence": [
+        "DELIVERY.json",
+        "PACKAGING_SECRET_SCAN.json"
+      ],
+      "next": "Use final compact checkpoint/source. Resolve semantic generalization failures and mandatory external qualification; do not rerun existing unchanged tests."
+    }
+  ],
+  "gates": [
+    {
+      "id": "baseline-recovery",
+      "status": "PASS",
+      "reason": "Pinned CP20 ZIP and 14747 manifest entries verified."
+    },
+    {
+      "id": "regressions",
+      "status": "PASS",
+      "reason": "32 inherited suite groups reconciled with affected rechecks; 2 new CP21 suites pass."
+    },
+    {
+      "id": "static-deploy",
+      "status": "PASS",
+      "reason": "899 files, 8 static integrity checks; CP19 and CP20 namespaces retained."
+    },
+    {
+      "id": "consumer-online",
+      "status": "PASS",
+      "reason": "Actual Chrome UI both directions, each 3 pages; downloadable UTF8 MD verified."
+    },
+    {
+      "id": "restore-warning",
+      "status": "PASS",
+      "reason": "VM controls plus actual browser replacement/reload; output byte-identical after reload."
+    },
+    {
+      "id": "semantic-acceptance",
+      "status": "FAIL",
+      "reason": "Final fresh 12 cases: 7 critical internal AI findings, 1 incomplete rejection, 1 major, 2 minor, 1 adequate. Human approvals 0."
+    },
+    {
+      "id": "large-pdf-full-translation",
+      "status": "NOT_RUN",
+      "reason": "Historical 1500-page partial outputs preserved; no new long inference warranted while semantic acceptance fails. Authentic >2M character book was parser-only, 646 pages contentIncomplete."
+    },
+    {
+      "id": "advanced-math-table-ocr",
+      "status": "NOT_RUN",
+      "reason": "Existing targeted structural/PDF regressions pass; full scientific OCR and complex math/nested table domain qualification remain open."
+    },
+    {
+      "id": "cloudflare-staging",
+      "status": "BLOCKED",
+      "reason": "No authorized Cloudflare Pages account/project binding available. Managed local preview is not Cloudflare proof."
+    },
+    {
+      "id": "browser-offline-update-rollback",
+      "status": "BLOCKED",
+      "reason": "Offline preparation in preview reports service worker not active. Actual HTTPS offline/update/rollback not qualified."
+    },
+    {
+      "id": "physical-device",
+      "status": "BLOCKED",
+      "reason": "No physical 8GB laptop, OS process-kill/sleep-wake operator access."
+    },
+    {
+      "id": "independent-review",
+      "status": "BLOCKED",
+      "reason": "No two independent bilingual/domain reviewers or adjudicator available."
+    }
+  ],
+  "build": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  }
+}

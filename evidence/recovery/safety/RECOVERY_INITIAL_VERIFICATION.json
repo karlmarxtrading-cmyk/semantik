@@ -1,0 +1,188 @@
+{
+  "status": "VERIFIED_RECOVERY_FROM_PERSISTED_CP20",
+  "oldTemporaryWorkspaceAvailable": false,
+  "oldProcessesAvailable": false,
+  "unpackagedOldChangesRecoverable": false,
+  "lastSavedBuild": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "verifiedSourceFiles": 14598,
+  "archives": [
+    {
+      "filename": "SEMANTIK_SETARA_CP20_SOURCE_AND_QA_CHECKPOINT_NOT_PRODUCTION_READY.zip",
+      "bytes": 266005447,
+      "sha256": "72046ee4b3dc94c7d2b37830e7860cc8f73c894190b4822654e5be6cac1e387f",
+      "entries": 14600,
+      "crc": "PASS"
+    },
+    {
+      "filename": "SEMANTIK_SETARA_CP20_BUKTI_DAN_HASIL_CHECKPOINT_NOT_PRODUCTION_READY.zip",
+      "bytes": 25754586,
+      "sha256": "d93f6e009238292bef955541b4e04434e05ab80b098f44d7f2d44812e8b2a021",
+      "entries": 13349,
+      "crc": "PASS"
+    },
+    {
+      "filename": "SEMANTIK_SETARA_CP20_PDF_TRANSLATOR_DEPLOY_CHECKPOINT_NOT_PRODUCTION_READY.zip",
+      "bytes": 446615504,
+      "sha256": "7f2fbbed3d2da07548b460eaa842849a634dbea4e1bb9731ef7bb8637b0063a9",
+      "entries": 598,
+      "crc": "PASS",
+      "allManifestBytes": "PASS"
+    }
+  ],
+  "credentialScan": {
+    "status": "PASS",
+    "method": "credential filenames and high-confidence private-key/cloud-token signatures; no live credential values emitted"
+  },
+  "missing": [
+    "Prior transient node_modules, local browser IndexedDB/profile, running processes and any changes never saved to persistent artifacts"
+  ],
+  "sourcePreservedAt": "recovery/baseline/cp20",
+  "importantArtifacts": [
+    {
+      "path": "evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+      "bytes": 1008350,
+      "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313"
+    },
+    {
+      "path": "evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-RESULTS.json",
+      "bytes": 31281,
+      "sha256": "7f6617c3be5b04ff45efce9af16e167f86e7e8d140b9b7cafbc549c12b9dd970"
+    },
+    {
+      "path": "evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-OUTCOME_BREAKDOWN.json",
+      "bytes": 7095,
+      "sha256": "b77db501462cd609ce0869909c3892fbc2d22f4bee5189dfd7c576ec323485e1"
+    },
+    {
+      "path": "evidence/cp20/qa/real-inference-final-1668/LONG_OUTPUT_AI_REVIEW.md",
+      "bytes": 7159,
+      "sha256": "3f5262023e5214ed2631ca4248e979b9cc58406f8d851a5d7c7cef970ab4fe23"
+    },
+    {
+      "path": "evidence/cp20/semantics/V4_FRESH_ACCEPTANCE.json",
+      "bytes": 28171,
+      "sha256": "200f0868ae6cfa54d596b4c91f91fd296dc796f46c9aa0a57b1a8fef32741355"
+    },
+    {
+      "path": "evidence/cp20/semantics/V4_SEMANTIC_REVIEW_AI.json",
+      "bytes": 14166,
+      "sha256": "713e5615d6e7b0608868e97b07097536d7af61e1980f807ef0b0e38b738705c7"
+    },
+    {
+      "path": "evidence/cp20/semantics/V4_SEMANTIC_REVIEW.md",
+      "bytes": 3804,
+      "sha256": "2bf5985beb59d589d6dfa83edab2bb2add2464a7fb0eca98de54e4e2bdc66fc4"
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.md",
+      "bytes": 1008613,
+      "sha256": "0987a042d914584c3afd84938506ae0c0c4c56eebc9094d4c2c9fac78f8fa7f0"
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_COMPLETE.json",
+      "bytes": 187850,
+      "sha256": "68cbb11453865cd10457d61359227e72e337427ec9c1b07fa95ca9dd3b6d710e"
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/LIFECYCLE_OBSERVATIONS.json",
+      "bytes": 2850,
+      "sha256": "19c354a9b65c3db99d4f4a313366d86f66f754bfb89d609a40760e23048e0445"
+    },
+    {
+      "path": "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json",
+      "bytes": 12862,
+      "sha256": "764b09890a10c065e7cfd3b776a9c569a1df16ed1d9b1862d970a49aade8e976"
+    },
+    {
+      "path": "evidence/cp20/browser/LONG_RUN_SUMMARY.json",
+      "bytes": 4395,
+      "sha256": "42ec56ab2fc9a48b6187d78555a6ebc12fad1f659a9cfc0d1c52a39abd7c9646"
+    },
+    {
+      "path": "evidence/cp20/qa/regressions-8c-final/RESULTS.json",
+      "bytes": 25162,
+      "sha256": "8dcefd9005099d21b36a5004a3e16df884e2a46d182336374eb43ef64cce3589"
+    },
+    {
+      "path": "RELEASE_ACCEPTANCE_CP20.md",
+      "bytes": 9426,
+      "sha256": "1b2e486d412e426342bc8fb81d4ba70287ce660cdd5fe84ed7fe007f29e7dd80"
+    },
+    {
+      "path": "RELEASE_ACCEPTANCE_CP20.json",
+      "bytes": 32631,
+      "sha256": "f6c8ed6efe34c366fa61782b44b5de0ed99991382ac9e7e8f566127e166d38d6"
+    },
+    {
+      "path": "AUDIT_CLOSURE_CP20.md",
+      "bytes": 32562,
+      "sha256": "8f4ebe52ef2d376b928b22f43d8093843b8549b90fd662b9308ec6749c992f49"
+    },
+    {
+      "path": "AUDIT_CLOSURE_CP20.json",
+      "bytes": 45360,
+      "sha256": "534e07b3de6e09f3d9b1c6020c27fa81e373347fc10b9ede1eee45b069d54ec0"
+    },
+    {
+      "path": "VERIFICATION_REMAINING_CP20.md",
+      "bytes": 19933,
+      "sha256": "da14dc35ef912b8b0a8614210ba4d01abfd49d38a573fa5f42dbe7bc75dcb92f"
+    },
+    {
+      "path": "RECOVERY_CONTINUATION.md",
+      "bytes": 1176,
+      "sha256": "1a7d24145970a99519d9f296968179c0f795347e6da2c676c34adc1d579a8a78"
+    },
+    {
+      "path": "evidence/build/BUILD_MANIFEST.json",
+      "bytes": 113426,
+      "sha256": "4a1b583ad14ae74f0d410031303ce4ac574fe79e15fffededc18d04e56aa7301"
+    }
+  ],
+  "sourceChangesVsCP19": [
+    {
+      "path": "app/app/main.js",
+      "currentSha256": "369db8e7cdd39c327f64b76a8e263eaa2e3a06c8b5474f72b40202b091033a12",
+      "cp19Sha256": "b9b2a8207901c42ed25e5e9aa165f5b31da5c003fa5040dfcc371bfdbf4a7d59",
+      "different": true
+    },
+    {
+      "path": "app/app/translation.js",
+      "currentSha256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+      "cp19Sha256": "249de1e074df4ba29d4906261d8e29d29da8cd4f7e1a65bc2b60f1aaa1c8dabf",
+      "different": true
+    },
+    {
+      "path": "app/app/export.js",
+      "currentSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+      "cp19Sha256": "4ca66a9bc8c64b2cb4b370c4f6a31b05c348022398f3ef102fd9379ef5644ce1",
+      "different": true
+    },
+    {
+      "path": "app/app/storage.js",
+      "currentSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+      "cp19Sha256": "5158b6d90a565a1abed18d9165d522e25988303585fc0e45dbadb99d92adf5a4",
+      "different": true
+    },
+    {
+      "path": "app/app/layout.js",
+      "currentSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+      "cp19Sha256": "49f774cfadd4703364c5917f1a305b684f21a57be254922be8cefbd44b9ac4e4",
+      "different": true
+    }
+  ],
+  "checkpointCreatedAtUTC": "2026-11-13T09:36:32.409717+00:00",
+  "userFacingDate": "13 November 2026 (Asia/Bangkok)",
+  "browser1500DownloadRecovered": true,
+  "node1500MarkdownRecovered": true,
+  "productionReady": false
+}

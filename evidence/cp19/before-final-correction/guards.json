@@ -1,0 +1,135 @@
+{
+  "method": "Validator mutations and faithful bilingual controls; explicitly stubbed retry test; NOT real inference",
+  "rows": [
+    {
+      "id": "old-unit-prefix-control",
+      "pass": true
+    },
+    {
+      "id": "old-ion-charge-control",
+      "pass": true
+    },
+    {
+      "id": "old-empty-set-control",
+      "pass": true
+    },
+    {
+      "id": "old-group-values-control",
+      "pass": true
+    },
+    {
+      "id": "prime-corruption-actual-replay",
+      "pass": true
+    },
+    {
+      "id": "microliter-nanoliter",
+      "pass": true
+    },
+    {
+      "id": "electron-volts",
+      "pass": true
+    },
+    {
+      "id": "dose-units",
+      "pass": true
+    },
+    {
+      "id": "combining-math-accent",
+      "pass": true
+    },
+    {
+      "id": "non-group-value-association",
+      "pass": true
+    },
+    {
+      "id": "one-group-claim-reversal",
+      "pass": true
+    },
+    {
+      "id": "both-second-actual-replay",
+      "pass": true
+    },
+    {
+      "id": "preserve:f′(x)",
+      "pass": true
+    },
+    {
+      "id": "preserve:g″(t)",
+      "pass": true
+    },
+    {
+      "id": "preserve:h''(y)",
+      "pass": true
+    },
+    {
+      "id": "preserve:f̂(x)",
+      "pass": true
+    },
+    {
+      "id": "preserve:z̄",
+      "pass": true
+    },
+    {
+      "id": "preserve:10 μL",
+      "pass": true
+    },
+    {
+      "id": "preserve:2 nL",
+      "pass": true
+    },
+    {
+      "id": "preserve:9 eV",
+      "pass": true
+    },
+    {
+      "id": "preserve:4 Gy",
+      "pass": true
+    },
+    {
+      "id": "preserve:5 mSv",
+      "pass": true
+    },
+    {
+      "id": "valid:Treatment A was given 10 mg and treatment B was given 20 mg.",
+      "pass": true
+    },
+    {
+      "id": "valid:The systolic and diastolic pressures were 120 and 80 mmHg, respectively.",
+      "pass": true
+    },
+    {
+      "id": "valid:Treatment A reduced mortality by 10%.",
+      "pass": true
+    },
+    {
+      "id": "valid:Tidak ada bilangan riil yang memenuhi kedua syarat.",
+      "pass": true
+    },
+    {
+      "id": "valid:The trial failed to demonstrate non-inferiority.",
+      "pass": true
+    },
+    {
+      "id": "valid:The derivative is f′(x)=2x.",
+      "pass": true
+    },
+    {
+      "id": "valid:The dose was 10 μL and the energy was 10 eV.",
+      "pass": true
+    },
+    {
+      "id": "valid:The sample mean is z̄.",
+      "pass": true
+    },
+    {
+      "id": "bounded alternate drops terminology masks but retains literal masks",
+      "pass": true
+    },
+    {
+      "id": "repeated identical successful sentences reuse result instead of false rejection",
+      "pass": true
+    }
+  ],
+  "pass": 32,
+  "fail": 0
+}

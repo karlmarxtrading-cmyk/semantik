@@ -1,0 +1,1061 @@
+{
+  "rows": [
+    {
+      "fixture": "capacity-1001-en.pdf",
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "build": {
+        "release": "cp20-4694bad623ed9b19",
+        "version": "0.20.0",
+        "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/4694bad623ed9b19/"
+      },
+      "identity": {
+        "main.js": "4165fcb374f254bd53aa4900cda0938bdd219b32bc572155d348e927d067d345",
+        "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+        "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+        "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+        "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+        "translation.js": "4ec08bdc60c5d8be785d2c9201aff2512622c4f87b117f465b7573428ff13129",
+        "claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+        "semantic-spans.js": "29f26deea056f2b98d6fdc6bedd4a2975fc626fd2a1bf128d195901e8b948211",
+        "export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+      },
+      "ruleset": "cp20-context-terminology-meaning-guards-v3-identifiers",
+      "status": "FAIL",
+      "scope": "Actual final-build reader + local model + page pipeline + fake-indexeddb + Markdown saved by Node. Not browser download or reviewed semantic quality.",
+      "counts": {
+        "total": 3003,
+        "translated": 2803,
+        "preserved": 0,
+        "rejected": 200,
+        "failed": 0,
+        "pending": 0,
+        "review": 200,
+        "done": 2803,
+        "attempted": 3003
+      },
+      "pages": 1001,
+      "totalPages": 1001,
+      "sourceCharacters": 231077,
+      "coverage": {
+        "source": 5005,
+        "covered": 5005
+      },
+      "pipelineMetrics": {
+        "inferenceCalls": 4705,
+        "cacheHits": 0,
+        "uniqueInputs": 4705,
+        "inputTokens": 57256,
+        "outputTokens": 45042,
+        "extractionMs": 78267.37118200073,
+        "inferenceMs": 1115700.2788940007,
+        "commitMs": 10761.065134997247,
+        "totalRunMs": 1211841.979311
+      },
+      "measurements": {
+        "modelPrepareMs": 5092.116947,
+        "engineRequests": 4705,
+        "engineSucceeded": 4705,
+        "engineFailed": 0,
+        "engineMs": 1109225.7154439997,
+        "rawBlockCalls": 3003,
+        "maskedRepeatedRequests": 3685,
+        "uniqueRawBlockInputs": 3003,
+        "uniqueMaskedModelInputs": 1020,
+        "maxActivePages": 1,
+        "maxActiveBlocks": 3
+      },
+      "elapsedMs": 1214023.879701,
+      "sampledPeakNodeProcessBytes": {
+        "rss": 1306447872,
+        "heapUsed": 149113160,
+        "external": 11460070,
+        "arrayBuffers": 5709601
+      },
+      "memoryLimit": "250ms samples; Node process (worker_threads share process RSS), native canvas and WASM within that process where OS accounts them. fake-indexeddb retains all records in RAM; this is not browser RAM or bounded browser persistence. No physical device qualification.",
+      "samples": [
+        {
+          "page": 1,
+          "elapsedMs": 6751.840637,
+          "rss": 1201639424,
+          "heapTotal": 54906880,
+          "heapUsed": 19077880,
+          "external": 9988133,
+          "arrayBuffers": 2913591,
+          "counts": {
+            "total": 3,
+            "translated": 3,
+            "preserved": 0,
+            "rejected": 0,
+            "failed": 0,
+            "pending": 0,
+            "review": 0,
+            "done": 3,
+            "attempted": 3
+          }
+        },
+        {
+          "page": 25,
+          "elapsedMs": 39673.154866,
+          "rss": 1100664832,
+          "heapTotal": 58839040,
+          "heapUsed": 26546600,
+          "external": 9337621,
+          "arrayBuffers": 3582927,
+          "counts": {
+            "total": 75,
+            "translated": 71,
+            "preserved": 0,
+            "rejected": 4,
+            "failed": 0,
+            "pending": 0,
+            "review": 4,
+            "done": 71,
+            "attempted": 75
+          }
+        },
+        {
+          "page": 50,
+          "elapsedMs": 66570.76256,
+          "rss": 1104457728,
+          "heapTotal": 61722624,
+          "heapUsed": 26482016,
+          "external": 8739082,
+          "arrayBuffers": 2988613,
+          "counts": {
+            "total": 150,
+            "translated": 140,
+            "preserved": 0,
+            "rejected": 10,
+            "failed": 0,
+            "pending": 0,
+            "review": 10,
+            "done": 140,
+            "attempted": 150
+          }
+        },
+        {
+          "page": 75,
+          "elapsedMs": 95528.018955,
+          "rss": 1114492928,
+          "heapTotal": 64081920,
+          "heapUsed": 35645872,
+          "external": 8944754,
+          "arrayBuffers": 3194285,
+          "counts": {
+            "total": 225,
+            "translated": 211,
+            "preserved": 0,
+            "rejected": 14,
+            "failed": 0,
+            "pending": 0,
+            "review": 14,
+            "done": 211,
+            "attempted": 225
+          }
+        },
+        {
+          "page": 100,
+          "elapsedMs": 121564.257589,
+          "rss": 1129865216,
+          "heapTotal": 100257792,
+          "heapUsed": 39842280,
+          "external": 9082226,
+          "arrayBuffers": 3331757,
+          "counts": {
+            "total": 300,
+            "translated": 280,
+            "preserved": 0,
+            "rejected": 20,
+            "failed": 0,
+            "pending": 0,
+            "review": 20,
+            "done": 280,
+            "attempted": 300
+          }
+        },
+        {
+          "page": 125,
+          "elapsedMs": 148591.128211,
+          "rss": 1137815552,
+          "heapTotal": 102354944,
+          "heapUsed": 43537752,
+          "external": 9082572,
+          "arrayBuffers": 3332103,
+          "counts": {
+            "total": 375,
+            "translated": 351,
+            "preserved": 0,
+            "rejected": 24,
+            "failed": 0,
+            "pending": 0,
+            "review": 24,
+            "done": 351,
+            "attempted": 375
+          }
+        },
+        {
+          "page": 150,
+          "elapsedMs": 174199.160922,
+          "rss": 1153060864,
+          "heapTotal": 103927808,
+          "heapUsed": 50399360,
+          "external": 9288040,
+          "arrayBuffers": 3537571,
+          "counts": {
+            "total": 450,
+            "translated": 420,
+            "preserved": 0,
+            "rejected": 30,
+            "failed": 0,
+            "pending": 0,
+            "review": 30,
+            "done": 420,
+            "attempted": 450
+          }
+        },
+        {
+          "page": 175,
+          "elapsedMs": 201001.434904,
+          "rss": 1157079040,
+          "heapTotal": 106549248,
+          "heapUsed": 59188392,
+          "external": 9561316,
+          "arrayBuffers": 3810847,
+          "counts": {
+            "total": 525,
+            "translated": 491,
+            "preserved": 0,
+            "rejected": 34,
+            "failed": 0,
+            "pending": 0,
+            "review": 34,
+            "done": 491,
+            "attempted": 525
+          }
+        },
+        {
+          "page": 200,
+          "elapsedMs": 228252.409089,
+          "rss": 1159520256,
+          "heapTotal": 109170688,
+          "heapUsed": 46599736,
+          "external": 8944754,
+          "arrayBuffers": 3194285,
+          "counts": {
+            "total": 600,
+            "translated": 560,
+            "preserved": 0,
+            "rejected": 40,
+            "failed": 0,
+            "pending": 0,
+            "review": 40,
+            "done": 560,
+            "attempted": 600
+          }
+        },
+        {
+          "page": 225,
+          "elapsedMs": 254801.234132,
+          "rss": 1160564736,
+          "heapTotal": 110219264,
+          "heapUsed": 57982416,
+          "external": 10272076,
+          "arrayBuffers": 4521607,
+          "counts": {
+            "total": 675,
+            "translated": 631,
+            "preserved": 0,
+            "rejected": 44,
+            "failed": 0,
+            "pending": 0,
+            "review": 44,
+            "done": 631,
+            "attempted": 675
+          }
+        },
+        {
+          "page": 250,
+          "elapsedMs": 281071.351761,
+          "rss": 1164840960,
+          "heapTotal": 113889280,
+          "heapUsed": 51316912,
+          "external": 9011488,
+          "arrayBuffers": 3261019,
+          "counts": {
+            "total": 750,
+            "translated": 700,
+            "preserved": 0,
+            "rejected": 50,
+            "failed": 0,
+            "pending": 0,
+            "review": 50,
+            "done": 700,
+            "attempted": 750
+          }
+        },
+        {
+          "page": 275,
+          "elapsedMs": 308034.000588,
+          "rss": 1165508608,
+          "heapTotal": 115200000,
+          "heapUsed": 68076496,
+          "external": 9494582,
+          "arrayBuffers": 3744113,
+          "counts": {
+            "total": 825,
+            "translated": 771,
+            "preserved": 0,
+            "rejected": 54,
+            "failed": 0,
+            "pending": 0,
+            "review": 54,
+            "done": 771,
+            "attempted": 825
+          }
+        },
+        {
+          "page": 300,
+          "elapsedMs": 334781.7388,
+          "rss": 1195454464,
+          "heapTotal": 117821440,
+          "heapUsed": 70139104,
+          "external": 9561597,
+          "arrayBuffers": 3811128,
+          "counts": {
+            "total": 900,
+            "translated": 840,
+            "preserved": 0,
+            "rejected": 60,
+            "failed": 0,
+            "pending": 0,
+            "review": 60,
+            "done": 840,
+            "attempted": 900
+          }
+        },
+        {
+          "page": 325,
+          "elapsedMs": 362124.172219,
+          "rss": 1199349760,
+          "heapTotal": 120442880,
+          "heapUsed": 69812776,
+          "external": 9425066,
+          "arrayBuffers": 3674597,
+          "counts": {
+            "total": 975,
+            "translated": 911,
+            "preserved": 0,
+            "rejected": 64,
+            "failed": 0,
+            "pending": 0,
+            "review": 64,
+            "done": 911,
+            "attempted": 975
+          }
+        },
+        {
+          "page": 350,
+          "elapsedMs": 387604.063302,
+          "rss": 1230991360,
+          "heapTotal": 189386752,
+          "heapUsed": 71498280,
+          "external": 9425388,
+          "arrayBuffers": 3674919,
+          "counts": {
+            "total": 1050,
+            "translated": 980,
+            "preserved": 0,
+            "rejected": 70,
+            "failed": 0,
+            "pending": 0,
+            "review": 70,
+            "done": 980,
+            "attempted": 1050
+          }
+        },
+        {
+          "page": 375,
+          "elapsedMs": 415191.069808,
+          "rss": 1235955712,
+          "heapTotal": 191746048,
+          "heapUsed": 71381568,
+          "external": 9287740,
+          "arrayBuffers": 3537271,
+          "counts": {
+            "total": 1125,
+            "translated": 1051,
+            "preserved": 0,
+            "rejected": 74,
+            "failed": 0,
+            "pending": 0,
+            "review": 74,
+            "done": 1051,
+            "attempted": 1125
+          }
+        },
+        {
+          "page": 400,
+          "elapsedMs": 444214.261035,
+          "rss": 1247723520,
+          "heapTotal": 194367488,
+          "heapUsed": 64754200,
+          "external": 9010290,
+          "arrayBuffers": 3259821,
+          "counts": {
+            "total": 1200,
+            "translated": 1120,
+            "preserved": 0,
+            "rejected": 80,
+            "failed": 0,
+            "pending": 0,
+            "review": 80,
+            "done": 1120,
+            "attempted": 1200
+          }
+        },
+        {
+          "page": 425,
+          "elapsedMs": 471776.152351,
+          "rss": 1249619968,
+          "heapTotal": 195416064,
+          "heapUsed": 102921744,
+          "external": 10453232,
+          "arrayBuffers": 4702763,
+          "counts": {
+            "total": 1275,
+            "translated": 1191,
+            "preserved": 0,
+            "rejected": 84,
+            "failed": 0,
+            "pending": 0,
+            "review": 84,
+            "done": 1191,
+            "attempted": 1275
+          }
+        },
+        {
+          "page": 450,
+          "elapsedMs": 497553.89064,
+          "rss": 1260797952,
+          "heapTotal": 197775360,
+          "heapUsed": 91064936,
+          "external": 9903404,
+          "arrayBuffers": 4152935,
+          "counts": {
+            "total": 1350,
+            "translated": 1260,
+            "preserved": 0,
+            "rejected": 90,
+            "failed": 0,
+            "pending": 0,
+            "review": 90,
+            "done": 1260,
+            "attempted": 1350
+          }
+        },
+        {
+          "page": 475,
+          "elapsedMs": 526351.516896,
+          "rss": 1262895104,
+          "heapTotal": 199872512,
+          "heapUsed": 110588928,
+          "external": 10589370,
+          "arrayBuffers": 4838901,
+          "counts": {
+            "total": 1425,
+            "translated": 1331,
+            "preserved": 0,
+            "rejected": 94,
+            "failed": 0,
+            "pending": 0,
+            "review": 94,
+            "done": 1331,
+            "attempted": 1425
+          }
+        },
+        {
+          "page": 500,
+          "elapsedMs": 552591.885947,
+          "rss": 1267507200,
+          "heapTotal": 203280384,
+          "heapUsed": 70840920,
+          "external": 8810242,
+          "arrayBuffers": 3059773,
+          "counts": {
+            "total": 1500,
+            "translated": 1400,
+            "preserved": 0,
+            "rejected": 100,
+            "failed": 0,
+            "pending": 0,
+            "review": 100,
+            "done": 1400,
+            "attempted": 1500
+          }
+        },
+        {
+          "page": 525,
+          "elapsedMs": 580172.5872180001,
+          "rss": 1268801536,
+          "heapTotal": 205377536,
+          "heapUsed": 93071432,
+          "external": 9630882,
+          "arrayBuffers": 3880413,
+          "counts": {
+            "total": 1575,
+            "translated": 1471,
+            "preserved": 0,
+            "rejected": 104,
+            "failed": 0,
+            "pending": 0,
+            "review": 104,
+            "done": 1471,
+            "attempted": 1575
+          }
+        },
+        {
+          "page": 550,
+          "elapsedMs": 607270.2151510001,
+          "rss": 1271746560,
+          "heapTotal": 207998976,
+          "heapUsed": 80994640,
+          "external": 9081054,
+          "arrayBuffers": 3330585,
+          "counts": {
+            "total": 1650,
+            "translated": 1540,
+            "preserved": 0,
+            "rejected": 110,
+            "failed": 0,
+            "pending": 0,
+            "review": 110,
+            "done": 1540,
+            "attempted": 1650
+          }
+        },
+        {
+          "page": 575,
+          "elapsedMs": 634945.214608,
+          "rss": 1274245120,
+          "heapTotal": 210096128,
+          "heapUsed": 100217088,
+          "external": 9767140,
+          "arrayBuffers": 4016671,
+          "counts": {
+            "total": 1725,
+            "translated": 1611,
+            "preserved": 0,
+            "rejected": 114,
+            "failed": 0,
+            "pending": 0,
+            "review": 114,
+            "done": 1611,
+            "attempted": 1725
+          }
+        },
+        {
+          "page": 600,
+          "elapsedMs": 663003.924673,
+          "rss": 1276432384,
+          "heapTotal": 211668992,
+          "heapUsed": 118245104,
+          "external": 10453532,
+          "arrayBuffers": 4703063,
+          "counts": {
+            "total": 1800,
+            "translated": 1680,
+            "preserved": 0,
+            "rejected": 120,
+            "failed": 0,
+            "pending": 0,
+            "review": 120,
+            "done": 1680,
+            "attempted": 1800
+          }
+        },
+        {
+          "page": 625,
+          "elapsedMs": 691339.39051,
+          "rss": 1279729664,
+          "heapTotal": 214814720,
+          "heapUsed": 93934320,
+          "external": 9353276,
+          "arrayBuffers": 3602807,
+          "counts": {
+            "total": 1875,
+            "translated": 1751,
+            "preserved": 0,
+            "rejected": 124,
+            "failed": 0,
+            "pending": 0,
+            "review": 124,
+            "done": 1751,
+            "attempted": 1875
+          }
+        },
+        {
+          "page": 650,
+          "elapsedMs": 718277.707346,
+          "rss": 1284292608,
+          "heapTotal": 216911872,
+          "heapUsed": 94417584,
+          "external": 9287800,
+          "arrayBuffers": 3537331,
+          "counts": {
+            "total": 1950,
+            "translated": 1820,
+            "preserved": 0,
+            "rejected": 130,
+            "failed": 0,
+            "pending": 0,
+            "review": 130,
+            "done": 1820,
+            "attempted": 1950
+          }
+        },
+        {
+          "page": 675,
+          "elapsedMs": 750198.5148860001,
+          "rss": 1286635520,
+          "heapTotal": 219533312,
+          "heapUsed": 97168352,
+          "external": 9287500,
+          "arrayBuffers": 3537031,
+          "counts": {
+            "total": 2025,
+            "translated": 1891,
+            "preserved": 0,
+            "rejected": 134,
+            "failed": 0,
+            "pending": 0,
+            "review": 134,
+            "done": 1891,
+            "attempted": 2025
+          }
+        },
+        {
+          "page": 700,
+          "elapsedMs": 777496.334256,
+          "rss": 1288871936,
+          "heapTotal": 221106176,
+          "heapUsed": 100037896,
+          "external": 9353576,
+          "arrayBuffers": 3603107,
+          "counts": {
+            "total": 2100,
+            "translated": 1960,
+            "preserved": 0,
+            "rejected": 140,
+            "failed": 0,
+            "pending": 0,
+            "review": 140,
+            "done": 1960,
+            "attempted": 2100
+          }
+        },
+        {
+          "page": 725,
+          "elapsedMs": 806642.555421,
+          "rss": 1290166272,
+          "heapTotal": 222679040,
+          "heapUsed": 118671072,
+          "external": 9973790,
+          "arrayBuffers": 4223321,
+          "counts": {
+            "total": 2175,
+            "translated": 2031,
+            "preserved": 0,
+            "rejected": 144,
+            "failed": 0,
+            "pending": 0,
+            "review": 144,
+            "done": 2031,
+            "attempted": 2175
+          }
+        },
+        {
+          "page": 750,
+          "elapsedMs": 834973.8351230001,
+          "rss": 1292152832,
+          "heapTotal": 225038336,
+          "heapUsed": 131669760,
+          "external": 10454707,
+          "arrayBuffers": 4704238,
+          "counts": {
+            "total": 2250,
+            "translated": 2100,
+            "preserved": 0,
+            "rejected": 150,
+            "failed": 0,
+            "pending": 0,
+            "review": 150,
+            "done": 2100,
+            "attempted": 2250
+          }
+        },
+        {
+          "page": 775,
+          "elapsedMs": 863171.0759950001,
+          "rss": 1295073280,
+          "heapTotal": 227921920,
+          "heapUsed": 107417424,
+          "external": 9354447,
+          "arrayBuffers": 3603978,
+          "counts": {
+            "total": 2325,
+            "translated": 2171,
+            "preserved": 0,
+            "rejected": 154,
+            "failed": 0,
+            "pending": 0,
+            "review": 154,
+            "done": 2171,
+            "attempted": 2325
+          }
+        },
+        {
+          "page": 800,
+          "elapsedMs": 889946.107234,
+          "rss": 1296646144,
+          "heapTotal": 229756928,
+          "heapUsed": 109025672,
+          "external": 9288040,
+          "arrayBuffers": 3537571,
+          "counts": {
+            "total": 2400,
+            "translated": 2240,
+            "preserved": 0,
+            "rejected": 160,
+            "failed": 0,
+            "pending": 0,
+            "review": 160,
+            "done": 2240,
+            "attempted": 2400
+          }
+        },
+        {
+          "page": 825,
+          "elapsedMs": 924027.340345,
+          "rss": 1298165760,
+          "heapTotal": 231067648,
+          "heapUsed": 98678136,
+          "external": 10841180,
+          "arrayBuffers": 5090711,
+          "counts": {
+            "total": 2475,
+            "translated": 2311,
+            "preserved": 0,
+            "rejected": 164,
+            "failed": 0,
+            "pending": 0,
+            "review": 164,
+            "done": 2311,
+            "attempted": 2475
+          }
+        },
+        {
+          "page": 850,
+          "elapsedMs": 972180.246394,
+          "rss": 1295241216,
+          "heapTotal": 120705024,
+          "heapUsed": 101067272,
+          "external": 9136386,
+          "arrayBuffers": 3385917,
+          "counts": {
+            "total": 2550,
+            "translated": 2380,
+            "preserved": 0,
+            "rejected": 170,
+            "failed": 0,
+            "pending": 0,
+            "review": 170,
+            "done": 2380,
+            "attempted": 2550
+          }
+        },
+        {
+          "page": 875,
+          "elapsedMs": 1026107.682212,
+          "rss": 1275678720,
+          "heapTotal": 111267840,
+          "heapUsed": 100324904,
+          "external": 8809724,
+          "arrayBuffers": 3054309,
+          "counts": {
+            "total": 2625,
+            "translated": 2451,
+            "preserved": 0,
+            "rejected": 174,
+            "failed": 0,
+            "pending": 0,
+            "review": 174,
+            "done": 2451,
+            "attempted": 2625
+          }
+        },
+        {
+          "page": 900,
+          "elapsedMs": 1073227.661448,
+          "rss": 1214623744,
+          "heapTotal": 109694976,
+          "heapUsed": 101923360,
+          "external": 8737672,
+          "arrayBuffers": 2987203,
+          "counts": {
+            "total": 2700,
+            "translated": 2520,
+            "preserved": 0,
+            "rejected": 180,
+            "failed": 0,
+            "pending": 0,
+            "review": 180,
+            "done": 2520,
+            "attempted": 2700
+          }
+        },
+        {
+          "page": 925,
+          "elapsedMs": 1117943.936338,
+          "rss": 1205817344,
+          "heapTotal": 115462144,
+          "heapUsed": 104699352,
+          "external": 9328456,
+          "arrayBuffers": 3577987,
+          "counts": {
+            "total": 2775,
+            "translated": 2591,
+            "preserved": 0,
+            "rejected": 184,
+            "failed": 0,
+            "pending": 0,
+            "review": 184,
+            "done": 2591,
+            "attempted": 2775
+          }
+        },
+        {
+          "page": 950,
+          "elapsedMs": 1149035.7789389999,
+          "rss": 1186365440,
+          "heapTotal": 126734336,
+          "heapUsed": 107494536,
+          "external": 9930278,
+          "arrayBuffers": 4169863,
+          "counts": {
+            "total": 2850,
+            "translated": 2660,
+            "preserved": 0,
+            "rejected": 190,
+            "failed": 0,
+            "pending": 0,
+            "review": 190,
+            "done": 2660,
+            "attempted": 2850
+          }
+        },
+        {
+          "page": 975,
+          "elapsedMs": 1182289.57931,
+          "rss": 1186131968,
+          "heapTotal": 145608704,
+          "heapUsed": 111748744,
+          "external": 8808298,
+          "arrayBuffers": 3057829,
+          "counts": {
+            "total": 2925,
+            "translated": 2731,
+            "preserved": 0,
+            "rejected": 194,
+            "failed": 0,
+            "pending": 0,
+            "review": 194,
+            "done": 2731,
+            "attempted": 2925
+          }
+        },
+        {
+          "page": 1000,
+          "elapsedMs": 1210846.366642,
+          "rss": 1189556224,
+          "heapTotal": 147181568,
+          "heapUsed": 118329504,
+          "external": 9010290,
+          "arrayBuffers": 3259821,
+          "counts": {
+            "total": 3000,
+            "translated": 2800,
+            "preserved": 0,
+            "rejected": 200,
+            "failed": 0,
+            "pending": 0,
+            "review": 200,
+            "done": 2800,
+            "attempted": 3000
+          }
+        },
+        {
+          "page": 1001,
+          "elapsedMs": 1211999.093105,
+          "rss": 1189470208,
+          "heapTotal": 147181568,
+          "heapUsed": 121144312,
+          "external": 9080958,
+          "arrayBuffers": 3330489,
+          "counts": {
+            "total": 3003,
+            "translated": 2803,
+            "preserved": 0,
+            "rejected": 200,
+            "failed": 0,
+            "pending": 0,
+            "review": 200,
+            "done": 2803,
+            "attempted": 3003
+          }
+        }
+      ],
+      "export": {
+        "file": "capacity-1001-en-NODE_PARTIAL_TRANSLATION.md",
+        "bytes": 458521,
+        "sha256": "8a3bf5b2131c3000150388b526b9b898e5d2334093b096fa37f8084c0c131ae7",
+        "stats": {
+          "pages": 1001,
+          "blocks": 3003,
+          "counts": {
+            "total": 3003,
+            "translated": 2803,
+            "preserved": 0,
+            "rejected": 200,
+            "failed": 0,
+            "pending": 0
+          },
+          "uniqueAssets": 0,
+          "assetReferences": 0,
+          "bytes": 458521,
+          "sink": "bounded-blob",
+          "maxActivePages": 1,
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "unsavedPages": [],
+          "durablePages": 1001,
+          "partial": true
+        },
+        "traceIds": 1001,
+        "ms": 2014.6987699999008
+      }
+    },
+    {
+      "fixture": "capacity-1500-id.pdf",
+      "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "build": {
+        "release": "cp20-4694bad623ed9b19",
+        "version": "0.20.0",
+        "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/4694bad623ed9b19/"
+      },
+      "identity": {
+        "main.js": "4165fcb374f254bd53aa4900cda0938bdd219b32bc572155d348e927d067d345",
+        "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+        "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+        "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+        "long-document.js": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+        "translation.js": "4ec08bdc60c5d8be785d2c9201aff2512622c4f87b117f465b7573428ff13129",
+        "claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+        "semantic-spans.js": "29f26deea056f2b98d6fdc6bedd4a2975fc626fd2a1bf128d195901e8b948211",
+        "export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+      },
+      "ruleset": "cp20-context-terminology-meaning-guards-v3-identifiers",
+      "status": "FAIL",
+      "scope": "Actual final-build reader + local model + page pipeline + fake-indexeddb + Markdown saved by Node. Not browser download or reviewed semantic quality.",
+      "error": "Error: Error: Cannot find module '/workspace/scratch/17677088ccfd/cp20/tests/cp20-semantic-temporary-worker-2.mjs'\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1564:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)\n    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)\n    at Module._load (node:internal/modules/cjs/loader:1341:5)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at MessagePort.<anonymous> (node:internal/main/worker_thread:223:26)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:869:20)\n    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)\n    at worker.onerror (file:///workspace/scratch/17677088ccfd/cp20/dist/r/4694bad623ed9b19/app/translation.js:214:68)\n    at Worker.<anonymous> (file:///workspace/scratch/17677088ccfd/cp20/tests/cp20-semantic-runtime.mjs:34:171)\n    at Worker.emit (node:events:514:28)\n    at [kOnErrorMessage] (node:internal/worker:411:10)\n    at [kOnMessage] (node:internal/worker:422:37)\n    at MessagePort.<anonymous> (node:internal/worker:298:57)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:869:20)\n    at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)",
+      "counts": {
+        "total": 3,
+        "translated": 0,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 3,
+        "review": 3,
+        "done": 0,
+        "attempted": 0
+      },
+      "pages": 1,
+      "totalPages": 1500,
+      "sourceCharacters": 214,
+      "coverage": {
+        "source": 5,
+        "covered": 5
+      },
+      "pipelineMetrics": {
+        "inferenceCalls": 0,
+        "cacheHits": 0,
+        "uniqueInputs": 0,
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "extractionMs": 100.5361349999439,
+        "inferenceMs": 0,
+        "commitMs": 3.025889999931678
+      },
+      "measurements": {
+        "modelPrepareMs": 50.492514999816194,
+        "engineRequests": 0,
+        "engineSucceeded": 0,
+        "engineFailed": 0,
+        "engineMs": 0,
+        "rawBlockCalls": 0,
+        "maskedRepeatedRequests": 0,
+        "uniqueRawBlockInputs": 0,
+        "uniqueMaskedModelInputs": 0,
+        "maxActivePages": 1,
+        "maxActiveBlocks": 3
+      },
+      "elapsedMs": 200.04655300010927,
+      "sampledPeakNodeProcessBytes": {
+        "rss": 766144512,
+        "heapUsed": 136092232,
+        "external": 12307913,
+        "arrayBuffers": 8024103
+      },
+      "memoryLimit": "250ms samples; Node process (worker_threads share process RSS), native canvas and WASM within that process where OS accounts them. fake-indexeddb retains all records in RAM; this is not browser RAM or bounded browser persistence. No physical device qualification.",
+      "samples": [],
+      "export": {
+        "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+        "bytes": 1914,
+        "sha256": "1a77d7b1cf32b335c08d2d7f9aeb2bedef1d48a6938dd9804525de9e4d783b06",
+        "stats": {
+          "pages": 1,
+          "blocks": 3,
+          "counts": {
+            "total": 3,
+            "translated": 0,
+            "preserved": 0,
+            "rejected": 0,
+            "failed": 0,
+            "pending": 3
+          },
+          "uniqueAssets": 0,
+          "assetReferences": 0,
+          "bytes": 1914,
+          "sink": "bounded-blob",
+          "maxActivePages": 1,
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "unsavedPages": [],
+          "durablePages": 1,
+          "partial": true
+        },
+        "traceIds": 1,
+        "ms": 5.751290999818593
+      }
+    }
+  ]
+}

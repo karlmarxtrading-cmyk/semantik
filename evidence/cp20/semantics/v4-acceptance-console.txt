@@ -1,0 +1,10 @@
+CP20-V4-A-01 translated Sebuah fungsi dapat diturunkan adalah kontinu pada titik yang sama. Pernyataan konvers membutuhkan kondisi tambahan; grafik tanpa celah yang terlihat bukanlah dengan sendirinya bukti bahwa turunan ada.
+CP20-V4-A-02 translated Pemanas dihentikan sebelum pelarut direbus. Peningkatan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga mentransfer energi ke larutan.
+CP20-V4-A-03 translated Sebuah rata-rata sampel dapat berbeda dari populasi berarti bahkan ketika prosedur sampling adalah tidak bias. Perbedaannya bukanlah bukti bahwa pengamatan apapun dicatat salah.
+CP20-V4-A-04 rejected When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.
+CP20-V4-A-05 translated Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi pengukuran kesalahan; itu tidak membuktikan bahwa penjelasan yang diusulkan benar.
+CP20-V4-A-06 translated Function differentiable is continuous at the same point. Statement converse requires additional requirements; graphs without gaps visible not by itself evidence that derivative exists.
+CP20-V4-A-07 translated Warming stops before the solvent boils. Recorded temperature rise cannot be linked only to catalysts, since heating also transfers energy to solution.
+CP20-V4-A-08 translated Sample mean can be different from average population although the sample unbiased fetching procedure. Such differences are not evidence that a misrecorded observation is being recorded.
+CP20-V4-A-09 translated When substitution goods go up, demand the initial product may increase. This prediction depends on both items replacing one another, not on complementing one another.
+CP20-V4-A-10 translated The lab instrument was calibrated before data collection. Calicacy reduces measurement error; calibration does not prove that the explanations posed are correct.

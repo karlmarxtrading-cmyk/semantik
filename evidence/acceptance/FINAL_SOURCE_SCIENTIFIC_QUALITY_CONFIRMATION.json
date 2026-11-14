@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-12T03:50:23.799717+00:00",
+  "status": "FAIL_OBSERVED_ON_CURRENT_SOURCE",
+  "method": "Actual local model;20 exposed real-journal negative probes (17 in acceptance runner,3 in translation runner), AI screening against exact source strings. Not a new holdout, not browser/PDF pipeline, not human approval.",
+  "currentSourceIdentities": {
+    "app/translation.js": "8a86cc242a52fe1e42a63c11fa0a2bcdce8654840194c2b932ce372efe40badc",
+    "app/semantic-spans.js": "fa0f6a6e8ab79b5f2e4e4fa7dc98394e2103f69ada9c46cbb9d9fcd3214a25bd",
+    "assets/engine.worker-4c3dcfee.js": "987ed9d5b9ea0094ca6e409ba4b7377bc2cb198c2a11d8e78ef49529b30eaf9b",
+    "models/en-id/manifest.json": "0e32638fae841b1c9b45aef8423f432bef1d7ad59c50c15621cb79d76088dfc6",
+    "models/id-en/manifest.json": "c7dfdb1d860c01ecab715c095005db995bb24e6483db3ac2d5dd73cc3d20c080"
+  },
+  "summary": {
+    "latestSourceNegativeProbes": 20,
+    "criticalMeaningDefectsStillObserved": 19,
+    "criticalCasesWithoutAutomaticWarning": 12,
+    "majorTermDefectAfterTaxonIdentityFix": 1,
+    "humanApprovals": 0
+  },
+  "fixedStructuralScope": {
+    "evidence": "evidence/translation/journal-identities-model.json",
+    "tests": 10,
+    "pass": true,
+    "scope": "Exact Roman labels, balanced function notation and context-bounded taxonomic identities; these controls do not establish whole-sentence scientific quality."
+  },
+  "scientificGate": "FAIL",
+  "humanReview": "UNREVIEWED",
+  "remainingWork": [
+    "Improve semantic equivalence and scientific terminology in the local model/pipeline, including entity identity, list completeness, comparison polarity and variable-to-claim relationships.",
+    "Evaluate fixes on a new undisclosed frozen corpus; original32 and original160 are now exposed development sets.",
+    "Two independent bilingual scientific reviewers plus adjudicator must confirm source transcription and final outputs."
+  ],
+  "inputHashes": {
+    "evidence/acceptance/FINAL_CRITICAL_DEVELOPMENT_INFERENCE.json": "31e668a876d8f722fb691a243aca6b2d00ba0b329d5d51fd31142fda4dca562a",
+    "evidence/translation/current-quality-negative-probes.json": "8dc32659012f9762f20402896b171d40f26aa69bd0dbef06d02468294ce8dd4c",
+    "evidence/translation/journal-identities-model.json": "1758719c071fe9d3b43aef63eb5e95397d4375180685ae0abc8d3630cedb179d"
+  },
+  "rows": [
+    {
+      "id": "JOURNAL-01-S12",
+      "direction": "en-id",
+      "source": "In addition to demographic questions, the Attitude Towards Mathematics Inventory-Short Form (ATMI-SF) [3], a 14-item instrument questionnaire consisting of four subscales (enjoyment, motivation, value/usefulness and self-confidence) was adapted (Appendix 2 in S1 File) to measure the relationship between students’ performance and their attitude towards learning LP word tasks.",
+      "target": "Selain pertanyaan demografis, Sikap terhadap kuesioner Mathematicatics Inventory-Short Form (ATMI-SF) [3], sebuah instrumen 14-item kuisioner instrumen yang terdiri dari empat subskala (kenikmatan, motivasi, nilai/penggunaan dan kepercayaan diri) diadaptasikan (Lampiran 2 dalam berkas S1) untuk mengukur hubungan antara siswa-siswa (V) kinerja atau sikap mereka terhadap belajar LP tugas kata.",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_RELATION",
+      "aiFinding": "Performance AND attitude becomes kinerja ATAU sikap; target also adds (V) and corrupts the instrument name.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-03-S11",
+      "direction": "en-id",
+      "source": "If a study modelled any interventions delivered to mothers, they were delivered: Antenatally During labour/birth Postnatally",
+      "target": "Jika penelitian memodelkan intervensi apapun yang disampaikan kepada ibu, mereka disampaikan: Antenatal Selama persalinan",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_OMISSION",
+      "aiFinding": "Postnatally is omitted from the antenatal/labour/postnatal intervention timing list.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-03-S17",
+      "direction": "en-id",
+      "source": "Next, considering the commonly reported outcomes of modelling analyses, this review found that studies were considerably more likely to report outcomes relating to either maternal and neonatal mortality and much less likely to predict intervention effects on morbidity or stillbirths.",
+      "target": "Selanjutnya, mengingat hasil yang umumnya dilaporkan dari analisis modeling, ulasan ini mendapati bahwa penelitian ini jauh lebih besar kemungkinannya untuk melaporkan hasil yang berkaitan dengan kematian ibu dan neonatal dan kemungkinan besar tidak akan memprediksi efek intervensi pada keadaan tidak wajar atau kelahiran kembali.",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Periksa negasi: bentuk negatif mungkin berubah."
+      ],
+      "aiFindingSeverity": "CRITICAL_TERMINOLOGY",
+      "aiFinding": "Morbidity becomes keadaan tidak wajar and stillbirths becomes kelahiran kembali (rebirth); the scientific outcomes change.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-04-S13",
+      "direction": "en-id",
+      "source": "The seasonality of minimum and maximum temperatures and rainfall in Narok was strongly persistent and deterministic.",
+      "target": "Tingkat keserasian minimum dan suhu maksimum dan curah hujan di Narok sangat gigih dan menentukan.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_TERMINOLOGY",
+      "aiFinding": "Seasonality becomes tingkat keserasian (harmony) and deterministic becomes menentukan; the reported property changes.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-04-S18",
+      "direction": "en-id",
+      "source": "Drought can reduce calving in ungulates by reducing milk availability for the young and green grass for weaning, increasing mortality of the young.",
+      "target": "Kekeringan dapat mengurangi caving dalam ungulates dengan mengurangi ketersediaan susu bagi rumput muda dan hijau untuk mesapih, meningkatkan angka kematian kaum muda.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_RELATION",
+      "aiFinding": "Milk availability for the young and green grass for weaning are conflated into milk for young and green grass; calving/weaning terms also fail.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-05-S12",
+      "direction": "id-en",
+      "source": "Perusahaan ternak babi yang berskala usaha besar seharusnya melakukan evaluasi kemampuan ternak yang dibudidayakan dengan menggunakan analisis statistika, sehingga validitas dari keputusan yang diambil tidak meragukan.",
+      "target": "The large-scale pig farm company should evaluate the capacity of cultivated cattle using statistical analysis, so the validity of the decisions taken is not questionable.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Pig-production context becomes capacity of cultivated cattle; livestock species changes.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-07-S02",
+      "direction": "id-en",
+      "source": "Namun bila dibandingkan dengan baku mutu udara ambien harian yang baru, yaitu PPRI No. 22 Tahun 2021 (PPRI No. 22, 2021) (8), sebesar 75 µg/m3, maka pada bulan kering, terdapat dua kecamatan yang melebihi baku mutu, yaitu Kecamatan Rancabolang, Mekarjaya dan Cibaduyut (6).",
+      "target": "But when compared with the new ambient air quality default, that is PPRI No. 22 Year 2021 (PPRI No. 22, 2021) (8), 75 µg/m3, then on a dry moon, there are two more than standard descriptive warnings, which are Rancabolangism, Jarical and Cidduyut (6).",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Periksa negasi: bentuk negatif mungkin berubah.",
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_ENTITY_WITH_SOURCE_LIMIT",
+      "aiFinding": "Rancabolang, Mekarjaya and Cibaduyut become Rancabolangism, Jarical and Cidduyut. The source itself says two districts then lists three; that inconsistency must not be silently corrected.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-07-S05",
+      "direction": "id-en",
+      "source": "Titik 1 berada di wilayah Kecamatan Lengkong, sedangkan titik 2 dan titik 3 berada di Kecamatan Regol dan Coblong.",
+      "target": "Dot 1 is in the Lengkong Mischief area, whereas the 2 3 dot is in the Mutiny and Coblong.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Kecamatan Lengkong becomes Lengkong Mischief and Kecamatan Regol becomes Mutiny; monitoring-location identities change.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-07-S15",
+      "direction": "id-en",
+      "source": "Pada Gambar 8 terlihat konsentrasi PM2.5 tertinggi di lokasi 1, yaitu Alun-alun dan terendah di lokasi 2, yaitu di Terminal Dago.",
+      "target": "On Image 8 is visible to concentrate PM2.5 highest at location 1, which is the lowest and the lowest square at 2 location, which is in Terminal Dago.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_RELATION",
+      "aiFinding": "Highest concentration at location1 and lowest at location2 become contradictory lowest and lowest square wording; spatial ranking is corrupted.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S02",
+      "direction": "id-en",
+      "source": "Pucangsawit sebagai salah satu kelurahan di Kecamatan Jebres Surakarta memiliki kepadatan penduduk yang tergolong tinggi.",
+      "target": "Pucangamitis as one of the faults of Jebres Surkarta has a high population density.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Pucangsawit becomes Pucangamitis; Surakarta becomes Surkarta and administrative locality becomes faults.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S03",
+      "direction": "id-en",
+      "source": "Berdasarkan data yang diperoleh dari Puskesmas Pucangsawit, mayoritas masyarakat menggunakan sumur bor sebagai sumber air untuk kebutuhan sehari-hari.",
+      "target": "Based on data obtained from Puskesmas Pucangapit, the majority of the people use drill wells as water sources for daily needs.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Puskesmas Pucangsawit becomes Puskesmas Pucangapit, changing the named data source.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S06",
+      "direction": "id-en",
+      "source": "Pucangsawit sebagai wilayah padat penduduk yang berdekatan dengan banyak sumber pencemar perlu dilaksanakan pemeriksaan cemaran mikroba pada sumber air yang digunakan.",
+      "target": "Pucancletics as densely populated areas of the population that are close to many pollutants require a check of microbes at the water source used.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Pucangsawit becomes Pucancletics, changing the study-area identity.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S09",
+      "direction": "id-en",
+      "source": "Pengujian MPN coliform dilaksanakan dengan dua tahap yaitu tahap uji pendahuluan dan uji penegasan.",
+      "target": "Test MPN collide is carried out with two stages of preliminaries and confirmation tests.",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_TERMINOLOGY",
+      "aiFinding": "Coliform becomes collide, changing the microbiological test target.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S11",
+      "direction": "id-en",
+      "source": "Hasil penelitian yang telah dilaksanakan pada 10 sampel air sumur bor di Pucangsawit, diketahui bahwa seluruh sampel menunjukkan terjadinya kontaminasi bakteri coliform.",
+      "target": "The research done on 10 drill well water samples in Pucangaptit, it is known that all samples indicate coliform bacteria contamination.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_ENTITY",
+      "aiFinding": "Pucangsawit becomes Pucangaptit, changing the study location.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S14",
+      "direction": "id-en",
+      "source": "Secara deskriptif, Tabel 1 menunjukkan bahwa semakin dalam sumur bor dibuat menunjukkan nilai MPN coliform yang semakin rendah.",
+      "target": "Descriptively, the Table 1 shows that the more in the drill well is created it shows the lower-level collioform MPN value.",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_RELATION",
+      "aiFinding": "The deeper the well relation becomes the more in the drill well, obscuring the independent variable and inverse relation.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S15",
+      "direction": "id-en",
+      "source": "Hasil Pengujian Regresi antara Jarak Sumber Pencemar dan Kedalaman Sumur dengan Nilai MPN Coliform dan Escherichia coli di Pucangsawit Tahun 2023",
+      "target": "Regression Test Respecies Between Source Distance and Perspicuous Wells by Value MPN Coliform and Escherichia Coli in Pucangatit Year 2023",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_RELATION",
+      "aiFinding": "Well depth becomes Perspicuous Wells and Pucangsawit becomes Pucangatit; study variables and location are corrupted.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-08-S17",
+      "direction": "id-en",
+      "source": "Faktor lain yang dapat mempengaruhi nilai coliform dan Escherichia coli adalah kondisi lingkungan berupa jenis tanah dan pemeabilitas tanah yang secara langsung mempengaruhi laju infiltrasi bakteri14,15.",
+      "target": "Another factor that can affect coliform and Escherichia coli values is the environmental conditions of soil and soil stability that directly affect the rate of bacterial infiltration14,15.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_TERMINOLOGY",
+      "aiFinding": "Soil permeability (source typo pemeabilitas) becomes soil stability, a different physical property.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-03-S12",
+      "direction": "en-id",
+      "source": "Study reported outcome relating to: Maternal mortality Maternal morbidity Maternal DALYs Neonatal mortality Neonatal morbidity Neonatal DALYs Stillbirths",
+      "target": "Penelitian melaporkan hasil berhubungan dengan: Penciptaan Kefanatikan Maternal yang mematikan.",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "CRITICAL_OMISSION",
+      "aiFinding": "Seven outcome categories (maternal/neonatal mortality, morbidity, DALYs and stillbirths) collapse into unrelated Penciptaan Kefanatikan Maternal yang mematikan.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-04-S16",
+      "direction": "en-id",
+      "source": "Browsers such as Grant’s gazelle (Nanger granti) and eland suffered less, as they could rely on vegetation other than grass and moved out of the Athi-Kaputiei Ecosystem [101].",
+      "target": "Para peramban seperti gazelle Grant (Nanger granti) dan eland kurang menderita, karena mereka dapat mengandalkan vegetasi selain rumput dan pindah dari Athi-Kaputiei Ekosistem [101].",
+      "outcome": "translated",
+      "status": "translated",
+      "warnings": [],
+      "aiFindingSeverity": "MAJOR_TERMINOLOGY_AFTER_IDENTITY_FIX",
+      "aiFinding": "Latin binomial Nanger granti and eland now preserved; browsers as a herbivore feeding category remains peramban (web browsers). Specific identity fix passes, full lexical meaning does not.",
+      "humanDecision": "UNREVIEWED"
+    },
+    {
+      "id": "JOURNAL-05-S14",
+      "direction": "id-en",
+      "source": "Model ini disebut Ransum biaya terendah (Least cost diet = LCD) yang dikembangkan dari model linear programming.",
+      "target": "This model is called the lowest cost rations (Most cost diet = LCD) developed from linear programming model.",
+      "outcome": "translated",
+      "status": "review",
+      "warnings": [
+        "Teks kapital belum dapat dibedakan dari singkatan; periksa istilah atau berikan glosarium."
+      ],
+      "aiFindingSeverity": "CRITICAL_POLARITY",
+      "aiFinding": "The source literal Least cost diet is translated as Most cost diet, reversing the optimization direction.",
+      "humanDecision": "UNREVIEWED"
+    }
+  ]
+}

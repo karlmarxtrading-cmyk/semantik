@@ -1,0 +1,188 @@
+{
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "rebuild": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "filesOriginal": 598,
+  "filesRebuilt": 598,
+  "bytesOriginal": 504132201,
+  "mismatches": [],
+  "buildIdentityMatches": true,
+  "retainedIdentityMatches": true,
+  "allPass": true,
+  "excludedBrowserQA": [
+    {
+      "path": "qa/browser.css",
+      "bytes": 341,
+      "sha256": "db7b429bdddf02082b1f02a87fbb4b1434821b4ff00167678392ce620cbc034f"
+    },
+    {
+      "path": "qa/cp20-browser.html",
+      "bytes": 808,
+      "sha256": "3423e984f8943d7b1a38ad8a1e9c8b1e6f1cf411ef716daeba63d303d772a431"
+    },
+    {
+      "path": "qa/cp20-browser.js",
+      "bytes": 6694,
+      "sha256": "17e473de541d5ff883595e56c00e97d3de39754255f5333219b5ec5c751cc1ca"
+    },
+    {
+      "path": "qa/fixtures/MANIFEST.json",
+      "bytes": 2812,
+      "sha256": "a519cce33fc6873de06ae64627fae9e3bd4c137260c320a898eb981ecc7c3804"
+    },
+    {
+      "path": "qa/fixtures/corrupt.pdf",
+      "bytes": 58,
+      "sha256": "8c8cb6c675e0a40f7ecee945c7fe4d1bc8987cac70357958c5f9826d7e0c9d8e"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/MANIFEST.json",
+      "bytes": 2242,
+      "sha256": "39319325d35d5dccba5a3a2f35818e728a6d72305a6d3025d3a6266e2f03fff9"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1000-en.json",
+      "bytes": 229244,
+      "sha256": "9a5701f0a755fae881fb4711e48fb5e0a00cbaa1592acce9428593305ba5629c"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1000-en.pdf",
+      "bytes": 731237,
+      "sha256": "803d4001dbe50d5f796097c5e0e5ec397a542b8eafecf320cc0fcf32d961977b"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1001-en-rich.json",
+      "bytes": 518775,
+      "sha256": "086d429774863619e70271d34408d8c9aef3579a6c648471ce9e3946e915258d"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1001-en-rich.pdf",
+      "bytes": 1910126,
+      "sha256": "a4d651a2cfce36a5e99c1831886816560a451f80cc5a4664cffc73be28d9cc5e"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1001-en.json",
+      "bytes": 229474,
+      "sha256": "50858b6359c1a823583542bcbf47f2e2b56a4eb8e60a000584ae74abf49da4f5"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1001-en.pdf",
+      "bytes": 731923,
+      "sha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1500-id.json",
+      "bytes": 344245,
+      "sha256": "873d966f155b7f97086c89725950158ad5f0a571640a8a6cb5abadb9a3cad0c8"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-1500-id.pdf",
+      "bytes": 1063857,
+      "sha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-300-en.json",
+      "bytes": 68938,
+      "sha256": "b39a38f00c869f3dd38af897ec54e54a973e62a3396b4822493bdf94bbe723e3"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-300-en.pdf",
+      "bytes": 248206,
+      "sha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-301-en.json",
+      "bytes": 69167,
+      "sha256": "15d7e03c8d418fce97d08ba817f0026c8e750627e7697dd4db596cd4ef3a0963"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity/capacity-301-en.pdf",
+      "bytes": 248887,
+      "sha256": "c9779437ea9d9378e750379575800d24cf0a5f9da9889fa205fb2c358e9ffe2f"
+    },
+    {
+      "path": "qa/fixtures/cp20-capacity-2001-limit.pdf",
+      "bytes": 482046,
+      "sha256": "c9410d1d39a38fb717c4e985c66e5f208dbb1e301a98e50b29f78012ec8ce7a3"
+    },
+    {
+      "path": "qa/fixtures/cp20-reference-followed-by-chapter.pdf",
+      "bytes": 2310,
+      "sha256": "fb4f9530e27a605636342c19a100e185646e187e03a5330a10863727e725cc93"
+    },
+    {
+      "path": "qa/fixtures/cp20-reference-midbook.pdf",
+      "bytes": 45653,
+      "sha256": "8287846bdad5cb49ec930ce31d309a55a77767d941f1851d82ea357f58790e05"
+    },
+    {
+      "path": "qa/fixtures/dense.pdf",
+      "bytes": 36865,
+      "sha256": "2c73c77512a946175eb6283c152be6187d4d54af3eec63ec165089ae418f350d"
+    },
+    {
+      "path": "qa/fixtures/digital-en.pdf",
+      "bytes": 23136,
+      "sha256": "e977d38d7b4416bb80be9d04cdd32439ec1beffdf13daaa654c4055ac1ac6355"
+    },
+    {
+      "path": "qa/fixtures/digital-id.pdf",
+      "bytes": 23118,
+      "sha256": "a7c157ec36f43aa7afbb4859c538dfe0e2517796172964866d55696ae13853b0"
+    },
+    {
+      "path": "qa/fixtures/mathematics.pdf",
+      "bytes": 33000,
+      "sha256": "2a899abe5d8ff992f432ff04df1b7095b2300c253bddd94b32c900ed06a21575"
+    },
+    {
+      "path": "qa/fixtures/mixed-digital-500-scan.pdf",
+      "bytes": 47056,
+      "sha256": "92a0f4e14f63bde047ddf06a7c0b974e91a755e6c90c9182f7b1c62ff974de51"
+    },
+    {
+      "path": "qa/fixtures/oversized-image.pdf",
+      "bytes": 73727,
+      "sha256": "6436fbc1e7696ad66e9df2ee8ea66763268ee8f02148cdd98a8f774bdb1762f0"
+    },
+    {
+      "path": "qa/fixtures/password.pdf",
+      "bytes": 23089,
+      "sha256": "afd3330a72b03eff0a18bff47ef6c5fca6698acca2b753fa06916c3caa396034"
+    },
+    {
+      "path": "qa/fixtures/rotated.pdf",
+      "bytes": 22638,
+      "sha256": "57c445b581a122a089558db65f39466284429242fa0e061c1b7bbf5c7370f01d"
+    },
+    {
+      "path": "qa/fixtures/scan.pdf",
+      "bytes": 32032,
+      "sha256": "906cf4476c0e297a5666c4e7b05631c105fec99aca6b3dd3b64812adfd3a5a19"
+    },
+    {
+      "path": "qa/fixtures/table-two-column.pdf",
+      "bytes": 22764,
+      "sha256": "29b42ba9519f75a28cf86e4e80cb1a3fbc539f31d441b03a1af2b66e06ad322b"
+    }
+  ],
+  "packagingRequirement": "Exclude qa/ test harness and fixtures from deploy ZIP. They are intentionally staged in the running browser preview and are absent from canonical build/manifest. All other paths were compared; no production mismatch is ignored.",
+  "scope": "Independent complete build with exact CP19 reconstruction; all598 production file sizes and SHA256 compared against active bytes and manifest. Active dist was read only."
+}

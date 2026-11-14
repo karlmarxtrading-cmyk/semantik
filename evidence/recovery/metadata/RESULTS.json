@@ -1,0 +1,429 @@
+{
+  "status": "PASS_FOR_METADATA_CLASSIFICATION_AND_CONTROLLED_ROUTING",
+  "productionReady": false,
+  "method": "Actual saved Node/browser1500 footer source labels replayed through new pure classifier; short controlled real processLongDocument and createStreamingMarkdown routing/export, no new PDF1500 or ONNX run.",
+  "sourceHashes": {
+    "app/app/metadata-language.js": "4cb73e0dae69c5d0c72e9f9c0a59480ebe1d16e2218bc942c25c722892b435ca",
+    "app/app/long-document.js": "c398d5f5eb5190114af81219a85792e5d9fc4c5d0f5fd499dd323233486c0203"
+  },
+  "independentCases": 55,
+  "tests": [
+    {
+      "text": "RPT9 END",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Start QX-417",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Page 12",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "SECTION AB_19",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Figure F7",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Document ID: Q9-3",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "ZX11 | continued",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "record No 517",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Appendix S2",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "TRACE #q31",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "Reference R2.7",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "VERSION v3",
+      "expected": "en",
+      "actual": "en",
+      "status": "PASS"
+    },
+    {
+      "text": "XZ19 AKHIR",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Awal QX-417",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Halaman 12",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "BAGIAN AB_19",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Gambar F7",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Dokumen ID: Q9-3",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "ZX11 | lanjutan",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "rekaman nomor 517",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Lampiran S2",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "JEJAK #q31",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "Rujukan R2.7",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "VERSI v3",
+      "expected": "id",
+      "actual": "id",
+      "status": "PASS"
+    },
+    {
+      "text": "END",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "ID A17",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A17",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "42",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "the end",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "END A17 is not evidence",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A17 did not end",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "End the experiment 15",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "The record is 12",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "No records were lost in 5 trials.",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Page 12 is not sufficient proof",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Page 12 tidak lengkap",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "AKHIR PAGE Q17",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Kode A3 tidak berubah",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Rata-rata populasi naik 5",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "The catalyst is not consumed.",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "If X1 is zero, the hypothesis is false.",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Harga naik 5%",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A1 + B2 END",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "END 20mg",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A1 END?",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A1 END\nNo evidence",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A1=2 END",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "www.example.com END",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "<script>END A1</script>",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "not END A1",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "END A17; BEGIN B18",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "A17 END α",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "END A1 B2 C3 D4",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "Page table record chapter A1",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    },
+    {
+      "text": "END XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1",
+      "expected": "unknown",
+      "actual": "unknown",
+      "status": "PASS"
+    }
+  ],
+  "historicalRuns": [
+    {
+      "path": "evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+      "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+      "bytes": 1008350,
+      "originalBlocks": 4500,
+      "originalRejectedFooters": 1500,
+      "recognizedAlreadyEnglishMetadata": 1500,
+      "changedSourceTexts": 0,
+      "changedBlockIDs": 0,
+      "newInferenceCalls": 0,
+      "scope": "Classification replay of saved source labels only; original Markdown/statuses untouched; not a new1500-page translation run."
+    },
+    {
+      "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.md",
+      "sha256": "0987a042d914584c3afd84938506ae0c0c4c56eebc9094d4c2c9fac78f8fa7f0",
+      "bytes": 1008613,
+      "originalBlocks": 4500,
+      "originalRejectedFooters": 1500,
+      "recognizedAlreadyEnglishMetadata": 1500,
+      "changedSourceTexts": 0,
+      "changedBlockIDs": 0,
+      "newInferenceCalls": 0,
+      "scope": "Classification replay of saved source labels only; original Markdown/statuses untouched; not a new1500-page translation run."
+    }
+  ],
+  "controls": [
+    {
+      "source": "id",
+      "target": "en",
+      "blocks": 7,
+      "counts": {
+        "total": 7,
+        "translated": 2,
+        "preserved": 3,
+        "rejected": 2,
+        "failed": 0,
+        "pending": 0,
+        "review": 2,
+        "done": 5,
+        "attempted": 7
+      },
+      "controlledTranslatorCalls": 4,
+      "actualModelInferenceCalls": 0,
+      "sourceAndIDsUnchanged": true,
+      "export": {
+        "path": "CONTROL_id_en.md",
+        "bytes": 2923,
+        "sha256": "e15006d9c95d0aec4c8079e9f977b485c4dafded5478433d91877e7987b14c71",
+        "partial": true
+      },
+      "status": "PASS"
+    },
+    {
+      "source": "en",
+      "target": "id",
+      "blocks": 6,
+      "counts": {
+        "total": 6,
+        "translated": 2,
+        "preserved": 3,
+        "rejected": 1,
+        "failed": 0,
+        "pending": 0,
+        "review": 1,
+        "done": 5,
+        "attempted": 6
+      },
+      "controlledTranslatorCalls": 3,
+      "actualModelInferenceCalls": 0,
+      "sourceAndIDsUnchanged": true,
+      "export": {
+        "path": "CONTROL_en_id.md",
+        "bytes": 2594,
+        "sha256": "73abdc7c3a1f0c8bdb4a970e9d06b919c4474dbb964aed005d5ad74446cf06ad",
+        "partial": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "unchangedLanguageGuardStillActive": true,
+  "limitations": [
+    "Historical long run prose remains unreviewed or semantically failed; old outputs are not relabelled as complete",
+    "A metadata marker is not a statement of meaning correctness",
+    "Unknown, mixed-language, numeric-unit and free-form prose remain on ordinary translation/guard paths",
+    "Short controls use a controlled translator; browser and actual model evidence require separate root qualification"
+  ]
+}

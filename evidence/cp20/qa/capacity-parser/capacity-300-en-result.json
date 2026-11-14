@@ -1,0 +1,74 @@
+{
+  "fixture": {
+    "file": "capacity-300-en.pdf",
+    "pages": 300,
+    "language": "en",
+    "rich": false,
+    "bytes": 248206,
+    "sha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+    "sourceCharacters": 70347,
+    "uniqueProseParagraphs": 300,
+    "traceManifest": "capacity-300-en.json"
+  },
+  "status": "PASS",
+  "method": "Actual production openPdf and bounded per-page extract / PDF.js 6.2.108; native Canvas and disk QA sink. No translation or browser download.",
+  "summary": {
+    "pages": 300,
+    "blocks": 900,
+    "characters": 69147,
+    "sourceItems": 1500,
+    "coveredItems": 1500,
+    "assets": 0,
+    "assetBytes": 0,
+    "traceIds": 300,
+    "maxActivePageRecords": 1
+  },
+  "sourceSha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+  "orderedPageRecordsSha256": "f96110ae4d6d5b10de50e33dcf54d6fdb29f8519739943f81734175a4ae5fb67",
+  "elapsedMs": 2595.462801,
+  "sampledPeakNodeMemoryBytes": {
+    "rss": 180113408,
+    "heapUsed": 25811128,
+    "external": 14125198,
+    "arrayBuffers": 7899166
+  },
+  "memoryLimit": "Node process only; 100ms sampled. Not total browser/worker/WASM/Canvas RAM and not a physical-device qualification.",
+  "samples": [
+    {
+      "page": 1,
+      "elapsedMs": 225.68543800000003,
+      "rss": 114163712,
+      "heapTotal": 25284608,
+      "heapUsed": 18535616,
+      "external": 7821692,
+      "arrayBuffers": 1595660
+    },
+    {
+      "page": 100,
+      "elapsedMs": 1085.03487,
+      "rss": 163315712,
+      "heapTotal": 39440384,
+      "heapUsed": 22332960,
+      "external": 14125198,
+      "arrayBuffers": 7899166
+    },
+    {
+      "page": 200,
+      "elapsedMs": 1858.6566990000001,
+      "rss": 175525888,
+      "heapTotal": 54120448,
+      "heapUsed": 21860152,
+      "external": 7869689,
+      "arrayBuffers": 1647882
+    },
+    {
+      "page": 300,
+      "elapsedMs": 2592.652209,
+      "rss": 180113408,
+      "heapTotal": 54644736,
+      "heapUsed": 20147288,
+      "external": 7658161,
+      "arrayBuffers": 1436354
+    }
+  ]
+}

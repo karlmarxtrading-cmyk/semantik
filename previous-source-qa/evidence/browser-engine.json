@@ -1,0 +1,980 @@
+{
+  "kind": "real-browser-inference",
+  "suiteVersion": "academic-phrases-v2",
+  "startedAt": "2026-11-11T19:45:17.610Z",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "name": "Lazy import and constructor",
+      "pass": true,
+      "detail": {
+        "workerCreated": false,
+        "earlyHeavyRequests": []
+      }
+    },
+    {
+      "name": "Prepare en-id",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      }
+    },
+    {
+      "name": "Inference en-id 1",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "This study investigates the relationship between economic growth and education.",
+        "target": "Penelitian ini menyelidiki hubungan antara pertumbuhan ekonomi dan pendidikan.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 377
+      }
+    },
+    {
+      "name": "Inference en-id 2",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The study included 120 participants. The result was significant (p < 0.05).",
+        "target": "Studi ini termasuk peserta 120. Hasilnya signifikan (p < 0.05).",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 483
+      }
+    },
+    {
+      "name": "Inference en-id 3",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The temperature was 37 \u00b0C and the dose was 10 mg. Smith et al. (2024) reported no improvement.",
+        "target": "Suhunya 37 \u00b0C dan dosisnya 10 mg. Smith et al. (2024) tidak melaporkan adanya perbaikan.",
+        "status": "review",
+        "issues": [
+          "Periksa lingkup negasi: tidak ada hasil berbeda makna dengan tidak melaporkan hasil."
+        ],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 812
+      }
+    },
+    {
+      "name": "Inference en-id 4",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The results are described in https://example.org/paper and DOI:10.1234/science.2024.01.",
+        "target": "Hasilnya dijelaskan dalam https://example.org/paper dan DOI:10.1234/science.2024.01.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 385
+      }
+    },
+    {
+      "name": "Inference en-id 5",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "Machine learning improves the prediction of academic performance.",
+        "target": "pembelajaran mesin meningkatkan prediksi kinerja akademis.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 262
+      }
+    },
+    {
+      "name": "Glossary en-id",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "Machine learning improves the prediction of academic performance.",
+        "target": "pembelajaran mesin meningkatkan prediksi kinerja akademis.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 262
+      }
+    },
+    {
+      "name": "Inference en-id 6",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "Abstract",
+        "target": "Abstrak",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 0
+      }
+    },
+    {
+      "name": "Inference en-id 7",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample mean was 12.5.",
+        "target": "rata-rata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 310
+      }
+    },
+    {
+      "name": "Academic phrases en-id 7",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample mean was 12.5.",
+        "target": "rata-rata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 310,
+        "expected": [
+          "rata-rata sampel"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 8",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The SAMPLE MEAN was 12.5.",
+        "target": "Rata-rata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 294
+      }
+    },
+    {
+      "name": "Academic phrases en-id 8",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The SAMPLE MEAN was 12.5.",
+        "target": "Rata-rata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 294,
+        "expected": [
+          "rata-rata sampel"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 9",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The standard deviation was 2.5 and the standard error was 0.5.",
+        "target": "simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 713
+      }
+    },
+    {
+      "name": "Academic phrases en-id 9",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The standard deviation was 2.5 and the standard error was 0.5.",
+        "target": "simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 713,
+        "expected": [
+          "simpangan baku",
+          "galat baku"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 10",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample size was 120 and the confidence interval was 10.2 to 14.8.",
+        "target": "ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 ke 14.8.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 941
+      }
+    },
+    {
+      "name": "Academic phrases en-id 10",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample size was 120 and the confidence interval was 10.2 to 14.8.",
+        "target": "ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 ke 14.8.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 941,
+        "expected": [
+          "ukuran sampel",
+          "interval kepercayaan"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 11",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The null hypothesis was rejected. The result was statistically significant.",
+        "target": "hipotesis nol ditolak. Hasilnya adalah signifikan secara statistik.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 330
+      }
+    },
+    {
+      "name": "Academic phrases en-id 11",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The null hypothesis was rejected. The result was statistically significant.",
+        "target": "hipotesis nol ditolak. Hasilnya adalah signifikan secara statistik.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 330,
+        "expected": [
+          "hipotesis nol",
+          "signifikan secara statistik"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 12",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "Linear regression estimated the effect size.",
+        "target": "Regresi linear memperkirakan ukuran efek.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 279
+      }
+    },
+    {
+      "name": "Academic phrases en-id 12",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "Linear regression estimated the effect size.",
+        "target": "Regresi linear memperkirakan ukuran efek.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 279,
+        "expected": [
+          "regresi linear",
+          "ukuran efek"
+        ]
+      }
+    },
+    {
+      "name": "Inference en-id 13",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample mean was 12.5.",
+        "target": "rerata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 280
+      }
+    },
+    {
+      "name": "Glossary en-id",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample mean was 12.5.",
+        "target": "rerata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 280
+      }
+    },
+    {
+      "name": "Academic phrases en-id 13",
+      "pass": true,
+      "detail": {
+        "direction": "en-id",
+        "source": "The sample mean was 12.5.",
+        "target": "rerata sampel adalah 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 280,
+        "expected": [
+          "rerata sampel"
+        ],
+        "forbidden": [
+          "rata-rata sampel"
+        ]
+      }
+    },
+    {
+      "name": "Prepare id-en",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      }
+    },
+    {
+      "name": "Inference id-en 1",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Penelitian ini menganalisis hubungan antara pertumbuhan ekonomi dan pendidikan.",
+        "target": "This study analyzes the relationship between economic growth and education.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 311
+      }
+    },
+    {
+      "name": "Inference id-en 2",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Penelitian ini melibatkan 120 peserta. Hasil penelitian menunjukkan perbedaan signifikan.",
+        "target": "This study involves 120 participants. Research shows significant differences.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 424
+      }
+    },
+    {
+      "name": "Inference id-en 3",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Suhu sampel adalah 37 \u00b0C dan dosisnya 10 mg.",
+        "target": "The sample temperature is 37 \u00b0C and its dose 10 mg.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 603
+      }
+    },
+    {
+      "name": "Inference id-en 4",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Pembelajaran mesin meningkatkan prediksi kinerja akademik.",
+        "target": "Machine learning improves academic performance predictions.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 299
+      }
+    },
+    {
+      "name": "Glossary id-en",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Pembelajaran mesin meningkatkan prediksi kinerja akademik.",
+        "target": "Machine learning improves academic performance predictions.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 299
+      }
+    },
+    {
+      "name": "Inference id-en 5",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Abstrak",
+        "target": "Abstract",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 0
+      }
+    },
+    {
+      "name": "Inference id-en 6",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Rata-rata sampel adalah 12.5.",
+        "target": "Sample mean is 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 350
+      }
+    },
+    {
+      "name": "Academic phrases id-en 6",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Rata-rata sampel adalah 12.5.",
+        "target": "Sample mean is 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 350,
+        "expected": [
+          "sample mean"
+        ]
+      }
+    },
+    {
+      "name": "Inference id-en 7",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+        "target": "Standard deviation is 2.5 and standard error is 0.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 829
+      }
+    },
+    {
+      "name": "Academic phrases id-en 7",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+        "target": "Standard deviation is 2.5 and standard error is 0.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 829,
+        "expected": [
+          "standard deviation",
+          "standard error"
+        ]
+      }
+    },
+    {
+      "name": "Inference id-en 8",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 hingga 14.8.",
+        "target": "Sample size is 120 and confidence interval is 10.2 up 14.8.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 1209
+      }
+    },
+    {
+      "name": "Academic phrases id-en 8",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 hingga 14.8.",
+        "target": "Sample size is 120 and confidence interval is 10.2 up 14.8.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 1209,
+        "expected": [
+          "sample size",
+          "confidence interval"
+        ]
+      }
+    },
+    {
+      "name": "Inference id-en 9",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Hipotesis nol ditolak. Hasilnya signifikan secara statistik.",
+        "target": "Null hypothesis rejected. The result is statistically significant.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 482
+      }
+    },
+    {
+      "name": "Academic phrases id-en 9",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Hipotesis nol ditolak. Hasilnya signifikan secara statistik.",
+        "target": "Null hypothesis rejected. The result is statistically significant.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 482,
+        "expected": [
+          "null hypothesis",
+          "statistically significant"
+        ]
+      }
+    },
+    {
+      "name": "Inference id-en 10",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Regresi linear mengestimasi ukuran efek.",
+        "target": "Linear regression customize effect size.",
+        "status": "review",
+        "issues": [
+          "Periksa verba estimasi: mengestimasi tidak setara dengan customize; koreksi hasil terhadap sumber."
+        ],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 381
+      }
+    },
+    {
+      "name": "Academic phrases id-en 10",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Regresi linear mengestimasi ukuran efek.",
+        "target": "Linear regression customize effect size.",
+        "status": "review",
+        "issues": [
+          "Periksa verba estimasi: mengestimasi tidak setara dengan customize; koreksi hasil terhadap sumber."
+        ],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 381,
+        "expected": [
+          "linear regression",
+          "effect size"
+        ]
+      }
+    },
+    {
+      "name": "Known estimation-verb mismatch requires review",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Regresi linear mengestimasi ukuran efek.",
+        "target": "Linear regression customize effect size.",
+        "status": "review",
+        "issues": [
+          "Periksa verba estimasi: mengestimasi tidak setara dengan customize; koreksi hasil terhadap sumber."
+        ],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 381
+      }
+    },
+    {
+      "name": "Inference id-en 11",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Rata-rata sampel adalah 12.5.",
+        "target": "empirical mean is 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 345
+      }
+    },
+    {
+      "name": "Glossary id-en",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Rata-rata sampel adalah 12.5.",
+        "target": "empirical mean is 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 345
+      }
+    },
+    {
+      "name": "Academic phrases id-en 11",
+      "pass": true,
+      "detail": {
+        "direction": "id-en",
+        "source": "Rata-rata sampel adalah 12.5.",
+        "target": "empirical mean is 12.5.",
+        "status": "translated",
+        "issues": [],
+        "sourcePreserved": false,
+        "semanticVerified": false,
+        "ms": 345,
+        "expected": [
+          "empirical mean"
+        ],
+        "forbidden": [
+          "sample mean"
+        ]
+      }
+    },
+    {
+      "name": "Altered number is rejected by audit",
+      "pass": true
+    },
+    {
+      "name": "Segmentation is lossless",
+      "pass": true
+    },
+    {
+      "name": "Language detection",
+      "pass": true
+    },
+    {
+      "name": "In-flight cancel terminates worker",
+      "pass": true
+    },
+    {
+      "name": "Cached model inference en-id with model network blocked",
+      "pass": true,
+      "detail": {
+        "source": "This study included 120 participants.",
+        "target": "Studi ini termasuk peserta 120.",
+        "note": "Model download blocked; full shell/runtime offline tested separately."
+      }
+    },
+    {
+      "name": "Cached model inference id-en with model network blocked",
+      "pass": true,
+      "detail": {
+        "source": "Penelitian ini melibatkan 120 peserta.",
+        "target": "This study involves 120 participants.",
+        "note": "Model download blocked; full shell/runtime offline tested separately."
+      }
+    }
+  ],
+  "samples": [
+    {
+      "direction": "en-id",
+      "source": "This study investigates the relationship between economic growth and education.",
+      "target": "Penelitian ini menyelidiki hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 377
+    },
+    {
+      "direction": "en-id",
+      "source": "The study included 120 participants. The result was significant (p < 0.05).",
+      "target": "Studi ini termasuk peserta 120. Hasilnya signifikan (p < 0.05).",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 483
+    },
+    {
+      "direction": "en-id",
+      "source": "The temperature was 37 \u00b0C and the dose was 10 mg. Smith et al. (2024) reported no improvement.",
+      "target": "Suhunya 37 \u00b0C dan dosisnya 10 mg. Smith et al. (2024) tidak melaporkan adanya perbaikan.",
+      "status": "review",
+      "issues": [
+        "Periksa lingkup negasi: tidak ada hasil berbeda makna dengan tidak melaporkan hasil."
+      ],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 812
+    },
+    {
+      "direction": "en-id",
+      "source": "The results are described in https://example.org/paper and DOI:10.1234/science.2024.01.",
+      "target": "Hasilnya dijelaskan dalam https://example.org/paper dan DOI:10.1234/science.2024.01.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 385
+    },
+    {
+      "direction": "en-id",
+      "source": "Machine learning improves the prediction of academic performance.",
+      "target": "pembelajaran mesin meningkatkan prediksi kinerja akademis.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 262
+    },
+    {
+      "direction": "en-id",
+      "source": "Abstract",
+      "target": "Abstrak",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 0
+    },
+    {
+      "direction": "en-id",
+      "source": "The sample mean was 12.5.",
+      "target": "rata-rata sampel adalah 12.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 310
+    },
+    {
+      "direction": "en-id",
+      "source": "The SAMPLE MEAN was 12.5.",
+      "target": "Rata-rata sampel adalah 12.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 294
+    },
+    {
+      "direction": "en-id",
+      "source": "The standard deviation was 2.5 and the standard error was 0.5.",
+      "target": "simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 713
+    },
+    {
+      "direction": "en-id",
+      "source": "The sample size was 120 and the confidence interval was 10.2 to 14.8.",
+      "target": "ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 ke 14.8.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 941
+    },
+    {
+      "direction": "en-id",
+      "source": "The null hypothesis was rejected. The result was statistically significant.",
+      "target": "hipotesis nol ditolak. Hasilnya adalah signifikan secara statistik.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 330
+    },
+    {
+      "direction": "en-id",
+      "source": "Linear regression estimated the effect size.",
+      "target": "Regresi linear memperkirakan ukuran efek.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 279
+    },
+    {
+      "direction": "en-id",
+      "source": "The sample mean was 12.5.",
+      "target": "rerata sampel adalah 12.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 280
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini menganalisis hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "target": "This study analyzes the relationship between economic growth and education.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 311
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini melibatkan 120 peserta. Hasil penelitian menunjukkan perbedaan signifikan.",
+      "target": "This study involves 120 participants. Research shows significant differences.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 424
+    },
+    {
+      "direction": "id-en",
+      "source": "Suhu sampel adalah 37 \u00b0C dan dosisnya 10 mg.",
+      "target": "The sample temperature is 37 \u00b0C and its dose 10 mg.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 603
+    },
+    {
+      "direction": "id-en",
+      "source": "Pembelajaran mesin meningkatkan prediksi kinerja akademik.",
+      "target": "Machine learning improves academic performance predictions.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 299
+    },
+    {
+      "direction": "id-en",
+      "source": "Abstrak",
+      "target": "Abstract",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 0
+    },
+    {
+      "direction": "id-en",
+      "source": "Rata-rata sampel adalah 12.5.",
+      "target": "Sample mean is 12.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 350
+    },
+    {
+      "direction": "id-en",
+      "source": "Simpangan baku adalah 2.5 dan galat baku adalah 0.5.",
+      "target": "Standard deviation is 2.5 and standard error is 0.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 829
+    },
+    {
+      "direction": "id-en",
+      "source": "Ukuran sampel adalah 120 dan interval kepercayaan adalah 10.2 hingga 14.8.",
+      "target": "Sample size is 120 and confidence interval is 10.2 up 14.8.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 1209
+    },
+    {
+      "direction": "id-en",
+      "source": "Hipotesis nol ditolak. Hasilnya signifikan secara statistik.",
+      "target": "Null hypothesis rejected. The result is statistically significant.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 482
+    },
+    {
+      "direction": "id-en",
+      "source": "Regresi linear mengestimasi ukuran efek.",
+      "target": "Linear regression customize effect size.",
+      "status": "review",
+      "issues": [
+        "Periksa verba estimasi: mengestimasi tidak setara dengan customize; koreksi hasil terhadap sumber."
+      ],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 381
+    },
+    {
+      "direction": "id-en",
+      "source": "Rata-rata sampel adalah 12.5.",
+      "target": "empirical mean is 12.5.",
+      "status": "translated",
+      "issues": [],
+      "sourcePreserved": false,
+      "semanticVerified": false,
+      "ms": 345
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T19:45:40.553Z",
+  "passed": 51,
+  "failed": 0,
+  "complete": true
+}

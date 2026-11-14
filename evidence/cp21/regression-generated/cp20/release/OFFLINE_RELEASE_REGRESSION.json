@@ -1,0 +1,31 @@
+{
+  "build": {
+    "base": "/r/4f600f19789edea7/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp21-4f600f19789edea7",
+    "sourceHash": "4f600f19789edea73d3642e65c10d5b3a43f5e0f79b36fc9d2c91dc597da78e3",
+    "version": "0.21.0"
+  },
+  "files": {
+    "offline": "341c5b1de7a004906e7b00a878fe394480a9897a63999daa0e1e574f7ece7904",
+    "worker": "594a0101ba4480d683509472da9dc6f2f3d15cd9ee54b0755699bbb485355fcc"
+  },
+  "method": "Node VM executes exact generated release modules, real built inventory and bytes; Cache API/fetch/lifecycle boundaries are controlled doubles. No actual browser, hosting, model inference or device claim.",
+  "tests": [
+    {
+      "name": "Actual generated manifest matches CP20 exact build identity",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n'0.21.0' !== '0.20.0'\n\n    at file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp20-offline-release.mjs:36:87\n    at test (file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp20-offline-release.mjs:22:83)\n    at file:///workspace/scratch/17677088ccfd/cp21/qa-run/tests/cp20-offline-release.mjs:36:8"
+    }
+  ],
+  "allPass": false,
+  "unqualified": [
+    "Cloudflare actual byte/header behavior",
+    "Browser install/wait/activate while a translation is active",
+    "Browser network disconnect and model/OCR execution",
+    "Rollback to earlier deployment with checkpoint migration"
+  ]
+}

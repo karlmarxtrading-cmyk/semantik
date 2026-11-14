@@ -1,0 +1,54 @@
+{
+  "en": [
+    [
+      "Abstract",
+      "We examined the association between fine particulate matter exposure and hospital admissions. This observational study does not establish a causal relationship."
+    ],
+    [
+      "Methods",
+      "The primary endpoint was time to disease progression. The trial failed to demonstrate non-inferiority."
+    ],
+    [
+      "Results",
+      "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically significant (p = 0.08)."
+    ],
+    [
+      "Mathematics",
+      "Given f(x)=x², the derivative is f′(x)=2x."
+    ],
+    [
+      "",
+      "The estimator is unbiased only if both conditions hold."
+    ],
+    [
+      "Conclusion",
+      "Absence of evidence is not evidence of absence."
+    ]
+  ],
+  "id": [
+    [
+      "Abstrak",
+      "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian observasional ini tidak membuktikan hubungan sebab akibat."
+    ],
+    [
+      "Metode",
+      "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan non-inferioritas."
+    ],
+    [
+      "Hasil",
+      "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak signifikan secara statistik (p = 0.08)."
+    ],
+    [
+      "Matematika",
+      "Diberikan f(x)=x², turunannya adalah f′(x)=2x."
+    ],
+    [
+      "",
+      "Penduga tidak bias hanya jika kedua syarat terpenuhi."
+    ],
+    [
+      "Kesimpulan",
+      "Ketiadaan bukti bukanlah bukti ketiadaan."
+    ]
+  ]
+}

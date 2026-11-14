@@ -1,0 +1,62 @@
+{
+  "build": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "rebuild": {
+    "release": "cp20-4130d88aca38edb8",
+    "version": "0.20.0",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4130d88aca38edb8/"
+  },
+  "filesOriginal": 629,
+  "filesRebuilt": 598,
+  "bytesOriginal": 511406669,
+  "mismatches": [
+    "qa/browser.css",
+    "qa/cp20-browser.html",
+    "qa/cp20-browser.js",
+    "qa/fixtures/MANIFEST.json",
+    "qa/fixtures/corrupt.pdf",
+    "qa/fixtures/cp20-capacity-2001-limit.pdf",
+    "qa/fixtures/cp20-capacity/MANIFEST.json",
+    "qa/fixtures/cp20-capacity/capacity-1000-en.json",
+    "qa/fixtures/cp20-capacity/capacity-1000-en.pdf",
+    "qa/fixtures/cp20-capacity/capacity-1001-en-rich.json",
+    "qa/fixtures/cp20-capacity/capacity-1001-en-rich.pdf",
+    "qa/fixtures/cp20-capacity/capacity-1001-en.json",
+    "qa/fixtures/cp20-capacity/capacity-1001-en.pdf",
+    "qa/fixtures/cp20-capacity/capacity-1500-id.json",
+    "qa/fixtures/cp20-capacity/capacity-1500-id.pdf",
+    "qa/fixtures/cp20-capacity/capacity-300-en.json",
+    "qa/fixtures/cp20-capacity/capacity-300-en.pdf",
+    "qa/fixtures/cp20-capacity/capacity-301-en.json",
+    "qa/fixtures/cp20-capacity/capacity-301-en.pdf",
+    "qa/fixtures/cp20-reference-followed-by-chapter.pdf",
+    "qa/fixtures/cp20-reference-midbook.pdf",
+    "qa/fixtures/dense.pdf",
+    "qa/fixtures/digital-en.pdf",
+    "qa/fixtures/digital-id.pdf",
+    "qa/fixtures/mathematics.pdf",
+    "qa/fixtures/mixed-digital-500-scan.pdf",
+    "qa/fixtures/oversized-image.pdf",
+    "qa/fixtures/password.pdf",
+    "qa/fixtures/rotated.pdf",
+    "qa/fixtures/scan.pdf",
+    "qa/fixtures/table-two-column.pdf"
+  ],
+  "buildIdentityMatches": true,
+  "retainedIdentityMatches": true,
+  "allPass": false,
+  "scope": "Independent complete build with exact CP19 reconstruction; every actual deploy file size and SHA256 compared with the original and manifest. Active dist was read only."
+}

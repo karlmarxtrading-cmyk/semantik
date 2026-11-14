@@ -1,0 +1,81 @@
+--- cp20-1668833ad37c9dd8/main.js
++++ final-source/main.js
+@@ -308,6 +308,7 @@
+     state.token=navigator.locks?await checkpoint.claimCheckpoint(saved.meta):null;state.readOnly=false;state.saveEnabled=Boolean(navigator.locks);state.dirty=!state.saveEnabled;state.prior=saved.prior||null;
+     state.document = saved.document || null; state.config = saved.meta.config; state.signature = saved.meta.signature || '';
+     state.status = saved.meta.status || 'selected'; state.page = saved.meta.page || 1; state.previewPage = 1;
++    state.storageRecoveries=(saved.meta.storageRecoveries||[]).slice(-5);state.storageFailures=(saved.meta.storageFailures||[]).slice(-5);
+     if(state.document?.streaming){
+       if(state.pdf.sourceSha256!==state.document.sourceSha256)throw new Error('Identitas PDF pada checkpoint tidak cocok.');
+       state.document.counts=saved.meta.progress||state.document.counts;
+--- cp20-1668833ad37c9dd8/long-document.js
++++ final-source/long-document.js
+@@ -22,6 +22,16 @@
+ export function streamSummary(doc){
+   const out={...doc,pages:[],blocks:[],assets:[]};delete out.visibleCounts;return out;
+ }
++/** ETA samples only pages actually completed in this run. Restored pages and
++ * partially completed resumed pages are not throughput measurements. */
++export function createPageEta({minimumSamples=3,windowSize=8}={}){
++  const samples=[];
++  return {
++    record({durationMs,worked,partialResume=false}){if(!worked||partialResume||!Number.isFinite(durationMs)||durationMs<=0)return;samples.push(durationMs);if(samples.length>windowSize)samples.shift();},
++    estimate(remainingPages){if(samples.length<minimumSamples||!Number.isFinite(remainingPages)||remainingPages<0)return null;return samples.reduce((n,v)=>n+v,0)/samples.length*remainingPages;},
++    snapshot(){return {sampleCount:samples.length,durationsMs:[...samples]};}
++  };
++}
+ const aborted=()=>new DOMException('Dibatalkan','AbortError');
+ const check=signal=>{if(signal?.aborted)throw aborted();};
+ const uniq=list=>[...new Set(list.filter(Boolean))];
+@@ -43,7 +53,7 @@
+ /** Callbacks are responsible for an atomic page+summary+job-meta transaction.
+  * loadPage overlays edits; commit never resolves successfully on storage failure. */
+ export async function processLongDocument({pdf,file,document:prior,config,translate,translationModule,build,signal,loadPage,commit,onVisible,onProgress,onTranslator,translator:providedTranslator}){
+-  const started=performance.now();
++  const started=performance.now(),eta=createPageEta();
+   const signature=JSON.stringify(config);
+   const provenance={sourceSha256:pdf.sourceSha256,configSignature:signature,ruleset:translationModule?.RULESET||'source-only',release:build.release};
+   const doc=prior?.streaming?prior:{schemaVersion:2,streaming:true,fileName:file.name,fileSize:file.size,numPages:pdf.numPages,metadata:pdf.metadata,sourceSha256:pdf.sourceSha256,createdAt:new Date().toISOString(),committedPageCount:0,counts:zeroCounts(),sourceItemCount:0,coveredItemCount:0,sourceTextCharacters:0,assetsBytes:0,warnings:[],metrics:{inferenceCalls:0,cacheHits:0,uniqueInputs:0,inputTokens:0,outputTokens:0,extractionMs:0,inferenceMs:0,commitMs:0}};
+@@ -56,12 +66,13 @@
+   let finalCounts=zeroCounts();
+   for(let pageNumber=1;pageNumber<=pdf.numPages;pageNumber++){
+     check(signal);
++    const pageStarted=performance.now();let pageWorked=false,partialResume=false;
+     let record=await loadPage(pageNumber);check(signal);
+     const oldCounts=record?.page?.summary||zeroCounts();
+     const previousRecord=record;
+     const needsExtraction=!record||record.page.extractionLayout!==config.layout;
+     if(needsExtraction){
+-      const before=performance.now();
++      pageWorked=true;const before=performance.now();
+       const extracted=await pdf.extract({signal,startPage:pageNumber,endPage:pageNumber,bounded:true,includePageImages:false,retainOCR:true,initialReferenceSection:referenceSection,initialTextCharacters:(doc.sourceTextCharacters||0)-(previousRecord?.page?.sourceTextCharacters||0),layout:config.layout,ocrLanguage:'eng+ind',onProgress:p=>onProgress?.({...p,stage:p.stage==='ocr'?'ocr':'extract',committed:doc.committedPageCount,total:pdf.numPages})});
+       check(signal);doc.metrics.extractionMs=(doc.metrics.extractionMs||0)+performance.now()-before;
+       const page=extracted.pages[0];
+@@ -104,6 +115,9 @@
+       doc.sourceLanguage=sourceLanguage;doc.targetLanguage=targetLanguage;
+       const changed=page.provenance?.configSignature!==signature||page.provenance?.ruleset!==provenance.ruleset||page.provenance?.release!==provenance.release;
+       if(changed)for(const block of page.blocks)invalidate(block);
++      const completeBefore=page.blocks.filter(block=>{const retry=!block.userReviewed&&block.status!=='edited'&&block.retryable!==false&&(block.retryable||block.sourcePreserved||['failed','rejected'].includes(block.outcome));return targetPresent(block)&&!retry;}).length;
++      partialResume=!changed&&completeBefore>0&&completeBefore<page.blocks.length;
++      pageWorked||=completeBefore<page.blocks.length;
+       doc.counts=replaceCounts(doc.counts,priorCounts,countBlocks(page.blocks));
+       page.summary=countBlocks(page.blocks);page.provenance={...provenance};
+       doc.blocks=page.blocks;doc.pages=[page];doc.assets=record.assets;doc.visibleCounts={...page.summary};
+@@ -134,13 +148,14 @@
+         if(block.issues.length&&block.status==='translated')block.status='review';
+         page.summary=countBlocks(page.blocks);doc.counts=replaceCounts(doc.counts,previous,page.summary);doc.visibleCounts={...page.summary};
+         onVisible?.(doc,record);await commitRecord(record);
+-        const elapsed=performance.now()-started,processed=pageNumber-1+(i+1)/Math.max(1,page.blocks.length);
+-        onProgress?.({stage:'translate',page:pageNumber,total:pdf.numPages,block:i+1,blocks:page.blocks.length,committed:doc.committedPageCount,done:doc.counts.done,etaMs:processed?elapsed/processed*(pdf.numPages-processed):null,label:`Halaman ${pageNumber} · bagian ${i+1}/${page.blocks.length}`});
++        const remaining=pdf.numPages-pageNumber+(page.blocks.length-i-1)/Math.max(1,page.blocks.length);
++        onProgress?.({stage:'translate',page:pageNumber,total:pdf.numPages,block:i+1,blocks:page.blocks.length,committed:doc.committedPageCount,done:doc.counts.done,etaMs:eta.estimate(remaining),label:`Halaman ${pageNumber} · bagian ${i+1}/${page.blocks.length}`});
+       }
+     }
+     finalCounts=replaceCounts(finalCounts,zeroCounts(),countBlocks(page.blocks));
+     doc.blocks=page.blocks;doc.pages=[page];doc.assets=record.assets;doc.visibleCounts=countBlocks(page.blocks);
+-    onVisible?.(doc,record);onProgress?.({stage:'page-complete',page:pageNumber,total:pdf.numPages,committed:doc.committedPageCount,done:doc.counts.done});
++    eta.record({durationMs:performance.now()-pageStarted,worked:pageWorked,partialResume});
++    onVisible?.(doc,record);onProgress?.({stage:'page-complete',page:pageNumber,total:pdf.numPages,committed:doc.committedPageCount,done:doc.counts.done,etaMs:pageWorked&&!partialResume?eta.estimate(pdf.numPages-pageNumber):null});
+     await new Promise(resolve=>setTimeout(resolve,0));
+   }
+   doc.counts=finalCounts;doc.visibleCounts=countBlocks(doc.blocks);doc.metrics.totalRunMs=performance.now()-started;doc.extractionComplete=doc.committedPageCount===doc.numPages&&!doc.coverageIncompletePages;

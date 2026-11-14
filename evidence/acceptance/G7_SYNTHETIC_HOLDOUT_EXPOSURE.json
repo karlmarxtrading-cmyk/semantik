@@ -1,0 +1,7 @@
+{
+  "frozenCorpusSha256": "b7c81139c8d6ffafff3b098209134231b1208183fa67b6988cdbc2db2a608955",
+  "status": "DEVELOPMENT_EXPOSED_AFTER_INITIAL_EVALUATION",
+  "time": "2026-11-12T03:10:53.345690+00:00",
+  "reason": "Root requested generalized fixes after actual holdout errors. Original corpus and results preserved; it cannot establish held-out acceptance for subsequent builds.",
+  "next": "Evaluate fresh undisclosed real-journal corpus after implementation freeze; human review remains pending."
+}

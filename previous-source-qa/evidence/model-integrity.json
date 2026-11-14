@@ -1,0 +1,873 @@
+{
+  "recordedAt": "2026-11-11T19:11:57.787317+00:00",
+  "scope": "Local supplied model manifests, transport shards and decoded complete files",
+  "pass": true,
+  "checks": 144,
+  "failed": [],
+  "details": [
+    {
+      "check": "en-id/encoder_q8.onnx.part000.gz transport size",
+      "pass": true,
+      "actual": 11378532,
+      "expected": 11378532
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part000.gz transport SHA-256",
+      "pass": true,
+      "actual": "372b5946dd9e0bef93a16bc90506c984764e40c936d6f291db68c24c4adc2e93",
+      "expected": "372b5946dd9e0bef93a16bc90506c984764e40c936d6f291db68c24c4adc2e93"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part000.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part000.gz decoded SHA-256",
+      "pass": true,
+      "actual": "bba27b724e94515f368f8b22df77888a88c1d74059c55dc679ff2ae4cfc2a90e",
+      "expected": "bba27b724e94515f368f8b22df77888a88c1d74059c55dc679ff2ae4cfc2a90e"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part001.gz transport size",
+      "pass": true,
+      "actual": 11410735,
+      "expected": 11410735
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part001.gz transport SHA-256",
+      "pass": true,
+      "actual": "ed65d0475698cc9fb039187e75f0b0bc51885efd4a126743322c57d40f687bf2",
+      "expected": "ed65d0475698cc9fb039187e75f0b0bc51885efd4a126743322c57d40f687bf2"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part001.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part001.gz decoded SHA-256",
+      "pass": true,
+      "actual": "5536519a1c9321035d8200cecba4c2d96ce8f1fc1b532da43277ed2b83ef241a",
+      "expected": "5536519a1c9321035d8200cecba4c2d96ce8f1fc1b532da43277ed2b83ef241a"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part002.gz transport size",
+      "pass": true,
+      "actual": 12864169,
+      "expected": 12864169
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part002.gz transport SHA-256",
+      "pass": true,
+      "actual": "bc61ae7b3c634f41942e33e20ed08c388e508d50fdb220733ff45e570b5e0309",
+      "expected": "bc61ae7b3c634f41942e33e20ed08c388e508d50fdb220733ff45e570b5e0309"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part002.gz decoded size",
+      "pass": true,
+      "actual": 14146957,
+      "expected": 14146957
+    },
+    {
+      "check": "en-id/encoder_q8.onnx.part002.gz decoded SHA-256",
+      "pass": true,
+      "actual": "b122763ff32f8ab4da656e7ee32f85b0f1a722dc5a0d2aeee67cb8458230bb89",
+      "expected": "b122763ff32f8ab4da656e7ee32f85b0f1a722dc5a0d2aeee67cb8458230bb89"
+    },
+    {
+      "check": "en-id/encoder_q8.onnx full size",
+      "pass": true,
+      "actual": 47701389,
+      "expected": 47701389
+    },
+    {
+      "check": "en-id/encoder_q8.onnx full SHA-256",
+      "pass": true,
+      "actual": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721",
+      "expected": "15c04f760258b360667dfe41e51390c33ac143863f1d8e952f838259b19ef721"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part000.gz transport size",
+      "pass": true,
+      "actual": 11366970,
+      "expected": 11366970
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part000.gz transport SHA-256",
+      "pass": true,
+      "actual": "1986f9c3e39e37a65a108442f94e6415340b1269b56fa009523268b868990d5d",
+      "expected": "1986f9c3e39e37a65a108442f94e6415340b1269b56fa009523268b868990d5d"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part000.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part000.gz decoded SHA-256",
+      "pass": true,
+      "actual": "0033b46ecf7df6b22636830c176ed5037c9149783139fa858a587d31b95c6341",
+      "expected": "0033b46ecf7df6b22636830c176ed5037c9149783139fa858a587d31b95c6341"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part001.gz transport size",
+      "pass": true,
+      "actual": 11327128,
+      "expected": 11327128
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part001.gz transport SHA-256",
+      "pass": true,
+      "actual": "6f9eb67f7b941594e96e4d642f55461f7beabf7e60427c714578cd506b5c8373",
+      "expected": "6f9eb67f7b941594e96e4d642f55461f7beabf7e60427c714578cd506b5c8373"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part001.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part001.gz decoded SHA-256",
+      "pass": true,
+      "actual": "fe5d76f3f51ab86a40fc6a0112e641c8f0930672468828e3e772afd08188c361",
+      "expected": "fe5d76f3f51ab86a40fc6a0112e641c8f0930672468828e3e772afd08188c361"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part002.gz transport size",
+      "pass": true,
+      "actual": 15344608,
+      "expected": 15344608
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part002.gz transport SHA-256",
+      "pass": true,
+      "actual": "ecbb2b17b32f22aee75d5b0eb4a042d3fe4ddf6860e1e9b3be1db837336fd087",
+      "expected": "ecbb2b17b32f22aee75d5b0eb4a042d3fe4ddf6860e1e9b3be1db837336fd087"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part002.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part002.gz decoded SHA-256",
+      "pass": true,
+      "actual": "b80046489e95a741f449bc22bda037fd41ad6ae3003bd19d2196e01172d9223d",
+      "expected": "b80046489e95a741f449bc22bda037fd41ad6ae3003bd19d2196e01172d9223d"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part003.gz transport size",
+      "pass": true,
+      "actual": 14103302,
+      "expected": 14103302
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part003.gz transport SHA-256",
+      "pass": true,
+      "actual": "a4b9feee79759cad701db7a4925ec748823a7746d475d3dfa87a28fd882ccf79",
+      "expected": "a4b9feee79759cad701db7a4925ec748823a7746d475d3dfa87a28fd882ccf79"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part003.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part003.gz decoded SHA-256",
+      "pass": true,
+      "actual": "62f89694db21e99fef6edcb39d8d14838e5ceb76dda9005228abbbd7dbb1af48",
+      "expected": "62f89694db21e99fef6edcb39d8d14838e5ceb76dda9005228abbbd7dbb1af48"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part004.gz transport size",
+      "pass": true,
+      "actual": 12864686,
+      "expected": 12864686
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part004.gz transport SHA-256",
+      "pass": true,
+      "actual": "438dd521ab5405a19b69c52ef8c4a8b389395188ac54e73b014811d3cb691f93",
+      "expected": "438dd521ab5405a19b69c52ef8c4a8b389395188ac54e73b014811d3cb691f93"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part004.gz decoded size",
+      "pass": true,
+      "actual": 15761480,
+      "expected": 15761480
+    },
+    {
+      "check": "en-id/decoder_q8.onnx.part004.gz decoded SHA-256",
+      "pass": true,
+      "actual": "c1b12260d0d0f9d97975c03b3683f9bf0d67cef6799c34e24b4e1fdf831157e6",
+      "expected": "c1b12260d0d0f9d97975c03b3683f9bf0d67cef6799c34e24b4e1fdf831157e6"
+    },
+    {
+      "check": "en-id/decoder_q8.onnx full size",
+      "pass": true,
+      "actual": 82870344,
+      "expected": 82870344
+    },
+    {
+      "check": "en-id/decoder_q8.onnx full SHA-256",
+      "pass": true,
+      "actual": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6",
+      "expected": "737ceb0b4f03e4138618462451192ad65c739fe41c9a051675c6320e2acfb6b6"
+    },
+    {
+      "check": "en-id/source.spm.part000 transport size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "en-id/source.spm.part000 transport SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "en-id/source.spm.part000 decoded size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "en-id/source.spm.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "en-id/source.spm full size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "en-id/source.spm full SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "en-id/target.spm.part000 transport size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "en-id/target.spm.part000 transport SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "en-id/target.spm.part000 decoded size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "en-id/target.spm.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "en-id/target.spm full size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "en-id/target.spm full SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "en-id/vocab.json.part000 transport size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "en-id/vocab.json.part000 transport SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "en-id/vocab.json.part000 decoded size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "en-id/vocab.json.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "en-id/vocab.json full size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "en-id/vocab.json full SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "en-id/config.json.part000 transport size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "en-id/config.json.part000 transport SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "en-id/config.json.part000 decoded size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "en-id/config.json.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "en-id/config.json full size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "en-id/config.json full SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "en-id/LICENSE.part000 transport size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "en-id/LICENSE.part000 transport SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "en-id/LICENSE.part000 decoded size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "en-id/LICENSE.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "en-id/LICENSE full size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "en-id/LICENSE full SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md.part000 transport size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md.part000 transport SHA-256",
+      "pass": true,
+      "actual": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "expected": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3"
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md.part000 decoded size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "expected": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3"
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md full size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "en-id/ORIGINAL_MODEL_README.md full SHA-256",
+      "pass": true,
+      "actual": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3",
+      "expected": "8425c30e0215ed8bec88e98ce7d8c933edd9b80ea61af1ac76d667a700a49dc3"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part000.gz transport size",
+      "pass": true,
+      "actual": 12474977,
+      "expected": 12474977
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part000.gz transport SHA-256",
+      "pass": true,
+      "actual": "0dfb64d3b1a55c431bfc784cb711a767bb613ba168c509df28301cb660638c63",
+      "expected": "0dfb64d3b1a55c431bfc784cb711a767bb613ba168c509df28301cb660638c63"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part000.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part000.gz decoded SHA-256",
+      "pass": true,
+      "actual": "175495006e2c15534b23410c50d7fce8caaadbca8754dd5dd231bef523275fef",
+      "expected": "175495006e2c15534b23410c50d7fce8caaadbca8754dd5dd231bef523275fef"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part001.gz transport size",
+      "pass": true,
+      "actual": 12519423,
+      "expected": 12519423
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part001.gz transport SHA-256",
+      "pass": true,
+      "actual": "b58d7247c3a91b321d0b7509a23b97eafc47b236ed271b13a92a9113979c8e15",
+      "expected": "b58d7247c3a91b321d0b7509a23b97eafc47b236ed271b13a92a9113979c8e15"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part001.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part001.gz decoded SHA-256",
+      "pass": true,
+      "actual": "35127d0e6dba63268942cf60a262158883fd5def4c0595c6a2b19b65f905f23d",
+      "expected": "35127d0e6dba63268942cf60a262158883fd5def4c0595c6a2b19b65f905f23d"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part002.gz transport size",
+      "pass": true,
+      "actual": 12837315,
+      "expected": 12837315
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part002.gz transport SHA-256",
+      "pass": true,
+      "actual": "c8c242d83790d9b6b91f19a68f33298ebdb2d0eef31fd826a3104c4e399a91c0",
+      "expected": "c8c242d83790d9b6b91f19a68f33298ebdb2d0eef31fd826a3104c4e399a91c0"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part002.gz decoded size",
+      "pass": true,
+      "actual": 14146956,
+      "expected": 14146956
+    },
+    {
+      "check": "id-en/encoder_q8.onnx.part002.gz decoded SHA-256",
+      "pass": true,
+      "actual": "3cd98af9a44bf200ae449886976c47f27d2f2fa4efda3cf39f12dd58e1b5cc32",
+      "expected": "3cd98af9a44bf200ae449886976c47f27d2f2fa4efda3cf39f12dd58e1b5cc32"
+    },
+    {
+      "check": "id-en/encoder_q8.onnx full size",
+      "pass": true,
+      "actual": 47701388,
+      "expected": 47701388
+    },
+    {
+      "check": "id-en/encoder_q8.onnx full SHA-256",
+      "pass": true,
+      "actual": "54cd5f131d79009685780b3644def838a023fb997d83abe8583c91617c47426e",
+      "expected": "54cd5f131d79009685780b3644def838a023fb997d83abe8583c91617c47426e"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part000.gz transport size",
+      "pass": true,
+      "actual": 12424392,
+      "expected": 12424392
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part000.gz transport SHA-256",
+      "pass": true,
+      "actual": "c57833033901468004493e68a4fd6e5e1abb53695652da9d88f9a83d4ecec83e",
+      "expected": "c57833033901468004493e68a4fd6e5e1abb53695652da9d88f9a83d4ecec83e"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part000.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part000.gz decoded SHA-256",
+      "pass": true,
+      "actual": "33f0538233215b6a7a91a442cbb83fe0ba5fea57b447c4f2e650cdf757413f2f",
+      "expected": "33f0538233215b6a7a91a442cbb83fe0ba5fea57b447c4f2e650cdf757413f2f"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part001.gz transport size",
+      "pass": true,
+      "actual": 12477947,
+      "expected": 12477947
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part001.gz transport SHA-256",
+      "pass": true,
+      "actual": "e17c2a329cc0d5fb28fa408ba0b5b2bfb0be0408bcca154cb6cbae70b1e42be8",
+      "expected": "e17c2a329cc0d5fb28fa408ba0b5b2bfb0be0408bcca154cb6cbae70b1e42be8"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part001.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part001.gz decoded SHA-256",
+      "pass": true,
+      "actual": "dd5ad4ae3a4baa46e47b4190c04a08bb2fa7b8a56a8ecc9f898dbe8f38ee6961",
+      "expected": "dd5ad4ae3a4baa46e47b4190c04a08bb2fa7b8a56a8ecc9f898dbe8f38ee6961"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part002.gz transport size",
+      "pass": true,
+      "actual": 15292931,
+      "expected": 15292931
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part002.gz transport SHA-256",
+      "pass": true,
+      "actual": "918bca80787d8533ea5a66ba2700d67466f70b5b580bb22dbc97ccbb9a143d11",
+      "expected": "918bca80787d8533ea5a66ba2700d67466f70b5b580bb22dbc97ccbb9a143d11"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part002.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part002.gz decoded SHA-256",
+      "pass": true,
+      "actual": "b40454960ba0e22ddc67a80d1f0bfdac38e4233db8b2e935ee323c17f7f57fa8",
+      "expected": "b40454960ba0e22ddc67a80d1f0bfdac38e4233db8b2e935ee323c17f7f57fa8"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part003.gz transport size",
+      "pass": true,
+      "actual": 13489152,
+      "expected": 13489152
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part003.gz transport SHA-256",
+      "pass": true,
+      "actual": "bfc39d87cda1fb1ee0763c352ae6be52dd2eb63c1837406b067721eefbf4d51f",
+      "expected": "bfc39d87cda1fb1ee0763c352ae6be52dd2eb63c1837406b067721eefbf4d51f"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part003.gz decoded size",
+      "pass": true,
+      "actual": 16777216,
+      "expected": 16777216
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part003.gz decoded SHA-256",
+      "pass": true,
+      "actual": "42a68674acb515d6804924e25e03af70105bbdbaa4fc6c8de1be24de68448eff",
+      "expected": "42a68674acb515d6804924e25e03af70105bbdbaa4fc6c8de1be24de68448eff"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part004.gz transport size",
+      "pass": true,
+      "actual": 12298788,
+      "expected": 12298788
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part004.gz transport SHA-256",
+      "pass": true,
+      "actual": "4da6b2ed807584c960aba6098ab994a933e48b79019753719613c8856648df29",
+      "expected": "4da6b2ed807584c960aba6098ab994a933e48b79019753719613c8856648df29"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part004.gz decoded size",
+      "pass": true,
+      "actual": 15761479,
+      "expected": 15761479
+    },
+    {
+      "check": "id-en/decoder_q8.onnx.part004.gz decoded SHA-256",
+      "pass": true,
+      "actual": "37e07ce4427421d18c720f1dae6a88d9927d2dfce3c46af278b3b8ec930ed603",
+      "expected": "37e07ce4427421d18c720f1dae6a88d9927d2dfce3c46af278b3b8ec930ed603"
+    },
+    {
+      "check": "id-en/decoder_q8.onnx full size",
+      "pass": true,
+      "actual": 82870343,
+      "expected": 82870343
+    },
+    {
+      "check": "id-en/decoder_q8.onnx full SHA-256",
+      "pass": true,
+      "actual": "1e13475e3773031eb9be4eabda7df071a32612cd520d6f5abaeece2e598a1ad0",
+      "expected": "1e13475e3773031eb9be4eabda7df071a32612cd520d6f5abaeece2e598a1ad0"
+    },
+    {
+      "check": "id-en/source.spm.part000 transport size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "id-en/source.spm.part000 transport SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "id-en/source.spm.part000 decoded size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "id-en/source.spm.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "id-en/source.spm full size",
+      "pass": true,
+      "actual": 800687,
+      "expected": 800687
+    },
+    {
+      "check": "id-en/source.spm full SHA-256",
+      "pass": true,
+      "actual": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465",
+      "expected": "2a8fefe71c7f26cb0c6aa1b9f0cc0f8d18006b20fe41c547af7f25b9c8333465"
+    },
+    {
+      "check": "id-en/target.spm.part000 transport size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "id-en/target.spm.part000 transport SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "id-en/target.spm.part000 decoded size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "id-en/target.spm.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "id-en/target.spm full size",
+      "pass": true,
+      "actual": 795925,
+      "expected": 795925
+    },
+    {
+      "check": "id-en/target.spm full SHA-256",
+      "pass": true,
+      "actual": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0",
+      "expected": "e88300911c2c573ec5526777a1e84bae698d20925b82dcef9c7248bb0e537ed0"
+    },
+    {
+      "check": "id-en/vocab.json.part000 transport size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "id-en/vocab.json.part000 transport SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "id-en/vocab.json.part000 decoded size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "id-en/vocab.json.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "id-en/vocab.json full size",
+      "pass": true,
+      "actual": 1366984,
+      "expected": 1366984
+    },
+    {
+      "check": "id-en/vocab.json full SHA-256",
+      "pass": true,
+      "actual": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b",
+      "expected": "cda834905a5d478c54a73abc98cc9155dc58217baa130cdf165411265b760d6b"
+    },
+    {
+      "check": "id-en/config.json.part000 transport size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "id-en/config.json.part000 transport SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "id-en/config.json.part000 decoded size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "id-en/config.json.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "id-en/config.json full size",
+      "pass": true,
+      "actual": 958,
+      "expected": 958
+    },
+    {
+      "check": "id-en/config.json full SHA-256",
+      "pass": true,
+      "actual": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1",
+      "expected": "8a6cae28649b98d4d1105c45b5f08c5e9fed65d8afe62b76669245297e51e8c1"
+    },
+    {
+      "check": "id-en/LICENSE.part000 transport size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "id-en/LICENSE.part000 transport SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "id-en/LICENSE.part000 decoded size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "id-en/LICENSE.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "id-en/LICENSE full size",
+      "pass": true,
+      "actual": 18652,
+      "expected": 18652
+    },
+    {
+      "check": "id-en/LICENSE full SHA-256",
+      "pass": true,
+      "actual": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+      "expected": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9"
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md.part000 transport size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md.part000 transport SHA-256",
+      "pass": true,
+      "actual": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "expected": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611"
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md.part000 decoded size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md.part000 decoded SHA-256",
+      "pass": true,
+      "actual": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "expected": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611"
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md full size",
+      "pass": true,
+      "actual": 601,
+      "expected": 601
+    },
+    {
+      "check": "id-en/ORIGINAL_MODEL_README.md full SHA-256",
+      "pass": true,
+      "actual": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611",
+      "expected": "bed2d6941fb63320447fc33c935b71b58b59272bc2a9c91546bd4220e31fd611"
+    }
+  ]
+}

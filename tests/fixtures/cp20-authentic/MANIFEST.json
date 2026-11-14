@@ -1,0 +1,23 @@
+{
+  "url": "https://archive.org/download/lm_20220102/lm.pdf",
+  "bytes": 85937593,
+  "sha256": "43bc4835b63fe4dca599fe14982596b54a261e4d01af9c23a48070ca88bde105",
+  "elapsedSeconds": 20.872480392456055,
+  "status": "DOWNLOADED",
+  "title": "Light and Matter",
+  "author": "Benjamin Crowell",
+  "revision": "2020-05-07",
+  "pages": 1062,
+  "language": "English",
+  "officialAuthorSourceUrl": "https://www.lightandmatter.com/lm/",
+  "authorLinkedDownloadPage": "https://archive.org/details/lm_20220102",
+  "license": "Creative Commons Attribution-ShareAlike 3.0 per embedded copyright page, except photographs/drawings credited separately in original PDF. Preserve original PDF including full photo credits.",
+  "licenseDiscrepancy": "Internet Archive metadata calls this CC BY-SA4.0; exact downloaded PDF explicitly says3.0. This manifest follows embedded PDF rather than silently assuming4.0.",
+  "format": "Original author-published PDF; no reflow, no rewritten or repeated text.",
+  "scope": "Source extraction supplement only, no full translation or semantic acceptance.",
+  "excludedCandidate": {
+    "title": "OpenStax Biology2e",
+    "reason": "Current page licensing CC BY-NC-SA with additional AI wording; older official PDF Biology2e-OP_aHSFm3Y.pdf227222946bytes exceeds100MiB. No OpenStax fixture retained."
+  },
+  "retention": "Original PDF scratch-only outside release tree; source package excludes book. Fetcher verifies exact SHA256."
+}

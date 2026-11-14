@@ -1,0 +1,5 @@
+# Perubahan kontrak tes yang sah
+
+1. `tests/lifecycle-harness.mjs` kini menautkan impor `metadata-language.js` ke fungsi produksi aktual. Tidak ada assertion lifecycle yang dihapus atau hasil bahasa yang dipalsukan oleh helper. Boundary DOM/storage/translator pada tes tetap dilabeli doubles.
+2. Kontrol penolakan deterministik di `tests/cp20-semantic-guards.mjs` sebelumnya memberi target `The value remains unchanging.` untuk sumber `Nilai tidak berubah.` lalu mewajibkan penolakan. Keduanya sebenarnya sepadan. Setelah perbaikan normalisasi negasi leksikal, target kontrol diganti menjadi lawan makna `The value changes.`; assertion `outcome=rejected` dan `retryable=false` tetap sama. Tes positif dan negatif independen untuk unchanging tersedia di `tests/cp20-recovery-adapter.mjs`.
+3. Korpus v4 yang sudah terlihat kini menjadi regresi pengembangan. Hasilnya tidak dipromosikan menjadi penerimaan buta baru. Bukti/fixture asli tetap tersimpan dalam baseline yang tidak diubah dan checkpoint keselamatan.

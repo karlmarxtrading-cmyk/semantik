@@ -1,0 +1,216 @@
+{
+  "testedAt": "2026-11-13T07:43:39.400Z",
+  "identities": {
+    "app/translation.js": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+    "app/semantic-spans.js": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24"
+  },
+  "method": "Independent constructed structural regression/validator mutations; not model outputs or validation that invented taxon exists.",
+  "checks": [
+    {
+      "name": "function identity F(B)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged F(B)",
+      "pass": true
+    },
+    {
+      "name": "function identity H(X)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged H(X)",
+      "pass": true
+    },
+    {
+      "name": "function identity g(x)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged g(x)",
+      "pass": true
+    },
+    {
+      "name": "function identity g(f(x))",
+      "pass": true
+    },
+    {
+      "name": "function unchanged g(f(x))",
+      "pass": true
+    },
+    {
+      "name": "function identity P(A,B)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged P(A,B)",
+      "pass": true
+    },
+    {
+      "name": "function identity Var(X)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged Var(X)",
+      "pass": true
+    },
+    {
+      "name": "function identity log(x+1)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged log(x+1)",
+      "pass": true
+    },
+    {
+      "name": "function identity f(A_i)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged f(A_i)",
+      "pass": true
+    },
+    {
+      "name": "function identity h(𝑥)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged h(𝑥)",
+      "pass": true
+    },
+    {
+      "name": "function identity Cov(X,Y)",
+      "pass": true
+    },
+    {
+      "name": "function unchanged Cov(X,Y)",
+      "pass": true
+    },
+    {
+      "name": "function mutation F(B) -> F(C)",
+      "pass": true
+    },
+    {
+      "name": "function mutation H(X) -> H(Y)",
+      "pass": true
+    },
+    {
+      "name": "function mutation g(x) -> g(y)",
+      "pass": true
+    },
+    {
+      "name": "function mutation log(x+1) -> log(x-1)",
+      "pass": true
+    },
+    {
+      "name": "function mutation P(A,B) -> P(B,A)",
+      "pass": true
+    },
+    {
+      "name": "function mutation Var(X) -> Var(Y)",
+      "pass": true
+    },
+    {
+      "name": "function mutation f(A_i) -> f(A_j)",
+      "pass": true
+    },
+    {
+      "name": "function mutation h(𝑥) -> h(x)",
+      "pass": true
+    },
+    {
+      "name": "ordinary parenthetical prose not function",
+      "pass": true
+    },
+    {
+      "name": "unbalanced function not invented",
+      "pass": true
+    },
+    {
+      "name": "function protects sentence segmentation",
+      "pass": true
+    },
+    {
+      "name": "Roman mutation (ii) The sample is dry.",
+      "pass": true
+    },
+    {
+      "name": "Roman mutation (iv) Teks tetap. (v) Teks berikut.",
+      "pass": true
+    },
+    {
+      "name": "Roman mutation Condition (ix) is required.",
+      "pass": true
+    },
+    {
+      "name": "Roman labels unchanged",
+      "pass": true
+    },
+    {
+      "name": "Roman ordinary mix not frozen",
+      "pass": true
+    },
+    {
+      "name": "Roman nonlabel parenthetical I not inferred",
+      "pass": true
+    },
+    {
+      "name": "explicit taxonomic cue The species Homo sapiens was recorded.",
+      "pass": true
+    },
+    {
+      "name": "explicit taxonomic cue The bacterium (Escherichia coli) was isolated.",
+      "pass": true
+    },
+    {
+      "name": "explicit taxonomic cue Nama ilmiah Arabidopsis thaliana dicatat.",
+      "pass": true
+    },
+    {
+      "name": "explicit taxonomic cue The fox (Vulpes vulpes) was observed.",
+      "pass": true
+    },
+    {
+      "name": "explicit taxonomic cue The species Inventus fictivus was listed.",
+      "pass": true
+    },
+    {
+      "name": "ordinary prose not taxon Climate change was observed.",
+      "pass": true
+    },
+    {
+      "name": "ordinary prose not taxon The experiment (Further analysis) is reported.",
+      "pass": true
+    },
+    {
+      "name": "ordinary prose not taxon Species diversity declined.",
+      "pass": true
+    },
+    {
+      "name": "ordinary prose not taxon The species requires Further analysis.",
+      "pass": true
+    },
+    {
+      "name": "ordinary prose not taxon We discussed Common language.",
+      "pass": true
+    },
+    {
+      "name": "taxon mutated detected",
+      "pass": true
+    },
+    {
+      "name": "taxon surrounding prose may translate",
+      "pass": true
+    },
+    {
+      "name": "taxon duplicate detected",
+      "pass": true
+    },
+    {
+      "name": "source taxonomy never corrected",
+      "pass": true
+    }
+  ],
+  "pass": 51,
+  "fail": 0
+}

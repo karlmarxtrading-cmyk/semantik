@@ -1,0 +1,150 @@
+{
+  "scope": "Files owned by semantic recovery agent; no assertion about other integration evidence",
+  "files": [
+    {
+      "path": "AFFECTED_ONLY_INFERENCE.json",
+      "bytes": 8765,
+      "sha256": "0800cecec63e724dfd664956c399e79456e7e389afa5e9f14142434b2159f572"
+    },
+    {
+      "path": "DEVELOPMENT_ITERATION_1.json",
+      "bytes": 128438,
+      "sha256": "a9472cd3494a08a060e536d38fe3aaa7f4ec3d9e57d45fe6c479d226e1fa4185"
+    },
+    {
+      "path": "DEVELOPMENT_ITERATION_2.json",
+      "bytes": 126249,
+      "sha256": "ef36609961ff8feccfbfa00f0963fce455c61f2c3b50ea08080e79f211f30458"
+    },
+    {
+      "path": "DEVELOPMENT_ITERATION_3.json",
+      "bytes": 124454,
+      "sha256": "eb45b08f2491b7b5e0fe344c2297fe36e5b61ec9904bb0f8e1dbec430673a271"
+    },
+    {
+      "path": "DEVELOPMENT_ITERATION_3_FREEZE.json",
+      "bytes": 852,
+      "sha256": "13327fc8c01e181cd63d79e54a63cb8b7aa58a5f5e4f4a2a4ce410a91cc4d017"
+    },
+    {
+      "path": "FINAL_CHANGE_IMPACT_BINDING.json",
+      "bytes": 1030,
+      "sha256": "d91b080ac276832ecd1963cce1bfe10879ef42dd73183dbd66e3edc7b937b042"
+    },
+    {
+      "path": "FINAL_REGRESSION_EXECUTION.log",
+      "bytes": 10900,
+      "sha256": "67c3b7725d4eb1139c3558ea02950b2f986408b1b00fcb2f827cbb3273350386"
+    },
+    {
+      "path": "FINAL_REGRESSION_FREEZE.json",
+      "bytes": 852,
+      "sha256": "13327fc8c01e181cd63d79e54a63cb8b7aa58a5f5e4f4a2a4ce410a91cc4d017"
+    },
+    {
+      "path": "GUARD_TESTS.json",
+      "bytes": 3455,
+      "sha256": "1ccb27034096473bf6fe0d72b57202a269ed0914b365604a5b3f723fe3a46321"
+    },
+    {
+      "path": "RECONCILED_KNOWN_REGRESSION.json",
+      "bytes": 158796,
+      "sha256": "b83da8874b5f751bdb386983c5484534e36d1386aada2d974bc09b97cdd90067"
+    },
+    {
+      "path": "RECORDING_EXPLORATION.json",
+      "bytes": 6381,
+      "sha256": "7a6712e6e74edf96764723abeedad67390a47eea203b851f56e860c2651973ce"
+    },
+    {
+      "path": "RECOVERY_SEMANTIC_REVIEW.json",
+      "bytes": 12704,
+      "sha256": "37d1e5e4752414b18ff2d743e338dc4ffc96984f68ed3d4c14d4c5a79c51b8da"
+    },
+    {
+      "path": "RECOVERY_SEMANTIC_REVIEW.md",
+      "bytes": 8229,
+      "sha256": "478289fa1dd35562d43a569e6386bb21b8d876837660a2a38c7c49e4b0970e3e"
+    },
+    {
+      "path": "REGRESSION_CORPUS.json",
+      "bytes": 27815,
+      "sha256": "2d2d7fb40f2910c085bff613a341ee9fb7a0c3de6693467edbc6e0623a85e5aa"
+    },
+    {
+      "path": "REGRESSION_INFERENCE.json",
+      "bytes": 124454,
+      "sha256": "eb45b08f2491b7b5e0fe344c2297fe36e5b61ec9904bb0f8e1dbec430673a271"
+    },
+    {
+      "path": "REPRODUCE.md",
+      "bytes": 1079,
+      "sha256": "17a12782c6e11eb15d384f8326cb3ca2ee1a2805712813ab99f80943c4e8bb72"
+    },
+    {
+      "path": "SCIENTIFIC_IDENTITIES_51.json",
+      "bytes": 4807,
+      "sha256": "760df9a6037cc718927ec1085954f145e229dd475cccd0e8e324d3f3dba6aa09"
+    },
+    {
+      "path": "SCIENTIFIC_IDENTITIES_51_PRE_FINAL.json",
+      "bytes": 4807,
+      "sha256": "bc21b8a2ba30d0a09829c0a0d1be52e10d4258ecf4597a11a86644f6b6954d31"
+    },
+    {
+      "path": "SCIENTIFIC_IDENTITIES_EXECUTION.log",
+      "bytes": 4808,
+      "sha256": "836ca919e9e468f04848b8f41dd4a242560fbfbd5da39de86cca0d6bea0c0057"
+    },
+    {
+      "path": "SEMANTIC_PROGRESS_LEDGER.jsonl",
+      "bytes": 658,
+      "sha256": "ffa0acd83fc491eb800c201549cc0c966bfbb3dbde834dfa65c5e84f0e085d87"
+    },
+    {
+      "path": "claim-guards.js.FINAL_DELTA.diff",
+      "bytes": 2162,
+      "sha256": "85d0dc76328adef0909cc4d79b9c0cf093eeff43fd8f02bbc37f6577cb05484e"
+    },
+    {
+      "path": "pre-final-role-fix/claim-guards.js",
+      "bytes": 16107,
+      "sha256": "84ce4961e92dce743e07f0e618827794cdb780c77a20f414a7477d91c87e5f91"
+    },
+    {
+      "path": "pre-final-role-fix/semantic-spans.js",
+      "bytes": 28121,
+      "sha256": "dc1de6a49e72745d9a9ffbad6e5536062030df3c14180b02d94194787d4fa7c7"
+    },
+    {
+      "path": "semantic-spans.js.FINAL_DELTA.diff",
+      "bytes": 1232,
+      "sha256": "d78bc482cbd4541acd3254a1f4aac509ebc1d256056b48925df490714e09e476"
+    },
+    {
+      "path": "../../../tests/recovery-semantic-affected.mjs",
+      "bytes": 1146,
+      "sha256": "424081f9836ee3be29aa896e089cc114298a2adc11e3cb5030af0de15dfa60a5"
+    },
+    {
+      "path": "../../../tests/recovery-semantic-guards.mjs",
+      "bytes": 6552,
+      "sha256": "8d4dc4edf2c72a46d7f405aa3691f44f5c40bf80a92effc0f71965018627fc9b"
+    },
+    {
+      "path": "../../../tests/recovery-semantic-reconcile.mjs",
+      "bytes": 2635,
+      "sha256": "0837bc9f0ed5f253c9712cab2407931bac6aa4c802ad639c0ae02de5c7e02062"
+    },
+    {
+      "path": "../../../tests/recovery-semantic-regression.mjs",
+      "bytes": 2399,
+      "sha256": "067e5c6d3afb0314906b774ff8b4041d94471dc30d588ac41dc9e2942a08bd17"
+    },
+    {
+      "path": "../../../tests/recovery-recording-exploration.mjs",
+      "bytes": 1017,
+      "sha256": "79451b658fdef086bb63ffa92feee361cf962a7989ea6cb6b7dcaa288b269bad"
+    }
+  ]
+}

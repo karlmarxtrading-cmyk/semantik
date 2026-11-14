@@ -1,0 +1,2196 @@
+{
+  "status": "COMPLETED_EXECUTION_NOT_SEMANTIC_APPROVAL",
+  "method": "Actual local ONNX/WASM via Node Worker bridge; development only; no semantic approval implied",
+  "build": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp21/work/app",
+    "adapterSHA256": "7c0dda49517af791a9abc3c80c863a873cda46dde35dc6b34c4ea62c53bbce1e",
+    "rulesSHA256": "4aeb0d8d0f1b02674e949fb56a55bdfaf6ea77a5fe56edd05d3b7691fc278f83",
+    "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda",
+    "phrasesSHA256": "8632d00be5c1a58719b52eb56cc428ec4c7954e9a7e23336b1b1e0bc45da2f70"
+  },
+  "rows": [
+    {
+      "id": "F01-en-id",
+      "direction": "en-id",
+      "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval.",
+      "text": "Sebuah fungsi kontinu pada interval tertutup dan terbatas mencapai maksimum. Kesimpulan yang sama tidak harus berpegang pada interval terbuka.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 40,
+      "outputTokens": 31,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 40,
+        "outputTokens": 31,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A continuous function on a closed and bounded interval attains a maximum."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The same conclusion need not hold on an open interval."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1093.4077819999998,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F02-en-id",
+      "direction": "en-id",
+      "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+      "text": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 59,
+        "outputTokens": 52,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Two matrices can have the same determinant without being equal."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "A nonzero determinant is sufficient for a square matrix to have an inverse."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "A nonzero determinant is sufficient for a square matrix to have an inverse."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep ilmiah invers matriks hilang atau berubah.",
+          "segmentSource": "A nonzero determinant is sufficient for a square matrix to have an inverse.",
+          "candidateText": "Sebuah determinant bukan nol cukup untuk matriks persegi untuk memiliki sebuah invers.",
+          "rawCandidate": "Sebuah determinant bukan nol cukup untuk <ssterm0/> untuk memiliki sebuah <ssterm1/>."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1482.1452639999998,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F03-en-id",
+      "direction": "en-id",
+      "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute.",
+      "text": "Mengencerkan sebuah larutan dengan air murni mengurangi konsentrasi ketika jumlah zat terlarut tetap konstan. Pengenceran saja tidak menghapus zat terlarut.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 57,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 57,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Dilution alone does not remove the solute."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1361.0740130000004,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F04-en-id",
+      "direction": "en-id",
+      "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield.",
+      "text": "Katalis mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu tetap. Mencapai keseimbangan lebih cepat tidak dengan sendirinya menyiratkan lebih besar hasil kesetimbangan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 51,
+      "outputTokens": 40,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 51,
+        "outputTokens": 40,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Reaching equilibrium sooner does not by itself imply a greater equilibrium yield."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1113.1493450000007,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F05-en-id",
+      "direction": "en-id",
+      "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it.",
+      "text": "95% interval kepercayaan menggambarkan sebuah prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval tertentu telah dihitung, interpretasi frekuentis tidak menetapkan sebuah probabilitas 95% ke parameter tetap yang terletak di dalamnya.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 59,
+      "outputTokens": 46,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 59,
+        "outputTokens": 46,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1412.8071610000006,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F06-en-id",
+      "direction": "en-id",
+      "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population.",
+      "text": "Penugasan acak dan pengambilan sampel acak melayani tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; ini tidak secara otomatis membuat perwakilan sampel dari populasi.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 59,
+      "outputTokens": 49,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 59,
+        "outputTokens": 49,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Random assignment and random sampling serve different purposes."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1516.7468709999994,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F07-en-id",
+      "direction": "en-id",
+      "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences.",
+      "text": "Batas harga maksimum yang mengikat dapat membuat kelebihan permintaan. Pernyataan ini menyangkut pembeli kuantitas yang ingin membeli relatif terhadap penjual kuantitas, bukan perubahan selera orang.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 44,
+      "outputTokens": 35,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 44,
+        "outputTokens": 35,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A binding price ceiling can create excess demand."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 959.9795940000004,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F08-en-id",
+      "direction": "en-id",
+      "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged.",
+      "text": "Peningkatan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat jatuh walaupun harga tetap tidak berubah.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 58,
+      "outputTokens": 45,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 58,
+        "outputTokens": 45,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "An increase in income need not raise demand for every good."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "For an inferior good, demand can fall even if its price remains unchanged."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1226.0284499999998,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F09-en-id",
+      "direction": "en-id",
+      "source": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased.",
+      "text": "Rencana analisisnya terdaftar sebelum hasil pemeriksaannya diperiksa. Waktu ini mengurangi satu kesempatan untuk melaporkan secara selektif; tidak menetapkan bahwa setiap keputusan dalam penelitian adalah tidak bias.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 42,
+      "outputTokens": 34,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 42,
+        "outputTokens": 34,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The analysis plan was registered before the outcomes were examined."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 878.4852869999995,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F10-en-id",
+      "direction": "en-id",
+      "source": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate.",
+      "text": "Penelaah meminta pengukuran mentah karena tabel ringkasan tidak lengkap. Menyertakan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran akurat.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 42,
+      "outputTokens": 31,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 42,
+        "outputTokens": 31,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The reviewer requested the raw measurements because the summary table was incomplete."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 760.9151090000014,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "text": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 50,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Treatment A produced 7 responses and treatment B produced 11 responses."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "These counts cannot be compared fairly without knowing how many participants received each treatment."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah. Periksa kuantor: cakupan pernyataan mungkin berubah.",
+          "segmentSource": "These counts cannot be compared fairly without knowing how many participants received each treatment.",
+          "candidateText": "Jumlah ini tidak dapat dibandingkan dengan dengan dengan dengan jumlah tiap - tiap orang yang berpartisipasi.",
+          "rawCandidate": "Jumlah ini tidak dapat dibandingkan dengan dengan dengan dengan jumlah tiap - tiap orang yang berpartisipasi."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1153.0133990000013,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "text": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 21,
+        "outputTokens": 19,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Peristiwa yang dibedakan dari bukti atau pencatatan hilang.",
+          "segmentSource": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur.",
+          "candidateText": null,
+          "rawCandidate": null
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1088.7698889999992,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-007",
+      "direction": "en-id",
+      "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities.",
+      "text": "Interval kepercayaan menggambarkan ketidakpastian di bawah prosedur pengambilan sampel yang diasumsikan. Hal ini tidak boleh ditafsirkan sebagai jangkauan berisi semua pengamatan individu. Ini adalah jumlah statistik yang berbeda.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 40,
+      "outputTokens": 34,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 40,
+        "outputTokens": 34,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A confidence interval describes uncertainty under the assumed sampling procedure."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "It should not be interpreted as the range containing all individual observations."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "These are different statistical quantities."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 807.6733459999996,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-011",
+      "direction": "en-id",
+      "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change.",
+      "text": "Peningkatan permintaan berbeda dengan peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Membingungkan pernyataan ini dapat membalikkan penjelasan dari perubahan harga.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 51,
+      "outputTokens": 38,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 51,
+        "outputTokens": 38,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Confusing these statements can reverse the explanation of a price change."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1065.8980590000028,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-013",
+      "direction": "en-id",
+      "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way.",
+      "text": "Laporan tersebut menempatkan pedoman wawancara dalam lampiran sehingga peneliti lain dapat memeriksa pertanyaan-pertanyaan. The lampiran mendokumentasikan prosedur; itu tidak menjamin bahwa setiap responden mengerti setiap pertanyaan dengan cara yang sama.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 57,
+      "outputTokens": 47,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 57,
+        "outputTokens": 47,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The appendix documents the procedure; it does not certify that every respondent understood every question in the same way."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1302.0469099999973,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "direction": "en-id",
+      "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "text": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 28,
+        "outputTokens": 24,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Heating was stopped before the solvent boiled."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "Heating was stopped before the solvent boiled."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Proses mendidih berubah menjadi tindakan merebus oleh pelaku.",
+          "segmentSource": "Heating was stopped before the solvent boiled.",
+          "candidateText": "Pemanasan dihentikan sebelum pelarut direbus.",
+          "rawCandidate": "<ssterm0/> dihentikan sebelum pelarut direbus."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 559.6760039999972,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-005",
+      "direction": "en-id",
+      "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared.",
+      "text": "Katalis itu ditemukan setelah percobaan dan digunakan kembali. Perolehan kembali saja tidak menunjukkan bahwa tidak ada material yang hilang; massa awal dan akhir harus dibandingkan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 38,
+      "outputTokens": 32,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 32,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The catalyst was recovered after the experiment and reused."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 976.5752460000003,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F01-id-en",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+      "text": "Function continuous at closed and bounded interval attains maximum value. The same conclusion need not applies to open interval.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 31,
+      "outputTokens": 33,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 33,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kesimpulan yang sama tidak harus berlaku pada interval terbuka."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 861.7922380000018,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F02-id-en",
+      "direction": "id-en",
+      "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers.",
+      "text": "Two matrixes can have the same determinant without becoming the same matrix. Determinan is not zero sufficient condition to have square matrix to have inverse.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 43,
+      "outputTokens": 45,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 43,
+        "outputTokens": 45,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1204.731083999999,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F03-id-en",
+      "direction": "id-en",
+      "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut.",
+      "text": "Diluting solution with pure water lowers its concentration when amount of dissolved substance remains. Dilution alone does not remove solute.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 38,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Pengenceran saja tidak menghilangkan zat terlarut."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1152.285565000002,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F04-id-en",
+      "direction": "id-en",
+      "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+      "text": "Catalyst changes rate of a reaction, but does not change its equilibrium constant in fixed temperature. Accomplished faster balance does not in itself imply a larger equilibrium yield.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 48,
+      "outputTokens": 51,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 48,
+        "outputTokens": 51,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1399.4047230000033,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F05-id-en",
+      "direction": "id-en",
+      "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya.",
+      "text": "Confidence interval 95% explains procedure by repeated-sampling coverage. Once this special interval is calculated, frequentist interpretation does not give the probability 95% that fixed parameter is in it.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 45,
+      "outputTokens": 51,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 45,
+        "outputTokens": 51,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1458.5098590000016,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F06-id-en",
+      "direction": "id-en",
+      "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi.",
+      "text": "Random assignment and random sampling have different goals. Random assignment can reduce confounding in experiments; it does not automatically make sample represent population.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 51,
+      "outputTokens": 53,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 51,
+        "outputTokens": 53,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1545.2800180000013,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F07-id-en",
+      "direction": "id-en",
+      "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat.",
+      "text": "Binding price ceiling can generate excess demand. This statement deals with the amount of buyers would like to buy from a quantity supplied salesman, not a change in the preference of the public.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 36,
+      "outputTokens": 48,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 36,
+        "outputTokens": 48,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1320.3656440000013,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F08-id-en",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah.",
+      "text": "Increase income need not increases the demand for each goods. For inferior good, demand can go down even if the price is unchanged.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 35,
+      "outputTokens": 39,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 35,
+        "outputTokens": 39,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1112.0887999999977,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F09-id-en",
+      "direction": "id-en",
+      "source": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias.",
+      "text": "The analysis plan was registered before the results were checked. This time sequence reduces one opportunity to report selectively; it does not prove that each decision in research unbiased.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 34,
+      "outputTokens": 39,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 34,
+        "outputTokens": 39,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Rencana analisis didaftarkan sebelum hasil diperiksa."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1014.334523000005,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "F10-id-en",
+      "direction": "id-en",
+      "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat.",
+      "text": "Reviewer requests raw measurement results because the summary table is incomplete. Raw data distribution allows further checks, but it does not guarantee accurate measurements.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 36,
+      "outputTokens": 33,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 36,
+        "outputTokens": 33,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 879.4342220000035,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-026",
+      "direction": "id-en",
+      "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "text": "Upgrade demand differs from upgrade quantity demanded over unchanged demand curve. Mixing this statement can reverse explanations of price changes.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 39,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 39,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1191.626977,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "text": "Treatment A generate 7 response and treatment B generate 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. Denominator is as important as numerator.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 59,
+      "outputTokens": 64,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 59,
+        "outputTokens": 64,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penyebut sama pentingnya dengan pembilang."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1759.6846349999978,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "direction": "id-en",
+      "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+      "text": "The lab instrument was calibrated before data collection. Calibration reduce measurement error; calibration does not prove that proposed explanation is correct.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 39,
+      "outputTokens": 43,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 39,
+        "outputTokens": 43,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1268.880244,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-020",
+      "direction": "id-en",
+      "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan.",
+      "text": "The catalyst was recovered after the experiment and reused. Recovery alone does not show that no missing material; initial and end mass must be compared.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 34,
+      "outputTokens": 34,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 34,
+        "outputTokens": 34,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 866.6033949999983,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "LONG-PROSE-10",
+      "direction": "id-en",
+      "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda.",
+      "text": "CP20B0010_00. Sequence in calculation 81 is monotone and bounded. With stated assumption, sequence it converges. Removing assumptions requires a different kind of proof.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 54,
+      "outputTokens": 60,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 54,
+        "outputTokens": 60,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Barisan dalam perhitungan 81 bersifat monoton dan terbatas."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Dengan asumsi yang dinyatakan, barisan itu konvergen."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Menghapus asumsi memerlukan pembuktian yang berbeda."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1661.3319499999998,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-029",
+      "direction": "id-en",
+      "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka.",
+      "text": "The results came from volunteers who had access to the necessary equipment. Generalization to a person without access requires additional evidence. The author discussed these limitations before delivering their recommendations.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 38,
+      "outputTokens": 39,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 39,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 882.8421799999996,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "text": "Reviewer asks the author to distinguish missing information from the evidence that a event did not occur. The blank note may reflect incomplete documentation. The record cannot be automatically considered as a recorded event absence.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      },
+      "inputTokens": 53,
+      "outputTokens": 57,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 53,
+        "outputTokens": 57,
+        "uniqueInputs": 3
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1643.040031000004,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp21-compositional-terms-and-scope-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp21-compositional-terms-and-scope-v1"
+      }
+    }
+  ],
+  "counts": {
+    "cases": 34,
+    "translated": 30,
+    "rejected": 4,
+    "failed": 0
+  }
+}

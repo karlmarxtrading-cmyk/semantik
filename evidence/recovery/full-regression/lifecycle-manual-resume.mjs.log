@@ -1,0 +1,23 @@
+(node:106) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "method": "Actual main/storage modules; fake-indexeddb and VM DOM boundaries; controlled translation transport. No new browser/model claim. App source unchanged.",
+  "sourceSha256": "5dcae2db55c147135a91bac48b58407ea5525e6a4a6af6141424563930083b30",
+  "observedLabel": "Perlu ditinjau",
+  "persistedStatus": "edited",
+  "manualTarget": "Konsentrasi sampel adalah 20 μM dan konsentrasi Ca2+ meningkat.",
+  "source": "The sample concentration was 20 μM and the Ca2+ concentration increased.",
+  "originalText": "The sample concentration was 10 μM and the Ca2+ concentration increased.",
+  "results": [
+    {
+      "name": "corrected source -> translated -> manual target edit -> reload -> unchanged-config rerun -> reload",
+      "result": "PASS",
+      "manualBlockAdditionalEngineCalls": 0
+    },
+    {
+      "name": "pending different block translated on rerun without changing manual target or correction",
+      "result": "PASS",
+      "otherBlockEngineCalls": 1
+    }
+  ]
+}

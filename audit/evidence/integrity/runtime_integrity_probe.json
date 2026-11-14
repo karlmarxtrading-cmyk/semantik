@@ -1,0 +1,93 @@
+{
+  "scope": "Node VM execution of exact deployed service-worker functions and exact readable engine cache patch; memory cache and transport are controlled harnesses. Not browser lifecycle or deployed HTTPS proof.",
+  "tests": [
+    {
+      "test": "SW valid cache remains pinned",
+      "status": "PASS",
+      "detail": "Exact SW function returns verified bytes and does not refetch valid cached release."
+    },
+    {
+      "test": "SW changed bytes fail closed",
+      "status": "PASS",
+      "detail": "New bytes served at old release URL rejected, no poisoned cache entry."
+    },
+    {
+      "test": "SW corrupt cache repaired",
+      "status": "PASS",
+      "detail": "Corrupt cache discarded; network bytes used only after matching release hash."
+    },
+    {
+      "test": "SW openDenied still serves verified network asset",
+      "status": "PASS",
+      "detail": "Cache Storage failure does not discard verified network response."
+    },
+    {
+      "test": "SW putDenied still serves verified network asset",
+      "status": "PASS",
+      "detail": "Cache Storage failure does not discard verified network response."
+    },
+    {
+      "test": "SW install lazy shell",
+      "status": "PASS",
+      "detail": "Only 7 lightweight shell paths fetched during installation; model/PDF/OCR/WASM not precached by install."
+    },
+    {
+      "test": "SW delegates model hashes to worker",
+      "status": "PASS",
+      "detail": "Model shards bypass SW pinning; worker verifies independent transport and decoded hashes."
+    },
+    {
+      "test": "Model openDenied recovery",
+      "status": "PASS",
+      "detail": {
+        "offlineReady": false,
+        "storageWarning": "Model hanya tersedia untuk sesi ini; cache tidak dapat disimpan. Jangan tutup tab sebelum mengunduh hasil. Kosongkan model lokal atau sediakan ruang, lalu siapkan offline kembali.",
+        "fetched": 1,
+        "puts": 0,
+        "scope": "Exact cache/preflight/loader functions with fixture bytes; not a real-model inference test."
+      }
+    },
+    {
+      "test": "Model putDenied recovery",
+      "status": "PASS",
+      "detail": {
+        "offlineReady": false,
+        "storageWarning": "Model hanya tersedia untuk sesi ini; cache tidak dapat disimpan. Jangan tutup tab sebelum mengunduh hasil. Kosongkan model lokal atau sediakan ruang, lalu siapkan offline kembali.",
+        "fetched": 1,
+        "puts": 2,
+        "scope": "Exact cache/preflight/loader functions with fixture bytes; not a real-model inference test."
+      }
+    },
+    {
+      "test": "Model corruptCache recovery",
+      "status": "PASS",
+      "detail": {
+        "offlineReady": true,
+        "storageWarning": "",
+        "fetched": 1,
+        "puts": 2,
+        "scope": "Exact cache/preflight/loader functions with fixture bytes; not a real-model inference test."
+      }
+    },
+    {
+      "test": "Model network wrong hash rejected",
+      "status": "PASS",
+      "detail": "Exact loader rejects wrong transport bytes before decoded model use."
+    },
+    {
+      "test": "Same model bytes at next release URL are fetched again",
+      "status": "PASS",
+      "detail": {
+        "fetched": 2,
+        "puts": 3,
+        "implication": "Cache is keyed by release-prefixed URL rather than content hash. This passes a reproduction of behavior, not an acceptance criterion."
+      }
+    },
+    {
+      "test": "Bundled model manifests equal disk manifests",
+      "status": "PASS",
+      "detail": "Both directions: every property, transport/decoded hash, file path and fingerprint matches."
+    }
+  ],
+  "passed": 13
+}

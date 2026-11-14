@@ -1,0 +1,3285 @@
+{
+  "scope": "Actual uploaded PDF.js parser -> CP18 normalizeItems/layout -> actual bundled ONNX translator -> actual Markdown exporter. Node standard API shims and transport bridge only. Browser, canvas/OCR, checkpoint and download click not tested.",
+  "originalWorkerSha256": "55016f3a12085ddfa7d80c014110a1dc05b1164e6bad0a5406761e5a4072a4fb",
+  "bridgeOnlyChanges": [
+    "N.wasm.wasmPaths=`/r/7a8e787a497535f5/runtime/`",
+    "t.exports={}})),kn=",
+    "error:String(e),"
+  ],
+  "documents": [
+    {
+      "filename": "academic_prose_en.pdf",
+      "detectedSource": "en",
+      "direction": "en-id",
+      "status": "complete",
+      "counts": {
+        "total": 13,
+        "translated": 13,
+        "preserved": 0,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0
+      },
+      "document": {
+        "numPages": 1,
+        "pages": [
+          {
+            "number": 1,
+            "width": 595.28,
+            "height": 841.89,
+            "source": "pdf-text",
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Controlled academic prose fixture (en)",
+                "bbox": [
+                  54,
+                  50.861328125,
+                  262.0195259999999,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  0
+                ],
+                "sourceItems": [
+                  {
+                    "id": 0,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      50.861328125,
+                      262.0195259999999,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Controlled academic prose fixture (en)"
+                ],
+                "target": "Perbaikan prosa akademik yang diatur (en)",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0002",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Synthetic audit input. Not a published study or medical guidance.",
+                "bbox": [
+                  54,
+                  75.753662109375,
+                  345.46435559999975,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  2
+                ],
+                "sourceItems": [
+                  {
+                    "id": 2,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      75.753662109375,
+                      345.46435559999975,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Synthetic audit input. Not a published study or medical guidance."
+                ],
+                "target": "Masukan audit sintetis. Bukan penelitian yang diterbitkan atau bimbingan medis.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0003",
+                "page": 1,
+                "type": "heading",
+                "text": "Abstract",
+                "bbox": [
+                  54,
+                  121.861328125,
+                  57.62109240000001,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  4
+                ],
+                "sourceItems": [
+                  {
+                    "id": 4,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      121.861328125,
+                      57.6210924,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Abstract"
+                ],
+                "level": 2,
+                "target": "Abstrak",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0004",
+                "page": 1,
+                "type": "paragraph",
+                "text": "We examined the association between fine particulate matter exposure and hospital admissions. This observational study does not establish a causal relationship.",
+                "bbox": [
+                  54,
+                  146.753662109375,
+                  446.15259045,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  6,
+                  7
+                ],
+                "sourceItems": [
+                  {
+                    "id": 6,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      146.753662109375,
+                      446.15259045,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 7,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      162.753662109375,
+                      408.78222734999997,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "We examined the association between fine particulate matter exposure and hospital",
+                  "admissions. This observational study does not establish a causal relationship."
+                ],
+                "target": "Kami memeriksa asosiasi antara baik materi paparan materi dan penerimaan rumah sakit. Penelitian observasi ini tidak membangun hubungan sebab - akibat.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0005",
+                "page": 1,
+                "type": "heading",
+                "text": "Methods",
+                "bbox": [
+                  54,
+                  190.861328125,
+                  58.335937200000004,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  9
+                ],
+                "sourceItems": [
+                  {
+                    "id": 9,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      190.861328125,
+                      58.335937200000004,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Methods"
+                ],
+                "level": 2,
+                "target": "Metode",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0006",
+                "page": 1,
+                "type": "paragraph",
+                "text": "The primary endpoint was time to disease progression. The trial failed to demonstrate non-inferiority.",
+                "bbox": [
+                  54,
+                  215.753662109375,
+                  454.19677590000003,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  11,
+                  12
+                ],
+                "sourceItems": [
+                  {
+                    "id": 11,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      215.753662109375,
+                      454.19677590000003,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 12,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      231.753662109375,
+                      77.81176725,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "The primary endpoint was time to disease progression. The trial failed to demonstrate",
+                  "non-inferiority."
+                ],
+                "target": "Titik akhir utama adalah waktu untuk perkembangan penyakit. Pengadilan gagal menunjukkan non-inferiority.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0007",
+                "page": 1,
+                "type": "heading",
+                "text": "Results",
+                "bbox": [
+                  54,
+                  259.861328125,
+                  50.056639200000006,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  14
+                ],
+                "sourceItems": [
+                  {
+                    "id": 14,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      259.861328125,
+                      50.056639200000006,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Results"
+                ],
+                "level": 2,
+                "target": "Hasil",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0008",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically significant (p = 0.08).",
+                "bbox": [
+                  54,
+                  284.753662109375,
+                  476.70923160000007,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  16,
+                  17
+                ],
+                "sourceItems": [
+                  {
+                    "id": 16,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      284.753662109375,
+                      476.7092316,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 17,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      300.753662109375,
+                      114.6027834,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically",
+                  "significant (p = 0.08)."
+                ],
+                "target": "Grup A diterima 10 mg, dimana grup B menerima 20 mg. Efeknya bukan signifikan secara statistik (p = 0.08).",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0009",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Mathematics",
+                "bbox": [
+                  54,
+                  328.861328125,
+                  87.1640592,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  19
+                ],
+                "sourceItems": [
+                  {
+                    "id": 19,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      328.861328125,
+                      87.16405919999998,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Mathematics"
+                ],
+                "target": "Matematika",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0010",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Given f(x)=x², the derivative is f′(x)=2x.",
+                "bbox": [
+                  54,
+                  353.753662109375,
+                  211.5842295,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  21
+                ],
+                "sourceItems": [
+                  {
+                    "id": 21,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      353.753662109375,
+                      211.58422949999996,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Given f(x)=x², the derivative is f′(x)=2x."
+                ],
+                "target": "Mengingat f(x)=x², turunan adalah fåx)=2x.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0011",
+                "page": 1,
+                "type": "paragraph",
+                "text": "The estimator is unbiased only if both conditions hold.",
+                "bbox": [
+                  54,
+                  379.753662109375,
+                  285.725097,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [
+                  "Periksa negasi: bentuk negatif mungkin berubah."
+                ],
+                "sourceItemIds": [
+                  22
+                ],
+                "sourceItems": [
+                  {
+                    "id": 22,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      379.753662109375,
+                      285.725097,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "The estimator is unbiased only if both conditions hold."
+                ],
+                "target": "Estimator tidak akan bisa dicocokkan jika kondisi keduanya baik-baik saja.",
+                "status": "review",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0012",
+                "page": 1,
+                "type": "heading",
+                "text": "Conclusion",
+                "bbox": [
+                  54,
+                  407.861328125,
+                  73.4062488,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  24
+                ],
+                "sourceItems": [
+                  {
+                    "id": 24,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      407.861328125,
+                      73.4062488,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Conclusion"
+                ],
+                "level": 2,
+                "target": "Kesimpulan",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0013",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Absence of evidence is not evidence of absence.",
+                "bbox": [
+                  54,
+                  432.753662109375,
+                  256.3168986,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  26
+                ],
+                "sourceItems": [
+                  {
+                    "id": 26,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      432.753662109375,
+                      256.3168986,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Absence of evidence is not evidence of absence."
+                ],
+                "target": "Bukti yang tak ada bukanlah bukti ketidakhadiran.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              }
+            ],
+            "warnings": []
+          }
+        ],
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Controlled academic prose fixture (en)",
+            "bbox": [
+              54,
+              50.861328125,
+              262.0195259999999,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              0
+            ],
+            "sourceItems": [
+              {
+                "id": 0,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  50.861328125,
+                  262.0195259999999,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Controlled academic prose fixture (en)"
+            ],
+            "target": "Perbaikan prosa akademik yang diatur (en)",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Synthetic audit input. Not a published study or medical guidance.",
+            "bbox": [
+              54,
+              75.753662109375,
+              345.46435559999975,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              2
+            ],
+            "sourceItems": [
+              {
+                "id": 2,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  75.753662109375,
+                  345.46435559999975,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Synthetic audit input. Not a published study or medical guidance."
+            ],
+            "target": "Masukan audit sintetis. Bukan penelitian yang diterbitkan atau bimbingan medis.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "heading",
+            "text": "Abstract",
+            "bbox": [
+              54,
+              121.861328125,
+              57.62109240000001,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              4
+            ],
+            "sourceItems": [
+              {
+                "id": 4,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  121.861328125,
+                  57.6210924,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Abstract"
+            ],
+            "level": 2,
+            "target": "Abstrak",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "We examined the association between fine particulate matter exposure and hospital admissions. This observational study does not establish a causal relationship.",
+            "bbox": [
+              54,
+              146.753662109375,
+              446.15259045,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              6,
+              7
+            ],
+            "sourceItems": [
+              {
+                "id": 6,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  146.753662109375,
+                  446.15259045,
+                  10.5
+                ]
+              },
+              {
+                "id": 7,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  162.753662109375,
+                  408.78222734999997,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "We examined the association between fine particulate matter exposure and hospital",
+              "admissions. This observational study does not establish a causal relationship."
+            ],
+            "target": "Kami memeriksa asosiasi antara baik materi paparan materi dan penerimaan rumah sakit. Penelitian observasi ini tidak membangun hubungan sebab - akibat.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "heading",
+            "text": "Methods",
+            "bbox": [
+              54,
+              190.861328125,
+              58.335937200000004,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              9
+            ],
+            "sourceItems": [
+              {
+                "id": 9,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  190.861328125,
+                  58.335937200000004,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Methods"
+            ],
+            "level": 2,
+            "target": "Metode",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The primary endpoint was time to disease progression. The trial failed to demonstrate non-inferiority.",
+            "bbox": [
+              54,
+              215.753662109375,
+              454.19677590000003,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              11,
+              12
+            ],
+            "sourceItems": [
+              {
+                "id": 11,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  215.753662109375,
+                  454.19677590000003,
+                  10.5
+                ]
+              },
+              {
+                "id": 12,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  231.753662109375,
+                  77.81176725,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "The primary endpoint was time to disease progression. The trial failed to demonstrate",
+              "non-inferiority."
+            ],
+            "target": "Titik akhir utama adalah waktu untuk perkembangan penyakit. Pengadilan gagal menunjukkan non-inferiority.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0007",
+            "page": 1,
+            "type": "heading",
+            "text": "Results",
+            "bbox": [
+              54,
+              259.861328125,
+              50.056639200000006,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              14
+            ],
+            "sourceItems": [
+              {
+                "id": 14,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  259.861328125,
+                  50.056639200000006,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Results"
+            ],
+            "level": 2,
+            "target": "Hasil",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0008",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically significant (p = 0.08).",
+            "bbox": [
+              54,
+              284.753662109375,
+              476.70923160000007,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              16,
+              17
+            ],
+            "sourceItems": [
+              {
+                "id": 16,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  284.753662109375,
+                  476.7092316,
+                  10.5
+                ]
+              },
+              {
+                "id": 17,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  300.753662109375,
+                  114.6027834,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically",
+              "significant (p = 0.08)."
+            ],
+            "target": "Grup A diterima 10 mg, dimana grup B menerima 20 mg. Efeknya bukan signifikan secara statistik (p = 0.08).",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0009",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Mathematics",
+            "bbox": [
+              54,
+              328.861328125,
+              87.1640592,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              19
+            ],
+            "sourceItems": [
+              {
+                "id": 19,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  328.861328125,
+                  87.16405919999998,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Mathematics"
+            ],
+            "target": "Matematika",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0010",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Given f(x)=x², the derivative is f′(x)=2x.",
+            "bbox": [
+              54,
+              353.753662109375,
+              211.5842295,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              21
+            ],
+            "sourceItems": [
+              {
+                "id": 21,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  353.753662109375,
+                  211.58422949999996,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Given f(x)=x², the derivative is f′(x)=2x."
+            ],
+            "target": "Mengingat f(x)=x², turunan adalah fåx)=2x.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0011",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The estimator is unbiased only if both conditions hold.",
+            "bbox": [
+              54,
+              379.753662109375,
+              285.725097,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [
+              "Periksa negasi: bentuk negatif mungkin berubah."
+            ],
+            "sourceItemIds": [
+              22
+            ],
+            "sourceItems": [
+              {
+                "id": 22,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  379.753662109375,
+                  285.725097,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "The estimator is unbiased only if both conditions hold."
+            ],
+            "target": "Estimator tidak akan bisa dicocokkan jika kondisi keduanya baik-baik saja.",
+            "status": "review",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0012",
+            "page": 1,
+            "type": "heading",
+            "text": "Conclusion",
+            "bbox": [
+              54,
+              407.861328125,
+              73.4062488,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              24
+            ],
+            "sourceItems": [
+              {
+                "id": 24,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  407.861328125,
+                  73.4062488,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Conclusion"
+            ],
+            "level": 2,
+            "target": "Kesimpulan",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0013",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Absence of evidence is not evidence of absence.",
+            "bbox": [
+              54,
+              432.753662109375,
+              256.3168986,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              26
+            ],
+            "sourceItems": [
+              {
+                "id": 26,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  432.753662109375,
+                  256.3168986,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Absence of evidence is not evidence of absence."
+            ],
+            "target": "Bukti yang tak ada bukanlah bukti ketidakhadiran.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          }
+        ],
+        "assets": [],
+        "sourceLanguage": "en",
+        "targetLanguage": "id",
+        "metadata": {},
+        "warnings": []
+      },
+      "raw": [
+        {
+          "id": "p0001-b0001",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Controlled academic prose fixture (en)",
+          "result": {
+            "text": "Perbaikan prosa akademik yang diatur (en)",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 16,
+            "outputTokens": 12,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Synthetic audit input. Not a published study or medical guidance.",
+          "result": {
+            "text": "Masukan audit sintetis. Bukan penelitian yang diterbitkan atau bimbingan medis.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 17,
+            "outputTokens": 12,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0003",
+          "type": "heading",
+          "language": "en",
+          "source": "Abstract",
+          "result": {
+            "text": "Abstrak",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0004",
+          "type": "paragraph",
+          "language": "en",
+          "source": "We examined the association between fine particulate matter exposure and hospital admissions. This observational study does not establish a causal relationship.",
+          "result": {
+            "text": "Kami memeriksa asosiasi antara baik materi paparan materi dan penerimaan rumah sakit. Penelitian observasi ini tidak membangun hubungan sebab - akibat.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 29,
+            "outputTokens": 23,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0005",
+          "type": "heading",
+          "language": "en",
+          "source": "Methods",
+          "result": {
+            "text": "Metode",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0006",
+          "type": "paragraph",
+          "language": "en",
+          "source": "The primary endpoint was time to disease progression. The trial failed to demonstrate non-inferiority.",
+          "result": {
+            "text": "Titik akhir utama adalah waktu untuk perkembangan penyakit. Pengadilan gagal menunjukkan non-inferiority.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 25,
+            "outputTokens": 20,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0007",
+          "type": "heading",
+          "language": "en",
+          "source": "Results",
+          "result": {
+            "text": "Hasil",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0008",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Group A received 10 mg, whereas group B received 20 mg. The effect was not statistically significant (p = 0.08).",
+          "result": {
+            "text": "Grup A diterima 10 mg, dimana grup B menerima 20 mg. Efeknya bukan signifikan secara statistik (p = 0.08).",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 41,
+            "outputTokens": 35,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0009",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Mathematics",
+          "result": {
+            "text": "Matematika",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 3,
+            "outputTokens": 1,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0010",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Given f(x)=x², the derivative is f′(x)=2x.",
+          "result": {
+            "text": "Mengingat f(x)=x², turunan adalah fåx)=2x.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 30,
+            "outputTokens": 27,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0011",
+          "type": "paragraph",
+          "language": "en",
+          "source": "The estimator is unbiased only if both conditions hold.",
+          "result": {
+            "text": "Estimator tidak akan bisa dicocokkan jika kondisi keduanya baik-baik saja.",
+            "status": "review",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [
+              "Periksa negasi: bentuk negatif mungkin berubah."
+            ],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 16,
+            "outputTokens": 18,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0012",
+          "type": "heading",
+          "language": "en",
+          "source": "Conclusion",
+          "result": {
+            "text": "Kesimpulan",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0013",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Absence of evidence is not evidence of absence.",
+          "result": {
+            "text": "Bukti yang tak ada bukanlah bukti ketidakhadiran.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "en-id",
+              "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 12,
+            "outputTokens": 8,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        }
+      ]
+    },
+    {
+      "filename": "academic_prose_id.pdf",
+      "detectedSource": "id",
+      "direction": "id-en",
+      "status": "complete",
+      "counts": {
+        "total": 13,
+        "translated": 12,
+        "preserved": 1,
+        "rejected": 0,
+        "failed": 0,
+        "pending": 0
+      },
+      "document": {
+        "numPages": 1,
+        "pages": [
+          {
+            "number": 1,
+            "width": 595.28,
+            "height": 841.89,
+            "source": "pdf-text",
+            "blocks": [
+              {
+                "id": "p0001-b0001",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Controlled academic prose fixture (id)",
+                "bbox": [
+                  54,
+                  50.861328125,
+                  258.04100879999993,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [
+                  "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan."
+                ],
+                "sourceItemIds": [
+                  0
+                ],
+                "sourceItems": [
+                  {
+                    "id": 0,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      50.861328125,
+                      258.04100879999993,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Controlled academic prose fixture (id)"
+                ],
+                "target": "Controlled academic prose fixture (id)",
+                "status": "review",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0002",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Synthetic audit input. Not a published study or medical guidance.",
+                "bbox": [
+                  54,
+                  75.753662109375,
+                  345.46435559999975,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  2
+                ],
+                "sourceItems": [
+                  {
+                    "id": 2,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      75.753662109375,
+                      345.46435559999975,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Synthetic audit input. Not a published study or medical guidance."
+                ],
+                "target": "Synthetic audit input. Not a published study or medical guidance.",
+                "status": "preserved",
+                "outcome": "preserved",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0003",
+                "page": 1,
+                "type": "heading",
+                "text": "Abstrak",
+                "bbox": [
+                  54,
+                  121.861328125,
+                  52.7519532,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  4
+                ],
+                "sourceItems": [
+                  {
+                    "id": 4,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      121.861328125,
+                      52.7519532,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Abstrak"
+                ],
+                "level": 2,
+                "target": "Abstract",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0004",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian observasional ini tidak membuktikan hubungan sebab akibat.",
+                "bbox": [
+                  54,
+                  146.753662109375,
+                  439.85156669999986,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  6,
+                  7
+                ],
+                "sourceItems": [
+                  {
+                    "id": 6,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      146.753662109375,
+                      439.85156669999986,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 7,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      162.753662109375,
+                      324.77197619999987,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian",
+                  "observasional ini tidak membuktikan hubungan sebab akibat."
+                ],
+                "target": "We're researching the relationship between exposure to the delicate and intrusive. This observational study does not prove cause-related consequences.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0005",
+                "page": 1,
+                "type": "heading",
+                "text": "Metode",
+                "bbox": [
+                  54,
+                  190.861328125,
+                  50.78906280000001,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  9
+                ],
+                "sourceItems": [
+                  {
+                    "id": 9,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      190.861328125,
+                      50.78906280000001,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Metode"
+                ],
+                "level": 2,
+                "target": "Methods",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0006",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan non-inferioritas.",
+                "bbox": [
+                  54,
+                  215.753662109375,
+                  426.7573285499998,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  11,
+                  12
+                ],
+                "sourceItems": [
+                  {
+                    "id": 11,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      215.753662109375,
+                      426.7573285499998,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 12,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      231.753662109375,
+                      83.50268535000001,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan",
+                  "non-inferioritas."
+                ],
+                "target": "The main edge is the time to the progression of disease. This test failed to prove non-inferiority.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0007",
+                "page": 1,
+                "type": "heading",
+                "text": "Hasil",
+                "bbox": [
+                  54,
+                  259.861328125,
+                  33.5097648,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  14
+                ],
+                "sourceItems": [
+                  {
+                    "id": 14,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      259.861328125,
+                      33.5097648,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Hasil"
+                ],
+                "level": 2,
+                "target": "Results",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0008",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak signifikan secara statistik (p = 0.08).",
+                "bbox": [
+                  54,
+                  284.753662109375,
+                  486.5888726999998,
+                  26.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  16,
+                  17
+                ],
+                "sourceItems": [
+                  {
+                    "id": 16,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      284.753662109375,
+                      486.5888726999998,
+                      10.5
+                    ]
+                  },
+                  {
+                    "id": 17,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      300.753662109375,
+                      193.9987801499999,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak",
+                  "signifikan secara statistik (p = 0.08)."
+                ],
+                "target": "Group A accepts 10 mg, while group B receives 20 mg. The effect is not statistically significant (p = 0.08).",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0009",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Matematika",
+                "bbox": [
+                  54,
+                  328.861328125,
+                  80.44335720000001,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  19
+                ],
+                "sourceItems": [
+                  {
+                    "id": 19,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      328.861328125,
+                      80.44335720000001,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Matematika"
+                ],
+                "target": "Math",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0010",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Diberikan f(x)=x², turunannya adalah f′(x)=2x.",
+                "bbox": [
+                  54,
+                  353.753662109375,
+                  246.39111734999994,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  21
+                ],
+                "sourceItems": [
+                  {
+                    "id": 21,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      353.753662109375,
+                      246.39111734999994,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Diberikan f(x)=x², turunannya adalah f′(x)=2x."
+                ],
+                "target": "Given f(x)=x², the derivative is f-told)=2x.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0011",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Penduga tidak bias hanya jika kedua syarat terpenuhi.",
+                "bbox": [
+                  54,
+                  379.753662109375,
+                  287.19141044999986,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  22
+                ],
+                "sourceItems": [
+                  {
+                    "id": 22,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      379.753662109375,
+                      287.19141044999986,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Penduga tidak bias hanya jika kedua syarat terpenuhi."
+                ],
+                "target": "Expectants are not biased only if both conditions are met.",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0012",
+                "page": 1,
+                "type": "heading",
+                "text": "Kesimpulan",
+                "bbox": [
+                  54,
+                  407.861328125,
+                  79.08398160000002,
+                  12
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [],
+                "sourceItemIds": [
+                  24
+                ],
+                "sourceItems": [
+                  {
+                    "id": 24,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      407.861328125,
+                      79.0839816,
+                      12
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Kesimpulan"
+                ],
+                "level": 2,
+                "target": "Conclusion",
+                "status": "translated",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              },
+              {
+                "id": "p0001-b0013",
+                "page": 1,
+                "type": "paragraph",
+                "text": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+                "bbox": [
+                  54,
+                  432.753662109375,
+                  223.25317664999994,
+                  10.5
+                ],
+                "source": "pdf-text",
+                "column": 0,
+                "rotated": false,
+                "confidence": 0.96,
+                "issues": [
+                  "Periksa negasi: bentuk negatif mungkin berubah."
+                ],
+                "sourceItemIds": [
+                  26
+                ],
+                "sourceItems": [
+                  {
+                    "id": 26,
+                    "source": "pdf-text",
+                    "bbox": [
+                      54,
+                      432.753662109375,
+                      223.25317664999994,
+                      10.5
+                    ]
+                  }
+                ],
+                "translatable": true,
+                "sourceLines": [
+                  "Ketiadaan bukti bukanlah bukti ketiadaan."
+                ],
+                "target": "Lack of evidence is not evidence of nothing.",
+                "status": "review",
+                "outcome": "translated",
+                "sourcePreserved": false,
+                "semanticVerified": false,
+                "retryable": false,
+                "diagnostics": []
+              }
+            ],
+            "warnings": []
+          }
+        ],
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Controlled academic prose fixture (id)",
+            "bbox": [
+              54,
+              50.861328125,
+              258.04100879999993,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [
+              "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan."
+            ],
+            "sourceItemIds": [
+              0
+            ],
+            "sourceItems": [
+              {
+                "id": 0,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  50.861328125,
+                  258.04100879999993,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Controlled academic prose fixture (id)"
+            ],
+            "target": "Controlled academic prose fixture (id)",
+            "status": "review",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Synthetic audit input. Not a published study or medical guidance.",
+            "bbox": [
+              54,
+              75.753662109375,
+              345.46435559999975,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              2
+            ],
+            "sourceItems": [
+              {
+                "id": 2,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  75.753662109375,
+                  345.46435559999975,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Synthetic audit input. Not a published study or medical guidance."
+            ],
+            "target": "Synthetic audit input. Not a published study or medical guidance.",
+            "status": "preserved",
+            "outcome": "preserved",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "heading",
+            "text": "Abstrak",
+            "bbox": [
+              54,
+              121.861328125,
+              52.7519532,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              4
+            ],
+            "sourceItems": [
+              {
+                "id": 4,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  121.861328125,
+                  52.7519532,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Abstrak"
+            ],
+            "level": 2,
+            "target": "Abstract",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian observasional ini tidak membuktikan hubungan sebab akibat.",
+            "bbox": [
+              54,
+              146.753662109375,
+              439.85156669999986,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              6,
+              7
+            ],
+            "sourceItems": [
+              {
+                "id": 6,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  146.753662109375,
+                  439.85156669999986,
+                  10.5
+                ]
+              },
+              {
+                "id": 7,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  162.753662109375,
+                  324.77197619999987,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian",
+              "observasional ini tidak membuktikan hubungan sebab akibat."
+            ],
+            "target": "We're researching the relationship between exposure to the delicate and intrusive. This observational study does not prove cause-related consequences.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "heading",
+            "text": "Metode",
+            "bbox": [
+              54,
+              190.861328125,
+              50.78906280000001,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              9
+            ],
+            "sourceItems": [
+              {
+                "id": 9,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  190.861328125,
+                  50.78906280000001,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Metode"
+            ],
+            "level": 2,
+            "target": "Methods",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan non-inferioritas.",
+            "bbox": [
+              54,
+              215.753662109375,
+              426.7573285499998,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              11,
+              12
+            ],
+            "sourceItems": [
+              {
+                "id": 11,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  215.753662109375,
+                  426.7573285499998,
+                  10.5
+                ]
+              },
+              {
+                "id": 12,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  231.753662109375,
+                  83.50268535000001,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan",
+              "non-inferioritas."
+            ],
+            "target": "The main edge is the time to the progression of disease. This test failed to prove non-inferiority.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0007",
+            "page": 1,
+            "type": "heading",
+            "text": "Hasil",
+            "bbox": [
+              54,
+              259.861328125,
+              33.5097648,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              14
+            ],
+            "sourceItems": [
+              {
+                "id": 14,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  259.861328125,
+                  33.5097648,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Hasil"
+            ],
+            "level": 2,
+            "target": "Results",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0008",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak signifikan secara statistik (p = 0.08).",
+            "bbox": [
+              54,
+              284.753662109375,
+              486.5888726999998,
+              26.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              16,
+              17
+            ],
+            "sourceItems": [
+              {
+                "id": 16,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  284.753662109375,
+                  486.5888726999998,
+                  10.5
+                ]
+              },
+              {
+                "id": 17,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  300.753662109375,
+                  193.9987801499999,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak",
+              "signifikan secara statistik (p = 0.08)."
+            ],
+            "target": "Group A accepts 10 mg, while group B receives 20 mg. The effect is not statistically significant (p = 0.08).",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0009",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Matematika",
+            "bbox": [
+              54,
+              328.861328125,
+              80.44335720000001,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              19
+            ],
+            "sourceItems": [
+              {
+                "id": 19,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  328.861328125,
+                  80.44335720000001,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Matematika"
+            ],
+            "target": "Math",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0010",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Diberikan f(x)=x², turunannya adalah f′(x)=2x.",
+            "bbox": [
+              54,
+              353.753662109375,
+              246.39111734999994,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              21
+            ],
+            "sourceItems": [
+              {
+                "id": 21,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  353.753662109375,
+                  246.39111734999994,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Diberikan f(x)=x², turunannya adalah f′(x)=2x."
+            ],
+            "target": "Given f(x)=x², the derivative is f-told)=2x.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0011",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Penduga tidak bias hanya jika kedua syarat terpenuhi.",
+            "bbox": [
+              54,
+              379.753662109375,
+              287.19141044999986,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              22
+            ],
+            "sourceItems": [
+              {
+                "id": 22,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  379.753662109375,
+                  287.19141044999986,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Penduga tidak bias hanya jika kedua syarat terpenuhi."
+            ],
+            "target": "Expectants are not biased only if both conditions are met.",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0012",
+            "page": 1,
+            "type": "heading",
+            "text": "Kesimpulan",
+            "bbox": [
+              54,
+              407.861328125,
+              79.08398160000002,
+              12
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [],
+            "sourceItemIds": [
+              24
+            ],
+            "sourceItems": [
+              {
+                "id": 24,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  407.861328125,
+                  79.0839816,
+                  12
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Kesimpulan"
+            ],
+            "level": 2,
+            "target": "Conclusion",
+            "status": "translated",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          },
+          {
+            "id": "p0001-b0013",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+            "bbox": [
+              54,
+              432.753662109375,
+              223.25317664999994,
+              10.5
+            ],
+            "source": "pdf-text",
+            "column": 0,
+            "rotated": false,
+            "confidence": 0.96,
+            "issues": [
+              "Periksa negasi: bentuk negatif mungkin berubah."
+            ],
+            "sourceItemIds": [
+              26
+            ],
+            "sourceItems": [
+              {
+                "id": 26,
+                "source": "pdf-text",
+                "bbox": [
+                  54,
+                  432.753662109375,
+                  223.25317664999994,
+                  10.5
+                ]
+              }
+            ],
+            "translatable": true,
+            "sourceLines": [
+              "Ketiadaan bukti bukanlah bukti ketiadaan."
+            ],
+            "target": "Lack of evidence is not evidence of nothing.",
+            "status": "review",
+            "outcome": "translated",
+            "sourcePreserved": false,
+            "semanticVerified": false,
+            "retryable": false,
+            "diagnostics": []
+          }
+        ],
+        "assets": [],
+        "sourceLanguage": "id",
+        "targetLanguage": "en",
+        "metadata": {},
+        "warnings": []
+      },
+      "raw": [
+        {
+          "id": "p0001-b0001",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Controlled academic prose fixture (id)",
+          "result": {
+            "text": "Controlled academic prose fixture (id)",
+            "status": "review",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [
+              "Teks belum berubah bahasa; periksa apakah terjemahan diperlukan."
+            ],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 18,
+            "outputTokens": 16,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0002",
+          "type": "paragraph",
+          "language": "en",
+          "source": "Synthetic audit input. Not a published study or medical guidance.",
+          "result": {
+            "text": "Synthetic audit input. Not a published study or medical guidance.",
+            "status": "preserved",
+            "issues": []
+          }
+        },
+        {
+          "id": "p0001-b0003",
+          "type": "heading",
+          "language": "id",
+          "source": "Abstrak",
+          "result": {
+            "text": "Abstract",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0004",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Kami meneliti hubungan antara paparan partikulat halus dan rawat inap. Penelitian observasional ini tidak membuktikan hubungan sebab akibat.",
+          "result": {
+            "text": "We're researching the relationship between exposure to the delicate and intrusive. This observational study does not prove cause-related consequences.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 26,
+            "outputTokens": 29,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0005",
+          "type": "heading",
+          "language": "id",
+          "source": "Metode",
+          "result": {
+            "text": "Methods",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0006",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Luaran utama adalah waktu hingga progresi penyakit. Uji ini gagal membuktikan non-inferioritas.",
+          "result": {
+            "text": "The main edge is the time to the progression of disease. This test failed to prove non-inferiority.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 26,
+            "outputTokens": 26,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0007",
+          "type": "heading",
+          "language": "id",
+          "source": "Hasil",
+          "result": {
+            "text": "Results",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0008",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Kelompok A menerima 10 mg, sedangkan kelompok B menerima 20 mg. Efek tersebut tidak signifikan secara statistik (p = 0.08).",
+          "result": {
+            "text": "Group A accepts 10 mg, while group B receives 20 mg. The effect is not statistically significant (p = 0.08).",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 37,
+            "outputTokens": 40,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0009",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Matematika",
+          "result": {
+            "text": "Math",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 2,
+            "outputTokens": 1,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0010",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Diberikan f(x)=x², turunannya adalah f′(x)=2x.",
+          "result": {
+            "text": "Given f(x)=x², the derivative is f-told)=2x.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 30,
+            "outputTokens": 29,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0011",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Penduga tidak bias hanya jika kedua syarat terpenuhi.",
+          "result": {
+            "text": "Expectants are not biased only if both conditions are met.",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 11,
+            "outputTokens": 12,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0012",
+          "type": "heading",
+          "language": "id",
+          "source": "Kesimpulan",
+          "result": {
+            "text": "Conclusion",
+            "status": "translated",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 0,
+            "outputTokens": 0,
+            "method": "controlled-terminology",
+            "semanticVerified": false
+          }
+        },
+        {
+          "id": "p0001-b0013",
+          "type": "paragraph",
+          "language": "id",
+          "source": "Ketiadaan bukti bukanlah bukti ketiadaan.",
+          "result": {
+            "text": "Lack of evidence is not evidence of nothing.",
+            "status": "review",
+            "outcome": "translated",
+            "retryable": false,
+            "issues": [
+              "Periksa negasi: bentuk negatif mungkin berubah."
+            ],
+            "engine": {
+              "direction": "id-en",
+              "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1",
+              "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+              "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+              "maxInputTokens": 128,
+              "maxOutputTokens": 256,
+              "offlineReady": true,
+              "storageMode": "persistent",
+              "storageWarning": "",
+              "supportsAbort": "worker termination",
+              "supportsGlossaryConstraints": false,
+              "requiresNetworkForInference": false
+            },
+            "inputTokens": 10,
+            "outputTokens": 9,
+            "method": "local-model-with-protected-spans",
+            "semanticVerified": false
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "fileName": "password.pdf",
+  "fileSize": 23089,
+  "numPages": 1,
+  "processedRange": [
+    1,
+    1
+  ],
+  "metadata": {
+    "title": "CP18 SYNTHETIC FIXTURE: password protected",
+    "author": "",
+    "subject": "",
+    "producer": "pypdf",
+    "creationDate": "",
+    "language": ""
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 1,
+      "blocks": [
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Scientific results",
+          "bbox": [
+            40,
+            41.78955078125,
+            90.7607415,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                41.78955078125,
+                90.7607415,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Scientific results"
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The intervention did not improve survival.",
+          "bbox": [
+            40,
+            76.78955078125,
+            231.80566420000002,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            1
+          ],
+          "sourceItems": [
+            {
+              "id": 1,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                76.78955078125,
+                231.8056642,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "The intervention did not improve survival."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0003",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+          "bbox": [
+            40,
+            111.78955078125,
+            405.7753964000001,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                111.78955078125,
+                405.7753964000001,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0004",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+          "bbox": [
+            40,
+            146.78955078125,
+            382.7172910000001,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            3
+          ],
+          "sourceItems": [
+            {
+              "id": 3,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                146.78955078125,
+                382.7172910000001,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "The concentration was 10 μM and the Ca2+ concentration increased."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0005",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The evidence remains uncertain.",
+          "bbox": [
+            40,
+            181.78955078125,
+            181.1831087,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            4
+          ],
+          "sourceItems": [
+            {
+              "id": 4,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                181.78955078125,
+                181.1831087,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "The evidence remains uncertain."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0006",
+          "page": 1,
+          "type": "paragraph",
+          "text": "The solution set is ∅.",
+          "bbox": [
+            40,
+            216.78955078125,
+            116.68164089999999,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            5
+          ],
+          "sourceItems": [
+            {
+              "id": 5,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                216.78955078125,
+                116.68164089999999,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "The solution set is ∅."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        }
+      ],
+      "imagePath": "assets/halaman-0001.jpg",
+      "preserveVisualSource": false,
+      "imageBlob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "warnings": [],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 6,
+      "coveredItemCount": 6,
+      "referenceSection": false,
+      "sourceTextCharacters": 251
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Scientific results",
+      "bbox": [
+        40,
+        41.78955078125,
+        90.7607415,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        0
+      ],
+      "sourceItems": [
+        {
+          "id": 0,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            41.78955078125,
+            90.7607415,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Scientific results"
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The intervention did not improve survival.",
+      "bbox": [
+        40,
+        76.78955078125,
+        231.80566420000002,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        1
+      ],
+      "sourceItems": [
+        {
+          "id": 1,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            76.78955078125,
+            231.8056642,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "The intervention did not improve survival."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0003",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+      "bbox": [
+        40,
+        111.78955078125,
+        405.7753964000001,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        2
+      ],
+      "sourceItems": [
+        {
+          "id": 2,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            111.78955078125,
+            405.7753964000001,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0004",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+      "bbox": [
+        40,
+        146.78955078125,
+        382.7172910000001,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        3
+      ],
+      "sourceItems": [
+        {
+          "id": 3,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            146.78955078125,
+            382.7172910000001,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "The concentration was 10 μM and the Ca2+ concentration increased."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0005",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The evidence remains uncertain.",
+      "bbox": [
+        40,
+        181.78955078125,
+        181.1831087,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        4
+      ],
+      "sourceItems": [
+        {
+          "id": 4,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            181.78955078125,
+            181.1831087,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "The evidence remains uncertain."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0006",
+      "page": 1,
+      "type": "paragraph",
+      "text": "The solution set is ∅.",
+      "bbox": [
+        40,
+        216.78955078125,
+        116.68164089999999,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        5
+      ],
+      "sourceItems": [
+        {
+          "id": 5,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            216.78955078125,
+            116.68164089999999,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "The solution set is ∅."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/halaman-0001.jpg",
+      "blob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "page": 1,
+      "kind": "page"
+    }
+  ],
+  "warnings": [],
+  "sourceItemCount": 6,
+  "coveredItemCount": 6,
+  "sourceTextCharacters": 251,
+  "assetsBytes": 10305,
+  "createdAt": "2026-11-13T10:00:35.002Z"
+}

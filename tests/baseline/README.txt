@@ -1,0 +1,1 @@
+Only original CP17 layout/pdf-reader source modules copied byte-for-byte for reproducible before-fix regressions. Baseline source archive SHA256:02e31d4195b72377b9fed94f130ffa84d6ec9ec5d5ab2b6fcc1c52c109d4d623. No production deploy includes these test files.

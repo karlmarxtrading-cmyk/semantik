@@ -1,0 +1,301 @@
+{
+  "packagedBuild": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "productionReady": false,
+  "scope": "QA agent evidence; final browser, hosting, model review and release decision are separate root-owned evidence.",
+  "inputIntegrity": {
+    "status": "PASS",
+    "manifestRecords": 1185,
+    "zipCount": 3
+  },
+  "regressions": {
+    "status": "PASS",
+    "suites": 32,
+    "syntaxModules": 14,
+    "sourceStable": true,
+    "evidence": "regressions-8c-final/RESULTS.json"
+  },
+  "capacityParser": {
+    "status": "PASS",
+    "cases": 6,
+    "richExtractedCharacters": 2486906,
+    "richTraceIds": 13013,
+    "binding": "CAPACITY_FINAL_BUILD_BINDING.json"
+  },
+  "fullTextReconciliation": {
+    "status": "PASS",
+    "pages": 5103,
+    "evidence": "CAPACITY_FULL_TEXT_RECONCILIATION.json"
+  },
+  "sourceOnlyExport": {
+    "status": "PASS",
+    "cases": 6,
+    "evidence": "capacity-export-8c-final/RESULTS.json"
+  },
+  "actualModelRuns": [
+    {
+      "fixture": "capacity-1001-en.pdf",
+      "build": {
+        "release": "cp20-4694bad623ed9b19",
+        "version": "0.20.0",
+        "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/4694bad623ed9b19/"
+      },
+      "status": "FAIL",
+      "pages": 1001,
+      "counts": {
+        "total": 3003,
+        "translated": 2803,
+        "preserved": 0,
+        "rejected": 200,
+        "failed": 0,
+        "pending": 0,
+        "review": 200,
+        "done": 2803,
+        "attempted": 3003
+      },
+      "measurements": {
+        "modelPrepareMs": 5092.116947,
+        "engineRequests": 4705,
+        "engineSucceeded": 4705,
+        "engineFailed": 0,
+        "engineMs": 1109225.7154439997,
+        "rawBlockCalls": 3003,
+        "maskedRepeatedRequests": 3685,
+        "uniqueRawBlockInputs": 3003,
+        "uniqueMaskedModelInputs": 1020,
+        "maxActivePages": 1,
+        "maxActiveBlocks": 3
+      },
+      "pipelineMetrics": {
+        "inferenceCalls": 4705,
+        "cacheHits": 0,
+        "uniqueInputs": 4705,
+        "inputTokens": 57256,
+        "outputTokens": 45042,
+        "extractionMs": 78267.37118200073,
+        "inferenceMs": 1115700.2788940007,
+        "commitMs": 10761.065134997247,
+        "totalRunMs": 1211841.979311
+      },
+      "elapsedMs": 1214023.879701,
+      "sampledPeakNodeProcessBytes": {
+        "rss": 1306447872,
+        "heapUsed": 149113160,
+        "external": 11460070,
+        "arrayBuffers": 5709601
+      },
+      "export": {
+        "file": "capacity-1001-en-NODE_PARTIAL_TRANSLATION.md",
+        "bytes": 458521,
+        "sha256": "8a3bf5b2131c3000150388b526b9b898e5d2334093b096fa37f8084c0c131ae7",
+        "stats": {
+          "pages": 1001,
+          "blocks": 3003,
+          "counts": {
+            "total": 3003,
+            "translated": 2803,
+            "preserved": 0,
+            "rejected": 200,
+            "failed": 0,
+            "pending": 0
+          },
+          "uniqueAssets": 0,
+          "assetReferences": 0,
+          "bytes": 458521,
+          "sink": "bounded-blob",
+          "maxActivePages": 1,
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "unsavedPages": [],
+          "durablePages": 1001,
+          "partial": true
+        },
+        "traceIds": 1001,
+        "ms": 2014.6987699999008
+      }
+    },
+    {
+      "fixture": "capacity-1500-id.pdf",
+      "build": {
+        "release": "cp20-1668833ad37c9dd8",
+        "version": "0.20.0",
+        "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/1668833ad37c9dd8/"
+      },
+      "status": "FAIL",
+      "pages": 1500,
+      "counts": {
+        "total": 4500,
+        "translated": 3000,
+        "preserved": 0,
+        "rejected": 1500,
+        "failed": 0,
+        "pending": 0,
+        "review": 1500,
+        "done": 3000,
+        "attempted": 4500
+      },
+      "measurements": {
+        "modelPrepareMs": 5220.762903999999,
+        "engineRequests": 7650,
+        "engineSucceeded": 7650,
+        "engineFailed": 0,
+        "engineMs": 2072603.6815700072,
+        "rawBlockCalls": 4500,
+        "maskedRepeatedRequests": 6127,
+        "uniqueRawBlockInputs": 4500,
+        "uniqueMaskedModelInputs": 1523,
+        "maxActivePages": 1,
+        "maxActiveBlocks": 3
+      },
+      "pipelineMetrics": {
+        "inferenceCalls": 7650,
+        "cacheHits": 0,
+        "uniqueInputs": 7650,
+        "inputTokens": 83250,
+        "outputTokens": 85500,
+        "extractionMs": 116798.88204000192,
+        "inferenceMs": 2083244.3237880068,
+        "commitMs": 16340.177004007157,
+        "totalRunMs": 2224611.156787
+      },
+      "elapsedMs": 2227427.12272,
+      "sampledPeakNodeProcessBytes": {
+        "rss": 1266671616,
+        "heapUsed": 208134624,
+        "external": 12761086,
+        "arrayBuffers": 7342551
+      },
+      "export": {
+        "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+        "bytes": 1008350,
+        "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+        "stats": {
+          "pages": 1500,
+          "blocks": 4500,
+          "counts": {
+            "total": 4500,
+            "translated": 3000,
+            "preserved": 0,
+            "rejected": 1500,
+            "failed": 0,
+            "pending": 0
+          },
+          "uniqueAssets": 0,
+          "assetReferences": 0,
+          "bytes": 1008350,
+          "sink": "bounded-blob",
+          "maxActivePages": 1,
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "unsavedPages": [],
+          "durablePages": 1500,
+          "partial": true
+        },
+        "traceIds": 1500,
+        "ms": 2672.6286969999783
+      }
+    }
+  ],
+  "currentRunOutcomeBreakdown": {
+    "prose": {
+      "total": 1500,
+      "translated": 1500,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "pageHeading": {
+      "total": 1500,
+      "translated": 1500,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "traceFooter": {
+      "total": 1500,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 1500,
+      "failed": 0,
+      "pending": 0
+    },
+    "other": {
+      "total": 0,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    }
+  },
+  "currentRunRendering": {
+    "status": "PASS",
+    "build": {
+      "release": "cp20-1668833ad37c9dd8",
+      "version": "0.20.0",
+      "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+      "modelHashes": {
+        "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+        "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+      },
+      "base": "/r/1668833ad37c9dd8/"
+    },
+    "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+    "bytes": 1008350,
+    "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+    "renderer": "Marked17.0.1; fixture has no formula or raster content, so no KaTeX/raster qualification inferred",
+    "renderMs": 68.66912699999999,
+    "pages": 1500,
+    "blockIds": 4500,
+    "uniqueTraceIds": 1500,
+    "renderedH3": 1500,
+    "partialLabelVerified": true,
+    "method": "Full actual long Markdown parsed with exact page/block/trace reconciliation. This is not a browser download or human semantic review."
+  },
+  "currentAISemanticSpotReview": {
+    "status": "FAIL",
+    "criticalObserved": 4,
+    "humanApprovals": 0,
+    "sampledParagraphs": 10,
+    "scope": "AI qualitative spot review of actual first 10 ID-to-EN body paragraphs in captured cp20-1668833ad37c9dd8 long run; not blind human review or accuracy estimate"
+  },
+  "nodeComponentBinding": "PASS",
+  "notRunByTheseTests": [
+    "Browser consumer downloads and real IndexedDB durability/quota",
+    "Actual Cloudflare headers/offline/update/rollback",
+    "Physical-device minimum, sleep/wake, browser total RAM",
+    "Full rich1001 >2M-character translation",
+    "Separate full300/301/1000 translation/download acceptance"
+  ],
+  "limits": [
+    "Synthetic long fixtures rotate10domain paragraph templates with unique trace/numeric values; not natural-book or blind semantic corpus.",
+    "Repeated masked requests are disclosed; sentence cache hits are not translated-page reuse.",
+    "Native Node RSS includes its worker_threads/native allocations as the OS reports them; fake-indexeddb retains records in RAM. It is not browser total RAM.",
+    "Historical4694 outputs cannot qualify the final changed semantic adapter.",
+    "1668 actual output retains original release provenance; eight module hashes+ETA-only controlled parity bind narrow capacity/engine evidence to final8c, not whole consumer main.",
+    "Translated status is not a semantic correctness score."
+  ],
+  "browserFinalSummaryReference": "../browser/LONG_RUN_SUMMARY.json",
+  "browserFinalDownloadsReference": "../browser/DOWNLOAD_RECONCILIATION.json",
+  "browserAuthenticBookStorageStatus": "FAIL_STORAGE_IN_THIS_BROWSER"
+}

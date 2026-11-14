@@ -1,0 +1,672 @@
+{
+  "status": "FAIL",
+  "build": {
+    "base": "/r/1668833ad37c9dd8/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-1668833ad37c9dd8",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "version": "0.20.0"
+  },
+  "humanApprovals": 0,
+  "meaningReview": "AI assessment with separate dimensions; not independent human adjudication and not a population accuracy score.",
+  "acceptedTargets": 23,
+  "incompleteTargets": 7,
+  "observedCriticalTranslatedErrors": 9,
+  "timing": {
+    "en-id": {
+      "cases": 15,
+      "meanChars": 208.5,
+      "medianMs": 1028,
+      "meanMs": 1164.5
+    },
+    "id-en": {
+      "cases": 15,
+      "meanChars": 214.9,
+      "medianMs": 1309,
+      "meanMs": 1404.2
+    }
+  },
+  "inferenceMetricsBoundary": "metrics.inferenceCalls counts worker translation requests including failed requests, not ONNX forward passes. Input/output tokens count raw successful responses; cacheHits counts adapter within-block result reuse. No cross-block translation cache used by this run.",
+  "rootIndependentAIConfirmed": [
+    "CP20-H-002",
+    "CP20-H-003",
+    "CP20-H-019",
+    "CP20-H-023",
+    "CP20-H-025"
+  ],
+  "rows": [
+    {
+      "id": "CP20-H-001",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint.",
+      "target": "Sebuah fungsi kontinu pada interval tertutup mencapai maksimum. Teorema ini tidak memerlukan fungsi menjadi dapat diturunkan sepanjang interval. Maksimum tidak harus terjadi di sebuah titik akhir.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Isi matematika terjaga; sintaks \"fungsi menjadi dapat diturunkan\" dan \"titik akhir\" kurang alami."
+    },
+    {
+      "id": "CP20-H-002",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "The derivative determines a local rate of change, not the accumulated change over the entire interval. Integration can recover the accumulated change when the required hypotheses hold.",
+      "target": "Turunan menentukan tingkat lokal perubahan, bukan perubahan yang terkumpul selama interval. Integrasi dapat memulihkan perubahan yang terkumpul ketika hipotesis yang dibutuhkan masih kuat.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Syarat hypotheses hold berubah menjadi hipotesis masih kuat: pemenuhan syarat tidak setara dengan kekuatan hipotesis."
+    },
+    {
+      "id": "CP20-H-003",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size.",
+      "target": "Sebuah elemen tunggal himpunan hingga memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi terbatas mengubah masalah. Klaim ini tentang pemesanan elemen dan bukan tentang ukuran fisik mereka.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Nonempty finite set berubah menjadi elemen tunggal; ordering menjadi pesanan/pemesanan. Klaim matematika berubah."
+    },
+    {
+      "id": "CP20-H-004",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "target": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Arah perubahan pada klaim ilmiah berubah."
+    },
+    {
+      "id": "CP20-H-005",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared.",
+      "target": "Katalis itu ditemukan setelah percobaan dan digunakan kembali. Pemulihan saja tidak menunjukkan bahwa tidak ada materi yang hilang; massa awal dan akhir harus dibandingkan.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Recovered dalam eksperimen diterjemahkan ditemukan; konteks penggunaan ulang membantu tetapi istilah perolehan kembali lebih tepat."
+    },
+    {
+      "id": "CP20-H-006",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled.",
+      "target": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah."
+    },
+    {
+      "id": "CP20-H-007",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities.",
+      "target": "Sebuah interval kepercayaan menggambarkan ketidakpastian di bawah prosedur sampling yang diasumsikan. Hal ini tidak boleh ditafsirkan sebagai jangkauan berisi semua pengamatan individu. Ini adalah jumlah statistik yang berbeda.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Relasi ketidakpastian dan larangan menafsirkan interval sebagai seluruh pengamatan terjaga; quantities menjadi jumlah kurang tepat."
+    },
+    {
+      "id": "CP20-H-008",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "target": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah. Periksa kuantor: cakupan pernyataan mungkin berubah."
+    },
+    {
+      "id": "CP20-H-009",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article.",
+      "target": "Analisis yang digunakan Median karena beberapa nilai ekstrim sangat mempengaruhi rata-rata sampel. Memilih Median tidak menghapus pengamatan tersebut dari dataset. Kedua statistik dilaporkan dalam lampiran dari artikel tersebut.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Rata-rata, median, data tetap disertakan, dan lampiran terjaga. Tata bahasa \"Analisis yang digunakan\" kurang lancar."
+    },
+    {
+      "id": "CP20-H-010",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered.",
+      "target": "Pajak pada penjual dapat mempengaruhi harga yang dibayarkan oleh pembeli. Kewajiban hukum untuk membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Responsi relatif dari pasokan dan permintaan juga harus dipertimbangkan.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Beban pajak dan respons relatif penawaran-permintaan terjaga; responsi/pasokan kurang baku secara ekonomi."
+    },
+    {
+      "id": "CP20-H-011",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change.",
+      "target": "Peningkatan dalam permintaan berbeda dengan peningkatan dalam kuantitas yang diminta sepanjang kurva permintaan yang tidak berubah. Membingungkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Perbedaan perubahan permintaan dan pergerakan kuantitas serta risiko membalik penjelasan terjaga."
+    },
+    {
+      "id": "CP20-H-012",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "The household saved more money in nominal terms, but prices also rose. Whether the household could purchase more goods depends on the change in purchasing power, not merely on the balance shown in the account.",
+      "target": "Rumah tangga menghemat lebih banyak uang dalam hal nominal, tetapi harga juga naik. Apakah rumah tangga dapat membeli lebih banyak barang bergantung pada perubahan dalam daya beli, bukan hanya pada keseimbangan yang ditunjukkan pada akun tersebut.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Account balance berubah menjadi keseimbangan pada akun, kehilangan makna saldo keuangan."
+    },
+    {
+      "id": "CP20-H-013",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way.",
+      "target": "Laporan tersebut menempatkan jadwal wawancara dalam lampiran sehingga peneliti lain dapat memeriksa pertanyaan-pertanyaan. Lampiran mendokumentasikan prosedur; prosedur tersebut tidak menyatakan bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Interview schedule sebagai instrumen/pedoman pertanyaan menjadi jadwal waktu; does not certify menjadi tidak menyatakan, lebih lemah."
+    },
+    {
+      "id": "CP20-H-014",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The results were obtained from volunteers who had access to the required equipment. Generalization to people without that access requires additional evidence. The authors discuss this limitation before presenting their recommendations.",
+      "target": "Hasilnya diperoleh dari para relawan yang memiliki akses ke peralatan yang dibutuhkan. Generalisasi kepada orang-orang tanpa akses tersebut membutuhkan bukti tambahan. Para penulis membahas keterbatasan ini sebelum memberikan rekomendasi mereka.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 2,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Akses peralatan, kebutuhan bukti tambahan untuk generalisasi, dan urutan pembahasan dipertahankan."
+    },
+    {
+      "id": "CP20-H-015",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "target": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah."
+    },
+    {
+      "id": "CP20-H-016",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung.",
+      "target": "Function continuous at closed intervals reaches maximum value. This theorem does not require function differentiable at all intervals. Maximum value need not occurs at edge.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Di seluruh interval menjadi at all intervals, mengubah cakupan pada satu interval menjadi semua interval."
+    },
+    {
+      "id": "CP20-H-017",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi.",
+      "target": "Derivative determines the rate of local changes, not the accumulated changes at all intervals. Integration can regain the accumulated changes when the required hypothesis is fulfilled.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Perubahan di seluruh interval menjadi at all intervals; cakupan interval berubah walaupun syarat hipotesis sudah terjaga."
+    },
+    {
+      "id": "CP20-H-018",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "target": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Pembatas hingga/tak hingga pada konsep matematika hilang atau berubah. Periksa negasi: bentuk negatif mungkin berubah."
+    },
+    {
+      "id": "CP20-H-019",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+      "target": "Solving sugar in water increases the mass of solution. The evaporation removes some of the water but does not eliminate the soluted sugar. Therefore, the remaining liquids have higher concentration.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 2,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Melarutkan gula menjadi Solving sugar, istilah proses kimia salah."
+    },
+    {
+      "id": "CP20-H-020",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan.",
+      "target": "The catalyst was recovered after the experiment and reused. Returning alone does not indicate that no material is missing; initial and final mass must be compared.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Klaim bahan tidak hilang belum dibuktikan dan kebutuhan pembandingan massa tetap ada; Returning alone kurang jelas untuk recovery."
+    },
+    {
+      "id": "CP20-H-021",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Larutan mengandung 6 mmol garam terlarut dalam 2 L pelarut. Penambahan 2 L pelarut menurunkan konsentrasi sambil mempertahankan jumlah garam, asalkan tidak ada larutan yang tumpah.",
+      "target": "Solution contains 6 mmol salt dissolved in 2 L solvent. Add 2 L solvents lower concentration while maintaining the amount of salt, provided no solution is spilled.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "6 mmol, 2 L awal, penambahan 2 L, penurunan konsentrasi, jumlah garam, dan syarat tidak tumpah terjaga; grammar lemah."
+    },
+    {
+      "id": "CP20-H-022",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Interval kepercayaan menggambarkan ketidakpastian dalam prosedur pengambilan sampel yang diasumsikan. Interval tersebut tidak boleh ditafsirkan sebagai rentang yang memuat seluruh pengamatan individual. Keduanya merupakan besaran statistik yang berbeda.",
+      "target": "Confidence interval describes uncertainty in assumed sample fetching procedure. The interval should not be interpreted as a range that contains all individual observations. They're both different statistics.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 1,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Sample fetching procedure kurang tepat untuk sampling procedure; larangan menyamakan interval dengan semua pengamatan tetap ada."
+    },
+    {
+      "id": "CP20-H-023",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "target": "A treatment generates 7 response and treatment B produces 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. The mention is as important as the numerator.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 1,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Penyebut menjadi mention. A treatment juga ambigu antara label kelompok A dan artikel bahasa Inggris; angka 7/11 tetap ada."
+    },
+    {
+      "id": "CP20-H-024",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel.",
+      "target": "Analyze using median because some extreme values have a profound effect on sample mean. Median selection does not remove the observations from the data set. Both statistics reported in appendix articles.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Hubungan ekstrem-rata-rata, alasan median, data tidak dihapus, serta lampiran terjaga; bentuk Analyze dan frasa appendix articles kurang lancar."
+    },
+    {
+      "id": "CP20-H-025",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+      "target": "Taxes against sellers can affect the price paid by buyers. The legal obligation to pay taxes does not necessarily determine who carries the cost of the economy. The relativeity of the offer and demand should also be considered.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 0,
+        "completeness": 1,
+        "terminology": 0,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": true,
+      "completeTranslation": true,
+      "reviewNote": "Beban ekonomi menjadi cost of the economy; kepekaan relatif menjadi relativeity, penawaran menjadi offer. Penjelasan insidensi pajak rusak."
+    },
+    {
+      "id": "CP20-H-026",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "target": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi leksikal: makna sifat atau perubahan mungkin berbalik."
+    },
+    {
+      "id": "CP20-H-027",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Rumah tangga menabung lebih banyak uang secara nominal, tetapi harga juga naik. Apakah rumah tangga itu dapat membeli lebih banyak barang bergantung pada perubahan daya beli, bukan hanya saldo yang ditampilkan di rekening.",
+      "target": "Households save more money nominally, but prices also go up. Whether that household can buy more items depends on changes purchasing power, not just balances displayed in accounts.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Tabungan nominal, harga, daya beli dan saldo dibedakan dengan benar; beberapa preposisi hilang."
+    },
+    {
+      "id": "CP20-H-028",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Laporan menempatkan pedoman wawancara di lampiran agar peneliti lain dapat memeriksa pertanyaannya. Lampiran mendokumentasikan prosedur; lampiran tidak menjamin bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama.",
+      "target": "Reports place interview guidelines at appendix so that other researchers can check the questions. Appendix documenting procedures; appendix does not guarantee that each responder understands each question in the same way.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 2,
+        "terminology": 1,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 2
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Pedoman wawancara dalam lampiran serta tidak menjamin pemahaman seragam terjaga; responder kurang tepat dibanding respondent."
+    },
+    {
+      "id": "CP20-H-029",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka.",
+      "target": "The results came from volunteers who had access to the necessary equipment. Generalization to a person without access requires additional evidence. The author discussed these limitations before delivering their recommendations.",
+      "outcome": "translated",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": 2,
+        "completeness": 1,
+        "terminology": 2,
+        "fluency": 1,
+        "numbersNotation": 2,
+        "consistency": 1
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": true,
+      "reviewNote": "Generalisasi dan akses terjaga. Sukarelawan jamak ke person tunggal serta penulis ke author mempersempit bentuk tanpa perubahan pokok klaim."
+    },
+    {
+      "id": "CP20-H-030",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "target": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "outcome": "rejected",
+      "reviewerType": "AI-author review; root AI independently inspected cited critical cases; NOT human review",
+      "humanReview": "PENDING",
+      "scores": {
+        "meaning": null,
+        "completeness": null,
+        "terminology": null,
+        "fluency": null,
+        "numbersNotation": null,
+        "consistency": null
+      },
+      "criticalTranslatedError": false,
+      "completeTranslation": false,
+      "reviewNote": "Tidak ada terjemahan diterima; sumber dipertahankan. Tidak dinilai sebagai terjemahan benar. Periksa negasi: bentuk negatif mungkin berubah."
+    }
+  ]
+}

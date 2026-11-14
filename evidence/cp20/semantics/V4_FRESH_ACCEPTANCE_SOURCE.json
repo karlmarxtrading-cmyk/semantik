@@ -1,0 +1,572 @@
+{
+  "identity": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp20/app",
+    "adapterSHA256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+    "rulesSHA256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "spansSHA256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+    "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "freeze": {
+    "frozenAt": "2026-11-13T06:49:14.166639+00:00",
+    "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+    "files": {
+      "app/app/translation.js": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+      "app/app/claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+      "app/app/semantic-spans.js": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+      "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+    },
+    "rubric": {
+      "meaning": "2=equivalent relations; 1=minor ambiguity; 0=wrong relation/critical concept",
+      "completeness": "2=all content; 1=minor omission; 0=missing clause/qualifier/negation",
+      "terminology": "2=domain-correct; 1=awkward but understandable; 0=wrong scientific sense",
+      "fluency": "2=natural; 1=understandable grammatical defects; 0=unintelligible",
+      "numbersNotation": "2=all preserved; 1=format only; 0=changed/dropped",
+      "consistency": "2=consistent; 1=minor variation; 0=contradiction"
+    },
+    "criticalDefinition": "Changed scientific assertion, causal or logical relation, qualifier, polarity, numeric identity, or unprocessed/rejected prose in final required corpus. Guard pass is not an accuracy score.",
+    "acceptance": "Zero critical errors on this fixed corpus, all six dimensions evaluated; human bilingual review remains separately PENDING.",
+    "provenance": "AI-authored corpus and AI assessments only. No independent human approvals; this is not population accuracy.",
+    "previousHoldout": "first-holdout-failed/HOLDOUT_INFERENCE.json; FAIL; now development regression, not current acceptance",
+    "postFreezeMetadataFix": {
+      "at": "2026-11-13T06:54:33.429975+00:00",
+      "reason": "Typed deterministic guard rejection and table retry aggregation. This changes outcome/retry metadata only; no changes to model, targets, terminology, or semantic guard rules. Same final corpus is rerun for metadata and exact target equality; no new claim of unseen corpus."
+    },
+    "identifierIntegrationFix": {
+      "at": "2026-11-13T07:05:41.002437+00:00",
+      "reason": "Generic opaque identifier atom protection prevents identifier-only sentences from suppressing subsequent prose. Common uppercase beginning/end words recognized in both languages. Exact capacity fixture plus unrelated identifier forms exercise real inference. No model/domain vocabulary/claim logic change.",
+      "evidence": "IDENTIFIER_INFERENCE.json",
+      "qualification": "The 30-case v2 semantic holdout is rerun as final parity evidence; not falsely labeled newly unseen after this structural integration fix."
+    },
+    "mechanicalV4Fix": {
+      "at": "2026-11-13T07:23:20.399941+00:00",
+      "reason": "Unsupported/tidak didukung normalized as a bilingual lexical-negation unit with reversal guard retained; separated bounded/monotone sequence predicates activate mathematical senses contextually. Product model unchanged.",
+      "evidence": "V4_MECHANICAL_INFERENCE.json",
+      "qualification": "Known long-run regressions, not independent semantic acceptance."
+    }
+  },
+  "method": "Ten new AI-authored acceptance paragraphs after v4 mechanical freeze, 5 domains and both directions. Not used to adjust product rules. AI-only review; no human independence claimed. Actual ONNX/WASM via Node worker, not browser evidence.",
+  "humanApproval": 0,
+  "rows": [
+    {
+      "id": "CP20-V4-A-01",
+      "domain": "mathematics",
+      "direction": "en-id",
+      "source": "A differentiable function is continuous at the same point. The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists.",
+      "reference": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama. Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada.",
+      "text": "Sebuah fungsi dapat diturunkan adalah kontinu pada titik yang sama. Pernyataan konvers membutuhkan kondisi tambahan; grafik tanpa celah yang terlihat bukanlah dengan sendirinya bukti bahwa turunan ada.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 55,
+      "outputTokens": 46,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 55,
+        "outputTokens": 46,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A differentiable function is continuous at the same point."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 4377
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "domain": "chemistry",
+      "direction": "en-id",
+      "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "reference": "Pemanasan dihentikan sebelum pelarut mendidih. Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan.",
+      "text": "Pemanas dihentikan sebelum pelarut direbus. Peningkatan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga mentransfer energi ke larutan.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 42,
+      "outputTokens": 35,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 42,
+        "outputTokens": 35,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Heating was stopped before the solvent boiled."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2895
+    },
+    {
+      "id": "CP20-V4-A-03",
+      "domain": "statistics",
+      "direction": "en-id",
+      "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased. The difference is not evidence that any observation was recorded incorrectly.",
+      "reference": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias. Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "text": "Sebuah rata-rata sampel dapat berbeda dari populasi berarti bahkan ketika prosedur sampling adalah tidak bias. Perbedaannya bukanlah bukti bahwa pengamatan apapun dicatat salah.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 46,
+      "outputTokens": 38,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 46,
+        "outputTokens": 38,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The difference is not evidence that any observation was recorded incorrectly."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 3289
+    },
+    {
+      "id": "CP20-V4-A-04",
+      "domain": "economics",
+      "direction": "en-id",
+      "source": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+      "reference": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat. Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi.",
+      "text": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 62,
+        "outputTokens": 45,
+        "uniqueInputs": 4
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "When the price of a substitute rises, demand for the original product may increase."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "When the price of a substitute rises, demand for the original product may increase."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "When the price of a substitute rises,"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "demand for the original product may increase."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Arah perubahan pada klaim ilmiah berubah.",
+          "segmentSource": null,
+          "candidateText": null,
+          "rawCandidate": null
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 3331
+    },
+    {
+      "id": "CP20-V4-A-05",
+      "domain": "academic-prose",
+      "direction": "en-id",
+      "source": "The laboratory instrument was calibrated before data collection. Calibration reduces measurement error; it does not prove that the proposed explanation is correct.",
+      "reference": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+      "text": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi pengukuran kesalahan; itu tidak membuktikan bahwa penjelasan yang diusulkan benar.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 31,
+      "outputTokens": 26,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 26,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The laboratory instrument was calibrated before data collection."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Calibration reduces measurement error; it does not prove that the proposed explanation is correct."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1892
+    },
+    {
+      "id": "CP20-V4-A-06",
+      "domain": "mathematics",
+      "direction": "id-en",
+      "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama. Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada.",
+      "reference": "A differentiable function is continuous at the same point. The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists.",
+      "text": "Function differentiable is continuous at the same point. Statement converse requires additional requirements; graphs without gaps visible not by itself evidence that derivative exists.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 50,
+      "outputTokens": 50,
+      "metrics": {
+        "inferenceCalls": 5,
+        "cacheHits": 0,
+        "inputTokens": 105,
+        "outputTokens": 113,
+        "uniqueInputs": 5
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+        },
+        {
+          "strategy": "literal-only-context",
+          "source": "Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+        },
+        {
+          "strategy": "clause-split",
+          "source": "Pernyataan konvers memerlukan syarat tambahan;"
+        },
+        {
+          "strategy": "clause-split",
+          "source": "grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 8633
+    },
+    {
+      "id": "CP20-V4-A-07",
+      "domain": "chemistry",
+      "direction": "id-en",
+      "source": "Pemanasan dihentikan sebelum pelarut mendidih. Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan.",
+      "reference": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "text": "Warming stops before the solvent boils. Recorded temperature rise cannot be linked only to catalysts, since heating also transfers energy to solution.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 36,
+      "outputTokens": 38,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 36,
+        "outputTokens": 38,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Pemanasan dihentikan sebelum pelarut mendidih."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 3222
+    },
+    {
+      "id": "CP20-V4-A-08",
+      "domain": "statistics",
+      "direction": "id-en",
+      "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias. Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "reference": "A sample mean can differ from the population mean even when the sampling procedure is unbiased. The difference is not evidence that any observation was recorded incorrectly.",
+      "text": "Sample mean can be different from average population although the sample unbiased fetching procedure. Such differences are not evidence that a misrecorded observation is being recorded.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 38,
+      "outputTokens": 45,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 38,
+        "outputTokens": 45,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 3989
+    },
+    {
+      "id": "CP20-V4-A-09",
+      "domain": "economics",
+      "direction": "id-en",
+      "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat. Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi.",
+      "reference": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+      "text": "When substitution goods go up, demand the initial product may increase. This prediction depends on both items replacing one another, not on complementing one another.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 35,
+      "outputTokens": 37,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 35,
+        "outputTokens": 37,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2908
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "domain": "academic-prose",
+      "direction": "id-en",
+      "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+      "reference": "The laboratory instrument was calibrated before data collection. Calibration reduces measurement error; it does not prove that the proposed explanation is correct.",
+      "text": "The lab instrument was calibrated before data collection. Calicacy reduces measurement error; calibration does not prove that the explanations posed are correct.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp20-context-terminology-meaning-guards-v4-mechanical",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp20-context-terminology-meaning-guards-v4-mechanical"
+      },
+      "inputTokens": 29,
+      "outputTokens": 32,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 29,
+        "outputTokens": 32,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2491
+    }
+  ]
+}

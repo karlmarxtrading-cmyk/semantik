@@ -1,0 +1,18 @@
+{
+  "method": "Production main.js in VM with explicit PDF, DOM and storage doubles; actual Markdown exporter. Browser proof separate.",
+  "mainSHA256": "9e662687c0ed4d3f5a02f2de496f85a729e00469530c1787ba482a3f0be3d73f",
+  "rows": [
+    {
+      "name": "new document and restore isolate quota history; retain global status",
+      "status": "PASS"
+    },
+    {
+      "name": "same document retains its own quota evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "clear removes document history while retaining global offline status",
+      "status": "PASS"
+    }
+  ]
+}

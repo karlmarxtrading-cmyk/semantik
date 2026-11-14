@@ -1,0 +1,62 @@
+{
+  "ownedChanges": [
+    {
+      "path": "scripts/build.py",
+      "bytes": 6752,
+      "sha256": "ef9789f7f64b062c3c47d45173bd5fe89fa846daab97ddad7d9e011c31dc4828"
+    },
+    {
+      "path": "scripts/sw-template.js",
+      "bytes": 2513,
+      "sha256": "f09aecea076823570750aa01f3c437785f49b7092afb48ac8083a6b987bc9243"
+    },
+    {
+      "path": "scripts/build-with-history.py",
+      "bytes": 2386,
+      "sha256": "7bb5a7fd4825391f1ef45b5f8c9b43fcbf7907fddd72badd219ff0d00f335a90"
+    },
+    {
+      "path": "scripts/prepare-release-history.py",
+      "bytes": 2211,
+      "sha256": "820e1944a475d0fcf81d02c7226ccf4cdcb257e03cda4635624ace64697d3cde"
+    },
+    {
+      "path": "app/app/offline.js",
+      "bytes": 4742,
+      "sha256": "341c5b1de7a004906e7b00a878fe394480a9897a63999daa0e1e574f7ece7904"
+    },
+    {
+      "path": "app/app/build-info.js",
+      "bytes": 128,
+      "sha256": "90304e18298d7ccc1650c45dc3bc69985c3d55a702699df70c2e44b55f5ac61d"
+    },
+    {
+      "path": "tests/cp20-offline-release.mjs",
+      "bytes": 10994,
+      "sha256": "9687a83185942c46ba8051b9b491c14c733ab3ccdb6a74694835efb9b9561f45"
+    },
+    {
+      "path": "DEPLOY_UPDATE_ROLLBACK_CP20.md",
+      "bytes": 7131,
+      "sha256": "094c6a217826c070dad7f7addfa755e27f9f1f9b5b7319f0b9eb96b851c69afc"
+    },
+    {
+      "path": "release-history/cp19/manifest.json",
+      "bytes": 61153,
+      "sha256": "b8fef2af0b287193d8e16950d6a06cdd93812d47c801e8b3065893cd60bbc739"
+    }
+  ],
+  "baselineModelsUnmodified": true,
+  "references": [
+    {
+      "url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "fact": "25 MiB maximum individual static asset",
+      "accessed": "2026-11-13"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+      "fact": "Updated service worker waits for existing controlled clients unless skipWaiting is used",
+      "accessed": "2026-11-13"
+    }
+  ]
+}

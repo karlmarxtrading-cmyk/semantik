@@ -1,0 +1,34 @@
+{
+  "scope": "Actual application main and long pipeline modules in Node VM. DOM/storage/PDF/model doubles. Not browser, actual OCR, device memory, or real translation proof.",
+  "sourceHashes": {
+    "main.js": "5dcae2db55c147135a91bac48b58407ea5525e6a4a6af6141424563930083b30",
+    "long-document.js": "c398d5f5eb5190114af81219a85792e5d9fc4c5d0f5fd499dd323233486c0203",
+    "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd"
+  },
+  "checks": [
+    {
+      "name": "QuotaExceededError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "SecurityError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "65 image/OCR failure fallback pages do not become a completed translation",
+      "status": "PASS",
+      "observed": {
+        "status": "needs-attention",
+        "done": 0,
+        "failed": 65,
+        "coverageIncompletePages": 65,
+        "extractionComplete": false
+      }
+    },
+    {
+      "name": "Changing forced source language to automatic redetects source and chooses opposite target",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS_FOR_LIMITED_BINDING",
+  "files": [
+    {
+      "file": "semantic-spans.js",
+      "beforeSHA256": "dc1de6a49e72745d9a9ffbad6e5536062030df3c14180b02d94194787d4fa7c7",
+      "afterSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+      "historicalByteRecovery": "Exact reverse of two explicit final changes, verified against pre-existing freeze SHA"
+    },
+    {
+      "file": "claim-guards.js",
+      "beforeSHA256": "84ce4961e92dce743e07f0e618827794cdb780c77a20f414a7477d91c87e5f91",
+      "afterSHA256": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+      "historicalByteRecovery": "Exact reverse of two explicit final changes, verified against pre-existing freeze SHA"
+    }
+  ],
+  "actualRerun": [
+    "CP20-H-015",
+    "CP20-H-017",
+    "CP20-H-030"
+  ],
+  "prior47": "Source contains no added reviewer term; current guards rechecked against actual previous outputs; no claimofrerun",
+  "limitations": "This changeimpactbinding is not semanticacceptance"
+}

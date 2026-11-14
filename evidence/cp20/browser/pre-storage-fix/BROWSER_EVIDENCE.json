@@ -1,0 +1,878 @@
+{
+  "build": {
+    "base": "/r/4130d88aca38edb8/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-4130d88aca38edb8",
+    "sourceHash": "4130d88aca38edb8531d3d6d7f4ff374af25f6bdcb7badff4942026ebfe4fca2",
+    "version": "0.20.0"
+  },
+  "started": "2026-11-13T07:01:17.636Z",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "cores": 9,
+    "deviceMemoryGB": 8,
+    "platform": "Linux x86_64"
+  },
+  "method": "Actual cloud Chrome via visible QA controls; viewport is not a physical mobile device. No human semantic approval.",
+  "results": [
+    {
+      "name": "Cold frame: lazy resources and 390px viewport",
+      "status": "PASS",
+      "milliseconds": 1,
+      "detail": {
+        "resources": [
+          {
+            "url": "http://127.0.0.1:4173/r/4130d88aca38edb8/app/styles.css",
+            "bytes": 300
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/4130d88aca38edb8/app/main.js",
+            "bytes": 300
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/4130d88aca38edb8/app/build-info.js",
+            "bytes": 300
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/4130d88aca38edb8/app/storage.js",
+            "bytes": 300
+          },
+          {
+            "url": "http://127.0.0.1:4173/r/4130d88aca38edb8/app/long-document.js",
+            "bytes": 300
+          }
+        ],
+        "heavy": [],
+        "frameWidth": 390,
+        "documentWidth": 375,
+        "helpFont": "14px"
+      }
+    },
+    {
+      "name": "Actual preview bytes and headers (not Cloudflare)",
+      "status": "FAIL",
+      "milliseconds": 62,
+      "error": "Error: Preview response bytes differ from packaged build",
+      "stack": "Error: Preview response bytes differ from packaged build\n    at assert (http://127.0.0.1:4173/qa/cp20-browser.js:7:34)\n    at http://127.0.0.1:4173/qa/cp20-browser.js:10:517\n    at async test (http://127.0.0.1:4173/qa/cp20-browser.js:5:189)\n    at async http://127.0.0.1:4173/qa/cp20-browser.js:10:2\n    at async run (http://127.0.0.1:4173/qa/cp20-browser.js:6:95)"
+    },
+    {
+      "name": "Runtime and service worker diagnostic",
+      "status": "PASS",
+      "milliseconds": 1,
+      "detail": {
+        "storage": {
+          "quota": 10796763653,
+          "usage": 59345413,
+          "usageDetails": {
+            "caches": 58351104,
+            "indexedDB": 994309
+          }
+        },
+        "secureContext": true,
+        "indexedDB": true,
+        "webLocks": true,
+        "OPFS": true,
+        "serviceWorker": true,
+        "controller": null,
+        "jsHeapOnly": {
+          "used": 9006871,
+          "total": 10327231
+        }
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: digital-en.pdf",
+      "status": "PASS",
+      "milliseconds": 310,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Scientific results",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The solution set is ∅.",
+            "translatable": true,
+            "issues": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 46715
+          }
+        ],
+        "characters": 251
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: digital-id.pdf",
+      "status": "PASS",
+      "milliseconds": 796,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Hasil ilmiah",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Intervensi tidak meningkatkan kelangsungan hidup.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Regresi linear mengestimasi ukuran efek.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Konsentrasi sampel adalah 10 μM.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Bukti masih belum pasti.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Himpunan penyelesaian adalah ∅.",
+            "translatable": true,
+            "issues": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 39784
+          }
+        ],
+        "characters": 188
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: table-two-column.pdf",
+      "status": "PASS",
+      "milliseconds": 611,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Left column scientific prose line 1.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Left column scientific prose line 2.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Left column scientific prose line 3.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Left column scientific prose line 4.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Right column results and discussion 1.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Right column results and discussion 2.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0007",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Right column results and discussion 3.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0008",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Right column results and discussion 4.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0009",
+            "page": 1,
+            "type": "table",
+            "text": "Treatment Outcome\nControl group 10 mg\nIntervention group 20 mg",
+            "translatable": true,
+            "issues": [
+              "Struktur tabel dan nilai ilmiah dipertahankan; prosa sel diterjemahkan terpisah. Periksa batas sel serta label kolom."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 58916
+          },
+          {
+            "path": "assets/p0001-b0009.png",
+            "bytes": 15467
+          }
+        ],
+        "characters": 358
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: mathematics.pdf",
+      "status": "PASS",
+      "milliseconds": 1583,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p1-math-1",
+            "page": 1,
+            "type": "formula",
+            "text": "||𝑥 − 4| − 4| < 1",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-1",
+              "bbox": [
+                40,
+                40.12,
+                116.745,
+                15
+              ],
+              "latex": "||x - 4| - 4| < 1",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "||𝑥 − 4| − 4| < 1"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                0
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "||𝑥 − 4| − 4| < 1"
+            }
+          },
+          {
+            "id": "p1-math-2",
+            "page": 1,
+            "type": "formula",
+            "text": "||x − 4| − 4| > 1",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-2",
+              "bbox": [
+                40,
+                85.12,
+                114.6,
+                15
+              ],
+              "latex": "||x - 4| - 4| > 1",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "||x − 4| − 4| > 1"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                1
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "||x − 4| − 4| > 1"
+            }
+          },
+          {
+            "id": "p1-math-3",
+            "page": 1,
+            "type": "formula",
+            "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-3",
+              "bbox": [
+                40,
+                130.12,
+                148.64999999999998,
+                15
+              ],
+              "latex": "|x + 4| + |x + 3| \\le 0",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                2
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "|𝑥 + 4| + |𝑥 + 3| ≤ 0"
+            }
+          },
+          {
+            "id": "p1-math-4",
+            "page": 1,
+            "type": "formula",
+            "text": "x ≥ 2",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-4",
+              "bbox": [
+                40,
+                175.12,
+                39.405,
+                15
+              ],
+              "latex": "x \\ge 2",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "x ≥ 2"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                3
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "x ≥ 2"
+            }
+          },
+          {
+            "id": "p1-math-5",
+            "page": 1,
+            "type": "formula",
+            "text": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-5",
+              "bbox": [
+                40,
+                220.12,
+                198.95999999999992,
+                15
+              ],
+              "latex": "\\varnothing \\mathbb{R} \\mathbb{N} \\mathbb{Z} \\in \\notin \\cup \\cap",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "∅"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ℝ"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ℕ"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ℤ"
+                  },
+                  {
+                    "type": "text",
+                    "text": "∈"
+                  },
+                  {
+                    "type": "text",
+                    "text": "∉"
+                  },
+                  {
+                    "type": "text",
+                    "text": "∪"
+                  },
+                  {
+                    "type": "text",
+                    "text": "∩"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                16,
+                18
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "∅ ℝ ℕ ℤ ∈ ∉ ∪ ∩"
+            }
+          },
+          {
+            "id": "p1-math-6",
+            "page": 1,
+            "type": "formula",
+            "text": "(−∞, −3) ∪ (2, ∞)",
+            "translatable": false,
+            "issues": [],
+            "math": {
+              "id": "p1-math-6",
+              "bbox": [
+                40,
+                265.12,
+                131.85,
+                15
+              ],
+              "latex": "(-\\infty , -3) \\cup (2, \\infty )",
+              "ast": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "(−∞, −3) ∪ (2, ∞)"
+                  }
+                ]
+              },
+              "verified": true,
+              "verification": "supported-geometry-only",
+              "sourceItemIds": [
+                19
+              ],
+              "vectorIds": [],
+              "warnings": [],
+              "sourceText": "(−∞, −3) ∪ (2, ∞)"
+            }
+          },
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Solve the inequality. Express the solution set in interval notation.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "ID absolute-value-inequalities~challenge~nested-abs~34f24hj2-0~0",
+            "translatable": true,
+            "issues": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 39313
+          },
+          {
+            "path": "assets/p1-math-1.png",
+            "bytes": 3147
+          },
+          {
+            "path": "assets/p1-math-2.png",
+            "bytes": 3204
+          },
+          {
+            "path": "assets/p1-math-3.png",
+            "bytes": 4560
+          },
+          {
+            "path": "assets/p1-math-4.png",
+            "bytes": 2097
+          },
+          {
+            "path": "assets/p1-math-5.png",
+            "bytes": 5383
+          },
+          {
+            "path": "assets/p1-math-6.png",
+            "bytes": 4997
+          }
+        ],
+        "characters": 227
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: rotated.pdf",
+      "status": "PASS",
+      "milliseconds": 1204,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Digital upright heading",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Rotated scientific label: concentration 10 mg.",
+            "translatable": true,
+            "issues": [
+              "Teks berotasi: periksa urutan baca."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 19594
+          }
+        ],
+        "characters": 69
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: password.pdf",
+      "status": "PASS",
+      "milliseconds": 194,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "Scientific results",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42 with a 95% confidence interval of 1.11 to 1.82.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The concentration was 10 μM and the Ca2+ concentration increased.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0006",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The solution set is ∅.",
+            "translatable": true,
+            "issues": []
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 46715
+          }
+        ],
+        "characters": 251
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: scan.pdf",
+      "status": "PASS",
+      "milliseconds": 2380,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "paragraph",
+            "text": "SYNTHETIC SCAN FIXTURE",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The intervention did not improve survival.",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The hazard ratio was 1.42.",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The evidence remains uncertain.",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 62576
+          }
+        ],
+        "characters": 121
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: mixed-digital-500-scan.pdf",
+      "status": "PASS",
+      "milliseconds": 2418,
+      "detail": {
+        "pages": 1,
+        "blocks": [
+          {
+            "id": "p0001-b0001",
+            "page": 1,
+            "type": "heading",
+            "text": "MIXED PDF COVERAGE AUDIT",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0002",
+            "page": 1,
+            "type": "paragraph",
+            "text": "This digital introduction describes the research design and the interpretation of the findings. The main results are printed in the scanned portion below. The document deliberately contains both machine-readable prose and an image containing essential scientific results. All text belongs to one article and the reader should process the two regions in reading order. This paragraph is intentionally long enough to exceed the current automatic OCR threshold. The image must remain readable and the result statement must be included in the translation.",
+            "translatable": true,
+            "issues": []
+          },
+          {
+            "id": "p0001-b0003",
+            "page": 1,
+            "type": "paragraph",
+            "text": "RESULTS (IMAGE REGION)",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          },
+          {
+            "id": "p0001-b0004",
+            "page": 1,
+            "type": "paragraph",
+            "text": "The intervention did not improve survival. The hazard ratio was 1.42, with a 95% confidence interval of 1.11 to 1.82. This crucial finding appears only in",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli."
+            ]
+          },
+          {
+            "id": "p0001-b0005",
+            "page": 1,
+            "type": "heading",
+            "text": "the image region.",
+            "translatable": true,
+            "issues": [
+              "Teks hasil OCR perlu dibandingkan dengan halaman asli.",
+              "Posisi superskrip atau subskrip tersimpan pada gambar; teks ekstraksi berupa teks datar."
+            ]
+          }
+        ],
+        "assets": [
+          {
+            "path": "assets/halaman-0001.jpg",
+            "bytes": 169103
+          }
+        ],
+        "characters": 768
+      }
+    },
+    {
+      "name": "Actual PDF.js/OCR: corrupt.pdf",
+      "status": "PASS",
+      "milliseconds": 89,
+      "detail": {
+        "rejected": true,
+        "error": "Error: PDF tidak dapat dibuka: Invalid PDF structure."
+      }
+    }
+  ],
+  "previewIntegrity": [
+    {
+      "path": "/index.html",
+      "expectedBytes": 12422,
+      "actualBytes": 13634,
+      "expectedSHA256": "86e1c75385b95a92a4d5c2455b21082d61fcbbbaf6a4ccf94ab56a86c4fa6040",
+      "actualSHA256": "6a075846ab6793aad885ad0597ba3239aeb56abe6a09216fb15ff6647436dcbd",
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "13634",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 13 Nov 2026 07:01:17 GMT",
+        "etag": "W/\"3086-1a1d3b444bc\"",
+        "last-modified": "Fri, 13 Nov 2026 06:59:29 GMT"
+      }
+    },
+    {
+      "path": "/r/4130d88aca38edb8/app/main.js",
+      "expectedBytes": 67583,
+      "actualBytes": 67583,
+      "expectedSHA256": "6f82fb3b82969d53d9c65a1b12a197f901f5f381150ef28d50c2d7c4ffae8cd2",
+      "actualSHA256": "6f82fb3b82969d53d9c65a1b12a197f901f5f381150ef28d50c2d7c4ffae8cd2",
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "67583",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Fri, 13 Nov 2026 07:01:17 GMT",
+        "etag": "W/\"107ff-1a1d3b4434d\"",
+        "last-modified": "Fri, 13 Nov 2026 06:59:28 GMT"
+      }
+    }
+  ]
+}

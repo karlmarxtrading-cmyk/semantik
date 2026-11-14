@@ -1,0 +1,90 @@
+{
+  "method": "Deterministic corrupted/valid bilingual controls; not inference or universal semantic proof",
+  "rows": [
+    {
+      "name": "Maximum omitted",
+      "status": "PASS",
+      "source": "Fungsi mencapai nilai maksimum.",
+      "badTarget": "The function is bounded.",
+      "validTarget": "The function attains its maximum."
+    },
+    {
+      "name": "Qualifier dropped",
+      "status": "PASS",
+      "source": "The assumed sampling procedure is described.",
+      "badTarget": "Prosedur pengambilan sampel dijelaskan.",
+      "validTarget": "Prosedur pengambilan sampel yang diasumsikan dijelaskan."
+    },
+    {
+      "name": "Modifier moved",
+      "status": "PASS",
+      "source": "An unchanged demand curve is shown.",
+      "badTarget": "Jumlah yang diminta tidak berubah pada kurva permintaan.",
+      "validTarget": "Kurva permintaan yang tidak berubah ditampilkan."
+    },
+    {
+      "name": "Proposed omitted",
+      "status": "PASS",
+      "source": "Penjelasan yang diajukan diuji.",
+      "badTarget": "The explanation is tested.",
+      "validTarget": "The proposed explanation is tested."
+    },
+    {
+      "name": "Label becomes article",
+      "status": "PASS",
+      "source": "Perlakuan A menghasilkan 13 respons.",
+      "badTarget": "A treatment produced 13 responses.",
+      "validTarget": "Treatment A produced 13 responses."
+    },
+    {
+      "name": "Dilution lost",
+      "status": "PASS",
+      "source": "Diluting the solution reduces its concentration.",
+      "badTarget": "Membagikan larutan mengurangi konsentrasi.",
+      "validTarget": "Mengencerkan larutan menurunkan konsentrasi."
+    },
+    {
+      "name": "Possessive term lost",
+      "status": "PASS",
+      "source": "Katalis tidak mengubah tetapan kesetimbangannya.",
+      "badTarget": "The catalyst does not change its balance.",
+      "validTarget": "The catalyst does not change its equilibrium constant."
+    },
+    {
+      "name": "Confounding lost",
+      "status": "PASS",
+      "source": "Random assignment reduces confounding.",
+      "badTarget": "Penugasan acak mengurangi peran.",
+      "validTarget": "Penugasan acak mengurangi perancu."
+    },
+    {
+      "name": "Counted actor replaces goods",
+      "status": "PASS",
+      "source": "The quantity sellers offer is recorded.",
+      "badTarget": "Jumlah penjual dicatat.",
+      "validTarget": "Jumlah barang yang ditawarkan penjual dicatat."
+    },
+    {
+      "name": "Catalyst recovery",
+      "status": "PASS",
+      "source": "The catalyst was recovered.",
+      "badTarget": "Katalis ditemukan.",
+      "validTarget": "Katalis diperoleh kembali."
+    },
+    {
+      "name": "Boiling process",
+      "status": "PASS",
+      "source": "The solvent boiled.",
+      "badTarget": "Pelarut direbus.",
+      "validTarget": "Pelarut mendidih."
+    },
+    {
+      "name": "Nonzero changed",
+      "status": "PASS",
+      "source": "The determinant is nonzero.",
+      "badTarget": "Determinan nol.",
+      "validTarget": "Determinan tidak nol."
+    }
+  ],
+  "polarityControls": 2
+}

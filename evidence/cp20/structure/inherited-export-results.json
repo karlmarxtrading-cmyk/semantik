@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux"
+  },
+  "method": "actual export.js and bundled JSZip with Node Blob/FileReader DOM boundary; fresh labeled fixture exports; not real-PDF extraction or browser test",
+  "sourceSha256": "741430f576b150e31928818d82d6320de0a34bd605bca2dddc443044c6d147e4",
+  "results": [
+    {
+      "name": "OUT06 fresh Markdown distinguishes fallback rejection from intentional preservation",
+      "result": "PASS"
+    },
+    {
+      "name": "OUT07 metadata title, LaTeX formula (CP19 explicit output contract), safe prose and translated table shape",
+      "result": "PASS"
+    },
+    {
+      "name": "OUT05 repeated margin metadata condensed in reader export but retained in source and provenance",
+      "result": "PASS"
+    },
+    {
+      "name": "OUT07 Markdown render retains strict inequality and escapes source HTML",
+      "result": "PASS"
+    },
+    {
+      "name": "OUT08 fresh ZIP includes matching source hash, build identity, corrections and diagnostics",
+      "result": "PASS"
+    },
+    {
+      "name": "LIFE05 already aborted export neither generates nor clicks download",
+      "result": "PASS"
+    },
+    {
+      "name": "LIFE05 abort during JSZip stream halts producer and suppresses download",
+      "result": "PASS"
+    },
+    {
+      "name": "Export rejects duplicate or missing visual assets and combined 136MiB resume payload",
+      "result": "PASS"
+    },
+    {
+      "name": "Exclusive summary counts always sum to total including failed and empty targets",
+      "result": "PASS"
+    }
+  ]
+}

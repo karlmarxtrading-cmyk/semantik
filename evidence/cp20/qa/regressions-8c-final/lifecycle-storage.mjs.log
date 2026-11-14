@@ -1,0 +1,8 @@
+PASS Atomic corrected source persists when translations invalidated
+PASS Claim generation invalidates every stale writer transaction
+PASS Replaced job rejects old block IDs and stale delete
+PASS Snapshot write failure rolls back document, block and meta atomically
+PASS Full retry snapshot persists all corrections and outputs after failure
+PASS Legacy CP17 claim preserves file and content; rejects changed timestamp
+PASS Extraction checkpoint keeps corrected prior revision across cancellation and reload
+PASS Delete clears all stores under current ownership only

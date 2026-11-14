@@ -1,0 +1,91 @@
+{
+  "build": "cp20-8c643bea6962471f",
+  "method": "Actual browser UI, syntheticPDF, no script injection into application state",
+  "events": [
+    {
+      "test": "Restore completed1001 prior1668checkpoint in final8c consumer",
+      "status": "PASS",
+      "savedPages": 1001,
+      "blocks": 3003,
+      "offlineCacheWarningPreserved": true,
+      "actualExport": "BROWSER_1001_EN_TO_ID.md",
+      "inferenceOn8cClaimed": false
+    },
+    {
+      "test": "Pause195pages and actualpartialMDdownload",
+      "status": "PASS",
+      "savedPages": 195,
+      "blocks": 585,
+      "translated": 389,
+      "rejected": 194,
+      "pending": 2
+    },
+    {
+      "test": "Navigate away and Back; BFCache persisted branch observed",
+      "status": "PASS",
+      "observedMessage": "Kepemilikan pekerjaan diperiksa kembali. Hasil yang belum tersimpan tetap perlu disimpan atau diunduh.",
+      "pagesAfter": 195,
+      "blocksAfter": 585
+    },
+    {
+      "test": "Resume cached traversal does not display falselyfastETA",
+      "status": "PASS",
+      "observedTitle": "Halaman 18 dari 1500",
+      "observedDetail": "195 halaman aman tersimpan \u00b7 389 bagian selesai"
+    },
+    {
+      "test": "Keyboard Enter activates Jeda at687 pages",
+      "status": "PASS",
+      "pages": 687,
+      "blocks": 2061,
+      "translated": 1373,
+      "rejected": 686,
+      "pending": 2
+    },
+    {
+      "test": "Actual tab close then newtab sameorigin",
+      "status": "PASS",
+      "resumeBanner": "capacity-1500-id.pdf \u00b7 1373 bagian diproses",
+      "sourceReselectionRequired": false
+    },
+    {
+      "test": "Keyboard Enter activates resume and translation aftertabclose",
+      "status": "PASS",
+      "observedStage": "Memeriksa ruang perangkat\u2026",
+      "expectedStoredPages": 687
+    },
+    {
+      "test": "Browser zoom throughControl+=",
+      "status": "NOT_RUN",
+      "reason": "Supported browser keyboard action did not change viewport ordevicePixelRatio; no zoom qualification inferred",
+      "before": {
+        "width": 1363,
+        "documentWidth": 1348,
+        "scale": 1
+      },
+      "after": {
+        "width": 1363,
+        "documentWidth": 1348,
+        "scale": 1
+      }
+    },
+    {
+      "test": "Complete1500pages final8c and actualMDdownload",
+      "status": "PASS_FOR_PROCESSING_EXPORT_ONLY",
+      "pages": 1500,
+      "blocks": 4500,
+      "translated": 3000,
+      "rejected": 1500,
+      "failed": 0,
+      "pending": 0,
+      "wallElapsedMsIncludingPauseAndOtherTests": 2685742,
+      "completedAt": "2026-11-13T08:38:35.562Z",
+      "download": "BROWSER_1500_ID_TO_EN.md"
+    }
+  ],
+  "limitations": [
+    "Physical sleep/wake and OS process kill not run",
+    "Browser zoom not qualified",
+    "1500 rejected English metadata blocks remain partial; scientific prose semantic quality separatelyFAIL"
+  ]
+}

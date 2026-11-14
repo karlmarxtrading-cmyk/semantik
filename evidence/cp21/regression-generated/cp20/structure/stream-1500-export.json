@@ -1,0 +1,25 @@
+{
+  "pages": 1500,
+  "blocks": 1500,
+  "counts": {
+    "total": 1500,
+    "translated": 1500,
+    "preserved": 0,
+    "rejected": 0,
+    "failed": 0,
+    "pending": 0
+  },
+  "uniqueAssets": 0,
+  "assetReferences": 0,
+  "bytes": 2685779,
+  "sink": "bounded-blob",
+  "maxActivePages": 1,
+  "coverageIncompletePages": 0,
+  "mathUncertainPages": 0,
+  "unsavedPages": [],
+  "durablePages": 1500,
+  "partial": false,
+  "sha256": "5e68aef542b6665698aec75ef7f22337d7c9616e951ba7a633b207c5db744579",
+  "elapsedMs": 2647.262601,
+  "method": "Node actual exporter, diverse synthetic text generator; no PDF extraction, model inference, browser download or device claim"
+}

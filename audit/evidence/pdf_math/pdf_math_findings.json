@@ -1,0 +1,69 @@
+{
+  "audit_scope": "Uploaded CP18 PDF extraction/layout and Markdown export, specifically a one-PDF-to-one-Markdown scientific translator with neat mathematics.",
+  "source_release": "r/7a8e787a497535f5",
+  "findings": [
+    {
+      "id": "CP18-MATH-01",
+      "priority": "P1",
+      "title": "Mathematical structure is lost before translation",
+      "observed": [
+        {"source": "Visually typeset y=x squared", "extracted": "y = x 2", "block": "p0001-b0005"},
+        {"source": "Visually typeset z=a subscript i", "extracted": "z = a i", "block": "p0001-b0006"},
+        {"source": "f(x)=(x+1)/(x-1) with a horizontal fraction bar", "extracted": ["x + 1", "f(x) =", "x − 1"], "blocks": ["p0001-b0008", "p0001-b0009", "p0001-b0010"]},
+        {"source": "Integral from 0 to 1 of x squared dx = 1/3", "extracted": ["3. Definite integral 1", "∫0 x dx = 3", "2 1"], "blocks": ["p0001-b0011", "p0001-b0012", "p0001-b0013"]},
+        {"source": "A is a two-by-two matrix with rows (1,2) and (3,4), brackets drawn as vector paths", "extracted": ["1 2", "A =", "3 4"], "blocks": ["p0001-b0015", "p0001-b0016", "p0001-b0017"]}
+      ],
+      "cause": "Geometry is retained as provenance but serialized to flat strings. PDF vector fraction bars and matrix brackets are not text items. Baseline grouping and paragraph grouping do not reconstruct a math expression tree.",
+      "source_locations": ["app/layout.js:18-29", "app/layout.js:91-111", "app/layout.js:247-266", "app/pdf-reader.js:77-94"],
+      "evidence": ["mathematics_fixture.pdf", "mathematics_fixture.png", "math_node_extraction.json", "MATHEMATICS_ACTUAL_SOURCE_EXPORT.md", "extract_math_node.mjs"],
+      "test_scope": "Actual uploaded bundled PDF.js 6.2.108 + normalizeItems + analyzeLayout + createMarkdown(source), executed in Node with documented standard-API and canvas-class shims. PDF source rendered with Poppler and visually inspected. No OCR, translation model or browser UI invoked.",
+      "impact": "Source preservation and complete text-item coverage do not establish preservation of mathematical meaning. Formula status 'preserved' can preserve an already-flattened expression. Downstream model guardrails cannot reliably recover the source structure from these strings.",
+      "required_change": "Detect complete math regions and reconstruct validated fraction/superscript/subscript/integral/matrix structure before translation; retain exact source regions for internal verification; include meaningful regression fixtures beyond single-line inequalities."
+    },
+    {
+      "id": "CP18-MATH-02",
+      "priority": "P1",
+      "title": "The exporter intentionally does not produce rendered mathematics in the standalone .md",
+      "observed": [
+        "Formula blocks are emitted inside fenced text code blocks.",
+        "Existing inline LaTeX '$\\hat\\beta=(X^TX)^{-1}X^Ty$' is emitted inside backticks, preventing ordinary math renderers from treating it as math.",
+        "The normal Markdown download uses withAssets=false. Source image crops and full-page images are included only in the ZIP path, not the standalone Markdown.",
+        "For image-only blocks, the standalone Markdown tells the reader to open the original PDF or complete ZIP."
+      ],
+      "source_locations": ["app/export.js:27-38", "app/export.js:51-70", "app/export.js:87-115", "app/export.js:203-209"],
+      "evidence": ["math_node_extraction.json", "MATHEMATICS_ACTUAL_SOURCE_EXPORT.md"],
+      "impact": "This is a direct product-contract mismatch with the requested upload/press/download-one-.md workflow and neat mathematical writing. It is not repaired by making a ZIP available or adding review warnings.",
+      "required_change": "Define a single Markdown math format, serialize validated inline/display LaTeX rather than code fences, and test it in named supported renderers. A document with unresolved mathematical structure must not silently be presented as a completed scientific translation."
+    }
+  ],
+  "positive_evidence": [
+    {
+      "area": "Strict inequality classification",
+      "result": "The actual PDF row containing < and ≤ is now classified as formula; the earlier obvious < versus ≤ routing asymmetry is addressed.",
+      "evidence": "math_node_extraction.json block p0001-b0021"
+    },
+    {
+      "area": "Mixed digital/image pages",
+      "result": "Actual repeated-raster-text PDF has 10 image regions, 57.007% total area, and a readable digital header. All 10 image regions are marked OCR-required. A separate 416-alphanumeric-character header probe also triggers OCR for a large image region.",
+      "evidence": ["repeated_images_fixture.pdf", "repeated_image_result.json", "math_node_extraction.json"],
+      "limit": "This proves detection/planning for these cases, not OCR recognition accuracy or exhaustive handling of every PDF image operator."
+    },
+    {
+      "area": "Resumed asset budget",
+      "result": "validateAssetBudget rejects 17 unique 8 MiB checkpoint/new assets (136 MiB total) with PDF_ASSET_LIMIT. Source passes initialAssets into per-page aggregate validation.",
+      "evidence": ["math_node_extraction.json", "app/pdf-reader.js:27-40", "app/pdf-reader.js:301-306", "app/pdf-reader.js:406", "app/pdf-reader.js:427"],
+      "limit": "This is stored asset-byte accounting, not a measurement of peak browser heap."
+    },
+    {
+      "area": "Layout work and provenance",
+      "result": "CP18 keeps source item IDs and bounding boxes and uses a dedicated layout worker with cancellation in browsers. This helps diagnosis and resilience but does not itself reconstruct mathematics.",
+      "evidence": ["app/layout.js:261-266", "app/layout.js:331-347"]
+    }
+  ],
+  "limitations": [
+    "No original user scientific journal PDF was included in the current upload; source fixtures are synthetic and must not be represented as a broad accuracy benchmark.",
+    "Chromium was installed but the OS rejected its process-singleton socket before the application loaded. Browser validation remains unperformed in this subtask; this is an audit-environment limitation, not evidence of a CP18 app crash.",
+    "No translation-model output is attributed to this subtask; another audit agent evaluates the actual models.",
+    "The node parser uses a compensated Math.sumPrecise shim for finite font geometry sums and standard Map/Uint8Array helpers missing from Node. It does not patch the uploaded application or bundled PDF.js files."
+  ]
+}

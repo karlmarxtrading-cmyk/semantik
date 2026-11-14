@@ -1,0 +1,19 @@
+(node:269) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "testKind": "Current production module with explicit PDF.js/canvas stubs; not real decoding or peak RAM",
+  "firstRun": {
+    "savedPages": 16,
+    "bytes": 134217728,
+    "error": "Total aset sumber melebihi 128 MiB, termasuk halaman sebelum pemulihan. Proses rentang halaman yang lebih pendek."
+  },
+  "resume": {
+    "succeeded": false,
+    "error": {
+      "code": "PDF_ASSET_LIMIT",
+      "message": "Total aset sumber melebihi 128 MiB, termasuk halaman sebelum pemulihan. Proses rentang halaman yang lebih pendek."
+    }
+  },
+  "documentedLimit": 134217728,
+  "bypassPrevented": true
+}

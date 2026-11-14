@@ -1,0 +1,455 @@
+{
+ "build": {
+  "sourceRoot": "/home/claude/w/QA_A/cp21/app",
+  "adapterSHA256": "ce90ea16f6ea37fe523388d3852421489a66ff189f1c51993f738c88eca47a46",
+  "rulesSHA256": "8f111ff3686e912d3041f80c584866c865d58f26ef635ea92d451bb7eee8483e",
+  "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+  "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+ },
+ "rows": [
+  {
+   "id": "CP22-G01",
+   "direction": "en-id",
+   "source": "Doubling the length of a pendulum does not double its period. The period grows with the square root of the length.",
+   "text": "Dua kali lipat panjang pendulum tidak berlipat ganda dari periodenya. Periode tumbuh dengan akar kuadrat panjang.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Doubling the length of a pendulum does not double its period."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The period grows with the square root of the length."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 29,
+    "outputTokens": 21,
+    "uniqueInputs": 2
+   },
+   "ms": 1065
+  },
+  {
+   "id": "CP22-G02",
+   "direction": "en-id",
+   "source": "The mutant strain grew more slowly at 37 °C, but its final cell density was similar to that of the wild type. Growth rate and yield must therefore be reported separately.",
+   "text": "Strain mutan tumbuh lebih lambat pada 37 °C, namun kepadatan sel terakhirnya mirip dengan jenis liar. Tingkat pertumbuhan dan hasil harus dilaporkan secara terpisah.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The mutant strain grew more slowly at 37 °C, but its final cell density was similar to that of the wild type."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Growth rate and yield must therefore be reported separately."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 32,
+    "uniqueInputs": 2
+   },
+   "ms": 1256
+  },
+  {
+   "id": "CP22-G03",
+   "direction": "en-id",
+   "source": "A correlation coefficient of 0.8 indicates a strong linear association. It does not show which variable influences the other.",
+   "text": "Koefisien korelasi dari 0.8 mengindikasikan asosiasi linear yang kuat. Ini tidak menunjukkan variabel mana yang mempengaruhi yang lain.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A correlation coefficient of 0.8 indicates a strong linear association."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "It does not show which variable influences the other."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 32,
+    "outputTokens": 30,
+    "uniqueInputs": 2
+   },
+   "ms": 1216
+  },
+  {
+   "id": "CP22-G04",
+   "direction": "en-id",
+   "source": "The catalyst shortened the time needed to reach equilibrium. It did not change the final ratio of products to reactants.",
+   "text": "Katalis dipersingkat waktu yang diperlukan untuk mencapai kesetimbangan. Hal itu tidak mengubah rasio akhir produk menjadi reaktan.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The catalyst shortened the time needed to reach equilibrium."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "It did not change the final ratio of products to reactants."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 27,
+    "uniqueInputs": 2
+   },
+   "ms": 946
+  },
+  {
+   "id": "CP22-G05",
+   "direction": "en-id",
+   "source": "Inflation reduces the real value of fixed loan repayments. Borrowers therefore benefit when inflation exceeds the rate they expected.",
+   "text": "Inflasi mengurangi nilai sebenarnya dari pembayaran pinjaman yang tetap. Oleh karena itu, para peminjam memperoleh manfaat sewaktu inflasi melebihi tingkat yang mereka harapkan.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Inflation reduces the real value of fixed loan repayments."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Borrowers therefore benefit when inflation exceeds the rate they expected."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 29,
+    "outputTokens": 28,
+    "uniqueInputs": 2
+   },
+   "ms": 938
+  },
+  {
+   "id": "CP22-G06",
+   "direction": "en-id",
+   "source": "Every finite set of real numbers has a largest element. An infinite set may have no largest element even if all of its elements are smaller than 1.",
+   "text": "Setiap himpunan hingga dari bilangan real memiliki elemen terbesar. Sebuah himpunan tak hingga mungkin tidak memiliki elemen terbesar bahkan jika semua elemennya lebih kecil dari 1.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Every finite set of real numbers has a largest element."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "An infinite set may have no largest element even if all of its elements are smaller than 1."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 50,
+    "outputTokens": 41,
+    "uniqueInputs": 2
+   },
+   "ms": 1675
+  },
+  {
+   "id": "CP22-G07",
+   "direction": "en-id",
+   "source": "The vaccine reduced hospital admissions by 40 percent among older adults. Its effect on mild infections was not measured in this trial.",
+   "text": "Vaksin ini diturunkan rawat inap oleh 40 persen di antara orang dewasa yang lebih tua. Efeknya pada infeksi ringan tidak diukur dalam uji coba ini.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The vaccine reduced hospital admissions by 40 percent among older adults."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Its effect on mild infections was not measured in this trial."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 38,
+    "uniqueInputs": 2
+   },
+   "ms": 1386
+  },
+  {
+   "id": "CP22-G08",
+   "direction": "en-id",
+   "source": "Sediment cores record changes in rainfall over several centuries. Gaps in deposition can make two distant layers appear consecutive.",
+   "text": "Inti Sedimen merekam perubahan curah hujan selama beberapa abad. Celah dalam deposisi dapat membuat dua lapisan jauh muncul berturut-turut.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Sediment cores record changes in rainfall over several centuries."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Gaps in deposition can make two distant layers appear consecutive."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 28,
+    "outputTokens": 27,
+    "uniqueInputs": 2
+   },
+   "ms": 917
+  },
+  {
+   "id": "CP22-H01",
+   "direction": "id-en",
+   "source": "Gaya gesek bekerja berlawanan dengan arah gerak benda. Besarnya bergantung pada jenis permukaan, bukan pada luas bidang sentuh.",
+   "text": "The stroke style works in opposite direction to the object. The size depends on the surface type, not the area of touch.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Gaya gesek bekerja berlawanan dengan arah gerak benda."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Besarnya bergantung pada jenis permukaan, bukan pada luas bidang sentuh."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 25,
+    "outputTokens": 25,
+    "uniqueInputs": 2
+   },
+   "ms": 822
+  },
+  {
+   "id": "CP22-H02",
+   "direction": "id-en",
+   "source": "Median lebih tahan terhadap nilai ekstrem daripada rata-rata. Karena itu, median sering dipilih untuk data pendapatan yang menceng.",
+   "text": "Median is more resistant to extreme value than average. Hence, medians are often selected for supporting income data.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Median lebih tahan terhadap nilai ekstrem daripada rata-rata."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Karena itu, median sering dipilih untuk data pendapatan yang menceng."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 28,
+    "outputTokens": 24,
+    "uniqueInputs": 2
+   },
+   "ms": 863
+  },
+  {
+   "id": "CP22-H03",
+   "direction": "id-en",
+   "source": "Larutan penyangga mempertahankan pH ketika sedikit asam ditambahkan. Kapasitasnya terbatas dan dapat habis jika asam terus ditambahkan.",
+   "text": "Solution buffer maintains pH when a little acid is added. The capacity is limited and can be exhausted if the acid continues to be added.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Larutan penyangga mempertahankan pH ketika sedikit asam ditambahkan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kapasitasnya terbatas dan dapat habis jika asam terus ditambahkan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 29,
+    "outputTokens": 34,
+    "uniqueInputs": 2
+   },
+   "ms": 1304
+  },
+  {
+   "id": "CP22-H04",
+   "direction": "id-en",
+   "source": "Tanaman yang kekurangan nitrogen menunjukkan daun yang menguning. Gejala ini juga dapat muncul akibat kekurangan air, sehingga diagnosis memerlukan uji tanah.",
+   "text": "The nitrogen-deprived plant shows yellowing leaves. These symptoms can also be attributed to water shortages, so diagnosis requires soil testing.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Tanaman yang kekurangan nitrogen menunjukkan daun yang menguning."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Gejala ini juga dapat muncul akibat kekurangan air, sehingga diagnosis memerlukan uji tanah."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 27,
+    "outputTokens": 31,
+    "uniqueInputs": 2
+   },
+   "ms": 969
+  },
+  {
+   "id": "CP22-H05",
+   "direction": "id-en",
+   "source": "Subsidi harga pupuk menurunkan biaya produksi petani. Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu.",
+   "text": "Subsidi harga pupuk menurunkan biaya produksi petani. Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu.",
+   "outcome": "rejected",
+   "status": "review",
+   "issues": [
+    "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+   ],
+   "diagnostics": [
+    {
+     "stage": "translation",
+     "name": "Error",
+     "message": "Arah perubahan pada klaim ilmiah berubah.",
+     "segmentSource": null,
+     "candidateText": null,
+     "rawCandidate": null
+    }
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Subsidi harga pupuk menurunkan biaya produksi petani."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Namun, manfaatnya berkurang jika pupuk tidak tersedia tepat waktu."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 27,
+    "outputTokens": 34,
+    "uniqueInputs": 2
+   },
+   "ms": 1317
+  },
+  {
+   "id": "CP22-H06",
+   "direction": "id-en",
+   "source": "Peneliti mewawancarai 25 guru dari tiga sekolah negeri. Temuan ini tidak dapat digeneralisasi ke sekolah swasta tanpa data tambahan.",
+   "text": "Researchers interview 25 teachers from three public schools. This discovery cannot be generalized into private schools without additional data.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Peneliti mewawancarai 25 guru dari tiga sekolah negeri."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Temuan ini tidak dapat digeneralisasi ke sekolah swasta tanpa data tambahan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 27,
+    "uniqueInputs": 2
+   },
+   "ms": 957
+  },
+  {
+   "id": "CP22-H07",
+   "direction": "id-en",
+   "source": "Turunan fungsi konstan selalu nol. Sebaliknya, fungsi dengan turunan nol pada suatu interval adalah konstan pada interval tersebut.",
+   "text": "Derivative constant functions are always zero. Instead, the function with derivative zero at an interval is constant at that interval.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Turunan fungsi konstan selalu nol."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Sebaliknya, fungsi dengan turunan nol pada suatu interval adalah konstan pada interval tersebut."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 33,
+    "uniqueInputs": 2
+   },
+   "ms": 1257
+  },
+  {
+   "id": "CP22-H08",
+   "direction": "id-en",
+   "source": "Pasien yang menghentikan pengobatan lebih awal dikeluarkan dari analisis utama. Pengecualian ini dapat membuat efek pengobatan tampak lebih besar.",
+   "text": "Patients who stopped treatment earlier were removed from primary analysis. These exceptions can make the treatment effect appear larger.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Pasien yang menghentikan pengobatan lebih awal dikeluarkan dari analisis utama."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pengecualian ini dapat membuat efek pengobatan tampak lebih besar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 26,
+    "outputTokens": 22,
+    "uniqueInputs": 2
+   },
+   "ms": 707
+  }
+ ]
+}

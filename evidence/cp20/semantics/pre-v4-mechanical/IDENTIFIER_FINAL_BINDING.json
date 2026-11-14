@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "build": {
+    "base": "/r/4694bad623ed9b19/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-4694bad623ed9b19",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "version": "0.20.0"
+  },
+  "identity": {
+    "sourceRoot": "/workspace/scratch/17677088ccfd/cp20/dist/r/4694bad623ed9b19",
+    "adapterSHA256": "4ec08bdc60c5d8be785d2c9201aff2512622c4f87b117f465b7573428ff13129",
+    "rulesSHA256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+    "spansSHA256": "29f26deea056f2b98d6fdc6bedd4a2975fc626fd2a1bf128d195901e8b948211",
+    "workerSHA256": "d20270f23af30a93422b94ded683c8ee7cc0a2f205500347926b8f437c51c0a8"
+  },
+  "exactSemanticModuleBindingMatches": true,
+  "checks": [
+    {
+      "source": "GENE_01. We read journals.",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "TRIAL7_A03. The research team measured 18 samples before the intervention. The comparison group received no treatment. This observation alone does not establish a causal relationship.",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 3
+    },
+    {
+      "source": "OBS0002 END",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "DATA-2026-07. The solution was heated until the solvent evaporated.",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "CP20B0001_00. The research team measured 18 samples before the intervention. The comparison group received no treatment. This observation alone does not establish a causal relationship.",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 3
+    },
+    {
+      "source": "CP20P0001 END",
+      "direction": "en-id",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "sample_42. Peneliti membaca jurnal.",
+      "direction": "id-en",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "LAB9R07_01. Setiap himpunan hingga memiliki sejumlah elemen yang terbatas.",
+      "direction": "id-en",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    },
+    {
+      "source": "OBS0003 AKHIR",
+      "direction": "id-en",
+      "outcome": "translated",
+      "identifierPreserved": true,
+      "neuralTokensReported": true,
+      "workerTranslationRequests": 1
+    }
+  ],
+  "scope": "Generic identifier atomization and adjacent prose continue correctly in actual local final-dist model; not broad semantic acceptance."
+}

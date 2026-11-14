@@ -1,0 +1,77 @@
+{
+  "model": "Xenova/m2m100_418M",
+  "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+  "rows": [
+    {
+      "path": "config.json",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 908,
+      "httpStatus": 200,
+      "bytes": 908,
+      "sha256": "1dbdf77ddc7809acd4c54ccf0eab46f840b40174afb1b6f6de8787244e832938",
+      "seconds": 16.88,
+      "status": "PASS"
+    },
+    {
+      "path": "generation_config.json",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 233,
+      "httpStatus": 200,
+      "bytes": 233,
+      "sha256": "722210dd0bee7bef4e8e7f9a8574d8c56a2dfff723d73f390ce67892740b9009",
+      "seconds": 16.87,
+      "status": "PASS"
+    },
+    {
+      "path": "onnx/decoder_model_merged_quantized.onnx",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 344128178,
+      "httpStatus": 200,
+      "bytes": 344128178,
+      "sha256": "007654bcabb6cea6fd3bde34ce933137b431330b3755781145d7b6906270b45a",
+      "seconds": 27.44,
+      "status": "PASS"
+    },
+    {
+      "path": "onnx/encoder_model_quantized.onnx",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 287856370,
+      "httpStatus": 200,
+      "bytes": 287856370,
+      "sha256": "13a94e354a9140764eb81102d77d3ec6952d796e6f113c651eeb3c3443da0386",
+      "seconds": 24.94,
+      "status": "PASS"
+    },
+    {
+      "path": "special_tokens_map.json",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 1559,
+      "httpStatus": 200,
+      "bytes": 1559,
+      "sha256": "009ea667e0ca903c10dac22cf7ae3a3a0b173ff33f8c64154fddd8c043805622",
+      "seconds": 13.02,
+      "status": "PASS"
+    },
+    {
+      "path": "tokenizer.json",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 7988527,
+      "httpStatus": 200,
+      "bytes": 7988527,
+      "sha256": "03d9e111731c2d71f39a2c2a88499743e4c251385d07f0384b4349a23ba54363",
+      "seconds": 10.85,
+      "status": "PASS"
+    },
+    {
+      "path": "tokenizer_config.json",
+      "revision": "9c374f0b7aca709787cea97b047bfbbd1559d177",
+      "expectedBytes": 1813,
+      "httpStatus": 200,
+      "bytes": 1813,
+      "sha256": "bacfd4b9da25a61e01f17abe660465f616c9a1a3f5e23ab9ad3326c3788f2d9f",
+      "seconds": 17.84,
+      "status": "PASS"
+    }
+  ],
+  "allVerified": true
+}

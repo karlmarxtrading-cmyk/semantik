@@ -1,0 +1,92 @@
+{
+  "build": {
+    "base": "/r/2e4d8ef18eb32385/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-2e4d8ef18eb32385",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "version": "0.20.0"
+  },
+  "files": {
+    "offline": "341c5b1de7a004906e7b00a878fe394480a9897a63999daa0e1e574f7ece7904",
+    "worker": "b750017a915a7c02aa6dbe4e8e557fb974d0fe910ce8bad004bcb965d6b3a425"
+  },
+  "method": "Node VM executes exact generated release modules, real built inventory and bytes; Cache API/fetch/lifecycle boundaries are controlled doubles. No actual browser, hosting, model inference or device claim.",
+  "tests": [
+    {
+      "name": "Actual generated manifest matches CP20 exact build identity",
+      "status": "PASS",
+      "milliseconds": 0.6590519999999955,
+      "files": 269,
+      "cache": "semantik-pdf-cp20-2e4d8ef18eb32385"
+    },
+    {
+      "name": "Manifest defects rejected before any cache mutation",
+      "status": "PASS",
+      "milliseconds": 4.161695999999999,
+      "mutations": 12
+    },
+    {
+      "name": "Install caches only light shell and never skips active-client wait",
+      "status": "PASS",
+      "milliseconds": 9.858323999999996,
+      "keys": [
+        "/index.html",
+        "/r/2e4d8ef18eb32385/app/styles.css",
+        "/r/2e4d8ef18eb32385/app/main.js",
+        "/r/2e4d8ef18eb32385/app/storage.js",
+        "/r/2e4d8ef18eb32385/app/build-info.js",
+        "/r/2e4d8ef18eb32385/icon.svg",
+        "/r/2e4d8ef18eb32385/manifest.webmanifest"
+      ]
+    },
+    {
+      "name": "Prepare all actual build assets with size and SHA256 verification",
+      "status": "PASS",
+      "milliseconds": 735.213318,
+      "files": 269,
+      "bytes": 41601166
+    },
+    {
+      "name": "Notices and all licenses served by generated worker after network removal",
+      "status": "PASS",
+      "milliseconds": 7.323726000000079,
+      "documents": 33
+    },
+    {
+      "name": "Navigation and repeated offline preparation use verified cache",
+      "status": "PASS",
+      "milliseconds": 87.50801799999999
+    },
+    {
+      "name": "Corrupted cache and changed server bytes fail closed",
+      "status": "PASS",
+      "milliseconds": 1.3769029999999702
+    },
+    {
+      "name": "Unknown release paths denied; model shards remain engine-verified",
+      "status": "PASS",
+      "milliseconds": 0.13632200000006378
+    },
+    {
+      "name": "Abort and denied cache report failure without false offline success",
+      "status": "PASS",
+      "milliseconds": 4.542799999999943
+    },
+    {
+      "name": "Activation retains previous release cache for rollback",
+      "status": "PASS",
+      "milliseconds": 0.30767100000002756,
+      "scope": "Controlled activation retention, not actual browser update/rollback lifecycle"
+    }
+  ],
+  "allPass": true,
+  "unqualified": [
+    "Cloudflare actual byte/header behavior",
+    "Browser install/wait/activate while a translation is active",
+    "Browser network disconnect and model/OCR execution",
+    "Rollback to earlier deployment with checkpoint migration"
+  ]
+}

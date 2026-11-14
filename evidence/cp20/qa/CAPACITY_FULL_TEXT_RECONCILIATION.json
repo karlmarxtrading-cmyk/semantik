@@ -1,0 +1,54 @@
+{
+  "method": "Every actual extracted page normalized only for whitespace and compared to original authored full text/order, after independently checking reconstructed ground truth against the original per-page SHA-256 trace manifest. No source/extractor changes, no inference, no browser claim.",
+  "parserEvidence": "capacity-parser-final/RESULTS.json",
+  "parserModuleHashes": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098"
+  },
+  "currentBuildBinding": "CAPACITY_FINAL_BUILD_BINDING.json",
+  "rows": [
+    {
+      "file": "capacity-300-en.pdf",
+      "status": "PASS",
+      "pages": 300,
+      "fullTextOrderMatchedPages": 300,
+      "failures": []
+    },
+    {
+      "file": "capacity-301-en.pdf",
+      "status": "PASS",
+      "pages": 301,
+      "fullTextOrderMatchedPages": 301,
+      "failures": []
+    },
+    {
+      "file": "capacity-1000-en.pdf",
+      "status": "PASS",
+      "pages": 1000,
+      "fullTextOrderMatchedPages": 1000,
+      "failures": []
+    },
+    {
+      "file": "capacity-1001-en.pdf",
+      "status": "PASS",
+      "pages": 1001,
+      "fullTextOrderMatchedPages": 1001,
+      "failures": []
+    },
+    {
+      "file": "capacity-1500-id.pdf",
+      "status": "PASS",
+      "pages": 1500,
+      "fullTextOrderMatchedPages": 1500,
+      "failures": []
+    },
+    {
+      "file": "capacity-1001-en-rich.pdf",
+      "status": "PASS",
+      "pages": 1001,
+      "fullTextOrderMatchedPages": 1001,
+      "failures": []
+    }
+  ]
+}

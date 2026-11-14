@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "semanticAcceptance": "FAIL",
+  "meaning": "PASS binds actual inference to final build and confirms parity; it is NOT semantic quality acceptance.",
+  "build": {
+    "base": "/r/1668833ad37c9dd8/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-1668833ad37c9dd8",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "version": "0.20.0"
+  },
+  "buildManifestSHA256": "1abf2a6a68e4df64abea2ebebb7e73c68e8571b4dbc1f56d9b47c3067a50e430",
+  "moduleChecks": [
+    {
+      "path": "r/1668833ad37c9dd8/app/translation.js",
+      "sha256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+      "bytes": 28058,
+      "matchesInferenceIdentity": true,
+      "matchesManifest": true,
+      "sourceByteIdentical": true
+    },
+    {
+      "path": "r/1668833ad37c9dd8/app/claim-guards.js",
+      "sha256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+      "bytes": 8260,
+      "matchesInferenceIdentity": true,
+      "matchesManifest": true,
+      "sourceByteIdentical": true
+    },
+    {
+      "path": "r/1668833ad37c9dd8/app/semantic-spans.js",
+      "sha256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+      "bytes": 22250,
+      "matchesInferenceIdentity": true,
+      "matchesManifest": true,
+      "sourceByteIdentical": true
+    }
+  ],
+  "workerCheck": {
+    "path": "r/1668833ad37c9dd8/assets/engine.worker-4c3dcfee.js",
+    "sha256": "105791345da41a9f84d6492d976ca581eb4a7733cd144791240db3f99b2d2a40",
+    "matchesInferenceIdentity": true,
+    "matchesManifest": true
+  },
+  "modelManifestChecks": [
+    {
+      "direction": "en-id",
+      "manifestSHA256": "38dcfd7d0b063be36306d3467e00bcc91d7c852efa5305fdc16d6d08c23a8d46",
+      "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "matchesBuildIdentity": true
+    },
+    {
+      "direction": "id-en",
+      "manifestSHA256": "ea15971dead932ce70f41316026eed8a11859edc91bf0df8cd0c5961b4a0522e",
+      "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "matchesBuildIdentity": true
+    }
+  ],
+  "sourceRunFinalDistParity": {
+    "pass": true,
+    "comparedCases": 10,
+    "fields": [
+      "source",
+      "text",
+      "outcome",
+      "retryable",
+      "recovery",
+      "metrics"
+    ],
+    "differences": []
+  },
+  "finalOutcomes": {
+    "translated": 9,
+    "rejected": 1
+  },
+  "humanApprovals": 0,
+  "reviewType": "AI-only; not human-adjudicated",
+  "runtimeBoundary": "Actual local ONNX/WASM through Node Worker bridge with local file fetch and in-memory cache; not browser or physical-device evidence."
+}

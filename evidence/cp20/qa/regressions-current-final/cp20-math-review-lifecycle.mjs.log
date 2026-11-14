@@ -1,0 +1,38 @@
+(node:359) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+Local checkpoint unavailable: {"name":"QuotaExceededError","message":"controlled storage failure","page":1,"stage":"complete","at":"2026-11-13T07:30:51.397Z"}
+Local checkpoint unavailable: {"name":"SecurityError","message":"controlled storage failure","page":1,"stage":"complete","at":"2026-11-13T07:30:51.403Z"}
+{
+  "scope": "Actual application main and long pipeline modules in Node VM. DOM/storage/PDF/model doubles. Not browser, actual OCR, device memory, or real translation proof.",
+  "sourceHashes": {
+    "main.js": "eb7ad817bb742afc69ba5736d63090b5adffe9ec56b3bd571f051d50c3a62211",
+    "long-document.js": "5be8cde00ac7baec00039479919bf31c76654ea27d615dd55f9de42ae0649ea3",
+    "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd"
+  },
+  "checks": [
+    {
+      "name": "QuotaExceededError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "SecurityError: user edit, failed commit, navigation/current-page protection, retry, persisted target",
+      "status": "PASS"
+    },
+    {
+      "name": "65 image/OCR failure fallback pages do not become a completed translation",
+      "status": "PASS",
+      "observed": {
+        "status": "needs-attention",
+        "done": 0,
+        "failed": 65,
+        "coverageIncompletePages": 65,
+        "extractionComplete": false
+      }
+    },
+    {
+      "name": "Changing forced source language to automatic redetects source and chooses opposite target",
+      "status": "PASS"
+    }
+  ]
+}

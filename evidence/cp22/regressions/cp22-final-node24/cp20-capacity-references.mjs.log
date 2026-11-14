@@ -1,0 +1,11 @@
+Warning: Please use the `legacy` build in Node.js environments.
+[
+  {
+    "name": "cp20-reference-followed-by-chapter.pdf",
+    "status": "PASS"
+  },
+  {
+    "name": "cp20-reference-midbook.pdf",
+    "status": "PASS"
+  }
+]

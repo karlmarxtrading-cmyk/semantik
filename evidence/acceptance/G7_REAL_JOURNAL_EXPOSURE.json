@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-12T03:35:00.686892+00:00",
+  "currentUse": "DEVELOPMENT_EXPOSED_AFTER_FIRST_HELD_OUT_EVALUATION",
+  "firstEvaluationWasHeldOut": true,
+  "reason": "Root requested generalized structural corrections after inspecting actual first160 failures; translation agent confirmed use of balanced function notation, Roman labels and scoped taxonomic identity evidence.",
+  "originalEvidenceRetained": {
+    "G7_REAL_JOURNAL_CORPUS.json": "71d938dd4d587a87b7a9ae2e6a9fd8b3b3442a3419d3bd5203b25edd843e7fe9",
+    "REAL_JOURNAL_BASELINE_INFERENCE.json": "9149e3b05a40376d0f69c06a81ecc50dda80765760c8a5259b784ef08994ea34",
+    "REAL_JOURNAL_REVISED_INFERENCE.json": "b904072221d06bf5188bff25c62013ddfc3026def436eedc6b2b071d104c4149",
+    "G7_REAL_JOURNAL_COMPARISON_AI_NOT_HUMAN.json": "e95d5ae000bce963e1b34b2dfe44527685a58f9971c777d9a8dde56da0a55808"
+  },
+  "rules": [
+    "First-run results remain valid for the recorded pre-tuning source hashes.",
+    "Any rerun after these corrections is a development regression, not independent held-out quality acceptance.",
+    "Do not delete, overwrite or relabel first-run errors as PASS.",
+    "A future scientific acceptance claim requires fresh undisclosed corpus, frozen rubric and independent human review."
+  ],
+  "humanApprovals": 0
+}

@@ -1,0 +1,2 @@
+import type {Document,Segment} from './types';
+export function contextForSegment(document:Document,segment:Segment){const ref=segment.contextRef;if(!ref)return segment.context;const {start,end}=ref;if(!Number.isSafeInteger(start)||!Number.isSafeInteger(end)||start<0||end<start||end>document.text.length)throw new Error('Referensi konteks berada di luar dokumen');return document.text.slice(start,end);}

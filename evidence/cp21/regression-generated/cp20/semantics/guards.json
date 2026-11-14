@@ -1,0 +1,210 @@
+{
+  "RULESET": "cp21-compositional-terms-and-scope-v1",
+  "method": "Structural and contextual units; stubbed failure/cache boundaries explicitly marked by test name; NOT semantic model accuracy",
+  "rows": [
+    {
+      "id": "valid Every finite subgroup has an identity element.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Setiap subgrup hingga mempunyai elemen identitas.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid A finite set may be empty.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Himpunan hingga mungkin kosong.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid An infinite set is not finite.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Himpunan tak hingga bukan himpunan hingga.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid The solution was heated until the solvent evaporated.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Larutan dipanaskan sampai pelarut menguap.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Elastic demand responds to price.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Permintaan elastis merespons harga.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Every bounded monotone sequence of real numbers converges.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Setiap barisan monoton terbatas dari bilangan real konvergen.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid The catalyst is not consumed.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Katalis tidak habis bereaksi.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid The net force is zero although the object is moving.",
+      "status": "PASS"
+    },
+    {
+      "id": "valid Gaya total bernilai nol meskipun benda sedang bergerak.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject Every finite subgroup has an identity element.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject Setiap himpunan hingga mempunyai elemen.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject The solution was heated until the solvent evaporated.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject Permintaan elastis dipengaruhi harga.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject Every bounded monotone sequence converges.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject Katalis tidak habis bereaksi.",
+      "status": "PASS"
+    },
+    {
+      "id": "reject A finite set may be empty.",
+      "status": "PASS"
+    },
+    {
+      "id": "chemistry activated by solvent evaporation",
+      "status": "PASS"
+    },
+    {
+      "id": "nonchemical solution not forced",
+      "status": "PASS"
+    },
+    {
+      "id": "request not demand without economics",
+      "status": "PASS"
+    },
+    {
+      "id": "finite noun phrase not until",
+      "status": "PASS"
+    },
+    {
+      "id": "deterministic rejected recovery is actionable",
+      "status": "PASS"
+    },
+    {
+      "id": "within block cache inference counts",
+      "status": "PASS"
+    },
+    {
+      "id": "document appendix terms apply",
+      "status": "PASS"
+    },
+    {
+      "id": "anatomical appendix not forced to document",
+      "status": "PASS"
+    },
+    {
+      "id": "mathematical differentiability protected",
+      "status": "PASS"
+    },
+    {
+      "id": "v2 rejection The function is differentiable.",
+      "status": "PASS"
+    },
+    {
+      "id": "v2 rejection The experiment cannot be generalized to the population.",
+      "status": "PASS"
+    },
+    {
+      "id": "v2 rejection The authors preserved the accounts in the appendix.",
+      "status": "PASS"
+    },
+    {
+      "id": "v2 rejection The observations may not reduce the standard error.",
+      "status": "PASS"
+    },
+    {
+      "id": "infinitely many qualifier bilingual invariant",
+      "status": "PASS"
+    },
+    {
+      "id": "typed lexical guard rejection not transient retry",
+      "status": "PASS"
+    },
+    {
+      "id": "table deterministic rejected recovery",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom GENE_01",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom TRIAL7_A03",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom sample_42",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom X9Z0002_08",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom ABC18P0007",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier atom DATA-2026-07",
+      "status": "PASS"
+    },
+    {
+      "id": "identifier sentence does not suppress following prose",
+      "status": "PASS"
+    },
+    {
+      "id": "plain words remain translatable beside identifiers",
+      "status": "PASS"
+    },
+    {
+      "id": "unsupported lexical negation faithful both directions",
+      "status": "PASS"
+    },
+    {
+      "id": "unsupported reversal still rejected",
+      "status": "PASS"
+    },
+    {
+      "id": "separated sequence predicate activates mathematical senses",
+      "status": "PASS"
+    },
+    {
+      "id": "ordinary sequence context not forced into mathematics",
+      "status": "PASS"
+    }
+  ]
+}

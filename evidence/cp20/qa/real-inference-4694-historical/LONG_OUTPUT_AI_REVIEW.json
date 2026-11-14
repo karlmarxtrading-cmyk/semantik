@@ -1,0 +1,180 @@
+{
+  "build": {
+    "release": "cp20-4694bad623ed9b19",
+    "version": "0.20.0",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4694bad623ed9b19/"
+  },
+  "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+  "reviewType": "AI qualitative spot review of actual first 10 domain paragraphs from long inference; not blind human review, not population accuracy",
+  "humanApprovals": 0,
+  "rubric": [
+    "Makna dan relasi",
+    "Kelengkapan penyebab/syarat",
+    "Ketepatan istilah domain",
+    "Kelancaran",
+    "Angka/negasi",
+    "Konsistensi antarkalimat"
+  ],
+  "selection": "First 10 body paragraphs, one per synthetic domain template; selected after outputs observed. Development diagnostic, not new held-out acceptance corpus.",
+  "status": "FAIL",
+  "criticalObserved": 3,
+  "rows": [
+    {
+      "page": 1,
+      "blockId": "p0001-b0002",
+      "source": "CP20B0001_00. The research team measured 18 samples before the intervention. The comparison group received no treatment. This observation alone does not establish a causal relationship.",
+      "target": "CP20B0001_00. Tim peneliti mengukur 18 sampel sebelum intervensi. Kelompok perbandingan tidak menerima pengobatan. Pengamatan ini saja tidak membangun hubungan sebab akibat.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_REVIEW",
+      "aiReview": "Makna sebagian besar dapat dipahami, tetapi establish a causal relationship menjadi membangun hubungan sebab akibat dapat mengaburkan perbedaan pembuktian dan penciptaan hubungan. Treatment menjadi pengobatan mempersempit konteks umum. Angka 18 dan negasi dipertahankan.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0001.json",
+      "recordSHA256": "4e07f4a5f8ba25990bfafdac45907498db393150bac38631fff324f689997316"
+    },
+    {
+      "page": 2,
+      "blockId": "p0002-b0002",
+      "source": "CP20B0002_00. The chemical solution contained 25 milligrams of dissolved salt. Heating removed the solvent but did not destroy the salt. The concentration depends on the final volume.",
+      "target": "CP20B0002_00. Bahan kimia larutan berisi 25 miligram garam terlarut. Pelarutnya terlepas tetapi garamnya tidak rusak. Konsentrasi tergantung pada volume akhir.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Peran pemanasan sebagai penyebab hilangnya pelarut hilang seluruhnya. Bahan kimia larutan juga tidak lancar. Angka 25, garam, pelarut dan negasi kerusakan garam masih ada.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0002.json",
+      "recordSHA256": "7a5d7aba300719142abeaa66b9167ccb095a68fe42036e1b0c90b5be9fb000c8"
+    },
+    {
+      "page": 3,
+      "blockId": "p0003-b0002",
+      "source": "CP20B0003_00. The finite set in experiment 32 contains distinct elements. A subgroup must contain the identity element. These mathematical objects are defined separately.",
+      "target": "CP20B0003_00. Himpunan hingga dalam eksperimen 32 berisi elemen yang berbeda. Subgrup harus berisi elemen identitas. Obyek matematika ini didefinisikan secara terpisah.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "NO_CRITICAL_OBSERVED",
+      "aiReview": "Himpunan hingga, subgrup dan elemen identitas dipertahankan. Angka 32 dan definisi terpisah tampak setara pada contoh ini; ini bukan sertifikasi umum.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0003.json",
+      "recordSHA256": "a722f98cdf46babfd76b38efb850454917c4e73cd8c20f9b0fbfde7e372deb5a"
+    },
+    {
+      "page": 4,
+      "blockId": "p0004-b0002",
+      "source": "CP20B0004_00. The economic survey recorded 39 transactions. Demand increased when the price fell while other conditions remained fixed. The estimate describes this sample, not every market.",
+      "target": "CP20B0004_00. Survei ekonomi mencatat transaksi 39. Permintaan meningkat ketika harga jatuh sementara kondisi lain tetap tetap tetap. Estimasi menggambarkan ini sampel, bukan setiap pasar.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_FLUENCY",
+      "aiReview": "Urutan transaksi 39 dan ini sampel tidak alami; tetap diulang tiga kali. Relasi harga turun/permintaan naik dan batas bukan setiap pasar masih terlihat.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0004.json",
+      "recordSHA256": "f3bef04ed7c23cc52eb2f68fb49ade728e9c7d83a2c4d11c6783eeb6e75aeac2"
+    },
+    {
+      "page": 5,
+      "blockId": "p0005-b0002",
+      "source": "CP20B0005_00. The statistical analysis used 46 observations. The sample mean differs from the population mean. A confidence interval expresses uncertainty under the stated model.",
+      "target": "CP20B0005_00. Analisis statistik yang digunakan pengamatan 46. Arti rata-rata sampel berbeda dari populasi. Interval kepercayaan menyatakan ketidakpastian di bawah model yang dinyatakan.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Relasi rata-rata sampel terhadap rata-rata populasi berubah menjadi arti rata-rata sampel berbeda dari populasi. Rata-rata populasi sebagai besaran pembanding hilang. Angka 46 dipertahankan.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0005.json",
+      "recordSHA256": "c1a19022053cc32ca11bbe055c23fb06b349de5104883dbe9082e920b0188b9f"
+    },
+    {
+      "page": 6,
+      "blockId": "p0006-b0002",
+      "source": "CP20B0006_00. The ecology study followed 53 marked trees. Growth varied across locations because rainfall and soil conditions differed. The authors reported the limitations of their measurements.",
+      "target": "CP20B0006_00. Studi ekologi diikuti 53 ditandai pohon. Pertumbuhan bervariasi di berbagai lokasi karena curah hujan dan kondisi tanah berbeda. Penulis melaporkan keterbatasan pengukuran mereka.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_REVIEW",
+      "aiReview": "Studi ekologi diikuti 53 ditandai pohon merusak susunan pelaku/tindakan: studi yang mengikuti pohon menjadi studi yang diikuti. Hubungan sebab curah hujan/tanah dengan variasi pertumbuhan masih ada.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0006.json",
+      "recordSHA256": "0a23fae8294ca6c9a5e2c11b45d6026797b11ace221721723e9e45ba07778264"
+    },
+    {
+      "page": 7,
+      "blockId": "p0007-b0002",
+      "source": "CP20B0007_00. The education study included 60 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0007_00. The education study included 60 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "outcome": "rejected",
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ],
+      "severity": "UNTRANSLATED_FALSE_REJECTION",
+      "aiReview": "Paragraf sumber dipertahankan. Guard menganggap unsupported dan tidak didukung tidak setara sebagai negasi. Kandidat kalimat yang ditolak tampak setara; penolakan menghentikan seluruh paragraf.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0007.json",
+      "recordSHA256": "e9e10706467879dfb9ea9700b4a90a0397e39f37ba588fdea69bbd0e18fe2264"
+    },
+    {
+      "page": 8,
+      "blockId": "p0008-b0002",
+      "source": "CP20B0008_00. The engineering laboratory recorded 67 measurements of pressure. The instrument was calibrated before each session. The reported unit and the measurement uncertainty must remain together.",
+      "target": "CP20B0008_00. Laboratorium teknik merekam pengukuran tekanan 67. Alat musik dikalibrasi sebelum setiap sesi. Unit yang dilaporkan dan pengukuran ketidakpastian harus tetap bersama-sama.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Instrument dalam konteks laboratorium/pengukuran tekanan diterjemahkan alat musik. Ini salah domain. Angka 67 dan kalibrasi sebelum setiap sesi dipertahankan.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0008.json",
+      "recordSHA256": "9885d5812138644a083fcc3b6a1551f4ef7f35989806eeaca6dc227292003e4b"
+    },
+    {
+      "page": 9,
+      "blockId": "p0009-b0002",
+      "source": "CP20B0009_00. The historical archive contains 74 indexed entries. A later interpretation may conflict with the original record. The researcher separates documentary evidence from speculation.",
+      "target": "CP20B0009_00. Arsip sejarah berisi masukan indeks 74. Penafsiran yang belakangan mungkin bertentangan dengan catatan aslinya. Para peneliti memisahkan bukti dokumenter dari spekulasi.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_REVIEW",
+      "aiReview": "Masukan indeks untuk indexed entries tidak alami dan researcher tunggal menjadi peneliti jamak. Relasi konflik penafsiran/catatan serta bukti/spekulasi tetap terlihat.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0009.json",
+      "recordSHA256": "29ada862e36f741dc05af14912c4049d0df2d6e7b2285d218fd7d52394020aac"
+    },
+    {
+      "page": 10,
+      "blockId": "p0010-b0002",
+      "source": "CP20B0010_00. The sequence in calculation 81 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0010_00. The sequence in calculation 81 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "outcome": "rejected",
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 81 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 81 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 81 terikat dan monoton."
+        }
+      ],
+      "severity": "UNTRANSLATED_CORRECT_REJECTION",
+      "aiReview": "Sumber dipertahankan setelah kandidat memakai urutan/terikat untuk sequence/bounded dalam konteks matematika. Guard benar mencegah kandidat buruk, tetapi tujuan terjemahan lengkap belum tercapai.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference/capacity-1001-en-committed/0010.json",
+      "recordSHA256": "e1a2729864342c9a41972bb80b348d02bb7ca73647ebe41543d2826917d810d4"
+    }
+  ]
+}

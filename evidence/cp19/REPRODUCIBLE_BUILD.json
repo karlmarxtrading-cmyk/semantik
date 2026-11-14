@@ -1,0 +1,17 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "method": "Second independent static assembly from a copied source tree; compare all output paths, sizes and SHA-256. No model reconversion.",
+  "pass": true,
+  "files": 300,
+  "stdout": "{\n  \"build\": {\n    \"release\": \"cp19-6ed0d134e1770b27\",\n    \"version\": \"0.19.0\",\n    \"sourceHash\": \"6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913\",\n    \"modelHashes\": {\n      \"id-en\": \"eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db\",\n      \"en-id\": \"31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6\"\n    },\n    \"base\": \"/r/6ed0d134e1770b27/\"\n  },\n  \"files\": 300,\n  \"bytes\": 252056025,\n  \"maxAssetBytes\": 15344608\n}\n",
+  "stderr": ""
+}

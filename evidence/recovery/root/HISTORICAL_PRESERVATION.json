@@ -1,0 +1,12 @@
+{
+  "historicalCP20EvidenceUnchanged": true,
+  "differences": [],
+  "activeChangedOrAddedModules": [
+    "app/app/long-document.js",
+    "app/app/claim-guards.js",
+    "app/app/main.js",
+    "app/app/translation.js",
+    "app/app/semantic-spans.js",
+    "app/app/metadata-language.js"
+  ]
+}

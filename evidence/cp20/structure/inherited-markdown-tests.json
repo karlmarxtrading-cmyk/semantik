@@ -1,0 +1,41 @@
+{
+  "method": "Actual exported Markdown through Marked17 and KaTeX0.19.1; raster embedding fixture, NOT a browser or human review",
+  "results": [
+    {
+      "name": "literal inline and multiline math now render to MathML, no code fences",
+      "pass": true
+    },
+    {
+      "name": "prime and combining accent structure survives actual KaTeX",
+      "pass": true
+    },
+    {
+      "name": "unknown math does not silently become verified latex",
+      "pass": true
+    },
+    {
+      "name": "source LaTeX cannot execute HTML or include external content",
+      "pass": true
+    },
+    {
+      "name": "standalone Markdown embeds actual raster bytes and labels uncertainty",
+      "pass": true
+    },
+    {
+      "name": "missing raster is a failed export, not silent data loss",
+      "pass": true
+    },
+    {
+      "name": "filename follows PDF direction and distinguishes partial",
+      "pass": true
+    },
+    {
+      "name": "source corrections invalidate old geometry verification",
+      "pass": true
+    },
+    {
+      "name": "inline equations include both operands and balanced parentheses",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,415 @@
+{
+ "method": "Differential: identical QA copies built with build-with-history.py; CP21 original code (QA_A) vs CP22 dev9 code (QA_B). run-regressions.py --include-cp21 on Node 22.23.4; the 6 suites failing with \"Promise.try is not a function\" (PDF.js 6.x needs Node>=24) rerun on Node 24.22.1 (recorded CP21 QA version) from npm package node-linux-x64.",
+ "result": "34/34 PASS on both sides after Node 24 rerun; per-suite outcomes identical between CP21 and CP22. Initial Node 22 failures retained in logs.",
+ "additional": "tests/cp22-coverage-unit.mjs 13 checks + over-merging control PASS",
+ "rows": [
+  {
+   "side": "cp21-baseline",
+   "test": "cp19-guards.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp19-model-cache.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp19-markdown.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cache.test.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-regression.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-storage.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-export.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-table-integration.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-manual-resume.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-markdown-visible.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "lifecycle-markdown-visible.py",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "translation-regression.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "translation-scientific-identities.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "translation-engine-literals.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "translation-before-after.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-layout.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-layout-inherited.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-real-parser.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-inherited-reader.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-extract-boundaries.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "pdf-budget-after.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp19-geometry.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-semantic-guards.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-pipeline.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-pipeline-quota-recovery.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-pipeline-eta.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-structure.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-math-qualification.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-math-real-pdf.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-math-review-lifecycle.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp21-offline-release.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp20-capacity-references.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp21-document-warning.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp21-baseline",
+   "test": "cp21-semantic-controls.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp19-guards.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp19-model-cache.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp19-markdown.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cache.test.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-regression.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-storage.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-export.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-table-integration.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-manual-resume.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-markdown-visible.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "lifecycle-markdown-visible.py",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "translation-regression.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "translation-scientific-identities.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "translation-engine-literals.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "translation-before-after.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-layout.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-layout-inherited.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-real-parser.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-inherited-reader.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-extract-boundaries.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "pdf-budget-after.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp19-geometry.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-semantic-guards.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-pipeline.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-pipeline-quota-recovery.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-pipeline-eta.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-structure.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-math-qualification.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-math-real-pdf.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-math-review-lifecycle.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp21-offline-release.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp20-capacity-references.mjs",
+   "node22Exit": 1,
+   "node24RerunExit": 0
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp21-document-warning.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  },
+  {
+   "side": "cp22-dev9",
+   "test": "cp21-semantic-controls.mjs",
+   "node22Exit": 0,
+   "node24RerunExit": null
+  }
+ ]
+}

@@ -1,0 +1,3911 @@
+{
+  "createdAt": "2026-11-12T03:37:51.475182+00:00",
+  "method": "Python ZIP CRC32 and SHA256; HTMLParser visible-text comparison against all actual source/target strings after production Markdown serializer and marked render. Only whitespace is normalized. Static render/parse only, no browser screenshot claim.",
+  "exportReportSha256": "274fe04c710d52eced31290eb0b2ea418eafcbbf5cf9b1d37d602323be42bad7",
+  "exportModuleHashes": {
+    "app/export.js": "c73f1a30cc737501177bc73a008b10669edc23902457f414631b6a37d82078b3",
+    "app/layout.js": "49f774cfadd4703364c5917f1a305b684f21a57be254922be8cefbd44b9ac4e4",
+    "app/build-info.js": "4f8ba32eeab3057cf222dc774edf3f321cfaa77e3138d9d8844069b79ebdbafe",
+    "vendor/export/jszip.min.js": "acc7e41455a80765b5fd9c7ee1b8078a6d160bbbca455aeae854de65c947d59e"
+  },
+  "zipFiles": 8,
+  "zipCRC": "PASS",
+  "provenancePairsExact": 160,
+  "visibleTextChecks": 640,
+  "allVisibleTextChecks": "FAIL",
+  "sourceSegments": 160,
+  "targetSegments": 160,
+  "humanApprovals": 0,
+  "failures": [
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "- Local, state, national and global policies regarding the allocation of resources for meta-research to tackle systematic issues. - Regulatory bodies, state, national and international integrity commissions, for the oversite of research misconduct.",
+      "artifact": "JOURNAL-02-ASLI.html"
+    },
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "- Local, state, national and global policies regarding the allocation of resources for meta-research to tackle systematic issues. - Regulatory bodies, state, national and international integrity commissions, for the oversite of research misconduct.",
+      "artifact": "JOURNAL-02-BILINGUAL.html"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "1. ( R {- }, ) merupakan semigrup komutatif dengan elemen netral {- } 2. (R {- }, ) merupakan grup komutatif dengan elemen identitas 0 3.",
+      "artifact": "JOURNAL-06-ASLI.html"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "1. (R {-}, ) is a commutative semigroup with neutral elements {-} 2. (R {-}, ) is a commutative group with identity elements 0 3.",
+      "artifact": "JOURNAL-06-TERJEMAHAN.html"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "1. ( R {- }, ) merupakan semigrup komutatif dengan elemen netral {- } 2. (R {- }, ) merupakan grup komutatif dengan elemen identitas 0 3.",
+      "artifact": "JOURNAL-06-BILINGUAL.html"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED",
+      "expectedNormalized": "1. (R {-}, ) is a commutative semigroup with neutral elements {-} 2. (R {-}, ) is a commutative group with identity elements 0 3.",
+      "artifact": "JOURNAL-06-BILINGUAL.html"
+    }
+  ],
+  "checks": [
+    {
+      "id": "JOURNAL-01-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-01-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-02-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-02-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-02-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-03-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-04-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-05-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-06-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-06-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-06-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "FAIL_VISIBLE_TEXT_CHANGED"
+    },
+    {
+      "id": "JOURNAL-06-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-06-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-07-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S01",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S02",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S03",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S04",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S05",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S06",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S07",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S08",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S09",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S10",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S11",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S12",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S13",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S14",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S15",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S16",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S17",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S18",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S19",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S20",
+      "kind": "ASLI",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S01",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S02",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S03",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S04",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S05",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S06",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S07",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S08",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S09",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S10",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S11",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S12",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S13",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S14",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S15",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S16",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S17",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S18",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S19",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S20",
+      "kind": "TERJEMAHAN",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S01",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S01",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S02",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S02",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S03",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S03",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S04",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S04",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S05",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S05",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S06",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S06",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S07",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S07",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S08",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S08",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S09",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S09",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S10",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S10",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S11",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S11",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S12",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S12",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S13",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S13",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S14",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S14",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S15",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S15",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S16",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S16",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S17",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S17",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S18",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S18",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S19",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S19",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S20",
+      "kind": "BILINGUAL",
+      "textField": "source",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    },
+    {
+      "id": "JOURNAL-08-S20",
+      "kind": "BILINGUAL",
+      "textField": "text",
+      "result": "EXACT_VISIBLE_TEXT_PRESENT"
+    }
+  ]
+}

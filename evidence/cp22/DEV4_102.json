@@ -1,0 +1,3269 @@
+{
+ "build": {
+  "sourceRoot": "/home/claude/w/QA/cp21/app",
+  "adapterSHA256": "f6c18a6e03a63c05fc562aae53456ad52052488f7558ed69c87eb999eae41252",
+  "rulesSHA256": "8f111ff3686e912d3041f80c584866c865d58f26ef635ea92d451bb7eee8483e",
+  "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+  "workerSHA256": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+ },
+ "rows": [
+  {
+   "id": "CP21-F01",
+   "direction": "en-id",
+   "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence. The order of the implication matters.",
+   "text": "Setiap konvergen barisan adalah terbatas, tetapi keterbatasan saja tidak menjamin kekonvergenan. Urutan dari implikasi penting.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The order of the implication matters."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 50,
+    "outputTokens": 40,
+    "verificationCalls": 3,
+    "uniqueInputs": 2
+   },
+   "ms": 2835
+  },
+  {
+   "id": "CP21-F02",
+   "direction": "en-id",
+   "source": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+   "text": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+   "outcome": "rejected",
+   "status": "review",
+   "issues": [
+    "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The sample was weighed before the solvent was added."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The reported mass therefore excludes the solvent rather than describing the final mixture."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 36,
+    "outputTokens": 28,
+    "verificationCalls": 1,
+    "uniqueInputs": 2
+   },
+   "ms": 1393
+  },
+  {
+   "id": "CP21-F03",
+   "direction": "en-id",
+   "source": "The odds ratio is not the same as the risk ratio. They can differ substantially when the event is common.",
+   "text": "Rasio peluang tidak sama dengan rasio risiko. Mereka bisa sangat berbeda jika peristiwa itu umum.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The odds ratio is not the same as the risk ratio."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "They can differ substantially when the event is common."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 25,
+    "outputTokens": 18,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 1523
+  },
+  {
+   "id": "CP21-F04",
+   "direction": "en-id",
+   "source": "A fall in marginal cost does not necessarily lower average cost immediately. The current production level matters for that comparison.",
+   "text": "Jatuhnya biaya marjinal tidak selalu menurunkan biaya rata-rata segera. Tingkat produksi saat ini penting untuk perbandingan itu.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A fall in marginal cost does not necessarily lower average cost immediately."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The current production level matters for that comparison."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 30,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2145
+  },
+  {
+   "id": "CP21-F05",
+   "direction": "en-id",
+   "source": "The instrument could distinguish the two signals only after averaging repeated measurements. This does not mean that either signal became stronger.",
+   "text": "Instrumen ini dapat membedakan dua sinyal hanya setelah rata-rata pengukuran berulang. Ini tidak berarti bahwa baik sinyal menjadi lebih kuat.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (averaging → rata-rata); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The instrument could distinguish the two signals only after averaging repeated measurements."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "The instrument could distinguish the two signals only after averaging repeated measurements.",
+     "terms": [
+      "averaging→rata-rata"
+     ],
+     "gapsBefore": [
+      "averaging"
+     ],
+     "result": "accepted",
+     "candidate": "Instrumen ini dapat membedakan dua sinyal hanya setelah rata-rata pengukuran berulang.",
+     "gapsAfter": []
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This does not mean that either signal became stronger."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 48,
+    "outputTokens": 41,
+    "verificationCalls": 13,
+    "uniqueInputs": 2
+   },
+   "ms": 3500
+  },
+  {
+   "id": "CP21-F06",
+   "direction": "en-id",
+   "source": "The committee postponed its decision because the evidence was incomplete. Postponement should not be interpreted as rejection of the hypothesis.",
+   "text": "Komite menunda keputusannya karena bukti tidak lengkap. Penonton hendaknya tidak ditafsirkan sebagai penolakan hipotesis.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"Postponement\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The committee postponed its decision because the evidence was incomplete."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Postponement should not be interpreted as rejection of the hypothesis."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 27,
+    "outputTokens": 18,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 1553
+  },
+  {
+   "id": "CP21-N01",
+   "direction": "en-id",
+   "source": "The median stayed at 18 while the mean increased. This can happen when a few large observations change; it does not imply that every observation increased.",
+   "text": "Median tetap berada di 18 saat rata-rata meningkat. Hal ini dapat terjadi sewaktu beberapa pengamatan besar berubah; tidak berarti bahwa setiap pengamatan meningkat.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"stayed\", \"mean\" mungkin hilang atau berubah dalam terjemahan.",
+    "Periksa konsep: \"imply\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The median stayed at 18 while the mean increased."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This can happen when a few large observations change; it does not imply that every observation increased."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 37,
+    "outputTokens": 33,
+    "verificationCalls": 8,
+    "uniqueInputs": 2
+   },
+   "ms": 2782
+  },
+  {
+   "id": "CP21-N02",
+   "direction": "en-id",
+   "source": "An injective map need not be surjective. Restricting the codomain to the image changes that statement without changing the values of the map.",
+   "text": "Peta injective tidak harus haruslah surjective. Membatasi kodomin gambar mengubah pernyataan tersebut tanpa mengubah nilai peta.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "An injective map need not be surjective."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Restricting the codomain to the image changes that statement without changing the values of the map."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 38,
+    "outputTokens": 30,
+    "verificationCalls": 3,
+    "uniqueInputs": 2
+   },
+   "ms": 2463
+  },
+  {
+   "id": "CP21-N03",
+   "direction": "en-id",
+   "source": "Adding an inert gas at constant volume does not change the partial pressures of the reacting gases. This claim assumes ideal behavior and a constant temperature.",
+   "text": "Menambahkan gas inert pada volume konstan tidak mengubah tekanan parsial gas bereaksi. Menurut pernyataan ini, perilaku yang ideal dan suhu yang konstan.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"claim\", \"assumes\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Adding an inert gas at constant volume does not change the partial pressures of the reacting gases."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This claim assumes ideal behavior and a constant temperature."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 34,
+    "outputTokens": 27,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 2391
+  },
+  {
+   "id": "CP21-N04",
+   "direction": "en-id",
+   "source": "A lower p-value does not measure a larger effect. The estimate and its uncertainty must be examined separately from the decision threshold.",
+   "text": "A lower p-value does not measure a larger effect. The estimate and its uncertainty must be examined separately from the decision threshold.",
+   "outcome": "rejected",
+   "status": "review",
+   "issues": [
+    "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A lower p-value does not measure a larger effect."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 1,
+    "cacheHits": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "uniqueInputs": 1
+   },
+   "ms": 302
+  },
+  {
+   "id": "CP21-N05",
+   "direction": "en-id",
+   "source": "The enzyme was inactive after heating, although its mass was unchanged. Unchanged mass is insufficient evidence that the molecular structure survived.",
+   "text": "The enzyme was inactive after heating, although its mass was unchanged. Unchanged mass is insufficient evidence that the molecular structure survived.",
+   "outcome": "rejected",
+   "status": "review",
+   "issues": [
+    "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The enzyme was inactive after heating, although its mass was unchanged."
+    },
+    {
+     "strategy": "clause-split",
+     "source": "The enzyme was inactive after heating,"
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 23,
+    "outputTokens": 24,
+    "uniqueInputs": 2
+   },
+   "ms": 723
+  },
+  {
+   "id": "CP21-N06",
+   "direction": "en-id",
+   "source": "A subsidy paid to producers may also benefit consumers. Who receives the payment does not by itself determine who ultimately gains from the policy.",
+   "text": "Suap yang dibayar kepada produsen juga dapat menguntungkan konsumen. Siapa yang menerima pembayaran tidak dengan sendirinya menentukan siapa yang akhirnya memperoleh keuntungan dari kebijakan.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"subsidy\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A subsidy paid to producers may also benefit consumers."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Who receives the payment does not by itself determine who ultimately gains from the policy."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 33,
+    "outputTokens": 28,
+    "verificationCalls": 9,
+    "uniqueInputs": 2
+   },
+   "ms": 2569
+  },
+  {
+   "id": "CP21-N07",
+   "direction": "en-id",
+   "source": "Only participants assigned before the protocol change were included in the first analysis. The later analysis included both groups but did not combine their outcomes.",
+   "text": "Hanya peserta yang ditugaskan sebelum perubahan protokol yang disertakan dalam analisis pertama. Analisis yang belakangan mencakup kedua kelompok itu tetapi tidak menggabungkan hasil akhirnya.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Only participants assigned before the protocol change were included in the first analysis."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The later analysis included both groups but did not combine their outcomes."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 26,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1698
+  },
+  {
+   "id": "CP21-N08",
+   "direction": "en-id",
+   "source": "The integral over the whole interval equals zero although the function is not zero everywhere. Positive and negative contributions can cancel.",
+   "text": "Integral selama seluruh interval sama dengan nol meskipun fungsi tidak nol di mana-mana. Kontribusi positif dan negatif dapat dibatalkan.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The integral over the whole interval equals zero although the function is not zero everywhere."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Positive and negative contributions can cancel."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 25,
+    "outputTokens": 27,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2010
+  },
+  {
+   "id": "CP21-N09",
+   "direction": "en-id",
+   "source": "Group C lost 4 samples whereas group D lost 9 samples. Those numbers are losses, not the numbers remaining in either group.",
+   "text": "Kelompok C hilang 4 sampel sedangkan kelompok D hilang 9 sampel. Angka-angka itu adalah kerugian, bukan jumlah yang tersisa di kedua kelompok.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Group C lost 4 samples whereas group D lost 9 samples."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Those numbers are losses, not the numbers remaining in either group."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 43,
+    "outputTokens": 39,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 3169
+  },
+  {
+   "id": "CP21-N10",
+   "direction": "en-id",
+   "source": "The table records detection limits rather than measured concentrations. A value below the limit should not be reported as an exact zero.",
+   "text": "Batas deteksi pada catatan tabel dan bukannya mengukur konsentrasi. Nilai di bawah batas seharusnya tidak dilaporkan sebagai nol yang tepat.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"exact\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The table records detection limits rather than measured concentrations."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "A value below the limit should not be reported as an exact zero."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 27,
+    "outputTokens": 22,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 2044
+  },
+  {
+   "id": "CP20-V4-A-01",
+   "direction": "en-id",
+   "source": "A differentiable function is continuous at the same point. The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists.",
+   "text": "Sebuah fungsi dapat diturunkan adalah kontinu pada titik yang sama. Pernyataan konvers membutuhkan kondisi tambahan; grafik tanpa celah yang terlihat bukanlah dengan sendirinya bukti bahwa turunan ada.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A differentiable function is continuous at the same point."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 55,
+    "outputTokens": 46,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 3362
+  },
+  {
+   "id": "CP20-V4-A-02",
+   "direction": "en-id",
+   "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+   "text": "Pemanasan dihentikan sebelum pelarut mendidih. Peningkatan tercatat pada suhu tidak dapat dikaitkan dengan katalis saja, karena pemanas juga mentransfer energi ke larutan.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"recorded\", \"attributed\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Heating was stopped before the solvent boiled."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 56,
+    "outputTokens": 43,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 3347
+  },
+  {
+   "id": "CP20-V4-A-03",
+   "direction": "en-id",
+   "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased. The difference is not evidence that any observation was recorded incorrectly.",
+   "text": "Rata-rata sampel dapat berbeda dari rata-rata populasi bahkan ketika prosedur pengambilan sampel adalah tidak bias. Perbedaannya bukanlah bukti bahwa pengamatan apapun dicatat salah.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The difference is not evidence that any observation was recorded incorrectly."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 49,
+    "outputTokens": 37,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2690
+  },
+  {
+   "id": "CP20-V4-A-04",
+   "direction": "en-id",
+   "source": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+   "text": "Ketika harga dari sebuah barang substitusi meningkat, permintaan untuk produk asli dapat meningkat. Prediksi ini tergantung pada dua barang menjadi barang substitusi, bukan barang komplementer.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "When the price of a substitute rises, demand for the original product may increase."
+    },
+    {
+     "strategy": "literal-only-context",
+     "source": "When the price of a substitute rises, demand for the original product may increase."
+    },
+    {
+     "strategy": "clause-split",
+     "source": "When the price of a substitute rises,"
+    },
+    {
+     "strategy": "clause-split",
+     "source": "demand for the original product may increase."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This prediction depends on the two goods being substitutes, not complements."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 5,
+    "cacheHits": 0,
+    "inputTokens": 111,
+    "outputTokens": 90,
+    "verificationCalls": 5,
+    "uniqueInputs": 5
+   },
+   "ms": 4888
+  },
+  {
+   "id": "CP20-V4-A-05",
+   "direction": "en-id",
+   "source": "The laboratory instrument was calibrated before data collection. Calibration reduces measurement error; it does not prove that the proposed explanation is correct.",
+   "text": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi galat pengukuran; ini tidak membuktikan bahwa penjelasan yang diajukan benar.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The laboratory instrument was calibrated before data collection."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Calibration reduces measurement error; it does not prove that the proposed explanation is correct."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 33,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 2251
+  },
+  {
+   "id": "CP20-H-001",
+   "direction": "en-id",
+   "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint.",
+   "text": "Sebuah fungsi kontinu pada interval tertutup mencapai maksimum. Teorema ini tidak memerlukan fungsi menjadi dapat diturunkan di seluruh interval. Maksimum tidak harus terjadi di sebuah titik akhir.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A continuous function on a closed interval attains a maximum."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This theorem does not require the function to be differentiable throughout the interval."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The maximum need not occur at an endpoint."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 54,
+    "outputTokens": 44,
+    "verificationCalls": 3,
+    "uniqueInputs": 3
+   },
+   "ms": 3060
+  },
+  {
+   "id": "CP20-H-002",
+   "direction": "en-id",
+   "source": "The derivative determines a local rate of change, not the accumulated change over the entire interval. Integration can recover the accumulated change when the required hypotheses hold.",
+   "text": "Turunan menentukan tingkat lokal perubahan, bukan akumulasi perubahan pada seluruh interval. Integrasi dapat memulihkan perubahan akumulasi ketika dibutuhkan hipotesis terpenuhi.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"rate\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The derivative determines a local rate of change, not the accumulated change over the entire interval."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Integration can recover the accumulated change when the required hypotheses hold."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 47,
+    "outputTokens": 36,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2418
+  },
+  {
+   "id": "CP20-H-003",
+   "direction": "en-id",
+   "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size.",
+   "text": "Sebuah tidak kosong himpunan hingga memiliki elemen terbesar di bawah pengurutan yang cocok. Menghapus asumsi kehinggaan mengubah masalah. Klaim adalah tentang pengurutan elemen dan bukan tentang ukuran fisik mereka.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A nonempty finite set has a greatest element under a suitable ordering."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Removing the finiteness assumption changes the problem."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The claim is about the ordering of elements and not about their physical size."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 54,
+    "outputTokens": 45,
+    "verificationCalls": 7,
+    "uniqueInputs": 3
+   },
+   "ms": 3068
+  },
+  {
+   "id": "CP20-H-004",
+   "direction": "en-id",
+   "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+   "text": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan beberapa air tetapi tidak menghapus gula terlarut. Cairan yang tersisa memiliki konsentrasi yang lebih tinggi.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Dissolving sugar in water increases the mass of the solution."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Evaporation removes some of the water but does not remove the dissolved sugar."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The remaining liquid therefore has a higher concentration."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 60,
+    "outputTokens": 45,
+    "verificationCalls": 3,
+    "uniqueInputs": 3
+   },
+   "ms": 3020
+  },
+  {
+   "id": "CP20-H-005",
+   "direction": "en-id",
+   "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared.",
+   "text": "Katalis adalah diperoleh kembali setelah percobaan dan digunakan kembali. Perolehan kembali saja tidak menunjukkan bahwa tidak ada material yang hilang; massa awal dan akhir harus dibandingkan.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The catalyst was recovered after the experiment and reused."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 43,
+    "outputTokens": 36,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2440
+  },
+  {
+   "id": "CP20-H-006",
+   "direction": "en-id",
+   "source": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled.",
+   "text": "Larutan berisi 6 mmol dari terlarut garam dalam 2 L dari pelarut. Menambahkan lain 2 L pelarut menurunkan konsentrasi ketika menyimpan jumlah garam, asalkan tidak ada larutan yang tumpah.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"preserving\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The solution contained 6 mmol of dissolved salt in 2 L of solvent."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 78,
+    "outputTokens": 61,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 5477
+  },
+  {
+   "id": "CP20-H-007",
+   "direction": "en-id",
+   "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities.",
+   "text": "Interval kepercayaan menggambarkan ketidakpastian di bawah prosedur pengambilan sampel yang diasumsikan. Hal ini tidak boleh ditafsirkan sebagai jangkauan berisi semua pengamatan individu. Ini adalah jumlah statistik yang berbeda.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A confidence interval describes uncertainty under the assumed sampling procedure."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "It should not be interpreted as the range containing all individual observations."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "These are different statistical quantities."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 40,
+    "outputTokens": 34,
+    "verificationCalls": 7,
+    "uniqueInputs": 3
+   },
+   "ms": 2475
+  },
+  {
+   "id": "CP20-H-008",
+   "direction": "en-id",
+   "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+   "text": "Perlakuan A menghasilkan respon 7 dan perlakuan B menghasilkan respon 11. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa banyak peserta yang menerima setiap perlakuan. Penyebut penting serta pembilang.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"counts\" mungkin hilang atau berubah dalam terjemahan.",
+    "Periksa konsep: \"matters\", \"well\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Treatment A produced 7 responses and treatment B produced 11 responses."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "These counts cannot be compared fairly without knowing how many participants received each treatment."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The denominator matters as well as the numerator."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 80,
+    "outputTokens": 63,
+    "verificationCalls": 9,
+    "uniqueInputs": 3
+   },
+   "ms": 4954
+  },
+  {
+   "id": "CP20-H-009",
+   "direction": "en-id",
+   "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article.",
+   "text": "Analisis yang digunakan Median karena beberapa nilai ekstrim sangat mempengaruhi rata-rata sampel. Memilih Median tidak menghapus pengamatan tersebut dari dataset. Kedua statistik dilaporkan dalam lampiran dari artikel tersebut.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The analysis used the median because a few extreme values strongly affected the sample mean."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Choosing the median did not remove those observations from the dataset."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Both statistics were reported in the appendix of the article."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 56,
+    "outputTokens": 41,
+    "verificationCalls": 4,
+    "uniqueInputs": 3
+   },
+   "ms": 2718
+  },
+  {
+   "id": "CP20-H-010",
+   "direction": "en-id",
+   "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered.",
+   "text": "Pajak pada penjual dapat mempengaruhi harga yang dibayar oleh pembeli. Kewajiban hukum untuk membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonomi. Responsif relatif dari penawaran dan permintaan juga harus dipertimbangkan.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"bears\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A tax on sellers can affect the price paid by buyers."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The legal obligation to pay the tax does not by itself determine who bears its economic burden."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The relative responsiveness of supply and demand must also be considered."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 67,
+    "outputTokens": 53,
+    "verificationCalls": 5,
+    "uniqueInputs": 3
+   },
+   "ms": 3452
+  },
+  {
+   "id": "CP20-H-011",
+   "direction": "en-id",
+   "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change.",
+   "text": "Peningkatan permintaan berbeda dengan peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Membingungkan pernyataan ini dapat membalikkan penjelasan dari perubahan harga.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Confusing these statements can reverse the explanation of a price change."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 51,
+    "outputTokens": 38,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2515
+  },
+  {
+   "id": "CP20-H-012",
+   "direction": "en-id",
+   "source": "The household saved more money in nominal terms, but prices also rose. Whether the household could purchase more goods depends on the change in purchasing power, not merely on the balance shown in the account.",
+   "text": "Rumah tangga menyimpan lebih banyak uang dalam istilah nominal, tetapi harga juga naik. Apakah rumah tangga dapat membeli lebih banyak barang tergantung pada perubahan dalam daya beli, bukan hanya pada saldo yang ditampilkan dalam rekening.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"rose\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The household saved more money in nominal terms, but prices also rose."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Whether the household could purchase more goods depends on the change in purchasing power, not merely on the balance shown in the account."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 65,
+    "outputTokens": 60,
+    "verificationCalls": 8,
+    "uniqueInputs": 2
+   },
+   "ms": 4297
+  },
+  {
+   "id": "CP20-H-013",
+   "direction": "en-id",
+   "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way.",
+   "text": "Laporan tersebut menempatkan pedoman wawancara dalam lampiran sehingga peneliti lain dapat memeriksa pertanyaan-pertanyaan. The lampiran mendokumentasikan prosedur; itu tidak menjamin bahwa setiap responden mengerti setiap pertanyaan dengan cara yang sama.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The appendix documents the procedure; it does not certify that every respondent understood every question in the same way."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 57,
+    "outputTokens": 47,
+    "verificationCalls": 3,
+    "uniqueInputs": 2
+   },
+   "ms": 3653
+  },
+  {
+   "id": "CP20-H-014",
+   "direction": "en-id",
+   "source": "The results were obtained from volunteers who had access to the required equipment. Generalization to people without that access requires additional evidence. The authors discuss this limitation before presenting their recommendations.",
+   "text": "Hasilnya diperoleh dari para relawan yang memiliki akses ke peralatan yang dibutuhkan. Generalisasi kepada orang-orang tanpa akses tersebut membutuhkan bukti tambahan. Para penulis membahas keterbatasan ini sebelum memberikan rekomendasi mereka.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"presenting\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The results were obtained from volunteers who had access to the required equipment."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Generalization to people without that access requires additional evidence."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The authors discuss this limitation before presenting their recommendations."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 45,
+    "outputTokens": 39,
+    "verificationCalls": 9,
+    "uniqueInputs": 3
+   },
+   "ms": 2905
+  },
+  {
+   "id": "CP20-H-015",
+   "direction": "en-id",
+   "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+   "text": "Penelaah meminta penulis untuk membedakan informasi yang hilang dari bukti bahwa peristiwa tidak terjadi. Catatan kosong dapat mencerminkan dokumentasi yang tidak lengkap. Ini tidak dapat secara otomatis diperlakukan sebagai ketiadaan yang direkam dari peristiwa.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+    },
+    {
+     "strategy": "literal-only-context",
+     "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur."
+    },
+    {
+     "strategy": "clause-split",
+     "source": "The reviewer asked the authors to distinguish missing information"
+    },
+    {
+     "strategy": "clause-split",
+     "source": "from evidence that an event did not occur."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "A blank record may reflect incomplete documentation."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "It cannot automatically be treated as a recorded absence of the event."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 6,
+    "cacheHits": 0,
+    "inputTokens": 84,
+    "outputTokens": 70,
+    "verificationCalls": 7,
+    "uniqueInputs": 6
+   },
+   "ms": 4399
+  },
+  {
+   "id": "F01-en-id",
+   "direction": "en-id",
+   "source": "A continuous function on a closed and bounded interval attains a maximum. The same conclusion need not hold on an open interval.",
+   "text": "Sebuah fungsi kontinu pada interval tertutup dan terbatas mencapai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A continuous function on a closed and bounded interval attains a maximum."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "The same conclusion need not hold on an open interval."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 30,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1999
+  },
+  {
+   "id": "F02-en-id",
+   "direction": "en-id",
+   "source": "Two matrices can have the same determinant without being equal. A nonzero determinant is sufficient for a square matrix to have an inverse.",
+   "text": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi sama. Determinan tidak nol cukup untuk matriks persegi untuk memiliki invers.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Two matrices can have the same determinant without being equal."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "A nonzero determinant is sufficient for a square matrix to have an inverse."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 47,
+    "outputTokens": 35,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2516
+  },
+  {
+   "id": "F03-en-id",
+   "direction": "en-id",
+   "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant. Dilution alone does not remove the solute.",
+   "text": "Mengencerkan sebuah larutan dengan air murni mengurangi konsentrasi ketika jumlah zat terlarut tetap konstan. Pengenceran saja tidak menghapus zat terlarut.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Diluting a solution with pure water reduces its concentration when the amount of dissolved substance remains constant."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Dilution alone does not remove the solute."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 57,
+    "outputTokens": 43,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2988
+  },
+  {
+   "id": "F04-en-id",
+   "direction": "en-id",
+   "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature. Reaching equilibrium sooner does not by itself imply a greater equilibrium yield.",
+   "text": "Katalis mengubah laju reaksi tetapi tidak mengubah tetapan kesetimbangan pada suhu tetap. Mencapai kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A catalyst changes the rate of a reaction but does not change its equilibrium constant at a fixed temperature."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Reaching equilibrium sooner does not by itself imply a greater equilibrium yield."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 56,
+    "outputTokens": 45,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 3255
+  },
+  {
+   "id": "F05-en-id",
+   "direction": "en-id",
+   "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage. After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it.",
+   "text": "95% interval kepercayaan menggambarkan sebuah prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval tertentu telah dihitung, interpretasi frekuentis tidak menetapkan sebuah probabilitas 95% ke parameter tetap yang terletak di dalamnya.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"lying\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A 95% confidence interval describes a procedure with repeated-sampling coverage."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "After this particular interval has been computed, the frequentist interpretation does not assign a 95% probability to the fixed parameter lying inside it."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 59,
+    "outputTokens": 46,
+    "verificationCalls": 8,
+    "uniqueInputs": 2
+   },
+   "ms": 4462
+  },
+  {
+   "id": "F06-en-id",
+   "direction": "en-id",
+   "source": "Random assignment and random sampling serve different purposes. Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population.",
+   "text": "Penugasan acak dan pengambilan sampel acak melayani tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; ini tidak secara otomatis membuat perwakilan sampel dari populasi.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Random assignment and random sampling serve different purposes."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Random assignment can reduce confounding within the experiment; it does not automatically make the sample representative of the population."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 59,
+    "outputTokens": 49,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 3500
+  },
+  {
+   "id": "F07-en-id",
+   "direction": "en-id",
+   "source": "A binding price ceiling can create excess demand. This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences.",
+   "text": "Batas harga maksimum yang mengikat dapat membuat kelebihan permintaan. Pernyataan ini menyangkut jumlah barang yang ingin dibeli pembeli relatif terhadap jumlah barang yang ditawarkan penjual, bukan perubahan dalam preferensi orang.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"concerns\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "A binding price ceiling can create excess demand."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This statement concerns the quantity buyers wish to purchase relative to the quantity sellers offer, not a change in people's preferences."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 47,
+    "outputTokens": 35,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 3334
+  },
+  {
+   "id": "F08-en-id",
+   "direction": "en-id",
+   "source": "An increase in income need not raise demand for every good. For an inferior good, demand can fall even if its price remains unchanged.",
+   "text": "Peningkatan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat jatuh walaupun harga tetap tidak berubah.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "An increase in income need not raise demand for every good."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "For an inferior good, demand can fall even if its price remains unchanged."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 58,
+    "outputTokens": 45,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2846
+  },
+  {
+   "id": "F09-en-id",
+   "direction": "en-id",
+   "source": "The analysis plan was registered before the outcomes were examined. This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased.",
+   "text": "Rencana analisisnya terdaftar sebelum hasil pemeriksaannya diperiksa. Waktu ini mengurangi satu kesempatan untuk melaporkan secara selektif; tidak menetapkan bahwa setiap keputusan dalam penelitian adalah tidak bias.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The analysis plan was registered before the outcomes were examined."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "This timing reduces one opportunity for selective reporting; it does not establish that every decision in the study was unbiased."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 34,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2912
+  },
+  {
+   "id": "F10-en-id",
+   "direction": "en-id",
+   "source": "The reviewer requested the raw measurements because the summary table was incomplete. Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate.",
+   "text": "Penelaah meminta pengukuran mentah karena tabel ringkasan tidak lengkap. Memasok data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin pengukuran yang akurat.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (Supplying → memasok); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "The reviewer requested the raw measurements because the summary table was incomplete."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Supplying the raw data allows further checking, but it does not guarantee that the measurements are accurate.",
+     "terms": [
+      "Supplying→memasok"
+     ],
+     "gapsBefore": [
+      "Supplying"
+     ],
+     "result": "accepted",
+     "candidate": "Memasok data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin pengukuran yang akurat.",
+     "gapsAfter": []
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 68,
+    "outputTokens": 50,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 3740
+  },
+  {
+   "id": "CP21-F07",
+   "direction": "id-en",
+   "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02. Pernyataan ini tidak menentukan perkiraan mana yang lebih besar.",
+   "text": "Absolute value difference between the two estimates less than 0.02. This statement does not determine which estimates are greater.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pernyataan ini tidak menentukan perkiraan mana yang lebih besar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 27,
+    "outputTokens": 26,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1961
+  },
+  {
+   "id": "CP21-F08",
+   "direction": "id-en",
+   "source": "Zat padat itu larut tanpa bereaksi dengan pelarut. Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia.",
+   "text": "The solid matter dissolves without reacting with the solvent. Loss of solid form does not prove chemical reaction.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Zat padat itu larut tanpa bereaksi dengan pelarut."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 23,
+    "outputTokens": 24,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 1728
+  },
+  {
+   "id": "CP21-F09",
+   "direction": "id-en",
+   "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi. Kedua sumber kesalahan perlu dibedakan.",
+   "text": "Larger Sample shrinks random errors but does not automatically remove bias selection. Both sources of error need to be distinguished.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kedua sumber kesalahan perlu dibedakan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 29,
+    "outputTokens": 28,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1960
+  },
+  {
+   "id": "CP21-F10",
+   "direction": "id-en",
+   "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli. Harga barang yang dibeli rumah tangga juga perlu diperhitungkan.",
+   "text": "The nominal income increase is not necessarily increasing purchasing power. Price goods purchased households also need to be calculated.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Harga barang yang dibeli rumah tangga juga perlu diperhitungkan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 30,
+    "outputTokens": 30,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1763
+  },
+  {
+   "id": "CP21-F11",
+   "direction": "id-en",
+   "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil. Penyembunyian informasi itu bertujuan mengurangi bias penilaian.",
+   "text": "The observer does not know treatment group attendee when assessing results. The information's concealment is intended to reduce assessment bias.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (kelompok perlakuan → treatment group); periksa ketepatan istilah.",
+    "Konsep sumber dipulihkan dengan istilah terkunci (bias penilaian → assessment bias); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil.",
+     "terms": [
+      "kelompok perlakuan→treatment group"
+     ],
+     "gapsBefore": [
+      "perlakuan"
+     ],
+     "result": "accepted",
+     "candidate": "The observer does not know treatment group attendee when assessing results.",
+     "gapsAfter": []
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penyembunyian informasi itu bertujuan mengurangi bias penilaian."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Penyembunyian informasi itu bertujuan mengurangi bias penilaian.",
+     "terms": [
+      "bias penilaian→assessment bias"
+     ],
+     "gapsBefore": [
+      "penilaian"
+     ],
+     "result": "accepted",
+     "candidate": "The information's concealment is intended to reduce assessment bias.",
+     "gapsAfter": []
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 4,
+    "cacheHits": 0,
+    "inputTokens": 52,
+    "outputTokens": 64,
+    "verificationCalls": 15,
+    "uniqueInputs": 2
+   },
+   "ms": 4130
+  },
+  {
+   "id": "CP21-F12",
+   "direction": "id-en",
+   "source": "Asumsi independensi digunakan dalam penurunan rumus. Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+   "text": "Assumed independence used in derivation formula. If observation interdependent, the formula requires additional justification.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (rumus tersebut → the formula; saling bergantung → interdependent); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Asumsi independensi digunakan dalam penurunan rumus."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+     "terms": [
+      "rumus tersebut→the formula"
+     ],
+     "gapsBefore": [
+      "rumus"
+     ],
+     "result": "rejected-gaps-not-reduced",
+     "candidate": "If observations depend, the formula requires additional justification.",
+     "gapsAfter": [
+      "saling"
+     ]
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 2,
+     "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+     "terms": [
+      "rumus tersebut→the formula",
+      "saling bergantung→interdependent"
+     ],
+     "gapsBefore": [
+      "rumus"
+     ],
+     "result": "accepted",
+     "candidate": "If observation interdependent, the formula requires additional justification.",
+     "gapsAfter": []
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 4,
+    "cacheHits": 0,
+    "inputTokens": 58,
+    "outputTokens": 61,
+    "verificationCalls": 11,
+    "uniqueInputs": 2
+   },
+   "ms": 4245
+  },
+  {
+   "id": "CP21-N11",
+   "direction": "id-en",
+   "source": "Peluang bersyarat bergantung pada peristiwa yang dijadikan syarat. Menukar urutan dua peristiwa tidak selalu menghasilkan peluang yang sama.",
+   "text": "The conditional opportunities depend on events conditioned. Changing sequence of two events does not necessarily yields the same opportunity.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (peristiwa → events); periksa ketepatan istilah.",
+    "Periksa konsep: \"Peluang\" mungkin hilang atau berubah dalam terjemahan.",
+    "Periksa konsep: \"Menukar\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Peluang bersyarat bergantung pada peristiwa yang dijadikan syarat."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Peluang bersyarat bergantung pada peristiwa yang dijadikan syarat.",
+     "terms": [
+      "peristiwa→events"
+     ],
+     "gapsBefore": [
+      "Peluang",
+      "peristiwa"
+     ],
+     "result": "accepted",
+     "candidate": "The conditional opportunities depend on events conditioned.",
+     "gapsAfter": [
+      "Peluang"
+     ]
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Menukar urutan dua peristiwa tidak selalu menghasilkan peluang yang sama."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 40,
+    "outputTokens": 41,
+    "verificationCalls": 13,
+    "uniqueInputs": 2
+   },
+   "ms": 3353
+  },
+  {
+   "id": "CP21-N12",
+   "direction": "id-en",
+   "source": "Jumlah mol gas tetap, sedangkan volumenya bertambah. Pada suhu yang tetap, tekanan gas ideal menurun; kesimpulan ini tidak mengasumsikan bahwa gas keluar dari wadah.",
+   "text": "The number of moles of gas remains, while the volume increases. At fixed temperatures, the pressure of the ideal gas decreases; this conclusion does not assume that gas is out of the container.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"tetap\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Jumlah mol gas tetap, sedangkan volumenya bertambah."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pada suhu yang tetap, tekanan gas ideal menurun; kesimpulan ini tidak mengasumsikan bahwa gas keluar dari wadah."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 33,
+    "outputTokens": 40,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 3075
+  },
+  {
+   "id": "CP21-N13",
+   "direction": "id-en",
+   "source": "Uji tersebut gagal menolak hipotesis nol. Kegagalan itu bukan bukti bahwa kedua perlakuan mempunyai efek yang identik.",
+   "text": "The test failed to reject null hypothesis. Failure is not evidence that both treatment has identical effects.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Uji tersebut gagal menolak hipotesis nol."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kegagalan itu bukan bukti bahwa kedua perlakuan mempunyai efek yang identik."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 24,
+    "outputTokens": 23,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 1702
+  },
+  {
+   "id": "CP21-N14",
+   "direction": "id-en",
+   "source": "Dua vektor yang tegak lurus tidak harus memiliki panjang yang sama. Pernyataan tentang sudut tidak menentukan besarnya masing-masing vektor.",
+   "text": "Two vectors that are perpendicular need not have the same length. The statement about angles does not determine the magnitude of each vector.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Dua vektor yang tegak lurus tidak harus memiliki panjang yang sama."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pernyataan tentang sudut tidak menentukan besarnya masing-masing vektor."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 28,
+    "outputTokens": 33,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 1814
+  },
+  {
+   "id": "CP21-N15",
+   "direction": "id-en",
+   "source": "Biaya rata-rata dapat turun sementara biaya total naik. Kedua besaran memakai penyebut yang berbeda sehingga arah perubahannya tidak harus sama.",
+   "text": "The average can drop while the cost of total increases. Both sizes use different denominator so that the direction of the change is need not is the same.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"besaran\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Biaya rata-rata dapat turun sementara biaya total naik."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kedua besaran memakai penyebut yang berbeda sehingga arah perubahannya tidak harus sama."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 35,
+    "outputTokens": 40,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2985
+  },
+  {
+   "id": "CP21-N16",
+   "direction": "id-en",
+   "source": "Sebagian enzim tetap aktif setelah pembekuan. Hasil ini tidak menunjukkan bahwa semua molekul bertahan tanpa perubahan struktur.",
+   "text": "Some enzymes remain active after freezing. This result does not show that all molecules survive without a change of structure.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Sebagian enzim tetap aktif setelah pembekuan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Hasil ini tidak menunjukkan bahwa semua molekul bertahan tanpa perubahan struktur."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 21,
+    "outputTokens": 23,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 1579
+  },
+  {
+   "id": "CP21-N17",
+   "direction": "id-en",
+   "source": "Kelompok E menerima 6 mg dan kelompok F menerima 8 mg. Dosis yang lebih tinggi tidak dengan sendirinya menunjukkan manfaat yang lebih besar.",
+   "text": "Group E accept 6 mg and group F receive 8 mg. Higher doses do not in itself show greater benefits.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Kelompok E menerima 6 mg dan kelompok F menerima 8 mg."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Dosis yang lebih tinggi tidak dengan sendirinya menunjukkan manfaat yang lebih besar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 41,
+    "outputTokens": 39,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 3141
+  },
+  {
+   "id": "CP21-N18",
+   "direction": "id-en",
+   "source": "Penulis menyebutkan dua kemungkinan penyebab, tetapi tidak memilih salah satunya. Menghapus kata mungkin akan mengubah tingkat kepastian klaim.",
+   "text": "The author mentioned two possible causes, but not one. Removing a word may change certainty level claims.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"memilih\", \"salah\", \"satunya\" mungkin hilang atau berubah dalam terjemahan.",
+    "Konsep sumber dipulihkan dengan istilah terkunci (tingkat kepastian → certainty level); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penulis menyebutkan dua kemungkinan penyebab, tetapi tidak memilih salah satunya."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Menghapus kata mungkin akan mengubah tingkat kepastian klaim."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Menghapus kata mungkin akan mengubah tingkat kepastian klaim.",
+     "terms": [
+      "tingkat kepastian→certainty level"
+     ],
+     "gapsBefore": [
+      "kepastian"
+     ],
+     "result": "accepted",
+     "candidate": "Removing a word may change certainty level claims.",
+     "gapsAfter": []
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 36,
+    "outputTokens": 36,
+    "verificationCalls": 13,
+    "uniqueInputs": 2
+   },
+   "ms": 2824
+  },
+  {
+   "id": "CP21-N19",
+   "direction": "id-en",
+   "source": "Kurva penawaran yang tetap digunakan untuk membandingkan dua keadaan pasar. Asumsi itu tidak menyatakan bahwa jumlah yang ditawarkan tetap pada setiap harga.",
+   "text": "Supply curve which remains used to compare two market states. That assumption does not state that quantity supplied remains on each price.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Kurva penawaran yang tetap digunakan untuk membandingkan dua keadaan pasar."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Asumsi itu tidak menyatakan bahwa jumlah yang ditawarkan tetap pada setiap harga."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 35,
+    "outputTokens": 37,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2516
+  },
+  {
+   "id": "CP21-N20",
+   "direction": "id-en",
+   "source": "Pengukuran dilakukan setelah alat mencapai kesetimbangan termal. Waktu tunggu bukan bagian dari durasi pengambilan data yang dilaporkan.",
+   "text": "The measurements are done after the device reaches the thermal balance. A wait time is not part of the reported fetch duration data.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (durasi pengambilan → fetch duration); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Pengukuran dilakukan setelah alat mencapai kesetimbangan termal."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Waktu tunggu bukan bagian dari durasi pengambilan data yang dilaporkan."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Waktu tunggu bukan bagian dari durasi pengambilan data yang dilaporkan.",
+     "terms": [
+      "durasi pengambilan→fetch duration"
+     ],
+     "gapsBefore": [
+      "Waktu",
+      "pengambilan"
+     ],
+     "result": "accepted",
+     "candidate": "A wait time is not part of the reported fetch duration data.",
+     "gapsAfter": []
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 44,
+    "verificationCalls": 14,
+    "uniqueInputs": 2
+   },
+   "ms": 3565
+  },
+  {
+   "id": "CP20-V4-A-06",
+   "direction": "id-en",
+   "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama. Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada.",
+   "text": "Function differentiable is continuous at the same point. Statement converse requires additional requirements; graph without visible gaps is not evidence that derivative exists.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"celah\", \"sendirinya\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+    },
+    {
+     "strategy": "literal-only-context",
+     "source": "Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+    },
+    {
+     "strategy": "clause-split",
+     "source": "Pernyataan konvers memerlukan syarat tambahan; grafik"
+    },
+    {
+     "strategy": "clause-split",
+     "source": "tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 5,
+    "cacheHits": 0,
+    "inputTokens": 105,
+    "outputTokens": 111,
+    "verificationCalls": 8,
+    "uniqueInputs": 5
+   },
+   "ms": 6170
+  },
+  {
+   "id": "CP20-V4-A-07",
+   "direction": "id-en",
+   "source": "Pemanasan dihentikan sebelum pelarut mendidih. Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan.",
+   "text": "Heating terminated before the solvent boils. Recorded temperature rise cannot be associated with the catalyst only, because heater also transfers energy to solution.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"memindahkan\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Pemanasan dihentikan sebelum pelarut mendidih."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 46,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 3432
+  },
+  {
+   "id": "CP20-V4-A-08",
+   "direction": "id-en",
+   "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias. Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+   "text": "Sample mean can be different from population mean even though sampling procedure unbiased. Such differences are not evidence that an observation is wrongly recorded.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 36,
+    "outputTokens": 42,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 2684
+  },
+  {
+   "id": "CP20-V4-A-09",
+   "direction": "id-en",
+   "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat. Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi.",
+   "text": "When the price of substitution goods goes up, the demand for initial products may increase. This prediction depends on both goods replacing one another, not complementing one another.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat."
+    },
+    {
+     "strategy": "literal-only-context",
+     "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 54,
+    "outputTokens": 61,
+    "verificationCalls": 2,
+    "uniqueInputs": 3
+   },
+   "ms": 3239
+  },
+  {
+   "id": "CP20-V4-A-10",
+   "direction": "id-en",
+   "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+   "text": "The lab instrument was calibrated before data collection. Calibration reduce measurement error; calibration does not prove that proposed explanation is correct.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 43,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 3398
+  },
+  {
+   "id": "CP20-H-016",
+   "direction": "id-en",
+   "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung.",
+   "text": "Function continuous at closed interval attains maximum value. This theorem does not require function differentiable throughout the interval. Maximum value need not occurs at edge.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"titik\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Nilai maksimum tidak harus terjadi di titik ujung."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 41,
+    "outputTokens": 40,
+    "verificationCalls": 8,
+    "uniqueInputs": 3
+   },
+   "ms": 2718
+  },
+  {
+   "id": "CP20-H-017",
+   "direction": "id-en",
+   "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi.",
+   "text": "Derivative determines the rate of local changes, not the accumulated over the entire interval changes. Integration can regain the accumulated changes when the required hypothesis is fulfilled.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"memperoleh\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 41,
+    "verificationCalls": 11,
+    "uniqueInputs": 2
+   },
+   "ms": 3539
+  },
+  {
+   "id": "CP20-H-018",
+   "direction": "id-en",
+   "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+   "text": "Finite set which nonempty has the largest element in ordering suitable. Deleting finiteness assumption changes problems. The claim involves ordering of elements, not its physical size.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Menghapus asumsi kehinggaan mengubah masalah."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 51,
+    "outputTokens": 54,
+    "verificationCalls": 7,
+    "uniqueInputs": 3
+   },
+   "ms": 3652
+  },
+  {
+   "id": "CP20-H-019",
+   "direction": "id-en",
+   "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+   "text": "Dissolving sugar in water increases the mass solution. Evaporation removes some of the water but does not eliminate sugar dissolved. Therefore, the remaining liquid has higher concentration.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Melarutkan gula dalam air meningkatkan massa larutan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 50,
+    "outputTokens": 54,
+    "verificationCalls": 5,
+    "uniqueInputs": 3
+   },
+   "ms": 3408
+  },
+  {
+   "id": "CP20-H-020",
+   "direction": "id-en",
+   "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan.",
+   "text": "Catalyst recovered after experiment and reused. Recovery alone does not show that no missing material; initial and end mass must be compared.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 37,
+    "outputTokens": 40,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 2500
+  },
+  {
+   "id": "CP20-H-021",
+   "direction": "id-en",
+   "source": "Larutan mengandung 6 mmol garam terlarut dalam 2 L pelarut. Penambahan 2 L pelarut menurunkan konsentrasi sambil mempertahankan jumlah garam, asalkan tidak ada larutan yang tumpah.",
+   "text": "Solution contains 6 mmol salt dissolved in 2 L solvent. Add 2 L solvents lower concentration while maintaining the amount of salt, provided no solution is spilled.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Larutan mengandung 6 mmol garam terlarut dalam 2 L pelarut."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penambahan 2 L pelarut menurunkan konsentrasi sambil mempertahankan jumlah garam, asalkan tidak ada larutan yang tumpah."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 61,
+    "outputTokens": 67,
+    "verificationCalls": 7,
+    "uniqueInputs": 2
+   },
+   "ms": 4951
+  },
+  {
+   "id": "CP20-H-022",
+   "direction": "id-en",
+   "source": "Interval kepercayaan menggambarkan ketidakpastian dalam prosedur pengambilan sampel yang diasumsikan. Interval tersebut tidak boleh ditafsirkan sebagai rentang yang memuat seluruh pengamatan individual. Keduanya merupakan besaran statistik yang berbeda.",
+   "text": "Confidence interval describes uncertainty in assumed sampling procedure. The interval should not be interpreted as a range that contains all individual observations. They're both different statistics.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"besaran\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Interval kepercayaan menggambarkan ketidakpastian dalam prosedur pengambilan sampel yang diasumsikan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Interval tersebut tidak boleh ditafsirkan sebagai rentang yang memuat seluruh pengamatan individual."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Keduanya merupakan besaran statistik yang berbeda."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 38,
+    "verificationCalls": 6,
+    "uniqueInputs": 3
+   },
+   "ms": 2653
+  },
+  {
+   "id": "CP20-H-023",
+   "direction": "id-en",
+   "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+   "text": "Treatment A generate 7 response and treatment B generate 11 response. This number cannot be compared in justice without knowing how many participants received each treatment. Denominator is as important as numerator.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"Jumlah\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan.",
+     "terms": [
+      "Jumlah ini→this count"
+     ],
+     "gapsBefore": [
+      "Jumlah"
+     ],
+     "result": "rejected-gaps-not-reduced",
+     "candidate": "This count cannot be equaled fairly without knowing how many participants received each treatment.",
+     "gapsAfter": [
+      "dibandingkan"
+     ]
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penyebut sama pentingnya dengan pembilang."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 4,
+    "cacheHits": 0,
+    "inputTokens": 87,
+    "outputTokens": 95,
+    "verificationCalls": 7,
+    "uniqueInputs": 3
+   },
+   "ms": 6254
+  },
+  {
+   "id": "CP20-H-024",
+   "direction": "id-en",
+   "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel.",
+   "text": "Analyze using median because some extreme values have a profound effect on sample mean. Median selection does not remove the observations from the data set. Both statistics reported in appendix articles.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"memengaruhi\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kedua statistik dilaporkan di lampiran artikel."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 41,
+    "outputTokens": 46,
+    "verificationCalls": 7,
+    "uniqueInputs": 3
+   },
+   "ms": 3128
+  },
+  {
+   "id": "CP20-H-025",
+   "direction": "id-en",
+   "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+   "text": "Taxes against sellers can affect price that the buyer pays for. The legal obligation to pay taxes does not itself determine who is paying the economic burden. Relative sensitivity supply and demand should also be considered.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"menanggung\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 50,
+    "outputTokens": 57,
+    "verificationCalls": 5,
+    "uniqueInputs": 3
+   },
+   "ms": 3053
+  },
+  {
+   "id": "CP20-H-026",
+   "direction": "id-en",
+   "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+   "text": "Increase demand differs from increase quantity demanded along unchanged demand curve. Mixing this statement can reverse explanations of price changes.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 37,
+    "outputTokens": 40,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2466
+  },
+  {
+   "id": "CP20-H-027",
+   "direction": "id-en",
+   "source": "Rumah tangga menabung lebih banyak uang secara nominal, tetapi harga juga naik. Apakah rumah tangga itu dapat membeli lebih banyak barang bergantung pada perubahan daya beli, bukan hanya saldo yang ditampilkan di rekening.",
+   "text": "Household saves more money nominally, but price also rises. Whether that household can buy more goods depends on changes purchasing power, not only balance displayed in account.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"ditampilkan\", \"membeli\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Rumah tangga menabung lebih banyak uang secara nominal, tetapi harga juga naik."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Apakah rumah tangga itu dapat membeli lebih banyak barang bergantung pada perubahan daya beli, bukan hanya saldo yang ditampilkan di rekening."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 60,
+    "outputTokens": 58,
+    "verificationCalls": 10,
+    "uniqueInputs": 2
+   },
+   "ms": 4532
+  },
+  {
+   "id": "CP20-H-028",
+   "direction": "id-en",
+   "source": "Laporan menempatkan pedoman wawancara di lampiran agar peneliti lain dapat memeriksa pertanyaannya. Lampiran mendokumentasikan prosedur; lampiran tidak menjamin bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama.",
+   "text": "Reports place interview guide in appendix so that other researchers can check the question. Appendix documenting procedures; appendix does not guarantee that each responder understands each question in the same way.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Laporan menempatkan pedoman wawancara di lampiran agar peneliti lain dapat memeriksa pertanyaannya."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Lampiran mendokumentasikan prosedur; lampiran tidak menjamin bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 46,
+    "outputTokens": 53,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 3540
+  },
+  {
+   "id": "CP20-H-029",
+   "direction": "id-en",
+   "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka.",
+   "text": "The results came from volunteers who had access to the necessary equipment. Generalization to a person without access requires additional evidence. The author discussed these limitations before delivering their recommendations.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"diperoleh\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 38,
+    "outputTokens": 39,
+    "verificationCalls": 12,
+    "uniqueInputs": 3
+   },
+   "ms": 2726
+  },
+  {
+   "id": "CP20-H-030",
+   "direction": "id-en",
+   "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+   "text": "Reviewer asks the author to distinguish missing information from the evidence that a event did not occur. The blank note may reflect incomplete documentation. The record cannot be automatically considered as a recorded event absence.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 53,
+    "outputTokens": 57,
+    "verificationCalls": 5,
+    "uniqueInputs": 3
+   },
+   "ms": 3768
+  },
+  {
+   "id": "LONG-PROSE-01",
+   "direction": "id-en",
+   "source": "CP20B0001_00. Tim penelitian mengukur 18 sampel sebelum intervensi. Kelompok pembanding tidak menerima perlakuan. Pengamatan ini saja tidak membuktikan hubungan sebab akibat.",
+   "text": "CP20B0001_00. The research team measured 18 sample before intervention. Comparison group does not receive treatment. This observation alone does not prove causal relationship.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Konsep sumber dipulihkan dengan istilah terkunci (Kelompok pembanding → comparison group); periksa ketepatan istilah."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Tim penelitian mengukur 18 sampel sebelum intervensi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kelompok pembanding tidak menerima perlakuan."
+    },
+    {
+     "strategy": "concept-repair",
+     "round": 1,
+     "source": "Kelompok pembanding tidak menerima perlakuan.",
+     "terms": [
+      "Kelompok pembanding→comparison group"
+     ],
+     "gapsBefore": [
+      "pembanding",
+      "menerima"
+     ],
+     "result": "accepted",
+     "candidate": "Comparison group does not receive treatment.",
+     "gapsAfter": []
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pengamatan ini saja tidak membuktikan hubungan sebab akibat."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 4,
+    "cacheHits": 0,
+    "inputTokens": 42,
+    "outputTokens": 47,
+    "verificationCalls": 9,
+    "uniqueInputs": 3
+   },
+   "ms": 2870
+  },
+  {
+   "id": "LONG-PROSE-02",
+   "direction": "id-en",
+   "source": "CP20B0002_00. Larutan kimia mengandung 25 miligram garam terlarut. Pemanasan menghilangkan pelarut tetapi tidak menghancurkan garam. Konsentrasi bergantung pada volume akhir.",
+   "text": "CP20B0002_00. Solution Chemical contains 25 milligrams of salt dissolved. Heating eliminates solvents but does not destroy salt. Concentration depends on the end volume.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Larutan kimia mengandung 25 miligram garam terlarut."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pemanasan menghilangkan pelarut tetapi tidak menghancurkan garam."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Konsentrasi bergantung pada volume akhir."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 46,
+    "outputTokens": 54,
+    "verificationCalls": 3,
+    "uniqueInputs": 3
+   },
+   "ms": 3114
+  },
+  {
+   "id": "LONG-PROSE-03",
+   "direction": "id-en",
+   "source": "CP20B0003_00. Himpunan hingga dalam percobaan 32 berisi elemen yang berbeda. Subgrup harus memuat elemen identitas. Objek matematika ini didefinisikan secara terpisah.",
+   "text": "CP20B0003_00. Finite set in experiment 32 contains different elements. Subgroup must contain identity element. This mathematical object is defined separately.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Himpunan hingga dalam percobaan 32 berisi elemen yang berbeda."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Subgrup harus memuat elemen identitas."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Objek matematika ini didefinisikan secara terpisah."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 39,
+    "verificationCalls": 4,
+    "uniqueInputs": 3
+   },
+   "ms": 2753
+  },
+  {
+   "id": "LONG-PROSE-04",
+   "direction": "id-en",
+   "source": "CP20B0004_00. Survei ekonomi mencatat 39 transaksi. Permintaan meningkat ketika harga turun sementara kondisi lain tetap. Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar.",
+   "text": "CP20B0004_00. Economic surveys record 39 transactions. Demand rises when price drops while other conditions remain. This estimate describes the sample, not every market.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Survei ekonomi mencatat 39 transaksi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Permintaan meningkat ketika harga turun sementara kondisi lain tetap."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar."
+    },
+    {
+     "strategy": "literal-only-context",
+     "source": "Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 4,
+    "cacheHits": 0,
+    "inputTokens": 62,
+    "outputTokens": 62,
+    "verificationCalls": 6,
+    "uniqueInputs": 4
+   },
+   "ms": 3394
+  },
+  {
+   "id": "LONG-PROSE-05",
+   "direction": "id-en",
+   "source": "CP20B0005_00. Analisis statistika menggunakan 46 pengamatan. Rata-rata sampel berbeda dari rata-rata populasi. Interval kepercayaan menyatakan ketidakpastian dalam model yang disebutkan.",
+   "text": "CP20B0005_00. Statistical analysis uses 46 observations. Sample mean differs from population mean. Confidence interval states uncertainty in the specified model.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Analisis statistika menggunakan 46 pengamatan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Rata-rata sampel berbeda dari rata-rata populasi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Interval kepercayaan menyatakan ketidakpastian dalam model yang disebutkan."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 39,
+    "outputTokens": 43,
+    "verificationCalls": 4,
+    "uniqueInputs": 3
+   },
+   "ms": 2423
+  },
+  {
+   "id": "LONG-PROSE-06",
+   "direction": "id-en",
+   "source": "CP20B0006_00. Penelitian ekologi mengikuti 53 pohon yang ditandai. Pertumbuhan berbeda antar lokasi karena curah hujan dan kondisi tanah berbeda. Penulis melaporkan keterbatasan pengukuran.",
+   "text": "CP20B0006_00. Ecological studies follow 53 marked trees. Growth differs between locations because of rainfall and conditions of different soil. Writers report limitation of measurements.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"ditandai\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penelitian ekologi mengikuti 53 pohon yang ditandai."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pertumbuhan berbeda antar lokasi karena curah hujan dan kondisi tanah berbeda."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penulis melaporkan keterbatasan pengukuran."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 32,
+    "outputTokens": 37,
+    "verificationCalls": 4,
+    "uniqueInputs": 3
+   },
+   "ms": 2208
+  },
+  {
+   "id": "LONG-PROSE-07",
+   "direction": "id-en",
+   "source": "CP20B0007_00. Penelitian pendidikan mencakup 60 jawaban tertulis. Rubrik membedakan jawaban tanpa alasan dari penjelasan yang didukung bukti. Dua penilai membandingkan penilaian mereka.",
+   "text": "CP20B0007_00. Education studies include 60 written answers. Rubric distinguishes answers without reason from evidence supported explanations. Two judges compared their judgment.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penelitian pendidikan mencakup 60 jawaban tertulis."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Rubrik membedakan jawaban tanpa alasan dari penjelasan yang didukung bukti."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Dua penilai membandingkan penilaian mereka."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 36,
+    "outputTokens": 35,
+    "verificationCalls": 6,
+    "uniqueInputs": 3
+   },
+   "ms": 2362
+  },
+  {
+   "id": "LONG-PROSE-08",
+   "direction": "id-en",
+   "source": "CP20B0008_00. Laboratorium teknik mencatat 67 pengukuran tekanan. Instrumen dikalibrasi sebelum setiap sesi. Satuan yang dilaporkan dan ketidakpastian pengukuran harus tetap bersama.",
+   "text": "CP20B0008_00. Technical labs record 67 pressure measurements. Instruments are calibrated before each session. Reported units and measurement uncertainty must stay together.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"teknik\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Laboratorium teknik mencatat 67 pengukuran tekanan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Instrumen dikalibrasi sebelum setiap sesi."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Satuan yang dilaporkan dan ketidakpastian pengukuran harus tetap bersama."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 37,
+    "outputTokens": 40,
+    "verificationCalls": 8,
+    "uniqueInputs": 3
+   },
+   "ms": 2905
+  },
+  {
+   "id": "LONG-PROSE-09",
+   "direction": "id-en",
+   "source": "CP20B0009_00. Arsip sejarah memuat 74 entri berindeks. Penafsiran berikutnya dapat bertentangan dengan catatan asli. Peneliti memisahkan bukti dokumenter dari spekulasi.",
+   "text": "CP20B0009_00. History archive contains 74 indexed entries. The next interpretation can contradict the original notes. Researchers separate documentary evidence from speculation.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Arsip sejarah memuat 74 entri berindeks."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penafsiran berikutnya dapat bertentangan dengan catatan asli."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Peneliti memisahkan bukti dokumenter dari spekulasi."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 33,
+    "outputTokens": 29,
+    "verificationCalls": 9,
+    "uniqueInputs": 3
+   },
+   "ms": 2404
+  },
+  {
+   "id": "LONG-PROSE-10",
+   "direction": "id-en",
+   "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda.",
+   "text": "CP20B0010_00. Sequence in calculation 81 is monotone and bounded. With stated assumption, sequence it converges. Removing assumptions requires a different kind of proof.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Barisan dalam perhitungan 81 bersifat monoton dan terbatas."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Dengan asumsi yang dinyatakan, barisan itu konvergen."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Menghapus asumsi memerlukan pembuktian yang berbeda."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 3,
+    "cacheHits": 0,
+    "inputTokens": 54,
+    "outputTokens": 60,
+    "verificationCalls": 5,
+    "uniqueInputs": 3
+   },
+   "ms": 3969
+  },
+  {
+   "id": "F01-id-en",
+   "direction": "id-en",
+   "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum. Kesimpulan yang sama tidak harus berlaku pada interval terbuka.",
+   "text": "Function continuous at closed and bounded interval attains maximum value. The same conclusion need not applies to open interval.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Fungsi kontinu pada interval tertutup dan terbatas mencapai nilai maksimum."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Kesimpulan yang sama tidak harus berlaku pada interval terbuka."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 31,
+    "outputTokens": 33,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2016
+  },
+  {
+   "id": "F02-id-en",
+   "direction": "id-en",
+   "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama. Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers.",
+   "text": "Two matrix can have the same determinant without becoming the same matrix. Nonzero determinant is sufficient condition to have square matrix to have inverse.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Dua matriks dapat memiliki determinan yang sama tanpa menjadi matriks yang sama."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Determinan tidak nol merupakan syarat cukup agar matriks persegi memiliki invers."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 43,
+    "outputTokens": 48,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 3038
+  },
+  {
+   "id": "F03-id-en",
+   "direction": "id-en",
+   "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap. Pengenceran saja tidak menghilangkan zat terlarut.",
+   "text": "Diluting solution with pure water lower its concentration when amount of dissolved substance remains constant. Dilution alone does not remove solute.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Mengencerkan larutan dengan air murni menurunkan konsentrasinya ketika jumlah zat terlarut tetap."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pengenceran saja tidak menghilangkan zat terlarut."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 37,
+    "outputTokens": 41,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2701
+  },
+  {
+   "id": "F04-id-en",
+   "direction": "id-en",
+   "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap. Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar.",
+   "text": "Catalyst changes rate of a reaction, but does not change its equilibrium constant in fixed temperature. Accomplished equilibrium faster not by itself implies a larger equilibrium yield.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Katalis mengubah laju reaksi, tetapi tidak mengubah tetapan kesetimbangannya pada suhu tetap."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Tercapainya kesetimbangan lebih cepat tidak dengan sendirinya menyiratkan hasil kesetimbangan yang lebih besar."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 50,
+    "outputTokens": 55,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 3640
+  },
+  {
+   "id": "F05-id-en",
+   "direction": "id-en",
+   "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang. Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya.",
+   "text": "Confidence interval 95% explains procedure by repeated-sampling coverage. Once this special interval is calculated, frequentist interpretation does not give the probability 95% that fixed parameter is in it.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Interval kepercayaan 95% menjelaskan prosedur dengan cakupan dalam pengambilan sampel berulang."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Setelah interval khusus ini dihitung, interpretasi frekuentis tidak memberikan probabilitas 95% bahwa parameter tetap berada di dalamnya."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 45,
+    "outputTokens": 51,
+    "verificationCalls": 6,
+    "uniqueInputs": 2
+   },
+   "ms": 3991
+  },
+  {
+   "id": "F06-id-en",
+   "direction": "id-en",
+   "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda. Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi.",
+   "text": "Random assignment and random sampling have different goals. Random assignment can reduce confounding in experiments; it does not automatically make sample represent population.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penugasan acak dan pengambilan sampel acak memiliki tujuan yang berbeda."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penugasan acak dapat mengurangi perancu dalam eksperimen; hal itu tidak secara otomatis membuat sampel mewakili populasi."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 51,
+    "outputTokens": 53,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 3280
+  },
+  {
+   "id": "F07-id-en",
+   "direction": "id-en",
+   "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan. Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat.",
+   "text": "Binding price ceiling can generate excess demand. This statement covers quantity buyers wish to buy compared quantity sellers offer, not change the preferences of the community.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"membahas\", \"dibeli\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Batas harga maksimum yang mengikat dapat menimbulkan kelebihan permintaan."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Pernyataan ini membahas jumlah yang ingin dibeli pembeli dibandingkan jumlah yang ditawarkan penjual, bukan perubahan preferensi masyarakat."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 35,
+    "outputTokens": 40,
+    "verificationCalls": 12,
+    "uniqueInputs": 2
+   },
+   "ms": 3585
+  },
+  {
+   "id": "F08-id-en",
+   "direction": "id-en",
+   "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang. Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah.",
+   "text": "Increase income need not increases the demand for each goods. For inferior good, demand can go down even if the price is unchanged.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Kenaikan pendapatan tidak harus meningkatkan permintaan untuk setiap barang."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Untuk barang inferior, permintaan dapat turun meskipun harganya tidak berubah."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 35,
+    "outputTokens": 39,
+    "verificationCalls": 2,
+    "uniqueInputs": 2
+   },
+   "ms": 2383
+  },
+  {
+   "id": "F09-id-en",
+   "direction": "id-en",
+   "source": "Rencana analisis didaftarkan sebelum hasil diperiksa. Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias.",
+   "text": "The analysis plan was registered before the results were checked. This time sequence reduces one opportunity to report selectively; it does not prove that each decision in research unbiased.",
+   "outcome": "translated",
+   "status": "translated",
+   "issues": [],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Rencana analisis didaftarkan sebelum hasil diperiksa."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Urutan waktu ini mengurangi satu peluang pelaporan selektif; hal itu tidak membuktikan bahwa setiap keputusan dalam penelitian tidak bias."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 34,
+    "outputTokens": 39,
+    "verificationCalls": 4,
+    "uniqueInputs": 2
+   },
+   "ms": 2732
+  },
+  {
+   "id": "F10-id-en",
+   "direction": "id-en",
+   "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap. Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat.",
+   "text": "Reviewer requests raw measurement results because the summary table is incomplete. Raw data distribution allows further checks, but it does not guarantee accurate measurements.",
+   "outcome": "translated",
+   "status": "review",
+   "issues": [
+    "Periksa konsep: \"Penyediaan\" mungkin hilang atau berubah dalam terjemahan."
+   ],
+   "attempts": [
+    {
+     "strategy": "protected-context",
+     "source": "Penelaah meminta hasil pengukuran mentah karena tabel ringkasannya tidak lengkap."
+    },
+    {
+     "strategy": "protected-context",
+     "source": "Penyediaan data mentah memungkinkan pemeriksaan lebih lanjut, tetapi tidak menjamin bahwa pengukuran tersebut akurat."
+    }
+   ],
+   "metrics": {
+    "inferenceCalls": 2,
+    "cacheHits": 0,
+    "inputTokens": 36,
+    "outputTokens": 33,
+    "verificationCalls": 5,
+    "uniqueInputs": 2
+   },
+   "ms": 2374
+  }
+ ]
+}

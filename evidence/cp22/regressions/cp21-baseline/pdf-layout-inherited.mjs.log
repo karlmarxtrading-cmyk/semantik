@@ -1,0 +1,14 @@
+{
+  "suite": "layout-unit",
+  "passed": 8,
+  "checks": [
+    "two columns keep the entire left column before the right, bounded by spanning content",
+    "numeric tables do not masquerade as newspaper columns",
+    "staggered column baselines retain column reading order",
+    "scientific notation and bibliography text stay unchanged and source traceable",
+    "OCR TSV parses confidence and coordinates while keeping HTML-looking strings inert",
+    "small raised equation glyphs stay with their mathematical line and remain traceable",
+    "rotated pages keep source items separate and retain their source order",
+    "large but bounded two-column input keeps complete coverage and column order"
+  ]
+}

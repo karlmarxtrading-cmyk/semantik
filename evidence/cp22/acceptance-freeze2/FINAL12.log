@@ -1,0 +1,20 @@
+CP21-F01 translated 2927
+CP21-F02 rejected 1361
+CP21-F03 translated 1385
+CP21-F04 translated 2220
+CP21-F05 translated 3619
+CP21-F06 translated 2164
+CP21-F07 translated 2044
+CP21-F08 translated 1662
+CP21-F09 translated 1687
+CP21-F10 translated 1893
+CP21-F11 translated 4436
+CP21-F12 translated 4504
+{
+  cases: 12,
+  translated: 11,
+  rejected: 1,
+  failed: 0,
+  inferenceCalls: 30,
+  cacheHits: 0
+}

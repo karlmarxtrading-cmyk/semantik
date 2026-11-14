@@ -1,0 +1,675 @@
+{
+  "scope": "Actual PDF.js and production bounded reader; original audit fixture plus new arbitrary-heading/midbook references/list control. Native Canvas; no inference/browser/OCR claim.",
+  "sourceHashes": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553"
+  },
+  "rows": [
+    {
+      "name": "cp20-reference-followed-by-chapter.pdf",
+      "status": "PASS",
+      "sha256": "fb4f9530e27a605636342c19a100e185646e187e03a5330a10863727e725cc93",
+      "pages": 2,
+      "blocks": [
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "heading",
+          "text": "References",
+          "bbox": [
+            55,
+            35.59487812500004,
+            97.03800000000001,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                35.59487812500004,
+                97.038,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "References"
+          ],
+          "level": 1,
+          "sectionRole": "references",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "reference",
+          "text": "Smith, A. (2025). Previous chapter bibliography. Jones, B. (2024). A second source from the previous chapter.",
+          "bbox": [
+            55,
+            86.93179218750004,
+            299.58499999999975,
+            27
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2,
+            3
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                86.93179218750004,
+                233.54099999999983,
+                11
+              ]
+            },
+            {
+              "id": 3,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                102.93179218750004,
+                299.58499999999975,
+                11
+              ]
+            }
+          ],
+          "translatable": false,
+          "preservationReason": "bibliographic-reference",
+          "sourceLines": [
+            "Smith, A. (2025). Previous chapter bibliography.",
+            "Jones, B. (2024). A second source from the previous chapter."
+          ],
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0001",
+          "page": 2,
+          "type": "heading",
+          "text": "Chapter Two: Differential Calculus",
+          "bbox": [
+            55,
+            35.59487812500004,
+            294.048,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                35.59487812500004,
+                294.048,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Chapter Two: Differential Calculus"
+          ],
+          "level": 1,
+          "sectionRole": "section",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0002",
+          "page": 2,
+          "type": "paragraph",
+          "text": "This chapter examines the rates of change in continuous functions. The discussion begins with the definition of a limit.",
+          "bbox": [
+            55,
+            86.93179218750004,
+            325.8859999999997,
+            27
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2,
+            3
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                86.93179218750004,
+                325.8859999999997,
+                11
+              ]
+            },
+            {
+              "id": 3,
+              "source": "pdf-text",
+              "bbox": [
+                55,
+                102.93179218750004,
+                243.9359999999998,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "This chapter examines the rates of change in continuous functions.",
+            "The discussion begins with the definition of a limit."
+          ],
+          "pageImagePath": null
+        }
+      ]
+    },
+    {
+      "name": "cp20-reference-midbook.pdf",
+      "status": "PASS",
+      "sha256": "8287846bdad5cb49ec930ce31d309a55a77767d941f1851d82ea357f58790e05",
+      "pages": 5,
+      "blocks": [
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "heading",
+          "text": "References",
+          "bbox": [
+            40,
+            35.2919921875,
+            113.5986354,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                35.2919921875,
+                113.5986354,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "References"
+          ],
+          "level": 1,
+          "sectionRole": "references",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "reference",
+          "text": "Smith, A. (2024). A study of local methods. Journal 12, 34-56.",
+          "bbox": [
+            40,
+            86.78955078125,
+            338.760257,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                86.78955078125,
+                338.760257,
+                11
+              ]
+            }
+          ],
+          "translatable": false,
+          "preservationReason": "bibliographic-reference",
+          "sourceLines": [
+            "Smith, A. (2024). A study of local methods. Journal 12, 34-56."
+          ],
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0001",
+          "page": 2,
+          "type": "heading",
+          "text": "Unexpected Horizons",
+          "bbox": [
+            40,
+            35.2919921875,
+            215.82421740000007,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                35.2919921875,
+                215.82421740000007,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Unexpected Horizons"
+          ],
+          "level": 1,
+          "sectionRole": "section",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0002",
+          "page": 2,
+          "type": "paragraph",
+          "text": "A new experiment examines changes in pressure and volume.",
+          "bbox": [
+            40,
+            86.78955078125,
+            344.04541600000005,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                86.78955078125,
+                344.04541600000005,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "A new experiment examines changes in pressure and volume."
+          ],
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0003",
+          "page": 2,
+          "type": "list-item",
+          "text": "1. Record the initial temperature.",
+          "bbox": [
+            40,
+            116.78955078125,
+            184.3574216,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            3
+          ],
+          "sourceItems": [
+            {
+              "id": 3,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                116.78955078125,
+                184.3574216,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "1. Record the initial temperature."
+          ],
+          "list": {
+            "ordered": true,
+            "start": 1,
+            "marker": "1.",
+            "indent": 0
+          },
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0004",
+          "page": 2,
+          "type": "list-item",
+          "text": "2. Measure the final pressure.",
+          "bbox": [
+            40,
+            146.78955078125,
+            164.71533540000001,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            4
+          ],
+          "sourceItems": [
+            {
+              "id": 4,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                146.78955078125,
+                164.71533540000001,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "2. Measure the final pressure."
+          ],
+          "list": {
+            "ordered": true,
+            "start": 2,
+            "marker": "2.",
+            "indent": 0
+          },
+          "pageImagePath": null
+        },
+        {
+          "id": "p0002-b0005",
+          "page": 2,
+          "type": "list-item",
+          "text": "• Compare the two observations.",
+          "bbox": [
+            40,
+            176.78955078125,
+            182.987794,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            5
+          ],
+          "sourceItems": [
+            {
+              "id": 5,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                176.78955078125,
+                182.987794,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "• Compare the two observations."
+          ],
+          "list": {
+            "ordered": false,
+            "start": null,
+            "marker": "•",
+            "indent": 0
+          },
+          "pageImagePath": null
+        },
+        {
+          "id": "p0003-b0001",
+          "page": 3,
+          "type": "heading",
+          "text": "References",
+          "bbox": [
+            40,
+            35.2919921875,
+            113.5986354,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                35.2919921875,
+                113.5986354,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "References"
+          ],
+          "level": 1,
+          "sectionRole": "references",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0003-b0002",
+          "page": 3,
+          "type": "reference",
+          "text": "Jones, B. (2023). Statistical methods. Scientific Review 4, 12-18.",
+          "bbox": [
+            40,
+            86.78955078125,
+            353.9550806000001,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                86.78955078125,
+                353.9550806000001,
+                11
+              ]
+            }
+          ],
+          "translatable": false,
+          "preservationReason": "bibliographic-reference",
+          "sourceLines": [
+            "Jones, B. (2023). Statistical methods. Scientific Review 4, 12-18."
+          ],
+          "pageImagePath": null
+        },
+        {
+          "id": "p0004-b0001",
+          "page": 4,
+          "type": "reference",
+          "text": "Brown, C. (2022). Further experiments. Research Quarterly 8, 10-20.",
+          "bbox": [
+            40,
+            41.78955078125,
+            379.6933657,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                41.78955078125,
+                379.6933657,
+                11
+              ]
+            }
+          ],
+          "translatable": false,
+          "preservationReason": "bibliographic-reference",
+          "sourceLines": [
+            "Brown, C. (2022). Further experiments. Research Quarterly 8, 10-20."
+          ],
+          "pageImagePath": null
+        },
+        {
+          "id": "p0005-b0001",
+          "page": 5,
+          "type": "heading",
+          "text": "Boundary Layers",
+          "bbox": [
+            40,
+            35.2919921875,
+            170.77148640000001,
+            18
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                35.2919921875,
+                170.77148640000001,
+                18
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Boundary Layers"
+          ],
+          "level": 1,
+          "sectionRole": "section",
+          "pageImagePath": null
+        },
+        {
+          "id": "p0005-b0002",
+          "page": 5,
+          "type": "paragraph",
+          "text": "This ordinary paragraph belongs to the next section.",
+          "bbox": [
+            40,
+            86.78955078125,
+            290.1679693,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                86.78955078125,
+                290.1679693,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "This ordinary paragraph belongs to the next section."
+          ],
+          "pageImagePath": null
+        }
+      ]
+    }
+  ]
+}

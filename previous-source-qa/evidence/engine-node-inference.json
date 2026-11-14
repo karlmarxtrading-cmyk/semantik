@@ -1,0 +1,72 @@
+{
+  "environment": "Node filesystem adapters; CP16 engine with test-only WASM path, Node createRequire stub, and error-stack reporting adaptations",
+  "browserVerified": false,
+  "output": [
+    {
+      "direction": "en-id",
+      "source": "This study investigates the relationship between economic growth and education.",
+      "sourceText": "This study investigates the relationship between economic growth and education.",
+      "targetText": "Penelitian ini menyelidiki hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "finishReason": "complete",
+      "engineFingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 13,
+      "outputTokens": 10,
+      "ms": 358
+    },
+    {
+      "direction": "en-id",
+      "source": "The study included 120 participants.",
+      "sourceText": "The study included 120 participants.",
+      "targetText": "Studi ini termasuk peserta 120.",
+      "finishReason": "complete",
+      "engineFingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 13,
+      "outputTokens": 10,
+      "ms": 263
+    },
+    {
+      "direction": "en-id",
+      "source": "The result was significant (p < 0.05).",
+      "sourceText": "The result was significant (p < 0.05).",
+      "targetText": "Hasilnya signifikan (p < 0.05).",
+      "finishReason": "complete",
+      "engineFingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 13,
+      "outputTokens": 10,
+      "ms": 232
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini menganalisis hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "sourceText": "Penelitian ini menganalisis hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "targetText": "This study analyzes the relationship between economic growth and education.",
+      "finishReason": "complete",
+      "engineFingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 11,
+      "outputTokens": 12,
+      "ms": 278
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini melibatkan 120 peserta.",
+      "sourceText": "Penelitian ini melibatkan 120 peserta.",
+      "targetText": "This study involves 120 participants.",
+      "finishReason": "complete",
+      "engineFingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 11,
+      "outputTokens": 12,
+      "ms": 258
+    },
+    {
+      "direction": "id-en",
+      "source": "Suhu sampel adalah 37 °C dan dosisnya 10 mg.",
+      "sourceText": "Suhu sampel adalah 37 °C dan dosisnya 10 mg.",
+      "targetText": "Sample temperature is 37 °C and its dose 10 mg.",
+      "finishReason": "complete",
+      "engineFingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+      "inputTokens": 23,
+      "outputTokens": 24,
+      "ms": 635
+    }
+  ]
+}

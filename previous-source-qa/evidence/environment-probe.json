@@ -1,0 +1,15 @@
+{
+  "scope": "QA execution environment; not a deployed app result",
+  "checks": [
+    {
+      "check": "IPv4 HTTP sockets",
+      "available": true
+    },
+    {
+      "check": "Unix domain sockets required by local Chromium singleton",
+      "available": false,
+      "error": "[Errno 1] Operation not permitted"
+    }
+  ],
+  "browserStatus": "BLOCKED: Chromium local launch requires an unavailable Unix-domain socket; no browser pass is claimed from this probe."
+}

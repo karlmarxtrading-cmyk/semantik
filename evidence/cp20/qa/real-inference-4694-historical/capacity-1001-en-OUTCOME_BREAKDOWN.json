@@ -1,0 +1,248 @@
+{
+  "build": {
+    "release": "cp20-4694bad623ed9b19",
+    "version": "0.20.0",
+    "sourceHash": "4694bad623ed9b19f451d525d8352fd933557e4ee3cb9a93e381efe0b8333ffd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4694bad623ed9b19/"
+  },
+  "fixture": "capacity-1001-en",
+  "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+  "committedPages": 1001,
+  "applicationCounts": {
+    "total": 3003,
+    "translated": 2803,
+    "preserved": 0,
+    "rejected": 200,
+    "failed": 0,
+    "pending": 0,
+    "review": 200,
+    "done": 2803,
+    "attempted": 3003
+  },
+  "groups": {
+    "prose": {
+      "total": 1001,
+      "translated": 801,
+      "preserved": 0,
+      "rejected": 200,
+      "failed": 0,
+      "pending": 0
+    },
+    "pageHeading": {
+      "total": 1001,
+      "translated": 1001,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "traceFooter": {
+      "total": 1001,
+      "translated": 1001,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    },
+    "other": {
+      "total": 0,
+      "translated": 0,
+      "preserved": 0,
+      "rejected": 0,
+      "failed": 0,
+      "pending": 0
+    }
+  },
+  "reasons": {
+    "prose | Periksa negasi: bentuk negatif mungkin berubah.": 100,
+    "prose | Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.": 100
+  },
+  "samples": [
+    {
+      "page": 7,
+      "blockId": "p0007-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0007_00. The education study included 60 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0007_00. The education study included 60 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "blockId": "p0010-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0010_00. The sequence in calculation 81 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0010_00. The sequence in calculation 81 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 81 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 81 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 81 terikat dan monoton."
+        }
+      ]
+    },
+    {
+      "page": 17,
+      "blockId": "p0017-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0017_00. The education study included 130 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0017_00. The education study included 130 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ]
+    },
+    {
+      "page": 20,
+      "blockId": "p0020-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0020_00. The sequence in calculation 151 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0020_00. The sequence in calculation 151 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 151 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 151 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 151 terikat dan monoton."
+        }
+      ]
+    },
+    {
+      "page": 27,
+      "blockId": "p0027-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0027_00. The education study included 200 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0027_00. The education study included 200 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ]
+    },
+    {
+      "page": 30,
+      "blockId": "p0030-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0030_00. The sequence in calculation 221 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0030_00. The sequence in calculation 221 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 221 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 221 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 221 terikat dan monoton."
+        }
+      ]
+    },
+    {
+      "page": 37,
+      "blockId": "p0037-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0037_00. The education study included 270 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0037_00. The education study included 270 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ]
+    },
+    {
+      "page": 40,
+      "blockId": "p0040-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0040_00. The sequence in calculation 291 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0040_00. The sequence in calculation 291 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 291 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 291 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 291 terikat dan monoton."
+        }
+      ]
+    },
+    {
+      "page": 47,
+      "blockId": "p0047-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0047_00. The education study included 340 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "target": "CP20B0047_00. The education study included 340 written responses. The rubric distinguished an unsupported answer from an explanation supported by evidence. Two assessors compared their judgments.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The rubric distinguished an unsupported answer from an explanation supported by evidence.",
+          "candidateText": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti.",
+          "rawCandidate": "Rubrik membedakan jawaban yang tidak didukung dari penjelasan yang didukung oleh bukti."
+        }
+      ]
+    },
+    {
+      "page": 50,
+      "blockId": "p0050-b0002",
+      "category": "prose",
+      "outcome": "rejected",
+      "source": "CP20B0050_00. The sequence in calculation 361 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "target": "CP20B0050_00. The sequence in calculation 361 is bounded and monotone. Under the stated assumptions, the sequence converges. Removing an assumption requires a different proof.",
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Konsep matematika barisan/sequence hilang atau berubah. Sifat terbatas pada barisan hilang atau berubah.",
+          "segmentSource": "The sequence in calculation 361 is bounded and monotone.",
+          "candidateText": "Urutan dalam perhitungan 361 terikat dan monoton.",
+          "rawCandidate": "Urutan dalam perhitungan 361 terikat dan monoton."
+        }
+      ]
+    }
+  ],
+  "method": "Descriptive breakdown of actual application outcomes using the declared synthetic fixture trace schema. English END footer is deliberately reported separately as mixed-language trace metadata. Rejected is never reclassified as success. No semantic accuracy score is inferred; translated prose still requires independent semantic review.",
+  "humanApprovals": 0
+}

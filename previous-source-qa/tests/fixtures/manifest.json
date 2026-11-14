@@ -1,0 +1,168 @@
+{
+  "digital-en.pdf": {
+    "purpose": "English text, headings, protected statistics and DOI",
+    "pages": 1,
+    "contains": [
+      "120",
+      "2024",
+      "12.5",
+      "10.2",
+      "14.8",
+      "0.031",
+      "10.1234/example.2024.001"
+    ],
+    "bytes": 22887,
+    "sha256": "902f5bdf1f9cf3dd026d5e1241f8f97d09c958c8b0d8c5f8e2c58c6fbffe4e06"
+  },
+  "digital-id.pdf": {
+    "purpose": "Indonesian text and ID to EN inference",
+    "pages": 1,
+    "contains": [
+      "120",
+      "2024",
+      "12.5",
+      "10.1234/contoh.2024.001"
+    ],
+    "bytes": 22853,
+    "sha256": "14559f36b1d007052655704139bb79ad0f4a15bfaa2c3e1715e357f52fbee889"
+  },
+  "two-column.pdf": {
+    "purpose": "Read all left column blocks before all right blocks",
+    "pages": 1,
+    "order": [
+      "LEFT-ONE",
+      "LEFT-TWO",
+      "LEFT-THREE",
+      "RIGHT-ONE",
+      "RIGHT-TWO",
+      "RIGHT-THREE",
+      "Conclusion"
+    ],
+    "bytes": 23133,
+    "sha256": "6eca9c5ded94a03f8e449ffc1f05be4d006aff6c16a8c3db0e63decc090b1fc6"
+  },
+  "academic-structures.pdf": {
+    "purpose": "Table and formula preservation with visual fallback",
+    "pages": 1,
+    "contains": [
+      "125",
+      "95%",
+      "1.20",
+      "2.50",
+      "-0.35",
+      "0.05",
+      "12.50",
+      "14.25",
+      "0.031",
+      "0.004",
+      "10.5678/test.12"
+    ],
+    "bytes": 23602,
+    "sha256": "6dbc274d2e1375aac8b0151184c95ada1db41a97ec5eddbdcc3cb17cb9c123fe"
+  },
+  "scan-en.pdf": {
+    "purpose": "Image-only page requiring OCR",
+    "pages": 1,
+    "sourceLanguage": "en",
+    "contains": [
+      "120",
+      "2024",
+      "12.5"
+    ],
+    "bytes": 45120,
+    "sha256": "d3b9591b5a9ccacc4cc440b4d9d9c489c9b92bbe75aea1b492ca0eb1ee88a25a"
+  },
+  "scan-id.pdf": {
+    "purpose": "Image-only page requiring OCR",
+    "pages": 1,
+    "sourceLanguage": "id",
+    "contains": [
+      "120",
+      "2024",
+      "12.5"
+    ],
+    "bytes": 37843,
+    "sha256": "c610094a43b6ce0caa3d5e1e5f1b41235cf4737c7fd07a9f44b5b47c198dc5a7"
+  },
+  "mixed.pdf": {
+    "purpose": "Per-page OCR without replacing digital text",
+    "pages": 2,
+    "contains": [
+      "DIGITAL PAGE ONE",
+      "45",
+      "120",
+      "2024",
+      "12.5"
+    ],
+    "bytes": 66809,
+    "sha256": "7a6490ccffcd75e5748771df588d77a08db3f849439468990d0910b1d8714fb3"
+  },
+  "unsafe-strings.pdf": {
+    "purpose": "UI and Markdown escaping of untrusted document strings",
+    "pages": 1,
+    "contains": [
+      "<script>",
+      "javascript:",
+      "../../outside.txt"
+    ],
+    "bytes": 22777,
+    "sha256": "3c9aaa759d3c638250a6401a0d86b65bac8c714479b781b552817dbab026a4a2"
+  },
+  "password-protected.pdf": {
+    "purpose": "Password prompt and cancel path",
+    "pages": 1,
+    "password": "journal-test-password",
+    "bytes": 22784,
+    "sha256": "dae15465d8a5eca8a269ffa805f178c76e5d9149aeb710a8041427de454175a6"
+  },
+  "page-limit-301.pdf": {
+    "purpose": "Reject over configured 300-page limit",
+    "pages": 301,
+    "bytes": 181369,
+    "sha256": "fff5f38630c4b579af0751082ef251ab4eff7626d162ccba75d7ba5c17ababfb"
+  },
+  "rotated.pdf": {
+    "purpose": "Rotation-aware geometry and extraction",
+    "pages": 1,
+    "contains": [
+      "27"
+    ],
+    "bytes": 22586,
+    "sha256": "2ac3256dca872c815a0383639f5444113ee8875ec9e8839c321bcfacfdba2db1"
+  },
+  "empty.pdf": {
+    "purpose": "Blank page should not be treated as successful translated text",
+    "pages": 1,
+    "bytes": 1337,
+    "sha256": "52618b62099b4dd83644c026e84e2688d0c71a7907e9a133aa65ee5bf6820cf0"
+  },
+  "corrupt.pdf": {
+    "purpose": "Reject unsupported or invalid input",
+    "bytes": 49,
+    "sha256": "497a71a02ec25facd0130d29dd51af2997ec1b45a323363e7781a2abce0ba5db"
+  },
+  "json-masquerading.pdf": {
+    "purpose": "Reject unsupported or invalid input",
+    "bytes": 42,
+    "sha256": "37793754bb922b14599f0286e39c63fe56d8dd2801a4a745717b7ac4382b91eb"
+  },
+  "input.json": {
+    "purpose": "Reject unsupported or invalid input",
+    "bytes": 36,
+    "sha256": "8a5d22c89c4c08e7132c90e0459f66415f4630d955c2e1864c6f2eb3b5184b92"
+  },
+  "input.txt": {
+    "purpose": "Reject unsupported or invalid input",
+    "bytes": 31,
+    "sha256": "244e1fea4be7a882b8da2e93d752dac332047081846ca22cbe4a31e23b257178"
+  },
+  "bilingual-text.pdf": {
+    "purpose": "English abstract must translate within mostly Indonesian PDF; Indonesian body stays unchanged",
+    "pages": 1,
+    "contains": [
+      "12.5"
+    ],
+    "bytes": 23015,
+    "sha256": "f0b601a4941a429e0fbb12b07943b3722e27e8246c9f8b8bca5b5a597e44e23a"
+  }
+}

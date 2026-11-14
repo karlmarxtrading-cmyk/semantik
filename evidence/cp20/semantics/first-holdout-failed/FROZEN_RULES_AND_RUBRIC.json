@@ -1,0 +1,21 @@
+{
+  "frozenAt": "2026-11-13T06:44:42.435140+00:00",
+  "ruleset": "cp20-context-terminology-meaning-guards-v1",
+  "files": {
+    "app/app/translation.js": "18ef6e360994e1ad8dd84d3962f75ef69ca1c93a81dcafa9eec3fc091b56a177",
+    "app/app/claim-guards.js": "80d2e053ba8be6631c70c5141f7e862f9db84e82db55f713cf09efcb29882b09",
+    "app/app/semantic-spans.js": "7a34ee062b98c5bdfb29cde488d842dab9ebd59bdf6e872f356d7758f869782b",
+    "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda"
+  },
+  "rubric": {
+    "meaning": "2=equivalent relations; 1=minor ambiguity; 0=wrong relation/critical concept",
+    "completeness": "2=all content; 1=minor omission; 0=missing clause/qualifier/negation",
+    "terminology": "2=domain-correct; 1=awkward but understandable; 0=wrong scientific sense",
+    "fluency": "2=natural; 1=understandable grammatical defects; 0=unintelligible",
+    "numbersNotation": "2=all preserved; 1=format only; 0=changed/dropped",
+    "consistency": "2=consistent; 1=minor variation; 0=contradiction"
+  },
+  "criticalDefinition": "Changed scientific assertion, causal or logical relation, qualifier, polarity, numeric identity, or unprocessed/rejected prose in final required corpus. Guard pass is not an accuracy score.",
+  "acceptance": "Zero critical errors on this fixed corpus, all six dimensions evaluated; human bilingual review remains separately PENDING.",
+  "provenance": "AI-authored corpus and AI assessments only. No independent human approvals; this is not population accuracy."
+}

@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "fileName": "digital-id.pdf",
+  "fileSize": 23118,
+  "numPages": 1,
+  "processedRange": [
+    1,
+    1
+  ],
+  "metadata": {
+    "title": "CP18 SYNTHETIC FIXTURE: Indonesian scientific prose",
+    "author": "Semantik Setara regression fixtures (CC0)",
+    "subject": "unspecified",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "creationDate": "D:20000101000000+00'00'",
+    "language": ""
+  },
+  "pages": [
+    {
+      "number": 1,
+      "width": 595,
+      "height": 842,
+      "source": "pdf-text",
+      "columnCount": 1,
+      "blocks": [
+        {
+          "id": "p0001-b0001",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Hasil ilmiah",
+          "bbox": [
+            40,
+            41.78955078125,
+            63.948241499999995,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            0
+          ],
+          "sourceItems": [
+            {
+              "id": 0,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                41.78955078125,
+                63.94824149999999,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Hasil ilmiah"
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0002",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Intervensi tidak meningkatkan kelangsungan hidup.",
+          "bbox": [
+            40,
+            76.78955078125,
+            286.9936575,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            1
+          ],
+          "sourceItems": [
+            {
+              "id": 1,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                76.78955078125,
+                286.9936575,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Intervensi tidak meningkatkan kelangsungan hidup."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0003",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Regresi linear mengestimasi ukuran efek.",
+          "bbox": [
+            40,
+            111.78955078125,
+            229.94189789999996,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            2
+          ],
+          "sourceItems": [
+            {
+              "id": 2,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                111.78955078125,
+                229.9418979,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Regresi linear mengestimasi ukuran efek."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0004",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Konsentrasi sampel adalah 10 μM.",
+          "bbox": [
+            40,
+            146.78955078125,
+            189.94336240000004,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            3
+          ],
+          "sourceItems": [
+            {
+              "id": 3,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                146.78955078125,
+                189.94336240000004,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Konsentrasi sampel adalah 10 μM."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0005",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Bukti masih belum pasti.",
+          "bbox": [
+            40,
+            181.78955078125,
+            136.7749031,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            4
+          ],
+          "sourceItems": [
+            {
+              "id": 4,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                181.78955078125,
+                136.7749031,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Bukti masih belum pasti."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        },
+        {
+          "id": "p0001-b0006",
+          "page": 1,
+          "type": "paragraph",
+          "text": "Himpunan penyelesaian adalah ∅.",
+          "bbox": [
+            40,
+            216.78955078125,
+            190.54492600000006,
+            11
+          ],
+          "source": "pdf-text",
+          "column": 0,
+          "rotated": false,
+          "confidence": 0.96,
+          "issues": [],
+          "sourceItemIds": [
+            5
+          ],
+          "sourceItems": [
+            {
+              "id": 5,
+              "source": "pdf-text",
+              "bbox": [
+                40,
+                216.78955078125,
+                190.54492600000006,
+                11
+              ]
+            }
+          ],
+          "translatable": true,
+          "sourceLines": [
+            "Himpunan penyelesaian adalah ∅."
+          ],
+          "pageImagePath": "assets/halaman-0001.jpg"
+        }
+      ],
+      "imagePath": "assets/halaman-0001.jpg",
+      "preserveVisualSource": false,
+      "imageBlob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "warnings": [],
+      "ocrConfidence": null,
+      "coverageRegions": [],
+      "mathEvidence": {
+        "regions": [],
+        "vectorEvidence": {
+          "usedVectorIds": [],
+          "unsupported": []
+        }
+      },
+      "coverageStatus": "digital-text",
+      "sourceItemCount": 6,
+      "coveredItemCount": 6,
+      "referenceSection": false,
+      "sourceTextCharacters": 188
+    }
+  ],
+  "blocks": [
+    {
+      "id": "p0001-b0001",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Hasil ilmiah",
+      "bbox": [
+        40,
+        41.78955078125,
+        63.948241499999995,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        0
+      ],
+      "sourceItems": [
+        {
+          "id": 0,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            41.78955078125,
+            63.94824149999999,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Hasil ilmiah"
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0002",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Intervensi tidak meningkatkan kelangsungan hidup.",
+      "bbox": [
+        40,
+        76.78955078125,
+        286.9936575,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        1
+      ],
+      "sourceItems": [
+        {
+          "id": 1,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            76.78955078125,
+            286.9936575,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Intervensi tidak meningkatkan kelangsungan hidup."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0003",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Regresi linear mengestimasi ukuran efek.",
+      "bbox": [
+        40,
+        111.78955078125,
+        229.94189789999996,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        2
+      ],
+      "sourceItems": [
+        {
+          "id": 2,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            111.78955078125,
+            229.9418979,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Regresi linear mengestimasi ukuran efek."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0004",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Konsentrasi sampel adalah 10 μM.",
+      "bbox": [
+        40,
+        146.78955078125,
+        189.94336240000004,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        3
+      ],
+      "sourceItems": [
+        {
+          "id": 3,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            146.78955078125,
+            189.94336240000004,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Konsentrasi sampel adalah 10 μM."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0005",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Bukti masih belum pasti.",
+      "bbox": [
+        40,
+        181.78955078125,
+        136.7749031,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        4
+      ],
+      "sourceItems": [
+        {
+          "id": 4,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            181.78955078125,
+            136.7749031,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Bukti masih belum pasti."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    },
+    {
+      "id": "p0001-b0006",
+      "page": 1,
+      "type": "paragraph",
+      "text": "Himpunan penyelesaian adalah ∅.",
+      "bbox": [
+        40,
+        216.78955078125,
+        190.54492600000006,
+        11
+      ],
+      "source": "pdf-text",
+      "column": 0,
+      "rotated": false,
+      "confidence": 0.96,
+      "issues": [],
+      "sourceItemIds": [
+        5
+      ],
+      "sourceItems": [
+        {
+          "id": 5,
+          "source": "pdf-text",
+          "bbox": [
+            40,
+            216.78955078125,
+            190.54492600000006,
+            11
+          ]
+        }
+      ],
+      "translatable": true,
+      "sourceLines": [
+        "Himpunan penyelesaian adalah ∅."
+      ],
+      "pageImagePath": "assets/halaman-0001.jpg"
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/halaman-0001.jpg",
+      "blob": {
+        "bytes": 10305,
+        "type": "image/jpeg"
+      },
+      "page": 1,
+      "kind": "page"
+    }
+  ],
+  "warnings": [],
+  "sourceItemCount": 6,
+  "coveredItemCount": 6,
+  "sourceTextCharacters": 188,
+  "assetsBytes": 10305,
+  "createdAt": "2026-11-13T07:43:41.360Z"
+}

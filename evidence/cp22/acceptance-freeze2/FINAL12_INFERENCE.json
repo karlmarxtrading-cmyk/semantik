@@ -1,0 +1,968 @@
+{
+  "status": "COMPLETED_EXECUTION_NOT_SEMANTIC_APPROVAL",
+  "freeze": {
+    "createdUTC": "2026-11-14T00:10:09.686960+00:00",
+    "build": {
+      "release": "cp22-f995042b7da24e42",
+      "version": "0.22.0",
+      "sourceHash": "f995042b7da24e42815c423af35da260ded94a6e7a6bfde6a4c54d68018d0752",
+      "modelHashes": {
+        "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+        "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+      },
+      "base": "/r/f995042b7da24e42/"
+    },
+    "decoder": "greedy, maxInput 128 / maxOutput 256 tokens (unchanged worker engine.worker-4c3dcfee.js)",
+    "modelFingerprints": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "files": {
+      "app/MODEL_NOTICE.txt": "ca3bca390343ab4f657d47aebf122ea2c3a0931f8e7b204bc1f8d7cebc509c31",
+      "app/README.md": "50cccdace58b501eabf50e0efc59e6c53943483cd393c33afda098602d9649d7",
+      "app/_headers": "4020ccab3179a61a3411f4064f150e4f73ba3eaa7115e35e6072f50b1112c565",
+      "app/app/academic-phrases.js": "7c210a4a6ccda7b5c5107988bb0da2f60b586b5234f6e84f4e0714a3a282780d",
+      "app/app/build-info.js": "90304e18298d7ccc1650c45dc3bc69985c3d55a702699df70c2e44b55f5ac61d",
+      "app/app/claim-guards.js": "8f111ff3686e912d3041f80c584866c865d58f26ef635ea92d451bb7eee8483e",
+      "app/app/coverage.js": "d091b299456cf611d57b56b59d5211cca746a38e68c3c3033e2eadc58ccd6b85",
+      "app/app/export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+      "app/app/layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+      "app/app/layout.worker.js": "46dbe008002ebf02fc97e1f89c1965528e5c905c7c796ce20127945e7636f331",
+      "app/app/long-document.js": "c398d5f5eb5190114af81219a85792e5d9fc4c5d0f5fd499dd323233486c0203",
+      "app/app/main.js": "9e662687c0ed4d3f5a02f2de496f85a729e00469530c1787ba482a3f0be3d73f",
+      "app/app/markdown-math.js": "d8a6a18e4d525223fb45cb438ddb3b0b23351e146152289a9b16e1fd7b497e8a",
+      "app/app/math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+      "app/app/metadata-language.js": "4cb73e0dae69c5d0c72e9f9c0a59480ebe1d16e2218bc942c25c722892b435ca",
+      "app/app/offline.js": "341c5b1de7a004906e7b00a878fe394480a9897a63999daa0e1e574f7ece7904",
+      "app/app/pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+      "app/app/semantic-spans.js": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+      "app/app/storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+      "app/app/styles.css": "41814cc55d0332685a5fbb110f3c89896a1ec021e37935e1825d3f8d59aee24a",
+      "app/app/translation.js": "1e277f5db2278b6889789df6caf810b5d2710158642494e17c4f9cd38f0fecbb",
+      "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda",
+      "app/icon.svg": "f9753906c0f5200d6c620e92e069eca62b19586fb470a3982cbbd9b7d5da3335",
+      "app/index.html": "ff4dc6cfdf2250e7a243b81e6b743cf594a30d2f832dda643be15da1ce2d742c",
+      "app/manifest.webmanifest": "833d482246ffd8f354db941abd1e388c22630c8cc54aac6f6e21c07259bd922d",
+      "app/offline-assets.json": "0630ad870aa12469cbaffb351b9f86a6f3baf08e7d9df1c22b1489ec8502d522",
+      "app/sw.js": "e9fe32f8e5db6b8567baf5605f40fa2b12449c60ce3039c3698011402e573a9c",
+      "scripts/build.py": "d7d0ed0b77e7b9c1e98f04aa0de2ebd5b5e5786e1b10eeb17b1b5d45f40250e0",
+      "scripts/build-with-history.py": "689d9f9d154ede7d29819f36c87c45d100c85ef6b6fa8d615c5a9e91864538f1",
+      "scripts/sw-template.js": "f09aecea076823570750aa01f3c437785f49b7092afb48ac8083a6b987bc9243",
+      "tests/cp22-coverage-unit.mjs": "9517116a6a74d7c6876ed127887e5a772fcb2deec22679f79e19d50ea76ea915",
+      "tests/cp22-offline-release.mjs": "e88c2694a4cfbfbd33912185f10a53ed84a44a45def6602e841b2e5b86464e7b",
+      "tests/cp20-semantic-runtime.mjs": "8d14f175e23f7f84b945ec25199d81ec14609045bd981ba975ce8a2c0daac694"
+    },
+    "status": "CP22_FINAL_PRODUCT_FROZEN",
+    "previousFreeze": "../acceptance/FREEZE.json",
+    "reasonForChange": "Post-acceptance robustness only: verifier load failure degrades visibly; offline readiness combines both models. Translation path unchanged when verifier is available (confirmed by regression on seen corpora).",
+    "rule": "Any change to these files after this point invalidates acceptance results produced against this freeze."
+  },
+  "corpusMethod": "REGRESSION ONLY: corpus already seen (not an acceptance holdout).",
+  "build": {
+    "sourceRoot": "/home/claude/w/CLAUDE_CP21_WORK/cp21/dist/r/f995042b7da24e42",
+    "adapterSHA256": "1e277f5db2278b6889789df6caf810b5d2710158642494e17c4f9cd38f0fecbb",
+    "rulesSHA256": "8f111ff3686e912d3041f80c584866c865d58f26ef635ea92d451bb7eee8483e",
+    "spansSHA256": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "workerSHA256": "f945e83285aeff7246e5736c6e0be5b018195f827b3fe7ac08df18b264d75c37"
+  },
+  "root": "/home/claude/w/CLAUDE_CP21_WORK/cp21/dist/r/f995042b7da24e42",
+  "method": "Actual local ONNX/WASM final deploy bytes in Node worker bridge; not browser or human semantic proof",
+  "rows": [
+    {
+      "id": "CP21-F01",
+      "direction": "en-id",
+      "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence. The order of the implication matters.",
+      "text": "Setiap konvergen barisan adalah terbatas, tetapi keterbatasan saja tidak menjamin kekonvergenan. Urutan dari implikasi penting.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 50,
+      "outputTokens": 40,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 50,
+        "outputTokens": 40,
+        "verificationCalls": 3,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Every convergent sequence is bounded, but boundedness alone does not guarantee convergence."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The order of the implication matters."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2925.3321370000003,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F02",
+      "direction": "en-id",
+      "source": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+      "text": "The sample was weighed before the solvent was added. The reported mass therefore excludes the solvent rather than describing the final mixture.",
+      "status": "review",
+      "outcome": "rejected",
+      "retryable": false,
+      "recovery": "change-source-or-glossary",
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 36,
+        "outputTokens": 28,
+        "verificationCalls": 1,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The sample was weighed before the solvent was added."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The reported mass therefore excludes the solvent rather than describing the final mixture."
+        }
+      ],
+      "issues": [
+        "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+      ],
+      "diagnostics": [
+        {
+          "stage": "translation",
+          "name": "Error",
+          "message": "Periksa negasi: bentuk negatif mungkin berubah.",
+          "segmentSource": "The reported mass therefore excludes the solvent rather than describing the final mixture.",
+          "candidateText": "Oleh karena itu, laporan massa tidak menyebutkan pelarutnya ketimbang menggambarkan campuran terakhir.",
+          "rawCandidate": "Oleh karena itu, laporan massa tidak menyebutkan pelarutnya ketimbang menggambarkan campuran terakhir."
+        }
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "sourcePreserved": true,
+      "semanticVerified": false,
+      "ms": 1360.0956940000015,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F03",
+      "direction": "en-id",
+      "source": "The odds ratio is not the same as the risk ratio. They can differ substantially when the event is common.",
+      "text": "Rasio peluang tidak sama dengan rasio risiko. Mereka bisa sangat berbeda jika peristiwa itu umum.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 25,
+      "outputTokens": 18,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 25,
+        "outputTokens": 18,
+        "verificationCalls": 4,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The odds ratio is not the same as the risk ratio."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "They can differ substantially when the event is common."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1383.173836,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F04",
+      "direction": "en-id",
+      "source": "A fall in marginal cost does not necessarily lower average cost immediately. The current production level matters for that comparison.",
+      "text": "Jatuhnya biaya marjinal tidak selalu menurunkan biaya rata-rata segera. Tingkat produksi saat ini penting untuk perbandingan itu.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 31,
+      "outputTokens": 30,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 31,
+        "outputTokens": 30,
+        "verificationCalls": 5,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "A fall in marginal cost does not necessarily lower average cost immediately."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "The current production level matters for that comparison."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2218.7088380000005,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F05",
+      "direction": "en-id",
+      "source": "The instrument could distinguish the two signals only after averaging repeated measurements. This does not mean that either signal became stronger.",
+      "text": "Instrumen ini dapat membedakan dua sinyal hanya setelah rata-rata pengukuran berulang. Ini tidak berarti bahwa baik sinyal menjadi lebih kuat.",
+      "status": "review",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [
+        "Konsep sumber dipulihkan dengan istilah terkunci (averaging → rata-rata); periksa ketepatan istilah."
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 28,
+      "outputTokens": 23,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 48,
+        "outputTokens": 41,
+        "verificationCalls": 13,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The instrument could distinguish the two signals only after averaging repeated measurements."
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 1,
+          "source": "The instrument could distinguish the two signals only after averaging repeated measurements.",
+          "terms": [
+            "averaging→rata-rata"
+          ],
+          "gapsBefore": [
+            "averaging"
+          ],
+          "result": "accepted",
+          "candidate": "Instrumen ini dapat membedakan dua sinyal hanya setelah rata-rata pengukuran berulang.",
+          "gapsAfter": []
+        },
+        {
+          "strategy": "protected-context",
+          "source": "This does not mean that either signal became stronger."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 3617.146042000002,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F06",
+      "direction": "en-id",
+      "source": "The committee postponed its decision because the evidence was incomplete. Postponement should not be interpreted as rejection of the hypothesis.",
+      "text": "Komite menunda keputusannya karena bukti tidak lengkap. Penundaan tidak boleh ditafsirkan sebagai penolakan hipotesis.",
+      "status": "review",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [
+        "Konsep sumber dipulihkan dengan istilah terkunci (Postponement → penundaan); periksa ketepatan istilah."
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 27,
+      "outputTokens": 18,
+      "metrics": {
+        "inferenceCalls": 3,
+        "cacheHits": 0,
+        "inputTokens": 44,
+        "outputTokens": 30,
+        "verificationCalls": 5,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "The committee postponed its decision because the evidence was incomplete."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Postponement should not be interpreted as rejection of the hypothesis."
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 1,
+          "source": "Postponement should not be interpreted as rejection of the hypothesis.",
+          "terms": [
+            "Postponement→penundaan"
+          ],
+          "gapsBefore": [
+            "Postponement"
+          ],
+          "result": "accepted",
+          "candidate": "Penundaan tidak boleh ditafsirkan sebagai penolakan hipotesis.",
+          "gapsAfter": []
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2162.305832000002,
+      "actualEngine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F07",
+      "direction": "id-en",
+      "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02. Pernyataan ini tidak menentukan perkiraan mana yang lebih besar.",
+      "text": "Absolute value difference between the two estimates less than 0.02. This statement does not determine which estimates are greater.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 27,
+      "outputTokens": 26,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 27,
+        "outputTokens": 26,
+        "verificationCalls": 2,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Nilai mutlak selisih kedua perkiraan lebih kecil dari 0.02."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Pernyataan ini tidak menentukan perkiraan mana yang lebih besar."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 2042.3266930000027,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F08",
+      "direction": "id-en",
+      "source": "Zat padat itu larut tanpa bereaksi dengan pelarut. Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia.",
+      "text": "The solid matter dissolves without reacting with the solvent. Loss of solid form does not prove chemical reaction.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 23,
+      "outputTokens": 24,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 23,
+        "outputTokens": 24,
+        "verificationCalls": 5,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Zat padat itu larut tanpa bereaksi dengan pelarut."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Hilangnya bentuk padat tidak membuktikan terjadinya reaksi kimia."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1660.527141999999,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F09",
+      "direction": "id-en",
+      "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi. Kedua sumber kesalahan perlu dibedakan.",
+      "text": "Larger sample shrinks random errors but does not automatically remove bias selection. Both sources of error need to be distinguished.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 29,
+      "outputTokens": 28,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 29,
+        "outputTokens": 28,
+        "verificationCalls": 2,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Sampel yang lebih besar memperkecil galat acak tetapi tidak otomatis menghapus bias seleksi."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Kedua sumber kesalahan perlu dibedakan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1685.5075290000023,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F10",
+      "direction": "id-en",
+      "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli. Harga barang yang dibeli rumah tangga juga perlu diperhitungkan.",
+      "text": "The nominal income increase is not necessarily increasing purchasing power. Price goods purchased households also need to be calculated.",
+      "status": "translated",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 30,
+      "outputTokens": 30,
+      "metrics": {
+        "inferenceCalls": 2,
+        "cacheHits": 0,
+        "inputTokens": 30,
+        "outputTokens": 30,
+        "verificationCalls": 2,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Kenaikan pendapatan nominal belum tentu meningkatkan daya beli."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Harga barang yang dibeli rumah tangga juga perlu diperhitungkan."
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 1890.7747660000023,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F11",
+      "direction": "id-en",
+      "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil. Penyembunyian informasi itu bertujuan mengurangi bias penilaian.",
+      "text": "The observer does not know treatment group attendee when assessing results. The information's concealment is intended to reduce assessment bias.",
+      "status": "review",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [
+        "Konsep sumber dipulihkan dengan istilah terkunci (kelompok perlakuan → treatment group); periksa ketepatan istilah.",
+        "Konsep sumber dipulihkan dengan istilah terkunci (bias penilaian → assessment bias); periksa ketepatan istilah."
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 23,
+      "outputTokens": 29,
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 52,
+        "outputTokens": 64,
+        "verificationCalls": 15,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil."
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 1,
+          "source": "Pengamat tidak mengetahui kelompok perlakuan peserta saat menilai hasil.",
+          "terms": [
+            "kelompok perlakuan→treatment group"
+          ],
+          "gapsBefore": [
+            "perlakuan"
+          ],
+          "result": "accepted",
+          "candidate": "The observer does not know treatment group attendee when assessing results.",
+          "gapsAfter": []
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Penyembunyian informasi itu bertujuan mengurangi bias penilaian."
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 1,
+          "source": "Penyembunyian informasi itu bertujuan mengurangi bias penilaian.",
+          "terms": [
+            "bias penilaian→assessment bias"
+          ],
+          "gapsBefore": [
+            "penilaian"
+          ],
+          "result": "accepted",
+          "candidate": "The information's concealment is intended to reduce assessment bias.",
+          "gapsAfter": []
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 4434.425933000006,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    },
+    {
+      "id": "CP21-F12",
+      "direction": "id-en",
+      "source": "Asumsi independensi digunakan dalam penurunan rumus. Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+      "text": "Assumed independence used in derivation formula. If observation interdependent, the formula requires additional justification.",
+      "status": "review",
+      "outcome": "translated",
+      "retryable": false,
+      "issues": [
+        "Konsep sumber dipulihkan dengan istilah terkunci (rumus tersebut → the formula; saling bergantung → interdependent); periksa ketepatan istilah."
+      ],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      },
+      "inputTokens": 25,
+      "outputTokens": 26,
+      "metrics": {
+        "inferenceCalls": 4,
+        "cacheHits": 0,
+        "inputTokens": 58,
+        "outputTokens": 61,
+        "verificationCalls": 11,
+        "uniqueInputs": 2
+      },
+      "attempts": [
+        {
+          "strategy": "protected-context",
+          "source": "Asumsi independensi digunakan dalam penurunan rumus."
+        },
+        {
+          "strategy": "protected-context",
+          "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan."
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 1,
+          "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+          "terms": [
+            "rumus tersebut→the formula"
+          ],
+          "gapsBefore": [
+            "rumus"
+          ],
+          "result": "rejected-gaps-not-reduced",
+          "candidate": "If observations depend, the formula requires additional justification.",
+          "gapsAfter": [
+            "saling"
+          ]
+        },
+        {
+          "strategy": "concept-repair",
+          "round": 2,
+          "source": "Jika pengamatan saling bergantung, rumus tersebut memerlukan pembenaran tambahan.",
+          "terms": [
+            "rumus tersebut→the formula",
+            "saling bergantung→interdependent"
+          ],
+          "gapsBefore": [
+            "rumus"
+          ],
+          "result": "accepted",
+          "candidate": "If observation interdependent, the formula requires additional justification.",
+          "gapsAfter": []
+        }
+      ],
+      "method": "local-model-with-protected-spans",
+      "semanticVerified": false,
+      "ms": 4502.243310999998,
+      "actualEngine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2|cp18-marker-boundaries-v1|cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "offlineReady": true,
+        "storageMode": "persistent",
+        "storageWarning": "",
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false,
+        "adapterRules": "cp22-concept-coverage-v1+cp22-roundtrip-concept-coverage-v1",
+        "conceptVerification": "round-trip+isolated-term"
+      }
+    }
+  ],
+  "totalMs": 42477.227849999996,
+  "counts": {
+    "cases": 12,
+    "translated": 11,
+    "rejected": 1,
+    "failed": 0,
+    "inferenceCalls": 30,
+    "cacheHits": 0
+  }
+}

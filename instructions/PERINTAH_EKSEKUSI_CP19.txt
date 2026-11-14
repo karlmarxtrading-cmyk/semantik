@@ -1,0 +1,838 @@
+# PERINTAH EKSEKUSI FINAL — SEMANTIK SETARA CP19
+
+## SELESAIKAN WEBSITE PDF SCIENTIFIC JOURNAL TRANSLATOR SAMPAI PRODUCTION READY
+
+**Kepada:** ChatGPT Work Astra — Tingkat Penalaran Sangat Tinggi
+
+**Jenis pekerjaan:** Implementasi nyata, perbaikan kode, integrasi, pengujian, validasi ilmiah, dan penyerahan aplikasi siap deploy.
+
+**Target:** Cloudflare Pages — Static Website, Local-First PDF Translator.
+
+**Baseline wajib:** SEMANTIK SETARA CP18.
+
+**Prioritas mutlak:** Kebenaran matematika, kesetaraan makna ilmiah, kelengkapan pembacaan PDF, kesederhanaan pengalaman konsumen, dan kesiapan produksi yang dapat dibuktikan.
+
+---
+
+# I. PERINTAH UTAMA PEMILIK PRODUK
+
+Anda ditugaskan **menyelesaikan website SEMANTIK SETARA yang sudah tersedia hingga memenuhi seluruh kriteria penerimaan produksi**.
+
+Saya tidak meminta audit baru yang berhenti pada rekomendasi.
+
+Saya tidak meminta pembuatan prompt lanjutan.
+
+Saya tidak meminta mockup atau demonstrasi palsu.
+
+Saya meminta **website yang benar-benar berfungsi**, beserta source code hasil perbaikan, paket deployment, dan bukti pengujian.
+
+Anggap pekerjaan ini merupakan proyek profesional bernilai USD 5.000, dengan kewajiban kualitas, integritas data, kemampuan pemeliharaan, dan penyerahan hasil nyata.
+
+Mulailah dari source CP18. Jangan mengulang pembangunan dari nol tanpa alasan teknis yang dapat dibuktikan.
+
+Pertahankan semua implementasi CP18 yang sudah benar. Lakukan perubahan secara terarah, termasuk perubahan arsitektur internal bila diperlukan untuk memenuhi tujuan produk.
+
+## Keputusan bisnis yang tidak boleh diubah
+
+**Saya hanya menginginkan website untuk menerjemahkan jurnal ilmiah PDF dari bahasa Inggris ke Indonesia dan dari Indonesia ke Inggris, dengan penulisan matematika yang rapi.**
+
+Pengguna hanya perlu melakukan:
+
+**1. UPLOAD PDF**
+
+**2. TEKAN TERJEMAHKAN**
+
+**3. DOWNLOAD FILE .MD**
+
+Tidak boleh ada kewajiban pengguna untuk:
+
+- Mengedit setiap paragraf sebelum mengunduh.
+- Meninjau seluruh blok secara manual.
+- Mengatur glosarium agar penerjemahan dasar berhasil.
+- Mengonfigurasi model atau OCR.
+- Memahami checkpoint, shard model, atau worker.
+- Memilih beberapa metode ekspor.
+- Mengunduh ZIP tambahan untuk mendapatkan representasi matematika utama.
+- Mengunggah file JSON atau format dokumen lain.
+
+Semua pekerjaan teknis harus berlangsung otomatis di belakang antarmuka sederhana.
+
+**PERTAHANKAN LAZY INTERACTION.**
+
+**PERTAHANKAN PEMROSESAN LOKAL DI BROWSER.**
+
+**PERTAHANKAN PRIVASI DOKUMEN PENGGUNA.**
+
+**JANGAN MENAMBAHKAN BACKEND PENERJEMAHAN, API BERBAYAR, ATAU KETERGANTUNGAN CLOUD AI TANPA OTORISASI SAYA.**
+
+---
+
+# II. SUMBER DAN PERINTAH PEMERIKSAAN AWAL
+
+Buka dan baca sepenuhnya tiga lampiran berikut.
+
+**Sumber aplikasi:**
+
+`SEMANTIK_SETARA_CP18_CANDIDATE_NOT_PRODUCTION_READY(1).zip`
+
+Identitas menurut laporan audit:
+
+- Ukuran: 223.289.243 byte.
+- Total: 297 berkas.
+- SHA-256: `32743e819993a011c5ff4f34de90292a76c29d9963f1258542be5382965df2dc`
+
+**Laporan audit:**
+
+`LAPORAN_AUDIT_CP18_PDF_KE_MARKDOWN(1).pdf`
+
+**Bukti audit:**
+
+`BUKTI_AUDIT_CP18_PDF_KE_MARKDOWN(1).zip`
+
+Gunakan paket bukti untuk mempelajari input pengujian, keluaran model aktual, fixture PDF, hasil pemeriksaan validator, inventaris, skrip reproduksi, dan lokasi kode yang bermasalah.
+
+Sebelum bekerja:
+
+1. Verifikasi integritas ZIP sumber.
+2. Ekstrak tanpa menimpa sumber asli.
+3. Baca kode aplikasi yang relevan.
+4. Periksa dependensi, model, runtime, manifest, dan service worker.
+5. Jalankan reproduksi temuan audit.
+6. Tentukan perubahan kode yang diperlukan.
+7. Langsung implementasikan dan uji perbaikannya.
+
+Jadikan CP18 sebagai baseline sah. Jangan menggunakan CP17 sebagai pengganti karena CP18 sudah memuat sejumlah perbaikan yang harus dipertahankan.
+
+Buat ledger penutupan temuan, tetapi jangan menjadikannya pengganti implementasi.
+
+---
+
+# III. EMPAT KEGAGALAN UTAMA YANG WAJIB DISELESAIKAN
+
+## F01 — REKONSTRUKSI MATEMATIKA DARI PDF
+
+Audit membuktikan bahwa struktur matematika dapat rusak sebelum penerjemahan.
+
+Contoh:
+
+**Pada PDF:**
+
+`y = x²`
+
+**Hasil ekstraksi lama:**
+
+`y = x 2`
+
+Contoh lain:
+
+`z = aᵢ`
+
+berubah menjadi:
+
+`z = a i`
+
+Pecahan bertingkat terpisah menjadi beberapa blok, batas integral hilang, dan matriks kehilangan hubungan antara elemen serta tanda kurungnya.
+
+**PERINTAH:**
+
+Perbaiki mesin pembacaan struktur matematika, bukan hanya model penerjemah.
+
+Implementasikan pendekatan yang menggabungkan:
+
+- Informasi geometri PDF.
+- Posisi karakter dan baseline.
+- Hubungan superskrip dan subskrip.
+- Garis pecahan dan struktur pembilang/penyebut.
+- Elemen vektor PDF.
+- Pengelompokan simbol matematika.
+- Identifikasi wilayah matematika.
+- OCR matematika lokal bila tersedia dan terbukti layak.
+- Representasi terstruktur yang dapat divalidasi.
+- Pembandingan visual hasil dengan PDF sumber.
+
+Cakupan wajib meliputi:
+
+- Pangkat dan indeks.
+- Pecahan sederhana maupun bertingkat.
+- Akar.
+- Integral dan batasnya.
+- Sigma dan notasi penjumlahan.
+- Limit.
+- Turunan dan turunan parsial.
+- Matriks.
+- Sistem persamaan.
+- Nilai mutlak.
+- Pertidaksamaan.
+- Vektor.
+- Notasi himpunan.
+- Formula di dalam paragraf.
+- Formula di dalam tabel.
+- Nomor persamaan.
+
+Jangan mengubah teks datar yang salah menjadi LaTeX lalu menganggap rumus berhasil direkonstruksi.
+
+Misalnya, bila PDF berisi pecahan:
+
+`f(x) = (x+1)/(x-1)`
+
+dengan garis pecahan, hasil Markdown harus memakai struktur yang benar, misalnya:
+
+`f(x)=\frac{x+1}{x-1}`
+
+Bukan meratakannya menjadi urutan teks yang ambigu.
+
+**Kriteria penerimaan F01:**
+
+Semua fixture matematika pada paket audit harus direkonstruksi dengan struktur yang benar, kemudian dirender dan dibandingkan dengan PDF.
+
+Formula yang tidak dapat direkonstruksi secara andal harus ditandai sebagai tidak terverifikasi. Jangan mengarang simbol atau menyatakan formula rusak sebagai benar.
+
+---
+
+## F02 — PERLINDUNGAN NOTASI MATEMATIKA DAN ILMIAH
+
+Audit menemukan contoh aktual:
+
+**Input:**
+
+`Given f(x)=x², the derivative is f′(x)=2x.`
+
+**Output lama:**
+
+`Mengingat f(x)=x², turunan adalah fåx)=2x.`
+
+Pada arah sebaliknya, `f′(x)` berubah menjadi `f-told)`.
+
+Kesalahan tersebut lolos tanpa peringatan.
+
+**PERINTAH:**
+
+Pisahkan notasi ilmiah dari prosa sebelum inferensi.
+
+Gunakan perlindungan berdasarkan tipe dan struktur, bukan hanya regex sederhana.
+
+Lindungi identitas:
+
+- Variabel matematika dan variasi Unicode-nya.
+- Prime, double prime, aksen, dan tanda turunan.
+- Operator matematika.
+- Bilangan dan relasi bilangan dengan variabel.
+- Formula kimia dan muatan ion.
+- Nilai statistik.
+- Satuan dan prefiks satuan.
+- DOI, URL, dan identifier ilmiah.
+- Simbol himpunan.
+- Rentang dan interval.
+- Referensi silang dan nomor persamaan.
+
+Contoh kasus wajib:
+
+`f′(x)` tidak boleh menjadi `fåx)`.
+
+`∅` tidak boleh menjadi `å` atau `°`.
+
+`10 μL` tidak boleh berubah menjadi `10 nL`.
+
+`10 eV` tidak boleh berubah menjadi `10 keV`.
+
+`Ca2+` tidak boleh menjadi `Ca3+`.
+
+`z̄` tidak boleh menjadi `z`.
+
+Simbol `<`, `>`, `≤`, dan `≥` harus dikenali konsisten.
+
+Lakukan pemeriksaan struktur dan identitas setelah terjemahan.
+
+Jika terdapat perubahan kritis, lakukan pemulihan otomatis yang terkontrol.
+
+**Jangan melemahkan validator demi menghasilkan status PASS.**
+
+---
+
+## F03 — PENINGKATAN KUALITAS PENERJEMAHAN ILMIAH DUA ARAH
+
+Model CP18 masih menghasilkan terjemahan yang mengubah makna.
+
+Contoh:
+
+`The trial failed to demonstrate non-inferiority.`
+
+diterjemahkan menjadi:
+
+`Pengadilan gagal menunjukkan non-inferiority.`
+
+Kata *trial* dalam konteks penelitian klinis tidak boleh dipahami sebagai pengadilan.
+
+Contoh lain:
+
+`Tidak ada bilangan riil yang memenuhi kedua syarat.`
+
+berubah menjadi:
+
+`No real number satisfies second condition.`
+
+Frasa *kedua syarat* berarti *both conditions*, bukan *the second condition*.
+
+Ini merupakan perubahan pernyataan logis, bukan sekadar kekurangan gaya.
+
+**PERINTAH:**
+
+Perkuat mesin penerjemah akademik Indonesia–Inggris dan Inggris–Indonesia.
+
+Lakukan evaluasi kualitas nyata terhadap model CP18.
+
+Jika model yang tersedia tidak mampu memenuhi kriteria domain, evaluasi peningkatan atau penggantian model lokal yang kompatibel dengan browser, ketentuan lisensi, batas memori, dan distribusi Cloudflare Pages.
+
+Jangan memilih model hanya karena lebih baru atau lebih besar.
+
+Perubahan model harus dibuktikan lebih baik melalui benchmark yang sama, dengan pemeriksaan regresi.
+
+Cakupan domain minimal:
+
+- Matematika.
+- Fisika.
+- Kimia.
+- Biologi.
+- Kedokteran.
+- Statistika.
+- Ekonomi.
+- Ilmu sosial.
+- Metodologi penelitian.
+
+Periksa secara khusus:
+
+- Negasi.
+- Kuantor universal dan eksistensial.
+- Modalitas.
+- Hubungan sebab-akibat.
+- Korelasi versus kausalitas.
+- Arah perubahan.
+- Kelompok perlakuan.
+- Hubungan nilai dan satuan.
+- Hipotesis.
+- Interval kepercayaan.
+- Ukuran efek.
+- Non-inferioritas.
+- Istilah teknis sesuai disiplin ilmu.
+- Kesesuaian konteks antarparagraf.
+
+Gunakan glosarium akademik internal yang teruji jika membantu, tetapi jangan menggantungkan kualitas hanya pada substitusi kata.
+
+Model harus memahami hubungan kalimat, bukan sekadar mempertahankan angka yang muncul.
+
+Bangun korpus pengujian bilingual yang representatif. Pisahkan data pengembangan dan data penerimaan.
+
+Lakukan penilaian manusia yang kompeten apabila akses tersedia. Jika tidak tersedia, dokumentasikan bahwa validasi manusia masih terbuka dan jangan mengklaim akurasi semantik universal.
+
+**Kriteria penerimaan F03:**
+
+Seluruh kasus kesalahan kritis yang telah dibuktikan harus diperbaiki dan lulus pengujian ulang.
+
+Terjemahan baru dari PDF pengujian harus menunjukkan bahwa makna yang sebelumnya berubah sudah ditangani dengan benar.
+
+Kualitas harus dievaluasi menggunakan kasus tambahan yang belum dipakai untuk membuat aturan perbaikan.
+
+---
+
+## F04 — MARKDOWN MATEMATIKA YANG BENAR DAN RAPI
+
+Audit menemukan exporter CP18 menggunakan blok kode dan backticks untuk rumus matematika.
+
+Akibatnya, rumus tidak tampil sebagai matematika pada renderer yang mendukung LaTeX.
+
+**PERINTAH:**
+
+Jadikan satu file `.md` sebagai keluaran utama.
+
+Gunakan format Markdown matematika yang ditetapkan secara eksplisit:
+
+- `$...$` untuk matematika inline.
+- `$$...$$` untuk persamaan display.
+- LaTeX yang valid untuk ekspresi matematika.
+- Heading Markdown sesuai struktur jurnal.
+- Tabel Markdown yang benar.
+- Sitasi dan DOI tetap terlacak.
+- Judul, abstrak, metodologi, hasil, pembahasan, kesimpulan, dan referensi tertata.
+
+Tetapkan renderer kompatibel yang didukung, lalu uji keluaran sebenarnya pada renderer tersebut.
+
+Jangan memasukkan ekspresi LaTeX yang seharusnya dirender ke dalam code fence atau backticks.
+
+Jangan mengganti simbol yang tidak dikenali dengan simbol hasil tebakan.
+
+Buat strategi eksplisit untuk persamaan dan gambar ilmiah yang tidak dapat direkonstruksi.
+
+Untuk elemen matematika utama, utamakan LaTeX terverifikasi yang mandiri dalam `.md`.
+
+Untuk ilustrasi raster, jelaskan cakupan format satu file dan uji metode penyematan yang benar-benar didukung renderer sasaran. Jangan diam-diam membuang gambar penting atau membuat referensi ke file yang tidak disertakan.
+
+Keluaran utama tidak boleh bergantung pada ZIP tambahan agar persamaan matematikanya dapat dipahami.
+
+**Kriteria penerimaan F04:**
+
+Markdown hasil penerjemahan baru harus benar-benar dirender dan diperiksa, bukan hanya diperiksa sebagai string.
+
+Tidak boleh ada rumus dengan struktur rusak yang diberi status berhasil.
+
+---
+
+# IV. PERBAIKAN LANJUTAN F05–F09
+
+## F05 — VALIDATOR DAN PEMULIHAN OTOMATIS
+
+Perbaiki false negative dan false positive pemeriksaan.
+
+Audit menunjukkan guard dapat melewatkan perubahan satuan, angka, aksen, serta arah efek.
+
+Sebaliknya, guard juga dapat menolak kandidat yang sebenarnya benar.
+
+Lakukan:
+
+- Pemeriksaan hubungan angka dengan entitas.
+- Pemeriksaan kelompok perlakuan.
+- Pemeriksaan arah efek.
+- Pemeriksaan negasi dan kuantor.
+- Pemeriksaan terminologi domain.
+- Pemeriksaan simbol dan persamaan.
+- Kalibrasi penolakan kandidat.
+- Percobaan ulang otomatis dengan strategi berbeda jika diperlukan.
+
+Batasi jumlah percobaan ulang.
+
+Jangan menjalankan kembali kandidat deterministik yang sama berulang kali tanpa mengubah strategi.
+
+Jika perbaikan otomatis tidak dapat memastikan hasil, hentikan klaim keberhasilan untuk bagian tersebut.
+
+Jangan menggunakan teks sumber sebagai target diam-diam lalu mengaku seluruhnya telah diterjemahkan.
+
+## F06 — CACHE HTTP DAN SERVICE WORKER
+
+Perbaiki aturan `_headers` yang menghasilkan konfigurasi `Cache-Control` bertumpuk.
+
+Pastikan shell, service worker, runtime, dan aset rilis memakai kebijakan cache yang konsisten.
+
+Uji respons HTTP aktual, bukan hanya keberadaan konfigurasi.
+
+## F07 — EFISIENSI MODEL LINTAS RILIS
+
+Model yang hash-nya identik tidak perlu diunduh ulang hanya karena versi aplikasi berubah.
+
+Gunakan fingerprint konten dan pemeriksaan integritas.
+
+Tetap pertahankan:
+
+- Konsistensi rilis.
+- Kemampuan rollback.
+- Penghapusan cache lama yang aman.
+- Perlindungan sesi aktif.
+- Operasi offline setelah persiapan lengkap.
+
+Jangan mengorbankan integritas untuk mengejar ukuran atau kecepatan.
+
+## F08 — BUILD YANG DAPAT DIREPRODUKSI
+
+Sediakan:
+
+- Source code.
+- Resep build.
+- Lockfile dependensi.
+- Sumber dan patch engine bila tersedia.
+- Manifest aset.
+- Hash model.
+- Daftar dependensi dan lisensi.
+- Bukti parity konversi model.
+- Test suite.
+- Laporan pengujian.
+
+Bukti harus terikat pada identitas rilis yang sama.
+
+## F09 — KONSISTENSI DOKUMENTASI
+
+Selaraskan versi library aktual, lokasi lisensi, manifest, README, dan pemberitahuan dependensi.
+
+Jangan meninggalkan dokumentasi versi lama.
+
+---
+
+# V. REVISI ANTARMUKA KONSUMEN
+
+Saya menginginkan **SIMPLE FOR CONSUMER, POWERFUL INTERNALLY**.
+
+Antarmuka utama hanya memiliki tiga tindakan.
+
+### 1. PILIH PDF
+
+Satu area unggah PDF yang bersih dan mudah digunakan.
+
+Validasi otomatis.
+
+Bahasa sumber dideteksi otomatis.
+
+Tujuan bahasa mengikuti arah lawan secara otomatis, dengan kontrol sederhana jika deteksi perlu diganti.
+
+Tidak ada impor JSON, TXT, atau ZIP.
+
+### 2. TERJEMAHKAN
+
+Satu tombol utama:
+
+**Terjemahkan**
+
+Setelah ditekan, aplikasi menjalankan seluruh tahapan internal secara otomatis:
+
+Pembacaan → OCR bila dibutuhkan → rekonstruksi matematika → terjemahan → validasi → pemulihan → penyusunan Markdown.
+
+Tampilkan satu progres yang dapat dipahami.
+
+Jangan tampilkan pesan teknis seperti nama shard, protected marker, stack trace, atau detail internal model kepada konsumen.
+
+### 3. UNDUH MARKDOWN
+
+Setelah pekerjaan memenuhi kriteria hasil, tampilkan satu tombol utama:
+
+**Unduh hasil .md**
+
+Nama berkas harus mengikuti nama dokumen dan bahasa tujuan.
+
+Contoh:
+
+`NAMA_JURNAL_EN_TO_ID.md`
+
+atau:
+
+`NAMA_JURNAL_ID_TO_EN.md`
+
+Pengguna tidak wajib memakai editor atau melakukan review manual agar alur normal selesai.
+
+Jika terdapat kegagalan kritis yang tidak bisa diselesaikan secara otomatis, tampilkan status yang jujur dan pesan singkat. Hasil parsial, jika disediakan, harus dibedakan secara jelas dari hasil lengkap.
+
+Jangan menganggap file berhasil hanya karena setiap blok sudah dilalui.
+
+Pengaturan teknis, diagnostik, dan fitur pengembangan boleh disimpan secara internal atau tersembunyi, tanpa mengganggu alur konsumen.
+
+---
+
+# VI. LAZY INTERACTION DAN PRIVASI ADALAH SYARAT MUTLAK
+
+Pertahankan seluruh pemrosesan isi jurnal di perangkat pengguna.
+
+Tidak boleh ada transmisi isi PDF, hasil OCR, teks ekstraksi, atau terjemahan ke layanan eksternal.
+
+Gunakan pemuatan bertahap:
+
+- Antarmuka ringan saat halaman pertama dibuka.
+- PDF reader ketika file dipilih.
+- OCR hanya ketika diperlukan.
+- Model bahasa hanya untuk arah yang digunakan.
+- Runtime tambahan sesuai kebutuhan.
+- Exporter ketika pekerjaan membutuhkan hasil.
+
+Tidak boleh ada pengunduhan kedua model secara otomatis saat halaman awal dibuka.
+
+Persiapan pertama harus termasuk dalam progres normal, bukan mengharuskan pengguna membuka menu teknis terlebih dahulu.
+
+Pertahankan fallback runtime yang layak, pembatasan sumber daya, pembatalan, dan penyimpanan yang benar.
+
+Uji bahwa dokumen tidak dikirim ke server menggunakan pemeriksaan permintaan jaringan nyata.
+
+---
+
+# VII. GERBANG PENERIMAAN PRODUKSI G1–G8
+
+Semua gerbang berikut wajib dinilai terhadap **build final yang sama**.
+
+## G1 — INPUT DAN USER FLOW
+
+PASS apabila:
+
+- Hanya input PDF diterima.
+- Pengguna bisa mengunggah PDF.
+- Pengguna menekan Terjemahkan.
+- Proses berjalan otomatis.
+- Hasil `.md` dapat diunduh.
+- Tidak ada tahapan teknis wajib.
+- Input non-PDF ditolak.
+
+## G2 — KELENGKAPAN PEMBACAAN PDF
+
+PASS apabila fixture dan korpus sasaran yang disepakati memenuhi kriteria cakupan:
+
+- PDF digital.
+- PDF scan.
+- PDF campuran teks dan gambar.
+- PDF dua kolom.
+- PDF dengan tabel.
+- PDF dengan formula.
+- PDF dengan footnote.
+- PDF dengan referensi dan sitasi.
+- PDF dengan layout kompleks dalam batas dukungan.
+
+Tidak boleh ada bagian penting yang hilang tanpa terdeteksi.
+
+## G3 — KEBENARAN STRUKTUR MATEMATIKA
+
+PASS apabila seluruh regresi kritis pada suite penerimaan lulus:
+
+- Pangkat.
+- Indeks.
+- Pecahan.
+- Integral.
+- Matriks.
+- Prime.
+- Aksen.
+- Formula inline.
+- Formula display.
+- Persamaan bernomor.
+- Variabel Unicode.
+- Simbol matematika.
+
+Verifikasi meliputi struktur sumber, hasil representasi, dan hasil render.
+
+## G4 — KESETARAAN MAKNA DUA ARAH
+
+PASS apabila:
+
+- Inggris → Indonesia berfungsi.
+- Indonesia → Inggris berfungsi.
+- Kasus perubahan makna kritis terdahulu telah diperbaiki.
+- Korpus penerimaan terpisah telah diuji.
+- Pemeriksaan negasi, kuantor, terminologi, dan relasi dilakukan.
+- Ada hasil evaluasi dengan metode dan batas yang jelas.
+
+Jangan mengklaim 100% akurasi semantik universal hanya berdasarkan kelulusan tes otomatis.
+
+## G5 — KUALITAS MARKDOWN AKHIR
+
+PASS apabila:
+
+- Satu file `.md` dapat diunduh.
+- Heading dan paragraf rapi.
+- Formula LaTeX valid.
+- Formula dirender dengan benar pada viewer sasaran.
+- Tabel dan referensi tertata.
+- DOI serta identifier tetap utuh.
+- Tidak ada diagnostic stack trace dalam naskah pembaca.
+- Rumus utama tidak bergantung pada ZIP tambahan.
+
+## G6 — BROWSER DAN KETAHANAN OPERASIONAL
+
+Lakukan pengujian nyata pada browser dan perangkat yang dinyatakan didukung.
+
+Uji:
+
+- Penggunaan normal.
+- PDF rusak.
+- PDF berpassword.
+- PDF besar sesuai batas.
+- Pembatalan.
+- Reload.
+- Resume.
+- Storage penuh.
+- Cache gagal.
+- Dua tab bersaing.
+- BFCache bila berlaku.
+- Update aplikasi.
+- Offline setelah persiapan.
+- Perangkat dengan memori terbatas.
+
+Laporkan hasil dan keterbatasan faktual.
+
+## G7 — DEPLOYMENT DAN BUILD
+
+PASS apabila:
+
+- Source dapat dibangun ulang.
+- Aset cocok manifest/hash.
+- Model termuat pada hosting statis.
+- Header keamanan benar.
+- MIME dan rentang respons file diperiksa.
+- Tidak ada mixed-version cache.
+- Rollback tersedia.
+- Paket deployment valid.
+
+Jika akses Cloudflare tersedia, lakukan pengujian deployment aktual sesuai izin.
+
+Jika tidak tersedia, siapkan ZIP deploy dan uji melalui hosting statis ekuivalen, lalu nyatakan pengujian Cloudflare langsung sebagai belum terverifikasi.
+
+## G8 — LAZY OPERATION
+
+PASS apabila:
+
+- Model tidak diunduh saat idle.
+- OCR tidak dimuat tanpa kebutuhan.
+- Hanya model arah yang dipakai disiapkan.
+- Pembaruan tidak mengulang unduhan bobot identik secara tidak perlu.
+- Cache dan sumber daya dibersihkan dengan aman.
+- Antarmuka tetap responsif pada perangkat sasaran.
+
+---
+
+# VIII. PENGUJIAN HASIL HARUS MENGGUNAKAN OUTPUT BARU
+
+Ini adalah ketentuan yang sangat penting.
+
+Jangan menggunakan Markdown lama sebagai satu-satunya bukti keberhasilan perbaikan.
+
+Gunakan PDF pengujian dari paket bukti, lalu jalankan aplikasi yang sudah direvisi untuk menghasilkan **Markdown baru**.
+
+Lakukan pengujian lengkap:
+
+**PDF → Ekstraksi → Matematika → Terjemahan → Validasi → Markdown → Render → Pemeriksaan hasil.**
+
+Lakukan untuk kedua arah bahasa.
+
+Gunakan PDF digital dan PDF dengan formula sebagai pengujian wajib.
+
+Tambahkan fixture jurnal nyata berlisensi/diizinkan yang relevan dan korpus penerimaan independen bila tersedia.
+
+Catat perbedaan sebelum dan sesudah perbaikan.
+
+Setiap perubahan yang memperbaiki satu kasus tidak boleh merusak kasus lain yang sudah benar.
+
+Tes yang sebelumnya gagal harus menjadi tes regresi permanen.
+
+Jangan membuat data PASS palsu, screenshot hasil simulasi yang diklaim pengujian nyata, atau laporan benchmark yang tidak dijalankan.
+
+---
+
+# IX. PERINTAH PENYELESAIAN DAN KELANJUTAN PEKERJAAN
+
+**JANGAN BERHENTI SETELAH AUDIT.**
+
+**JANGAN BERHENTI SETELAH MEMBUAT RENCANA.**
+
+**JANGAN BERHENTI SETELAH MEMPERBAIKI SATU ATAU DUA BUG.**
+
+**JANGAN MENGGANTI IMPLEMENTASI DENGAN PROMPT BARU.**
+
+Gunakan hasil pengujian untuk menentukan perbaikan berikutnya.
+
+Jika pengujian gagal:
+
+1. Temukan penyebabnya.
+2. Revisi implementasi.
+3. Jalankan tes regresi.
+4. Jalankan pengujian integrasi.
+5. Periksa hasil Markdown baru.
+6. Catat bukti dan hasilnya.
+7. Lanjutkan pada temuan berikutnya.
+
+Jangan mengulang pekerjaan yang sudah diverifikasi kecuali perubahan baru mengharuskan regresi.
+
+Jangan meminta persetujuan untuk keputusan implementasi rutin yang telah diotorisasi.
+
+Jika akses eksternal tidak tersedia, lanjutkan semua pekerjaan yang tidak bergantung pada akses itu.
+
+Sebelum sesi atau konteks berakhir, selamatkan seluruh pekerjaan dalam checkpoint yang benar-benar bisa diunduh.
+
+Checkpoint harus berisi:
+
+- Source code terbaru.
+- Perubahan yang sudah dilakukan.
+- Ledger temuan.
+- Hasil tes.
+- Bukti reproduksi.
+- Identitas dan hash aset.
+- Langkah kelanjutan `NEXT_ACTIONS`.
+
+Checkpoint tidak boleh dinyatakan sebagai hasil final kecuali kriteria penerimaan final telah terbukti terpenuhi.
+
+---
+
+# X. HASIL AKHIR WAJIB DISERAHKAN
+
+Setelah implementasi dan pengujian selesai, serahkan:
+
+### A. Paket website untuk Cloudflare Pages
+
+`SEMANTIK_SETARA_CP19_PDF_TRANSLATOR_DEPLOY.zip`
+
+Berisi aplikasi siap dipasang, model, runtime, dependensi, konfigurasi, dan aset yang benar-benar diperlukan.
+
+### B. Source code dan bukti QA
+
+`SEMANTIK_SETARA_CP19_SOURCE_AND_QA.zip`
+
+Berisi source, skrip build, fixture, test suite, hasil pengujian, dan bukti perbaikan.
+
+### C. Dokumen penerimaan
+
+`RELEASE_ACCEPTANCE_CP19.md`
+
+Berisi status G1–G8 beserta bukti, cakupan pengujian, batas dukungan, serta temuan yang belum tertutup jika ada.
+
+### D. Contoh hasil terjemahan baru
+
+- `SAMPLE_EN_TO_ID.md`
+- `SAMPLE_ID_TO_EN.md`
+- `SAMPLE_MATHEMATICS.md`
+
+Ketiganya wajib berasal dari eksekusi aplikasi hasil revisi.
+
+### E. Dokumentasi rilis
+
+- `CHANGELOG_CP19.md`
+- `DEPLOY_CLOUDFLARE_PAGES.md`
+- `ROLLBACK_CP19.md`
+- `SHA256SUMS.txt`
+
+Pastikan seluruh berkas yang diserahkan benar-benar ada dan dapat dibuka.
+
+Jangan hanya menyebutkan nama file tanpa membuat artefaknya.
+
+---
+
+# XI. DEFINISI FINAL: 100% PRODUCTION READY
+
+Saya menuntut penyelesaian 100% terhadap **kriteria penerimaan dan ruang lingkup produk yang ditetapkan**, bukan klaim mustahil bahwa mesin otomatis tidak akan pernah salah pada setiap jurnal di dunia.
+
+Status `PRODUCTION READY` hanya boleh diberikan apabila:
+
+1. Seluruh penghalang utama F01–F04 tertutup.
+2. F05–F09 ditangani dan diuji sesuai prioritas.
+3. Seluruh gerbang wajib G1–G8 lulus pada lingkungan dan cakupan yang dinyatakan.
+4. Perilaku browser benar-benar diuji.
+5. Kedua arah penerjemahan menghasilkan output baru.
+6. Struktur matematika diverifikasi.
+7. Hasil Markdown dapat dirender dengan benar.
+8. File deployment dan source tersedia.
+9. Tidak ada cacat kritis penerimaan yang disembunyikan.
+10. Batas kemampuan dan evaluasi semantik dilaporkan secara jujur.
+
+Jika satu gerbang tidak dapat diverifikasi karena hambatan eksternal, tuliskan `NOT VERIFIED` atau `BLOCKED`, serahkan seluruh pekerjaan yang sudah berhasil, dan jelaskan bukti yang masih diperlukan.
+
+Jangan menulis `100% PASS` tanpa pengujian.
+
+**PRIORITAS SAYA BUKAN BANYAKNYA FITUR. PRIORITAS SAYA ADALAH SATU MESIN PENERJEMAH PDF JURNAL ILMIAH YANG KUAT, TERUJI, MUDAH DIGUNAKAN, DAN MENGHASILKAN MARKDOWN MATEMATIKA YANG RAPI.**
+
+---
+
+# XII. INSTRUKSI EKSEKUSI TERAKHIR
+
+Lanjutkan dari CP18.
+
+Pertahankan seluruh perbaikan yang telah sah.
+
+Kerjakan F01–F04 terlebih dahulu sebagai satu rangkaian mutu hasil, lalu F05–F09 dan G1–G8.
+
+Gunakan seluruh fixture serta bukti audit.
+
+Perbaiki kode secara nyata.
+
+Uji model dan PDF sebenarnya.
+
+Hasilkan Markdown baru.
+
+Uji browser dan deployment.
+
+Kemas seluruh artefak.
+
+Serahkan hasil yang tersedia beserta status penerimaannya.
+
+**JANGAN MEMBUAT PROMPT BARU UNTUK MENGGANTIKAN PEKERJAAN INI.**
+
+**JANGAN MEMULAI DARI NOL.**
+
+**JANGAN MENYATAKAN SELESAI TANPA BUKTI.**
+
+**MULAI EKSEKUSI SEKARANG.**

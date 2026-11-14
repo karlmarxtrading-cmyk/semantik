@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_BEFORE_NEW_CORPUS",
+  "build": {
+    "release": "cp20-2e4d8ef18eb32385",
+    "version": "0.20.0",
+    "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/2e4d8ef18eb32385/"
+  },
+  "frozenAtUTC": "2026-11-13T10:02:17.334145+00:00",
+  "files": {
+    "app/app/translation.js": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "app/app/semantic-spans.js": "14e73d44a846d86ec95a8305e2aa40e0930525ba5fbe63735193688f1043618e",
+    "app/app/claim-guards.js": "f07e48fe222f2ac60d54884be71454bb235622d9c90f8d8580417342b24c65b6",
+    "app/app/metadata-language.js": "4cb73e0dae69c5d0c72e9f9c0a59480ebe1d16e2218bc942c25c722892b435ca",
+    "app/app/long-document.js": "c398d5f5eb5190114af81219a85792e5d9fc4c5d0f5fd499dd323233486c0203",
+    "app/app/main.js": "5dcae2db55c147135a91bac48b58407ea5525e6a4a6af6141424563930083b30",
+    "app/app/storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+    "app/app/export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+  },
+  "rubric": {
+    "dimensions": [
+      "meaning",
+      "completeness",
+      "terminology",
+      "fluency",
+      "numbers_notation",
+      "cross_sentence_consistency"
+    ],
+    "scores": {
+      "0": "incorrect or missing",
+      "1": "partly adequate, requires correction",
+      "2": "adequate in this reviewed sample"
+    },
+    "critical": "Changed/omitted proposition, entity/role, negation, quantifier, condition/causality, number/unit/formula, or scientific concept",
+    "acceptance": "All20 fresh cases produce complete usable targets with zero critical accepted-target errors. Rejected/failed outputs count as incomplete, not correct. No population accuracy inferred."
+  },
+  "corpusPlan": {
+    "cases": 20,
+    "directions": [
+      "en-id",
+      "id-en"
+    ],
+    "domains": [
+      "mathematics",
+      "chemistry",
+      "statistics",
+      "economics",
+      "academic prose"
+    ],
+    "author": "AI after this freeze",
+    "review": "AI, with human fields blank"
+  },
+  "humanApprovals": 0,
+  "knownRegressions": "50 seen cases are development evidence, not fresh acceptance."
+}

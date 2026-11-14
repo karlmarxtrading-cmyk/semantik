@@ -1,0 +1,4 @@
+{"id":"mathematics","counts":{"total":18,"translated":9,"preserved":8,"rejected":1,"failed":0,"pending":0},"math":8,"formulas":12,"ms":78794}
+{"id":"en-to-id","counts":{"total":13,"translated":13,"preserved":0,"rejected":0,"failed":0,"pending":0},"math":0,"formulas":3,"ms":4420}
+{"id":"id-to-en","counts":{"total":13,"translated":11,"preserved":2,"rejected":0,"failed":0,"pending":0},"math":0,"formulas":3,"ms":7400}
+{"id":"independent-math","counts":{"total":9,"translated":2,"preserved":7,"rejected":0,"failed":0,"pending":0},"math":7,"formulas":7,"ms":2491}

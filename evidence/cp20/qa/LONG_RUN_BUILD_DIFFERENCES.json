@@ -1,0 +1,70 @@
+{
+  "historicalRelease": "cp20-4694bad623ed9b19",
+  "currentRelease": "cp20-1668833ad37c9dd8",
+  "rows": [
+    {
+      "file": "main.js",
+      "historicalSha256": "4165fcb374f254bd53aa4900cda0938bdd219b32bc572155d348e927d067d345",
+      "currentSha256": "eb7ad817bb742afc69ba5736d63090b5adffe9ec56b3bd571f051d50c3a62211",
+      "identical": false,
+      "usedByNodeRunner": false
+    },
+    {
+      "file": "storage.js",
+      "historicalSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+      "currentSha256": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+      "identical": true,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "pdf-reader.js",
+      "historicalSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+      "currentSha256": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+      "identical": true,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "layout.js",
+      "historicalSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+      "currentSha256": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+      "identical": true,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "long-document.js",
+      "historicalSha256": "a5bc2880dcecfb76a3d9c449406eed5e6f4b128468a7e8d6123ccf2de175d913",
+      "currentSha256": "5be8cde00ac7baec00039479919bf31c76654ea27d615dd55f9de42ae0649ea3",
+      "identical": false,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "translation.js",
+      "historicalSha256": "4ec08bdc60c5d8be785d2c9201aff2512622c4f87b117f465b7573428ff13129",
+      "currentSha256": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+      "identical": false,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "claim-guards.js",
+      "historicalSha256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+      "currentSha256": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+      "identical": true,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "semantic-spans.js",
+      "historicalSha256": "29f26deea056f2b98d6fdc6bedd4a2975fc626fd2a1bf128d195901e8b948211",
+      "currentSha256": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+      "identical": false,
+      "usedByNodeRunner": true
+    },
+    {
+      "file": "export.js",
+      "historicalSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+      "currentSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+      "identical": true,
+      "usedByNodeRunner": true
+    }
+  ],
+  "method": "Exact module comparison only. Any changed dependency prevents labeling earlier Node inference as current release acceptance."
+}

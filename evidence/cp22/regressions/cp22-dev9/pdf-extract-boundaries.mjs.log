@@ -1,0 +1,92 @@
+(node:2644) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{
+  "method": "Production reader/layout with declared parser+OCR+canvas doubles. No inference/browser claim.",
+  "rows": [
+    {
+      "mode": "success",
+      "status": "PASS",
+      "source": "mixed",
+      "coverageStatus": "ocr-needs-review",
+      "coverageRegions": [
+        {
+          "bbox": [
+            40,
+            257,
+            515,
+            515
+          ],
+          "operatorIndex": 2,
+          "id": "image-1",
+          "status": "ocr-read-needs-review",
+          "recognizedWords": 1
+        }
+      ],
+      "sourceTexts": [
+        "Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction",
+        "The intervention did not improve survival."
+      ],
+      "warnings": [
+        "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+      ]
+    },
+    {
+      "mode": "empty",
+      "status": "PASS",
+      "source": "pdf-text",
+      "coverageStatus": "incomplete",
+      "coverageRegions": [
+        {
+          "bbox": [
+            40,
+            257,
+            515,
+            515
+          ],
+          "operatorIndex": 2,
+          "id": "image-1",
+          "status": "unresolved-no-text"
+        }
+      ],
+      "sourceTexts": [
+        "Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction",
+        ""
+      ],
+      "warnings": [
+        "Wilayah gambar belum tercakup: OCR tidak menemukan teks. Bandingkan dengan citra halaman.",
+        "Halaman memiliki wilayah gambar yang belum tercakup teks. Periksa PDF asli sebelum memakai terjemahan.",
+        "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+      ]
+    },
+    {
+      "mode": "fail",
+      "status": "PASS",
+      "source": "pdf-text",
+      "coverageStatus": "incomplete",
+      "coverageRegions": [
+        {
+          "bbox": [
+            40,
+            257,
+            515,
+            515
+          ],
+          "operatorIndex": 2,
+          "id": "image-1",
+          "status": "unresolved-ocr-failed"
+        }
+      ],
+      "sourceTexts": [
+        "Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction Digital introduction",
+        ""
+      ],
+      "warnings": [
+        "Cakupan belum lengkap: OCR tidak berhasil. controlled OCR failure. Gambar halaman tetap tersedia.",
+        "Halaman memiliki wilayah gambar yang belum tercakup teks. Periksa PDF asli sebelum memakai terjemahan.",
+        "Gambar asli dipertahankan dalam citra halaman; teks dan label di dalam gambar perlu diperiksa."
+      ]
+    }
+  ],
+  "ocrCalls": 3,
+  "workersTerminated": 3
+}

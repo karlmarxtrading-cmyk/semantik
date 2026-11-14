@@ -1,0 +1,252 @@
+{
+  "environment": "Node Worker bridge; real CP16 model inference; filesystem transport",
+  "browserVerified": false,
+  "passed": 11,
+  "total": 11,
+  "output": [
+    {
+      "direction": "en-id",
+      "source": "This study investigates the relationship between economic growth and education.",
+      "text": "Penelitian ini menyelidiki hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 13,
+      "outputTokens": 10,
+      "semanticVerified": false,
+      "ms": 317
+    },
+    {
+      "direction": "en-id",
+      "source": "The study included 120 participants. The result was significant (p < 0.05).",
+      "text": "Studi ini termasuk peserta 120. Hasilnya signifikan (p < 0.05).",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 26,
+      "outputTokens": 20,
+      "semanticVerified": false,
+      "ms": 471
+    },
+    {
+      "direction": "en-id",
+      "source": "The temperature was 37 °C and the dose was 10 mg. Smith et al. (2024) reported no improvement.",
+      "text": "Suhunya 37 °C dan dosisnya 10 mg. Smith et al. (2024) tidak melaporkan adanya perbaikan.",
+      "status": "review",
+      "issues": [
+        "Periksa lingkup negasi: tidak ada hasil berbeda makna dengan tidak melaporkan hasil."
+      ],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 32,
+      "outputTokens": 26,
+      "semanticVerified": false,
+      "ms": 638
+    },
+    {
+      "direction": "en-id",
+      "source": "The results are described in https://example.org/paper and DOI:10.1234/science.2024.01.",
+      "text": "Hasilnya dijelaskan dalam https://example.org/paper dan DOI:10.1234/science.2024.01.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 19,
+      "outputTokens": 14,
+      "semanticVerified": false,
+      "ms": 341
+    },
+    {
+      "direction": "en-id",
+      "source": "Machine learning improves the prediction of academic performance.",
+      "text": "pembelajaran mesin meningkatkan prediksi kinerja akademis.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 15,
+      "outputTokens": 10,
+      "semanticVerified": false,
+      "ms": 229
+    },
+    {
+      "direction": "en-id",
+      "source": "Abstract",
+      "text": "Abstrak",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "en-id",
+        "fingerprint": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-en-id-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "semanticVerified": false,
+      "ms": 0
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini menganalisis hubungan antara pertumbuhan ekonomi dan pendidikan.",
+      "text": "This study analyzes the relationship between economic growth and education.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 12,
+      "semanticVerified": false,
+      "ms": 305
+    },
+    {
+      "direction": "id-en",
+      "source": "Penelitian ini melibatkan 120 peserta. Hasil penelitian menunjukkan perbedaan signifikan.",
+      "text": "This study involves 120 participants. Research shows significant differences.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 18,
+      "outputTokens": 17,
+      "semanticVerified": false,
+      "ms": 386
+    },
+    {
+      "direction": "id-en",
+      "source": "Suhu sampel adalah 37 °C dan dosisnya 10 mg.",
+      "text": "The sample temperature is 37 °C and its dose 10 mg.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 18,
+      "outputTokens": 21,
+      "semanticVerified": false,
+      "ms": 537
+    },
+    {
+      "direction": "id-en",
+      "source": "Pembelajaran mesin meningkatkan prediksi kinerja akademik.",
+      "text": "Machine learning improves academic performance predictions.",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 11,
+      "outputTokens": 12,
+      "semanticVerified": false,
+      "ms": 279
+    },
+    {
+      "direction": "id-en",
+      "source": "Abstrak",
+      "text": "Abstract",
+      "status": "translated",
+      "issues": [],
+      "engine": {
+        "direction": "id-en",
+        "fingerprint": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db|ordered-xml-literals-v11-dash-separators-math-phrases-v12-contextual-concepts|preserve-v2",
+        "runtime": "onnxruntime-web 1.23.2 / WASM, 1 thread",
+        "model": "opus-id-en-2019-12-18-onnx-q8-per-channel",
+        "maxInputTokens": 128,
+        "maxOutputTokens": 256,
+        "supportsAbort": "worker termination",
+        "supportsGlossaryConstraints": false,
+        "requiresNetworkForInference": false
+      },
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "semanticVerified": false,
+      "ms": 1
+    }
+  ]
+}

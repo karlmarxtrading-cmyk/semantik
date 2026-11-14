@@ -1,0 +1,1333 @@
+{
+  "rows": [
+    {
+      "fixture": "capacity-1500-id.pdf",
+      "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "build": {
+        "release": "cp20-1668833ad37c9dd8",
+        "version": "0.20.0",
+        "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/1668833ad37c9dd8/"
+      },
+      "identity": {
+        "main.js": "eb7ad817bb742afc69ba5736d63090b5adffe9ec56b3bd571f051d50c3a62211",
+        "storage.js": "22caec635cfbfcc9c5f9048a8829923563b963a444a05a85dd8a38d0a719fec3",
+        "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+        "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+        "long-document.js": "5be8cde00ac7baec00039479919bf31c76654ea27d615dd55f9de42ae0649ea3",
+        "translation.js": "220026866c09ac7fb8513fb6f00993d5aa01daee5de73c89494202d821922544",
+        "claim-guards.js": "6a778df3701ad66994672e9f7e5b31bfe229ab2dc6223bdadd776d6a46016d35",
+        "semantic-spans.js": "ce82826d5b94b223e289d4bc386c1546d7b32f0fd93b1a14745f24212d415f24",
+        "export.js": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e"
+      },
+      "ruleset": "cp20-context-terminology-meaning-guards-v4-mechanical",
+      "status": "FAIL",
+      "scope": "Actual captured build cp20-1668833ad37c9dd8 reader + local model + page pipeline + fake-indexeddb + Markdown saved by Node. Packaged cp20-8c643bea6962471f has explicit component hash and ETA-parity binding; no full final-UI rerun is claimed. Not browser download or reviewed semantic quality.",
+      "counts": {
+        "total": 4500,
+        "translated": 3000,
+        "preserved": 0,
+        "rejected": 1500,
+        "failed": 0,
+        "pending": 0,
+        "review": 1500,
+        "done": 3000,
+        "attempted": 4500
+      },
+      "pages": 1500,
+      "totalPages": 1500,
+      "sourceCharacters": 331571,
+      "coverage": {
+        "source": 7500,
+        "covered": 7500
+      },
+      "pipelineMetrics": {
+        "inferenceCalls": 7650,
+        "cacheHits": 0,
+        "uniqueInputs": 7650,
+        "inputTokens": 83250,
+        "outputTokens": 85500,
+        "extractionMs": 116798.88204000192,
+        "inferenceMs": 2083244.3237880068,
+        "commitMs": 16340.177004007157,
+        "totalRunMs": 2224611.156787
+      },
+      "measurements": {
+        "modelPrepareMs": 5220.762903999999,
+        "engineRequests": 7650,
+        "engineSucceeded": 7650,
+        "engineFailed": 0,
+        "engineMs": 2072603.6815700072,
+        "rawBlockCalls": 4500,
+        "maskedRepeatedRequests": 6127,
+        "uniqueRawBlockInputs": 4500,
+        "uniqueMaskedModelInputs": 1523,
+        "maxActivePages": 1,
+        "maxActiveBlocks": 3
+      },
+      "elapsedMs": 2227427.12272,
+      "sampledPeakNodeProcessBytes": {
+        "rss": 1266671616,
+        "heapUsed": 208134624,
+        "external": 12761086,
+        "arrayBuffers": 7342551
+      },
+      "memoryLimit": "250ms samples; Node process (worker_threads share process RSS), native canvas and WASM within that process where OS accounts them. fake-indexeddb retains all records in RAM; this is not browser RAM or bounded browser persistence. No physical device qualification.",
+      "samples": [
+        {
+          "page": 1,
+          "elapsedMs": 7040.4641,
+          "rss": 1165864960,
+          "heapTotal": 58515456,
+          "heapUsed": 35280744,
+          "external": 11908907,
+          "arrayBuffers": 6486115,
+          "counts": {
+            "total": 3,
+            "translated": 2,
+            "preserved": 0,
+            "rejected": 1,
+            "failed": 0,
+            "pending": 0,
+            "review": 1,
+            "done": 2,
+            "attempted": 3
+          }
+        },
+        {
+          "page": 25,
+          "elapsedMs": 52334.965864,
+          "rss": 1064681472,
+          "heapTotal": 60088320,
+          "heapUsed": 31885920,
+          "external": 9676201,
+          "arrayBuffers": 4253441,
+          "counts": {
+            "total": 75,
+            "translated": 50,
+            "preserved": 0,
+            "rejected": 25,
+            "failed": 0,
+            "pending": 0,
+            "review": 25,
+            "done": 50,
+            "attempted": 75
+          }
+        },
+        {
+          "page": 50,
+          "elapsedMs": 96758.28722999999,
+          "rss": 1060687872,
+          "heapTotal": 62185472,
+          "heapUsed": 33615784,
+          "external": 9607483,
+          "arrayBuffers": 4188948,
+          "counts": {
+            "total": 150,
+            "translated": 100,
+            "preserved": 0,
+            "rejected": 50,
+            "failed": 0,
+            "pending": 0,
+            "review": 50,
+            "done": 100,
+            "attempted": 150
+          }
+        },
+        {
+          "page": 75,
+          "elapsedMs": 133995.17798500002,
+          "rss": 1062834176,
+          "heapTotal": 98623488,
+          "heapUsed": 33420688,
+          "external": 9535796,
+          "arrayBuffers": 4117261,
+          "counts": {
+            "total": 225,
+            "translated": 150,
+            "preserved": 0,
+            "rejected": 75,
+            "failed": 0,
+            "pending": 0,
+            "review": 75,
+            "done": 150,
+            "attempted": 225
+          }
+        },
+        {
+          "page": 100,
+          "elapsedMs": 170407.878593,
+          "rss": 1074044928,
+          "heapTotal": 100458496,
+          "heapUsed": 44025488,
+          "external": 9878650,
+          "arrayBuffers": 4460115,
+          "counts": {
+            "total": 300,
+            "translated": 200,
+            "preserved": 0,
+            "rejected": 100,
+            "failed": 0,
+            "pending": 0,
+            "review": 100,
+            "done": 200,
+            "attempted": 300
+          }
+        },
+        {
+          "page": 125,
+          "elapsedMs": 206137.54749,
+          "rss": 1079132160,
+          "heapTotal": 103604224,
+          "heapUsed": 35387120,
+          "external": 9400789,
+          "arrayBuffers": 3982254,
+          "counts": {
+            "total": 375,
+            "translated": 250,
+            "preserved": 0,
+            "rejected": 125,
+            "failed": 0,
+            "pending": 0,
+            "review": 125,
+            "done": 250,
+            "attempted": 375
+          }
+        },
+        {
+          "page": 150,
+          "elapsedMs": 240580.34327500002,
+          "rss": 1090400256,
+          "heapTotal": 105439232,
+          "heapUsed": 51535048,
+          "external": 9950528,
+          "arrayBuffers": 4531993,
+          "counts": {
+            "total": 450,
+            "translated": 300,
+            "preserved": 0,
+            "rejected": 150,
+            "failed": 0,
+            "pending": 0,
+            "review": 150,
+            "done": 300,
+            "attempted": 450
+          }
+        },
+        {
+          "page": 175,
+          "elapsedMs": 274916.355035,
+          "rss": 1102094336,
+          "heapTotal": 108060672,
+          "heapUsed": 48749496,
+          "external": 9743698,
+          "arrayBuffers": 4325163,
+          "counts": {
+            "total": 525,
+            "translated": 350,
+            "preserved": 0,
+            "rejected": 175,
+            "failed": 0,
+            "pending": 0,
+            "review": 175,
+            "done": 350,
+            "attempted": 525
+          }
+        },
+        {
+          "page": 200,
+          "elapsedMs": 307086.299963,
+          "rss": 1103683584,
+          "heapTotal": 109895680,
+          "heapUsed": 53636920,
+          "external": 9813138,
+          "arrayBuffers": 4394603,
+          "counts": {
+            "total": 600,
+            "translated": 400,
+            "preserved": 0,
+            "rejected": 200,
+            "failed": 0,
+            "pending": 0,
+            "review": 200,
+            "done": 400,
+            "attempted": 600
+          }
+        },
+        {
+          "page": 225,
+          "elapsedMs": 341072.290958,
+          "rss": 1106751488,
+          "heapTotal": 112779264,
+          "heapUsed": 50899272,
+          "external": 9607613,
+          "arrayBuffers": 4189078,
+          "counts": {
+            "total": 675,
+            "translated": 450,
+            "preserved": 0,
+            "rejected": 225,
+            "failed": 0,
+            "pending": 0,
+            "review": 225,
+            "done": 450,
+            "attempted": 675
+          }
+        },
+        {
+          "page": 250,
+          "elapsedMs": 378972.131205,
+          "rss": 1104556032,
+          "heapTotal": 51699712,
+          "heapUsed": 45388600,
+          "external": 9400272,
+          "arrayBuffers": 3981737,
+          "counts": {
+            "total": 750,
+            "translated": 500,
+            "preserved": 0,
+            "rejected": 250,
+            "failed": 0,
+            "pending": 0,
+            "review": 250,
+            "done": 500,
+            "attempted": 750
+          }
+        },
+        {
+          "page": 275,
+          "elapsedMs": 413398.363697,
+          "rss": 1090912256,
+          "heapTotal": 54059008,
+          "heapUsed": 47786840,
+          "external": 9465957,
+          "arrayBuffers": 4047422,
+          "counts": {
+            "total": 825,
+            "translated": 550,
+            "preserved": 0,
+            "rejected": 275,
+            "failed": 0,
+            "pending": 0,
+            "review": 275,
+            "done": 550,
+            "attempted": 825
+          }
+        },
+        {
+          "page": 300,
+          "elapsedMs": 447055.835482,
+          "rss": 1091276800,
+          "heapTotal": 69001216,
+          "heapUsed": 49929720,
+          "external": 9868752,
+          "arrayBuffers": 4440403,
+          "counts": {
+            "total": 900,
+            "translated": 600,
+            "preserved": 0,
+            "rejected": 300,
+            "failed": 0,
+            "pending": 0,
+            "review": 300,
+            "done": 600,
+            "attempted": 900
+          }
+        },
+        {
+          "page": 325,
+          "elapsedMs": 481048.832937,
+          "rss": 1093087232,
+          "heapTotal": 71098368,
+          "heapUsed": 53442472,
+          "external": 9662042,
+          "arrayBuffers": 4243507,
+          "counts": {
+            "total": 975,
+            "translated": 650,
+            "preserved": 0,
+            "rejected": 325,
+            "failed": 0,
+            "pending": 0,
+            "review": 325,
+            "done": 650,
+            "attempted": 975
+          }
+        },
+        {
+          "page": 350,
+          "elapsedMs": 515737.718012,
+          "rss": 1108148224,
+          "heapTotal": 89710592,
+          "heapUsed": 65143424,
+          "external": 10272466,
+          "arrayBuffers": 4853931,
+          "counts": {
+            "total": 1050,
+            "translated": 700,
+            "preserved": 0,
+            "rejected": 350,
+            "failed": 0,
+            "pending": 0,
+            "review": 350,
+            "done": 700,
+            "attempted": 1050
+          }
+        },
+        {
+          "page": 375,
+          "elapsedMs": 551109.935091,
+          "rss": 1104637952,
+          "heapTotal": 63496192,
+          "heapUsed": 57138240,
+          "external": 9727722,
+          "arrayBuffers": 4309187,
+          "counts": {
+            "total": 1125,
+            "translated": 750,
+            "preserved": 0,
+            "rejected": 375,
+            "failed": 0,
+            "pending": 0,
+            "review": 375,
+            "done": 750,
+            "attempted": 1125
+          }
+        },
+        {
+          "page": 400,
+          "elapsedMs": 586832.490003,
+          "rss": 1100038144,
+          "heapTotal": 77914112,
+          "heapUsed": 63378728,
+          "external": 9798222,
+          "arrayBuffers": 4379687,
+          "counts": {
+            "total": 1200,
+            "translated": 800,
+            "preserved": 0,
+            "rejected": 400,
+            "failed": 0,
+            "pending": 0,
+            "review": 400,
+            "done": 800,
+            "attempted": 1200
+          }
+        },
+        {
+          "page": 425,
+          "elapsedMs": 641062.966591,
+          "rss": 1083621376,
+          "heapTotal": 71622656,
+          "heapUsed": 62525048,
+          "external": 9601482,
+          "arrayBuffers": 4177971,
+          "counts": {
+            "total": 1275,
+            "translated": 850,
+            "preserved": 0,
+            "rejected": 425,
+            "failed": 0,
+            "pending": 0,
+            "review": 425,
+            "done": 850,
+            "attempted": 1275
+          }
+        },
+        {
+          "page": 450,
+          "elapsedMs": 680606.76122,
+          "rss": 1072857088,
+          "heapTotal": 82108416,
+          "heapUsed": 69135096,
+          "external": 10065648,
+          "arrayBuffers": 4647113,
+          "counts": {
+            "total": 1350,
+            "translated": 900,
+            "preserved": 0,
+            "rejected": 450,
+            "failed": 0,
+            "pending": 0,
+            "review": 450,
+            "done": 900,
+            "attempted": 1350
+          }
+        },
+        {
+          "page": 475,
+          "elapsedMs": 715796.71481,
+          "rss": 1091645440,
+          "heapTotal": 101507072,
+          "heapUsed": 70274592,
+          "external": 9535802,
+          "arrayBuffers": 4117267,
+          "counts": {
+            "total": 1425,
+            "translated": 950,
+            "preserved": 0,
+            "rejected": 475,
+            "failed": 0,
+            "pending": 0,
+            "review": 475,
+            "done": 950,
+            "attempted": 1425
+          }
+        },
+        {
+          "page": 500,
+          "elapsedMs": 756817.2125510001,
+          "rss": 1091919872,
+          "heapTotal": 104128512,
+          "heapUsed": 72453224,
+          "external": 9470230,
+          "arrayBuffers": 4051695,
+          "counts": {
+            "total": 1500,
+            "translated": 1000,
+            "preserved": 0,
+            "rejected": 500,
+            "failed": 0,
+            "pending": 0,
+            "review": 500,
+            "done": 1000,
+            "attempted": 1500
+          }
+        },
+        {
+          "page": 525,
+          "elapsedMs": 793357.186794,
+          "rss": 1094914048,
+          "heapTotal": 106487808,
+          "heapUsed": 77532656,
+          "external": 9606452,
+          "arrayBuffers": 4187917,
+          "counts": {
+            "total": 1575,
+            "translated": 1050,
+            "preserved": 0,
+            "rejected": 525,
+            "failed": 0,
+            "pending": 0,
+            "review": 525,
+            "done": 1050,
+            "attempted": 1575
+          }
+        },
+        {
+          "page": 550,
+          "elapsedMs": 832204.772245,
+          "rss": 1080438784,
+          "heapTotal": 87351296,
+          "heapUsed": 73174888,
+          "external": 9727722,
+          "arrayBuffers": 4309187,
+          "counts": {
+            "total": 1650,
+            "translated": 1100,
+            "preserved": 0,
+            "rejected": 550,
+            "failed": 0,
+            "pending": 0,
+            "review": 550,
+            "done": 1100,
+            "attempted": 1650
+          }
+        },
+        {
+          "page": 575,
+          "elapsedMs": 869684.3665380001,
+          "rss": 1087119360,
+          "heapTotal": 102293504,
+          "heapUsed": 79629032,
+          "external": 9471445,
+          "arrayBuffers": 4052910,
+          "counts": {
+            "total": 1725,
+            "translated": 1150,
+            "preserved": 0,
+            "rejected": 575,
+            "failed": 0,
+            "pending": 0,
+            "review": 575,
+            "done": 1150,
+            "attempted": 1725
+          }
+        },
+        {
+          "page": 600,
+          "elapsedMs": 903324.278527,
+          "rss": 1097609216,
+          "heapTotal": 104914944,
+          "heapUsed": 83701368,
+          "external": 11509312,
+          "arrayBuffers": 6090777,
+          "counts": {
+            "total": 1800,
+            "translated": 1200,
+            "preserved": 0,
+            "rejected": 600,
+            "failed": 0,
+            "pending": 0,
+            "review": 600,
+            "done": 1200,
+            "attempted": 1800
+          }
+        },
+        {
+          "page": 625,
+          "elapsedMs": 942738.714269,
+          "rss": 1086472192,
+          "heapTotal": 89972736,
+          "heapUsed": 79453808,
+          "external": 9858938,
+          "arrayBuffers": 4440403,
+          "counts": {
+            "total": 1875,
+            "translated": 1250,
+            "preserved": 0,
+            "rejected": 625,
+            "failed": 0,
+            "pending": 0,
+            "review": 625,
+            "done": 1250,
+            "attempted": 1875
+          }
+        },
+        {
+          "page": 650,
+          "elapsedMs": 977101.501984,
+          "rss": 1106186240,
+          "heapTotal": 100458496,
+          "heapUsed": 82242536,
+          "external": 9606320,
+          "arrayBuffers": 4177971,
+          "counts": {
+            "total": 1950,
+            "translated": 1300,
+            "preserved": 0,
+            "rejected": 650,
+            "failed": 0,
+            "pending": 0,
+            "review": 650,
+            "done": 1300,
+            "attempted": 1950
+          }
+        },
+        {
+          "page": 675,
+          "elapsedMs": 1011475.140549,
+          "rss": 1120796672,
+          "heapTotal": 119332864,
+          "heapUsed": 95820032,
+          "external": 10403418,
+          "arrayBuffers": 4984883,
+          "counts": {
+            "total": 2025,
+            "translated": 1350,
+            "preserved": 0,
+            "rejected": 675,
+            "failed": 0,
+            "pending": 0,
+            "review": 675,
+            "done": 1350,
+            "attempted": 2025
+          }
+        },
+        {
+          "page": 700,
+          "elapsedMs": 1047836.136742,
+          "rss": 1122955264,
+          "heapTotal": 121430016,
+          "heapUsed": 96634712,
+          "external": 10338002,
+          "arrayBuffers": 4919467,
+          "counts": {
+            "total": 2100,
+            "translated": 1400,
+            "preserved": 0,
+            "rejected": 700,
+            "failed": 0,
+            "pending": 0,
+            "review": 700,
+            "done": 1400,
+            "attempted": 2100
+          }
+        },
+        {
+          "page": 725,
+          "elapsedMs": 1086474.303307,
+          "rss": 1126084608,
+          "heapTotal": 123527168,
+          "heapUsed": 93068936,
+          "external": 10063966,
+          "arrayBuffers": 4645431,
+          "counts": {
+            "total": 2175,
+            "translated": 1450,
+            "preserved": 0,
+            "rejected": 725,
+            "failed": 0,
+            "pending": 0,
+            "review": 725,
+            "done": 1450,
+            "attempted": 2175
+          }
+        },
+        {
+          "page": 750,
+          "elapsedMs": 1119414.244003,
+          "rss": 1139851264,
+          "heapTotal": 126148608,
+          "heapUsed": 93077880,
+          "external": 9929558,
+          "arrayBuffers": 4511023,
+          "counts": {
+            "total": 2250,
+            "translated": 1500,
+            "preserved": 0,
+            "rejected": 750,
+            "failed": 0,
+            "pending": 0,
+            "review": 750,
+            "done": 1500,
+            "attempted": 2250
+          }
+        },
+        {
+          "page": 775,
+          "elapsedMs": 1152191.973184,
+          "rss": 1166704640,
+          "heapTotal": 162324480,
+          "heapUsed": 108139288,
+          "external": 10014770,
+          "arrayBuffers": 4596235,
+          "counts": {
+            "total": 2325,
+            "translated": 1550,
+            "preserved": 0,
+            "rejected": 775,
+            "failed": 0,
+            "pending": 0,
+            "review": 775,
+            "done": 1550,
+            "attempted": 2325
+          }
+        },
+        {
+          "page": 800,
+          "elapsedMs": 1185248.986464,
+          "rss": 1171259392,
+          "heapTotal": 164159488,
+          "heapUsed": 112221480,
+          "external": 10019764,
+          "arrayBuffers": 4601229,
+          "counts": {
+            "total": 2400,
+            "translated": 1600,
+            "preserved": 0,
+            "rejected": 800,
+            "failed": 0,
+            "pending": 0,
+            "review": 800,
+            "done": 1600,
+            "attempted": 2400
+          }
+        },
+        {
+          "page": 825,
+          "elapsedMs": 1219158.299212,
+          "rss": 1173245952,
+          "heapTotal": 165994496,
+          "heapUsed": 120543328,
+          "external": 10293291,
+          "arrayBuffers": 4874756,
+          "counts": {
+            "total": 2475,
+            "translated": 1650,
+            "preserved": 0,
+            "rejected": 825,
+            "failed": 0,
+            "pending": 0,
+            "review": 825,
+            "done": 1650,
+            "attempted": 2475
+          }
+        },
+        {
+          "page": 850,
+          "elapsedMs": 1252524.34085,
+          "rss": 1175478272,
+          "heapTotal": 168878080,
+          "heapUsed": 117423008,
+          "external": 10087250,
+          "arrayBuffers": 4668715,
+          "counts": {
+            "total": 2550,
+            "translated": 1700,
+            "preserved": 0,
+            "rejected": 850,
+            "failed": 0,
+            "pending": 0,
+            "review": 850,
+            "done": 1700,
+            "attempted": 2550
+          }
+        },
+        {
+          "page": 875,
+          "elapsedMs": 1294253.914486,
+          "rss": 1177296896,
+          "heapTotal": 170450944,
+          "heapUsed": 104693224,
+          "external": 10456314,
+          "arrayBuffers": 5037779,
+          "counts": {
+            "total": 2625,
+            "translated": 1750,
+            "preserved": 0,
+            "rejected": 875,
+            "failed": 0,
+            "pending": 0,
+            "review": 875,
+            "done": 1750,
+            "attempted": 2625
+          }
+        },
+        {
+          "page": 900,
+          "elapsedMs": 1334779.846238,
+          "rss": 1181593600,
+          "heapTotal": 172285952,
+          "heapUsed": 128276880,
+          "external": 11412724,
+          "arrayBuffers": 5994189,
+          "counts": {
+            "total": 2700,
+            "translated": 1800,
+            "preserved": 0,
+            "rejected": 900,
+            "failed": 0,
+            "pending": 0,
+            "review": 900,
+            "done": 1800,
+            "attempted": 2700
+          }
+        },
+        {
+          "page": 925,
+          "elapsedMs": 1375118.359736,
+          "rss": 1165107200,
+          "heapTotal": 110944256,
+          "heapUsed": 106139728,
+          "external": 9400790,
+          "arrayBuffers": 3982255,
+          "counts": {
+            "total": 2775,
+            "translated": 1850,
+            "preserved": 0,
+            "rejected": 925,
+            "failed": 0,
+            "pending": 0,
+            "review": 925,
+            "done": 1850,
+            "attempted": 2775
+          }
+        },
+        {
+          "page": 950,
+          "elapsedMs": 1411666.58529,
+          "rss": 1148080128,
+          "heapTotal": 119857152,
+          "heapUsed": 108790520,
+          "external": 9469990,
+          "arrayBuffers": 4046515,
+          "counts": {
+            "total": 2850,
+            "translated": 1900,
+            "preserved": 0,
+            "rejected": 950,
+            "failed": 0,
+            "pending": 0,
+            "review": 950,
+            "done": 1900,
+            "attempted": 2850
+          }
+        },
+        {
+          "page": 975,
+          "elapsedMs": 1449493.08896,
+          "rss": 1131102208,
+          "heapTotal": 130080768,
+          "heapUsed": 112647256,
+          "external": 10191626,
+          "arrayBuffers": 4773091,
+          "counts": {
+            "total": 2925,
+            "translated": 1950,
+            "preserved": 0,
+            "rejected": 975,
+            "failed": 0,
+            "pending": 0,
+            "review": 975,
+            "done": 1950,
+            "attempted": 2925
+          }
+        },
+        {
+          "page": 1000,
+          "elapsedMs": 1491776.985117,
+          "rss": 1124655104,
+          "heapTotal": 132440064,
+          "heapUsed": 113768496,
+          "external": 9662042,
+          "arrayBuffers": 4243507,
+          "counts": {
+            "total": 3000,
+            "translated": 2000,
+            "preserved": 0,
+            "rejected": 1000,
+            "failed": 0,
+            "pending": 0,
+            "review": 1000,
+            "done": 2000,
+            "attempted": 3000
+          }
+        },
+        {
+          "page": 1025,
+          "elapsedMs": 1529492.330293,
+          "rss": 1143234560,
+          "heapTotal": 151052288,
+          "heapUsed": 120110760,
+          "external": 10065369,
+          "arrayBuffers": 4646834,
+          "counts": {
+            "total": 3075,
+            "translated": 2050,
+            "preserved": 0,
+            "rejected": 1025,
+            "failed": 0,
+            "pending": 0,
+            "review": 1025,
+            "done": 2050,
+            "attempted": 3075
+          }
+        },
+        {
+          "page": 1050,
+          "elapsedMs": 1566418.229077,
+          "rss": 1145049088,
+          "heapTotal": 152887296,
+          "heapUsed": 119701768,
+          "external": 9929558,
+          "arrayBuffers": 4511023,
+          "counts": {
+            "total": 3150,
+            "translated": 2100,
+            "preserved": 0,
+            "rejected": 1050,
+            "failed": 0,
+            "pending": 0,
+            "review": 1050,
+            "done": 2100,
+            "attempted": 3150
+          }
+        },
+        {
+          "page": 1075,
+          "elapsedMs": 1605309.358359,
+          "rss": 1147572224,
+          "heapTotal": 155246592,
+          "heapUsed": 127008264,
+          "external": 9671988,
+          "arrayBuffers": 4253453,
+          "counts": {
+            "total": 3225,
+            "translated": 2150,
+            "preserved": 0,
+            "rejected": 1075,
+            "failed": 0,
+            "pending": 0,
+            "review": 1075,
+            "done": 2150,
+            "attempted": 3225
+          }
+        },
+        {
+          "page": 1100,
+          "elapsedMs": 1643832.285024,
+          "rss": 1182130176,
+          "heapTotal": 189849600,
+          "heapUsed": 145221784,
+          "external": 11343844,
+          "arrayBuffers": 5925309,
+          "counts": {
+            "total": 3300,
+            "translated": 2200,
+            "preserved": 0,
+            "rejected": 1100,
+            "failed": 0,
+            "pending": 0,
+            "review": 1100,
+            "done": 2200,
+            "attempted": 3300
+          }
+        },
+        {
+          "page": 1125,
+          "elapsedMs": 1687367.366536,
+          "rss": 1183346688,
+          "heapTotal": 193519616,
+          "heapUsed": 142364600,
+          "external": 10085390,
+          "arrayBuffers": 4666855,
+          "counts": {
+            "total": 3375,
+            "translated": 2250,
+            "preserved": 0,
+            "rejected": 1125,
+            "failed": 0,
+            "pending": 0,
+            "review": 1125,
+            "done": 2250,
+            "attempted": 3375
+          }
+        },
+        {
+          "page": 1150,
+          "elapsedMs": 1728540.600259,
+          "rss": 1175527424,
+          "heapTotal": 196665344,
+          "heapUsed": 136018104,
+          "external": 9742488,
+          "arrayBuffers": 4323953,
+          "counts": {
+            "total": 3450,
+            "translated": 2300,
+            "preserved": 0,
+            "rejected": 1150,
+            "failed": 0,
+            "pending": 0,
+            "review": 1150,
+            "done": 2300,
+            "attempted": 3450
+          }
+        },
+        {
+          "page": 1175,
+          "elapsedMs": 1762444.332677,
+          "rss": 1179033600,
+          "heapTotal": 198238208,
+          "heapUsed": 130249096,
+          "external": 12466062,
+          "arrayBuffers": 6999763,
+          "counts": {
+            "total": 3525,
+            "translated": 2350,
+            "preserved": 0,
+            "rejected": 1175,
+            "failed": 0,
+            "pending": 0,
+            "review": 1175,
+            "done": 2350,
+            "attempted": 3525
+          }
+        },
+        {
+          "page": 1200,
+          "elapsedMs": 1795631.37517,
+          "rss": 1183019008,
+          "heapTotal": 200597504,
+          "heapUsed": 143375872,
+          "external": 11912786,
+          "arrayBuffers": 6494251,
+          "counts": {
+            "total": 3600,
+            "translated": 2400,
+            "preserved": 0,
+            "rejected": 1200,
+            "failed": 0,
+            "pending": 0,
+            "review": 1200,
+            "done": 2400,
+            "attempted": 3600
+          }
+        },
+        {
+          "page": 1225,
+          "elapsedMs": 1832968.237071,
+          "rss": 1186201600,
+          "heapTotal": 201383936,
+          "heapUsed": 153861496,
+          "external": 11274640,
+          "arrayBuffers": 5856105,
+          "counts": {
+            "total": 3675,
+            "translated": 2450,
+            "preserved": 0,
+            "rejected": 1225,
+            "failed": 0,
+            "pending": 0,
+            "review": 1225,
+            "done": 2450,
+            "attempted": 3675
+          }
+        },
+        {
+          "page": 1250,
+          "elapsedMs": 1869283.630563,
+          "rss": 1211551744,
+          "heapTotal": 271638528,
+          "heapUsed": 173065904,
+          "external": 10912260,
+          "arrayBuffers": 5493725,
+          "counts": {
+            "total": 3750,
+            "translated": 2500,
+            "preserved": 0,
+            "rejected": 1250,
+            "failed": 0,
+            "pending": 0,
+            "review": 1250,
+            "done": 2500,
+            "attempted": 3750
+          }
+        },
+        {
+          "page": 1275,
+          "elapsedMs": 1909335.166465,
+          "rss": 1240920064,
+          "heapTotal": 274259968,
+          "heapUsed": 162939568,
+          "external": 10428058,
+          "arrayBuffers": 5009523,
+          "counts": {
+            "total": 3825,
+            "translated": 2550,
+            "preserved": 0,
+            "rejected": 1275,
+            "failed": 0,
+            "pending": 0,
+            "review": 1275,
+            "done": 2550,
+            "attempted": 3825
+          }
+        },
+        {
+          "page": 1300,
+          "elapsedMs": 1943497.152319,
+          "rss": 1242849280,
+          "heapTotal": 275832832,
+          "heapUsed": 173670896,
+          "external": 10772394,
+          "arrayBuffers": 5353859,
+          "counts": {
+            "total": 3900,
+            "translated": 2600,
+            "preserved": 0,
+            "rejected": 1300,
+            "failed": 0,
+            "pending": 0,
+            "review": 1300,
+            "done": 2600,
+            "attempted": 3900
+          }
+        },
+        {
+          "page": 1325,
+          "elapsedMs": 1986116.342011,
+          "rss": 1245184000,
+          "heapTotal": 278454272,
+          "heapUsed": 168050368,
+          "external": 10428298,
+          "arrayBuffers": 5009763,
+          "counts": {
+            "total": 3975,
+            "translated": 2650,
+            "preserved": 0,
+            "rejected": 1325,
+            "failed": 0,
+            "pending": 0,
+            "review": 1325,
+            "done": 2650,
+            "attempted": 3975
+          }
+        },
+        {
+          "page": 1350,
+          "elapsedMs": 2020725.377906,
+          "rss": 1235988480,
+          "heapTotal": 281337856,
+          "heapUsed": 164650424,
+          "external": 10221486,
+          "arrayBuffers": 4802951,
+          "counts": {
+            "total": 4050,
+            "translated": 2700,
+            "preserved": 0,
+            "rejected": 1350,
+            "failed": 0,
+            "pending": 0,
+            "review": 1350,
+            "done": 2700,
+            "attempted": 4050
+          }
+        },
+        {
+          "page": 1375,
+          "elapsedMs": 2055607.303417,
+          "rss": 1241567232,
+          "heapTotal": 283078656,
+          "heapUsed": 169135136,
+          "external": 10357648,
+          "arrayBuffers": 4939113,
+          "counts": {
+            "total": 4125,
+            "translated": 2750,
+            "preserved": 0,
+            "rejected": 1375,
+            "failed": 0,
+            "pending": 0,
+            "review": 1375,
+            "done": 2750,
+            "attempted": 4125
+          }
+        },
+        {
+          "page": 1400,
+          "elapsedMs": 2090409.415385,
+          "rss": 1245220864,
+          "heapTotal": 285175808,
+          "heapUsed": 171758328,
+          "external": 10292268,
+          "arrayBuffers": 4873733,
+          "counts": {
+            "total": 4200,
+            "translated": 2800,
+            "preserved": 0,
+            "rejected": 1400,
+            "failed": 0,
+            "pending": 0,
+            "review": 1400,
+            "done": 2800,
+            "attempted": 4200
+          }
+        },
+        {
+          "page": 1425,
+          "elapsedMs": 2124980.634003,
+          "rss": 1256263680,
+          "heapTotal": 288059392,
+          "heapUsed": 166191744,
+          "external": 9949234,
+          "arrayBuffers": 4530699,
+          "counts": {
+            "total": 4275,
+            "translated": 2850,
+            "preserved": 0,
+            "rejected": 1425,
+            "failed": 0,
+            "pending": 0,
+            "review": 1425,
+            "done": 2850,
+            "attempted": 4275
+          }
+        },
+        {
+          "page": 1450,
+          "elapsedMs": 2157629.500962,
+          "rss": 1258127360,
+          "heapTotal": 289632256,
+          "heapUsed": 162706872,
+          "external": 9742506,
+          "arrayBuffers": 4323971,
+          "counts": {
+            "total": 4350,
+            "translated": 2900,
+            "preserved": 0,
+            "rejected": 1450,
+            "failed": 0,
+            "pending": 0,
+            "review": 1450,
+            "done": 2900,
+            "attempted": 4350
+          }
+        },
+        {
+          "page": 1475,
+          "elapsedMs": 2190668.4865189996,
+          "rss": 1260900352,
+          "heapTotal": 292253696,
+          "heapUsed": 162678080,
+          "external": 9607626,
+          "arrayBuffers": 4189091,
+          "counts": {
+            "total": 4425,
+            "translated": 2950,
+            "preserved": 0,
+            "rejected": 1475,
+            "failed": 0,
+            "pending": 0,
+            "review": 1475,
+            "done": 2950,
+            "attempted": 4425
+          }
+        },
+        {
+          "page": 1500,
+          "elapsedMs": 2224746.409825,
+          "rss": 1261002752,
+          "heapTotal": 292253696,
+          "heapUsed": 179637888,
+          "external": 12393366,
+          "arrayBuffers": 6974831,
+          "counts": {
+            "total": 4500,
+            "translated": 3000,
+            "preserved": 0,
+            "rejected": 1500,
+            "failed": 0,
+            "pending": 0,
+            "review": 1500,
+            "done": 3000,
+            "attempted": 4500
+          }
+        }
+      ],
+      "export": {
+        "file": "capacity-1500-id-NODE_PARTIAL_TRANSLATION.md",
+        "bytes": 1008350,
+        "sha256": "5e93d374494a665ea67eec1b20e6822d64fbda57b791a28ae56a7279d0369313",
+        "stats": {
+          "pages": 1500,
+          "blocks": 4500,
+          "counts": {
+            "total": 4500,
+            "translated": 3000,
+            "preserved": 0,
+            "rejected": 1500,
+            "failed": 0,
+            "pending": 0
+          },
+          "uniqueAssets": 0,
+          "assetReferences": 0,
+          "bytes": 1008350,
+          "sink": "bounded-blob",
+          "maxActivePages": 1,
+          "coverageIncompletePages": 0,
+          "mathUncertainPages": 0,
+          "unsavedPages": [],
+          "durablePages": 1500,
+          "partial": true
+        },
+        "traceIds": 1500,
+        "ms": 2672.6286969999783
+      }
+    }
+  ]
+}

@@ -1,0 +1,1220 @@
+{
+  "path": "/workspace/scratch/17677088ccfd/recovery/qa-run/audit/evidence/pdf_math/mathematics_fixture.pdf",
+  "sha256": "f66a404b56293dc093d9ecb5c7dbe9b845df0467bec5134761dd9c8dec67e558",
+  "items": [
+    {
+      "text": "Scientific mathematics regression fixture",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 26.22021484375,
+      "baseline": 42,
+      "width": 397.24217560000005,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 0,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "Purpose: verify exact mathematical structure in a PDF-to-Markdown pipeline.",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 56.7177734375,
+      "baseline": 66,
+      "width": 386.45019600000023,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 2,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "These examples are synthetic tests, not a journal-quality evaluation corpus.",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 82.7177734375,
+      "baseline": 92,
+      "width": 381.36719000000016,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 3,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "1. Power and subscript",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 120.78955078125,
+      "baseline": 131,
+      "width": 142.76367050000002,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 5,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "y = x",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 144.2919921875,
+      "baseline": 161,
+      "width": 47.83007880000001,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 7,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "2",
+      "source": "pdf-text",
+      "x": 115,
+      "y": 141.78955078125,
+      "baseline": 152,
+      "width": 6.9985355,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 9,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "z = a",
+      "source": "pdf-text",
+      "x": 245,
+      "y": 144.2919921875,
+      "baseline": 161,
+      "width": 47.003905799999984,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 11,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "i",
+      "source": "pdf-text",
+      "x": 297,
+      "y": 156.78955078125,
+      "baseline": 167,
+      "width": 3.0561519999999995,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 13,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "2. Stacked fraction",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 205.78955078125,
+      "baseline": 216,
+      "width": 117.8364242,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 15,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "f(x) =",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 235.2919921875,
+      "baseline": 252,
+      "width": 51.837890400000006,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 17,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "x + 1",
+      "source": "pdf-text",
+      "x": 144,
+      "y": 225.1484375,
+      "baseline": 240,
+      "width": 43.22656319999999,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 19,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "x − 1",
+      "source": "pdf-text",
+      "x": 144,
+      "y": 251.1484375,
+      "baseline": 266,
+      "width": 43.22656319999999,
+      "height": 16,
+      "fontSize": 16,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 20,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "3. Definite integral",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 305.78955078125,
+      "baseline": 316,
+      "width": 117.7719719,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 22,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "∫",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 332.583984375,
+      "baseline": 366,
+      "width": 18.7558596,
+      "height": 36,
+      "fontSize": 36,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 24,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "1",
+      "source": "pdf-text",
+      "x": 79,
+      "y": 323.7177734375,
+      "baseline": 333,
+      "width": 6.362305,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 25,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "0",
+      "source": "pdf-text",
+      "x": 75,
+      "y": 364.7177734375,
+      "baseline": 374,
+      "width": 6.362305,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 26,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "x",
+      "source": "pdf-text",
+      "x": 94,
+      "y": 341.2919921875,
+      "baseline": 358,
+      "width": 10.652344200000002,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 28,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "2",
+      "source": "pdf-text",
+      "x": 105,
+      "y": 339.78955078125,
+      "baseline": 350,
+      "width": 6.9985355,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 29,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "dx =",
+      "source": "pdf-text",
+      "x": 120,
+      "y": 341.2919921875,
+      "baseline": 358,
+      "width": 42.8818356,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 31,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "1",
+      "source": "pdf-text",
+      "x": 178,
+      "y": 333.07666015625,
+      "baseline": 347,
+      "width": 9.5434575,
+      "height": 15,
+      "fontSize": 15,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 33,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "3",
+      "source": "pdf-text",
+      "x": 178,
+      "y": 356.07666015625,
+      "baseline": 370,
+      "width": 9.5434575,
+      "height": 15,
+      "fontSize": 15,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 34,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "4. Matrix",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 411.78955078125,
+      "baseline": 422,
+      "width": 55.58007729999999,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 36,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "A =",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 460.2919921875,
+      "baseline": 477,
+      "width": 33.117186600000004,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 38,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "1",
+      "source": "pdf-text",
+      "x": 122,
+      "y": 450.22021484375,
+      "baseline": 466,
+      "width": 10.8159185,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 40,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "2",
+      "source": "pdf-text",
+      "x": 154,
+      "y": 450.22021484375,
+      "baseline": 466,
+      "width": 10.8159185,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 42,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "3",
+      "source": "pdf-text",
+      "x": 122,
+      "y": 475.22021484375,
+      "baseline": 491,
+      "width": 10.8159185,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 43,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "4",
+      "source": "pdf-text",
+      "x": 154,
+      "y": 475.22021484375,
+      "baseline": 491,
+      "width": 10.8159185,
+      "height": 17,
+      "fontSize": 17,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 45,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "5. Named mathematical functions",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 531.78955078125,
+      "baseline": 542,
+      "width": 209.74120309999992,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 47,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "y = sin(x) + log(x)",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 560.2919921875,
+      "baseline": 577,
+      "width": 166.3242174,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 49,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "6. Strict and non-strict inequalities",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 619.78955078125,
+      "baseline": 630,
+      "width": 217.76562059999998,
+      "height": 11,
+      "fontSize": 11,
+      "bold": false,
+      "fontName": "g_d0_f2",
+      "direction": "ltr",
+      "sourceIndex": 51,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "|x − 4| < 1",
+      "source": "pdf-text",
+      "x": 64,
+      "y": 647.2919921875,
+      "baseline": 664,
+      "width": 98.7363306,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 53,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "|x − 4| ≤ 1",
+      "source": "pdf-text",
+      "x": 280,
+      "y": 647.2919921875,
+      "baseline": 664,
+      "width": 98.73633060000003,
+      "height": 18,
+      "fontSize": 18,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 55,
+      "rotated": false,
+      "endOfLine": false
+    },
+    {
+      "text": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to 1 of x² dx=1/3;",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 733.7177734375,
+      "baseline": 743,
+      "width": 420.03906500000016,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 57,
+      "rotated": false,
+      "endOfLine": true
+    },
+    {
+      "text": "A is the two-by-two matrix with rows (1,2) and (3,4). Parentheses and symbols matter.",
+      "source": "pdf-text",
+      "x": 44,
+      "y": 750.7177734375,
+      "baseline": 760,
+      "width": 434.3505860000004,
+      "height": 10,
+      "fontSize": 10,
+      "bold": false,
+      "fontName": "g_d0_f3",
+      "direction": "ltr",
+      "sourceIndex": 58,
+      "rotated": false,
+      "endOfLine": false
+    }
+  ],
+  "vectors": {
+    "segments": [
+      {
+        "id": "op87:seg0",
+        "operatorIndex": 87,
+        "x1": 140,
+        "y1": 248,
+        "x2": 193,
+        "y2": 248,
+        "lineWidth": 0.8,
+        "paintOperator": 20
+      },
+      {
+        "id": "op152:seg0",
+        "operatorIndex": 152,
+        "x1": 174,
+        "y1": 354,
+        "x2": 193,
+        "y2": 354,
+        "lineWidth": 0.8,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg0",
+        "operatorIndex": 176,
+        "x1": 116,
+        "y1": 450,
+        "x2": 110,
+        "y2": 450,
+        "lineWidth": 1,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg1",
+        "operatorIndex": 176,
+        "x1": 110,
+        "y1": 450,
+        "x2": 110,
+        "y2": 496,
+        "lineWidth": 1,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg2",
+        "operatorIndex": 176,
+        "x1": 110,
+        "y1": 496,
+        "x2": 116,
+        "y2": 496,
+        "lineWidth": 1,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg3",
+        "operatorIndex": 176,
+        "x1": 174,
+        "y1": 450,
+        "x2": 180,
+        "y2": 450,
+        "lineWidth": 1,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg4",
+        "operatorIndex": 176,
+        "x1": 180,
+        "y1": 450,
+        "x2": 180,
+        "y2": 496,
+        "lineWidth": 1,
+        "paintOperator": 20
+      },
+      {
+        "id": "op176:seg5",
+        "operatorIndex": 176,
+        "x1": 180,
+        "y1": 496,
+        "x2": 174,
+        "y2": 496,
+        "lineWidth": 1,
+        "paintOperator": 20
+      }
+    ],
+    "unsupported": []
+  },
+  "result": {
+    "regions": [
+      {
+        "id": "p1-math-1",
+        "bbox": [
+          64,
+          141.78955078125,
+          57.9985355,
+          20.50244140625
+        ],
+        "latex": "y = x^{2}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "y = "
+                },
+                {
+                  "type": "scripts",
+                  "base": {
+                    "type": "text",
+                    "text": "x"
+                  },
+                  "sup": {
+                    "type": "text",
+                    "text": "2"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          7,
+          9
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "y = x 2"
+      },
+      {
+        "id": "p1-math-2",
+        "bbox": [
+          245,
+          144.2919921875,
+          55.056152,
+          23.49755859375
+        ],
+        "latex": "z = a_{i}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "sequence",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "z = "
+                },
+                {
+                  "type": "scripts",
+                  "base": {
+                    "type": "text",
+                    "text": "a"
+                  },
+                  "sub": {
+                    "type": "text",
+                    "text": "i"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          11,
+          13
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "z = a i"
+      },
+      {
+        "id": "p1-math-3",
+        "bbox": [
+          64,
+          225.1484375,
+          123.22656319999999,
+          42
+        ],
+        "latex": "f(x) = \\frac{x + 1}{x - 1}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "f(x) ="
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "x + 1"
+                  }
+                ]
+              },
+              "denominator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "x − 1"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          17,
+          19,
+          20
+        ],
+        "vectorIds": [
+          "op87:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "f(x) = x + 1 x − 1"
+      },
+      {
+        "id": "p1-math-4",
+        "bbox": [
+          64,
+          323.7177734375,
+          123.54345749999999,
+          51
+        ],
+        "latex": "\\int_{0}^{1} x^{2} dx = \\frac{1}{3}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "operator",
+              "symbol": "∫",
+              "sup": {
+                "type": "text",
+                "text": "1"
+              },
+              "sub": {
+                "type": "text",
+                "text": "0"
+              }
+            },
+            {
+              "type": "scripts",
+              "base": {
+                "type": "text",
+                "text": "x"
+              },
+              "sup": {
+                "type": "text",
+                "text": "2"
+              }
+            },
+            {
+              "type": "text",
+              "text": "dx ="
+            },
+            {
+              "type": "fraction",
+              "numerator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "1"
+                  }
+                ]
+              },
+              "denominator": {
+                "type": "sequence",
+                "children": [
+                  {
+                    "type": "text",
+                    "text": "3"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          24,
+          25,
+          26,
+          28,
+          29,
+          31,
+          33,
+          34
+        ],
+        "vectorIds": [
+          "op152:seg0"
+        ],
+        "warnings": [],
+        "sourceText": "∫ 1 0 x 2 dx = 1 3"
+      },
+      {
+        "id": "p1-math-5",
+        "bbox": [
+          64,
+          450,
+          116,
+          46
+        ],
+        "latex": "A = \\begin{bmatrix}1 & 2 \\\\ 3 & 4\\end{bmatrix}",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "A ="
+            },
+            {
+              "type": "matrix",
+              "rows": [
+                [
+                  {
+                    "type": "text",
+                    "text": "1"
+                  },
+                  {
+                    "type": "text",
+                    "text": "2"
+                  }
+                ],
+                [
+                  {
+                    "type": "text",
+                    "text": "3"
+                  },
+                  {
+                    "type": "text",
+                    "text": "4"
+                  }
+                ]
+              ]
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          38,
+          40,
+          42,
+          43,
+          45
+        ],
+        "vectorIds": [
+          "op176:seg1",
+          "op176:seg4",
+          "op176:seg0",
+          "op176:seg2",
+          "op176:seg3",
+          "op176:seg5"
+        ],
+        "warnings": [],
+        "sourceText": "A = 1 2 3 4"
+      },
+      {
+        "id": "p1-math-6",
+        "bbox": [
+          64,
+          560.2919921875,
+          166.3242174,
+          18
+        ],
+        "latex": "y = \\sin(x) + \\log(x)",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "y = sin(x) + log(x)"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          49
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "y = sin(x) + log(x)"
+      },
+      {
+        "id": "p1-math-7",
+        "bbox": [
+          64,
+          647.2919921875,
+          98.7363306,
+          18
+        ],
+        "latex": "|x - 4| < 1",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "|x − 4| < 1"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          53
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "|x − 4| < 1"
+      },
+      {
+        "id": "p1-math-8",
+        "bbox": [
+          280,
+          647.2919921875,
+          98.73633060000003,
+          18
+        ],
+        "latex": "|x - 4| \\le 1",
+        "ast": {
+          "type": "sequence",
+          "children": [
+            {
+              "type": "text",
+              "text": "|x − 4| ≤ 1"
+            }
+          ]
+        },
+        "verified": true,
+        "verification": "supported-geometry-only",
+        "sourceItemIds": [
+          55
+        ],
+        "vectorIds": [],
+        "warnings": [],
+        "sourceText": "|x − 4| ≤ 1"
+      }
+    ],
+    "consumedItemIds": [
+      7,
+      9,
+      11,
+      13,
+      17,
+      19,
+      20,
+      24,
+      25,
+      26,
+      28,
+      29,
+      31,
+      33,
+      34,
+      38,
+      40,
+      42,
+      43,
+      45,
+      49,
+      53,
+      55
+    ],
+    "remainingItems": [
+      {
+        "text": "Scientific mathematics regression fixture",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 26.22021484375,
+        "baseline": 42,
+        "width": 397.24217560000005,
+        "height": 17,
+        "fontSize": 17,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 0,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "Purpose: verify exact mathematical structure in a PDF-to-Markdown pipeline.",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 56.7177734375,
+        "baseline": 66,
+        "width": 386.45019600000023,
+        "height": 10,
+        "fontSize": 10,
+        "bold": false,
+        "fontName": "g_d0_f3",
+        "direction": "ltr",
+        "sourceIndex": 2,
+        "rotated": false,
+        "endOfLine": true
+      },
+      {
+        "text": "These examples are synthetic tests, not a journal-quality evaluation corpus.",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 82.7177734375,
+        "baseline": 92,
+        "width": 381.36719000000016,
+        "height": 10,
+        "fontSize": 10,
+        "bold": false,
+        "fontName": "g_d0_f3",
+        "direction": "ltr",
+        "sourceIndex": 3,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "1. Power and subscript",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 120.78955078125,
+        "baseline": 131,
+        "width": 142.76367050000002,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 5,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "2. Stacked fraction",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 205.78955078125,
+        "baseline": 216,
+        "width": 117.8364242,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 15,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "3. Definite integral",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 305.78955078125,
+        "baseline": 316,
+        "width": 117.7719719,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 22,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "4. Matrix",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 411.78955078125,
+        "baseline": 422,
+        "width": 55.58007729999999,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 36,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "5. Named mathematical functions",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 531.78955078125,
+        "baseline": 542,
+        "width": 209.74120309999992,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 47,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "6. Strict and non-strict inequalities",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 619.78955078125,
+        "baseline": 630,
+        "width": 217.76562059999998,
+        "height": 11,
+        "fontSize": 11,
+        "bold": false,
+        "fontName": "g_d0_f2",
+        "direction": "ltr",
+        "sourceIndex": 51,
+        "rotated": false,
+        "endOfLine": false
+      },
+      {
+        "text": "Expected structure: y=x²; z=aᵢ; f(x)=(x+1)/(x−1); integral from 0 to 1 of x² dx=1/3;",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 733.7177734375,
+        "baseline": 743,
+        "width": 420.03906500000016,
+        "height": 10,
+        "fontSize": 10,
+        "bold": false,
+        "fontName": "g_d0_f3",
+        "direction": "ltr",
+        "sourceIndex": 57,
+        "rotated": false,
+        "endOfLine": true
+      },
+      {
+        "text": "A is the two-by-two matrix with rows (1,2) and (3,4). Parentheses and symbols matter.",
+        "source": "pdf-text",
+        "x": 44,
+        "y": 750.7177734375,
+        "baseline": 760,
+        "width": 434.3505860000004,
+        "height": 10,
+        "fontSize": 10,
+        "bold": false,
+        "fontName": "g_d0_f3",
+        "direction": "ltr",
+        "sourceIndex": 58,
+        "rotated": false,
+        "endOfLine": false
+      }
+    ],
+    "warnings": [],
+    "vectorEvidence": {
+      "usedVectorIds": [
+        "op176:seg1",
+        "op176:seg4",
+        "op176:seg0",
+        "op176:seg2",
+        "op176:seg3",
+        "op176:seg5",
+        "op152:seg0",
+        "op87:seg0"
+      ],
+      "unsupported": []
+    }
+  }
+}

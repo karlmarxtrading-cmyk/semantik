@@ -1,0 +1,19 @@
+--- iteration3/claim-guards.js
++++ final/claim-guards.js
+@@ -79,6 +79,7 @@
+     ['ketidakpastian pengukuran', /\b(?:measurement uncertainty|ketidakpastian pengukuran)\b/iu],
+   ];
+   for(const [label,re] of recoveryConcepts)if(re.test(source)&&!re.test(target))issues.push('Konsep ilmiah '+label+' hilang atau berubah.');
++  if(/\b(?:reviewers?|penelaah|peninjau)\b/iu.test(source)&&!/\b(?:reviewers?|penelaah|peninjau)\b/iu.test(target))issues.push('Peran penelaah ilmiah hilang atau berubah menjadi pelaku lain.');
+   const calibration=/\b(?:calibrat(?:e|es|ed|ing|ion|ions)|(?:di|meng)?kalibrasi|mengalibrasi)\b/giu;
+   const sourceCal=matches(source,calibration).length,targetCal=matches(target,calibration).length;
+   if(sourceCal&&sourceCal!==targetCal)issues.push('Identitas atau jumlah rujukan kalibrasi berubah; periksa setiap operasi pengukuran.');
+@@ -127,7 +128,7 @@
+   const idRecordPassive=/\bpengamatan\b[^.;!?]{0,65}\bdicatat (?:secara )?(?:keliru|salah)\b/iu;
+   const enRecordPassive=/\bobservations?\b[^.;!?]{0,45}\b(?:was|were|is|are|has been|have been|had been|being|be)\s+(?:(?:incorrectly|erroneously|wrongly)\s+recorded|recorded\s+(?:incorrectly|erroneously|wrongly))\b/iu;
+   if(idRecordPassive.test(source)&&/\bobservations?\b/iu.test(target)&&!enRecordPassive.test(target))issues.push('Peran pasif pencatatan pengamatan belum dipertahankan secara jelas.');
+-  const hypothesesHold=/\b(?:hypotheses|conditions|hipotesis|syarat|kondisi)\b[^.;!?]{0,55}\b(?:hold|are (?:satisfied|fulfilled)|terpenuhi)\b/iu;
++  const hypothesesHold=/\b(?:hypothes(?:is|es)|conditions?|hipotesis|syarat|kondisi)\b[^.;!?]{0,55}\b(?:holds?|(?:is|are) (?:satisfied|fulfilled)|terpenuhi)\b/iu;
+   if(hypothesesHold.test(source)&&!hypothesesHold.test(target))issues.push('Pemenuhan hipotesis atau syarat berubah menjadi kekuatan atau sifat lain.');
+   const wholeInterval=/\b(?:(?:over|throughout|across) (?:the )?(?:entire |whole )?interval|(?:di|pada) seluruh interval)\b/iu;
+   if(wholeInterval.test(source)&&/\b(?:all intervals|setiap interval|semua interval)\b/iu.test(target))issues.push('Cakupan sepanjang satu interval berubah menjadi semua interval.');

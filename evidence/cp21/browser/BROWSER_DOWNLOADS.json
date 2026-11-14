@@ -1,0 +1,66 @@
+{
+  "status": "PASS_ONLINE_UPLOAD_TRANSLATE_DOWNLOAD_AND_RELOAD",
+  "build": {
+    "release": "cp21-ba83aed6acb74963",
+    "version": "0.21.0",
+    "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/ba83aed6acb74963/"
+  },
+  "browser": "Cloud Chrome, actual UI file chooser and native download",
+  "origin": "http://127.0.0.1:4173/",
+  "files": [
+    {
+      "file": "EN_BEFORE_RELOAD.md",
+      "bytes": 2309,
+      "sha256": "d1ee0759eba3eaf2fbc559f6047da1f9c6c1478462d5b57faedf271a59426719",
+      "pages": 3,
+      "uniqueBlocks": 9,
+      "readableUTF8": true
+    },
+    {
+      "file": "EN_AFTER_RELOAD.md",
+      "bytes": 2309,
+      "sha256": "d1ee0759eba3eaf2fbc559f6047da1f9c6c1478462d5b57faedf271a59426719",
+      "pages": 3,
+      "uniqueBlocks": 9,
+      "readableUTF8": true
+    },
+    {
+      "file": "ID_TO_EN.md",
+      "bytes": 2269,
+      "sha256": "3a50adb143b13afafa3eb7c352101063350fc7dbe0bfa2aeb0d549a99e910827",
+      "pages": 3,
+      "uniqueBlocks": 9,
+      "readableUTF8": true
+    }
+  ],
+  "oldBrowserProgressRescued": "SALVAGED_PREEXISTING_CP20_BROWSER.md",
+  "sameDocumentQuotaWarningRetainedBeforeReplacement": true,
+  "newDocumentOldWarningAbsentBeforeAndAfterReload": true,
+  "markdownByteIdenticalAfterReload": true,
+  "enToId": {
+    "pages": 3,
+    "blocks": 9,
+    "translated": 9,
+    "preserved": 0,
+    "rejected": 0,
+    "failed": 0
+  },
+  "idToEn": {
+    "pages": 3,
+    "blocks": 9,
+    "translated": 6,
+    "preservedAlreadyTargetMetadata": 3,
+    "rejected": 0,
+    "failed": 0
+  },
+  "limits": [
+    "This is managed local preview, not actual Cloudflare Pages hosting.",
+    "Small fixture workflow proof, not semantic acceptance or fresh 1500-page qualification.",
+    "No physical 8GB device, sleep/power interruption, offline network-toggle or production rollback claim."
+  ]
+}

@@ -1,0 +1,19 @@
+# Byte fidelity first: the CP22 sourceHash covers app/ (including CRLF license files)
+# and the model shards. Disable every line-ending conversion, on every platform,
+# regardless of core.autocrlf.
+* -text
+
+# Binary assets: no diffs, no merges.
+*.gz binary
+*.onnx binary
+*.wasm binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.zip binary
+*.traineddata binary
+*.bin binary

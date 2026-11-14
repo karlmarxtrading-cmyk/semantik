@@ -1,0 +1,47 @@
+{
+  "status": "NOT_PRODUCTION_READY",
+  "release": "cp20-2e4d8ef18eb32385",
+  "stages": [
+    {
+      "stage": "recover persisted source",
+      "status": "PASS",
+      "evidence": "safety/RECOVERY_INITIAL_VERIFICATION.json"
+    },
+    {
+      "stage": "emergency checkpoint saved",
+      "status": "PASS",
+      "evidence": "safety/EMERGENCY_RECOVERY_RECEIPT.json"
+    },
+    {
+      "stage": "metadata targeted fix",
+      "status": "PASS_SCOPED",
+      "evidence": "metadata/RESULTS.json"
+    },
+    {
+      "stage": "known semantic regressions",
+      "status": "PARTIAL",
+      "evidence": "semantics/RECOVERY_SEMANTIC_REVIEW.json"
+    },
+    {
+      "stage": "fresh acceptance",
+      "status": "FAIL",
+      "evidence": "acceptance/AI_REVIEW.json"
+    },
+    {
+      "stage": "32 regression groups",
+      "status": "PASS",
+      "evidence": "full-regression/RESULTS.json"
+    },
+    {
+      "stage": "browser upload inference download restore",
+      "status": "PASS_SCOPED_WITH_WARNING_BUG",
+      "evidence": "browser/BROWSER_RECOVERY_SUMMARY.json"
+    },
+    {
+      "stage": "production deployment qualification",
+      "status": "BLOCKED_NOT_RUN",
+      "evidence": "../../VERIFICATION_REMAINING_CP20.md"
+    }
+  ],
+  "next": "Continue with final continuation document; preserve all historical evidence; no blanket1500 rerun."
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "Audit integritas seluruh arsip, lifecycle dokumen, pembaruan/offline, konfigurasi hosting, provenance build. Source tidak diubah.",
+  "release": "cp18-7a8e787a497535f5",
+  "verdictForThisScope": "Fondasi implementasi lebih kuat dari CP17. Integritas internal lulus dan beberapa perbaikan lama nyata di kode. Belum dapat menyatakan production-ready dari arsip deployment ini: bukti build/acceptance dan verifikasi browser/hosting belum disertakan, serta ada konfigurasi cache yang perlu dibenahi.",
+  "coverage": {
+    "allFilesInventoried": 297,
+    "groups": {"root":3,"releaseRoot":4,"app":11,"engine":1,"runtime":2,"vendor":214,"licenses":32,"models":30},
+    "method": "Kode first-party dibaca untuk jalur relevan; seluruh aset biner masuk inventaris SHA-256/ukuran. Ini bukan klaim bahwa semua instruksi biner atau semua kode vendor telah diaudit manual.",
+    "offlineManifest": "231/231 ukuran dan SHA-256 cocok",
+    "serviceWorkerManifest": "232/232 ukuran dan SHA-256 cocok",
+    "modelIntegrity": "28/28 shard transport, 28/28 shard setelah decode, 16/16 berkas logis cocok",
+    "ocrData": "eng dan ind: transport gzip serta hasil decode cocok dengan SOURCE.json",
+    "embeddedManifests": "Manifest kedua arah yang benar-benar tertanam dalam worker sama persis dengan manifest di disk",
+    "runtimeHarness": "13 assertions skenario lulus; salah satunya mereproduksi perilaku unduh ulang lintas rilis, bukan kriteria kelulusan produk"
+  },
+  "verifiedImprovements": [
+    {"oldId":"LIFE-01","status":"implemented-static","evidence":["app/storage.js:79-84","app/main.js:356-361","app/main.js:317-325"],"finding":"Invalidasi terjemahan menulis dokumen dengan koreksi sumber dalam transaksi yang sama; koreksi dipetakan atau dipulihkan saat perubahan layout gagal."},
+    {"oldId":"LIFE-02","status":"implemented-static","evidence":["app/main.js:39-65","app/main.js:143-144","app/main.js:221"],"finding":"save mengembalikan keberhasilan eksplisit; dirty/kuota ditampilkan; pesan koreksi disimpan bergantung pada hasil nyata; tersedia retry snapshot."},
+    {"oldId":"LIFE-03","status":"reproduced-harness","evidence":["sw.js:3-24","index.html:10-13","runtime_integrity_probe.json"],"finding":"URL rilis dipin dan SW memverifikasi ukuran/hash; byte versi berbeda pada URL lama ditolak 503 dan tidak meracuni cache."},
+    {"oldId":"LIFE-04","status":"implemented-static","evidence":["app/storage.js:28-35","app/storage.js:48-57","app/main.js:610-625"],"finding":"Pemulihan BFCache memperoleh kembali Web Lock dan writer epoch; setiap mutasi dijaga jobId/writeEpoch; konflik menjadi read-only. Belum diuji BFCache di browser aktual."},
+    {"oldId":"LIFE-05","status":"implemented-static","evidence":["app/main.js:524-533","app/export.js:166-177","app/export.js:206-213"],"finding":"Ekspor menerima AbortSignal, menghentikan stream ZIP dan memeriksa pembatalan sebelum klik unduhan."},
+    {"oldId":"LIFE-06","status":"implemented-static","evidence":["app/main.js:549-555"],"finding":"Hapus dokumen sekarang mengosongkan DOM, canvas, password, objek hasil dan URL ekspor."},
+    {"oldId":"LIFE-07","status":"reproduced-harness","evidence":["assets/engine.worker-4c3dcfee.js:59-117","runtime_integrity_probe.json"],"finding":"Cache ditolak atau kuota put gagal masih memungkinkan pemakaian unduhan terverifikasi selama sesi; offlineReady=false. Tes memakai byte fixture, bukan inferensi model nyata."},
+    {"oldId":"DEP-01","status":"version-inspected-primary-advisory-checked","evidence":["vendor/pdfjs/pdf.min.mjs:version banner","vendor/pdfjs/pdf.worker.min.mjs:version banner","licenses/pdfjs-dist/SOURCE.txt","https://github.com/mozilla/pdf.js/security/advisories/GHSA-hq66-cqwq-w95j"],"finding":"Library dan worker melaporkan PDF.js 6.2.108, versi patch advisory yang sebelumnya relevan. Bukan sertifikat bebas semua kerentanan."},
+    {"oldId":"OPT-01","status":"inventory-verified","evidence":["integrity_checks.json"],"finding":"Duplikasi dua ONNX WASM besar pada CP17 sudah tidak ditemukan; hanya runtime/ort-wasm-simd-threaded.wasm yang disertakan."}
+  ],
+  "findings": [
+    {
+      "id":"OPS18-01","priority":"P2","status":"verified-configuration-with-documented-inference",
+      "title":"Aturan Cache-Control saling menumpuk",
+      "evidence":["_headers:1-13","header_rule_analysis.json"],
+      "observed":"/* menetapkan max-age=0, must-revalidate; /r/* menetapkan max-age=31536000, immutable. Dokumentasi resmi Pages menyebut header dari beberapa aturan yang cocok diwariskan dan nilai header ganda digabung dengan koma.",
+      "impact":"Konfigurasi rilis mengandung dua nilai max-age dan tidak menyatakan satu kebijakan HTTP cache yang tegas. Tidak diklaim telah mengukur header atau perilaku browser di deployment publik.",
+      "fix":"Pisahkan aturan cache shell/SW dari aset rilis agar satu respons hanya memiliki satu kebijakan cache yang dimaksud. Verifikasi hasil HEAD/GET pada host target.",
+      "source":"https://developers.cloudflare.com/pages/configuration/headers/"
+    },
+    {
+      "id":"OPS18-02","priority":"P2","status":"reproduced-harness",
+      "title":"Model identik diunduh ulang ketika prefix rilis berubah",
+      "evidence":["assets/engine.worker-4c3dcfee.js:86","assets/engine.worker-4c3dcfee.js:109","sw.js:32-34","runtime_integrity_probe.json"],
+      "observed":"Cache model bernama semantik-model-v1 tetapi key memakai part.path yang mengandung /r/<rilis>/. Byte dan hash identik pada dua path rilis menghasilkan dua fetch dalam fungsi loader aktual. SW juga sengaja mempertahankan seluruh cache rilis lama tanpa kebijakan pembersihan.",
+      "impact":"Pembaruan aplikasi dapat menambah unduhan model sekitar 100 MB per arah meskipun bobot tidak berubah, ditambah salinan cache rilis lama. Biaya jaringan/ruang ini relevan untuk UX consumer dan perangkat terbatas.",
+      "fix":"Gunakan penyimpanan model berdasarkan fingerprint atau hash konten dengan verifikasi tetap wajib; migrasi/reuse cache hanya setelah validasi. Pertahankan rilis yang masih dipakai tab dan satu rollback, lalu bersihkan rilis tidak terpakai. Tidak perlu menambah langkah pengguna."
+    },
+    {
+      "id":"OPS18-03","priority":"P2","status":"artifact-evidence-gap",
+      "title":"Paket deployment belum membawa bukti build dan acceptance yang dirujuk",
+      "evidence":["integrity_checks.json:buildInputsPresent","licenses/pdfjs-dist/SOURCE.txt","models/en-id/manifest.json:parityReport","models/id-en/manifest.json:parityReport","assets/engine.worker-4c3dcfee.js:57"],
+      "observed":"ZIP ini berisi aset deployment. Tidak ada package/lockfile, patch-engine.py, recipe build, suite regresi, benchmark jurnal atau hasil parity. SOURCE.txt merujuk tools/package-lock.json di paket source/evidence; manifest merujuk parity-en-id.json dan parity-id-en.json yang tidak ada di ZIP ini.",
+      "impact":"Hash internal membuktikan konsistensi arsip, tetapi belum membuktikan build dapat direproduksi atau kualitas akademik lolos acceptance. Tidak menyimpulkan bahwa paket tersebut tidak mungkin ada di tempat lain.",
+      "fix":"Sediakan paket source/build/evidence terpisah dengan dependency terkunci, script konversi/patch, hash input-output dan acceptance jurnal dua arah. Jangan menambahkan berkas pengembangan berat ke payload consumer."
+    },
+    {
+      "id":"OPS18-04","priority":"P3","status":"verified-static",
+      "title":"MODEL_NOTICE masih mencatat komponen PDF.js versi lama",
+      "evidence":["MODEL_NOTICE.txt:CP17 PDF-only revision","licenses/pdfjs-dist/SOURCE.txt:1","vendor/pdfjs/pdf.min.mjs:version banner"],
+      "observed":"MODEL_NOTICE.txt menyebut PDF.js 5.6.205, sementara SOURCE.txt serta library/worker aktual menyebut 6.2.108. Notice juga menunjuk /licenses/ meskipun lokasi aktual berada di /r/<rilis>/licenses/.",
+      "impact":"Catatan pemeliharaan dan provenance membingungkan; bukan bukti aplikasi masih menjalankan versi lama.",
+      "fix":"Perbarui notice CP18 dan lokasi atribusi agar sesuai aset aktual."
+    }
+  ],
+  "releaseUnknowns": [
+    "Respons HTTPS nyata: CSP, MIME WASM/JS, cache header, Content-Encoding shard dan 404 tidak diuji tanpa host target.",
+    "BFCache, tab bersaing, quota IndexedDB, browser storage eviction, unduhan di Safari/iOS, dan perangkat memori kecil belum diverifikasi di browser aktual. Lingkungan browser lokal gagal sebelum aplikasi berjalan.",
+    "Bukti hash model/manifest bersifat integritas internal; audit ini tidak menjalankan ulang konversi model atau build vendor dari upstream.",
+    "Perbaikan source/epoch/DOM/cancel dinilai dari jalur kode; tidak diklaim semua skenario lifecycle telah diuji end-to-end."
+  ],
+  "files": ["integrity_checks.json","verify_files.py","file_verification_reproduced.json","runtime_integrity_probe.mjs","runtime_integrity_probe.json","header_rule_analysis.json"]
+}

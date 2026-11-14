@@ -1,0 +1,79 @@
+{
+  "corpusSha256": "71d938dd4d587a87b7a9ae2e6a9fd8b3b3442a3419d3bd5203b25edd843e7fe9",
+  "documents": [
+    {
+      "id": "JOURNAL-01",
+      "direction": "en-id",
+      "pages": 26,
+      "segments": 20,
+      "domain": "mathematics",
+      "sourceChars": 3797,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-02",
+      "direction": "en-id",
+      "pages": 23,
+      "segments": 20,
+      "domain": "statistics",
+      "sourceChars": 3676,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-03",
+      "direction": "en-id",
+      "pages": 23,
+      "segments": 20,
+      "domain": "biomedical",
+      "sourceChars": 4405,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-04",
+      "direction": "en-id",
+      "pages": 49,
+      "segments": 20,
+      "domain": "environment",
+      "sourceChars": 3170,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-05",
+      "direction": "id-en",
+      "pages": 5,
+      "segments": 20,
+      "domain": "statistics",
+      "sourceChars": 4012,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-06",
+      "direction": "id-en",
+      "pages": 7,
+      "segments": 20,
+      "domain": "mathematics",
+      "sourceChars": 3232,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-07",
+      "direction": "id-en",
+      "pages": 9,
+      "segments": 20,
+      "domain": "environment",
+      "sourceChars": 3070,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    },
+    {
+      "id": "JOURNAL-08",
+      "direction": "id-en",
+      "pages": 7,
+      "segments": 20,
+      "domain": "biomedical",
+      "sourceChars": 3054,
+      "sourceCheck": "PDF page provenance present; transcription NOT human-approved."
+    }
+  ],
+  "allOriginalPdfsRetained": true,
+  "humanTranscriptionApprovals": 0
+}

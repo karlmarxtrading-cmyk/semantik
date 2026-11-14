@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-13",
+  "documentStatus": "FINAL_CHECKPOINT_NOT_PRODUCTION_READY",
+  "productionReady": false,
+  "baselineRelease": "cp19-6ed0d134e1770b27",
+  "statusVocabulary": [
+    "PASS",
+    "FAIL",
+    "NOT_RUN",
+    "BLOCKED"
+  ],
+  "statusMeaning": {
+    "PASS": "Cacat yang dinyatakan tertutup dalam lingkup evidence spesifik; tidak berarti semua gerbang produk lulus.",
+    "FAIL": "Kegagalan nyata atau syarat wajib yang belum terpenuhi teridentifikasi.",
+    "NOT_RUN": "Kualifikasi wajib belum selesai/hasil final belum tersedia. Bukan PASS.",
+    "BLOCKED": "Validasi memerlukan lingkungan/akses yang saat ini tidak tersedia atau tidak menyajikan byte/header yang dibutuhkan."
+  },
+  "pendingFinalization": [],
+  "findings": [
+    {
+      "id": "AUD-01",
+      "priority": "P0",
+      "finding": "PDF >300 halaman ditolak",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_VERIFIED_FOR_RECORDED_FIXTURES",
+      "closure": "CLOSED_FOR_DEMONSTRATED_CAPACITY_SCOPE",
+      "cause": "CP19 menolak jumlah halaman >300 sebelum ekstraksi; penampungan seluruh dokumen menghalangi kenaikan batas yang aman.",
+      "files": [
+        "app/app/pdf-reader.js",
+        "app/app/long-document.js",
+        "app/app/main.js",
+        "app/app/storage.js",
+        "app/app/export.js"
+      ],
+      "changes": "Pembaca membatasi sampai 2.000 halaman/100 MiB dengan pengaman per halaman. Alur baru bekerja satu halaman: ekstrak, commit atomik, terjemahkan, commit, lepas. Resume dan ekspor memakai pembacaan halaman bertahap.",
+      "tests": [
+        "Parser PDF.js aktual pada 300/301/1000/1001/1500 halaman dan rich 1001 halaman",
+        "Ekspor sumber satu Markdown per fixture; bukan terjemahan",
+        "Pipeline terkontrol 1500 halaman unik; bukan bukti inferensi",
+        "Actual browser1001 and1500 PDF→local inference→single downloaded Markdown, complete page/block IDs; semantic completion evaluated separately"
+      ],
+      "evidence": [
+        "evidence/cp20/qa/capacity-parser-final/RESULTS.json",
+        "evidence/cp20/qa/capacity-export-8c-final/RESULTS.json",
+        "evidence/cp20/qa/CAPACITY_FINAL_BUILD_BINDING.json",
+        "evidence/cp20/pipeline/controlled-results.json",
+        "evidence/cp20/qa/LONG_1668_FINAL_COMPONENT_BINDING.json",
+        "evidence/cp20/release/ETA_HISTORY_FINAL_BINDING.json",
+        "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json",
+        "evidence/cp20/browser/final-1668/BROWSER_1001_COMPLETE.json",
+        "evidence/cp20/qa/LONG_1668_FINAL_COMPONENT_BINDING.json"
+      ],
+      "remaining": "Broad book/scan/layout/device qualification and scientific meaning remain open in other gates. Synthetic long fixtures repeat ten conceptual templates; no universal 1500-page promise. 1001 inference occurred on1668, final8c restored/exported it with explicit component/output-parity binding; 1500 consumer inference/export occurred on8c. Rejected blocks remain visibly partial."
+    },
+    {
+      "id": "AUD-02",
+      "priority": "P0",
+      "finding": "Kesalahan makna/istilah lolos guard",
+      "status": "FAIL",
+      "implementation": "PARTIAL_TECHNICAL_REPAIR",
+      "closure": "OPEN",
+      "cause": "Model lokal dan guard lama tidak menjaga seluruh hubungan, istilah dan pembatas ilmiah; status translated disalahartikan bila dianggap bukti mutu.",
+      "files": [
+        "app/app/translation.js",
+        "app/app/semantic-spans.js",
+        "app/app/claim-guards.js"
+      ],
+      "changes": "Terminologi berbasis konteks, penjagaan finite/hingga, negasi/modalitas, larutan, demand, convergence, katalis, identitas teknis dan aturan pemulihan diperbaiki. Identitas RULESET/fingerprint diperbarui. Bobot model tidak diganti tanpa kualifikasi.",
+      "tests": [
+        "Kontrol istilah dan guard; regresi ilmiah bawaan",
+        "Inferensi model asli kedua arah; acceptance v4 baru setelah pembekuan mekanis",
+        "Penilaian AI dibedakan dari review manusia"
+      ],
+      "evidence": [
+        "evidence/cp20/semantics/guards.json",
+        "evidence/cp20/semantics/V4_MECHANICAL_INFERENCE.json",
+        "evidence/cp20/semantics/V4_FRESH_ACCEPTANCE.json",
+        "evidence/cp20/semantics/IMPLEMENTATION_AND_STATUS.md",
+        "evidence/cp20/semantics/V4_SEMANTIC_REVIEW_AI.json",
+        "evidence/cp20/semantics/V4_FINAL_DIST_SEMANTIC_BINDING.json",
+        "evidence/cp20/semantics/FINAL_COMPONENT_PARITY_BINDING.json",
+        "evidence/cp20/semantics/V4_HUMAN_REVIEW_BILINGUAL.csv",
+        "evidence/cp20/semantics/alternatives/ALTERNATIVE_MODEL_ASSESSMENT.md",
+        "evidence/cp20/semantics/FINAL_COMPONENT_PARITY_BINDING.json",
+        "evidence/cp20/semantics/alternatives/ALTERNATIVE_MODEL_ASSESSMENT.md"
+      ],
+      "remaining": "Fresh v4 ten cases:9translated,1rejected,4critical targets by AI review; zero human approvals. Technical semantic failure remains. Larger M2M100 experiment did not demonstrate a replacement advantage; pipeline differences and limitations are documented."
+    },
+    {
+      "id": "AUD-03",
+      "priority": "P1",
+      "finding": "Bab setelah referensi tidak diterjemahkan",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "Reset References memakai daftar judul khusus. Perbaikan awal juga menemukan font median halaman jarang dan running header yang keliru.",
+      "files": [
+        "app/app/layout.js"
+      ],
+      "changes": "Batas judul struktural tidak bergantung daftar kata. Font badan diperkirakan berbobot karakter agar halaman jarang tetap terbaca. Heading kecil di tepi yang langsung diikuti sitasi mempertahankan bibliografi. Blok referensi memiliki preservationReason.",
+      "tests": [
+        "PDF audit asli: bab sesudah References",
+        "PDF baru lima halaman: judul asing, bibliografi tengah buku, continuation dan list",
+        "Fixture warisan references-continuation; sparse heading tanpa sinyal bold"
+      ],
+      "evidence": [
+        "evidence/cp20/qa/reference-real-parser.json",
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/structure/inherited-reader-console.json"
+      ],
+      "remaining": "PASS menutup cacat yang direproduksi; tidak membuktikan seluruh tata letak buku atau OCR. Ikatan hash modul terhadap build final tetap wajib."
+    },
+    {
+      "id": "AUD-04",
+      "priority": "P1",
+      "finding": "Batas karakter/aset dan penampungan dokumen penuh",
+      "status": "FAIL",
+      "implementation": "IMPLEMENTED_AND_PARTLY_QUALIFIED",
+      "closure": "OPEN",
+      "cause": "CP19 menyimpan teks, Blob, raster, hasil restore dan string ekspor seluruh dokumen; batas 2 juta karakter/128 MiB aset menjadi penghalang.",
+      "files": [
+        "app/app/long-document.js",
+        "app/app/storage.js",
+        "app/app/pdf-reader.js",
+        "app/app/main.js",
+        "app/app/export.js"
+      ],
+      "changes": "Page queue satu aktif, commit halaman atomik, lazy load metadata/halaman, invalidasi provenance per halaman, pelepasan payload, dan output OPFS bertahap. Blob fallback 32 MiB untuk kemampuan tanpa OPFS dibatasi eksplisit. Batas per halaman dipertahankan; tidak menghapus seluruh pengaman.",
+      "tests": [
+        "Pipeline terkontrol >2 juta karakter/1500 halaman",
+        "Parser rich 1001 halaman melewati 2 juta karakter lalu source-only MD",
+        "Atomicity/stale writer/config invalidation dan OPFS boundary",
+        "Uji ukuran input terpisah"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/controlled-results.json",
+        "evidence/cp20/qa/capacity-parser-final/RESULTS.json",
+        "evidence/cp20/qa/capacity-export-8c-final/RESULTS.json",
+        "evidence/cp20/qa/byte-limit.json",
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/qa/authentic-parser/SUMMARY.json",
+        "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json",
+        "evidence/cp20/browser/final-8c643/AUTHENTIC_BOOK_PREFLIGHT.json"
+      ],
+      "remaining": "Actual browser could not persist85.9MB authentic source: QuotaExceededError; translation correctly blocked until source saved. No universal cap inferred. Authentic1062-page85.9MB source traversal exceeds2Mchars and processes56.8MBassets with one active page. Browser persistent storage and full translated export of that richly illustrated book remain unqualified;646pages have incomplete content flags in Node. No whole-browser RAM/device qualification."
+    },
+    {
+      "id": "AUD-05",
+      "priority": "P1",
+      "finding": "Ekstraksi parsial belum tersedia bagi exporter",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "Halaman committed hanya berada di partialPages sementara state.document null; UI/eksportir tidak dapat menjangkau sumber yang sudah berhasil diekstrak.",
+      "files": [
+        "app/app/main.js",
+        "app/app/long-document.js",
+        "app/app/storage.js",
+        "app/app/export.js"
+      ],
+      "changes": "Hasil sumber tersedia segera setelah commit. Kegagalan ekstraksi/model menyisakan prefix yang dapat dilihat dan diekspor. Kegagalan simpan mempertahankan tepat satu halaman belum tersimpan; ekspor menyertakannya dengan label jujur, dan retry menyimpan halaman tersebut.",
+      "tests": [
+        "Kegagalan ekstraksi setelah halaman sukses; source recovery",
+        "Quota rollback, stale writer, storage denial, dan page overlay",
+        "Ekspor parsial mengecek urutan/ID/count dan menolak kehilangan halaman"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/controlled-results.json",
+        "evidence/cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/pipeline/quota-recovery-results.json"
+      ],
+      "remaining": "Cacat keterjangkauan hasil parsial tertutup pada regresi. Seluruh matriks tutup paksa, sleep/wake fisik, BFCache dan browser final masih perlu laporan terpisah; evidence browser pra-perbaikan bukan kelulusan final."
+    },
+    {
+      "id": "AUD-06",
+      "priority": "P1",
+      "finding": "Persiapan offline menolak manifest CP19",
+      "status": "BLOCKED",
+      "implementation": "IMPLEMENTED_CONTROLLED_TEST_PASS",
+      "closure": "OPEN",
+      "cause": "offline.js menerima namespace CP18 hard-coded sementara manifest CP19 berbeda. Preview juga mengubah byte HTML sehingga validasi integritas yang benar menolaknya.",
+      "files": [
+        "app/app/offline.js",
+        "scripts/build.py",
+        "scripts/sw-template.js"
+      ],
+      "changes": "Identitas manifest diturunkan dari BUILD_INFO aktual; release/version/source/base/model/cache/ukuran/hash/jalur diverifikasi sebelum cache berubah. Byte tidak cocok tetap gagal tertutup.",
+      "tests": [
+        "Manifest build aktual dan 12 mutasi rusak",
+        "Persiapan seluruh aset aktual, cache ulang, abort/quota, korupsi cache dan jaringan berubah",
+        "Node VM memakai Cache/fetch/lifecycle doubles; bukan offline browser"
+      ],
+      "evidence": [
+        "evidence/cp20/release/OFFLINE_RELEASE_REGRESSION.json",
+        "evidence/cp20/release/FINAL_BINDING.json",
+        "evidence/cp20/browser/pre-storage-fix/BROWSER_EVIDENCE.json"
+      ],
+      "remaining": "Bug identitas telah diperbaiki. Browser offline-reload-PDF/scan-inference, update pekerjaan aktif dan rollback hosting final belum dibuktikan. Preview diketahui menyisipkan HTML; Cloudflare yang menyajikan byte/header utuh belum tersedia sebagai kelulusan. Tidak ada pelemahan integritas."
+    },
+    {
+      "id": "AUD-07",
+      "priority": "P1",
+      "finding": "Citra penuh/dobel memperbesar MD",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "Citra sumber penuh ditanam untuk tiap halaman dan aset identik muncul berulang pada blok/fallback halaman.",
+      "files": [
+        "app/app/export.js",
+        "app/app/pdf-reader.js"
+      ],
+      "changes": "Gambar memakai satu definisi referensi Markdown per SHA-256 isi; payload identik tidak ditanam ulang walau path berbeda. Bukti halaman digital biasa opsional. Embedded raster/vector dan fallback penting ditandai preserveVisualSource sehingga tidak hilang ketika OCR label berhasil.",
+      "tests": [
+        "Deduplikasi path/isi dan rendering Marked/KaTeX",
+        "Required image dengan opsi page evidence mati",
+        "PDF nyata tiga halaman: batang terisi, kurva dan shading; visual sumber diverifikasi"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/math/VECTOR_PRESERVATION.json",
+        "evidence/cp20/math/VECTOR_FIGURES_SOURCE.md"
+      ],
+      "remaining": "Batas klaim: sebagian gambar penting tetap memakai raster satu halaman bila crop individual belum andal. Kompatibilitas data URI diuji pada renderer yang dinyatakan, bukan semua editor. Beban aset besar/perangkat termasuk AUD-04/08."
+    },
+    {
+      "id": "AUD-08",
+      "priority": "P1",
+      "finding": "Makna, matematika/OCR, beban dan hosting belum dikualifikasi penuh",
+      "status": "FAIL",
+      "implementation": "PARTIAL_TECHNICAL_REPAIR",
+      "closure": "OPEN",
+      "cause": "Gerbang mutu, matematika/OCR, beban/perangkat dan hosting tidak mempunyai bukti lengkap; beberapa kemampuan benar-benar masih gagal atau di luar rekonstruksi andal.",
+      "files": [
+        "app/app/math-geometry.js",
+        "app/app/pdf-reader.js",
+        "app/app/long-document.js",
+        "app/app/export.js",
+        "tests/cp20-math-qualification.mjs"
+      ],
+      "changes": "Akar digital terisolasi direkonstruksi hanya dengan overbar unik; kurva/brace, label persamaan ambigu dan OCR tidak boleh menjadi LaTeX verified. Source visual dan penanda cakupan/rumus tidak pasti dipertahankan serta mencegah status selesai.",
+      "tests": [
+        "Delapan persamaan audit dan mutasi geometri",
+        "Kontrol PDF/KaTeX nyata untuk akar, brace dan label ambigu",
+        "Lifecycle incomplete OCR dan visual vector-only",
+        "Semantik v4 tetap menunjukkan kesalahan kritis"
+      ],
+      "evidence": [
+        "evidence/cp20/math/QUALIFICATION.json",
+        "evidence/cp20/math/REAL_PDF_CONTROL.json",
+        "evidence/cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+        "evidence/cp20/math/VECTOR_PRESERVATION.json",
+        "evidence/cp20/semantics/V4_FRESH_ACCEPTANCE.json",
+        "evidence/cp20/semantics/V4_SEMANTIC_REVIEW_AI.json",
+        "evidence/cp20/semantics/FINAL_COMPONENT_PARITY_BINDING.json",
+        "evidence/cp20/qa/authentic-parser/SUMMARY.json",
+        "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json",
+        "evidence/cp20/qa/QA_SUMMARY.json"
+      ],
+      "remaining": "Akar kompleks/indexed, cases/sistem, matematika scan, formula merged/multilevel table, pembacaan kompleks, perangkat fisik, total RAM dan hosting final belum memenuhi gerbang. Fallback gambar bukan rekonstruksi LaTeX yang sukses. Review manusia belum tersedia."
+    },
+    {
+      "id": "AUD-09",
+      "priority": "P2",
+      "finding": "Heading/list belum menjaga struktur buku",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "Exporter meratakan judul menjadi ### dan memakai nomor halaman sebagai struktur utama; list literal di-escape tanpa model list.",
+      "files": [
+        "app/app/layout.js",
+        "app/app/export.js"
+      ],
+      "changes": "Heading level dipertahankan di bawah judul dokumen. Nomor halaman menjadi komentar provenance. Ordered/bullet lists mempunyai schema list eksplisit, continuation dan serialisasi aman. HTML sumber tetap di-escape.",
+      "tests": [
+        "Level heading 1/2 menghasilkan hierarki berbeda",
+        "List bernomor/bullet dan continuation item tercakup",
+        "Marked membentuk list yang benar; source HTML tidak dieksekusi"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/qa/reference-real-parser.json"
+      ],
+      "remaining": "Cacat yang direproduksi tertutup. Hierarki arbitrer, footnote kompleks, merged table dan paragraf lintas halaman tidak otomatis dianggap sempurna; kualifikasi jenis dokumen tetap terbuka pada AUD-08."
+    },
+    {
+      "id": "AUD-10",
+      "priority": "P2",
+      "finding": "Ajakan retry tidak sesuai predicate rejected",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "Penolakan deterministik tidak retryable tetapi pesan meminta mengulang tindakan identik.",
+      "files": [
+        "app/app/translation.js",
+        "app/app/export.js",
+        "app/app/main.js"
+      ],
+      "changes": "Penolakan deterministik meminta perubahan sumber/glosarium atau koreksi hasil; transient failure tetap dapat diulang. Retry/table/cache memakai metadata outcome yang konsisten. Pesan ekspor mengikuti tindakan yang tersedia.",
+      "tests": [
+        "Kontrol deterministic rejection/transient retry/cache",
+        "Parity hasil model sebelum/sesudah metadata pemulihan",
+        "Tabel mengagregasi retryability tanpa false success"
+      ],
+      "evidence": [
+        "evidence/cp20/semantics/guards.json",
+        "evidence/cp20/semantics/RECOVERY_METADATA_PARITY.json",
+        "evidence/cp20/structure/RESULTS.json"
+      ],
+      "remaining": "PASS adalah kontrak deterministik dan pesan, bukan jaminan kandidat retry berikutnya benar. Pemeriksaan tindakan UI final dilaporkan terpisah."
+    },
+    {
+      "id": "AUD-11",
+      "priority": "P2",
+      "finding": "Notice/lisensi ditolak service worker",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_CONTROLLED_TEST_PASS",
+      "closure": "CLOSED_KNOWN_DEFECT",
+      "cause": "MODEL_NOTICE dan licenses dikemas tetapi tidak menjadi anggota RECORDS sehingga service worker menolak jalur yang sebenarnya sah.",
+      "files": [
+        "scripts/build.py",
+        "scripts/sw-template.js"
+      ],
+      "changes": "Notice dan semua lisensi masuk inventory hash/ukuran dan disajikan oleh service worker dengan integritas yang sama. Jalur asing tetap ditolak.",
+      "tests": [
+        "Worker hasil build menyajikan 33 dokumen notice/lisensi setelah jaringan pada boundary uji dihapus",
+        "Korupsi hash dan unknown path tetap ditolak"
+      ],
+      "evidence": [
+        "evidence/cp20/release/OFFLINE_RELEASE_REGRESSION.json",
+        "evidence/cp20/release/FINAL_BINDING.json"
+      ],
+      "remaining": "Cacat inventory/handler tertutup pada exact generated bytes. Browser/hosting final tetap bagian AUD-06/08; ini bukan audit legal lisensi."
+    },
+    {
+      "id": "AUD-12",
+      "priority": "P2",
+      "finding": "Teks bantuan kecil; UX panjang belum dikualifikasi",
+      "status": "NOT_RUN",
+      "implementation": "IMPLEMENTED_AND_PARTLY_QUALIFIED",
+      "closure": "OPEN",
+      "cause": "Label/help 8–11 px dan progres panjang tidak cukup membedakan pekerjaan, hasil aman tersimpan, bagian belum selesai serta pemulihan.",
+      "files": [
+        "app/app/styles.css",
+        "app/index.html",
+        "app/app/main.js",
+        "app/app/long-document.js"
+      ],
+      "changes": "Teks bantuan/kontrol utama diperbesar, target sentuh/focus dijaga, progres tahap/halaman/tersimpan dan estimasi berdasarkan laju aktual ditambahkan. Status needs-attention, quota, offline dan unsaved dibedakan. Koreksi final mengecualikan replay halaman cache dan halaman resume sebagian dari sampel ETA; estimasi memakai delapan halaman kerja penuh terakhir setelah sedikitnya tiga sampel.",
+      "tests": [
+        "Smoke Chrome pra-perbaikan: viewport 390px tanpa heavy idle resources dan bantuan 14px",
+        "Regresi lifecycle progress/pause/recovery",
+        "Browser final, keyboard/zoom dan pekerjaan panjang sedang diverifikasi oleh integrator",
+        "Final8c actual keyboard pause/resume, tab-close/reopen, paused BFCache return, and1500-page processing; browser zoom shortcut did not change viewport, so zoom is NOT_RUN"
+      ],
+      "evidence": [
+        "evidence/cp20/browser/pre-storage-fix/BROWSER_EVIDENCE.json",
+        "evidence/cp20/pipeline/lifecycle-regression.log",
+        "evidence/cp20/pipeline/IMPLEMENTATION_NOTES.md",
+        "evidence/cp20/pipeline/eta-resume-results.json",
+        "evidence/cp20/release/ETA_HISTORY_FINAL_BINDING.json",
+        "evidence/cp20/browser/final-8c643/LIFECYCLE_OBSERVATIONS.json",
+        "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json"
+      ],
+      "remaining": "Initial390px layout and14px help passed; actual controls/long lifecycle evidence exists. Physical small-device, complete accessibility/usability, zoom and sleep/wake/process-kill qualification remain open."
+    }
+  ],
+  "additionalFindings": [
+    {
+      "id": "CP20-N01",
+      "priority": "P1",
+      "finding": "Identifier-only fragment menolak seluruh paragraf sebelum prosa inferensi",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Atom huruf/angka/underscore/tanda hubung tidak dilindungi konsisten.",
+      "files": [
+        "app/app/semantic-spans.js",
+        "app/app/translation.js"
+      ],
+      "changes": "Identitas teknis umum dilindungi tanpa prefix fixture khusus; END/AKHIR tetap diperlakukan sebagai prosa bila tepat.",
+      "tests": [
+        "Inferensi identifier dua arah dan regresi guard"
+      ],
+      "evidence": [
+        "evidence/cp20/semantics/IDENTIFIER_INFERENCE.json",
+        "evidence/cp20/semantics/IDENTIFIER_FINAL_BINDING.json"
+      ],
+      "remaining": "Binding paling baru diperbarui integrator; run gagal sebelum fix tetap historis."
+    },
+    {
+      "id": "CP20-N02",
+      "priority": "P1",
+      "finding": "Halaman jarang gagal mengenali judul asing lalu references bocor",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Upper median item-count memilih font judul18pt sebagai body karena hanya ada dua item; font subset tidak menyimpan nama bold.",
+      "files": [
+        "app/app/layout.js"
+      ],
+      "changes": "Body font berbobot karakter; heading tidak membutuhkan nama font bold.",
+      "tests": [
+        "Sparse unknown title/no-bold",
+        "PDF tengah buku nyata"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/qa/reference-real-parser.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N03",
+      "priority": "P1",
+      "finding": "Running journal header mengakhiri references padahal sitasi berlanjut",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Setiap heading terdeteksi dianggap bab baru.",
+      "files": [
+        "app/app/layout.js"
+      ],
+      "changes": "Heading margin kecil yang langsung diikuti sitasi mempertahankan state; judul asing diikuti prosa tetap menutupnya.",
+      "tests": [
+        "references-continuation.pdf warisan dan kontrol heading/prose"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/inherited-reader-console.json",
+        "evidence/cp20/structure/RESULTS.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N04",
+      "priority": "P1",
+      "finding": "OCR label berhasil tetapi gambar/diagram penting hilang dari Markdown",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Tidak ada blok image ketika OCR berhasil; default tanpa citra halaman melewati aset sumber. Vector-only figure tidak dihitung sebagai raster.",
+      "files": [
+        "app/app/pdf-reader.js",
+        "app/app/export.js"
+      ],
+      "changes": "preserveVisualSource mencakup visual raster/vector termasuk fill/shading; serializer selalu menyertakan aset wajib dan deduplikasi.",
+      "tests": [
+        "OCR-success essential visual control",
+        "PDF vector-only tiga halaman dan Marked"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/math/VECTOR_PRESERVATION.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N05",
+      "priority": "P1",
+      "finding": "Cakupan OCR/rumus belum pasti dapat disebut complete dan warning halaman hilang",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Counter hanya menghitung target blok; page warnings tidak ikut ekspor stream.",
+      "files": [
+        "app/app/long-document.js",
+        "app/app/main.js",
+        "app/app/pdf-reader.js",
+        "app/app/export.js"
+      ],
+      "changes": "Counter coverageIncompletePages/mathUncertainPages; image unread gagal, needs-attention; warning per halaman diekspor dan complete diverifikasi.",
+      "tests": [
+        "Incomplete OCR/math lifecycle",
+        "Exporter rejects inconsistent complete counts"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/controlled-results.json",
+        "evidence/cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+        "evidence/cp20/structure/RESULTS.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N06",
+      "priority": "P1",
+      "finding": "Quota browser nyata gagal walau estimate menampilkan ruang; source Blob ditulis ulang berlebihan",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_PENDING_FINAL_QUALIFICATION",
+      "cause": "Estimate bukan jaminan write. Cache model publik dan rewrite source meningkatkan pressure origin.",
+      "files": [
+        "app/app/storage.js",
+        "app/app/main.js",
+        "app/app/long-document.js",
+        "app/app/translation.js"
+      ],
+      "changes": "Simpan source sekali; commit ringkasan/meta tanpa rewrite Blob. Pada QuotaExceededError hapus hanya cache model publik terverifikasi namespace/key, pertahankan worker/data, retry atomik sekali, tandai offline belum siap.",
+      "tests": [
+        "Atomic write rollback",
+        "Tujuh recovery controls namespace/non-quota/retry-once",
+        "Probe Chrome sebelum perbaikan dan recovery manual"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/quota-recovery-results.json",
+        "evidence/cp20/browser/storage-pressure/PROBE_BEFORE_CACHE_RELEASE.json",
+        "evidence/cp20/pipeline/IMPLEMENTATION_NOTES.md",
+        "evidence/cp20/browser/final-1668/BROWSER_1001_COMPLETE.json",
+        "evidence/cp20/browser/final-1668/LIFECYCLE_OBSERVATIONS.json"
+      ],
+      "remaining": "Observed automatic recovery at page252 removed5 public-model entries, retried once and continued to1001. This does not guarantee sufficient storage for every input/device; honest failure and rescue remain required."
+    },
+    {
+      "id": "CP20-N07",
+      "priority": "P1",
+      "finding": "Halaman volatile berisiko tertimpa saat navigasi atau resume sesudah gagal simpan",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Commit gagal meninggalkan state aktif berbeda dari record yang durable.",
+      "files": [
+        "app/app/main.js",
+        "app/app/long-document.js"
+      ],
+      "changes": "Pertahankan satu unsavedPage, blokir navigasi berisiko, pakai overlay saat ekspor dan simpan overlay saat retry.",
+      "tests": [
+        "Quota/storage denial lifecycle dan retained active page"
+      ],
+      "evidence": [
+        "evidence/cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+        "evidence/cp20/pipeline/controlled-results.json"
+      ],
+      "remaining": "Kelengkapan browser final ditentukan evidence integrator, bukan hanya doubles."
+    },
+    {
+      "id": "CP20-N08",
+      "priority": "P1",
+      "finding": "Ekspor penyelamatan menyebut halaman volatile sudah tersimpan",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "committedPageCount dipakai sebagai jumlah tersedia dan dianggap seluruhnya durable.",
+      "files": [
+        "app/app/export.js",
+        "app/app/main.js"
+      ],
+      "changes": "unsavedPages eksplisit; header memisahkan tersedia dan durable latest version, menandai partial dan memperingatkan sebelum reload.",
+      "tests": [
+        "Quota-rescue header/count/invalid-unsaved-ID regression"
+      ],
+      "evidence": [
+        "evidence/cp20/structure/RESULTS.json",
+        "evidence/cp20/structure/FINAL_SOURCE_BINDING.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N09",
+      "priority": "P1",
+      "finding": "Bahasa forced→auto mempertahankan deteksi lama pada resume",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Metadata deteksi source lama bertahan ketika konfigurasi berubah.",
+      "files": [
+        "app/app/long-document.js",
+        "app/app/main.js"
+      ],
+      "changes": "Bersihkan deteksi yang tidak sesuai provenance dan deteksi ulang dari halaman yang diperlukan; invalidasi hasil mesin lazily sambil menjaga koreksi.",
+      "tests": [
+        "Forced-to-auto actual pipeline controlled lifecycle"
+      ],
+      "evidence": [
+        "evidence/cp20/math/INDEPENDENT_PIPELINE_REVIEW.json",
+        "evidence/cp20/pipeline/controlled-results.json"
+      ],
+      "remaining": ""
+    },
+    {
+      "id": "CP20-N10",
+      "priority": "P1",
+      "finding": "Update menghilangkan lazy module namespace rilis lama untuk tab aktif",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Deploy hanya memuat namespace rilis baru sementara tab lama masih perlu lazy imports.",
+      "files": [
+        "scripts/build.py",
+        "scripts/build-with-history.py",
+        "scripts/sw-template.js"
+      ],
+      "changes": "Retain immutable CP19 dengan inventory/hash/collision guard; worker tidak memaksa skipWaiting atau membuang cache lama.",
+      "tests": [
+        "Prior worker + retained lazy modules control",
+        "Reproducible build current+retained assets"
+      ],
+      "evidence": [
+        "evidence/cp20/release/OFFLINE_RELEASE_REGRESSION.json",
+        "evidence/cp20/release/REPRODUCIBLE_BUILD.json"
+      ],
+      "remaining": "Active-job browser update/rollback Cloudflare tetap BLOCKED/NOT_RUN terpisah; bukan reverse checkpoint migration."
+    },
+    {
+      "id": "CP20-N11",
+      "priority": "P1",
+      "finding": "Kurva/brace/nomor persamaan ambigu berpotensi dianggap struktur rumus verified",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_AND_REGRESSION_TESTED",
+      "cause": "Legacy curve kehilangan titik awal/kontrol; label persamaan terpisah bisa dibaca faktor; OCR bisa menyerupai glyph digital.",
+      "files": [
+        "app/app/math-geometry.js"
+      ],
+      "changes": "Provenance kurva lengkap, ambiguous label/brace unverified, OCR dikecualikan dari rekonstruksi digital; akar hanya dengan overbar unik.",
+      "tests": [
+        "25 geometry controls",
+        "5 actual-PDF controls"
+      ],
+      "evidence": [
+        "evidence/cp20/math/QUALIFICATION.json",
+        "evidence/cp20/math/REAL_PDF_CONTROL.json"
+      ],
+      "remaining": "Complex/indexed roots, cases dan scan tetap belum qualified; PASS pada false-verification defect yang diuji saja."
+    },
+    {
+      "id": "CP20-N12",
+      "priority": "P2",
+      "finding": "ETA sesudah resume terlalu pendek karena halaman replay dihitung sebagai kerja baru",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_CONTROLLED_TEST_PASS",
+      "cause": "Durasi run dibagi posisi halaman absolut, termasuk halaman tersimpan yang hanya dibaca ulang.",
+      "files": [
+        "app/app/long-document.js"
+      ],
+      "changes": "Hitung ETA dari delapan halaman kerja penuh terakhir dalam run saat ini; mulai setelah tiga sampel. Replay halaman lengkap dan resume halaman sebagian tidak masuk throughput.",
+      "tests": [
+        "Cached replay exclusion, partial-resume exclusion, bounded sample dan before/after exact non-ETA record/write/request/progress parity",
+        "Lima kontrol patch ETA/history lulus dan hash source cocok build final"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/eta-resume-results.json",
+        "evidence/cp20/pipeline/ETA_HISTORY_CHANGELOG.md",
+        "evidence/cp20/pipeline/ETA_HISTORY_PATCH.diff",
+        "evidence/cp20/release/ETA_HISTORY_FINAL_BINDING.json",
+        "evidence/cp20/browser/final-8c643/LIFECYCLE_OBSERVATIONS.json"
+      ],
+      "remaining": "Parity hanya bukti terkontrol pada batas yang dinyatakan. Run browser 1668 tetap1668; full run pada final 8c tidak boleh disimpulkan dari parity."
+    },
+    {
+      "id": "CP20-N13",
+      "priority": "P1",
+      "finding": "Riwayat kegagalan/pemulihan simpan hilang sesudah reload lalu save",
+      "status": "PASS",
+      "implementation": "IMPLEMENTED_CONTROLLED_TEST_PASS",
+      "cause": "storageRecoveries/storageFailures tidak dipulihkan dari metadata; save berikutnya dapat menimpa history dengan array kosong.",
+      "files": [
+        "app/app/main.js"
+      ],
+      "changes": "Restore lima event terakhir kedua daftar dari metadata, mempertahankan warning offline dan batas history.",
+      "tests": [
+        "Actual main dengan DOM/storage boundary memulihkan history; parity pipeline mengunci isi/tindakan selain ETA",
+        "Lima kontrol patch ETA/history lulus dan hash source cocok build final"
+      ],
+      "evidence": [
+        "evidence/cp20/pipeline/eta-resume-results.json",
+        "evidence/cp20/pipeline/ETA_HISTORY_CHANGELOG.md",
+        "evidence/cp20/pipeline/ETA_HISTORY_PATCH.diff",
+        "evidence/cp20/release/ETA_HISTORY_FINAL_BINDING.json",
+        "evidence/cp20/browser/final-8c643/LIFECYCLE_OBSERVATIONS.json"
+      ],
+      "remaining": "Parity hanya bukti terkontrol pada batas yang dinyatakan. Run browser 1668 tetap1668; full run pada final 8c tidak boleh disimpulkan dari parity."
+    },
+    {
+      "id": "CP20-N14",
+      "priority": "P2",
+      "finding": "Already-English short metadata is rejected during ID→EN document processing",
+      "status": "FAIL",
+      "implementation": "OBSERVED_NOT_PATCHED_TO_FIXTURE",
+      "cause": "Short mixed-language trace footer falls back to document source language; unchanged target is then rejected by the language guard.",
+      "files": [
+        "app/app/long-document.js",
+        "app/app/translation.js"
+      ],
+      "changes": "No fixture-specific output or END-word exception inserted. Original text and clear rejected/partial markers remain.",
+      "tests": [
+        "Actual Node and browser1500-ID synthetic document with distinct opaque IDs and English footer labels"
+      ],
+      "evidence": [
+        "evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-RESULTS.json",
+        "evidence/cp20/browser/DOWNLOAD_RECONCILIATION.json"
+      ],
+      "remaining": "Develop and independently evaluate generic mixed-language/metadata handling. Do not count these rejected blocks as successful translations or conflate them with the separate scientific prose errors."
+    },
+    {
+      "id": "CP20-N15",
+      "priority": "P1",
+      "finding": "Authentic85.9MB PDF cannot be persisted in this cloud browser",
+      "status": "FAIL",
+      "implementation": "OBSERVED_WITH_SAFE_REFUSAL",
+      "cause": "Actual IndexedDB source write raises QuotaExceededError; exact remaining storage/per-device ceiling not established.",
+      "files": [
+        "app/app/main.js",
+        "app/app/storage.js",
+        "app/app/long-document.js"
+      ],
+      "changes": "Existing failure state retains unsaved indication and blocks long processing until source checkpoint is safe. No bypass or false success added.",
+      "tests": [
+        "Actual filechooser recognized1062pages; source persistence failed; Translate refused unsafe continuation."
+      ],
+      "evidence": [
+        "evidence/cp20/browser/final-8c643/AUTHENTIC_BOOK_PREFLIGHT.json"
+      ],
+      "remaining": "Qualify sufficient persistent quota on target devices and richer books. Safe failure is verified but capacity success for this book is not; do not imply a universal64MB/85MB cap."
+    }
+  ],
+  "globalOpenGates": [
+    "Scientific semantic quality: FAIL",
+    "Authentic85.9MB source persistence in current browser: FAIL; safe refusal observed",
+    "Broad authentic book translation, complex OCR/math/table/content coverage: NOT_RUN or incomplete",
+    "Physical minimum-device RAM/performance, sleep/wake/process kill and zoom: NOT_RUN",
+    "Actual byte-exact hosting/offline/update/rollback: BLOCKED",
+    "Human review:0 approvals; does not cure technical failures"
+  ],
+  "evidenceRules": [
+    "Evidence pra-fix, pre-final, dan korpus yang dipakai memperbaiki aturan tidak menjadi bukti final/buta baru.",
+    "Bukti parser/source-only, Node doubles, actual model, browser, dan physical device dibedakan.",
+    "SHA build dan source binding harus cocok sebelum final; nama folder final sendiri bukan pembuktian.",
+    "Jangan menjumlahkan suite dengan subtes atau translated count dengan accuracy."
+  ],
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "browserLongResults": {
+    "1001": [
+      {
+        "path": "evidence/cp20/browser/final-1668/BROWSER_1001_EN_TO_ID.md",
+        "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+        "expectedPages": 1001,
+        "expectedBlocks": 3003,
+        "expectedTraceIDs": 1001,
+        "scope": "Actual consumer browser PDF to full Markdown; build1668, final8c differs only in ETA/history with explicit component and output-parity binding. Scientific semantic acceptance remainsFAIL.",
+        "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 1304106,
+        "completedAt": "2026-11-13T07:51:34.220Z",
+        "metricsWarning": "Browser uniqueInputs is summed per block, not globally deduplicated model inputs; 5005 actual inferenceCalls and zero cacheHits recorded.",
+        "exporter": "cp20-1668833ad37c9dd8",
+        "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+        "bytes": 400286,
+        "sha256": "fe8805e522850852c0693a1b73e9b81e147105be424ff0d6211a07cc8a9e4f7d",
+        "pages": 1001,
+        "blocks": 3003,
+        "traceIDs": 1001,
+        "duplicateBlocks": 0,
+        "imageDefinitions": 0,
+        "mathCount": 0,
+        "mathErrors": [],
+        "renderMs": 21.881394,
+        "renderPath": "evidence/cp20/browser/final-1668/BROWSER_1001_EN_TO_ID.rendered.html",
+        "renderedHeadingCounts": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 1
+          },
+          {
+            "level": 3,
+            "count": 1001
+          },
+          {
+            "level": 4,
+            "count": 0
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+        "structuralStatus": "PASS",
+        "semanticStatus": "NOT_APPROVED",
+        "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+      },
+      {
+        "path": "evidence/cp20/browser/final-8c643/BROWSER_1001_EN_TO_ID.md",
+        "source": "tests/fixtures/cp20-capacity/capacity-1001-en.pdf",
+        "expectedPages": 1001,
+        "expectedBlocks": 3003,
+        "expectedTraceIDs": 1001,
+        "scope": "Actual final8c consumer restore and export of completed1668 inference checkpoint. No final8c re-inference claimed; models/semantic/parser/storage/export components bind exactly; ETA-only output parity tested.",
+        "exporter": "cp20-8c643bea6962471f",
+        "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+        "bytes": 703589,
+        "sha256": "8f0398f06ca95b6ee23657f54271a71817ba62a4c344cf39107c8fdf87efaabb",
+        "pages": 1001,
+        "blocks": 3003,
+        "traceIDs": 1001,
+        "duplicateBlocks": 0,
+        "imageDefinitions": 0,
+        "mathCount": 0,
+        "mathErrors": [],
+        "renderMs": 60.90848100000005,
+        "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_1001_EN_TO_ID.rendered.html",
+        "renderedHeadingCounts": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 1
+          },
+          {
+            "level": 3,
+            "count": 1001
+          },
+          {
+            "level": 4,
+            "count": 0
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "declaredStatus": "Pemrosesan selesai; perlu peninjauan ilmiah",
+        "structuralStatus": "PASS",
+        "semanticStatus": "NOT_APPROVED",
+        "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+      }
+    ],
+    "1500": [
+      {
+        "path": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.md",
+        "source": "tests/fixtures/cp20-capacity/capacity-1500-id.pdf",
+        "expectedPages": 1500,
+        "expectedBlocks": 4500,
+        "expectedTraceIDs": 1500,
+        "scope": "Actual final8c consumer inference and downloaded partial translation. All pages/blocks included,3000translated1500rejected. Semantic acceptanceFAIL; not complete translated coverage.",
+        "wallElapsedMsIncludingPauseReloadAndOtherConcurrentTests": 2685742,
+        "completedAt": "2026-11-13T08:38:35.562Z",
+        "metricsWarning": "Inference calls are completed engine requests, not ONNX forward passes; uniqueInputs sums perblock, not globalunique.",
+        "exporter": "cp20-8c643bea6962471f",
+        "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+        "bytes": 1008613,
+        "sha256": "0987a042d914584c3afd84938506ae0c0c4c56eebc9094d4c2c9fac78f8fa7f0",
+        "pages": 1500,
+        "blocks": 4500,
+        "traceIDs": 1500,
+        "duplicateBlocks": 0,
+        "imageDefinitions": 0,
+        "mathCount": 0,
+        "mathErrors": [],
+        "renderMs": 31.308673999999996,
+        "renderPath": "evidence/cp20/browser/final-8c643/BROWSER_1500_ID_TO_EN.rendered.html",
+        "renderedHeadingCounts": [
+          {
+            "level": 1,
+            "count": 1
+          },
+          {
+            "level": 2,
+            "count": 1
+          },
+          {
+            "level": 3,
+            "count": 1500
+          },
+          {
+            "level": 4,
+            "count": 0
+          },
+          {
+            "level": 5,
+            "count": 0
+          },
+          {
+            "level": 6,
+            "count": 0
+          }
+        ],
+        "declaredStatus": "HASIL SEMENTARA — pemrosesan belum selesai",
+        "structuralStatus": "PASS",
+        "semanticStatus": "NOT_APPROVED",
+        "method": "Actual browser-downloaded Markdown → source SHA/page/block/trace reconciliation → full Marked17.0.1 and KaTeX0.19.1 render. No independent human review."
+      }
+    ],
+    "semanticApproval": false
+  },
+  "releaseVerification": {
+    "build": {
+      "release": "cp20-8c643bea6962471f",
+      "version": "0.20.0",
+      "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+      "modelHashes": {
+        "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+        "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+      },
+      "base": "/r/8c643bea6962471f/"
+    },
+    "status": "PASS",
+    "evidence": "evidence/cp20/release/FINAL_BINDING.json",
+    "scope": "Static integrity/reproducibility/controlled offline; not browser/Cloudflare"
+  },
+  "regressionVerification": {
+    "status": "PASS",
+    "suiteCount": 32,
+    "evidence": "evidence/cp20/qa/regressions-8c-final/RESULTS.json",
+    "scope": "32 executed suites; do not add suite counts and subtest counts; Node scopes remain explicit."
+  },
+  "semanticAcceptance": {
+    "status": "FAIL",
+    "corpus": "Fresh V4 ten post-freeze paragraphs; 5 domains; both directions",
+    "translated": 9,
+    "rejected": 1,
+    "aiReviewedCriticalTranslatedErrors": 4,
+    "humanApprovals": 0,
+    "actualInferenceBuild": "cp20-1668833ad37c9dd8",
+    "packagedBuild": "cp20-8c643bea6962471f",
+    "finalBuildReexecution": false,
+    "binding": "evidence/cp20/semantics/FINAL_COMPONENT_PARITY_BINDING.json",
+    "review": "evidence/cp20/semantics/V4_SEMANTIC_REVIEW_AI.json",
+    "limits": "AI-only; not a population accuracy score. Older30 cases remain regression/history and are not pooled with fresh10."
+  }
+}

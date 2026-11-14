@@ -1,0 +1,266 @@
+{
+  "build": {
+    "base": "/r/1668833ad37c9dd8/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp20-1668833ad37c9dd8",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "version": "0.20.0"
+  },
+  "parserSource": {
+    "pdf-reader.js": "716bb322ccf52aae41e554084003ad6c455a4664c737e6ef0ed3acc7e07456bd",
+    "layout.js": "998b505644722dc8fc8a0e8b4c77a5585579931ff35221940c2046d83a33c553",
+    "math-geometry.js": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098"
+  },
+  "exporterSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+  "rows": [
+    {
+      "file": "capacity-300-en-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "8cc5dec16c8a5ba4cb4b8fbc7db942a493b7fab70d4bba49743c80471b06fcd5",
+      "bytes": 121691,
+      "sha256": "dbf357ebf450878ddaf85882cf588ef06e7b74a87b8ef15dbdb584c972f28d01",
+      "exportMs": 666.936747,
+      "renderMs": 24.111875000000055,
+      "stats": {
+        "pages": 300,
+        "blocks": 900,
+        "counts": {
+          "total": 900,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 900
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 121691,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 300,
+        "partial": true
+      },
+      "traceIds": 300,
+      "renderedH3": 300,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 55898112,
+        "heapUsed": 11487152,
+        "external": 4267594,
+        "arrayBuffers": 415490
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    },
+    {
+      "file": "capacity-301-en-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "c9779437ea9d9378e750379575800d24cf0a5f9da9889fa205fb2c358e9ffe2f",
+      "bytes": 122093,
+      "sha256": "fe73a16d1ff13c97a927e7d26bf76dce6a6bf150d2fea5ac1283678bab2ab904",
+      "exportMs": 635.9220550000001,
+      "renderMs": 6.2817710000001625,
+      "stats": {
+        "pages": 301,
+        "blocks": 903,
+        "counts": {
+          "total": 903,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 903
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 122093,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 301,
+        "partial": true
+      },
+      "traceIds": 301,
+      "renderedH3": 301,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 59846656,
+        "heapUsed": 14681296,
+        "external": 4482160,
+        "arrayBuffers": 709412
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    },
+    {
+      "file": "capacity-1000-en-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "803d4001dbe50d5f796097c5e0e5ec397a542b8eafecf320cc0fcf32d961977b",
+      "bytes": 403808,
+      "sha256": "9eb0f2fc0de21575fb02d1a78b40d0073f167d386a37dd7dfbd6dfb55aac309d",
+      "exportMs": 1892.7517860000003,
+      "renderMs": 18.84554500000013,
+      "stats": {
+        "pages": 1000,
+        "blocks": 3000,
+        "counts": {
+          "total": 3000,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 3000
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 403808,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 1000,
+        "partial": true
+      },
+      "traceIds": 1000,
+      "renderedH3": 1000,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 64913408,
+        "heapUsed": 15546352,
+        "external": 4594173,
+        "arrayBuffers": 1305469
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    },
+    {
+      "file": "capacity-1001-en-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "7c08685096d16f5ba677f7481abfa5a4da4ae70f099086792528dba76b3801f9",
+      "bytes": 404214,
+      "sha256": "9f6f5d0b337948050dbfd51bee59ca581ea2489a91ea412b3137cc35e75cbd7a",
+      "exportMs": 2063.30455,
+      "renderMs": 14.234095999999226,
+      "stats": {
+        "pages": 1001,
+        "blocks": 3003,
+        "counts": {
+          "total": 3003,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 3003
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 404214,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 1001,
+        "partial": true
+      },
+      "traceIds": 1001,
+      "renderedH3": 1001,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 76124160,
+        "heapUsed": 20396616,
+        "external": 5140183,
+        "arrayBuffers": 2109172
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    },
+    {
+      "file": "capacity-1500-id-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+      "bytes": 592532,
+      "sha256": "d4f13001fd94e33a54a1338b9a25f12ceff64521bad657ba1553847ef453ce5c",
+      "exportMs": 3158.3678839999993,
+      "renderMs": 22.993293999999878,
+      "stats": {
+        "pages": 1500,
+        "blocks": 4500,
+        "counts": {
+          "total": 4500,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 4500
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 592532,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 1500,
+        "partial": true
+      },
+      "traceIds": 1500,
+      "renderedH3": 1500,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 84119552,
+        "heapUsed": 23477000,
+        "external": 5571931,
+        "arrayBuffers": 3210636
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    },
+    {
+      "file": "capacity-1001-en-rich-SOURCE_ONLY.md",
+      "status": "PASS",
+      "scope": "Actual extracted source records → streaming Markdown Blob → Node filesystem, full Marked parse. No browser download, translated output, or semantic approval.",
+      "sourceSha256": "a4d651a2cfce36a5e99c1831886816560a451f80cc5a4664cffc73be28d9cc5e",
+      "bytes": 2695088,
+      "sha256": "08b4d40ca354b26644922827ee7b6684bfb4a46c1f4e0d5b3b83a022d0f1d5f8",
+      "exportMs": 2397.4924599999995,
+      "renderMs": 82.23231699999997,
+      "stats": {
+        "pages": 1001,
+        "blocks": 3003,
+        "counts": {
+          "total": 3003,
+          "translated": 0,
+          "preserved": 0,
+          "rejected": 0,
+          "failed": 0,
+          "pending": 3003
+        },
+        "uniqueAssets": 0,
+        "assetReferences": 0,
+        "bytes": 2695088,
+        "sink": "bounded-blob",
+        "maxActivePages": 1,
+        "coverageIncompletePages": 0,
+        "mathUncertainPages": 0,
+        "unsavedPages": [],
+        "durablePages": 1001,
+        "partial": true
+      },
+      "traceIds": 13013,
+      "renderedH3": 1001,
+      "sampledPeakNodeMemoryBytes": {
+        "rss": 106778624,
+        "heapUsed": 34115808,
+        "external": 8471514,
+        "arrayBuffers": 8874644
+      },
+      "memoryLimit": "Export-only Node process RSS/heap/external, sampled 100ms; validation excluded. Not browser RAM."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "generatedAt": "2026-11-13T06:48:09.889Z",
+  "scope": "Actual PDF.js audit fixture regression plus synthetic normalized geometry and operator-list mutations. Not browser, OCR accuracy, human review, or universal mathematical correctness.",
+  "sourceSha256": "7d57984d1d9e81cfda0eb63d9ebd1416f42af99eea5bc653c9245cb80cf5c098",
+  "pdfjsVersion": "6.2.108",
+  "auditFixture": {
+    "path": "audit/evidence/pdf_math/mathematics_fixture.pdf",
+    "sha256": "f66a404b56293dc093d9ecb5c7dbe9b845df0467bec5134761dd9c8dec67e558"
+  },
+  "passed": 25,
+  "failed": 0,
+  "results": [
+    {
+      "name": "explicit-square-root-overbar-scope",
+      "status": "PASS"
+    },
+    {
+      "name": "root-without-overbar-remains-uncertain",
+      "status": "PASS"
+    },
+    {
+      "name": "ambiguous-root-two-overbars-not-accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "overbar-cannot-discard-prose-in-scope",
+      "status": "PASS"
+    },
+    {
+      "name": "indexed-root-is-not-a-square-root",
+      "status": "PASS"
+    },
+    {
+      "name": "long-overbar-cannot-claim-short-radicand-scope",
+      "status": "PASS"
+    },
+    {
+      "name": "root-scale-and-translation-invariant",
+      "status": "PASS"
+    },
+    {
+      "name": "scan-OCR-is-never-geometrically-verified",
+      "status": "PASS"
+    },
+    {
+      "name": "mixed-OCR-cannot-shift-digital-provenance",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy-curve-keeps-transformed-start-control-and-end-points",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy-shorthand-curve-provenance-covers-endpoint",
+      "status": "PASS"
+    },
+    {
+      "name": "modern-curve-keeps-start-point-for-full-bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "legacy-brace-near-expression-forces-source-fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "numbered-equation-label-is-not-silently-a-factor",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown-symbols-and-unbounded-radicals-stay-unverified",
+      "status": "PASS"
+    },
+    {
+      "name": "geometric-complexity-limit-keeps-all-source-items",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-1",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-2",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-3",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-4",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-5",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-6",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-7",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-baseline-equation-8",
+      "status": "PASS"
+    },
+    {
+      "name": "real-PDF-source-provenance-unique-and-no-prose-consumed",
+      "status": "PASS"
+    }
+  ],
+  "qualification": {
+    "supported": [
+      "Existing 8 audit expressions on actual PDF",
+      "Square root with isolated digital glyph and unique overbar, synthetic geometry only"
+    ],
+    "notQualified": [
+      "Complex or indexed radicals",
+      "Piecewise cases/systems reconstruction",
+      "Equation-number semantic reconstruction",
+      "Formula tables with merged/multilevel cells",
+      "OCR formula LaTeX reconstruction"
+    ],
+    "safety": "Uncertain geometry preserves source fallback. verified means supported geometry only; it does not mean scientific equivalence or independent review."
+  }
+}

@@ -1,0 +1,12 @@
+PASS 1500 unique controlled pages >2M chars process with one active page and atomic checkpoints
+PASS Streaming commits and metadata saves never rewrite original source File
+PASS Lazy restore and page iterator never call whole-store getAll
+PASS Resume same provenance reuses successful results without duplicate extraction/inference
+PASS Configuration invalidates old machine result and preserves corrected source/history
+PASS Subsequent extraction failure leaves all earlier pages and translations salvageable
+PASS Quota failure rolls page + metadata back atomically
+PASS Stale writer cannot read or overwrite active long checkpoint
+PASS Cancelled inference retains extracted source and pending status
+PASS Preflight rejects insufficient storage without starting expensive pipeline
+PASS Forced-source to auto redetects language rather than inheriting the forced direction
+PASS Unresolved image fallback remains incomplete and is not counted as translated/preserved success

@@ -1,0 +1,465 @@
+{
+  "method": "Known cases now used for development; not blind acceptance. No corpus-ID-specific product paths.",
+  "cases": [
+    {
+      "id": "CP20-V4-A-01",
+      "direction": "en-id",
+      "source": "A differentiable function is continuous at the same point. The converse statement requires additional conditions; a graph without a visible gap is not by itself proof that a derivative exists.",
+      "baseline": {
+        "text": "Sebuah fungsi dapat diturunkan adalah kontinu pada titik yang sama. Pernyataan konvers membutuhkan kondisi tambahan; grafik tanpa celah yang terlihat bukanlah dengan sendirinya bukti bahwa turunan ada.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-02",
+      "direction": "en-id",
+      "source": "Heating was stopped before the solvent boiled. The recorded rise in temperature cannot be attributed to the catalyst alone, because the heater also transferred energy to the solution.",
+      "baseline": {
+        "text": "Pemanas dihentikan sebelum pelarut direbus. Peningkatan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga mentransfer energi ke larutan.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-03",
+      "direction": "en-id",
+      "source": "A sample mean can differ from the population mean even when the sampling procedure is unbiased. The difference is not evidence that any observation was recorded incorrectly.",
+      "baseline": {
+        "text": "Sebuah rata-rata sampel dapat berbeda dari populasi berarti bahkan ketika prosedur sampling adalah tidak bias. Perbedaannya bukanlah bukti bahwa pengamatan apapun dicatat salah.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-04",
+      "direction": "en-id",
+      "source": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+      "baseline": {
+        "text": "When the price of a substitute rises, demand for the original product may increase. This prediction depends on the two goods being substitutes, not complements.",
+        "outcome": "rejected"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-05",
+      "direction": "en-id",
+      "source": "The laboratory instrument was calibrated before data collection. Calibration reduces measurement error; it does not prove that the proposed explanation is correct.",
+      "baseline": {
+        "text": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi pengukuran kesalahan; itu tidak membuktikan bahwa penjelasan yang diusulkan benar.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-06",
+      "direction": "id-en",
+      "source": "Fungsi yang dapat diturunkan bersifat kontinu di titik yang sama. Pernyataan konvers memerlukan syarat tambahan; grafik tanpa celah yang terlihat bukan dengan sendirinya bukti bahwa turunan ada.",
+      "baseline": {
+        "text": "Function differentiable is continuous at the same point. Statement converse requires additional requirements; graphs without gaps visible not by itself evidence that derivative exists.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-07",
+      "direction": "id-en",
+      "source": "Pemanasan dihentikan sebelum pelarut mendidih. Kenaikan suhu yang tercatat tidak dapat dikaitkan dengan katalis saja, karena pemanas juga memindahkan energi ke larutan.",
+      "baseline": {
+        "text": "Warming stops before the solvent boils. Recorded temperature rise cannot be linked only to catalysts, since heating also transfers energy to solution.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-08",
+      "direction": "id-en",
+      "source": "Rata-rata sampel dapat berbeda dari rata-rata populasi meskipun prosedur pengambilan sampel tidak bias. Perbedaan tersebut bukan bukti bahwa suatu pengamatan dicatat secara keliru.",
+      "baseline": {
+        "text": "Sample mean can be different from average population although the sample unbiased fetching procedure. Such differences are not evidence that a misrecorded observation is being recorded.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-09",
+      "direction": "id-en",
+      "source": "Ketika harga barang substitusi naik, permintaan produk awal mungkin meningkat. Prediksi ini bergantung pada kedua barang yang saling menggantikan, bukan saling melengkapi.",
+      "baseline": {
+        "text": "When substitution goods go up, demand the initial product may increase. This prediction depends on both items replacing one another, not on complementing one another.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-V4-A-10",
+      "direction": "id-en",
+      "source": "Instrumen laboratorium dikalibrasi sebelum pengumpulan data. Kalibrasi mengurangi kesalahan pengukuran; kalibrasi tidak membuktikan bahwa penjelasan yang diajukan benar.",
+      "baseline": {
+        "text": "The lab instrument was calibrated before data collection. Calicacy reduces measurement error; calibration does not prove that the explanations posed are correct.",
+        "outcome": "translated"
+      },
+      "kind": "known-v4-regression"
+    },
+    {
+      "id": "CP20-H-001",
+      "direction": "en-id",
+      "source": "A continuous function on a closed interval attains a maximum. This theorem does not require the function to be differentiable throughout the interval. The maximum need not occur at an endpoint.",
+      "baseline": {
+        "text": "Sebuah fungsi kontinu pada interval tertutup mencapai maksimum. Teorema ini tidak memerlukan fungsi menjadi dapat diturunkan sepanjang interval. Maksimum tidak harus terjadi di sebuah titik akhir.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-002",
+      "direction": "en-id",
+      "source": "The derivative determines a local rate of change, not the accumulated change over the entire interval. Integration can recover the accumulated change when the required hypotheses hold.",
+      "baseline": {
+        "text": "Turunan menentukan tingkat lokal perubahan, bukan perubahan yang terkumpul selama interval. Integrasi dapat memulihkan perubahan yang terkumpul ketika hipotesis yang dibutuhkan masih kuat.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-003",
+      "direction": "en-id",
+      "source": "A nonempty finite set has a greatest element under a suitable ordering. Removing the finiteness assumption changes the problem. The claim is about the ordering of elements and not about their physical size.",
+      "baseline": {
+        "text": "Sebuah elemen tunggal himpunan hingga memiliki elemen terbesar di bawah pesanan yang sesuai. Menghapus asumsi terbatas mengubah masalah. Klaim ini tentang pemesanan elemen dan bukan tentang ukuran fisik mereka.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-004",
+      "direction": "en-id",
+      "source": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+      "baseline": {
+        "text": "Dissolving sugar in water increases the mass of the solution. Evaporation removes some of the water but does not remove the dissolved sugar. The remaining liquid therefore has a higher concentration.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-005",
+      "direction": "en-id",
+      "source": "The catalyst was recovered after the experiment and reused. Recovery alone does not demonstrate that no material was lost; the initial and final masses must be compared.",
+      "baseline": {
+        "text": "Katalis itu ditemukan setelah percobaan dan digunakan kembali. Pemulihan saja tidak menunjukkan bahwa tidak ada materi yang hilang; massa awal dan akhir harus dibandingkan.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-006",
+      "direction": "en-id",
+      "source": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled.",
+      "baseline": {
+        "text": "The solution contained 6 mmol of dissolved salt in 2 L of solvent. Adding another 2 L of solvent lowered the concentration while preserving the amount of salt, provided that none of the solution was spilled.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-007",
+      "direction": "en-id",
+      "source": "A confidence interval describes uncertainty under the assumed sampling procedure. It should not be interpreted as the range containing all individual observations. These are different statistical quantities.",
+      "baseline": {
+        "text": "Sebuah interval kepercayaan menggambarkan ketidakpastian di bawah prosedur sampling yang diasumsikan. Hal ini tidak boleh ditafsirkan sebagai jangkauan berisi semua pengamatan individu. Ini adalah jumlah statistik yang berbeda.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-008",
+      "direction": "en-id",
+      "source": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+      "baseline": {
+        "text": "Treatment A produced 7 responses and treatment B produced 11 responses. These counts cannot be compared fairly without knowing how many participants received each treatment. The denominator matters as well as the numerator.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-009",
+      "direction": "en-id",
+      "source": "The analysis used the median because a few extreme values strongly affected the sample mean. Choosing the median did not remove those observations from the dataset. Both statistics were reported in the appendix of the article.",
+      "baseline": {
+        "text": "Analisis yang digunakan Median karena beberapa nilai ekstrim sangat mempengaruhi rata-rata sampel. Memilih Median tidak menghapus pengamatan tersebut dari dataset. Kedua statistik dilaporkan dalam lampiran dari artikel tersebut.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-010",
+      "direction": "en-id",
+      "source": "A tax on sellers can affect the price paid by buyers. The legal obligation to pay the tax does not by itself determine who bears its economic burden. The relative responsiveness of supply and demand must also be considered.",
+      "baseline": {
+        "text": "Pajak pada penjual dapat mempengaruhi harga yang dibayarkan oleh pembeli. Kewajiban hukum untuk membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Responsi relatif dari pasokan dan permintaan juga harus dipertimbangkan.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-011",
+      "direction": "en-id",
+      "source": "An increase in demand is different from an increase in the quantity demanded along an unchanged demand curve. Confusing these statements can reverse the explanation of a price change.",
+      "baseline": {
+        "text": "Peningkatan dalam permintaan berbeda dengan peningkatan dalam kuantitas yang diminta sepanjang kurva permintaan yang tidak berubah. Membingungkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-012",
+      "direction": "en-id",
+      "source": "The household saved more money in nominal terms, but prices also rose. Whether the household could purchase more goods depends on the change in purchasing power, not merely on the balance shown in the account.",
+      "baseline": {
+        "text": "Rumah tangga menghemat lebih banyak uang dalam hal nominal, tetapi harga juga naik. Apakah rumah tangga dapat membeli lebih banyak barang bergantung pada perubahan dalam daya beli, bukan hanya pada keseimbangan yang ditunjukkan pada akun tersebut.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-013",
+      "direction": "en-id",
+      "source": "The report places the interview schedule in an appendix so that other researchers can inspect the questions. The appendix documents the procedure; it does not certify that every respondent understood every question in the same way.",
+      "baseline": {
+        "text": "Laporan tersebut menempatkan jadwal wawancara dalam lampiran sehingga peneliti lain dapat memeriksa pertanyaan-pertanyaan. Lampiran mendokumentasikan prosedur; prosedur tersebut tidak menyatakan bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-014",
+      "direction": "en-id",
+      "source": "The results were obtained from volunteers who had access to the required equipment. Generalization to people without that access requires additional evidence. The authors discuss this limitation before presenting their recommendations.",
+      "baseline": {
+        "text": "Hasilnya diperoleh dari para relawan yang memiliki akses ke peralatan yang dibutuhkan. Generalisasi kepada orang-orang tanpa akses tersebut membutuhkan bukti tambahan. Para penulis membahas keterbatasan ini sebelum memberikan rekomendasi mereka.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-015",
+      "direction": "en-id",
+      "source": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+      "baseline": {
+        "text": "The reviewer asked the authors to distinguish missing information from evidence that an event did not occur. A blank record may reflect incomplete documentation. It cannot automatically be treated as a recorded absence of the event.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-016",
+      "direction": "id-en",
+      "source": "Fungsi kontinu pada interval tertutup mencapai nilai maksimum. Teorema ini tidak mensyaratkan fungsi dapat diturunkan di seluruh interval. Nilai maksimum tidak harus terjadi di titik ujung.",
+      "baseline": {
+        "text": "Function continuous at closed intervals reaches maximum value. This theorem does not require function differentiable at all intervals. Maximum value need not occurs at edge.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-017",
+      "direction": "id-en",
+      "source": "Turunan menentukan laju perubahan lokal, bukan perubahan terakumulasi pada seluruh interval. Integrasi dapat memperoleh kembali perubahan terakumulasi ketika hipotesis yang diperlukan terpenuhi.",
+      "baseline": {
+        "text": "Derivative determines the rate of local changes, not the accumulated changes at all intervals. Integration can regain the accumulated changes when the required hypothesis is fulfilled.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-018",
+      "direction": "id-en",
+      "source": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+      "baseline": {
+        "text": "Himpunan hingga yang tidak kosong memiliki elemen terbesar dalam pengurutan yang sesuai. Menghapus asumsi kehinggaan mengubah masalah. Klaim tersebut menyangkut pengurutan elemen, bukan ukuran fisiknya.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-019",
+      "direction": "id-en",
+      "source": "Melarutkan gula dalam air meningkatkan massa larutan. Penguapan menghilangkan sebagian air tetapi tidak menghilangkan gula terlarut. Karena itu, cairan yang tersisa memiliki konsentrasi lebih tinggi.",
+      "baseline": {
+        "text": "Solving sugar in water increases the mass of solution. The evaporation removes some of the water but does not eliminate the soluted sugar. Therefore, the remaining liquids have higher concentration.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-020",
+      "direction": "id-en",
+      "source": "Katalis diperoleh kembali setelah eksperimen dan digunakan ulang. Perolehan kembali saja tidak menunjukkan bahwa tidak ada bahan yang hilang; massa awal dan akhir harus dibandingkan.",
+      "baseline": {
+        "text": "The catalyst was recovered after the experiment and reused. Returning alone does not indicate that no material is missing; initial and final mass must be compared.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-021",
+      "direction": "id-en",
+      "source": "Larutan mengandung 6 mmol garam terlarut dalam 2 L pelarut. Penambahan 2 L pelarut menurunkan konsentrasi sambil mempertahankan jumlah garam, asalkan tidak ada larutan yang tumpah.",
+      "baseline": {
+        "text": "Solution contains 6 mmol salt dissolved in 2 L solvent. Add 2 L solvents lower concentration while maintaining the amount of salt, provided no solution is spilled.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-022",
+      "direction": "id-en",
+      "source": "Interval kepercayaan menggambarkan ketidakpastian dalam prosedur pengambilan sampel yang diasumsikan. Interval tersebut tidak boleh ditafsirkan sebagai rentang yang memuat seluruh pengamatan individual. Keduanya merupakan besaran statistik yang berbeda.",
+      "baseline": {
+        "text": "Confidence interval describes uncertainty in assumed sample fetching procedure. The interval should not be interpreted as a range that contains all individual observations. They're both different statistics.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-023",
+      "direction": "id-en",
+      "source": "Perlakuan A menghasilkan 7 respons dan perlakuan B menghasilkan 11 respons. Jumlah ini tidak dapat dibandingkan secara adil tanpa mengetahui berapa peserta yang menerima setiap perlakuan. Penyebut sama pentingnya dengan pembilang.",
+      "baseline": {
+        "text": "A treatment generates 7 response and treatment B produces 11 response. This sum cannot be compared to fair without knowing how many participants received each treatment. The mention is as important as the numerator.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-024",
+      "direction": "id-en",
+      "source": "Analisis menggunakan median karena beberapa nilai ekstrem sangat memengaruhi rata-rata sampel. Pemilihan median tidak menghapus pengamatan tersebut dari kumpulan data. Kedua statistik dilaporkan di lampiran artikel.",
+      "baseline": {
+        "text": "Analyze using median because some extreme values have a profound effect on sample mean. Median selection does not remove the observations from the data set. Both statistics reported in appendix articles.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-025",
+      "direction": "id-en",
+      "source": "Pajak terhadap penjual dapat memengaruhi harga yang dibayar pembeli. Kewajiban hukum membayar pajak tidak dengan sendirinya menentukan siapa yang menanggung beban ekonominya. Kepekaan relatif penawaran dan permintaan juga harus dipertimbangkan.",
+      "baseline": {
+        "text": "Taxes against sellers can affect the price paid by buyers. The legal obligation to pay taxes does not necessarily determine who carries the cost of the economy. The relativeity of the offer and demand should also be considered.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-026",
+      "direction": "id-en",
+      "source": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+      "baseline": {
+        "text": "Peningkatan permintaan berbeda dari peningkatan jumlah yang diminta sepanjang kurva permintaan yang tidak berubah. Mencampuradukkan pernyataan ini dapat membalikkan penjelasan perubahan harga.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-027",
+      "direction": "id-en",
+      "source": "Rumah tangga menabung lebih banyak uang secara nominal, tetapi harga juga naik. Apakah rumah tangga itu dapat membeli lebih banyak barang bergantung pada perubahan daya beli, bukan hanya saldo yang ditampilkan di rekening.",
+      "baseline": {
+        "text": "Households save more money nominally, but prices also go up. Whether that household can buy more items depends on changes purchasing power, not just balances displayed in accounts.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-028",
+      "direction": "id-en",
+      "source": "Laporan menempatkan pedoman wawancara di lampiran agar peneliti lain dapat memeriksa pertanyaannya. Lampiran mendokumentasikan prosedur; lampiran tidak menjamin bahwa setiap responden memahami setiap pertanyaan dengan cara yang sama.",
+      "baseline": {
+        "text": "Reports place interview guidelines at appendix so that other researchers can check the questions. Appendix documenting procedures; appendix does not guarantee that each responder understands each question in the same way.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-029",
+      "direction": "id-en",
+      "source": "Hasil diperoleh dari sukarelawan yang memiliki akses ke peralatan yang diperlukan. Generalisasi kepada orang tanpa akses tersebut memerlukan bukti tambahan. Penulis membahas keterbatasan ini sebelum menyampaikan rekomendasi mereka.",
+      "baseline": {
+        "text": "The results came from volunteers who had access to the necessary equipment. Generalization to a person without access requires additional evidence. The author discussed these limitations before delivering their recommendations.",
+        "outcome": "translated"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "CP20-H-030",
+      "direction": "id-en",
+      "source": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+      "baseline": {
+        "text": "Penelaah meminta penulis membedakan informasi yang hilang dari bukti bahwa suatu peristiwa tidak terjadi. Catatan kosong mungkin mencerminkan dokumentasi yang tidak lengkap. Catatan itu tidak dapat otomatis dianggap sebagai ketiadaan peristiwa yang tercatat.",
+        "outcome": "rejected"
+      },
+      "kind": "known-historical-regression"
+    },
+    {
+      "id": "LONG-PROSE-01",
+      "direction": "id-en",
+      "source": "CP20B0001_00. Tim penelitian mengukur 18 sampel sebelum intervensi. Kelompok pembanding tidak menerima perlakuan. Pengamatan ini saja tidak membuktikan hubungan sebab akibat.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-02",
+      "direction": "id-en",
+      "source": "CP20B0002_00. Larutan kimia mengandung 25 miligram garam terlarut. Pemanasan menghilangkan pelarut tetapi tidak menghancurkan garam. Konsentrasi bergantung pada volume akhir.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-03",
+      "direction": "id-en",
+      "source": "CP20B0003_00. Himpunan hingga dalam percobaan 32 berisi elemen yang berbeda. Subgrup harus memuat elemen identitas. Objek matematika ini didefinisikan secara terpisah.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-04",
+      "direction": "id-en",
+      "source": "CP20B0004_00. Survei ekonomi mencatat 39 transaksi. Permintaan meningkat ketika harga turun sementara kondisi lain tetap. Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-05",
+      "direction": "id-en",
+      "source": "CP20B0005_00. Analisis statistika menggunakan 46 pengamatan. Rata-rata sampel berbeda dari rata-rata populasi. Interval kepercayaan menyatakan ketidakpastian dalam model yang disebutkan.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-06",
+      "direction": "id-en",
+      "source": "CP20B0006_00. Penelitian ekologi mengikuti 53 pohon yang ditandai. Pertumbuhan berbeda antar lokasi karena curah hujan dan kondisi tanah berbeda. Penulis melaporkan keterbatasan pengukuran.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-07",
+      "direction": "id-en",
+      "source": "CP20B0007_00. Penelitian pendidikan mencakup 60 jawaban tertulis. Rubrik membedakan jawaban tanpa alasan dari penjelasan yang didukung bukti. Dua penilai membandingkan penilaian mereka.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-08",
+      "direction": "id-en",
+      "source": "CP20B0008_00. Laboratorium teknik mencatat 67 pengukuran tekanan. Instrumen dikalibrasi sebelum setiap sesi. Satuan yang dilaporkan dan ketidakpastian pengukuran harus tetap bersama.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-09",
+      "direction": "id-en",
+      "source": "CP20B0009_00. Arsip sejarah memuat 74 entri berindeks. Penafsiran berikutnya dapat bertentangan dengan catatan asli. Peneliti memisahkan bukti dokumenter dari spekulasi.",
+      "kind": "known-long-output-regression"
+    },
+    {
+      "id": "LONG-PROSE-10",
+      "direction": "id-en",
+      "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda.",
+      "kind": "known-long-output-regression"
+    }
+  ]
+}

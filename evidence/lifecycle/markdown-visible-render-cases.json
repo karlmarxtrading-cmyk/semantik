@@ -1,0 +1,103 @@
+{
+  "sourceSha256": "54a4ffebe36aedb51da5208c3b84a1f61796963c147c4e9228e937e623eede0e",
+  "method": "actual markdownText + marked17 renderer; expected original source characters, only whitespace normalized in separate HTMLParser check",
+  "rows": [
+    {
+      "id": "unordered-hyphen",
+      "source": "- Local estimates remain uncertain.\n- Regulatory agencies review evidence.",
+      "markdown": "\\- Local estimates remain uncertain.\n\\- Regulatory agencies review evidence.",
+      "html": "<p>- Local estimates remain uncertain.\n- Regulatory agencies review evidence.</p>\n"
+    },
+    {
+      "id": "unordered-plus",
+      "source": "+ Positive effect\n+ Negative control",
+      "markdown": "\\+ Positive effect\n\\+ Negative control",
+      "html": "<p>+ Positive effect\n+ Negative control</p>\n"
+    },
+    {
+      "id": "ordered-label",
+      "source": "1. First scientific claim.\n2. Second scientific claim.",
+      "markdown": "1\\. First scientific claim.\n2\\. Second scientific claim.",
+      "html": "<p>1. First scientific claim.\n2. Second scientific claim.</p>\n"
+    },
+    {
+      "id": "internal-line-list",
+      "source": "Paragraph introduction.\n1. Literal label.\n- Literal dash.",
+      "markdown": "Paragraph introduction.\n1\\. Literal label.\n\\- Literal dash.",
+      "html": "<p>Paragraph introduction.\n1. Literal label.\n- Literal dash.</p>\n"
+    },
+    {
+      "id": "parenthesis-label",
+      "source": "1) Literal identifier\n2) Another identifier",
+      "markdown": "1\\) Literal identifier\n2\\) Another identifier",
+      "html": "<p>1) Literal identifier\n2) Another identifier</p>\n"
+    },
+    {
+      "id": "three-space-indent",
+      "source": "   - Literal source bullet\n   3. Literal label",
+      "markdown": "&#32;&#32;&#32;\\- Literal source bullet\n&#32;&#32;&#32;3\\. Literal label",
+      "html": "<p>&#32;&#32;&#32;- Literal source bullet\n&#32;&#32;&#32;3. Literal label</p>\n"
+    },
+    {
+      "id": "four-space-indent",
+      "source": "    - Literal *words* and |x|\n    1. source label (A)",
+      "markdown": "&#32;&#32;&#32;&#32;- Literal \\*words\\* and \\|x\\|\n&#32;&#32;&#32;&#32;1. source label \\(A\\)",
+      "html": "<p>&#32;&#32;&#32;&#32;- Literal *words* and |x|\n&#32;&#32;&#32;&#32;1. source label (A)</p>\n"
+    },
+    {
+      "id": "tab-indent",
+      "source": "\t- Literal *words* and |x|\n\t1. source label (A)",
+      "markdown": "&#9;- Literal \\*words\\* and \\|x\\|\n&#9;1. source label \\(A\\)",
+      "html": "<p>&#9;- Literal *words* and |x|\n&#9;1. source label (A)</p>\n"
+    },
+    {
+      "id": "horizontal-rule",
+      "source": "Before\n---\nAfter",
+      "markdown": "Before\n\\---\nAfter",
+      "html": "<p>Before\n---\nAfter</p>\n"
+    },
+    {
+      "id": "spaced-horizontal-rule",
+      "source": "Before\n- - -\nAfter",
+      "markdown": "Before\n\\- - -\nAfter",
+      "html": "<p>Before\n- - -\nAfter</p>\n"
+    },
+    {
+      "id": "setext-heading",
+      "source": "A literal line\n===\nContinuation",
+      "markdown": "A literal line\n\\===\nContinuation",
+      "html": "<p>A literal line\n===\nContinuation</p>\n"
+    },
+    {
+      "id": "decimal-control",
+      "source": "1.5 μM was measured.\n-5.2 mg is a signed value.\n+3.0 °C is positive.",
+      "markdown": "1.5 μM was measured.\n\\-5.2 mg is a signed value.\n\\+3.0 °C is positive.",
+      "html": "<p>1.5 μM was measured.\n-5.2 mg is a signed value.\n+3.0 °C is positive.</p>\n"
+    },
+    {
+      "id": "ordered-boundaries",
+      "source": "0. Zero label\n999999999. Nine digit label\n1000000000. Ten digit value",
+      "markdown": "0\\. Zero label\n999999999\\. Nine digit label\n1000000000. Ten digit value",
+      "html": "<p>0. Zero label\n999999999. Nine digit label\n1000000000. Ten digit value</p>\n"
+    },
+    {
+      "id": "other-markup",
+      "source": "# Literal heading\n* Literal star\n[Reference]: text\n> literal quote\n~~~",
+      "markdown": "\\# Literal heading\n\\* Literal star\n\\[Reference\\]: text\n&gt; literal quote\n\\~\\~\\~",
+      "html": "<p># Literal heading\n* Literal star\n[Reference]: text\n&gt; literal quote\n~~~</p>\n"
+    },
+    {
+      "id": "safe-html",
+      "source": "<script>unsafe()</script> & literal &amp;",
+      "markdown": "&lt;script&gt;unsafe\\(\\)&lt;/script&gt; &amp; literal &amp;amp;",
+      "html": "<p>&lt;script&gt;unsafe()&lt;/script&gt; &amp; literal &amp;amp;</p>\n"
+    },
+    {
+      "id": "bare-markers",
+      "source": "-\n+\n1.\n===\n---",
+      "markdown": "\\-\n\\+\n1\\.\n\\===\n\\---",
+      "html": "<p>-\n+\n1.\n===\n---</p>\n"
+    }
+  ],
+  "generatedTableStillStructured": true
+}

@@ -1,0 +1,4 @@
+import fs from 'node:fs/promises';
+import {repo,build,Translator,cleanupBridge} from './cp20-semantic-runtime.mjs';
+const cases=['Perbedaan tersebut bukan bukti','Suatu pengamatan dicatat secara keliru.','Bukti ini tidak menunjukkan','Semua sampel telah terkontaminasi.','Pengamatan tersebut tidak membuktikan','Tidak ada perubahan pada suhu.'];
+const rows=[];const tr=new Translator();try{await tr.prepare('id-en');for(const source of cases){const result=await tr.translate(source);rows.push({source,...result});console.log(source,'=>',result.outcome,result.text);await fs.writeFile(repo+'/evidence/recovery/root/COMPLEMENT_EXPLORATION.json',JSON.stringify({method:'Actual local model fragment exploration; no whole-document or human-quality claim',build,rows},null,2)+'\n');}}finally{await tr.dispose();await cleanupBridge();}

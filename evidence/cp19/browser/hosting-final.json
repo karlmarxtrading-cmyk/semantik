@@ -1,0 +1,110 @@
+{
+  "build": {
+    "base": "/r/6ed0d134e1770b27/",
+    "modelHashes": {
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6",
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db"
+    },
+    "release": "cp19-6ed0d134e1770b27",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "version": "0.19.0"
+  },
+  "scope": "Actual managed preview HTTP and browser APIs; not Cloudflare deployment",
+  "results": [
+    {
+      "path": "/index.html",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "13529",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:51:38 GMT",
+        "etag": "W/\"301d-1a1d006aa5d\"",
+        "last-modified": "Thu, 12 Nov 2026 13:51:00 GMT"
+      }
+    },
+    {
+      "path": "/sw.js",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "39222",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:51:38 GMT",
+        "etag": "W/\"9936-1a1d006aa8b\"",
+        "last-modified": "Thu, 12 Nov 2026 13:51:00 GMT"
+      }
+    },
+    {
+      "path": "/r/6ed0d134e1770b27/app/main.js",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "content-length": "56018",
+        "content-type": "text/javascript; charset=utf-8",
+        "date": "Thu, 12 Nov 2026 13:51:38 GMT",
+        "etag": "W/\"dad2-1a1d006a892\"",
+        "last-modified": "Thu, 12 Nov 2026 13:50:59 GMT"
+      }
+    },
+    {
+      "path": "/r/6ed0d134e1770b27/runtime/ort-wasm-simd-threaded.wasm",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "connection": "keep-alive",
+        "content-length": "11905541",
+        "content-type": "application/wasm",
+        "date": "Thu, 12 Nov 2026 13:51:38 GMT",
+        "etag": "W/\"b5aa05-1a1d006a986\"",
+        "keep-alive": "timeout=5",
+        "last-modified": "Thu, 12 Nov 2026 13:50:59 GMT"
+      }
+    },
+    {
+      "path": "/r/6ed0d134e1770b27/models/en-id/encoder_q8.onnx.part000.gz",
+      "method": "HEAD",
+      "status": 200,
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public, max-age=0",
+        "connection": "keep-alive",
+        "content-length": "11378532",
+        "content-type": "application/gzip",
+        "date": "Thu, 12 Nov 2026 13:51:38 GMT",
+        "etag": "W/\"ad9f64-1a1d006a906\"",
+        "keep-alive": "timeout=5",
+        "last-modified": "Thu, 12 Nov 2026 13:50:59 GMT"
+      }
+    }
+  ],
+  "range": {
+    "status": 206,
+    "contentRange": "bytes 0-31/56018",
+    "firstChunk": 32,
+    "pass": true
+  },
+  "shellIntegrity": {
+    "expected": {
+      "path": "/index.html",
+      "sha256": "76e5e6b5c512ab146b9734a7e4586d09299af3e016c6ec67024257428d32e415",
+      "size": 12317
+    },
+    "actualBytes": 13529,
+    "actualSha256": "d71b465affa7861c36d370706dff92109a9c72ecaef57050f70576dcc18abd18",
+    "pass": false
+  },
+  "offlineWorker": {
+    "pass": false,
+    "error": "Error: Aplikasi offline belum aktif. Muat ulang melalui HTTPS, lalu coba lagi."
+  },
+  "completed": "2026-11-12T13:51:58.257Z"
+}

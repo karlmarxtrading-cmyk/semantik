@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-12",
+  "sourceArchiveSha256": "32743e819993a011c5ff4f34de90292a76c29d9963f1258542be5382965df2dc",
+  "release": "cp18-7a8e787a497535f5",
+  "verdict": "NOT READY for the specified scientific one-PDF-to-one-MD consumer product",
+  "priorityDefinition": {
+    "P1": "Penghalang langsung penerimaan produk yang diminta",
+    "P2": "Penguatan penting untuk operasi/penyelesaian andal",
+    "P3": "Dokumentasi/pemeliharaan"
+  },
+  "counts": {
+    "P1": 4,
+    "P2": 4,
+    "P3": 1
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "P1",
+      "title": "Struktur matematika hilang saat pembacaan PDF",
+      "type": "actual-pdf-reproduction",
+      "evidence": [
+        "pdf_math/math_node_extraction.json",
+        "pdf_math/MATHEMATICS_ACTUAL_SOURCE_EXPORT.md"
+      ],
+      "locations": [
+        "app/pdf-reader.js:77-94",
+        "app/layout.js:18-29,91-111,247-266"
+      ],
+      "impact": "Pangkat, indeks, pecahan, integral, dan matriks kehilangan hubungan spasial sebelum terjemahan.",
+      "required": "Rekonstruksi struktur matematika terverifikasi sebelum prosa diterjemahkan."
+    },
+    {
+      "id": "F02",
+      "priority": "P1",
+      "title": "Notasi turunan rusak dan lolos pemeriksaan",
+      "type": "actual-model-and-fresh-pdf-output",
+      "evidence": [
+        "engine/notation-model-results.json",
+        "browser/prose_pipeline_results.json"
+      ],
+      "locations": [
+        "app/semantic-spans.js:7,112-122",
+        "app/translation.js:65-67,267"
+      ],
+      "impact": "f′(x) berubah menjadi fåx) pada EN-ID dan f-told) pada ID-EN tanpa issues.",
+      "required": "Lindungi keseluruhan ekspresi matematika serta struktur/token notasinya secara konsisten, termasuk prime dan aksen."
+    },
+    {
+      "id": "F03",
+      "priority": "P1",
+      "title": "Makna ilmiah keliru tanpa peringatan",
+      "type": "actual-model-and-fresh-pdf-output",
+      "evidence": [
+        "engine/real-model-results.json",
+        "browser/prose_pipeline_results.json"
+      ],
+      "locations": [
+        "app/translation.js:156-180,267"
+      ],
+      "impact": "Trial menjadi pengadilan, partikulat halus/rawat inap kehilangan makna, kedua syarat menjadi second condition.",
+      "required": "Evaluasi dan perbaiki mesin dua arah pada korpus jurnal independen; uji istilah, kuantor, negasi, relasi, dan konteks."
+    },
+    {
+      "id": "F04",
+      "priority": "P1",
+      "title": "Markdown tunggal belum menyajikan matematika rapi",
+      "type": "actual-export-and-static-contract",
+      "evidence": [
+        "pdf_math/math_node_extraction.json",
+        "browser/FRESH_TRANSLATION_en-id.md",
+        "browser/FRESH_TRANSLATION_id-en.md"
+      ],
+      "locations": [
+        "app/export.js:27-38,51-70,87-115,203-209"
+      ],
+      "impact": "Formula menjadi code fence, LaTeX yang sudah ada dibungkus backticks, citra hanya jalur ZIP.",
+      "required": "Ekspor LaTeX inline/display tervalidasi ke satu .md pada renderer yang ditetapkan; ZIP tidak boleh diperlukan agar rumus terbaca."
+    },
+    {
+      "id": "F05",
+      "priority": "P2",
+      "title": "Guard juga menolak kandidat dengan asosiasi angka yang dipertahankan",
+      "type": "actual-model-rejection",
+      "evidence": [
+        "engine/real-model-results.json",
+        "browser/ui_contract_and_scope.json"
+      ],
+      "locations": [
+        "app/semantic-spans.js:65",
+        "app/main.js:411-414"
+      ],
+      "impact": "Pengobatan A/B tidak dikenali sinonim kelompok; hasil kembali ke sumber Inggris dan pengguna diminta melanjutkan/meninjau.",
+      "required": "Kalibrasi false positive serta retry internal terbatas; jangan jadikan koreksi per blok alur normal konsumen."
+    },
+    {
+      "id": "F06",
+      "priority": "P2",
+      "title": "Kebijakan Cache-Control bertumpuk",
+      "type": "static-config-plus-official-doc-inference",
+      "evidence": [
+        "integrity/header_rule_analysis.json"
+      ],
+      "locations": [
+        "_headers:1-13"
+      ],
+      "impact": "Aturan umum dan rilis sama-sama memberi max-age, sehingga konfigurasi mengandung kebijakan yang bertentangan.",
+      "required": "Buat aturan cache tidak bertumpuk dan buktikan header di host target."
+    },
+    {
+      "id": "F07",
+      "priority": "P2",
+      "title": "Model identik diunduh ulang lintas prefix rilis",
+      "type": "exact-loader-controlled-harness",
+      "evidence": [
+        "integrity/runtime_integrity_probe.json"
+      ],
+      "locations": [
+        "assets/engine.worker-4c3dcfee.js:86,109",
+        "sw.js:32-34"
+      ],
+      "impact": "Rilis baru dapat mengunduh ulang sekitar 100 MB per arah walau bobot sama; cache rilis lama tidak dibatasi.",
+      "required": "Cache berdasarkan fingerprint/hash dengan verifikasi dan pembersihan rilis tidak aktif secara otomatis."
+    },
+    {
+      "id": "F08",
+      "priority": "P2",
+      "title": "Bukti build, parity, dan acceptance belum tersedia dalam arsip deployment",
+      "type": "evidence-gap",
+      "evidence": [
+        "integrity/integrity_checks.json",
+        "integrity/findings.json",
+        "browser/ui_contract_and_scope.json"
+      ],
+      "locations": [
+        "models/en-id/manifest.json:parityReport",
+        "models/id-en/manifest.json:parityReport",
+        "licenses/pdfjs-dist/SOURCE.txt"
+      ],
+      "impact": "Konsistensi hash tidak cukup untuk membuktikan build dapat direproduksi, kualitas jurnal, dan perilaku browser produksi.",
+      "required": "Paket source/build/QA terpisah, korpus uji dua arah, serta browser/hosting aktual pada rilis yang sama."
+    },
+    {
+      "id": "F09",
+      "priority": "P3",
+      "title": "Notice versi dan lokasi lisensi tertinggal",
+      "type": "verified-static",
+      "evidence": [
+        "integrity/findings.json"
+      ],
+      "locations": [
+        "MODEL_NOTICE.txt",
+        "licenses/pdfjs-dist/SOURCE.txt"
+      ],
+      "impact": "Notice menyebut PDF.js5.6.205 dan /licenses/, tetapi bundle/worker aktual6.2.108 dengan path rilis.",
+      "required": "Selaraskan notice dengan aset dan riwayat CP18 aktual."
+    }
+  ],
+  "noSourceChanges": true,
+  "notAnAccuracyPercentage": true
+}

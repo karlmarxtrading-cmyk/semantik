@@ -1,0 +1,13 @@
+{
+  "phase": "KNOWN_CASE_REGRESSION_FREEZE",
+  "created": "2026-11-13T09:56:20.238302+00:00",
+  "method": "Known development cases; no blind acceptance claim. Files must remain byte-identical through this run.",
+  "files": {
+    "app/app/translation.js": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+    "app/app/semantic-spans.js": "dc1de6a49e72745d9a9ffbad6e5536062030df3c14180b02d94194787d4fa7c7",
+    "app/app/claim-guards.js": "84ce4961e92dce743e07f0e618827794cdb780c77a20f414a7477d91c87e5f91",
+    "app/assets/engine.worker-4c3dcfee.js": "5747908f7b2855b627138298609fe3b1512f6f50342578c702894825d7197bda",
+    "app/models/en-id/manifest.json": "0e32638fae841b1c9b45aef8423f432bef1d7ad59c50c15621cb79d76088dfc6",
+    "app/models/id-en/manifest.json": "c7dfdb1d860c01ecab715c095005db995bb24e6483db3ac2d5dd73cc3d20c080"
+  }
+}

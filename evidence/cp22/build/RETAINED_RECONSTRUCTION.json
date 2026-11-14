@@ -1,0 +1,47 @@
+{
+  "method": "Exact local historical manifests verified, original builders executed, both original releases matched.",
+  "retained": [
+    {
+      "build": {
+        "release": "cp19-6ed0d134e1770b27",
+        "version": "0.19.0",
+        "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/6ed0d134e1770b27/"
+      },
+      "files": 300,
+      "historyManifestSHA256": "b8fef2af0b287193d8e16950d6a06cdd93812d47c801e8b3065893cd60bbc739"
+    },
+    {
+      "build": {
+        "release": "cp20-2e4d8ef18eb32385",
+        "version": "0.20.0",
+        "sourceHash": "2e4d8ef18eb323855ec23d4f3e16bb1ccd50604065c7afb1e84ff5331f521e79",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/2e4d8ef18eb32385/"
+      },
+      "files": 599,
+      "historyManifestSHA256": "8c371215c19f061e18f6aa8c6dcd747d55322a907fa595f28cd661167e0bb0cc"
+    },
+    {
+      "build": {
+        "release": "cp21-ba83aed6acb74963",
+        "version": "0.21.0",
+        "sourceHash": "ba83aed6acb74963914e9e41e1c97e38b7830a0ebe042434bb325eb9d9607f25",
+        "modelHashes": {
+          "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+          "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+        },
+        "base": "/r/ba83aed6acb74963/"
+      },
+      "files": 899,
+      "historyManifestSHA256": "e52c534286e41c6d7043b227fa5327b972090490dd41a68e0642bffa760ea56a"
+    }
+  ]
+}

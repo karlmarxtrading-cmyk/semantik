@@ -1,0 +1,146 @@
+{
+  "fixture": {
+    "file": "capacity-1001-en-rich.pdf",
+    "pages": 1001,
+    "language": "en",
+    "rich": true,
+    "bytes": 1910126,
+    "sha256": "a4d651a2cfce36a5e99c1831886816560a451f80cc5a4664cffc73be28d9cc5e",
+    "sourceCharacters": 2525945,
+    "uniqueProseParagraphs": 13013,
+    "traceManifest": "capacity-1001-en-rich.json"
+  },
+  "status": "PASS",
+  "method": "Actual production openPdf and bounded per-page extract / PDF.js 6.2.108; native Canvas and disk QA sink. No translation or browser download.",
+  "summary": {
+    "pages": 1001,
+    "blocks": 3003,
+    "characters": 2486906,
+    "sourceItems": 28028,
+    "coveredItems": 28028,
+    "assets": 0,
+    "assetBytes": 0,
+    "traceIds": 13013,
+    "maxActivePageRecords": 1
+  },
+  "sourceSha256": "a4d651a2cfce36a5e99c1831886816560a451f80cc5a4664cffc73be28d9cc5e",
+  "orderedPageRecordsSha256": "348fcfdc5a82c61736ab29faa4da0ab61de64935f92df593251cdc71ce06ddc0",
+  "elapsedMs": 24525.752106,
+  "sampledPeakNodeMemoryBytes": {
+    "rss": 348995584,
+    "heapUsed": 90720240,
+    "external": 25502708,
+    "arrayBuffers": 22006678
+  },
+  "memoryLimit": "Node process only; 100ms sampled. Not total browser/worker/WASM/Canvas RAM and not a physical-device qualification.",
+  "samples": [
+    {
+      "page": 1,
+      "elapsedMs": 64.09558499999548,
+      "rss": 322404352,
+      "heapTotal": 169664512,
+      "heapUsed": 46319208,
+      "external": 25230820,
+      "arrayBuffers": 21734790
+    },
+    {
+      "page": 100,
+      "elapsedMs": 2248.079896999996,
+      "rss": 336547840,
+      "heapTotal": 169988096,
+      "heapUsed": 79583592,
+      "external": 17642203,
+      "arrayBuffers": 13082316
+    },
+    {
+      "page": 200,
+      "elapsedMs": 5564.263414000001,
+      "rss": 336723968,
+      "heapTotal": 163172352,
+      "heapUsed": 33937960,
+      "external": 10506856,
+      "arrayBuffers": 5946969
+    },
+    {
+      "page": 300,
+      "elapsedMs": 7704.396798000002,
+      "rss": 337379328,
+      "heapTotal": 166551552,
+      "heapUsed": 39040744,
+      "external": 9473841,
+      "arrayBuffers": 4913954
+    },
+    {
+      "page": 400,
+      "elapsedMs": 9619.268617000002,
+      "rss": 337199104,
+      "heapTotal": 167337984,
+      "heapUsed": 32367112,
+      "external": 9276043,
+      "arrayBuffers": 4716156
+    },
+    {
+      "page": 500,
+      "elapsedMs": 11479.209501999998,
+      "rss": 337330176,
+      "heapTotal": 169435136,
+      "heapUsed": 40890696,
+      "external": 10521073,
+      "arrayBuffers": 5961186
+    },
+    {
+      "page": 600,
+      "elapsedMs": 14066.905773999999,
+      "rss": 340738048,
+      "heapTotal": 172023808,
+      "heapUsed": 70936960,
+      "external": 10188037,
+      "arrayBuffers": 5628150
+    },
+    {
+      "page": 700,
+      "elapsedMs": 16783.18784,
+      "rss": 342966272,
+      "heapTotal": 174120960,
+      "heapUsed": 56728256,
+      "external": 9730067,
+      "arrayBuffers": 5170180
+    },
+    {
+      "page": 800,
+      "elapsedMs": 19449.258822999996,
+      "rss": 345194496,
+      "heapTotal": 175955968,
+      "heapUsed": 63016752,
+      "external": 9827328,
+      "arrayBuffers": 5267441
+    },
+    {
+      "page": 900,
+      "elapsedMs": 22140.602583,
+      "rss": 347160576,
+      "heapTotal": 178053120,
+      "heapUsed": 57473200,
+      "external": 10776891,
+      "arrayBuffers": 6217004
+    },
+    {
+      "page": 1000,
+      "elapsedMs": 24506.626234999996,
+      "rss": 348995584,
+      "heapTotal": 180150272,
+      "heapUsed": 44777968,
+      "external": 10402413,
+      "arrayBuffers": 5842526
+    },
+    {
+      "page": 1001,
+      "elapsedMs": 24524.065103,
+      "rss": 348995584,
+      "heapTotal": 180150272,
+      "heapUsed": 48813888,
+      "external": 10499409,
+      "arrayBuffers": 5939522
+    }
+  ]
+}

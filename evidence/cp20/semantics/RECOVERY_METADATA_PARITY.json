@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "method": "Exact output text equality on all 30 fixed v2 cases before/after typed rejection metadata repair; not a new semantic holdout.",
+  "changes": [
+    {
+      "id": "CP20-H-026",
+      "changes": {
+        "outcome": {
+          "before": "failed",
+          "after": "rejected"
+        },
+        "retryable": {
+          "before": true,
+          "after": false
+        },
+        "recovery": {
+          "before": "retry-when-ready",
+          "after": "change-source-or-glossary"
+        }
+      }
+    }
+  ]
+}

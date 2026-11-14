@@ -1,0 +1,46 @@
+{
+  "method": "Production adapter with deliberately invalid controlled engine response. Same masked candidate is attempted onlyonce; deterministic failure is not transient. No model/browser claim.",
+  "ruleset": "cp20-recovery-context-and-metadata-v5",
+  "adapterSHA256": "bde419ef53888c6102e14e7f1afad2a894648cbe01c3dcf476c40f622195494e",
+  "status": "PASS",
+  "calls": 1,
+  "source": "Pengamatan tersebut tidak berubah.",
+  "result": {
+    "text": "Pengamatan tersebut tidak berubah.",
+    "status": "review",
+    "outcome": "rejected",
+    "retryable": false,
+    "recovery": "change-source-or-glossary",
+    "metrics": {
+      "inferenceCalls": 1,
+      "cacheHits": 0,
+      "inputTokens": 8,
+      "outputTokens": 2,
+      "uniqueInputs": 1
+    },
+    "attempts": [
+      {
+        "strategy": "protected-context",
+        "source": "Pengamatan tersebut tidak berubah."
+      }
+    ],
+    "issues": [
+      "Kandidat terjemahan ditolak untuk menjaga isi. Sumber dipertahankan. Periksa teks sumber atau ubah glosarium, lalu jalankan kembali; percobaan identik tidak diulang."
+    ],
+    "diagnostics": [
+      {
+        "stage": "translation",
+        "name": "Error",
+        "message": "Kandidat deterministik identik tidak diulang.",
+        "segmentSource": "Pengamatan tersebut tidak berubah.",
+        "candidateText": null,
+        "rawCandidate": "invalid candidate"
+      }
+    ],
+    "engine": {
+      "fixture": true
+    },
+    "sourcePreserved": true,
+    "semanticVerified": false
+  }
+}

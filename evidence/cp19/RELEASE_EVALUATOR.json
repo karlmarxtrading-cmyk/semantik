@@ -1,0 +1,118 @@
+{
+  "build": {
+    "release": "cp19-6ed0d134e1770b27",
+    "version": "0.19.0",
+    "sourceHash": "6ed0d134e1770b2742b0c4c54e3a156bf1822443adea84e4de4ba0cd96308913",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/6ed0d134e1770b27/"
+  },
+  "integrityOfReport": true,
+  "productionReady": false,
+  "status": "NOT_PRODUCTION_READY",
+  "checks": [
+    {
+      "name": "Eight gates and nine findings retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: fresh/PIPELINE_RESULTS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: DOMAIN_HOLDOUT.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: INDEPENDENT_ACCEPTANCE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: MODEL_AND_HEADERS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: REPRODUCIBLE_BUILD.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: browser/browser-final.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Build identity: browser/hosting-final.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Final regressions",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Actual verification: MODEL_AND_HEADERS.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Actual verification: REPRODUCIBLE_BUILD.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Separate acceptance has18 actual results",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Human approvals not fabricated",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Live site not overwritten",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Readiness reported honestly",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "blockingGates": [
+    {
+      "id": "G2",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "G3",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "G4",
+      "status": "FAIL"
+    },
+    {
+      "id": "G6",
+      "status": "PARTIAL"
+    },
+    {
+      "id": "G7",
+      "status": "BLOCKED_HOSTING"
+    },
+    {
+      "id": "G8",
+      "status": "PARTIAL"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "build": {
+    "release": "cp21-4f600f19789edea7",
+    "version": "0.21.0",
+    "sourceHash": "4f600f19789edea73d3642e65c10d5b3a43f5e0f79b36fc9d2c91dc597da78e3",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/4f600f19789edea7/"
+  },
+  "checks": [
+    {
+      "name": "Deploy inventory matches manifest",
+      "pass": true,
+      "detail": {
+        "files": 899,
+        "extra": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "All actual deploy SHA256 bytes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Cloudflare individual asset limit25MiB and dashboard1000files",
+      "pass": true,
+      "detail": {
+        "files": 899,
+        "maxBytes": 15344608,
+        "documentation": [
+          "https://developers.cloudflare.com/pages/platform/limits/",
+          "https://developers.cloudflare.com/pages/get-started/direct-upload/"
+        ]
+      }
+    },
+    {
+      "name": "No test/source/evidence/archive inside deploy",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Resolvable literal ESM imports",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Expected CSP/privacy/MIME configuration present",
+      "pass": true,
+      "detail": "Configuration only; actual hosting headers are a separate gate. wasm-unsafe-eval is narrowly required for WASM."
+    },
+    {
+      "name": "No remote upload API in app modules",
+      "pass": true,
+      "detail": "Static app-module scan only; vendor/model runtime and observed browser resource requests reported separately. This is not a penetration test."
+    },
+    {
+      "name": "PDF-only input control",
+      "pass": true,
+      "detail": "Upload control format plus runtime validation covered in lifecycle/PDF suites."
+    }
+  ],
+  "allPass": true,
+  "limitations": [
+    "Hash verification is integrity, not scientific accuracy.",
+    "npm audit tool lock and inherited engine lock have separate reports; no full security certification.",
+    "Cloudflare staging, CSP enforcement and rollback not executed."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "filename": "SEMANTIK_SETARA_CP19_EMERGENCY_RECOVERY_CHECKPOINT.zip",
+  "bytes": 266254525,
+  "sha256": "5b6fd62092f614db550e493984db37a186b824b9c279962b67586ff117de1e98",
+  "outerEntries": 25,
+  "importantVerifiedArtifacts": 20,
+  "nestedSourceFiles": 14598,
+  "zipIntegrity": "PASS",
+  "allOuterHashes": "PASS",
+  "allNestedSourceHashes": "PASS",
+  "productionReady": false,
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  }
+}

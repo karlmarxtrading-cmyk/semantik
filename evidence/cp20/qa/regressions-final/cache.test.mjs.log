@@ -1,0 +1,21 @@
+✔ V1 refuses V2 bytes for uncached lazy module; no mixed execution (6.105314ms)
+✔ verified V1 cache remains V1 while V2 origin exists, then offline (6.011957ms)
+✔ corrupt cache evicted; valid network verified and reused offline (2.831465ms)
+✔ cache denial and quota failure preserve verified online reading (3.998426ms)
+✔ initial shell contains no heavy parser OCR engine or model (0.332766ms)
+✔ all manifest assets match actual final dist bytes (200.6969ms)
+✔ rollback activation retains prior release caches (3.656345ms)
+✔ model denied cache preserves bytes with honest status (7.498008ms)
+✔ model quota cache preserves bytes with honest status (3.920824ms)
+✔ model persistent cache preserves bytes with honest status (1.99375ms)
+✔ session fallback still rejects bad model hash (1.911711ms)
+✔ model shards bypass static SW and keep engine-owned verification (1.610591ms)
+✔ unknown release-scoped asset fails closed instead of mixing versions (1.629766ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 255.139677

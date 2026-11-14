@@ -1,0 +1,22 @@
+Warning: Please use the `legacy` build in Node.js environments.
+Warning: Indexing all PDF objects
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
++ actual - expected
+
++ 'paragraph'
+- 'reference'
+
+    at file:///workspace/scratch/17677088ccfd/cp20/tests/pdf-inherited-reader.mjs:40:407 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 'paragraph',
+  expected: 'reference',
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.22.1

@@ -1,0 +1,67 @@
+%PDF-1.7
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+4 0 obj
+<< /ShadingType 2 /ColorSpace /DeviceRGB /Coords [50 520 290 520] /BBox [50 420 290 640] /Extend [false false] /Function << /FunctionType 2 /Domain [0 1] /C0 [0.1 0.2 0.8] /C1 [0.9 0.2 0.1] /N 1 >> >>
+endobj
+5 0 obj
+<< /Length 363 >>
+stream
+BT /F1 16 Tf 50 740 Td (Vector scientific figure: filled-only-bars) Tj ET
+BT /F1 12 Tf 50 708 Td (This figure contains measurements whose graphical relationship must be retained.) Tj ET
+0.1 0.3 0.7 rg 50 420 50 100 re f 130 420 50 160 re f 210 420 50 220 re f
+BT /F1 12 Tf 50 385 Td (The source diagram remains essential even when every label is readable.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /Shading << /Sh1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 348 >>
+stream
+BT /F1 16 Tf 50 740 Td (Vector scientific figure: stroked-vector-curve) Tj ET
+BT /F1 12 Tf 50 708 Td (This figure contains measurements whose graphical relationship must be retained.) Tj ET
+0.1 0.5 0.2 RG 4 w 50 420 m 90 590 210 450 290 640 c S
+BT /F1 12 Tf 50 385 Td (The source diagram remains essential even when every label is readable.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /Shading << /Sh1 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 302 >>
+stream
+BT /F1 16 Tf 50 740 Td (Vector scientific figure: shading-only-gradient) Tj ET
+BT /F1 12 Tf 50 708 Td (This figure contains measurements whose graphical relationship must be retained.) Tj ET
+/Sh1 sh
+BT /F1 12 Tf 50 385 Td (The source diagram remains essential even when every label is readable.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> /Shading << /Sh1 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000200 00000 n 
+0000000416 00000 n 
+0000000829 00000 n 
+0000000981 00000 n 
+0000001379 00000 n 
+0000001531 00000 n 
+0000001883 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+2036
+%%EOF

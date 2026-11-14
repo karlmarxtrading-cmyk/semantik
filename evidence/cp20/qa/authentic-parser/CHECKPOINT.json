@@ -1,0 +1,49 @@
+{
+  "build": {
+    "release": "cp20-8c643bea6962471f",
+    "version": "0.20.0",
+    "sourceHash": "8c643bea6962471f6c96b9dd01b3075dde11d6fd8e046b67098e58bccd7bde86",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/8c643bea6962471f/"
+  },
+  "summary": {
+    "pages": 1062,
+    "blocks": 11042,
+    "characters": 2159653,
+    "sourceItems": 88633,
+    "coveredItems": 88633,
+    "assets": 4684,
+    "assetBytes": 56757057,
+    "maxActivePageRecords": 1,
+    "coverageStatuses": {
+      "incomplete": 646,
+      "digital-text": 416
+    },
+    "mathStatuses": {
+      "supported-geometry-only": 1809,
+      "uncertain": 1420
+    },
+    "warningPages": 849,
+    "blockTypes": {
+      "image": 646,
+      "paragraph": 5957,
+      "heading": 458,
+      "table": 483,
+      "list-item": 253,
+      "formula": 3235,
+      "caption": 8,
+      "reference": 2
+    }
+  },
+  "peak": {
+    "rss": 744804352,
+    "heapUsed": 95303120,
+    "external": 279756720,
+    "arrayBuffers": 359344171
+  },
+  "lastPage": 1062,
+  "elapsedMs": 183747.423049
+}

@@ -1,0 +1,5 @@
+# Example only. Copy to the repository root as wrangler.toml AFTER replacing the
+# placeholder with your real Cloudflare Pages project name. Do not commit a toml
+# with a placeholder name: Pages Git builds treat a root wrangler.toml as config.
+name = "<PAGES_PROJECT_NAME>"
+pages_build_output_dir = "dist"

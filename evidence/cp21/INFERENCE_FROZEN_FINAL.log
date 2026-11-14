@@ -1,0 +1,30 @@
+CP20-H-008 translated 1940
+CP20-H-023 translated 2260
+{
+  cases: 2,
+  translated: 2,
+  rejected: 0,
+  failed: 0,
+  inferenceCalls: 6,
+  cacheHits: 0
+}
+CP21-F01 translated 1151
+CP21-F02 rejected 783
+CP21-F03 translated 422
+CP21-F04 translated 669
+CP21-F05 translated 653
+CP21-F06 translated 497
+CP21-F07 translated 843
+CP21-F08 translated 668
+CP21-F09 translated 689
+CP21-F10 translated 754
+CP21-F11 translated 731
+CP21-F12 translated 615
+{
+  cases: 12,
+  translated: 11,
+  rejected: 1,
+  failed: 0,
+  inferenceCalls: 24,
+  cacheHits: 0
+}

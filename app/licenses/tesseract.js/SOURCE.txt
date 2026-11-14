@@ -1,0 +1,4 @@
+Tesseract.js 7.0.0
+https://github.com/naptha/tesseract.js
+ES module and worker copied from the installed package without code modification.
+Apache-2.0. No CDN is configured by the application.

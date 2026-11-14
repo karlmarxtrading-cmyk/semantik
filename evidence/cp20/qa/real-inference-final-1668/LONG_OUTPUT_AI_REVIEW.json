@@ -1,0 +1,159 @@
+{
+  "build": {
+    "release": "cp20-1668833ad37c9dd8",
+    "version": "0.20.0",
+    "sourceHash": "1668833ad37c9dd8ce8859f583a4c3bde606ddbf29785e15c0ca3bbaa79401fd",
+    "modelHashes": {
+      "id-en": "eb4722cead56364538c05a99f6a08a65a7a6bb8ac7e6a49b9ce4adf0858889db",
+      "en-id": "31dbb62b5506e7302e182d7a85d5cae0e1263ca8acdf7bbb21f416c892a5c9d6"
+    },
+    "base": "/r/1668833ad37c9dd8/"
+  },
+  "sourceSha256": "bf0d81d8ad2a9afe52b01e1d4965f4546bbd0fecb731ff1bc326dd1d0bf23d90",
+  "reviewType": "AI qualitative spot review of actual first 10 ID-to-EN body paragraphs in captured cp20-1668833ad37c9dd8 long run; not blind human review or accuracy estimate",
+  "humanApprovals": 0,
+  "rubric": [
+    "Makna dan relasi",
+    "Kelengkapan",
+    "Istilah domain",
+    "Kelancaran",
+    "Angka dan peran angka",
+    "Konsistensi antarkalimat"
+  ],
+  "selection": "First 10 prose paragraphs, one per synthetic domain template; selected after outputs observed. Not a new held-out acceptance corpus.",
+  "status": "FAIL",
+  "criticalObserved": 4,
+  "metadataNote": "English END trace footer is a separate mixed-language unchanged-output false rejection; it is not counted among these prose semantic errors.",
+  "rows": [
+    {
+      "page": 1,
+      "blockId": "p0001-b0002",
+      "source": "CP20B0001_00. Tim penelitian mengukur 18 sampel sebelum intervensi. Kelompok pembanding tidak menerima perlakuan. Pengamatan ini saja tidak membuktikan hubungan sebab akibat.",
+      "target": "CP20B0001_00. The research team measured 18 sample before intervention. The control group doesn't take any treatment. This observation alone does not prove causal relationship.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_FLUENCY",
+      "aiReview": "Makna inti dan negasi dapat dipahami, tetapi 18 sample, before intervention, dan take any treatment tidak lancar. Pembanding menjadi control dalam konteks tanpa perlakuan masih masuk akal.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0001.json",
+      "recordSHA256": "b4c2f1b402f81a2bc6f0f8f35eaeef3d6a8d04ec30e5a7816c14d63a62976d21"
+    },
+    {
+      "page": 2,
+      "blockId": "p0002-b0002",
+      "source": "CP20B0002_00. Larutan kimia mengandung 25 miligram garam terlarut. Pemanasan menghilangkan pelarut tetapi tidak menghancurkan garam. Konsentrasi bergantung pada volume akhir.",
+      "target": "CP20B0002_00. Solution Chemical contains 25 soluted salt milligrams. Warming eliminates solvents but does not destroy salt. Concentrate on the final volume.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Konsentrasi bergantung pada volume akhir menjadi perintah Concentrate on the final volume. Besaran konsentrasi dan hubungan ketergantungannya hilang. Solution Chemical dan soluted salt milligrams juga tidak lancar.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0002.json",
+      "recordSHA256": "ac35f467363e7a10076b1b3fd17b651ea82fd72dcfd9a22ac7682d9f59426dfb"
+    },
+    {
+      "page": 3,
+      "blockId": "p0003-b0002",
+      "source": "CP20B0003_00. Himpunan hingga dalam percobaan 32 berisi elemen yang berbeda. Subgrup harus memuat elemen identitas. Objek matematika ini didefinisikan secara terpisah.",
+      "target": "CP20B0003_00. Finite set in 32 experiments contains different elements. Subgroup must contain identity element. This mathematical object is defined separately.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Percobaan 32 sebagai pengenal satu percobaan berubah menjadi 32 experiments sebagai jumlah percobaan. Angka utuh tidak berarti peran angka tetap. Identitas elemen/subgrup dipertahankan.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0003.json",
+      "recordSHA256": "263a442f84c469dea0c74e71db481ff35551e92a47e019e0c23235b76268b029"
+    },
+    {
+      "page": 4,
+      "blockId": "p0004-b0002",
+      "source": "CP20B0004_00. Survei ekonomi mencatat 39 transaksi. Permintaan meningkat ketika harga turun sementara kondisi lain tetap. Estimasi ini menggambarkan sampel tersebut, bukan setiap pasar.",
+      "target": "CP20B0004_00. Economic surveys record 39 transactions. Demand increases when prices go down while other conditions remain. This estimate describes the sample, not every market.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "NO_CRITICAL_OBSERVED",
+      "aiReview": "Permintaan, harga, kondisi tetap dan batas sampel/bukan setiap pasar tampak dipertahankan dalam contoh ini. Ini bukan verifikasi universal.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0004.json",
+      "recordSHA256": "70dfe3eb4e791a72bd44201d9fce58324dc95f4ae55eb5650b59064fcc924ccd"
+    },
+    {
+      "page": 5,
+      "blockId": "p0005-b0002",
+      "source": "CP20B0005_00. Analisis statistika menggunakan 46 pengamatan. Rata-rata sampel berbeda dari rata-rata populasi. Interval kepercayaan menyatakan ketidakpastian dalam model yang disebutkan.",
+      "target": "CP20B0005_00. Statistical analysis uses 46 observations. Sample mean differs from average population. Confidence interval states uncertainty in the specified model.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Rata-rata populasi sebagai besaran statistika berubah menjadi average population. Istilah itu dapat berarti populasi rata-rata dan tidak secara jelas mempertahankan population mean sebagai pembanding.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0005.json",
+      "recordSHA256": "d886f9bc0649e434090547c4332006f80cfc65c0aaeceb60a9208be58ed12bb4"
+    },
+    {
+      "page": 6,
+      "blockId": "p0006-b0002",
+      "source": "CP20B0006_00. Penelitian ekologi mengikuti 53 pohon yang ditandai. Pertumbuhan berbeda antar lokasi karena curah hujan dan kondisi tanah berbeda. Penulis melaporkan keterbatasan pengukuran.",
+      "target": "CP20B0006_00. Ecological studies follow 53 marked trees. Growth differs between locations because of rainfall and conditions of different soil. Writers report limitation of measurements.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_FLUENCY",
+      "aiReview": "Isi inti pohon bertanda, variasi lokasi, sebab curah hujan/tanah dan keterbatasan pengukuran masih ada; conditions of different soil dan limitation of measurements tidak alami.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0006.json",
+      "recordSHA256": "5a0398e656045ffd3f4f6e7fd300bb58d4cdbd0df6d31ee5601a935e3dc4438d"
+    },
+    {
+      "page": 7,
+      "blockId": "p0007-b0002",
+      "source": "CP20B0007_00. Penelitian pendidikan mencakup 60 jawaban tertulis. Rubrik membedakan jawaban tanpa alasan dari penjelasan yang didukung bukti. Dua penilai membandingkan penilaian mereka.",
+      "target": "CP20B0007_00. Education studies include 60 written answers. The feature distinguishes the answer without reason from the explanation supported by evidence. Two judges compared their judgment.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "CRITICAL",
+      "aiReview": "Rubrik penilaian dalam konteks pendidikan berubah menjadi feature. Instrumen penilaian kehilangan identitasnya; dua penilai dan perbandingan penilaian masih ada.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0007.json",
+      "recordSHA256": "8efed968855ac21ede79442214174fb5d66d89e0b77dcee4483f294746bdc876"
+    },
+    {
+      "page": 8,
+      "blockId": "p0008-b0002",
+      "source": "CP20B0008_00. Laboratorium teknik mencatat 67 pengukuran tekanan. Instrumen dikalibrasi sebelum setiap sesi. Satuan yang dilaporkan dan ketidakpastian pengukuran harus tetap bersama.",
+      "target": "CP20B0008_00. Technical labs record 67 pressure measurements. Instruments are calibrated before each session. The unit reported and uncertainty measurements must stay together.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_FLUENCY",
+      "aiReview": "Instrumen, kalibrasi, tekanan dan satuan masih ada. Uncertainty measurements membalik susunan measurement uncertainty; harus ditinjau agar tidak dipahami sebagai pengukuran ketidakpastian.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0008.json",
+      "recordSHA256": "99af7299649444e6f1f99cf99fa34f170ee0216b5ba16f4385b3835ed35958cc"
+    },
+    {
+      "page": 9,
+      "blockId": "p0009-b0002",
+      "source": "CP20B0009_00. Arsip sejarah memuat 74 entri berindeks. Penafsiran berikutnya dapat bertentangan dengan catatan asli. Peneliti memisahkan bukti dokumenter dari spekulasi.",
+      "target": "CP20B0009_00. History archive contains 74 indexed entries. The next interpretation can contradict the original notes. Researchers separate documentary evidence from speculation.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "NO_CRITICAL_OBSERVED",
+      "aiReview": "Entri berindeks, penafsiran/catatan asli, serta bukti/spekulasi tampak dipertahankan. Jumlah 74 tetap; perlu penyuntingan kelancaran biasa.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0009.json",
+      "recordSHA256": "3eb2786b81e7ae97b1e328bcfff6fc55a8b2b5b0e19f4efdb77daaf14459abbd"
+    },
+    {
+      "page": 10,
+      "blockId": "p0010-b0002",
+      "source": "CP20B0010_00. Barisan dalam perhitungan 81 bersifat monoton dan terbatas. Dengan asumsi yang dinyatakan, barisan itu konvergen. Menghapus asumsi memerlukan pembuktian yang berbeda.",
+      "target": "CP20B0010_00. Sequence in calculations 81 are monotone and bounded. Assuming that, sequence is converges. Removing assumptions requires a different kind of proof.",
+      "outcome": "translated",
+      "issues": [],
+      "diagnostics": [],
+      "severity": "MAJOR_FLUENCY",
+      "aiReview": "Sequence, monotone, bounded dan converges ada, tetapi sequence is converges dan bentuk jamak calculations 81 tidak lancar; pengenal perhitungan perlu ditinjau. Asumsi menjadi Assuming that yang kurang eksplisit.",
+      "evidence": "cp20/evidence/cp20/qa/real-inference-final-1668/capacity-1500-id-committed/0010.json",
+      "recordSHA256": "a09497c61883c30f9b646856eac95c7fe84999f56158266694e620016af97d85"
+    }
+  ]
+}
