@@ -1,0 +1,35 @@
+name: Verify Semantik Setara CP22 on Linux
+
+on:
+  push:
+    branches:
+      - ci/cp22-linux
+
+permissions:
+  contents: read
+
+jobs:
+  verify-cp22:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+
+    steps:
+      - name: Checkout original frozen CP22
+        uses: actions/checkout@v7
+        with:
+          ref: 56f01ffe0c77881209e5f56f60168504ce855982
+          persist-credentials: false
+
+      - name: Prepare Python 3.13
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Verify repository integrity
+        run: python scripts/verify-repository.py
+
+      - name: Build CP22 with release history
+        run: python scripts/build-with-history.py --evidence-dir evidence/reproduced/build
+
+      - name: Verify frozen deployment
+        run: python scripts/verify-repository.py --dist dist
